@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "name": "Noname",
+            "path": "."
+        },
+        {
+            "name": "upmPackages",
+            "path": "Library/PackageCache"
+        },
+        {
+            "path": "../UpmPackages/com.noname.gameabilitysystem.plugin"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "com.noname.gameabilitysystem.plugin",
+  "version": "0.1.0",
+  "displayName": "GameAbilitySystem Plugin",
+  "description": "Shared plugin for GameAbilitySystem and other projects",
+  "unity": "6000.3",
+  "unityRelease": "1f1",
+  "author": { "name": "guhyun" }
+}
