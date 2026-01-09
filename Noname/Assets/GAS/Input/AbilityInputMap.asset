@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd93aab54e8a21345b02e87d7aff9ad6, type: 3}
+  m_Name: AbilityInputMap
+  m_EditorClassIdentifier: Noname.GameAbilitySystem.Plugin::Noname.GameAbilitySystem.AbilityInputMap
+  _bindings:
+  - _action: {fileID: 0}
+    _actionName: Player/Move
+    _eventTag:
+      _value: Event.Input.Move
+    _trigger: 2
+  - _action: {fileID: 0}
+    _actionName: Player/Move
+    _eventTag:
+      _value: Event.Input.Move
+    _trigger: 1
+  - _action: {fileID: 0}
+    _actionName: Player/Jump
+    _eventTag:
+      _value: Event.Input.Jump
+    _trigger: 0

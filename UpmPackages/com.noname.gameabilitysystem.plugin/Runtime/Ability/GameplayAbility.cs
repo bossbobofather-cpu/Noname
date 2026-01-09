@@ -47,10 +47,7 @@ namespace Noname.GameAbilitySystem
             return false;
         }
 
-        public virtual bool CanActivateAbility(
-            FGameplayAbilitySpecHandle handle,
-            GameplayTagContainer sourceTags,
-            GameplayTagContainer targetTags)
+        public virtual bool CanActivateAbility()
         {
             return true;
         }
@@ -63,17 +60,17 @@ namespace Noname.GameAbilitySystem
         {
         }
 
-        public void CallActivateAbility(FGameplayAbilitySpecHandle handle, GameplayEventData eventData)
+        public void CallActivateAbility(AbilityContext context)
         {
-            PreActivate(handle);
-            ActivateAbility(handle, eventData);
+            PreActivate(context);
+            ActivateAbility(context);
         }
 
-        protected virtual void PreActivate(FGameplayAbilitySpecHandle handle)
+        protected virtual void PreActivate(AbilityContext context)
         {
         }
 
-        protected virtual void ActivateAbility(FGameplayAbilitySpecHandle handle, GameplayEventData eventData)
+        protected virtual void ActivateAbility(AbilityContext context)
         {
             
         }

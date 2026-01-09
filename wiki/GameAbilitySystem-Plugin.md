@@ -45,10 +45,10 @@ using Noname.GameAbilitySystem;
 
 public class DashAbility : GameplayAbility
 {
-    protected override void ActivateAbility(FGameplayAbilitySpecHandle handle, GameplayEventData eventData)
+    protected override void ActivateAbility(AbilityContext context)
     {
         // TODO: 대시 로직 구현
-        EndAbility(handle);
+        EndAbility(context.Handle);
     }
 }
 

@@ -1,9 +1,10 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Noname.GameAbilitySystem
 {
     [CreateAssetMenu(menuName = "GameAbilitySystem/Config/GameplayEffectConfig")]
-    public sealed class GameplayEffectConfig : GameplayConfig
+    public class GameplayEffectConfig : GameplayConfig
     {
         // 지속 타입
         [SerializeField] private EGameplayEffectDurationType _durationType = EGameplayEffectDurationType.Instant;
@@ -18,6 +19,8 @@ namespace Noname.GameAbilitySystem
         [SerializeField] private GameplayTagContainer _grantedTags = new GameplayTagContainer();
         [SerializeField, HideInInspector] private EGameplayEffectDurationType _lastDurationType;
         [SerializeField, HideInInspector] private bool _durationTypeInitialized;
+
+        [SerializeField] private List<AttributeModifier> _modifiers = new List<AttributeModifier>();
 
         /// <summary>
         /// 지속 타입
@@ -39,6 +42,11 @@ namespace Noname.GameAbilitySystem
         /// </summary>
         public GameplayTagContainer GrantedTags => _grantedTags;
 
+        /// <summary>
+        /// 부여되는 속성 수정자 목록
+        /// </summary>
+        public IReadOnlyList<AttributeModifier> Modifiers => _modifiers;
+        
         private void OnValidate()
         {
             if (!_durationTypeInitialized)

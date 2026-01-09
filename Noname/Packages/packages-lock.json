@@ -1,7 +1,7 @@
-﻿{
+{
   "dependencies": {
     "com.noname.gameabilitysystem.plugin": {
-      "version": "file:../UpmPackages/com.noname.gameabilitysystem.plugin",
+      "version": "file:../../UpmPackages/com.noname.gameabilitysystem.plugin",
       "depth": 0,
       "source": "local",
       "dependencies": {}

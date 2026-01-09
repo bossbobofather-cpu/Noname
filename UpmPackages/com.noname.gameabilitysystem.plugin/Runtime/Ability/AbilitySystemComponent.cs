@@ -10,21 +10,7 @@ namespace Noname.GameAbilitySystem
     /// </summary>
     public sealed class AbilitySystemComponent : MonoBehaviour
     {
-        /// <summary>
-        /// 소유한 태그 컨테이너
-        /// </summary>
-        public GameplayTagContainer OwnedTags => _ownedTags;
-
-        /// <summary>
-        /// 소유한 능력들
-        /// </summary>
-        public IReadOnlyList<GameplayAbilitySpec> Abilities => _abilities;
-
-        /// <summary>
-        /// 소유자 컴포넌트
-        /// </summary>
-        public Component Owner => _owner;
-
+        [SerializeField] private List<AttributeDefinition> _attributeDefaults = new List<AttributeDefinition>();
         [SerializeField, ReadOnly] private GameplayTagContainer _ownedTags;
 
         [SerializeField] private List<GameplayAbilityDefinition> _startupAbilityDefinitions = new();
@@ -39,6 +25,7 @@ namespace Noname.GameAbilitySystem
         private readonly Dictionary<string, int> _looseTagCounts = new Dictionary<string, int>(StringComparer.Ordinal);
 
         private readonly List<ActiveGameplayEffect> _activeEffects = new();
+        private readonly AttributeSet _attributes = new AttributeSet();
 
         private int _nextAbilityHandleId = 1;
 
@@ -50,8 +37,30 @@ namespace Noname.GameAbilitySystem
             public float EndTime;
         }
 
+                /// <summary>
+        /// 소유한 태그 컨테이너
+        /// </summary>
+        public GameplayTagContainer OwnedTags => _ownedTags;
+
+        /// <summary>
+        /// 소유한 능력들
+        /// </summary>
+        public IReadOnlyList<GameplayAbilitySpec> Abilities => _abilities;
+
+        /// <summary>
+        /// 소유자 컴포넌트
+        /// </summary>
+        public Component Owner => _owner;
+
+        /// <summary>
+        /// 속성 집합
+        /// </summary>
+        public AttributeSet Attributes => _attributes;
+
         private void Awake()
         {
+            _attributes.Initialize(_attributeDefaults);
+
             var found = GetComponentsInChildren<IAbilitySystemProvider>();
             if (found.Length == 0)
             {
@@ -270,13 +279,13 @@ namespace Noname.GameAbilitySystem
                 return false;
             }
 
-            if (!ability.CanActivateAbility(spec.Handle, _ownedTags, _ownedTags))
+            if (!ability.CanActivateAbility())
             {
                 Debug.LogWarning($"능력을 활성화할 수 없습니다. 핸들 ID: {spec.Handle.Id}");
                 return false;
             }
 
-            ability.CallActivateAbility(spec.Handle, eventData);
+            ability.CallActivateAbility(new AbilityContext(spec.Handle, eventData));
 
             //능력 발휘 시 효과 적용
             //효과는 여러개 일 수 있을 듯
@@ -468,7 +477,7 @@ namespace Noname.GameAbilitySystem
                 return true;
             }
 
-            foreach (var parent in global::GameplayTagUtility.EnumerateParents(eventTag.Value))
+            foreach (var parent in GameplayTagUtility.EnumerateParents(eventTag.Value))
             {
                 if (string.Equals(parent, triggerTag.Value, StringComparison.Ordinal))
                 {
@@ -503,6 +512,7 @@ namespace Noname.GameAbilitySystem
             }
 
             //Attribute 변경 수행
+            ApplyModifiers(effectConfig);
 
             if (effectConfig.DurationType == EGameplayEffectDurationType.Instant)
             {
@@ -529,6 +539,10 @@ namespace Noname.GameAbilitySystem
             }
         }
 
+        /// <summary>
+        /// 게임플레이 효과 태그를 추가합니다.
+        /// </summary>
+        /// <param name="effectConfig"></param>
         private void AddEffectTags(GameplayEffectConfig effectConfig)
         {
             foreach (var tag in effectConfig.GrantedTags.Tags)
@@ -537,11 +551,56 @@ namespace Noname.GameAbilitySystem
             }
         }
 
+        /// <summary>
+        /// 게임플레이 효과 태그를 제거합니다.
+        /// </summary>
+        /// </summary>
+        /// <param name="effectConfig"></param>
         private void RemoveEffectTags(GameplayEffectConfig effectConfig)
         {
             foreach (var tag in effectConfig.GrantedTags.Tags)
             {
                 RemoveTagInternal(_effectTagCounts, tag);
+            }
+        }
+
+        /// <summary>
+        /// 속성 수정자를 적용합니다.
+        /// </summary>
+        /// <param name="effectConfig"></param>
+        private void ApplyModifiers(GameplayEffectConfig effectConfig)
+        {
+            var modifiers = effectConfig.Modifiers;
+            if (modifiers == null)
+            {
+                return;
+            }
+
+            for (var i = 0; i < modifiers.Count; i++)
+            {
+                var modifier = modifiers[i];
+                if (modifier.Attribute == null)
+                {
+                    continue;
+                }
+
+                if (!_attributes.TryGet(modifier.Attribute, out var value))
+                {
+                    continue;
+                }
+
+                switch (modifier.Operation)
+                {
+                    case GameplayEffectModifierOperation.Add:
+                        value.CurrentValue += modifier.Magnitude;
+                        break;
+                    case GameplayEffectModifierOperation.Multiply:
+                        value.CurrentValue *= modifier.Magnitude;
+                        break;
+                    case GameplayEffectModifierOperation.Override:
+                        value.CurrentValue = modifier.Magnitude;
+                        break;
+                }
             }
         }
     }

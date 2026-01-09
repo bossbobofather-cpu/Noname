@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Noname.GameAbilitySystem
 {
     [CreateAssetMenu(menuName = "GameAbilitySystem/Config/GameplayTagConfig")]
-    public sealed class GameplayTagConfig : GameplayConfig
+    public class GameplayTagConfig : GameplayConfig
     {
         [SerializeField] private GameplayTagContainer _abilityTags = new();
         [SerializeField] private GameplayTagContainer _activationRequiredTags = new();

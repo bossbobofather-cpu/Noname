@@ -1,7 +1,9 @@
 {
   "name": "Noname.GameAbilitySystem.Plugin",
   "rootNamespace": "Noname.GameAbilitySystem",
-  "references": [],
+  "references": [
+    "Unity.InputSystem"
+  ],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
