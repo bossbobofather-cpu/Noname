@@ -3,15 +3,21 @@ using UnityEngine;
 
 namespace Noname.GameAbilitySystem
 {
+    public enum AttributeId
+    {
+        MoveSpeed = 0,
+        JumpSpeed = 1
+    }
+
     [CreateAssetMenu(menuName = "GameAbilitySystem/Attribute")]
     public sealed class AttributeDefinition : ScriptableObject
     {
-        [SerializeField] private string _id = "Attribute";
+        [SerializeField] private AttributeId _id = AttributeId.MoveSpeed;
         [SerializeField] private float _defaultBaseValue = 0f;
         [SerializeField] private float _minValue = 0f;
         [SerializeField] private float _maxValue = 0f;
 
-        public string Id => _id;
+        public AttributeId Id => _id;
         public float DefaultBaseValue => _defaultBaseValue;
         public float MinValue => _minValue;
         public float MaxValue => _maxValue;

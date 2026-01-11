@@ -1,5 +1,6 @@
 using System;
 using MergeGame.Provider;
+using Noname.GameAbilitySystem;
 using UnityEngine;
 
 namespace MergeGame.Unit
@@ -8,6 +9,9 @@ namespace MergeGame.Unit
     public sealed class UnitMoveController : MonoBehaviour, ILocomotionStateProvider
     {
         [SerializeField] private Rigidbody _body;
+        [SerializeField] private AbilitySystemComponent _abilitySystem;
+        [SerializeField] private AttributeDefinition _moveSpeedAttribute;
+        [SerializeField] private AttributeDefinition _jumpSpeedAttribute;
         [SerializeField] private float _moveSpeed = 5f;
         [SerializeField] private float _jumpSpeed = 5f;
         [SerializeField] private bool _useLocalSpace;
@@ -23,6 +27,8 @@ namespace MergeGame.Unit
 
         private Vector2 _inputVector;
         private bool _jumpRequested;
+        private bool _jumpActive;
+        private bool _jumpAppliedThisFrame;
         private Vector3 _velocity;
         private Vector3 _lastHorizontalVelocity;
         private LocomotionState _currentState;
@@ -49,6 +55,11 @@ namespace MergeGame.Unit
             {
                 _body.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
             }
+
+            if (_abilitySystem == null)
+            {
+                _abilitySystem = GetComponentInParent<AbilitySystemComponent>();
+            }
         }
 
         private void OnDisable()
@@ -70,6 +81,7 @@ namespace MergeGame.Unit
         public void RequestJump()
         {
             _jumpRequested = true;
+            _jumpActive = true;
         }
 
         private void FixedUpdate()
@@ -79,6 +91,7 @@ namespace MergeGame.Unit
                 return;
             }
 
+            _jumpAppliedThisFrame = false;
             IsGrounded = CheckGrounded();
 
             var move = new Vector3(_inputVector.x, 0f, _inputVector.y);
@@ -92,8 +105,9 @@ namespace MergeGame.Unit
             var canApplyHorizontal = IsGrounded || (_allowAirControl && HasMoveInput);
             if (canApplyHorizontal)
             {
-                targetVelocity.x = move.x * _moveSpeed;
-                targetVelocity.z = move.z * _moveSpeed;
+                var moveSpeed = GetMoveSpeed();
+                targetVelocity.x = move.x * moveSpeed;
+                targetVelocity.z = move.z * moveSpeed;
                 _lastHorizontalVelocity = new Vector3(targetVelocity.x, 0f, targetVelocity.z);
             }
             else if (!IsGrounded)
@@ -104,12 +118,19 @@ namespace MergeGame.Unit
 
             if (_jumpRequested && IsGrounded)
             {
-                targetVelocity.y = _jumpSpeed;
+                targetVelocity.y = GetJumpSpeed();
                 _jumpRequested = false;
+                _jumpActive = true;
+                _jumpAppliedThisFrame = true;
             }
 
             _body.linearVelocity = targetVelocity;
             _velocity = targetVelocity;
+
+            if (IsGrounded && !_jumpAppliedThisFrame && _velocity.y <= 0f)
+            {
+                _jumpActive = false;
+            }
 
             var faceDirection = canApplyHorizontal
                 ? move
@@ -144,6 +165,48 @@ namespace MergeGame.Unit
             , _groundLayers);
         }
 
+        private float GetMoveSpeed()
+        {
+            if (TryGetAttributeValue(_moveSpeedAttribute, out var value))
+            {
+                return value;
+            }
+
+            return _moveSpeed;
+        }
+
+        private float GetJumpSpeed()
+        {
+            if (TryGetAttributeValue(_jumpSpeedAttribute, out var value))
+            {
+                return value;
+            }
+
+            return _jumpSpeed;
+        }
+
+        private bool TryGetAttributeValue(AttributeDefinition definition, out float value)
+        {
+            value = 0f;
+            if (definition == null)
+            {
+                return false;
+            }
+
+            if (_abilitySystem == null)
+            {
+                _abilitySystem = GetComponentInParent<AbilitySystemComponent>();
+            }
+
+            if (_abilitySystem == null || !_abilitySystem.Attributes.TryGet(definition, out var attribute))
+            {
+                return false;
+            }
+
+            value = attribute.CurrentValue;
+            return true;
+        }
+
         private void SyncState()
         {
             var previous = _currentState;
@@ -154,7 +217,7 @@ namespace MergeGame.Unit
 
             var moving = grounded && moveIntent && hasSpeed;
             var airMoving = !grounded && moveIntent && hasSpeed;
-            var jumping = !grounded && _velocity.y > 0f;
+            var jumping = _jumpActive && _velocity.y > 0f;
             var falling = !grounded && _velocity.y <= 0f;
 
             var next = new LocomotionState

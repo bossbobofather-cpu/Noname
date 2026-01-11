@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Noname.GameAbilitySystem.Plugin::Noname.GameAbilitySystem.GameplayTagConfig
   _abilityTags:
     _tags:
-    - _value: Ability_Move
+    - _value: Ability_Jump
   _activationRequiredTags:
     _tags:
     - _value: Action.Grounded
   _activationBlockedTags:
     _tags:
-    - _value: Block.Move
+    - _value: Block.Jump

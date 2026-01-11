@@ -11,8 +11,36 @@ namespace Noname.GameAbilitySystem
     public sealed class GameplayTagRegistry : ScriptableObject
     {
         [SerializeField] private List<string> _tags = new();
+        [SerializeField] private GameplayTagContainer _systemMessageIgnoreTags = new();
+
+        private static GameplayTagRegistry _runtimeRegistry;
 
         public IReadOnlyList<string> Tags => _tags;
+        public GameplayTagContainer SystemMessageIgnoreTags => _systemMessageIgnoreTags;
+        public static GameplayTagRegistry RuntimeRegistry => _runtimeRegistry;
+
+        public static void SetRuntimeRegistry(GameplayTagRegistry registry)
+        {
+            _runtimeRegistry = registry;
+        }
+
+public bool IsSystemMessageIgnored(FGameplayTag tag)
+{
+    if (_systemMessageIgnoreTags == null || !tag.IsValid)
+    {
+        return false;
+    }
+
+    foreach (var candidate in GameplayTagUtility.EnumerateTagAndParents(tag.Value))
+    {
+        if (_systemMessageIgnoreTags.HasTagExact(new FGameplayTag(candidate)))
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
 
         public List<string> GetAllTags(bool includeParents = true)
         {

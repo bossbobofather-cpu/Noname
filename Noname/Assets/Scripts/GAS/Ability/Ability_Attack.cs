@@ -1,4 +1,3 @@
-using UnityEngine;
 using Noname.GameAbilitySystem;
 
 namespace MergeGame.Ability
@@ -12,10 +11,10 @@ namespace MergeGame.Ability
 
         protected override void PreActivate(AbilityContext context)
         {
-            //Targetting Config이 없을 수 없어야 한다. CanActivateAbility에 의해 걸러졌어야 했기 때문
+            //Targetting Config???�을 ???�어???�다. CanActivateAbility???�해 걸러졌어???�기 ?�문
             if (!TryGetConfig<GameplayTargettingConfig>(out var config))
             {
-                Debug.LogError($"Targetting Config를 찾을 수 없습니다.");
+                UnityEngine.Debug.LogError($"Targetting Config�?찾을 ???�습?�다.");
                 return;
             }
 
@@ -25,13 +24,14 @@ namespace MergeGame.Ability
         {
             if (TryGetConfig<GameplayTargettingConfig>(out var config))
             {
-                // 공격 능력 발동 로직 구현
-                Debug.Log("Ability_Attack activated with targetting config.");
+                // 공격 ?�력 발동 로직 구현
+                UnityEngine.Debug.Log("Ability_Attack activated with targetting config.");
             }
             else
             {
-                Debug.LogWarning("Ability_Attack activation failed: Missing GameplayTargettingConfig.");
+                UnityEngine.Debug.LogWarning("Ability_Attack activation failed: Missing GameplayTargettingConfig.");
             }
         }
     }
 }
+

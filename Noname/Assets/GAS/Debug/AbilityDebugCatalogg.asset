@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fed677cec23f8c7459c4103ccf13510e, type: 3}
+  m_Name: AbilityDebugCatalogg
+  m_EditorClassIdentifier: Assembly-CSharp::MergeGame.Debug.AbilityDebugCatalog
+  _abilities:
+  - {fileID: 11400000, guid: 7ba4df4ebc0f74e42a3b2fde7f624bef, type: 2}
+  - {fileID: 11400000, guid: e03d3f3272c17f14493c983aa62361ed, type: 2}
+  - {fileID: 11400000, guid: 1f8581e70e0cd7d46b88854d22d55bd0, type: 2}
+  _effects: []

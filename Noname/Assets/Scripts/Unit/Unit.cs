@@ -1,4 +1,5 @@
 using MergeGame.Config;
+using MergeGame.Debug;
 using MergeGame.Provider;
 using Noname.GameAbilitySystem;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEngine;
 namespace MergeGame.Unit
 {
     [DisallowMultipleComponent]
-    public sealed class Unit : MonoBehaviour, IAbilitySystemProvider
+    public sealed class Unit : MonoBehaviour, IAbilitySystemProvider, IDebugUtilObject
     {
         [SerializeField] private AbilitySystemComponent _abilitySystem;
         public AbilitySystemComponent AbilitySystem
@@ -194,9 +195,11 @@ namespace MergeGame.Unit
 
             if (current.IsGrounded)
             {
-                current.IsJumping = false;
                 current.IsAirMoving = false;
-                current.IsFalling = false;
+                if (!current.IsJumping)
+                {
+                    current.IsFalling = false;
+                }
             }
 
             UpdateTag(previous.IsGrounded, current.IsGrounded, _groundedTag);
@@ -206,7 +209,11 @@ namespace MergeGame.Unit
 
             if (current.IsGrounded)
             {
-                RevokeTag(_jumpTag);
+                if (!current.IsJumping)
+                {
+                    RevokeTag(_jumpTag);
+                }
+
                 RevokeTag(_fallingTag);
             }
         }

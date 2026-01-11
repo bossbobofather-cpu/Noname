@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: EventTriggerConfig_Jump
   m_EditorClassIdentifier: Noname.GameAbilitySystem.Plugin::GameplayEventTriggerConfig
   TriggerTag:
-    _value: Event.Input.Move
+    _value: Event.Input.Jump
   ActivateOnEvent: 1

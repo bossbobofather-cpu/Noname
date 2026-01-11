@@ -15,6 +15,7 @@ MonoBehaviour:
   _tags:
   - Ability_Attack
   - Ability_Move
+  - Ability_Jump
   - State.Idle
   - State.Attack
   - State.Die
@@ -22,6 +23,7 @@ MonoBehaviour:
   - State.Immortal
   - Action.Jumping
   - Action.Grounded
+  - Action.Moving
   - Action.Falling
   - Cooldown_Attack
   - Event.Attack.AnimEvent
@@ -30,3 +32,4 @@ MonoBehaviour:
   - Event.Input.Jump
   - Block.Attack
   - Block.Move
+  - Block.Jump
