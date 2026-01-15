@@ -135,6 +135,8 @@ MonoBehaviour:
     m_Bits: 4294967295
   _applyOnEnter: 1
   _removeOnExit: 1
+  _enterMessage: 
+  _exitMessage: 
 --- !u!114 &2821527563156408987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,15 +149,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a4a812f1a8c5744923ebc71cdb3fca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MergeGame.UI.CanvasObjectLabel
-  _title: Block Jump
-  _description: 'Trigger Enter : Add Block.Jump Tag
-
-    Trigger Exit : Remove Block.Jump
-    Tag '
+  _title: "Block Jump Tag\uB97C \uBD80\uC5EC\uD569\uB2C8\uB2E4."
   _root: {fileID: 0}
   _titleText: {fileID: 0}
-  _descriptionText: {fileID: 0}
-  _font: {fileID: 0}
+  _font: {fileID: 11400000, guid: b5d1b0170138db340b9296c514fbe9a5, type: 2}
   _canvas: {fileID: 0}
   _parent: {fileID: 0}
   _autoCreateCanvas: 1
@@ -165,7 +162,6 @@ MonoBehaviour:
   _maxWidth: 240
   _boldTitle: 1
   _titleColor: {r: 1, g: 1, b: 1, a: 1}
-  _descriptionColor: {r: 1, g: 1, b: 1, a: 1}
   _worldOffset: {x: 0, y: 2, z: 0}
   _screenOffset: {x: 0, y: 40}
   _worldCamera: {fileID: 0}

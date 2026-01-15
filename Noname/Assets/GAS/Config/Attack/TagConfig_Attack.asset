@@ -20,4 +20,4 @@ MonoBehaviour:
   _activationBlockedTags:
     _tags:
     - _value: Block.Attack
-    - _value: Cooldown_Attack
+    - _value: Cooldown.Attack

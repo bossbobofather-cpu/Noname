@@ -1,0 +1,74 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "Noname/Assets/Scripts/**/*.cs"
+          ]
+        }
+      ],
+      "dest": "api-noname",
+      "disableGitFeatures": true,
+      "allowCompilationErrors": true,
+      "properties": {
+        "TargetFramework": "netstandard2.1",
+        "LangVersion": "latest"
+      }
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "UpmPackages/com.noname.gameabilitysystem.plugin/Runtime/**/*.cs",
+            "UpmPackages/com.noname.gameabilitysystem.plugin/Editor/**/*.cs"
+          ]
+        }
+      ],
+      "dest": "api-plugin",
+      "disableGitFeatures": true,
+      "allowCompilationErrors": true,
+      "properties": {
+        "TargetFramework": "netstandard2.1",
+        "LangVersion": "latest"
+      }
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "docs/**.md",
+          "docs/**/toc.yml"
+        ]
+      },
+      {
+        "files": [
+          "api-noname/**.yml",
+          "api-noname/index.md"
+        ]
+      },
+      {
+        "files": [
+          "api-plugin/**.yml",
+          "api-plugin/index.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "docs/images/**"
+        ]
+      }
+    ],
+    "dest": "_site",
+    "globalMetadata": {
+      "_appTitle": "Noname Docs",
+      "_enableSearch": true
+    },
+    "template": [
+      "default"
+    ]
+  }
+}

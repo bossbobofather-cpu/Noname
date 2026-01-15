@@ -6,21 +6,6 @@ namespace Noname.GameAbilitySystem
     /// <summary>
     /// 능력 타겟팅 요청 정보
     /// </summary>
-    public struct AbilityTargetRequest
-    {
-        public bool UseOverrideOrigin;
-        public Vector3 OverrideOrigin;
-
-        public static AbilityTargetRequest FromOrigin(Vector3 origin)
-        {
-            return new AbilityTargetRequest
-            {
-                UseOverrideOrigin = true,
-                OverrideOrigin = origin
-            };
-        }
-    }
-
     /// <summary>
     /// 능력 타겟팅 데이터
     /// </summary>

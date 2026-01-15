@@ -1066,11 +1066,15 @@ GameObject:
   - component: {fileID: 2427211692846601022}
   - component: {fileID: 8302591639207858819}
   - component: {fileID: 1669576521772337336}
-  - component: {fileID: 559587587739639619}
   - component: {fileID: 8610880010093233859}
-  - component: {fileID: 1572537142925676519}
   - component: {fileID: 2354218617326432019}
-  - component: {fileID: 8843606584733395858}
+  - component: {fileID: 5674303697667093257}
+  - component: {fileID: 267406202911671413}
+  - component: {fileID: 6964963777513622272}
+  - component: {fileID: 7689984743362837345}
+  - component: {fileID: 5984431960169136536}
+  - component: {fileID: 1761792208454885233}
+  - component: {fileID: 6192581196693536878}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1133,12 +1137,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ae5ba2e18ddb24f8aa1152d154cfa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Noname.GameAbilitySystem.Plugin::Noname.GameAbilitySystem.AbilitySystemComponent
-  _attributeDefaults: []
+  _attributeDefaults:
+  - {fileID: 11400000, guid: eefc9785dac07cf46b52ced806d69f50, type: 2}
+  - {fileID: 11400000, guid: 913482ec42918144384fbab622487c08, type: 2}
+  - {fileID: 11400000, guid: 0fbef48f98534c08a914ff7806822215, type: 2}
+  - {fileID: 11400000, guid: d35c03fc09204ca2b1c574892d5e4d9b, type: 2}
+  - {fileID: 11400000, guid: 8c2c61bd64044d0fbeb9c3cf8d83cfec, type: 2}
+  - {fileID: 11400000, guid: bdf03cf25deb493ca0ed88d836508246, type: 2}
   _ownedTags:
     _tags: []
-  _startupAbilityDefinitions:
-  - {fileID: 11400000, guid: 1f8581e70e0cd7d46b88854d22d55bd0, type: 2}
-  - {fileID: 11400000, guid: e03d3f3272c17f14493c983aa62361ed, type: 2}
+  _startupAbilityDefinitions: []
+  _emitSystemMessages: 1
 --- !u!114 &1669576521772337336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,30 +1162,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MergeGame.Unit.Unit
   _abilitySystem: {fileID: 8302591639207858819}
   _animator: {fileID: 2427211692846601022}
-  _eventReceiver: {fileID: 0}
-  _muzzleTr: {fileID: 0}
-  _applyLocomotionTags: 1
-  _groundedTag:
-    _value: Action.Grounded
-  _jumpTag:
-    _value: Action.Jumping
-  _moveTag:
-    _value: Action.Moving
-  _fallingTag:
-    _value: Action.Falling
---- !u!114 &559587587739639619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3273652922334166238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 198eb4c1aa6960840aab0d772c1dc4e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MergeGame.Unit.AnimationEventReceiver
-  _animator: {fileID: 2427211692846601022}
+  _body: {fileID: 0}
+  _moveSpeed: 5
+  _jumpSpeed: 5
+  _moveBlock: 0
+  _useLocalSpace: 0
+  _autoAddRigidbody: 1
+  _freezeRotation: 1
+  _faceMovement: 1
+  _allowAirControl: 0
+  _rotationSpeed: 720
+  _inputDeadzone: 0.01
+  _speedDeadzone: 0.01
+  _groundLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  _groundCheckTr: {fileID: 2350247146264507561}
 --- !u!114 &8610880010093233859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,7 +1194,30 @@ MonoBehaviour:
   _abilitySystem: {fileID: 8302591639207858819}
   _actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   _autoEnableActions: 1
---- !u!54 &1572537142925676519
+--- !u!136 &2354218617326432019
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3273652922334166238}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!54 &5674303697667093257
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1220,7 +1244,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &2354218617326432019
+--- !u!136 &267406202911671413
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1243,7 +1267,7 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &8843606584733395858
+--- !u!114 &6964963777513622272
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1252,23 +1276,92 @@ MonoBehaviour:
   m_GameObject: {fileID: 3273652922334166238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b12045ad90f8dc24ca87e6da9df175a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 435620eedb7470e4d8b79b3124d09f59, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MergeGame.Unit.UnitMoveController
-  _body: {fileID: 1572537142925676519}
-  _moveSpeed: 5
-  _jumpSpeed: 5
-  _useLocalSpace: 0
-  _autoAddRigidbody: 1
-  _freezeRotation: 1
-  _faceMovement: 1
-  _rotationSpeed: 720
-  _inputDeadzone: 0.01
-  _speedDeadzone: 0.01
-  _groundLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  _groundCheckTr: {fileID: 2350247146264507561}
+  m_EditorClassIdentifier: Assembly-CSharp::MergeGame.Debug.AbilityDebugUI
+  _catalog: {fileID: 11400000, guid: 1915662ec99b87c4795f36d24b3ff82b, type: 2}
+  _abilityFallback: []
+  _effectFallback: []
+  _abilitySystem: {fileID: 8302591639207858819}
+  _followTarget: {fileID: 2748754131166815844}
+  _panel: {fileID: 0}
+  _panelPrefab: {fileID: 2180939638865201527, guid: b9dc6854b339b4f44a2e6259fd157852, type: 3}
+  _panelParent: {fileID: 0}
+  _canvas: {fileID: 0}
+  _autoCreateCanvas: 1
+  _worldCamera: {fileID: 0}
+  _worldOffset: {x: 0, y: 0, z: 0}
+  _refreshInterval: 0.25
+  _visible: 1
+  _toggleWithKey: 1
+  _toggleKey: 94
+--- !u!114 &7689984743362837345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3273652922334166238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bd0f0f8ba2211e4c9fbc37046f5c13f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MergeGame.Target.Targetable
+  _group: 0
+  _abilitySystem: {fileID: 0}
+  _transform: {fileID: 0}
+--- !u!114 &5984431960169136536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3273652922334166238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be42122ed67ceb14e8382055515d7776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MyProject.GameplayAbilitySystem.Bridge.AnimationEventBridge
+  _abilitySystem: {fileID: 0}
+--- !u!114 &1761792208454885233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3273652922334166238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f8274eb0de16746a48546b853e09f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MyProject.GameplayAbilitySystem.Bridge.LocomotionStateBridge
+  _abilitySystem: {fileID: 0}
+  _animator: {fileID: 0}
+  _groundedTag:
+    _value: Action.Grounded
+  _jumpTag:
+    _value: Action.Jumping
+  _moveTag:
+    _value: Ability_Move
+  _fallingTag:
+    _value: Action.Falling
+--- !u!114 &6192581196693536878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3273652922334166238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7420892e0e0b67a4a9d12a70496a408e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MyProject.GameplayAbilitySystem.Bridge.MovementBridge
+  _abilitySystem: {fileID: 0}
+  _moveSpeedAttributeId: 0
+  _jumpSpeedAttributeId: 1
+  _blockMoveTag:
+    _value: Block.Move
 --- !u!1 &3518843347864457933
 GameObject:
   m_ObjectHideFlags: 0

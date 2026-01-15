@@ -8,6 +8,7 @@ namespace Noname.GameAbilitySystem
     /// <summary>
     /// 능력 시스템 컴포넌트
     /// </summary>
+    [DisallowMultipleComponent]
     public sealed class AbilitySystemComponent : MonoBehaviour
     {
         [SerializeField] private List<AttributeDefinition> _attributeDefaults = new List<AttributeDefinition>();
@@ -19,11 +20,12 @@ namespace Noname.GameAbilitySystem
         private readonly Dictionary<FGameplayAbilitySpecHandle, GameplayAbilitySpec> _activatableAbilities = new();
 
         private List<GameplayAbilitySpec> _abilities = new();
+        private readonly Dictionary<FGameplayAbilitySpecHandle, List<GameplayAbilityInstance>> _activeInstances = new();
 
 
-        private readonly Dictionary<string, int> _effectTagCounts = new Dictionary<string, int>(StringComparer.Ordinal);
+        private readonly Dictionary<int, int> _effectTagCounts = new Dictionary<int, int>();
 
-        private readonly Dictionary<string, int> _looseTagCounts = new Dictionary<string, int>(StringComparer.Ordinal);
+        private readonly Dictionary<int, int> _looseTagCounts = new Dictionary<int, int>();
 
         private readonly List<ActiveGameplayEffect> _activeEffects = new();
         private readonly AttributeSet _attributes = new AttributeSet();
@@ -31,6 +33,10 @@ namespace Noname.GameAbilitySystem
         private int _nextAbilityHandleId = 1;
 
         private Component _owner;
+        private event Action<AbilitySystemComponent, AttributeModifier, AttributeValue, AttributeValue> _onChangedAttributeModifier;
+        private event Action<AbilitySystemComponent, FGameplayTag> _onAddedTag;
+        private event Action<AbilitySystemComponent, FGameplayTag> _onRemovedTag;
+        private event Action<AbilitySystemComponent, GameplayEventData> _onGameplayEvent;
 
         private struct ActiveGameplayEffect
         {
@@ -38,7 +44,7 @@ namespace Noname.GameAbilitySystem
             public float EndTime;
         }
 
-                /// <summary>
+        /// <summary>
         /// 소유한 태그 컨테이너
         /// </summary>
         public GameplayTagContainer OwnedTags => _ownedTags;
@@ -57,24 +63,6 @@ namespace Noname.GameAbilitySystem
         /// 속성 집합
         /// </summary>
         public AttributeSet Attributes => _attributes;
-
-        public void GetActiveEffects(List<GameplayEffectConfig> results)
-        {
-            if (results == null)
-            {
-                return;
-            }
-
-            results.Clear();
-            for (var i = 0; i < _activeEffects.Count; i++)
-            {
-                var config = _activeEffects[i].Config;
-                if (config != null)
-                {
-                    results.Add(config);
-                }
-            }
-        }
 
         private void Awake()
         {
@@ -113,7 +101,14 @@ namespace Noname.GameAbilitySystem
                 }
 
                 RemoveEffectTags(active.Config);
-                _activeEffects.RemoveAt(i);
+
+                // Swap and Pop 최적화: 순서가 중요하지 않으므로 마지막 요소와 교체 후 제거
+                var lastIndex = _activeEffects.Count - 1;
+                if (i < lastIndex)
+                {
+                    _activeEffects[i] = _activeEffects[lastIndex];
+                }
+                _activeEffects.RemoveAt(lastIndex);
             }
         }
 
@@ -141,17 +136,7 @@ namespace Noname.GameAbilitySystem
                 return FGameplayAbilitySpecHandle.Invalid;
             }
 
-            try
-            {
-                var abilityInstance = (GameplayAbility)Activator.CreateInstance(abilityType);
-                abilityInstance.InitializeAbility(this, abilityDefinition.Configs);
-                return GiveAbilityInternal(abilityInstance, abilityDefinition.name);
-            }
-            catch
-            {
-                Debug.LogError($"Failed to create ability instance: {abilityDefinition.AbilityTypeName}");
-                return FGameplayAbilitySpecHandle.Invalid;
-            }
+            return GiveAbilityInternal(abilityType, abilityDefinition.Configs, abilityDefinition.name);
         }
 
         /// <summary>
@@ -161,8 +146,15 @@ namespace Noname.GameAbilitySystem
         /// <returns></returns>
         public FGameplayAbilitySpecHandle GiveAbility(GameplayAbility ability)
         {
-            var abilityName = ability != null ? ability.GetType().Name : string.Empty;
-            return GiveAbilityInternal(ability, abilityName);
+            if (ability == null)
+            {
+                Debug.LogWarning("Ability is null.");
+                return FGameplayAbilitySpecHandle.Invalid;
+            }
+
+            var abilityType = ability.GetType();
+            var abilityName = abilityType != null ? abilityType.Name : string.Empty;
+            return GiveAbilityInternal(abilityType, ability.Configs, abilityName);
         }
 
         public bool RemoveAbility(GameplayAbilityDefinition abilityDefinition)
@@ -191,12 +183,8 @@ namespace Noname.GameAbilitySystem
                     continue;
                 }
 
-                if (spec.Ability != null)
-                {
-                    spec.Ability.EndAbility(handle);
-                    PublishSystemMessage($"능력 해제: {spec.Ability.GetType().Name}");
-                }
-
+                EndAbilityInstances(handle);
+                PublishSystemMessage($"능력 해제: {ResolveAbilityLabel(spec)}");
                 _abilities.RemoveAt(i);
                 return true;
             }
@@ -206,7 +194,7 @@ namespace Noname.GameAbilitySystem
 
         public bool RemoveAbilityByType(Type abilityType)
         {
-            return RemoveAbilityByTypeInternal(abilityType, abilityType != null ? abilityType.Name : string.Empty);
+            return RemoveAbilityByTypeInternal(abilityType, string.Empty);
         }
 
         public bool EndAbility(FGameplayAbilitySpecHandle handle)
@@ -221,13 +209,7 @@ namespace Noname.GameAbilitySystem
                 return false;
             }
 
-            if (spec.Ability == null)
-            {
-                return false;
-            }
-
-            spec.Ability.EndAbility(handle);
-            return true;
+            return EndAbilityInstances(handle);
         }
 
         public bool EndAbilityByType(Type abilityType)
@@ -240,21 +222,36 @@ namespace Noname.GameAbilitySystem
             for (var i = 0; i < _abilities.Count; i++)
             {
                 var spec = _abilities[i];
-                if (spec == null || spec.Ability == null)
+                if (spec == null || spec.AbilityType == null)
                 {
                     continue;
                 }
 
-                if (spec.Ability.GetType() != abilityType)
+                if (spec.AbilityType != abilityType)
                 {
                     continue;
                 }
 
-                spec.Ability.EndAbility(spec.Handle);
-                return true;
+                return EndAbilityInstances(spec.Handle);
             }
 
             return false;
+        }
+
+        public bool EndAbility(GameplayAbilityDefinition abilityDefinition)
+        {
+            if (abilityDefinition == null)
+            {
+                return false;
+            }
+
+            var abilityType = Type.GetType(abilityDefinition.AbilityTypeName);
+            if (!TryGetAbilitySpec(abilityType, abilityDefinition.name, out var spec))
+            {
+                return false;
+            }
+
+            return EndAbilityInstances(spec.Handle);
         }
 
         /// <summary>
@@ -273,13 +270,29 @@ namespace Noname.GameAbilitySystem
             foreach (var spec in _abilities)
             {
                 if (spec == null) continue;
-                if (spec.Ability == null) continue;
-                if (spec.Ability.GetType() != abilityType) continue;
+                if (spec.AbilityType == null) continue;
+                if (spec.AbilityType != abilityType) continue;
 
                 return TryActivateAbility(spec);
             }
 
             return false;
+        }
+
+        public bool TryActivateAbility(GameplayAbilityDefinition abilityDefinition)
+        {
+            if (abilityDefinition == null)
+            {
+                return false;
+            }
+
+            var abilityType = Type.GetType(abilityDefinition.AbilityTypeName);
+            if (!TryGetAbilitySpec(abilityType, abilityDefinition.name, out var spec))
+            {
+                return false;
+            }
+
+            return TryActivateAbility(spec);
         }
 
         /// <summary>
@@ -293,9 +306,9 @@ namespace Noname.GameAbilitySystem
             foreach (var spec in _abilities)
             {
                 if (spec == null) continue;
-                if (spec.Ability == null) continue;
+                if (spec.AbilityType == null) continue;
 
-                if (!spec.Ability.TryGetConfig<GameplayTagConfig>(out var tagConfig)) continue;
+                if (!spec.TryGetConfig<GameplayTagConfig>(out var tagConfig)) continue;
                 if (tagConfig == null) continue;
                 if (!tagConfig.AbilityTags.HasTag(abilityTag)) continue;
 
@@ -351,14 +364,13 @@ namespace Noname.GameAbilitySystem
                 return false;
             }
 
-            var ability = spec.Ability;
-            if (ability == null)
+            if (spec.AbilityType == null)
             {
-                Debug.LogWarning($"능력 이 null입니다. 핸들 ID: {spec.Handle.Id}");
+                Debug.LogWarning($"능력 타입이 null입니다. 핸들 ID: {spec.Handle.Id}");
                 return false;
             }
 
-            if (!ability.TryGetConfig<GameplayTagConfig>(out var tagConfig))
+            if (!spec.TryGetConfig<GameplayTagConfig>(out var tagConfig))
             {
                 Debug.LogWarning($"게임 태그 구성을 찾을 수 없습니다. 핸들 ID: {spec.Handle.Id}");
                 return false;
@@ -368,7 +380,7 @@ namespace Noname.GameAbilitySystem
             {
                 Debug.LogWarning($"필수 활성화 태그가 누락되었습니다. 핸들 ID: {spec.Handle.Id}");
 
-                SystemMessageBus.Publish($"능력 활성화 차단됨: {ability.GetType().Name} (필수 태그 누락)");
+                SystemMessageBus.Publish($"능력 활성화 차단됨: {ResolveAbilityLabel(spec)} (필수 태그 누락)");
                 return false;
             }
 
@@ -376,8 +388,15 @@ namespace Noname.GameAbilitySystem
             {
                 Debug.LogWarning($"차단 태그로 인해 활성화할 수 없습니다. 핸들 ID: {spec.Handle.Id}");
 
-                SystemMessageBus.Publish($"능력 활성화 차단됨: {ability.GetType().Name} (차단 태그 존재)");
+                SystemMessageBus.Publish($"능력 활성화 차단됨: {ResolveAbilityLabel(spec)} (차단 태그 존재)");
 
+                return false;
+            }
+
+            var ability = CreateAbilityInstance(spec);
+            if (ability == null)
+            {
+                Debug.LogWarning($"능력 인스턴스를 생성할 수 없습니다. 핸들 ID: {spec.Handle.Id}");
                 return false;
             }
 
@@ -387,16 +406,44 @@ namespace Noname.GameAbilitySystem
                 return false;
             }
 
-            ability.CallActivateAbility(new AbilityContext(spec.Handle, eventData));
+            var context = new AbilityContext(spec.Handle, eventData);
+            var instance = new GameplayAbilityInstance(this, ability, context);
+            RegisterAbilityInstance(spec, instance);
+            instance.Activate();
 
             //능력 발휘 시 효과 적용
             //효과는 여러개 일 수 있을 듯
-            if (ability.TryGetConfigs<GameplayEffectConfig>(out var effectConfigs))
+            if (spec.TryGetConfigs<GameplayEffectConfig>(out var effectConfigs))
             {
                 ApplyGameplayEffect(effectConfigs);
             }
 
             return true;
+        }
+
+        private GameplayAbility CreateAbilityInstance(GameplayAbilitySpec spec)
+        {
+            if (spec == null || spec.AbilityType == null)
+            {
+                return null;
+            }
+
+            if (!typeof(GameplayAbility).IsAssignableFrom(spec.AbilityType))
+            {
+                return null;
+            }
+
+            try
+            {
+                var ability = (GameplayAbility)Activator.CreateInstance(spec.AbilityType);
+                ability.InitializeAbility(this, spec.Configs);
+                return ability;
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError($"Failed to create ability instance: {spec.AbilityType}. {ex.Message}");
+                return null;
+            }
         }
 
         /// <summary>
@@ -413,28 +460,40 @@ namespace Noname.GameAbilitySystem
             }
 
             var eventTag = eventData.EventTag;
+            _onGameplayEvent?.Invoke(this, eventData);
             var bSuccess = false;
             foreach (var spec in _abilities)
             {
                 if (spec == null) continue;
-                if (spec.Ability == null) continue;
+                if (spec.AbilityType == null) continue;
 
-                if (!spec.Ability.TryGetConfig<GameplayEventTriggerConfig>(out var triggerConfig))
+                if (!spec.TryGetConfigs<GameplayEventTriggerConfig>(out var triggerConfigs))
                 {
                     continue;
                 }
 
-                if (triggerConfig == null || !triggerConfig.ActivateOnEvent)
+                var matched = false;
+                for (var i = 0; i < triggerConfigs.Count; i++)
                 {
-                    continue;
+                    var triggerConfig = triggerConfigs[i];
+                    if (triggerConfig == null || !triggerConfig.ActivateOnEvent)
+                    {
+                        continue;
+                    }
+
+                    if (!IsEventTagMatch(eventTag, triggerConfig.TriggerTag))
+                    {
+                        continue;
+                    }
+
+                    matched = true;
+                    break;
                 }
 
-                if (!IsEventTagMatch(eventTag, triggerConfig.TriggerTag))
+                if (matched)
                 {
-                    continue;
+                    bSuccess |= TryActivateAbility(spec, eventData);
                 }
-
-                bSuccess |= TryActivateAbility(spec, eventData);
             }
 
             return bSuccess;
@@ -446,7 +505,7 @@ namespace Noname.GameAbilitySystem
         /// <param name="tag"></param>
         public void AddLooseTag(FGameplayTag tag)
         {
-            AddTagInternal(_looseTagCounts, tag);
+            AddTagInternal(_looseTagCounts, tag, isLooseTag: true);
         }
 
         /// <summary>
@@ -455,7 +514,90 @@ namespace Noname.GameAbilitySystem
         /// <param name="tag"></param>
         public void RemoveLooseTag(FGameplayTag tag)
         {
-            RemoveTagInternal(_looseTagCounts, tag);
+            RemoveTagInternal(_looseTagCounts, tag, isLooseTag: true);
+        }
+
+        private void RegisterAbilityInstance(GameplayAbilitySpec spec, GameplayAbilityInstance instance)
+        {
+            if (spec == null || instance == null)
+            {
+                return;
+            }
+
+            if (!_activeInstances.TryGetValue(spec.Handle, out var list))
+            {
+                list = new List<GameplayAbilityInstance>();
+                _activeInstances[spec.Handle] = list;
+            }
+
+            list.Add(instance);
+            spec.ActiveCount = list.Count;
+        }
+
+        private bool EndAbilityInstances(FGameplayAbilitySpecHandle handle)
+        {
+            if (!_activeInstances.TryGetValue(handle, out var list))
+            {
+                return false;
+            }
+
+            var snapshot = list.ToArray();
+            list.Clear();
+            _activeInstances.Remove(handle);
+
+            for (var i = 0; i < snapshot.Length; i++)
+            {
+                snapshot[i]?.End();
+            }
+
+            if (FindAbilitySpec(handle, out var spec))
+            {
+                spec.ActiveCount = 0;
+            }
+
+            return snapshot.Length > 0;
+        }
+
+        public event Action<AbilitySystemComponent, AttributeModifier, AttributeValue, AttributeValue> onChangedAttributeModifier
+        {
+            add => _onChangedAttributeModifier += value;
+            remove => _onChangedAttributeModifier -= value;
+        }
+
+        public event Action<AbilitySystemComponent, FGameplayTag> onAddedTag
+        {
+            add => _onAddedTag += value;
+            remove => _onAddedTag -= value;
+        }
+
+        public event Action<AbilitySystemComponent, FGameplayTag> onRemovedTag
+        {
+            add => _onRemovedTag += value;
+            remove => _onRemovedTag -= value;
+        }
+
+        public event Action<AbilitySystemComponent, GameplayEventData> onGameplayEvent
+        {
+            add => _onGameplayEvent += value;
+            remove => _onGameplayEvent -= value;
+        }
+
+        public void GetActiveEffects(List<GameplayEffectConfig> results)
+        {
+            if (results == null)
+            {
+                return;
+            }
+
+            results.Clear();
+            for (var i = 0; i < _activeEffects.Count; i++)
+            {
+                var config = _activeEffects[i].Config;
+                if (config != null)
+                {
+                    results.Add(config);
+                }
+            }
         }
 
         /// <summary>
@@ -479,25 +621,58 @@ namespace Noname.GameAbilitySystem
             return false;
         }
 
-        private FGameplayAbilitySpecHandle GiveAbilityInternal(GameplayAbility ability, string abilityName)
+        private bool TryGetAbilitySpec(Type abilityType, string abilityName, out GameplayAbilitySpec outSpec)
         {
-            if (ability == null)
+            outSpec = null;
+            if (abilityType == null)
             {
-                Debug.LogWarning("Ability is null.");
+                return false;
+            }
+
+            foreach (var spec in _abilities)
+            {
+                if (spec == null || spec.AbilityType == null)
+                {
+                    continue;
+                }
+
+                if (spec.AbilityType != abilityType)
+                {
+                    continue;
+                }
+
+                if (!IsAbilityNameMatch(spec, abilityName))
+                {
+                    continue;
+                }
+
+                outSpec = spec;
+                return true;
+            }
+
+            return false;
+        }
+
+        private FGameplayAbilitySpecHandle GiveAbilityInternal(Type abilityType, IReadOnlyList<GameplayConfig> configs, string abilityName)
+        {
+            if (abilityType == null)
+            {
+                Debug.LogWarning("Ability type is null.");
                 return FGameplayAbilitySpecHandle.Invalid;
             }
 
             var spec = new GameplayAbilitySpec
             {
-                Ability = ability,
+                AbilityType = abilityType,
+                AbilityName = abilityName,
+                Configs = configs ?? Array.Empty<GameplayConfig>(),
                 Level = 1,
                 ActiveCount = 0,
                 Handle = new FGameplayAbilitySpecHandle { Id = _nextAbilityHandleId++ }
             };
 
             _abilities.Add(spec);
-            var label = string.IsNullOrWhiteSpace(abilityName) ? ability.GetType().Name : abilityName;
-            PublishSystemMessage($"능력 부착: {label}");
+            PublishSystemMessage($"능력 부착: {ResolveAbilityLabel(spec)}");
             return spec.Handle;
         }
 
@@ -511,25 +686,50 @@ namespace Noname.GameAbilitySystem
             for (var i = _abilities.Count - 1; i >= 0; i--)
             {
                 var spec = _abilities[i];
-                if (spec == null || spec.Ability == null)
+                if (spec == null || spec.AbilityType == null)
                 {
                     continue;
                 }
 
-                if (spec.Ability.GetType() != abilityType)
+                if (spec.AbilityType != abilityType)
                 {
                     continue;
                 }
 
-                spec.Ability.EndAbility(spec.Handle);
+                if (!IsAbilityNameMatch(spec, abilityName))
+                {
+                    continue;
+                }
+
+                EndAbilityInstances(spec.Handle);
                 _abilities.RemoveAt(i);
 
-                var label = string.IsNullOrWhiteSpace(abilityName) ? spec.Ability.GetType().Name : abilityName;
-                PublishSystemMessage($"능력 해제: {label}");
+                PublishSystemMessage($"능력 해제: {ResolveAbilityLabel(spec, abilityName)}");
                 return true;
             }
 
             return false;
+        }
+
+        private static bool IsAbilityNameMatch(GameplayAbilitySpec spec, string abilityName)
+        {
+            if (string.IsNullOrWhiteSpace(abilityName))
+            {
+                return true;
+            }
+
+            if (spec == null)
+            {
+                return false;
+            }
+
+            if (!string.IsNullOrWhiteSpace(spec.AbilityName))
+            {
+                return string.Equals(spec.AbilityName, abilityName, StringComparison.Ordinal);
+            }
+
+            var typeName = spec.AbilityType != null ? spec.AbilityType.Name : string.Empty;
+            return string.Equals(typeName, abilityName, StringComparison.Ordinal);
         }
 
         /// <summary>
@@ -554,6 +754,26 @@ namespace Noname.GameAbilitySystem
             SystemMessageBus.Publish(message);
         }
 
+        private static string ResolveAbilityLabel(GameplayAbilitySpec spec, string fallback = null)
+        {
+            if (!string.IsNullOrWhiteSpace(fallback))
+            {
+                return fallback;
+            }
+
+            if (spec != null && !string.IsNullOrWhiteSpace(spec.AbilityName))
+            {
+                return spec.AbilityName;
+            }
+
+            if (spec?.AbilityType != null)
+            {
+                return spec.AbilityType.Name;
+            }
+
+            return "Ability";
+        }
+
         private static bool IsTagMessageIgnored(FGameplayTag tag)
         {
             var registry = GameplayTagRegistry.RuntimeRegistry;
@@ -565,27 +785,31 @@ namespace Noname.GameAbilitySystem
         /// </summary>
         /// <param name="counts"></param>
         /// <param name="tag"></param>
-        private void AddTagInternal(Dictionary<string, int> counts, FGameplayTag tag)
+        /// <param name="isLooseTag">느슨한 태그 여부 (로그용)</param>
+        private void AddTagInternal(Dictionary<int, int> counts, FGameplayTag tag, bool isLooseTag = false)
         {
-            var value = tag.Value;
-            if (string.IsNullOrEmpty(value))
+            if (!tag.IsValid)
             {
                 return;
             }
 
-            var beforeTotal = GetTotalTagCount(value);
-            counts.TryGetValue(value, out var count);
+            var hash = tag.Hash;
+            var beforeTotal = GetTotalTagCount(hash);
+            counts.TryGetValue(hash, out var count);
             count++;
-            counts[value] = count;
+            counts[hash] = count;
 
             if (beforeTotal == 0)
             {
                 _ownedTags.AddTag(tag);
+
+                _onAddedTag?.Invoke(this, tag);
             }
 
-            if (!IsTagMessageIgnored(tag))
+            // 로그 메시지가 켜져 있고, 시스템 메시지 무시 태그가 아닐 때만 로그 발생 (느슨한 태그일 때만 주로 로그를 남기거나 필요에 따라 조정)
+            if (isLooseTag && !IsTagMessageIgnored(tag))
             {
-                SystemMessageBus.Publish($"태그 추가: {value} (총 {GetTotalTagCount(value)})");
+                PublishSystemMessage($"태그 추가: {tag.Value} (총 {GetTotalTagCount(hash)})");
             }
         }
 
@@ -594,15 +818,16 @@ namespace Noname.GameAbilitySystem
         /// </summary>
         /// <param name="counts"></param>
         /// <param name="tag"></param>
-        private void RemoveTagInternal(Dictionary<string, int> counts, FGameplayTag tag)
+        /// <param name="isLooseTag">느슨한 태그 여부 (로그용)</param>
+        private void RemoveTagInternal(Dictionary<int, int> counts, FGameplayTag tag, bool isLooseTag = false)
         {
-            var value = tag.Value;
-            if (string.IsNullOrEmpty(value))
+            if (!tag.IsValid)
             {
                 return;
             }
 
-            if (!counts.TryGetValue(value, out var count))
+            var hash = tag.Hash;
+            if (!counts.TryGetValue(hash, out var count))
             {
                 return;
             }
@@ -610,33 +835,35 @@ namespace Noname.GameAbilitySystem
             count--;
             if (count <= 0)
             {
-                counts.Remove(value);
+                counts.Remove(hash);
             }
             else
             {
-                counts[value] = count;
+                counts[hash] = count;
             }
 
-            if (GetTotalTagCount(value) == 0)
+            if (GetTotalTagCount(hash) == 0)
             {
-                _ownedTags.RemoveTag(new FGameplayTag(value));
+                _ownedTags.RemoveTag(tag);
+
+                _onRemovedTag?.Invoke(this, tag);
             }
 
-            if (!IsTagMessageIgnored(tag))
+            if (isLooseTag && !IsTagMessageIgnored(tag))
             {
-                SystemMessageBus.Publish($"태그 제거: {value} (총 {GetTotalTagCount(value)})");
+                PublishSystemMessage($"태그 제거: {tag.Value} (총 {GetTotalTagCount(hash)})");
             }
         }
 
         /// <summary>
         /// 태그의 총 개수를 가져옵니다.
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="hash"></param>
         /// <returns></returns>
-        private int GetTotalTagCount(string value)
+        private int GetTotalTagCount(int hash)
         {
-            _effectTagCounts.TryGetValue(value, out var effectCount);
-            _looseTagCounts.TryGetValue(value, out var looseCount);
+            _effectTagCounts.TryGetValue(hash, out var effectCount);
+            _looseTagCounts.TryGetValue(hash, out var looseCount);
             return effectCount + looseCount;
         }
 
@@ -658,15 +885,9 @@ namespace Noname.GameAbilitySystem
                 return true;
             }
 
-            foreach (var parent in GameplayTagUtility.EnumerateParents(eventTag.Value))
-            {
-                if (string.Equals(parent, triggerTag.Value, StringComparison.Ordinal))
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            // 최적화: 부모 태그를 열거(Substring 할당)하고 해시하는 대신, 문자열 포함 여부만 확인
+            // FGameplayTag는 내부적으로 문자열을 가지고 있으므로 이를 활용하여 Zero Allocation 구현
+            return GameplayTagUtility.IsDescendant(eventTag.Value, triggerTag.Value);
         }
 
         /// <summary>
@@ -675,10 +896,8 @@ namespace Noname.GameAbilitySystem
         /// <param name="effectConfigs"></param>
         private void ApplyGameplayEffect(IReadOnlyList<GameplayEffectConfig> effectConfigs)
         {
-            for (var i = 0; i < effectConfigs.Count; i++)
-            {
-                ApplyGameplayEffect(effectConfigs[i]);
-            }
+            var context = new GameplayEffectContext(this, this, default);
+            ApplyGameplayEffect(effectConfigs, context);
         }
 
         /// <summary>
@@ -687,13 +906,18 @@ namespace Noname.GameAbilitySystem
         /// <param name="effectConfig"></param>
         public void ApplyGameplayEffect(GameplayEffectConfig effectConfig)
         {
+            ApplyGameplayEffect(effectConfig, new GameplayEffectContext(this, this, default));
+        }
+
+        public void ApplyGameplayEffect(GameplayEffectConfig effectConfig, GameplayEffectContext context)
+        {
             if (effectConfig == null)
             {
                 return;
             }
 
             //Attribute 변경 수행
-            ApplyModifiers(effectConfig);
+            ApplyModifiers(effectConfig, context);
 
             if (effectConfig.DurationType == EGameplayEffectDurationType.Instant)
             {
@@ -728,6 +952,19 @@ namespace Noname.GameAbilitySystem
             }
         }
 
+        private void ApplyGameplayEffect(IReadOnlyList<GameplayEffectConfig> effectConfigs, GameplayEffectContext context)
+        {
+            if (effectConfigs == null)
+            {
+                return;
+            }
+
+            for (var i = 0; i < effectConfigs.Count; i++)
+            {
+                ApplyGameplayEffect(effectConfigs[i], context);
+            }
+        }
+
         public bool RemoveGameplayEffect(GameplayEffectConfig effectConfig)
         {
             if (effectConfig == null)
@@ -744,7 +981,12 @@ namespace Noname.GameAbilitySystem
                 }
 
                 RemoveEffectTags(effectConfig);
-                _activeEffects.RemoveAt(i);
+                var lastIndex = _activeEffects.Count - 1;
+                if (i < lastIndex)
+                {
+                    _activeEffects[i] = _activeEffects[lastIndex];
+                }
+                _activeEffects.RemoveAt(lastIndex);
                 return true;
             }
 
@@ -759,7 +1001,7 @@ namespace Noname.GameAbilitySystem
         {
             foreach (var tag in effectConfig.GrantedTags.Tags)
             {
-                AddTagInternal(_effectTagCounts, tag);
+                AddTagInternal(_effectTagCounts, tag, isLooseTag: false);
             }
         }
 
@@ -772,7 +1014,7 @@ namespace Noname.GameAbilitySystem
         {
             foreach (var tag in effectConfig.GrantedTags.Tags)
             {
-                RemoveTagInternal(_effectTagCounts, tag);
+                RemoveTagInternal(_effectTagCounts, tag, isLooseTag: false);
             }
         }
 
@@ -780,7 +1022,8 @@ namespace Noname.GameAbilitySystem
         /// 속성 수정자를 적용합니다.
         /// </summary>
         /// <param name="effectConfig"></param>
-        private void ApplyModifiers(GameplayEffectConfig effectConfig)
+        /// <param name="context"></param>
+        private void ApplyModifiers(GameplayEffectConfig effectConfig, GameplayEffectContext context)
         {
             var modifiers = effectConfig.Modifiers;
             if (modifiers == null)
@@ -801,19 +1044,69 @@ namespace Noname.GameAbilitySystem
                     continue;
                 }
 
+                var prevValue = value;
+                var magnitude = ResolveModifierMagnitude(modifier, effectConfig, context);
                 switch (modifier.Operation)
                 {
                     case GameplayEffectModifierOperation.Add:
-                        value.CurrentValue += modifier.Magnitude;
+                        value.CurrentValue += magnitude;
                         break;
                     case GameplayEffectModifierOperation.Multiply:
-                        value.CurrentValue *= modifier.Magnitude;
+                        value.CurrentValue *= magnitude;
                         break;
                     case GameplayEffectModifierOperation.Override:
-                        value.CurrentValue = modifier.Magnitude;
+                        value.CurrentValue = magnitude;
                         break;
                 }
+
+                if (prevValue == value)
+                {
+                    continue;
+                }
+
+                OnChangedAttributeModifier(modifier, prevValue, value);
+
+                // 로그 메시지 생성 비용(문자열 할당)을 줄이기 위해 플래그 먼저 확인
+                if (_emitSystemMessages)
+                {
+                    SystemMessageBus.Publish(
+                        $"속성 수정: {modifier.Attribute.name} {prevValue.CurrentValue} 에서 {value.CurrentValue} 로 (연산: {modifier.Operation}, 크기: {magnitude})");
+                }
             }
+        }
+
+        private static float ResolveModifierMagnitude(
+            AttributeModifier modifier,
+            GameplayEffectConfig effectConfig,
+            GameplayEffectContext context)
+        {
+            switch (modifier.ValueMode)
+            {
+                case AttributeModifierValueMode.Calculated:
+                    return EvaluateModifierCalculator(modifier, effectConfig, context);
+                case AttributeModifierValueMode.StaticPlusCalculated:
+                    return modifier.Magnitude + EvaluateModifierCalculator(modifier, effectConfig, context);
+                default:
+                    return modifier.Magnitude;
+            }
+        }
+
+        private static float EvaluateModifierCalculator(
+            AttributeModifier modifier,
+            GameplayEffectConfig effectConfig,
+            GameplayEffectContext context)
+        {
+            if (modifier.Calculator == null)
+            {
+                return 0f;
+            }
+
+            return modifier.Calculator.EvaluateMagnitude(effectConfig, modifier, context);
+        }
+
+        private void OnChangedAttributeModifier(AttributeModifier modifier, AttributeValue prevValue, AttributeValue value)
+        {
+            _onChangedAttributeModifier?.Invoke(this, modifier, prevValue, value);
         }
     }
 }

@@ -6,7 +6,11 @@ namespace Noname.GameAbilitySystem
     public enum AttributeId
     {
         MoveSpeed = 0,
-        JumpSpeed = 1
+        JumpSpeed = 1,
+        Health = 2,
+        AttackRange = 3,
+        AttackSpeed = 4,
+        AttackDamage = 5
     }
 
     [CreateAssetMenu(menuName = "GameAbilitySystem/Attribute")]
@@ -68,12 +72,15 @@ namespace Noname.GameAbilitySystem
     {
         private readonly Dictionary<AttributeDefinition, AttributeValue> _values =
             new();
+        private readonly Dictionary<AttributeId, AttributeValue> _valuesById =
+            new();
 
         public IReadOnlyCollection<AttributeValue> Values => _values.Values;
 
         public void Initialize(IEnumerable<AttributeDefinition> definitions)
         {
             _values.Clear();
+            _valuesById.Clear();
             if (definitions == null)
             {
                 return;
@@ -86,13 +93,23 @@ namespace Noname.GameAbilitySystem
                     continue;
                 }
 
-                _values.Add(definition, new AttributeValue(definition));
+                var value = new AttributeValue(definition);
+                _values.Add(definition, value);
+                if (!_valuesById.ContainsKey(definition.Id))
+                {
+                    _valuesById.Add(definition.Id, value);
+                }
             }
         }
 
         public bool TryGet(AttributeDefinition definition, out AttributeValue value)
         {
             return _values.TryGetValue(definition, out value);
+        }
+
+        public bool TryGet(AttributeId id, out AttributeValue value)
+        {
+            return _valuesById.TryGetValue(id, out value);
         }
     }
 }

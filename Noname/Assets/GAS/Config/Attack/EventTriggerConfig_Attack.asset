@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: EventTriggerConfig_Attack
   m_EditorClassIdentifier: Noname.GameAbilitySystem.Plugin::GameplayEventTriggerConfig
   TriggerTag:
-    _value: Event.Attack
+    _value: Event.Input.Attack
   ActivateOnEvent: 1

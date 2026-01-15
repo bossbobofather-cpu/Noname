@@ -1,25 +1,60 @@
-
 using System;
+using System.Collections.Generic;
 
 namespace Noname.GameAbilitySystem
 {
-    /// 게임 플레이 능력 사양 구조체
     public sealed class GameplayAbilitySpec
     {
-        public GameplayAbility Ability;                 // 어떤 능력인지
-        public int Level;                               // 능력의 레벨
-        public int ActiveCount;                         // 능력이 활성화된 횟수
-        public FGameplayAbilitySpecHandle Handle;       // 능력의 고유 핸들
+        public Type AbilityType;
+        public string AbilityName;
+        public IReadOnlyList<GameplayConfig> Configs;
+        public int Level;
+        public int ActiveCount;
+        public FGameplayAbilitySpecHandle Handle;
+
+        public bool TryGetConfigs<T>(out List<T> configs) where T : GameplayConfig
+        {
+            configs = new List<T>();
+            if (Configs == null)
+            {
+                return false;
+            }
+
+            for (var i = 0; i < Configs.Count; i++)
+            {
+                if (Configs[i] is T typed)
+                {
+                    configs.Add(typed);
+                }
+            }
+
+            return configs.Count > 0;
+        }
+
+        public bool TryGetConfig<T>(out T config) where T : GameplayConfig
+        {
+            if (Configs != null)
+            {
+                for (var i = 0; i < Configs.Count; i++)
+                {
+                    if (Configs[i] is T typed)
+                    {
+                        config = typed;
+                        return true;
+                    }
+                }
+            }
+
+            config = null;
+            return false;
+        }
     }
 
-    /// <summary>
-    /// 게임 플레이 능력 사양 핸들
-    /// </summary>
-    public struct FGameplayAbilitySpecHandle : IEquatable<FGameplayAbilitySpecHandle>   //박싱 방지 위한 Equatable 구현
+    public struct FGameplayAbilitySpecHandle : IEquatable<FGameplayAbilitySpecHandle>
     {
         public static readonly FGameplayAbilitySpecHandle Invalid = new FGameplayAbilitySpecHandle { Id = 0 };
-        
-        public int Id;                                  // 핸들의 고유 ID
+
+        public int Id;
 
         public bool Equals(FGameplayAbilitySpecHandle other)
         {

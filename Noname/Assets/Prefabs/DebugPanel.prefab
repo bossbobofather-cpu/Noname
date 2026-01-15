@@ -1885,6 +1885,8 @@ MonoBehaviour:
   _tagContent: {fileID: 1781777634265620083}
   _attributeContent: {fileID: 5546422588848605079}
   _font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  _tooltipConfig: {fileID: 11400000, guid: bce3751119e079e4a812058b977a16bc, type: 2}
+  _tooltipDelay: 1
 --- !u!222 &8284724337377149525
 CanvasRenderer:
   m_ObjectHideFlags: 0

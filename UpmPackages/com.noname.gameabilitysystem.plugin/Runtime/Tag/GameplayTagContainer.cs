@@ -8,8 +8,8 @@ namespace Noname.GameAbilitySystem
     public sealed class GameplayTagContainer : ISerializationCallbackReceiver
     {
         [SerializeField] private List<FGameplayTag> _tags = new();
-        [NonSerialized] private HashSet<string> _explicitTags;
-        [NonSerialized] private HashSet<string> _expandedTags;
+        [NonSerialized] private HashSet<int> _explicitTags;
+        [NonSerialized] private HashSet<int> _expandedTags;
 
         public IReadOnlyList<FGameplayTag> Tags => _tags;
 
@@ -104,13 +104,13 @@ namespace Noname.GameAbilitySystem
             }
 
             EnsureCache();
-            if (_explicitTags.Contains(value))
+            if (_explicitTags.Contains(tag.Hash))
             {
                 return;
             }
 
             _tags.Add(tag);
-            AddToCache(value);
+            AddToCache(tag);
         }
 
         public void RemoveTag(FGameplayTag tag)
@@ -143,14 +143,13 @@ namespace Noname.GameAbilitySystem
 
         private bool HasTagInternal(FGameplayTag tag, bool includeParents)
         {
-            var value = tag.Value;
-            if (string.IsNullOrEmpty(value))
+            if (string.IsNullOrEmpty(tag.Value))
             {
                 return false;
             }
 
             EnsureCache();
-            return includeParents ? _expandedTags.Contains(value) : _explicitTags.Contains(value);
+            return includeParents ? _expandedTags.Contains(tag.Hash) : _explicitTags.Contains(tag.Hash);
         }
 
         private void EnsureCache()
@@ -163,38 +162,45 @@ namespace Noname.GameAbilitySystem
 
         private void RebuildCache()
         {
-            _explicitTags = new HashSet<string>(StringComparer.Ordinal);
-            _expandedTags = new HashSet<string>(StringComparer.Ordinal);
+            if (_explicitTags == null)
+                _explicitTags = new HashSet<int>();
+            else
+                _explicitTags.Clear();
+
+            if (_expandedTags == null)
+                _expandedTags = new HashSet<int>();
+            else
+                _expandedTags.Clear();
 
             for (var i = 0; i < _tags.Count; i++)
             {
-                var value = _tags[i].Value;
-                if (string.IsNullOrEmpty(value))
+                var tag = _tags[i];
+                if (string.IsNullOrEmpty(tag.Value))
                 {
                     continue;
                 }
 
-                if (_explicitTags.Add(value))
+                if (_explicitTags.Add(tag.Hash))
                 {
-                    AddParentsToCache(value);
+                    AddParentsToCache(tag.Value);
                 }
             }
         }
 
-        private void AddToCache(string value)
+        private void AddToCache(FGameplayTag tag)
         {
-            if (_explicitTags.Add(value))
+            if (_explicitTags.Add(tag.Hash))
             {
-                AddParentsToCache(value);
+                AddParentsToCache(tag.Value);
             }
         }
 
         private void AddParentsToCache(string value)
         {
-            _expandedTags.Add(value);
+            _expandedTags.Add(Animator.StringToHash(value));
             foreach (var parent in GameplayTagUtility.EnumerateParents(value))
             {
-                _expandedTags.Add(parent);
+                _expandedTags.Add(Animator.StringToHash(parent));
             }
         }
     }
@@ -206,18 +212,35 @@ namespace Noname.GameAbilitySystem
     public struct FGameplayTag : IEquatable<FGameplayTag>
     {
         [SerializeField] private string _value;
+        private int _hash;
 
         public FGameplayTag(string value)
         {
             _value = value;
+            _hash = 0;
+            if (!string.IsNullOrEmpty(value))
+            {
+                _hash = Animator.StringToHash(value);
+            }
         }
 
         public string Value => _value;
+        public int Hash
+        {
+            get
+            {
+                if (_hash == 0 && !string.IsNullOrEmpty(_value))
+                {
+                    _hash = Animator.StringToHash(_value);
+                }
+                return _hash;
+            }
+        }
         public bool IsValid => GameplayTagUtility.IsValidTagString(_value);
 
         public bool Equals(FGameplayTag other)
         {
-            return string.Equals(_value, other._value, StringComparison.Ordinal);
+            return Hash == other.Hash;
         }
 
         public override bool Equals(object obj)
@@ -227,7 +250,7 @@ namespace Noname.GameAbilitySystem
 
         public override int GetHashCode()
         {
-            return _value == null ? 0 : StringComparer.Ordinal.GetHashCode(_value);
+            return Hash;
         }
 
         public override string ToString()

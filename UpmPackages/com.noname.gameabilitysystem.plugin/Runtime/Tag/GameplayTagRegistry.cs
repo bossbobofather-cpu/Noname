@@ -24,23 +24,23 @@ namespace Noname.GameAbilitySystem
             _runtimeRegistry = registry;
         }
 
-public bool IsSystemMessageIgnored(FGameplayTag tag)
-{
-    if (_systemMessageIgnoreTags == null || !tag.IsValid)
-    {
-        return false;
-    }
-
-    foreach (var candidate in GameplayTagUtility.EnumerateTagAndParents(tag.Value))
-    {
-        if (_systemMessageIgnoreTags.HasTagExact(new FGameplayTag(candidate)))
+        public bool IsSystemMessageIgnored(FGameplayTag tag)
         {
-            return true;
-        }
-    }
+            if (_systemMessageIgnoreTags == null || !tag.IsValid)
+            {
+                return false;
+            }
 
-    return false;
-}
+            foreach (var candidate in GameplayTagUtility.EnumerateTagAndParents(tag.Value))
+            {
+                if (_systemMessageIgnoreTags.HasTagExact(new FGameplayTag(candidate)))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
 
         public List<string> GetAllTags(bool includeParents = true)
         {

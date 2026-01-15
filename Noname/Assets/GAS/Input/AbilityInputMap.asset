@@ -28,3 +28,8 @@ MonoBehaviour:
     _eventTag:
       _value: Event.Input.Jump
     _trigger: 0
+  - _action: {fileID: 0}
+    _actionName: Player/Attack
+    _eventTag:
+      _value: Event.Input.Attack
+    _trigger: 0

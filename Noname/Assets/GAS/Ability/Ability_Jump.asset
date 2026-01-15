@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4ab6eb5b4e6ff44f92edeca55d3089d, type: 3}
   m_Name: Ability_Jump
   m_EditorClassIdentifier: Noname.GameAbilitySystem.Plugin::Noname.GameAbilitySystem.GameplayAbilityDefinition
-  _abilityTypeName: MergeGame.Ability.Ability_Jump, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
+  _abilityTypeName: MyProject.GameplayAbilitySystem.Ability.Ability_Jump, Assembly-CSharp,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   _configs:
   - {fileID: 11400000, guid: 06eb8cf9af49b024394c2d9f34940160, type: 2}
   - {fileID: 11400000, guid: 7cf87e841394d37409843e4730e5a33f, type: 2}

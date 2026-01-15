@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4ab6eb5b4e6ff44f92edeca55d3089d, type: 3}
   m_Name: Ability_Move
   m_EditorClassIdentifier: Noname.GameAbilitySystem.Plugin::Noname.GameAbilitySystem.GameplayAbilityDefinition
-  _abilityTypeName: MergeGame.Ability.Ability_Move, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
+  _abilityTypeName: MyProject.GameplayAbilitySystem.Ability.Ability_Move, Assembly-CSharp,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   _configs:
   - {fileID: 11400000, guid: a67dd43f856063c4bb02df45aeab478e, type: 2}
   - {fileID: 11400000, guid: aa87a7d012de81748945dd4e7ae99b65, type: 2}

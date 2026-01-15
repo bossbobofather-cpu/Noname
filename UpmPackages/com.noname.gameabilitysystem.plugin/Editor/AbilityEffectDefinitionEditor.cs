@@ -14,8 +14,9 @@ namespace Noname.GameAbilitySystem.Editor
             var durationProp = serializedObject.FindProperty("_duration");
             var periodProp = serializedObject.FindProperty("_period");
             var grantedTagsProp = serializedObject.FindProperty("_grantedTags");
+            var modifiersProp = serializedObject.FindProperty("_modifiers");
 
-            if (durationTypeProp == null || durationProp == null || periodProp == null || grantedTagsProp == null)
+            if (durationTypeProp == null || durationProp == null || periodProp == null || grantedTagsProp == null || modifiersProp == null)
             {
                 DrawDefaultInspector();
                 serializedObject.ApplyModifiedProperties();
@@ -32,6 +33,7 @@ namespace Noname.GameAbilitySystem.Editor
             }
 
             EditorGUILayout.PropertyField(grantedTagsProp, true);
+            EditorGUILayout.PropertyField(modifiersProp, true);
 
             serializedObject.ApplyModifiedProperties();
         }

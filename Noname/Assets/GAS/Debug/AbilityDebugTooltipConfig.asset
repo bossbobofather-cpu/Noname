@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c463b7889f68494ab81eab981076b7c, type: 3}
+  m_Name: AbilityDebugTooltipConfig
+  m_EditorClassIdentifier: Noname.GameAbilitySystem.Plugin::Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipConfig
+  _abilities:
+  - Ability: {fileID: 11400000, guid: 7ba4df4ebc0f74e42a3b2fde7f624bef, type: 2}
+    Title: "\uACF5\uACA9 \uB2A5\uB825"
+    Description: "\uB300\uC0C1\uC758 Attack Animation\uC744 \uC7AC\uC0DD\uD569\uB2C8\uB2E4.\nEvent.Input.Attack
+      \uC774\uBCA4\uD2B8 \uD0DC\uADF8 \uD2B8\uB9AC\uAC70\uB85C \uC778\uD574 \uBC1C\uB3D9\uB429\uB2C8\uB2E4."
+  - Ability: {fileID: 11400000, guid: 5312caf41016df04681a23b8c6fc531e, type: 2}
+    Title: "\uC801\uC911 \uC2DC \uB370\uBBF8\uC9C0 \uD6A8\uACFC\uBD80\uC5EC"
+    Description: "Event.Attack.Hit \uC774\uBCA4\uD2B8 \uD0DC\uADF8 \uD2B8\uB9AC\uAC70\uB85C
+      \uC778\uD574 \uBC1C\uB3D9\uB429\uB2C8\uB2E4.\n\uB300\uC0C1\uC758 \uCCB4\uB825\uC744
+      \uAC10\uC18C\uD558\uB294 \uD6A8\uACFC\uB97C \uBD80\uC5EC\uD569\uB2C8\uB2E4."
+  - Ability: {fileID: 11400000, guid: d176f270318d2f54292596ca94cbc8d7, type: 2}
+    Title: "\uC801\uC911 \uC2DC \uD790 \uD6A8\uACFC \uBD80\uC5EC"
+    Description: "Event.Attack.Hit \uC774\uBCA4\uD2B8 \uD0DC\uADF8 \uD2B8\uB9AC\uAC70\uB85C
+      \uC778\uD574 \uBC1C\uB3D9\uB429\uB2C8\uB2E4.\n\uB300\uC0C1\uC758 \uCCB4\uB825\uC744
+      \uD68C\uBCF5\uD558\uB294 \uD6A8\uACFC\uB97C \uBD80\uC5EC\uD569\uB2C8\uB2E4.\n"
+  - Ability: {fileID: 11400000, guid: e03d3f3272c17f14493c983aa62361ed, type: 2}
+    Title: "\uC810\uD504"
+    Description: "\uB300\uC0C1\uC5D0\uAC8C y \uC18D\uB3C4\uB97C \uBD80\uC5EC\uD569\uB2C8\uB2E4.\nEvent.Input.Jump
+      \uC774\uBCA4\uD2B8 \uD0DC\uADF8 \uD2B8\uB9AC\uAC70\uB85C \uC778\uD574 \uBC1C\uB3D9\uB429\uB2C8\uB2E4."
+  - Ability: {fileID: 11400000, guid: 1f8581e70e0cd7d46b88854d22d55bd0, type: 2}
+    Title: "\uC774\uB3D9"
+    Description: "\uB300\uC0C1\uC758 \uAC15\uCCB4\uB97C \uC774\uC6A9\uD55C \uC218\uD3C9\uC774\uB3D9
+      \uB2A5\uB825\uC744 \uBD80\uC5EC\uD569\uB2C8\uB2E4.\nEvent.Input.Move \uC774\uBCA4\uD2B8
+      \uD0DC\uADF8 \uD2B8\uB9AC\uAC70\uB85C \uC778\uD574 \uBC1C\uB3D9\uB429\uB2C8\uB2E4."
+  _effects:
+  - Effect: {fileID: 11400000, guid: 19f7e9390238429d809196d10ddcc0ac, type: 2}
+    Title: "\uACF5\uACA9 \uB300\uAE30 \uC2DC\uAC04"
+    Description: "\uB300\uC0C1\uC5D0\uAC8C Cooldown.Attack \uD0DC\uADF8\uB97C \uBD80\uC5EC\uD558\uC5EC
+      \uACF5\uACA9\uC744 \uD558\uC9C0 \uBABB\uD558\uAC8C \uD569\uB2C8\uB2E4."
+  - Effect: {fileID: 11400000, guid: e6aaa1cb12dc5c04481da2a4cb086cd5, type: 2}
+    Title: "\uC774\uB3D9 \uBC29\uD574"
+    Description: "\uB300\uC0C1\uC5D0\uAC8C Block.Move \uD0DC\uADF8\uB97C \uBD80\uC5EC\uD558\uC5EC
+      \uC774\uB3D9 \uBC29\uD574\uB97C \uBD80\uC5EC\uD569\uB2C8\uB2E4."
+  - Effect: {fileID: 11400000, guid: 1078d98596a6c5d4ab45f296468add87, type: 2}
+    Title: "\uB370\uBBF8\uC9C0 \uBD80\uC5EC"
+    Description: "\uB300\uC0C1\uC758 Health \uC18D\uC131\uC744 \uACE0\uC815\uAC12/\uACC4\uC0B0\uAC12
+      \uB9CC\uD07C \uAC10\uC18C \uC2DC\uD0B5\uB2C8\uB2E4."
+  - Effect: {fileID: 11400000, guid: b9e631296c6e7904491d3efa721c4810, type: 2}
+    Title: "\uB370\uBBF8\uC9C0 \uBD80\uC5EC"
+    Description: "\uB300\uC0C1\uC758 Health \uC18D\uC131\uC744 \uACE0\uC815\uAC12/\uACC4\uC0B0\uAC12
+      \uB9CC\uD07C \uC99D\uAC00 \uC2DC\uD0B5\uB2C8\uB2E4."
+  - Effect: {fileID: 11400000, guid: 32ec77cc5d7f94242a9eb5b611dd06f6, type: 2}
+    Title: "\uB370\uBBF8\uC9C0 \uBD80\uC5EC"
+    Description: "\uB300\uC0C1\uC758 MoveSpeed \uC18D\uC11C\uC744 \uACE0\uC815\uAC12/\uACC4\uC0B0\uAC12
+      \uB9CC\uD07C \uC99D\uAC00 \uC2DC\uD0B5\uB2C8\uB2E4."

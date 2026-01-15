@@ -7,8 +7,10 @@ namespace Noname.GameAbilitySystem
     public struct AttributeModifier
     {
         public AttributeDefinition Attribute;
+        public AttributeModifierValueMode ValueMode;
         public GameplayEffectModifierOperation Operation;
         public float Magnitude;
+        public GameplayEffectCalculator Calculator;
     }
 
     public enum GameplayEffectModifierOperation
@@ -17,6 +19,14 @@ namespace Noname.GameAbilitySystem
         Multiply,
         Override
     }
+
+    public enum AttributeModifierValueMode
+    {
+        Static,
+        Calculated,
+        StaticPlusCalculated
+    }
+
 
     public enum EGameplayEffectDurationType
     {

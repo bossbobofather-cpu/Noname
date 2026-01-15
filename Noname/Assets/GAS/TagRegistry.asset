@@ -16,6 +16,7 @@ MonoBehaviour:
   - Ability_Attack
   - Ability_Move
   - Ability_Jump
+  - Ability.Hit
   - State.Idle
   - State.Attack
   - State.Die
@@ -25,11 +26,17 @@ MonoBehaviour:
   - Action.Grounded
   - Action.Moving
   - Action.Falling
-  - Cooldown_Attack
+  - Cooldown.Attack
   - Event.Attack.AnimEvent
   - Event.Hit.AnimEvent
+  - Event.Attack.Hit
   - Event.Input.Move
   - Event.Input.Jump
+  - Event.Input.Attack
   - Block.Attack
   - Block.Move
   - Block.Jump
+  _systemMessageIgnoreTags:
+    _tags:
+    - _value: State.Idle
+    - _value: Action

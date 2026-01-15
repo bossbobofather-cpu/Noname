@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Noname.GameAbilitySystem.Plugin::Noname.GameAbilitySystem.AttributeDefinition
   _id: 0
   _defaultBaseValue: 5
-  _minValue: 0
-  _maxValue: 100
+  _minValue: 10
+  _maxValue: 200

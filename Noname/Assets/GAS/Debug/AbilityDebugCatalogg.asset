@@ -14,6 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MergeGame.Debug.AbilityDebugCatalog
   _abilities:
   - {fileID: 11400000, guid: 7ba4df4ebc0f74e42a3b2fde7f624bef, type: 2}
+  - {fileID: 11400000, guid: 5312caf41016df04681a23b8c6fc531e, type: 2}
+  - {fileID: 11400000, guid: d176f270318d2f54292596ca94cbc8d7, type: 2}
   - {fileID: 11400000, guid: e03d3f3272c17f14493c983aa62361ed, type: 2}
   - {fileID: 11400000, guid: 1f8581e70e0cd7d46b88854d22d55bd0, type: 2}
-  _effects: []
+  _effects:
+  - {fileID: 11400000, guid: e6aaa1cb12dc5c04481da2a4cb086cd5, type: 2}
+  - {fileID: 11400000, guid: 32ec77cc5d7f94242a9eb5b611dd06f6, type: 2}
+  - {fileID: 11400000, guid: 19f7e9390238429d809196d10ddcc0ac, type: 2}
+  - {fileID: 11400000, guid: 1078d98596a6c5d4ab45f296468add87, type: 2}
+  - {fileID: 11400000, guid: b9e631296c6e7904491d3efa721c4810, type: 2}

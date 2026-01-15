@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using Noname.GameAbilitySystem;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 namespace Platformer.GameAbilitySystem
@@ -47,6 +49,8 @@ namespace Platformer.GameAbilitySystem
                 return;
             }
 
+            var pointerOverUi = EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
+
             for (var i = 0; i < _runtimeBindings.Count; i++)
             {
                 var binding = _runtimeBindings[i];
@@ -65,6 +69,11 @@ namespace Platformer.GameAbilitySystem
 
                 if (shouldTrigger)
                 {
+                    if (pointerOverUi && IsLeftClickAction(binding.Action))
+                    {
+                        continue;
+                    }
+
                     var eventData = new GameplayEventData
                     {
                         EventTag = binding.EventTag,
@@ -74,6 +83,42 @@ namespace Platformer.GameAbilitySystem
                     _abilitySystem.HandleGameplayEvent(eventData);
                 }
             }
+        }
+
+        private static bool IsLeftClickAction(InputAction action)
+        {
+            if (action == null)
+            {
+                return false;
+            }
+
+            var mouse = Mouse.current;
+            if (mouse == null)
+            {
+                return false;
+            }
+
+            var active = action.activeControl;
+            if (active != null)
+            {
+                return active == mouse.leftButton
+                    || (active.device is Mouse && string.Equals(active.name, "leftButton", StringComparison.Ordinal));
+            }
+
+            foreach (var control in action.controls)
+            {
+                if (control == mouse.leftButton)
+                {
+                    return true;
+                }
+
+                if (control.device is Mouse && string.Equals(control.name, "leftButton", StringComparison.Ordinal))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         private void BuildRuntimeBindings()
@@ -133,6 +178,7 @@ namespace Platformer.GameAbilitySystem
                 }
             }
         }
+
 
         private readonly struct RuntimeBinding
         {
