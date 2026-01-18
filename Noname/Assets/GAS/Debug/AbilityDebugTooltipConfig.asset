@@ -57,11 +57,11 @@ MonoBehaviour:
     Title: "\uC774\uB3D9 \uC18D\uB3C4 \uC99D\uAC00"
     Description: "\uB300\uC0C1\uC758 MoveSpeed \uC18D\uC11C\uC744 \uACE0\uC815\uAC12/\uACC4\uC0B0\uAC12
       \uB9CC\uD07C \uC99D\uAC00 \uC2DC\uD0B5\uB2C8\uB2E4."
-  - Effect: {fileID: 11400000, guid: 32ec77cc5d7f94242a9eb5b611dd06f6, type: 2}
+  - Effect: {fileID: 11400000, guid: 9ee86f913bb8ecb4caec7d6d324eed11, type: 2}
     Title: "\uC774\uB3D9 \uC18D\uB3C4 \uAC10\uC18C"
     Description: "\uB300\uC0C1\uC758 MoveSpeed \uC18D\uC11C\uC744 \uACE0\uC815\uAC12/\uACC4\uC0B0\uAC12
       \uB9CC\uD07C \uAC10\uC18C \uC2DC\uD0B5\uB2C8\uB2E4."
-  - Effect: {fileID: 11400000, guid: 32ec77cc5d7f94242a9eb5b611dd06f6, type: 2}
-    Title: "\uC774\uB3D9 \uC18D\uB3C4 \uAC10\uC18C"
+  - Effect: {fileID: 11400000, guid: 6aff276d34495d24f93bcb890498cb3d, type: 2}
+    Title: "\uBB34\uC801 \uC0C1\uD0DC \uBD80\uC5EC"
     Description: "\uB370\uBBF8\uC9C0\uB97C \uBC1B\uC9C0 \uC54A\uB294 \uBB34\uC801
       \uC0C1\uD0DC State.Immortal \uD0DC\uADF8\uB97C \uBD80\uC5EC\uD569\uB2C8\uB2E4."

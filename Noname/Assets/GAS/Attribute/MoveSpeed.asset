@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MoveSpeed
   m_EditorClassIdentifier: Noname.GameAbilitySystem.Plugin::Noname.GameAbilitySystem.AttributeDefinition
   _id: 0
-  _defaultBaseValue: 5
+  _defaultBaseValue: 10
   _minValue: 10
   _maxValue: 200

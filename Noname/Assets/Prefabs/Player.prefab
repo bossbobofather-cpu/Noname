@@ -1075,6 +1075,7 @@ GameObject:
   - component: {fileID: 5984431960169136536}
   - component: {fileID: 1761792208454885233}
   - component: {fileID: 6192581196693536878}
+  - component: {fileID: 2147645747063954084}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1279,7 +1280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 435620eedb7470e4d8b79b3124d09f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MergeGame.Debug.AbilityDebugUI
-  _catalog: {fileID: 11400000, guid: 1915662ec99b87c4795f36d24b3ff82b, type: 2}
+  _catalog: {fileID: 11400000, guid: 994fab6069e3a2e489cba34ba96df59f, type: 2}
   _abilityFallback: []
   _effectFallback: []
   _abilitySystem: {fileID: 8302591639207858819}
@@ -1362,6 +1363,25 @@ MonoBehaviour:
   _jumpSpeedAttributeId: 1
   _blockMoveTag:
     _value: Block.Move
+--- !u!114 &2147645747063954084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3273652922334166238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d5bc848ad335d74d9be22c41a0521b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MyProject.Common.UI.HealthBarOwner
+  _abilitySystem: {fileID: 0}
+  _followTarget: {fileID: 0}
+  _worldOffset: {x: 0, y: 2, z: 0}
+  _healthAttribute: 2
+  _pool: {fileID: 0}
+  _camera: {fileID: 0}
+  _autoShow: 1
 --- !u!1 &3518843347864457933
 GameObject:
   m_ObjectHideFlags: 0

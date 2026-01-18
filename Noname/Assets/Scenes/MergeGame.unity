@@ -282,30 +282,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &261090012 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7191541071905821371, guid: 87e346a5c10dc374d9fdd089c79bd5bb, type: 3}
-  m_PrefabInstance: {fileID: 820359563073095850}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &261090020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 261090012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d5bc848ad335d74d9be22c41a0521b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MyProject.Common.UI.HealthBarOwner
-  _abilitySystem: {fileID: 0}
-  _followTarget: {fileID: 0}
-  _worldOffset: {x: 0, y: 7, z: 0}
-  _healthAttribute: 2
-  _pool: {fileID: 0}
-  _camera: {fileID: 0}
-  _autoShow: 1
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,20 +867,13 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6964963777513622272, guid: a9f9a0ef744e88c48822da9d19f7485a, type: 3}
-      propertyPath: _catalog
-      value: 
-      objectReference: {fileID: 11400000, guid: 994fab6069e3a2e489cba34ba96df59f, type: 2}
-    - target: {fileID: 6964963777513622272, guid: a9f9a0ef744e88c48822da9d19f7485a, type: 3}
       propertyPath: _worldCamera
       value: 
       objectReference: {fileID: 330585545}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3273652922334166238, guid: a9f9a0ef744e88c48822da9d19f7485a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1531166436}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9f9a0ef744e88c48822da9d19f7485a, type: 3}
 --- !u!4 &1286151752 stripped
 Transform:
@@ -1012,30 +981,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1531166423 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3273652922334166238, guid: a9f9a0ef744e88c48822da9d19f7485a, type: 3}
-  m_PrefabInstance: {fileID: 1286151735}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1531166436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531166423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d5bc848ad335d74d9be22c41a0521b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MyProject.Common.UI.HealthBarOwner
-  _abilitySystem: {fileID: 0}
-  _followTarget: {fileID: 0}
-  _worldOffset: {x: 0, y: 2, z: 0}
-  _healthAttribute: 2
-  _pool: {fileID: 0}
-  _camera: {fileID: 0}
-  _autoShow: 1
 --- !u!1 &1655710883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,10 +1254,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7191541071905821371, guid: 87e346a5c10dc374d9fdd089c79bd5bb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 261090020}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87e346a5c10dc374d9fdd089c79bd5bb, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

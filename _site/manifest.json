@@ -1,0 +1,1554 @@
+{
+  "source_base_path": "C:/Users/user/OneDrive/바탕 화면/Noname",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/Common.Interface.IAnimEventReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/Common.Interface.IAnimEventReceiver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Common.Interface.IAnimEventReceiver",
+      "Summary": "<p sourcefile=\"api-noname/Common.Interface.IAnimEventReceiver.yml\" sourcestartlinenumber=\"1\">애니메이션 이벤트를 수신하고 처리하기 위한 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/Common.Interface.IMovement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/Common.Interface.IMovement.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Common.Interface.IMovement",
+      "Summary": "<p sourcefile=\"api-noname/Common.Interface.IMovement.yml\" sourcestartlinenumber=\"1\">이동 및 점프 기능을 정의하는 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/Common.Interface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/Common.Interface.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Common.Interface",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.CameraSystem.QuarterViewFollowCamera.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.CameraSystem.QuarterViewFollowCamera.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.CameraSystem.QuarterViewFollowCamera",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.CameraSystem.QuarterViewFollowCamera.yml\" sourcestartlinenumber=\"1\">대상을 쿼터뷰 시점으로 추적하는 카메라 컨트롤러입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.CameraSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.CameraSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.CameraSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.HealthBarOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.HealthBarOwner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.HealthBarOwner",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.HealthBarOwner.yml\" sourcestartlinenumber=\"1\">대상의 체력바를 관리하는 컴포넌트입니다.\n화면 공간(Screen Space) 체력바를 풀에서 가져와 연결합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.ScreenSpaceHealthBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.ScreenSpaceHealthBar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.ScreenSpaceHealthBar",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.ScreenSpaceHealthBar.yml\" sourcestartlinenumber=\"1\">화면 공간(Screen Space)에서 대상을 따라다니는 체력바 UI입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.ScreenSpaceHealthBarPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.ScreenSpaceHealthBarPool.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.ScreenSpaceHealthBarPool",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.ScreenSpaceHealthBarPool.yml\" sourcestartlinenumber=\"1\">ScreenSpaceHealthBar 객체를 재사용하기 위한 풀링 시스템입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.SystemMessageUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.SystemMessageUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.SystemMessageUI",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.SystemMessageUI.yml\" sourcestartlinenumber=\"1\">화면 중앙 상단 등에 시스템 메시지를 띄우는 UI 매니저입니다.\nSystemMessageBus 이벤트를 구독하여 메시지를 표시합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.WorldHealthBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.WorldHealthBar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.WorldHealthBar",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.WorldHealthBar.yml\" sourcestartlinenumber=\"1\">월드 공간(World Space)에서 대상을 따라다니는 체력바 UI입니다.\n대상의 바로 위에 떠 있는 체력바 등을 구현할 때 사용됩니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.WorldObjectLabel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.WorldObjectLabel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.WorldObjectLabel",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.WorldObjectLabel.yml\" sourcestartlinenumber=\"1\">월드 오브젝트 위에 이름이나 설명을 표시하는 라벨입니다.\n에디터 모드에서도 동작하도록 ExecuteAlways가 설정되어 있습니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Units.Locomotion.ILocomotionStateProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Units.Locomotion.ILocomotionStateProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Units.Locomotion.ILocomotionStateProvider",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Units.Locomotion.ILocomotionStateProvider.yml\" sourcestartlinenumber=\"1\">이동 상태를 제공하고 상태 변경 이벤트를 알리는 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Units.Locomotion.LocomotionState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Units.Locomotion.LocomotionState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Units.Locomotion.LocomotionState",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Units.Locomotion.LocomotionState.yml\" sourcestartlinenumber=\"1\">유닛의 현재 이동 상태 정보를 담는 구조체입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Units.Locomotion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Units.Locomotion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Units.Locomotion",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Units.Unit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Units.Unit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Units.Unit",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Units.Unit.yml\" sourcestartlinenumber=\"1\">게임 내 유닛의 기본 클래스입니다.\n이동(IMovement), 애니메이션 이벤트 수신(IAnimEventReceiver), 능력 시스템 제공(IAbilitySystemProvider) 인터페이스를 구현합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Units.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Units.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Units",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Ability.Ability_Attack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Ability.Ability_Attack.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Ability.Ability_Attack",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Ability.Ability_Attack.yml\" sourcestartlinenumber=\"1\">공격 능력을 정의하는 클래스입니다.\n애니메이터의 공격 트리거를 발동시킵니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Ability.Ability_Hit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Ability.Ability_Hit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Ability.Ability_Hit",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Ability.Ability_Hit.yml\" sourcestartlinenumber=\"1\">타겟에게 효과(GameplayEffect)를 적용하는 능력입니다.\nGameplayTargetConfig 설정에 따라 타겟을 탐지하고 효과를 부여합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Ability.Ability_Jump.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Ability.Ability_Jump.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Ability.Ability_Jump",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Ability.Ability_Jump.yml\" sourcestartlinenumber=\"1\">점프 능력을 정의하는 클래스입니다.\nIMovement 인터페이스를 통해 점프를 요청합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Ability.Ability_Move.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Ability.Ability_Move.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Ability.Ability_Move",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Ability.Ability_Move.yml\" sourcestartlinenumber=\"1\">이동 능력을 정의하는 클래스입니다.\n입력된 페이로드(Vector2, Vector3 등)를 기반으로 이동 명령을 내립니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Ability.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Ability.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Ability",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Bridge.AnimationEventBridge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Bridge.AnimationEventBridge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Bridge.AnimationEventBridge",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Bridge.AnimationEventBridge.yml\" sourcestartlinenumber=\"1\">애니메이션 이벤트를 수신하여 AbilitySystemComponent(ASC)에 GameplayEvent로 전달하는 브리지 컴포넌트입니다.\n애니메이션에서 발생한 문자열 이벤트를 GameplayTag로 변환하여 처리합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Bridge.LocomotionStateBridge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Bridge.LocomotionStateBridge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Bridge.LocomotionStateBridge",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Bridge.LocomotionStateBridge.yml\" sourcestartlinenumber=\"1\">유닛의 이동 상태(LocomotionState)를 ASC 태그 및 애니메이터 파라미터와 동기화하는 브리지 컴포넌트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Bridge.MovementBridge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Bridge.MovementBridge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Bridge.MovementBridge",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Bridge.MovementBridge.yml\" sourcestartlinenumber=\"1\">ASC의 속성 및 태그 변화를 유닛의 이동 컴포넌트(IMovement)에 반영하는 브리지입니다.\n이동 속도, 점프력 변경 및 이동 차단 상태 등을 동기화합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Bridge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Bridge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Bridge",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.yml\" sourcestartlinenumber=\"1\">타겟 레지스트리를 통해 대상을 탐색하는 방식에 대한 설정입니다.\n대상 그룹, 선택 모드, 진영 모드, 탐색 각도 등을 정의합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Config.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Config",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Define.TargetFactionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Define.TargetFactionMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Define.TargetFactionMode",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Define.TargetFactionMode.yml\" sourcestartlinenumber=\"1\">시전자와의 진영 관계(Faction)에 따른 필터 모드입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Define.TargetGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Define.TargetGroup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Define.TargetGroup",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Define.TargetGroup.yml\" sourcestartlinenumber=\"1\">타겟 그룹 정의입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Define.TargetSelectionMode",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.yml\" sourcestartlinenumber=\"1\">타겟 선택 방식 모드입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Define.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Define.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Define",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage.yml\" sourcestartlinenumber=\"1\">공격 데미지를 계산하는 GameplayEffectCalculator입니다.\n시전자의 AttackDamage 속성값을 기반으로 최종 데미지를 산출합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Effect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Effect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Effect",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry.yml\" sourcestartlinenumber=\"1\">TargetRegistry에 등록된 Targetable 객체들을 대상으로 타겟을 탐색하는 액터입니다.\n범위, 각도, 진영 등의 조건에 따라 대상을 필터링하고 정렬합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Target.TargetRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Target.TargetRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Target.TargetRegistry",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Target.TargetRegistry.yml\" sourcestartlinenumber=\"1\">게임 내 모든 타겟(Targetable) 객체를 관리하는 레지스트리입니다.\n싱글톤 패턴으로 접근하며, 그룹별로 타겟 리스트를 제공합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Target.Targetable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Target.Targetable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Target.Targetable",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.GameplayAbilitySystem.Target.Targetable.yml\" sourcestartlinenumber=\"1\">타겟팅 시스템(TargetRegistry)에 등록되어 식별될 수 있는 컴포넌트입니다.\n진영(Group) 정보를 가지며 활성화 시 자동으로 등록됩니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.GameplayAbilitySystem.Target.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.GameplayAbilitySystem.Target.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.GameplayAbilitySystem.Target",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api-noname/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api-noname/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/toc.html"
+        },
+        ".json": {
+          "relative_path": "api-noname/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilityContext",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilityContext.yml\" sourcestartlinenumber=\"1\">어빌리티 실행에 필요한 컨텍스트 묶음입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityInputBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityInputBinding.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilityInputBinding",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilityInputBinding.yml\" sourcestartlinenumber=\"1\">입력 액션과 이벤트 태그를 연결하는 바인딩입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityInputMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityInputMap.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilityInputMap",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilityInputMap.yml\" sourcestartlinenumber=\"1\">능력 입력 바인딩 목록을 담는 에셋입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityInputTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityInputTrigger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilityInputTrigger",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilityInputTrigger.yml\" sourcestartlinenumber=\"1\">입력 트리거 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilitySystemComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilitySystemComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilitySystemComponent",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilitySystemComponent.yml\" sourcestartlinenumber=\"1\">능력 시스템을 관리하는 컴포넌트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityTargetData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityTargetData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilityTargetData",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilityTargetData.yml\" sourcestartlinenumber=\"1\">어빌리티 타겟팅 결과를 담는 데이터입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityTask.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilityTask",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilityTask.yml\" sourcestartlinenumber=\"1\">어빌리티에서 사용하는 태스크의 기본 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityTask_PlayMontageAndWait.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityTask_PlayMontageAndWait.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilityTask_PlayMontageAndWait",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilityTask_PlayMontageAndWait.yml\" sourcestartlinenumber=\"1\">애니메이션 재생을 기다리는 태스크입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityTask_WaitGameplayEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityTask_WaitGameplayEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilityTask_WaitGameplayEvent",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilityTask_WaitGameplayEvent.yml\" sourcestartlinenumber=\"1\">특정 태그의 이벤트를 기다리는 태스크입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityTask_WaitInputPress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityTask_WaitInputPress.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilityTask_WaitInputPress",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilityTask_WaitInputPress.yml\" sourcestartlinenumber=\"1\">입력 눌림을 기다리는 태스크입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityTask_WaitTargetData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityTask_WaitTargetData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilityTask_WaitTargetData",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilityTask_WaitTargetData.yml\" sourcestartlinenumber=\"1\">타겟 데이터를 기다리는 태스크입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AttributeDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AttributeDefinition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AttributeDefinition",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AttributeDefinition.yml\" sourcestartlinenumber=\"1\">속성 정의용 ScriptableObject입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AttributeId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AttributeId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AttributeId",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AttributeId.yml\" sourcestartlinenumber=\"1\">기본 속성 식별자입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AttributeModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AttributeModifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AttributeModifier",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AttributeModifier.yml\" sourcestartlinenumber=\"1\">속성 수정자 정의입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AttributeModifierValueMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AttributeModifierValueMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AttributeModifierValueMode",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AttributeModifierValueMode.yml\" sourcestartlinenumber=\"1\">수정자 값 계산 모드입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AttributeSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AttributeSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AttributeSet",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AttributeSet.yml\" sourcestartlinenumber=\"1\">속성 집합을 관리합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AttributeValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AttributeValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AttributeValue",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AttributeValue.yml\" sourcestartlinenumber=\"1\">런타임 속성 값 컨테이너입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugPanel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.DebugTool.AbilityDebugPanel",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugPanel.yml\" sourcestartlinenumber=\"1\">능력 디버그 패널을 구성하는 컴포넌트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.yml\" sourcestartlinenumber=\"1\">툴팁 UI를 표시하는 컴포넌트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipConfig",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipConfig.yml\" sourcestartlinenumber=\"1\">디버그 툴팁 문구를 관리하는 에셋입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.yml\" sourcestartlinenumber=\"1\">툴팁 표시를 담당하는 트리거 컴포넌트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugUI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.DebugTool.AbilityDebugUI",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugUI.yml\" sourcestartlinenumber=\"1\">능력 디버그 패널을 구성하는 루트 컴포넌트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugWorldFollower.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugWorldFollower.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.DebugTool.AbilityDebugWorldFollower",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.DebugTool.AbilityDebugWorldFollower.yml\" sourcestartlinenumber=\"1\">월드 위치를 따라가는 UI 보조 컴포넌트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilitySystemTriggerVolume.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.AbilitySystemTriggerVolume.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.DebugTool.AbilitySystemTriggerVolume",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.DebugTool.AbilitySystemTriggerVolume.yml\" sourcestartlinenumber=\"1\">태그와 효과를 자동 적용하는 트리거 볼륨입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.UIDraggableItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.UIDraggableItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.DebugTool.UIDraggableItem",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.DebugTool.UIDraggableItem.yml\" sourcestartlinenumber=\"1\">간단한 드래그 기능을 제공하는 컴포넌트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.DebugTool.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.DebugTool",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.EGameplayEffectDurationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.EGameplayEffectDurationType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.EGameplayEffectDurationType",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.EGameplayEffectDurationType.yml\" sourcestartlinenumber=\"1\">GameplayEffect 지속 방식입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Editor.AttributeModifierDrawer",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.yml\" sourcestartlinenumber=\"1\">AttributeModifier를 인스펙터에서 보기 좋게 그리는 드로어입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.GameAbilitySystemPluginEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.GameAbilitySystemPluginEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Editor.GameAbilitySystemPluginEditor",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Editor.GameAbilitySystemPluginEditor.yml\" sourcestartlinenumber=\"1\">에디터 전용 초기화 확장을 위한 자리입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor.yml\" sourcestartlinenumber=\"1\">GameplayAbilityDefinition 인스펙터를 사용자 정의로 표시합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor.yml\" sourcestartlinenumber=\"1\">GameplayEffectConfig 인스펙터를 사용자 정의로 표시합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.GameplayTagDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.GameplayTagDrawer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Editor.GameplayTagDrawer",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Editor.GameplayTagDrawer.yml\" sourcestartlinenumber=\"1\">FGameplayTag를 드롭다운으로 선택할 수 있게 하는 드로어입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Editor.ReadOnlyDrawer",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.yml\" sourcestartlinenumber=\"1\">ReadOnlyAttribute가 붙은 필드를 읽기 전용으로 표시합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Editor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Editor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.FGameplayAbilitySpecHandle",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.yml\" sourcestartlinenumber=\"1\">능력 사양을 식별하기 위한 핸들입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.FGameplayTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.FGameplayTag.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.FGameplayTag",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.FGameplayTag.yml\" sourcestartlinenumber=\"1\">게임플레이 태그 구조체입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameAbilitySystemPlugin.AbilitySystemComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameAbilitySystemPlugin.AbilitySystemComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameAbilitySystemPlugin.AbilitySystemComponent",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameAbilitySystemPlugin.AbilitySystemComponent.yml\" sourcestartlinenumber=\"1\">과거 호환용 더미 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameAbilitySystemPlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameAbilitySystemPlugin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameAbilitySystemPlugin",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameAbilitySystemPlugin.yml\" sourcestartlinenumber=\"1\">플러그인 버전 정보를 제공합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayAbility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayAbility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayAbility",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayAbility.yml\" sourcestartlinenumber=\"1\">게임플레이 능력의 기본 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayAbilityDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayAbilityDefinition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayAbilityDefinition",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayAbilityInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayAbilityInstance.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayAbilityInstance",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayAbilityInstance.yml\" sourcestartlinenumber=\"1\">실행 중인 어빌리티 인스턴스를 관리합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayAbilitySpec",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.yml\" sourcestartlinenumber=\"1\">능력 사양 정보를 담는 구조입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayConfig",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayConfig.yml\" sourcestartlinenumber=\"1\">게임플레이 구성 데이터의 기본 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayEffectCalculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayEffectCalculator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayEffectCalculator",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayEffectCalculator.yml\" sourcestartlinenumber=\"1\">효과 크기를 계산하는 계산기 기본 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayEffectConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayEffectConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayEffectConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayEffectContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayEffectContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayEffectContext",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayEffectContext.yml\" sourcestartlinenumber=\"1\">효과 계산에 필요한 컨텍스트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayEffectModifierOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayEffectModifierOperation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayEffectModifierOperation",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayEffectModifierOperation.yml\" sourcestartlinenumber=\"1\">속성에 적용되는 연산 종류입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayEventData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayEventData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayEventData",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayEventData.yml\" sourcestartlinenumber=\"1\">게임플레이 이벤트 전달용 데이터입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTagConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTagConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayTagConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTagContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTagContainer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayTagContainer",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayTagContainer.yml\" sourcestartlinenumber=\"1\">게임플레이 태그를 관리하는 컨테이너입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTagRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTagRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayTagRegistry",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayTagRegistry.yml\" sourcestartlinenumber=\"1\">게임플레이 태그 레지스트리입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTagRegistryRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTagRegistryRuntime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayTagRegistryRuntime",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayTagRegistryRuntime.yml\" sourcestartlinenumber=\"1\">런타임 레지스트리를 초기화하는 컴포넌트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTargetActor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTargetActor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayTargetActor",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayTargetActor.yml\" sourcestartlinenumber=\"1\">타겟 데이터를 수집하는 액터의 기본 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTargetActorConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTargetActorConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayTargetActorConfig",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayTargetActorConfig.yml\" sourcestartlinenumber=\"1\">타겟 액터 설정의 기본 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTargetConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.GameplayTargetConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.GameplayTargetConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.IAbilitySystemProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.IAbilitySystemProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.IAbilitySystemProvider",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.IAbilitySystemProvider.yml\" sourcestartlinenumber=\"1\">능력 시스템 컴포넌트를 제공하는 객체가 구현하는 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.IAbilityTaskOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.IAbilityTaskOwner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.IAbilityTaskOwner",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.IAbilityTaskOwner.yml\" sourcestartlinenumber=\"1\">어빌리티 태스크 소유자 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.ReadOnlyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.ReadOnlyAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.ReadOnlyAttribute",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.ReadOnlyAttribute.yml\" sourcestartlinenumber=\"1\">인스펙터에서 읽기 전용으로 표시하기 위한 속성입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.SystemMessageBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.SystemMessageBus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.SystemMessageBus",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.SystemMessageBus.yml\" sourcestartlinenumber=\"1\">시스템 메시지를 전파하는 버스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.TargetConfirmationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.TargetConfirmationMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.TargetConfirmationMode",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.TargetConfirmationMode.yml\" sourcestartlinenumber=\"1\">타겟 확정 방식입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Platformer.GameAbilitySystem.AbilityInputRouter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Platformer.GameAbilitySystem.AbilityInputRouter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Platformer.GameAbilitySystem.AbilityInputRouter",
+      "Summary": "<p sourcefile=\"api-plugin/Platformer.GameAbilitySystem.AbilityInputRouter.yml\" sourcestartlinenumber=\"1\">입력을 어빌리티 이벤트로 전달하는 라우터입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Platformer.GameAbilitySystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Platformer.GameAbilitySystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Platformer.GameAbilitySystem",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api-plugin/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/noname.GameAbilitySystem.GameplayEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/noname.GameAbilitySystem.GameplayEffect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "noname.GameAbilitySystem.GameplayEffect",
+      "Summary": "<p sourcefile=\"api-plugin/noname.GameAbilitySystem.GameplayEffect.yml\" sourcestartlinenumber=\"1\">게임플레이 효과의 빈 베이스 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/noname.GameAbilitySystem_1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/noname.GameAbilitySystem_1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "noname.GameAbilitySystem",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api-plugin/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/toc.html"
+        },
+        ".json": {
+          "relative_path": "api-plugin/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

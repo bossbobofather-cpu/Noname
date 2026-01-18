@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TargetRegistry | Noname Docs </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TargetRegistry | Noname Docs ">
+    
+    <meta name="description" content="게임 내 모든 타겟(Targetable) 객체를 관리하는 레지스트리입니다. 싱글톤 패턴으로 접근하며, 그룹별로 타겟 리스트를 제공합니다.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MyProject.GameplayAbilitySystem.Target.TargetRegistry">
+
+
+
+  <h1 id="MyProject_GameplayAbilitySystem_Target_TargetRegistry" data-uid="MyProject.GameplayAbilitySystem.Target.TargetRegistry" class="text-break">Class TargetRegistry</h1>
+  <div class="markdown level0 summary"><p>게임 내 모든 타겟(Targetable) 객체를 관리하는 레지스트리입니다.
+싱글톤 패턴으로 접근하며, 그룹별로 타겟 리스트를 제공합니다.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">TargetRegistry</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MyProject.html">MyProject</a>.<a class="xref" href="MyProject.GameplayAbilitySystem.html">GameplayAbilitySystem</a>.<a class="xref" href="MyProject.GameplayAbilitySystem.Target.html">Target</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="MyProject_GameplayAbilitySystem_Target_TargetRegistry_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class TargetRegistry : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="MyProject_GameplayAbilitySystem_Target_TargetRegistry_GetTargets_" data-uid="MyProject.GameplayAbilitySystem.Target.TargetRegistry.GetTargets*"></a>
+  <h4 id="MyProject_GameplayAbilitySystem_Target_TargetRegistry_GetTargets_MyProject_GameplayAbilitySystem_Define_TargetGroup_" data-uid="MyProject.GameplayAbilitySystem.Target.TargetRegistry.GetTargets(MyProject.GameplayAbilitySystem.Define.TargetGroup)">GetTargets(TargetGroup)</h4>
+  <div class="markdown level1 summary"><p>특정 그룹의 타겟 리스트를 반환합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;Targetable&gt; GetTargets(TargetGroup group)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MyProject.GameplayAbilitySystem.Define.TargetGroup.html">TargetGroup</a></td>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="MyProject.GameplayAbilitySystem.Target.Targetable.html">Targetable</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="MyProject_GameplayAbilitySystem_Target_TargetRegistry_Rebuild_" data-uid="MyProject.GameplayAbilitySystem.Target.TargetRegistry.Rebuild*"></a>
+  <h4 id="MyProject_GameplayAbilitySystem_Target_TargetRegistry_Rebuild" data-uid="MyProject.GameplayAbilitySystem.Target.TargetRegistry.Rebuild">Rebuild()</h4>
+  <div class="markdown level1 summary"><p>씬 내의 모든 타겟을 찾아 레지스트리를 재구성합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rebuild()</code></pre>
+  </div>
+
+
+  <a id="MyProject_GameplayAbilitySystem_Target_TargetRegistry_Register_" data-uid="MyProject.GameplayAbilitySystem.Target.TargetRegistry.Register*"></a>
+  <h4 id="MyProject_GameplayAbilitySystem_Target_TargetRegistry_Register_MyProject_GameplayAbilitySystem_Target_Targetable_" data-uid="MyProject.GameplayAbilitySystem.Target.TargetRegistry.Register(MyProject.GameplayAbilitySystem.Target.Targetable)">Register(Targetable)</h4>
+  <div class="markdown level1 summary"><p>타겟을 등록합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Register(Targetable target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MyProject.GameplayAbilitySystem.Target.Targetable.html">Targetable</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="MyProject_GameplayAbilitySystem_Target_TargetRegistry_TryGet_" data-uid="MyProject.GameplayAbilitySystem.Target.TargetRegistry.TryGet*"></a>
+  <h4 id="MyProject_GameplayAbilitySystem_Target_TargetRegistry_TryGet_MyProject_GameplayAbilitySystem_Target_TargetRegistry__" data-uid="MyProject.GameplayAbilitySystem.Target.TargetRegistry.TryGet(MyProject.GameplayAbilitySystem.Target.TargetRegistry@)">TryGet(out TargetRegistry)</h4>
+  <div class="markdown level1 summary"><p>레지스트리 인스턴스를 가져옵니다. 없으면 씬에서 찾습니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGet(out TargetRegistry registry)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MyProject.GameplayAbilitySystem.Target.TargetRegistry.html">TargetRegistry</a></td>
+        <td><span class="parametername">registry</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="MyProject_GameplayAbilitySystem_Target_TargetRegistry_Unregister_" data-uid="MyProject.GameplayAbilitySystem.Target.TargetRegistry.Unregister*"></a>
+  <h4 id="MyProject_GameplayAbilitySystem_Target_TargetRegistry_Unregister_MyProject_GameplayAbilitySystem_Target_Targetable_" data-uid="MyProject.GameplayAbilitySystem.Target.TargetRegistry.Unregister(MyProject.GameplayAbilitySystem.Target.Targetable)">Unregister(Targetable)</h4>
+  <div class="markdown level1 summary"><p>타겟 등록을 해제합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unregister(Targetable target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MyProject.GameplayAbilitySystem.Target.Targetable.html">Targetable</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

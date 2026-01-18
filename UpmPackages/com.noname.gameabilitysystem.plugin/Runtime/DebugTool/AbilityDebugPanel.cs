@@ -679,13 +679,26 @@ namespace Noname.GameAbilitySystem.DebugTool
                 return;
             }
 
+            var tooltipParent = transform;
+            var canvas = GetComponentInParent<Canvas>();
+            if (canvas != null)
+            {
+                tooltipParent = canvas.transform;
+            }
+
             _tooltip = GetComponentInChildren<AbilityDebugTooltip>(true);
             if (_tooltip == null)
             {
                 var obj = new GameObject("AbilityDebugTooltip");
-                obj.transform.SetParent(transform, false);
+                obj.transform.SetParent(tooltipParent, false);
                 _tooltip = obj.AddComponent<AbilityDebugTooltip>();
             }
+            else if (_tooltip.transform.parent != tooltipParent)
+            {
+                _tooltip.transform.SetParent(tooltipParent, false);
+            }
+
+            _tooltip.transform.SetAsLastSibling();
 
             _tooltip.EnsureBuilt(_font, _textColor, _tooltipColor);
         }

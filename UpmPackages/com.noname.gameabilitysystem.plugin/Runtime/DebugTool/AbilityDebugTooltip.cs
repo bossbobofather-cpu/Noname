@@ -36,8 +36,8 @@ namespace Noname.GameAbilitySystem.DebugTool
                     _root = gameObject.AddComponent<RectTransform>();
                 }
 
-                _root.anchorMin = Vector2.zero;
-                _root.anchorMax = Vector2.zero;
+                _root.anchorMin = new Vector2(0.5f, 0.5f);
+                _root.anchorMax = new Vector2(0.5f, 0.5f);
                 _root.pivot = new Vector2(0f, 1f);
                 _root.anchoredPosition = Vector2.zero;
 
