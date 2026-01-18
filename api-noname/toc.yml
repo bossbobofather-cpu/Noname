@@ -1,0 +1,128 @@
+### YamlMime:TableOfContent
+items:
+- uid: Common.Interface
+  name: Common.Interface
+  type: Namespace
+  items:
+  - uid: Common.Interface.IAnimEventReceiver
+    name: IAnimEventReceiver
+    type: Interface
+  - uid: Common.Interface.IMovement
+    name: IMovement
+    type: Interface
+- uid: MyProject.Common.CameraSystem
+  name: MyProject.Common.CameraSystem
+  type: Namespace
+  items:
+  - uid: MyProject.Common.CameraSystem.QuarterViewFollowCamera
+    name: QuarterViewFollowCamera
+    type: Class
+- uid: MyProject.Common.UI
+  name: MyProject.Common.UI
+  type: Namespace
+  items:
+  - uid: MyProject.Common.UI.HealthBarOwner
+    name: HealthBarOwner
+    type: Class
+  - uid: MyProject.Common.UI.ScreenSpaceHealthBar
+    name: ScreenSpaceHealthBar
+    type: Class
+  - uid: MyProject.Common.UI.ScreenSpaceHealthBarPool
+    name: ScreenSpaceHealthBarPool
+    type: Class
+  - uid: MyProject.Common.UI.SystemMessageUI
+    name: SystemMessageUI
+    type: Class
+  - uid: MyProject.Common.UI.WorldHealthBar
+    name: WorldHealthBar
+    type: Class
+  - uid: MyProject.Common.UI.WorldObjectLabel
+    name: WorldObjectLabel
+    type: Class
+- uid: MyProject.Common.Units
+  name: MyProject.Common.Units
+  type: Namespace
+  items:
+  - uid: MyProject.Common.Units.Unit
+    name: Unit
+    type: Class
+- uid: MyProject.Common.Units.Locomotion
+  name: MyProject.Common.Units.Locomotion
+  type: Namespace
+  items:
+  - uid: MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+    name: ILocomotionStateProvider
+    type: Interface
+  - uid: MyProject.Common.Units.Locomotion.LocomotionState
+    name: LocomotionState
+    type: Struct
+- uid: MyProject.GameplayAbilitySystem.Ability
+  name: MyProject.GameplayAbilitySystem.Ability
+  type: Namespace
+  items:
+  - uid: MyProject.GameplayAbilitySystem.Ability.Ability_Attack
+    name: Ability_Attack
+    type: Class
+  - uid: MyProject.GameplayAbilitySystem.Ability.Ability_Hit
+    name: Ability_Hit
+    type: Class
+  - uid: MyProject.GameplayAbilitySystem.Ability.Ability_Jump
+    name: Ability_Jump
+    type: Class
+  - uid: MyProject.GameplayAbilitySystem.Ability.Ability_Move
+    name: Ability_Move
+    type: Class
+- uid: MyProject.GameplayAbilitySystem.Bridge
+  name: MyProject.GameplayAbilitySystem.Bridge
+  type: Namespace
+  items:
+  - uid: MyProject.GameplayAbilitySystem.Bridge.AnimationEventBridge
+    name: AnimationEventBridge
+    type: Class
+  - uid: MyProject.GameplayAbilitySystem.Bridge.LocomotionStateBridge
+    name: LocomotionStateBridge
+    type: Class
+  - uid: MyProject.GameplayAbilitySystem.Bridge.MovementBridge
+    name: MovementBridge
+    type: Class
+- uid: MyProject.GameplayAbilitySystem.Config
+  name: MyProject.GameplayAbilitySystem.Config
+  type: Namespace
+  items:
+  - uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig
+    name: GameplayTargetActorRegistryConfig
+    type: Class
+- uid: MyProject.GameplayAbilitySystem.Define
+  name: MyProject.GameplayAbilitySystem.Define
+  type: Namespace
+  items:
+  - uid: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+    name: TargetFactionMode
+    type: Enum
+  - uid: MyProject.GameplayAbilitySystem.Define.TargetGroup
+    name: TargetGroup
+    type: Enum
+  - uid: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+    name: TargetSelectionMode
+    type: Enum
+- uid: MyProject.GameplayAbilitySystem.Effect
+  name: MyProject.GameplayAbilitySystem.Effect
+  type: Namespace
+  items:
+  - uid: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage
+    name: EC_AttackDamage
+    type: Class
+- uid: MyProject.GameplayAbilitySystem.Target
+  name: MyProject.GameplayAbilitySystem.Target
+  type: Namespace
+  items:
+  - uid: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry
+    name: GameplayTargetActor_Registry
+    type: Class
+  - uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry
+    name: TargetRegistry
+    type: Class
+  - uid: MyProject.GameplayAbilitySystem.Target.Targetable
+    name: Targetable
+    type: Class
+memberLayout: SamePage

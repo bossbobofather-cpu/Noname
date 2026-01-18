@@ -1,0 +1,308 @@
+### YamlMime:ManagedReference
+items:
+- uid: Common.Interface.IMovement
+  commentId: T:Common.Interface.IMovement
+  id: IMovement
+  parent: Common.Interface
+  children:
+  - Common.Interface.IMovement.GetJumpSpeed
+  - Common.Interface.IMovement.GetMoveSpeed
+  - Common.Interface.IMovement.IsMoveBlocked
+  - Common.Interface.IMovement.RequestJump
+  - Common.Interface.IMovement.SetJumpSpeed(System.Single)
+  - Common.Interface.IMovement.SetMoveBlocked(System.Boolean)
+  - Common.Interface.IMovement.SetMoveInput(Vector2)
+  - Common.Interface.IMovement.SetMoveSpeed(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: IMovement
+  nameWithType: IMovement
+  fullName: Common.Interface.IMovement
+  type: Interface
+  namespace: Common.Interface
+  summary: 이동 및 점프 기능을 정의하는 인터페이스입니다.
+  example: []
+  syntax:
+    content: public interface IMovement
+    content.vb: Public Interface IMovement
+- uid: Common.Interface.IMovement.GetMoveSpeed
+  commentId: M:Common.Interface.IMovement.GetMoveSpeed
+  id: GetMoveSpeed
+  parent: Common.Interface.IMovement
+  langs:
+  - csharp
+  - vb
+  name: GetMoveSpeed()
+  nameWithType: IMovement.GetMoveSpeed()
+  fullName: Common.Interface.IMovement.GetMoveSpeed()
+  type: Method
+  namespace: Common.Interface
+  summary: 현재 이동 속도를 반환합니다.
+  example: []
+  syntax:
+    content: float GetMoveSpeed()
+    return:
+      type: System.Single
+    content.vb: Function GetMoveSpeed() As Single
+  overload: Common.Interface.IMovement.GetMoveSpeed*
+- uid: Common.Interface.IMovement.GetJumpSpeed
+  commentId: M:Common.Interface.IMovement.GetJumpSpeed
+  id: GetJumpSpeed
+  parent: Common.Interface.IMovement
+  langs:
+  - csharp
+  - vb
+  name: GetJumpSpeed()
+  nameWithType: IMovement.GetJumpSpeed()
+  fullName: Common.Interface.IMovement.GetJumpSpeed()
+  type: Method
+  namespace: Common.Interface
+  summary: 현재 점프력을 반환합니다.
+  example: []
+  syntax:
+    content: float GetJumpSpeed()
+    return:
+      type: System.Single
+    content.vb: Function GetJumpSpeed() As Single
+  overload: Common.Interface.IMovement.GetJumpSpeed*
+- uid: Common.Interface.IMovement.IsMoveBlocked
+  commentId: M:Common.Interface.IMovement.IsMoveBlocked
+  id: IsMoveBlocked
+  parent: Common.Interface.IMovement
+  langs:
+  - csharp
+  - vb
+  name: IsMoveBlocked()
+  nameWithType: IMovement.IsMoveBlocked()
+  fullName: Common.Interface.IMovement.IsMoveBlocked()
+  type: Method
+  namespace: Common.Interface
+  summary: 이동이 차단된 상태인지 여부를 반환합니다.
+  example: []
+  syntax:
+    content: bool IsMoveBlocked()
+    return:
+      type: System.Boolean
+    content.vb: Function IsMoveBlocked() As Boolean
+  overload: Common.Interface.IMovement.IsMoveBlocked*
+- uid: Common.Interface.IMovement.SetMoveSpeed(System.Single)
+  commentId: M:Common.Interface.IMovement.SetMoveSpeed(System.Single)
+  id: SetMoveSpeed(System.Single)
+  parent: Common.Interface.IMovement
+  langs:
+  - csharp
+  - vb
+  name: SetMoveSpeed(float)
+  nameWithType: IMovement.SetMoveSpeed(float)
+  fullName: Common.Interface.IMovement.SetMoveSpeed(float)
+  type: Method
+  namespace: Common.Interface
+  summary: 이동 속도를 설정합니다.
+  example: []
+  syntax:
+    content: void SetMoveSpeed(float moveSpeed)
+    parameters:
+    - id: moveSpeed
+      type: System.Single
+      description: 설정할 이동 속도입니다.
+    content.vb: Sub SetMoveSpeed(moveSpeed As Single)
+  overload: Common.Interface.IMovement.SetMoveSpeed*
+  nameWithType.vb: IMovement.SetMoveSpeed(Single)
+  fullName.vb: Common.Interface.IMovement.SetMoveSpeed(Single)
+  name.vb: SetMoveSpeed(Single)
+- uid: Common.Interface.IMovement.SetJumpSpeed(System.Single)
+  commentId: M:Common.Interface.IMovement.SetJumpSpeed(System.Single)
+  id: SetJumpSpeed(System.Single)
+  parent: Common.Interface.IMovement
+  langs:
+  - csharp
+  - vb
+  name: SetJumpSpeed(float)
+  nameWithType: IMovement.SetJumpSpeed(float)
+  fullName: Common.Interface.IMovement.SetJumpSpeed(float)
+  type: Method
+  namespace: Common.Interface
+  summary: 점프력을 설정합니다.
+  example: []
+  syntax:
+    content: void SetJumpSpeed(float jumpSpeed)
+    parameters:
+    - id: jumpSpeed
+      type: System.Single
+      description: 설정할 점프력입니다.
+    content.vb: Sub SetJumpSpeed(jumpSpeed As Single)
+  overload: Common.Interface.IMovement.SetJumpSpeed*
+  nameWithType.vb: IMovement.SetJumpSpeed(Single)
+  fullName.vb: Common.Interface.IMovement.SetJumpSpeed(Single)
+  name.vb: SetJumpSpeed(Single)
+- uid: Common.Interface.IMovement.SetMoveBlocked(System.Boolean)
+  commentId: M:Common.Interface.IMovement.SetMoveBlocked(System.Boolean)
+  id: SetMoveBlocked(System.Boolean)
+  parent: Common.Interface.IMovement
+  langs:
+  - csharp
+  - vb
+  name: SetMoveBlocked(bool)
+  nameWithType: IMovement.SetMoveBlocked(bool)
+  fullName: Common.Interface.IMovement.SetMoveBlocked(bool)
+  type: Method
+  namespace: Common.Interface
+  summary: 이동 차단 여부를 설정합니다.
+  example: []
+  syntax:
+    content: void SetMoveBlocked(bool isBlocked)
+    parameters:
+    - id: isBlocked
+      type: System.Boolean
+      description: true일 경우 이동을 차단합니다.
+    content.vb: Sub SetMoveBlocked(isBlocked As Boolean)
+  overload: Common.Interface.IMovement.SetMoveBlocked*
+  nameWithType.vb: IMovement.SetMoveBlocked(Boolean)
+  fullName.vb: Common.Interface.IMovement.SetMoveBlocked(Boolean)
+  name.vb: SetMoveBlocked(Boolean)
+- uid: Common.Interface.IMovement.RequestJump
+  commentId: M:Common.Interface.IMovement.RequestJump
+  id: RequestJump
+  parent: Common.Interface.IMovement
+  langs:
+  - csharp
+  - vb
+  name: RequestJump()
+  nameWithType: IMovement.RequestJump()
+  fullName: Common.Interface.IMovement.RequestJump()
+  type: Method
+  namespace: Common.Interface
+  summary: 점프 동작을 요청합니다.
+  example: []
+  syntax:
+    content: void RequestJump()
+    content.vb: Sub RequestJump()
+  overload: Common.Interface.IMovement.RequestJump*
+- uid: Common.Interface.IMovement.SetMoveInput(Vector2)
+  commentId: M:Common.Interface.IMovement.SetMoveInput(Vector2)
+  id: SetMoveInput(Vector2)
+  parent: Common.Interface.IMovement
+  langs:
+  - csharp
+  - vb
+  name: SetMoveInput(Vector2)
+  nameWithType: IMovement.SetMoveInput(Vector2)
+  fullName: Common.Interface.IMovement.SetMoveInput(Vector2)
+  type: Method
+  namespace: Common.Interface
+  summary: 이동 입력을 설정합니다.
+  example: []
+  syntax:
+    content: void SetMoveInput(Vector2 input)
+    parameters:
+    - id: input
+      type: Vector2
+      description: 입력된 이동 벡터입니다 (보통 x, y 축 사용).
+    content.vb: Sub SetMoveInput(input As Vector2)
+  overload: Common.Interface.IMovement.SetMoveInput*
+references:
+- uid: Common.Interface
+  commentId: N:Common.Interface
+  href: Common.html
+  name: Common.Interface
+  nameWithType: Common.Interface
+  fullName: Common.Interface
+  spec.csharp:
+  - uid: Common
+    name: Common
+    href: Common.html
+  - name: .
+  - uid: Common.Interface
+    name: Interface
+    href: Common.Interface.html
+  spec.vb:
+  - uid: Common
+    name: Common
+    href: Common.html
+  - name: .
+  - uid: Common.Interface
+    name: Interface
+    href: Common.Interface.html
+- uid: Common.Interface.IMovement.GetMoveSpeed*
+  commentId: Overload:Common.Interface.IMovement.GetMoveSpeed
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_GetMoveSpeed
+  name: GetMoveSpeed
+  nameWithType: IMovement.GetMoveSpeed
+  fullName: Common.Interface.IMovement.GetMoveSpeed
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Common.Interface.IMovement.GetJumpSpeed*
+  commentId: Overload:Common.Interface.IMovement.GetJumpSpeed
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_GetJumpSpeed
+  name: GetJumpSpeed
+  nameWithType: IMovement.GetJumpSpeed
+  fullName: Common.Interface.IMovement.GetJumpSpeed
+- uid: Common.Interface.IMovement.IsMoveBlocked*
+  commentId: Overload:Common.Interface.IMovement.IsMoveBlocked
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_IsMoveBlocked
+  name: IsMoveBlocked
+  nameWithType: IMovement.IsMoveBlocked
+  fullName: Common.Interface.IMovement.IsMoveBlocked
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Common.Interface.IMovement.SetMoveSpeed*
+  commentId: Overload:Common.Interface.IMovement.SetMoveSpeed
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetMoveSpeed_System_Single_
+  name: SetMoveSpeed
+  nameWithType: IMovement.SetMoveSpeed
+  fullName: Common.Interface.IMovement.SetMoveSpeed
+- uid: Common.Interface.IMovement.SetJumpSpeed*
+  commentId: Overload:Common.Interface.IMovement.SetJumpSpeed
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetJumpSpeed_System_Single_
+  name: SetJumpSpeed
+  nameWithType: IMovement.SetJumpSpeed
+  fullName: Common.Interface.IMovement.SetJumpSpeed
+- uid: Common.Interface.IMovement.SetMoveBlocked*
+  commentId: Overload:Common.Interface.IMovement.SetMoveBlocked
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetMoveBlocked_System_Boolean_
+  name: SetMoveBlocked
+  nameWithType: IMovement.SetMoveBlocked
+  fullName: Common.Interface.IMovement.SetMoveBlocked
+- uid: Common.Interface.IMovement.RequestJump*
+  commentId: Overload:Common.Interface.IMovement.RequestJump
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_RequestJump
+  name: RequestJump
+  nameWithType: IMovement.RequestJump
+  fullName: Common.Interface.IMovement.RequestJump
+- uid: Common.Interface.IMovement.SetMoveInput*
+  commentId: Overload:Common.Interface.IMovement.SetMoveInput
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetMoveInput_Vector2_
+  name: SetMoveInput
+  nameWithType: IMovement.SetMoveInput
+  fullName: Common.Interface.IMovement.SetMoveInput
+- uid: Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Vector2

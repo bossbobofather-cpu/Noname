@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  id: TargetSelectionMode
+  parent: MyProject.GameplayAbilitySystem.Define
+  children:
+  - MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.All
+  - MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.ClosestFromGoal
+  - MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.ClosestToOrigin
+  - MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.HighestAttribute
+  - MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.LowestAttribute
+  - MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.Random
+  langs:
+  - csharp
+  - vb
+  name: TargetSelectionMode
+  nameWithType: TargetSelectionMode
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  type: Enum
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 타겟 선택 방식 모드입니다.
+  example: []
+  syntax:
+    content: public enum TargetSelectionMode
+    content.vb: Public Enum TargetSelectionMode
+- uid: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.All
+  commentId: F:MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.All
+  id: All
+  parent: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: TargetSelectionMode.All
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.All
+  type: Field
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 조건에 맞는 모든 대상
+  example: []
+  syntax:
+    content: All = 0
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+- uid: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.ClosestToOrigin
+  commentId: F:MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.ClosestToOrigin
+  id: ClosestToOrigin
+  parent: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  langs:
+  - csharp
+  - vb
+  name: ClosestToOrigin
+  nameWithType: TargetSelectionMode.ClosestToOrigin
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.ClosestToOrigin
+  type: Field
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 기준점(Origin)에서 가장 가까운 대상
+  example: []
+  syntax:
+    content: ClosestToOrigin = 1
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+- uid: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.ClosestFromGoal
+  commentId: F:MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.ClosestFromGoal
+  id: ClosestFromGoal
+  parent: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  langs:
+  - csharp
+  - vb
+  name: ClosestFromGoal
+  nameWithType: TargetSelectionMode.ClosestFromGoal
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.ClosestFromGoal
+  type: Field
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 목표점(Goal)에서 가장 가까운 대상 (미구현 가능성 있음)
+  example: []
+  syntax:
+    content: ClosestFromGoal = 2
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+- uid: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.HighestAttribute
+  commentId: F:MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.HighestAttribute
+  id: HighestAttribute
+  parent: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  langs:
+  - csharp
+  - vb
+  name: HighestAttribute
+  nameWithType: TargetSelectionMode.HighestAttribute
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.HighestAttribute
+  type: Field
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 특정 속성값이 가장 높은 대상
+  example: []
+  syntax:
+    content: HighestAttribute = 3
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+- uid: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.LowestAttribute
+  commentId: F:MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.LowestAttribute
+  id: LowestAttribute
+  parent: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  langs:
+  - csharp
+  - vb
+  name: LowestAttribute
+  nameWithType: TargetSelectionMode.LowestAttribute
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.LowestAttribute
+  type: Field
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 특정 속성값이 가장 낮은 대상
+  example: []
+  syntax:
+    content: LowestAttribute = 4
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+- uid: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.Random
+  commentId: F:MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.Random
+  id: Random
+  parent: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  langs:
+  - csharp
+  - vb
+  name: Random
+  nameWithType: TargetSelectionMode.Random
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.Random
+  type: Field
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 무작위 대상
+  example: []
+  syntax:
+    content: Random = 5
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+references:
+- uid: MyProject.GameplayAbilitySystem.Define
+  commentId: N:MyProject.GameplayAbilitySystem.Define
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Define
+  nameWithType: MyProject.GameplayAbilitySystem.Define
+  fullName: MyProject.GameplayAbilitySystem.Define
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html
+- uid: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  parent: MyProject.GameplayAbilitySystem.Define
+  href: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.html
+  name: TargetSelectionMode
+  nameWithType: TargetSelectionMode
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode

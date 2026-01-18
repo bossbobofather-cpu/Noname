@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.UI.SystemMessageUI
+  commentId: T:MyProject.Common.UI.SystemMessageUI
+  id: SystemMessageUI
+  parent: MyProject.Common.UI
+  children:
+  - MyProject.Common.UI.SystemMessageUI.Post(System.String)
+  langs:
+  - csharp
+  - vb
+  name: SystemMessageUI
+  nameWithType: SystemMessageUI
+  fullName: MyProject.Common.UI.SystemMessageUI
+  type: Class
+  namespace: MyProject.Common.UI
+  summary: >-
+    화면 중앙 상단 등에 시스템 메시지를 띄우는 UI 매니저입니다.
+
+    SystemMessageBus 이벤트를 구독하여 메시지를 표시합니다.
+  example: []
+  syntax:
+    content: 'public sealed class SystemMessageUI : MonoBehaviour'
+    content.vb: Public NotInheritable Class SystemMessageUI Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MyProject.Common.UI.SystemMessageUI.Post(System.String)
+  commentId: M:MyProject.Common.UI.SystemMessageUI.Post(System.String)
+  id: Post(System.String)
+  parent: MyProject.Common.UI.SystemMessageUI
+  langs:
+  - csharp
+  - vb
+  name: Post(string)
+  nameWithType: SystemMessageUI.Post(string)
+  fullName: MyProject.Common.UI.SystemMessageUI.Post(string)
+  type: Method
+  namespace: MyProject.Common.UI
+  summary: 시스템 메시지를 게시합니다.
+  example: []
+  syntax:
+    content: public static void Post(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: 표시할 메시지 내용
+    content.vb: Public Shared Sub Post(message As String)
+  overload: MyProject.Common.UI.SystemMessageUI.Post*
+  nameWithType.vb: SystemMessageUI.Post(String)
+  fullName.vb: MyProject.Common.UI.SystemMessageUI.Post(String)
+  name.vb: Post(String)
+references:
+- uid: MyProject.Common.UI
+  commentId: N:MyProject.Common.UI
+  href: MyProject.html
+  name: MyProject.Common.UI
+  nameWithType: MyProject.Common.UI
+  fullName: MyProject.Common.UI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.UI.SystemMessageUI.Post*
+  commentId: Overload:MyProject.Common.UI.SystemMessageUI.Post
+  href: MyProject.Common.UI.SystemMessageUI.html#MyProject_Common_UI_SystemMessageUI_Post_System_String_
+  name: Post
+  nameWithType: SystemMessageUI.Post
+  fullName: MyProject.Common.UI.SystemMessageUI.Post
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

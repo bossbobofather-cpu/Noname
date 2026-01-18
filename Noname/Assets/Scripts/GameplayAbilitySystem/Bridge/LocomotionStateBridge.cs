@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace MyProject.GameplayAbilitySystem.Bridge
 {
+    /// <summary>
+    /// 유닛의 이동 상태(LocomotionState)를 ASC 태그 및 애니메이터 파라미터와 동기화하는 브리지 컴포넌트입니다.
+    /// </summary>
     [DisallowMultipleComponent]
     public sealed class LocomotionStateBridge : MonoBehaviour
     {
@@ -22,7 +25,7 @@ namespace MyProject.GameplayAbilitySystem.Bridge
         {
             _stateProvider = GetComponent<ILocomotionStateProvider>();
 
-            //Bridge인데 ILocomotionStateProvider 없으면 의미가 없으니 자동 추가
+            // 필수 인터페이스 부재 시 비활성화
             if (_stateProvider == null)
             {
                 Debug.LogError($"[ILocomotionStateProvider] Missing on {gameObject.name}.");
@@ -35,7 +38,7 @@ namespace MyProject.GameplayAbilitySystem.Bridge
                 _abilitySystem = GetComponent<AbilitySystemComponent>();
             }
 
-            //Bridge인데 AbilitySystemComponent가 없으면 의미가 없으니 자동 추가
+            // ASC 자동 추가
             if (_abilitySystem == null)
             {
                 _abilitySystem = gameObject.AddComponent<AbilitySystemComponent>();
@@ -53,6 +56,7 @@ namespace MyProject.GameplayAbilitySystem.Bridge
             if (_stateProvider != null)
             {
                 _stateProvider.OnLocomotionStateChanged += HandleLocomotionStateChanged;
+                // 초기 상태 적용
                 ApplyLocomotionState(default, _stateProvider.CurrentState);
                 ApplyLocomotionTags(default, _stateProvider.CurrentState);
             }
@@ -65,6 +69,7 @@ namespace MyProject.GameplayAbilitySystem.Bridge
                 _stateProvider.OnLocomotionStateChanged -= HandleLocomotionStateChanged;
             }
 
+            // 비활성화 시 관련 태그 제거
             RevokeTag(_groundedTag);
             RevokeTag(_jumpTag);
             RevokeTag(_moveTag);
@@ -94,6 +99,7 @@ namespace MyProject.GameplayAbilitySystem.Bridge
                 return;
             }
 
+            // 지면에 닿아있는 상태에서는 공중 이동 및 낙하 상태를 보정
             if (current.IsGrounded)
             {
                 current.IsAirMoving = false;
@@ -103,11 +109,13 @@ namespace MyProject.GameplayAbilitySystem.Bridge
                 }
             }
 
+            // 상태 변경에 따라 태그 업데이트 (추가/제거)
             UpdateTag(previous.IsGrounded, current.IsGrounded, _groundedTag);
             UpdateTag(previous.IsMoving, current.IsMoving, _moveTag);
             UpdateTag(previous.IsJumping, current.IsJumping, _jumpTag);
             UpdateTag(previous.IsFalling, current.IsFalling, _fallingTag);
 
+            // 상태 충돌 방지를 위한 안전 장치
             if (current.IsGrounded)
             {
                 if (!current.IsJumping)

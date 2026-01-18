@@ -17,6 +17,11 @@ MonoBehaviour:
   _period: 0
   _grantedTags:
     _tags: []
+  _activationRequiredTags:
+    _tags: []
+  _activationBlockedTags:
+    _tags:
+    - _value: State.Immortal
   _lastDurationType: 0
   _durationTypeInitialized: 1
   _modifiers:

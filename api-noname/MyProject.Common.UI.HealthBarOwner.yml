@@ -1,0 +1,124 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.UI.HealthBarOwner
+  commentId: T:MyProject.Common.UI.HealthBarOwner
+  id: HealthBarOwner
+  parent: MyProject.Common.UI
+  children:
+  - MyProject.Common.UI.HealthBarOwner.Hide
+  - MyProject.Common.UI.HealthBarOwner.Show
+  langs:
+  - csharp
+  - vb
+  name: HealthBarOwner
+  nameWithType: HealthBarOwner
+  fullName: MyProject.Common.UI.HealthBarOwner
+  type: Class
+  namespace: MyProject.Common.UI
+  summary: >-
+    대상의 체력바를 관리하는 컴포넌트입니다.
+
+    화면 공간(Screen Space) 체력바를 풀에서 가져와 연결합니다.
+  example: []
+  syntax:
+    content: 'public sealed class HealthBarOwner : MonoBehaviour'
+    content.vb: Public NotInheritable Class HealthBarOwner Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MyProject.Common.UI.HealthBarOwner.Show
+  commentId: M:MyProject.Common.UI.HealthBarOwner.Show
+  id: Show
+  parent: MyProject.Common.UI.HealthBarOwner
+  langs:
+  - csharp
+  - vb
+  name: Show()
+  nameWithType: HealthBarOwner.Show()
+  fullName: MyProject.Common.UI.HealthBarOwner.Show()
+  type: Method
+  namespace: MyProject.Common.UI
+  summary: 체력바를 표시합니다.
+  example: []
+  syntax:
+    content: public void Show()
+    content.vb: Public Sub Show()
+  overload: MyProject.Common.UI.HealthBarOwner.Show*
+- uid: MyProject.Common.UI.HealthBarOwner.Hide
+  commentId: M:MyProject.Common.UI.HealthBarOwner.Hide
+  id: Hide
+  parent: MyProject.Common.UI.HealthBarOwner
+  langs:
+  - csharp
+  - vb
+  name: Hide()
+  nameWithType: HealthBarOwner.Hide()
+  fullName: MyProject.Common.UI.HealthBarOwner.Hide()
+  type: Method
+  namespace: MyProject.Common.UI
+  summary: 표시된 체력바를 숨기고 반환합니다.
+  example: []
+  syntax:
+    content: public void Hide()
+    content.vb: Public Sub Hide()
+  overload: MyProject.Common.UI.HealthBarOwner.Hide*
+references:
+- uid: MyProject.Common.UI
+  commentId: N:MyProject.Common.UI
+  href: MyProject.html
+  name: MyProject.Common.UI
+  nameWithType: MyProject.Common.UI
+  fullName: MyProject.Common.UI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.UI.HealthBarOwner.Show*
+  commentId: Overload:MyProject.Common.UI.HealthBarOwner.Show
+  href: MyProject.Common.UI.HealthBarOwner.html#MyProject_Common_UI_HealthBarOwner_Show
+  name: Show
+  nameWithType: HealthBarOwner.Show
+  fullName: MyProject.Common.UI.HealthBarOwner.Show
+- uid: MyProject.Common.UI.HealthBarOwner.Hide*
+  commentId: Overload:MyProject.Common.UI.HealthBarOwner.Hide
+  href: MyProject.Common.UI.HealthBarOwner.html#MyProject_Common_UI_HealthBarOwner_Hide
+  name: Hide
+  nameWithType: HealthBarOwner.Hide
+  fullName: MyProject.Common.UI.HealthBarOwner.Hide

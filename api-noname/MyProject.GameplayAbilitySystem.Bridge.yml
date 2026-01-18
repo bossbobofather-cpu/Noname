@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Bridge
+  commentId: N:MyProject.GameplayAbilitySystem.Bridge
+  id: MyProject.GameplayAbilitySystem.Bridge
+  children:
+  - MyProject.GameplayAbilitySystem.Bridge.AnimationEventBridge
+  - MyProject.GameplayAbilitySystem.Bridge.LocomotionStateBridge
+  - MyProject.GameplayAbilitySystem.Bridge.MovementBridge
+  langs:
+  - csharp
+  - vb
+  name: MyProject.GameplayAbilitySystem.Bridge
+  nameWithType: MyProject.GameplayAbilitySystem.Bridge
+  fullName: MyProject.GameplayAbilitySystem.Bridge
+  type: Namespace
+references:
+- uid: MyProject.GameplayAbilitySystem.Bridge.AnimationEventBridge
+  commentId: T:MyProject.GameplayAbilitySystem.Bridge.AnimationEventBridge
+  href: MyProject.GameplayAbilitySystem.Bridge.AnimationEventBridge.html
+  name: AnimationEventBridge
+  nameWithType: AnimationEventBridge
+  fullName: MyProject.GameplayAbilitySystem.Bridge.AnimationEventBridge
+- uid: MyProject.GameplayAbilitySystem.Bridge.LocomotionStateBridge
+  commentId: T:MyProject.GameplayAbilitySystem.Bridge.LocomotionStateBridge
+  href: MyProject.GameplayAbilitySystem.Bridge.LocomotionStateBridge.html
+  name: LocomotionStateBridge
+  nameWithType: LocomotionStateBridge
+  fullName: MyProject.GameplayAbilitySystem.Bridge.LocomotionStateBridge
+- uid: MyProject.GameplayAbilitySystem.Bridge.MovementBridge
+  commentId: T:MyProject.GameplayAbilitySystem.Bridge.MovementBridge
+  href: MyProject.GameplayAbilitySystem.Bridge.MovementBridge.html
+  name: MovementBridge
+  nameWithType: MovementBridge
+  fullName: MyProject.GameplayAbilitySystem.Bridge.MovementBridge

@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.DebugTool
+  commentId: N:Noname.GameAbilitySystem.DebugTool
+  id: Noname.GameAbilitySystem.DebugTool
+  children:
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugPanel
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipConfig
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugUI
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugWorldFollower
+  - Noname.GameAbilitySystem.DebugTool.AbilitySystemTriggerVolume
+  - Noname.GameAbilitySystem.DebugTool.UIDraggableItem
+  langs:
+  - csharp
+  - vb
+  name: Noname.GameAbilitySystem.DebugTool
+  nameWithType: Noname.GameAbilitySystem.DebugTool
+  fullName: Noname.GameAbilitySystem.DebugTool
+  type: Namespace
+references:
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog
+  commentId: T:Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.html
+  name: AbilityDebugCatalog
+  nameWithType: AbilityDebugCatalog
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugPanel
+  commentId: T:Noname.GameAbilitySystem.DebugTool.AbilityDebugPanel
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugPanel.html
+  name: AbilityDebugPanel
+  nameWithType: AbilityDebugPanel
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugPanel
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+  commentId: T:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+  parent: Noname.GameAbilitySystem.DebugTool
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.html
+  name: AbilityDebugTooltip
+  nameWithType: AbilityDebugTooltip
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipConfig
+  commentId: T:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipConfig
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipConfig.html
+  name: AbilityDebugTooltipConfig
+  nameWithType: AbilityDebugTooltipConfig
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipConfig
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger
+  commentId: T:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.html
+  name: AbilityDebugTooltipTrigger
+  nameWithType: AbilityDebugTooltipTrigger
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugUI
+  commentId: T:Noname.GameAbilitySystem.DebugTool.AbilityDebugUI
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugUI.html
+  name: AbilityDebugUI
+  nameWithType: AbilityDebugUI
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugUI
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugWorldFollower
+  commentId: T:Noname.GameAbilitySystem.DebugTool.AbilityDebugWorldFollower
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugWorldFollower.html
+  name: AbilityDebugWorldFollower
+  nameWithType: AbilityDebugWorldFollower
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugWorldFollower
+- uid: Noname.GameAbilitySystem.DebugTool.AbilitySystemTriggerVolume
+  commentId: T:Noname.GameAbilitySystem.DebugTool.AbilitySystemTriggerVolume
+  href: Noname.GameAbilitySystem.DebugTool.AbilitySystemTriggerVolume.html
+  name: AbilitySystemTriggerVolume
+  nameWithType: AbilitySystemTriggerVolume
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilitySystemTriggerVolume
+- uid: Noname.GameAbilitySystem.DebugTool.UIDraggableItem
+  commentId: T:Noname.GameAbilitySystem.DebugTool.UIDraggableItem
+  href: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.html
+  name: UIDraggableItem
+  nameWithType: UIDraggableItem
+  fullName: Noname.GameAbilitySystem.DebugTool.UIDraggableItem
+- uid: Noname.GameAbilitySystem.DebugTool
+  commentId: N:Noname.GameAbilitySystem.DebugTool
+  href: Noname.html
+  name: Noname.GameAbilitySystem.DebugTool
+  nameWithType: Noname.GameAbilitySystem.DebugTool
+  fullName: Noname.GameAbilitySystem.DebugTool
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.DebugTool
+    name: DebugTool
+    href: Noname.GameAbilitySystem.DebugTool.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.DebugTool
+    name: DebugTool
+    href: Noname.GameAbilitySystem.DebugTool.html

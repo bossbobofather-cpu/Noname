@@ -1,0 +1,198 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+  commentId: T:MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+  id: ILocomotionStateProvider
+  parent: MyProject.Common.Units.Locomotion
+  children:
+  - MyProject.Common.Units.Locomotion.ILocomotionStateProvider.CurrentState
+  - MyProject.Common.Units.Locomotion.ILocomotionStateProvider.OnLocomotionStateChanged
+  langs:
+  - csharp
+  - vb
+  name: ILocomotionStateProvider
+  nameWithType: ILocomotionStateProvider
+  fullName: MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+  type: Interface
+  namespace: MyProject.Common.Units.Locomotion
+  summary: 이동 상태를 제공하고 상태 변경 이벤트를 알리는 인터페이스입니다.
+  example: []
+  syntax:
+    content: public interface ILocomotionStateProvider
+    content.vb: Public Interface ILocomotionStateProvider
+- uid: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.CurrentState
+  commentId: P:MyProject.Common.Units.Locomotion.ILocomotionStateProvider.CurrentState
+  id: CurrentState
+  parent: MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+  langs:
+  - csharp
+  - vb
+  name: CurrentState
+  nameWithType: ILocomotionStateProvider.CurrentState
+  fullName: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.CurrentState
+  type: Property
+  namespace: MyProject.Common.Units.Locomotion
+  summary: 현재 이동 상태입니다.
+  example: []
+  syntax:
+    content: LocomotionState CurrentState { get; }
+    parameters: []
+    return:
+      type: MyProject.Common.Units.Locomotion.LocomotionState
+    content.vb: ReadOnly Property CurrentState As LocomotionState
+  overload: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.CurrentState*
+- uid: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.OnLocomotionStateChanged
+  commentId: E:MyProject.Common.Units.Locomotion.ILocomotionStateProvider.OnLocomotionStateChanged
+  id: OnLocomotionStateChanged
+  parent: MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+  langs:
+  - csharp
+  - vb
+  name: OnLocomotionStateChanged
+  nameWithType: ILocomotionStateProvider.OnLocomotionStateChanged
+  fullName: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.OnLocomotionStateChanged
+  type: Event
+  namespace: MyProject.Common.Units.Locomotion
+  summary: 이동 상태가 변경되었을 때 발생하는 이벤트입니다. (이전 상태, 현재 상태)
+  example: []
+  syntax:
+    content: event Action<LocomotionState, LocomotionState> OnLocomotionStateChanged
+    return:
+      type: System.Action{MyProject.Common.Units.Locomotion.LocomotionState,MyProject.Common.Units.Locomotion.LocomotionState}
+    content.vb: Event OnLocomotionStateChanged As Action(Of LocomotionState, LocomotionState)
+references:
+- uid: MyProject.Common.Units.Locomotion
+  commentId: N:MyProject.Common.Units.Locomotion
+  href: MyProject.html
+  name: MyProject.Common.Units.Locomotion
+  nameWithType: MyProject.Common.Units.Locomotion
+  fullName: MyProject.Common.Units.Locomotion
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Units
+    name: Units
+    href: MyProject.Common.Units.html
+  - name: .
+  - uid: MyProject.Common.Units.Locomotion
+    name: Locomotion
+    href: MyProject.Common.Units.Locomotion.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Units
+    name: Units
+    href: MyProject.Common.Units.html
+  - name: .
+  - uid: MyProject.Common.Units.Locomotion
+    name: Locomotion
+    href: MyProject.Common.Units.Locomotion.html
+- uid: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.CurrentState*
+  commentId: Overload:MyProject.Common.Units.Locomotion.ILocomotionStateProvider.CurrentState
+  href: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.html#MyProject_Common_Units_Locomotion_ILocomotionStateProvider_CurrentState
+  name: CurrentState
+  nameWithType: ILocomotionStateProvider.CurrentState
+  fullName: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.CurrentState
+- uid: MyProject.Common.Units.Locomotion.LocomotionState
+  commentId: T:MyProject.Common.Units.Locomotion.LocomotionState
+  parent: MyProject.Common.Units.Locomotion
+  href: MyProject.Common.Units.Locomotion.LocomotionState.html
+  name: LocomotionState
+  nameWithType: LocomotionState
+  fullName: MyProject.Common.Units.Locomotion.LocomotionState
+- uid: System.Action{MyProject.Common.Units.Locomotion.LocomotionState,MyProject.Common.Units.Locomotion.LocomotionState}
+  commentId: T:System.Action{MyProject.Common.Units.Locomotion.LocomotionState,MyProject.Common.Units.Locomotion.LocomotionState}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<LocomotionState, LocomotionState>
+  nameWithType: Action<LocomotionState, LocomotionState>
+  fullName: System.Action<MyProject.Common.Units.Locomotion.LocomotionState, MyProject.Common.Units.Locomotion.LocomotionState>
+  nameWithType.vb: Action(Of LocomotionState, LocomotionState)
+  fullName.vb: System.Action(Of MyProject.Common.Units.Locomotion.LocomotionState, MyProject.Common.Units.Locomotion.LocomotionState)
+  name.vb: Action(Of LocomotionState, LocomotionState)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: MyProject.Common.Units.Locomotion.LocomotionState
+    name: LocomotionState
+    href: MyProject.Common.Units.Locomotion.LocomotionState.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.Common.Units.Locomotion.LocomotionState
+    name: LocomotionState
+    href: MyProject.Common.Units.Locomotion.LocomotionState.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.Common.Units.Locomotion.LocomotionState
+    name: LocomotionState
+    href: MyProject.Common.Units.Locomotion.LocomotionState.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.Common.Units.Locomotion.LocomotionState
+    name: LocomotionState
+    href: MyProject.Common.Units.Locomotion.LocomotionState.html
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

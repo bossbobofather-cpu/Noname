@@ -1,0 +1,74 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.UI.WorldObjectLabel
+  commentId: T:MyProject.Common.UI.WorldObjectLabel
+  id: WorldObjectLabel
+  parent: MyProject.Common.UI
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: WorldObjectLabel
+  nameWithType: WorldObjectLabel
+  fullName: MyProject.Common.UI.WorldObjectLabel
+  type: Class
+  namespace: MyProject.Common.UI
+  summary: >-
+    월드 오브젝트 위에 이름이나 설명을 표시하는 라벨입니다.
+
+    에디터 모드에서도 동작하도록 ExecuteAlways가 설정되어 있습니다.
+  example: []
+  syntax:
+    content: 'public sealed class WorldObjectLabel : MonoBehaviour'
+    content.vb: Public NotInheritable Class WorldObjectLabel Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+references:
+- uid: MyProject.Common.UI
+  commentId: N:MyProject.Common.UI
+  href: MyProject.html
+  name: MyProject.Common.UI
+  nameWithType: MyProject.Common.UI
+  fullName: MyProject.Common.UI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

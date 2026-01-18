@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: Common.Interface
+  commentId: N:Common.Interface
+  id: Common.Interface
+  children:
+  - Common.Interface.IAnimEventReceiver
+  - Common.Interface.IMovement
+  langs:
+  - csharp
+  - vb
+  name: Common.Interface
+  nameWithType: Common.Interface
+  fullName: Common.Interface
+  type: Namespace
+references:
+- uid: Common.Interface.IAnimEventReceiver
+  commentId: T:Common.Interface.IAnimEventReceiver
+  parent: Common.Interface
+  href: Common.Interface.IAnimEventReceiver.html
+  name: IAnimEventReceiver
+  nameWithType: IAnimEventReceiver
+  fullName: Common.Interface.IAnimEventReceiver
+- uid: Common.Interface.IMovement
+  commentId: T:Common.Interface.IMovement
+  parent: Common.Interface
+  href: Common.Interface.IMovement.html
+  name: IMovement
+  nameWithType: IMovement
+  fullName: Common.Interface.IMovement
+- uid: Common.Interface
+  commentId: N:Common.Interface
+  href: Common.html
+  name: Common.Interface
+  nameWithType: Common.Interface
+  fullName: Common.Interface
+  spec.csharp:
+  - uid: Common
+    name: Common
+    href: Common.html
+  - name: .
+  - uid: Common.Interface
+    name: Interface
+    href: Common.Interface.html
+  spec.vb:
+  - uid: Common
+    name: Common
+    href: Common.html
+  - name: .
+  - uid: Common.Interface
+    name: Interface
+    href: Common.Interface.html

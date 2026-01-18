@@ -1,0 +1,21 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.CameraSystem
+  commentId: N:MyProject.Common.CameraSystem
+  id: MyProject.Common.CameraSystem
+  children:
+  - MyProject.Common.CameraSystem.QuarterViewFollowCamera
+  langs:
+  - csharp
+  - vb
+  name: MyProject.Common.CameraSystem
+  nameWithType: MyProject.Common.CameraSystem
+  fullName: MyProject.Common.CameraSystem
+  type: Namespace
+references:
+- uid: MyProject.Common.CameraSystem.QuarterViewFollowCamera
+  commentId: T:MyProject.Common.CameraSystem.QuarterViewFollowCamera
+  href: MyProject.Common.CameraSystem.QuarterViewFollowCamera.html
+  name: QuarterViewFollowCamera
+  nameWithType: QuarterViewFollowCamera
+  fullName: MyProject.Common.CameraSystem.QuarterViewFollowCamera

@@ -1,0 +1,437 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.GameplayEffectContext
+  commentId: T:Noname.GameAbilitySystem.GameplayEffectContext
+  id: GameplayEffectContext
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.GameplayEffectContext.#ctor(Noname.GameAbilitySystem.AbilitySystemComponent,Noname.GameAbilitySystem.AbilitySystemComponent,Noname.GameAbilitySystem.AbilityContext,System.Object)
+  - Noname.GameAbilitySystem.GameplayEffectContext.AbilityContext
+  - Noname.GameAbilitySystem.GameplayEffectContext.RuleContext
+  - Noname.GameAbilitySystem.GameplayEffectContext.Source
+  - Noname.GameAbilitySystem.GameplayEffectContext.Target
+  langs:
+  - csharp
+  - vb
+  name: GameplayEffectContext
+  nameWithType: GameplayEffectContext
+  fullName: Noname.GameAbilitySystem.GameplayEffectContext
+  type: Struct
+  namespace: Noname.GameAbilitySystem
+  summary: 효과 계산에 필요한 컨텍스트입니다.
+  example: []
+  syntax:
+    content: public readonly struct GameplayEffectContext
+    content.vb: Public Structure GameplayEffectContext
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Noname.GameAbilitySystem.GameplayEffectContext.#ctor(Noname.GameAbilitySystem.AbilitySystemComponent,Noname.GameAbilitySystem.AbilitySystemComponent,Noname.GameAbilitySystem.AbilityContext,System.Object)
+  commentId: M:Noname.GameAbilitySystem.GameplayEffectContext.#ctor(Noname.GameAbilitySystem.AbilitySystemComponent,Noname.GameAbilitySystem.AbilitySystemComponent,Noname.GameAbilitySystem.AbilityContext,System.Object)
+  id: '#ctor(Noname.GameAbilitySystem.AbilitySystemComponent,Noname.GameAbilitySystem.AbilitySystemComponent,Noname.GameAbilitySystem.AbilityContext,System.Object)'
+  parent: Noname.GameAbilitySystem.GameplayEffectContext
+  langs:
+  - csharp
+  - vb
+  name: GameplayEffectContext(AbilitySystemComponent, AbilitySystemComponent, AbilityContext, object)
+  nameWithType: GameplayEffectContext.GameplayEffectContext(AbilitySystemComponent, AbilitySystemComponent, AbilityContext, object)
+  fullName: Noname.GameAbilitySystem.GameplayEffectContext.GameplayEffectContext(Noname.GameAbilitySystem.AbilitySystemComponent, Noname.GameAbilitySystem.AbilitySystemComponent, Noname.GameAbilitySystem.AbilityContext, object)
+  type: Constructor
+  namespace: Noname.GameAbilitySystem
+  summary: 효과 계산 컨텍스트를 생성합니다.
+  example: []
+  syntax:
+    content: public GameplayEffectContext(AbilitySystemComponent source, AbilitySystemComponent target, AbilityContext abilityContext, object ruleContext = null)
+    parameters:
+    - id: source
+      type: Noname.GameAbilitySystem.AbilitySystemComponent
+      description: 효과를 주는 대상
+    - id: target
+      type: Noname.GameAbilitySystem.AbilitySystemComponent
+      description: 효과를 받는 대상
+    - id: abilityContext
+      type: Noname.GameAbilitySystem.AbilityContext
+      description: 어빌리티 컨텍스트
+    - id: ruleContext
+      type: System.Object
+      description: 룰셋 관련 추가 정보
+    content.vb: Public Sub New(source As AbilitySystemComponent, target As AbilitySystemComponent, abilityContext As AbilityContext, ruleContext As Object = Nothing)
+  overload: Noname.GameAbilitySystem.GameplayEffectContext.#ctor*
+  nameWithType.vb: GameplayEffectContext.New(AbilitySystemComponent, AbilitySystemComponent, AbilityContext, Object)
+  fullName.vb: Noname.GameAbilitySystem.GameplayEffectContext.New(Noname.GameAbilitySystem.AbilitySystemComponent, Noname.GameAbilitySystem.AbilitySystemComponent, Noname.GameAbilitySystem.AbilityContext, Object)
+  name.vb: New(AbilitySystemComponent, AbilitySystemComponent, AbilityContext, Object)
+- uid: Noname.GameAbilitySystem.GameplayEffectContext.Source
+  commentId: P:Noname.GameAbilitySystem.GameplayEffectContext.Source
+  id: Source
+  parent: Noname.GameAbilitySystem.GameplayEffectContext
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: GameplayEffectContext.Source
+  fullName: Noname.GameAbilitySystem.GameplayEffectContext.Source
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 효과를 주는 대상입니다.
+  example: []
+  syntax:
+    content: public AbilitySystemComponent Source { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.AbilitySystemComponent
+    content.vb: Public ReadOnly Property Source As AbilitySystemComponent
+  overload: Noname.GameAbilitySystem.GameplayEffectContext.Source*
+- uid: Noname.GameAbilitySystem.GameplayEffectContext.Target
+  commentId: P:Noname.GameAbilitySystem.GameplayEffectContext.Target
+  id: Target
+  parent: Noname.GameAbilitySystem.GameplayEffectContext
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: GameplayEffectContext.Target
+  fullName: Noname.GameAbilitySystem.GameplayEffectContext.Target
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 효과를 받는 대상입니다.
+  example: []
+  syntax:
+    content: public AbilitySystemComponent Target { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.AbilitySystemComponent
+    content.vb: Public ReadOnly Property Target As AbilitySystemComponent
+  overload: Noname.GameAbilitySystem.GameplayEffectContext.Target*
+- uid: Noname.GameAbilitySystem.GameplayEffectContext.AbilityContext
+  commentId: P:Noname.GameAbilitySystem.GameplayEffectContext.AbilityContext
+  id: AbilityContext
+  parent: Noname.GameAbilitySystem.GameplayEffectContext
+  langs:
+  - csharp
+  - vb
+  name: AbilityContext
+  nameWithType: GameplayEffectContext.AbilityContext
+  fullName: Noname.GameAbilitySystem.GameplayEffectContext.AbilityContext
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 어빌리티 컨텍스트입니다.
+  example: []
+  syntax:
+    content: public AbilityContext AbilityContext { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.AbilityContext
+    content.vb: Public ReadOnly Property AbilityContext As AbilityContext
+  overload: Noname.GameAbilitySystem.GameplayEffectContext.AbilityContext*
+- uid: Noname.GameAbilitySystem.GameplayEffectContext.RuleContext
+  commentId: P:Noname.GameAbilitySystem.GameplayEffectContext.RuleContext
+  id: RuleContext
+  parent: Noname.GameAbilitySystem.GameplayEffectContext
+  langs:
+  - csharp
+  - vb
+  name: RuleContext
+  nameWithType: GameplayEffectContext.RuleContext
+  fullName: Noname.GameAbilitySystem.GameplayEffectContext.RuleContext
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 룰셋 관련 추가 정보입니다.
+  example: []
+  syntax:
+    content: public object RuleContext { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property RuleContext As Object
+  overload: Noname.GameAbilitySystem.GameplayEffectContext.RuleContext*
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.GameplayEffectContext.#ctor*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayEffectContext.#ctor
+  href: Noname.GameAbilitySystem.GameplayEffectContext.html#Noname_GameAbilitySystem_GameplayEffectContext__ctor_Noname_GameAbilitySystem_AbilitySystemComponent_Noname_GameAbilitySystem_AbilitySystemComponent_Noname_GameAbilitySystem_AbilityContext_System_Object_
+  name: GameplayEffectContext
+  nameWithType: GameplayEffectContext.GameplayEffectContext
+  fullName: Noname.GameAbilitySystem.GameplayEffectContext.GameplayEffectContext
+  nameWithType.vb: GameplayEffectContext.New
+  fullName.vb: Noname.GameAbilitySystem.GameplayEffectContext.New
+  name.vb: New
+- uid: Noname.GameAbilitySystem.AbilitySystemComponent
+  commentId: T:Noname.GameAbilitySystem.AbilitySystemComponent
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AbilitySystemComponent.html
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: Noname.GameAbilitySystem.AbilitySystemComponent
+- uid: Noname.GameAbilitySystem.AbilityContext
+  commentId: T:Noname.GameAbilitySystem.AbilityContext
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AbilityContext.html
+  name: AbilityContext
+  nameWithType: AbilityContext
+  fullName: Noname.GameAbilitySystem.AbilityContext
+- uid: Noname.GameAbilitySystem.GameplayEffectContext.Source*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayEffectContext.Source
+  href: Noname.GameAbilitySystem.GameplayEffectContext.html#Noname_GameAbilitySystem_GameplayEffectContext_Source
+  name: Source
+  nameWithType: GameplayEffectContext.Source
+  fullName: Noname.GameAbilitySystem.GameplayEffectContext.Source
+- uid: Noname.GameAbilitySystem.GameplayEffectContext.Target*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayEffectContext.Target
+  href: Noname.GameAbilitySystem.GameplayEffectContext.html#Noname_GameAbilitySystem_GameplayEffectContext_Target
+  name: Target
+  nameWithType: GameplayEffectContext.Target
+  fullName: Noname.GameAbilitySystem.GameplayEffectContext.Target
+- uid: Noname.GameAbilitySystem.GameplayEffectContext.AbilityContext*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayEffectContext.AbilityContext
+  href: Noname.GameAbilitySystem.GameplayEffectContext.html#Noname_GameAbilitySystem_GameplayEffectContext_AbilityContext
+  name: AbilityContext
+  nameWithType: GameplayEffectContext.AbilityContext
+  fullName: Noname.GameAbilitySystem.GameplayEffectContext.AbilityContext
+- uid: Noname.GameAbilitySystem.GameplayEffectContext.RuleContext*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayEffectContext.RuleContext
+  href: Noname.GameAbilitySystem.GameplayEffectContext.html#Noname_GameAbilitySystem_GameplayEffectContext_RuleContext
+  name: RuleContext
+  nameWithType: GameplayEffectContext.RuleContext
+  fullName: Noname.GameAbilitySystem.GameplayEffectContext.RuleContext

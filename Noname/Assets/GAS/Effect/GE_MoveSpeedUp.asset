@@ -17,9 +17,15 @@ MonoBehaviour:
   _period: 0
   _grantedTags:
     _tags: []
+  _activationRequiredTags:
+    _tags: []
+  _activationBlockedTags:
+    _tags: []
   _lastDurationType: 0
   _durationTypeInitialized: 1
   _modifiers:
   - Attribute: {fileID: 11400000, guid: 913482ec42918144384fbab622487c08, type: 2}
-    Operation: 1
-    Magnitude: 2
+    ValueMode: 0
+    Operation: 0
+    Magnitude: 10
+    Calculator: {fileID: 0}

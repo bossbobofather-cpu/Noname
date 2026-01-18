@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.CameraSystem.QuarterViewFollowCamera
+  commentId: T:MyProject.Common.CameraSystem.QuarterViewFollowCamera
+  id: QuarterViewFollowCamera
+  parent: MyProject.Common.CameraSystem
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: QuarterViewFollowCamera
+  nameWithType: QuarterViewFollowCamera
+  fullName: MyProject.Common.CameraSystem.QuarterViewFollowCamera
+  type: Class
+  namespace: MyProject.Common.CameraSystem
+  summary: 대상을 쿼터뷰 시점으로 추적하는 카메라 컨트롤러입니다.
+  example: []
+  syntax:
+    content: 'public sealed class QuarterViewFollowCamera : MonoBehaviour'
+    content.vb: Public NotInheritable Class QuarterViewFollowCamera Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+references:
+- uid: MyProject.Common.CameraSystem
+  commentId: N:MyProject.Common.CameraSystem
+  href: MyProject.html
+  name: MyProject.Common.CameraSystem
+  nameWithType: MyProject.Common.CameraSystem
+  fullName: MyProject.Common.CameraSystem
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.CameraSystem
+    name: CameraSystem
+    href: MyProject.Common.CameraSystem.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.CameraSystem
+    name: CameraSystem
+    href: MyProject.Common.CameraSystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

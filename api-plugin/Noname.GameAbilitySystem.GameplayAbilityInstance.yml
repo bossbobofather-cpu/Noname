@@ -1,0 +1,863 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance
+  commentId: T:Noname.GameAbilitySystem.GameplayAbilityInstance
+  id: GameplayAbilityInstance
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.GameplayAbilityInstance.#ctor(Noname.GameAbilitySystem.AbilitySystemComponent,Noname.GameAbilitySystem.GameplayAbility,Noname.GameAbilitySystem.AbilityContext)
+  - Noname.GameAbilitySystem.GameplayAbilityInstance.ASC
+  - Noname.GameAbilitySystem.GameplayAbilityInstance.Activate
+  - Noname.GameAbilitySystem.GameplayAbilityInstance.Cancel
+  - Noname.GameAbilitySystem.GameplayAbilityInstance.Context
+  - Noname.GameAbilitySystem.GameplayAbilityInstance.End
+  - Noname.GameAbilitySystem.GameplayAbilityInstance.Handle
+  - Noname.GameAbilitySystem.GameplayAbilityInstance.RegisterTask(Noname.GameAbilitySystem.AbilityTask)
+  - Noname.GameAbilitySystem.GameplayAbilityInstance.StartCoroutine(System.Collections.IEnumerator)
+  - Noname.GameAbilitySystem.GameplayAbilityInstance.StopCoroutine(Coroutine)
+  - Noname.GameAbilitySystem.GameplayAbilityInstance.UnregisterTask(Noname.GameAbilitySystem.AbilityTask)
+  - Noname.GameAbilitySystem.GameplayAbilityInstance.UpdateContext(Noname.GameAbilitySystem.AbilityContext)
+  langs:
+  - csharp
+  - vb
+  name: GameplayAbilityInstance
+  nameWithType: GameplayAbilityInstance
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance
+  type: Class
+  namespace: Noname.GameAbilitySystem
+  summary: 실행 중인 어빌리티 인스턴스를 관리합니다.
+  example: []
+  syntax:
+    content: 'public sealed class GameplayAbilityInstance : IAbilityTaskOwner'
+    content.vb: Public NotInheritable Class GameplayAbilityInstance Implements IAbilityTaskOwner
+  inheritance:
+  - System.Object
+  implements:
+  - Noname.GameAbilitySystem.IAbilityTaskOwner
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.#ctor(Noname.GameAbilitySystem.AbilitySystemComponent,Noname.GameAbilitySystem.GameplayAbility,Noname.GameAbilitySystem.AbilityContext)
+  commentId: M:Noname.GameAbilitySystem.GameplayAbilityInstance.#ctor(Noname.GameAbilitySystem.AbilitySystemComponent,Noname.GameAbilitySystem.GameplayAbility,Noname.GameAbilitySystem.AbilityContext)
+  id: '#ctor(Noname.GameAbilitySystem.AbilitySystemComponent,Noname.GameAbilitySystem.GameplayAbility,Noname.GameAbilitySystem.AbilityContext)'
+  parent: Noname.GameAbilitySystem.GameplayAbilityInstance
+  langs:
+  - csharp
+  - vb
+  name: GameplayAbilityInstance(AbilitySystemComponent, GameplayAbility, AbilityContext)
+  nameWithType: GameplayAbilityInstance.GameplayAbilityInstance(AbilitySystemComponent, GameplayAbility, AbilityContext)
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.GameplayAbilityInstance(Noname.GameAbilitySystem.AbilitySystemComponent, Noname.GameAbilitySystem.GameplayAbility, Noname.GameAbilitySystem.AbilityContext)
+  type: Constructor
+  namespace: Noname.GameAbilitySystem
+  summary: 어빌리티 인스턴스를 생성합니다.
+  example: []
+  syntax:
+    content: public GameplayAbilityInstance(AbilitySystemComponent asc, GameplayAbility ability, AbilityContext context)
+    parameters:
+    - id: asc
+      type: Noname.GameAbilitySystem.AbilitySystemComponent
+      description: 능력 시스템 컴포넌트
+    - id: ability
+      type: Noname.GameAbilitySystem.GameplayAbility
+      description: 능력 객체
+    - id: context
+      type: Noname.GameAbilitySystem.AbilityContext
+      description: 실행 컨텍스트
+    content.vb: Public Sub New(asc As AbilitySystemComponent, ability As GameplayAbility, context As AbilityContext)
+  overload: Noname.GameAbilitySystem.GameplayAbilityInstance.#ctor*
+  nameWithType.vb: GameplayAbilityInstance.New(AbilitySystemComponent, GameplayAbility, AbilityContext)
+  fullName.vb: Noname.GameAbilitySystem.GameplayAbilityInstance.New(Noname.GameAbilitySystem.AbilitySystemComponent, Noname.GameAbilitySystem.GameplayAbility, Noname.GameAbilitySystem.AbilityContext)
+  name.vb: New(AbilitySystemComponent, GameplayAbility, AbilityContext)
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.ASC
+  commentId: P:Noname.GameAbilitySystem.GameplayAbilityInstance.ASC
+  id: ASC
+  parent: Noname.GameAbilitySystem.GameplayAbilityInstance
+  langs:
+  - csharp
+  - vb
+  name: ASC
+  nameWithType: GameplayAbilityInstance.ASC
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.ASC
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 능력 시스템 컴포넌트입니다.
+  example: []
+  syntax:
+    content: public AbilitySystemComponent ASC { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.AbilitySystemComponent
+    content.vb: Public ReadOnly Property ASC As AbilitySystemComponent
+  overload: Noname.GameAbilitySystem.GameplayAbilityInstance.ASC*
+  implements:
+  - Noname.GameAbilitySystem.IAbilityTaskOwner.ASC
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.Context
+  commentId: P:Noname.GameAbilitySystem.GameplayAbilityInstance.Context
+  id: Context
+  parent: Noname.GameAbilitySystem.GameplayAbilityInstance
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: GameplayAbilityInstance.Context
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.Context
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 현재 실행 컨텍스트입니다.
+  example: []
+  syntax:
+    content: public AbilityContext Context { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.AbilityContext
+    content.vb: Public Property Context As AbilityContext
+  overload: Noname.GameAbilitySystem.GameplayAbilityInstance.Context*
+  implements:
+  - Noname.GameAbilitySystem.IAbilityTaskOwner.Context
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.Handle
+  commentId: P:Noname.GameAbilitySystem.GameplayAbilityInstance.Handle
+  id: Handle
+  parent: Noname.GameAbilitySystem.GameplayAbilityInstance
+  langs:
+  - csharp
+  - vb
+  name: Handle
+  nameWithType: GameplayAbilityInstance.Handle
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.Handle
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 실행 중인 능력 핸들입니다.
+  example: []
+  syntax:
+    content: public FGameplayAbilitySpecHandle Handle { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
+    content.vb: Public ReadOnly Property Handle As FGameplayAbilitySpecHandle
+  overload: Noname.GameAbilitySystem.GameplayAbilityInstance.Handle*
+  implements:
+  - Noname.GameAbilitySystem.IAbilityTaskOwner.Handle
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.Activate
+  commentId: M:Noname.GameAbilitySystem.GameplayAbilityInstance.Activate
+  id: Activate
+  parent: Noname.GameAbilitySystem.GameplayAbilityInstance
+  langs:
+  - csharp
+  - vb
+  name: Activate()
+  nameWithType: GameplayAbilityInstance.Activate()
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.Activate()
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 어빌리티를 활성화합니다.
+  example: []
+  syntax:
+    content: public void Activate()
+    content.vb: Public Sub Activate()
+  overload: Noname.GameAbilitySystem.GameplayAbilityInstance.Activate*
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.End
+  commentId: M:Noname.GameAbilitySystem.GameplayAbilityInstance.End
+  id: End
+  parent: Noname.GameAbilitySystem.GameplayAbilityInstance
+  langs:
+  - csharp
+  - vb
+  name: End()
+  nameWithType: GameplayAbilityInstance.End()
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.End()
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 어빌리티를 종료합니다.
+  example: []
+  syntax:
+    content: public void End()
+    content.vb: Public Sub [End]()
+  overload: Noname.GameAbilitySystem.GameplayAbilityInstance.End*
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.Cancel
+  commentId: M:Noname.GameAbilitySystem.GameplayAbilityInstance.Cancel
+  id: Cancel
+  parent: Noname.GameAbilitySystem.GameplayAbilityInstance
+  langs:
+  - csharp
+  - vb
+  name: Cancel()
+  nameWithType: GameplayAbilityInstance.Cancel()
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.Cancel()
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 어빌리티를 취소합니다.
+  example: []
+  syntax:
+    content: public void Cancel()
+    content.vb: Public Sub Cancel()
+  overload: Noname.GameAbilitySystem.GameplayAbilityInstance.Cancel*
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.StartCoroutine(System.Collections.IEnumerator)
+  commentId: M:Noname.GameAbilitySystem.GameplayAbilityInstance.StartCoroutine(System.Collections.IEnumerator)
+  id: StartCoroutine(System.Collections.IEnumerator)
+  parent: Noname.GameAbilitySystem.GameplayAbilityInstance
+  langs:
+  - csharp
+  - vb
+  name: StartCoroutine(IEnumerator)
+  nameWithType: GameplayAbilityInstance.StartCoroutine(IEnumerator)
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.StartCoroutine(System.Collections.IEnumerator)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 코루틴을 시작합니다.
+  example: []
+  syntax:
+    content: public Coroutine StartCoroutine(IEnumerator routine)
+    parameters:
+    - id: routine
+      type: System.Collections.IEnumerator
+      description: 실행할 루틴
+    return:
+      type: Coroutine
+      description: 코루틴 핸들
+    content.vb: Public Function StartCoroutine(routine As IEnumerator) As Coroutine
+  overload: Noname.GameAbilitySystem.GameplayAbilityInstance.StartCoroutine*
+  implements:
+  - Noname.GameAbilitySystem.IAbilityTaskOwner.StartCoroutine(System.Collections.IEnumerator)
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.StopCoroutine(Coroutine)
+  commentId: M:Noname.GameAbilitySystem.GameplayAbilityInstance.StopCoroutine(Coroutine)
+  id: StopCoroutine(Coroutine)
+  parent: Noname.GameAbilitySystem.GameplayAbilityInstance
+  langs:
+  - csharp
+  - vb
+  name: StopCoroutine(Coroutine)
+  nameWithType: GameplayAbilityInstance.StopCoroutine(Coroutine)
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.StopCoroutine(Coroutine)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 코루틴을 중단합니다.
+  example: []
+  syntax:
+    content: public void StopCoroutine(Coroutine routine)
+    parameters:
+    - id: routine
+      type: Coroutine
+      description: 중단할 코루틴
+    content.vb: Public Sub StopCoroutine(routine As Coroutine)
+  overload: Noname.GameAbilitySystem.GameplayAbilityInstance.StopCoroutine*
+  implements:
+  - Noname.GameAbilitySystem.IAbilityTaskOwner.StopCoroutine(Coroutine)
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.RegisterTask(Noname.GameAbilitySystem.AbilityTask)
+  commentId: M:Noname.GameAbilitySystem.GameplayAbilityInstance.RegisterTask(Noname.GameAbilitySystem.AbilityTask)
+  id: RegisterTask(Noname.GameAbilitySystem.AbilityTask)
+  parent: Noname.GameAbilitySystem.GameplayAbilityInstance
+  langs:
+  - csharp
+  - vb
+  name: RegisterTask(AbilityTask)
+  nameWithType: GameplayAbilityInstance.RegisterTask(AbilityTask)
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.RegisterTask(Noname.GameAbilitySystem.AbilityTask)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 태스크를 등록합니다.
+  example: []
+  syntax:
+    content: public void RegisterTask(AbilityTask task)
+    parameters:
+    - id: task
+      type: Noname.GameAbilitySystem.AbilityTask
+      description: 등록할 태스크
+    content.vb: Public Sub RegisterTask(task As AbilityTask)
+  overload: Noname.GameAbilitySystem.GameplayAbilityInstance.RegisterTask*
+  implements:
+  - Noname.GameAbilitySystem.IAbilityTaskOwner.RegisterTask(Noname.GameAbilitySystem.AbilityTask)
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.UnregisterTask(Noname.GameAbilitySystem.AbilityTask)
+  commentId: M:Noname.GameAbilitySystem.GameplayAbilityInstance.UnregisterTask(Noname.GameAbilitySystem.AbilityTask)
+  id: UnregisterTask(Noname.GameAbilitySystem.AbilityTask)
+  parent: Noname.GameAbilitySystem.GameplayAbilityInstance
+  langs:
+  - csharp
+  - vb
+  name: UnregisterTask(AbilityTask)
+  nameWithType: GameplayAbilityInstance.UnregisterTask(AbilityTask)
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.UnregisterTask(Noname.GameAbilitySystem.AbilityTask)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 태스크 등록을 해제합니다.
+  example: []
+  syntax:
+    content: public void UnregisterTask(AbilityTask task)
+    parameters:
+    - id: task
+      type: Noname.GameAbilitySystem.AbilityTask
+      description: 해제할 태스크
+    content.vb: Public Sub UnregisterTask(task As AbilityTask)
+  overload: Noname.GameAbilitySystem.GameplayAbilityInstance.UnregisterTask*
+  implements:
+  - Noname.GameAbilitySystem.IAbilityTaskOwner.UnregisterTask(Noname.GameAbilitySystem.AbilityTask)
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.UpdateContext(Noname.GameAbilitySystem.AbilityContext)
+  commentId: M:Noname.GameAbilitySystem.GameplayAbilityInstance.UpdateContext(Noname.GameAbilitySystem.AbilityContext)
+  id: UpdateContext(Noname.GameAbilitySystem.AbilityContext)
+  parent: Noname.GameAbilitySystem.GameplayAbilityInstance
+  langs:
+  - csharp
+  - vb
+  name: UpdateContext(AbilityContext)
+  nameWithType: GameplayAbilityInstance.UpdateContext(AbilityContext)
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.UpdateContext(Noname.GameAbilitySystem.AbilityContext)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 실행 컨텍스트를 갱신합니다.
+  example: []
+  syntax:
+    content: public void UpdateContext(AbilityContext context)
+    parameters:
+    - id: context
+      type: Noname.GameAbilitySystem.AbilityContext
+      description: 새 컨텍스트
+    content.vb: Public Sub UpdateContext(context As AbilityContext)
+  overload: Noname.GameAbilitySystem.GameplayAbilityInstance.UpdateContext*
+  implements:
+  - Noname.GameAbilitySystem.IAbilityTaskOwner.UpdateContext(Noname.GameAbilitySystem.AbilityContext)
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Noname.GameAbilitySystem.IAbilityTaskOwner
+  commentId: T:Noname.GameAbilitySystem.IAbilityTaskOwner
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.IAbilityTaskOwner.html
+  name: IAbilityTaskOwner
+  nameWithType: IAbilityTaskOwner
+  fullName: Noname.GameAbilitySystem.IAbilityTaskOwner
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.#ctor*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityInstance.#ctor
+  href: Noname.GameAbilitySystem.GameplayAbilityInstance.html#Noname_GameAbilitySystem_GameplayAbilityInstance__ctor_Noname_GameAbilitySystem_AbilitySystemComponent_Noname_GameAbilitySystem_GameplayAbility_Noname_GameAbilitySystem_AbilityContext_
+  name: GameplayAbilityInstance
+  nameWithType: GameplayAbilityInstance.GameplayAbilityInstance
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.GameplayAbilityInstance
+  nameWithType.vb: GameplayAbilityInstance.New
+  fullName.vb: Noname.GameAbilitySystem.GameplayAbilityInstance.New
+  name.vb: New
+- uid: Noname.GameAbilitySystem.AbilitySystemComponent
+  commentId: T:Noname.GameAbilitySystem.AbilitySystemComponent
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AbilitySystemComponent.html
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: Noname.GameAbilitySystem.AbilitySystemComponent
+- uid: Noname.GameAbilitySystem.GameplayAbility
+  commentId: T:Noname.GameAbilitySystem.GameplayAbility
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayAbility.html
+  name: GameplayAbility
+  nameWithType: GameplayAbility
+  fullName: Noname.GameAbilitySystem.GameplayAbility
+- uid: Noname.GameAbilitySystem.AbilityContext
+  commentId: T:Noname.GameAbilitySystem.AbilityContext
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AbilityContext.html
+  name: AbilityContext
+  nameWithType: AbilityContext
+  fullName: Noname.GameAbilitySystem.AbilityContext
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.ASC*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityInstance.ASC
+  href: Noname.GameAbilitySystem.GameplayAbilityInstance.html#Noname_GameAbilitySystem_GameplayAbilityInstance_ASC
+  name: ASC
+  nameWithType: GameplayAbilityInstance.ASC
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.ASC
+- uid: Noname.GameAbilitySystem.IAbilityTaskOwner.ASC
+  commentId: P:Noname.GameAbilitySystem.IAbilityTaskOwner.ASC
+  parent: Noname.GameAbilitySystem.IAbilityTaskOwner
+  href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_ASC
+  name: ASC
+  nameWithType: IAbilityTaskOwner.ASC
+  fullName: Noname.GameAbilitySystem.IAbilityTaskOwner.ASC
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.Context*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityInstance.Context
+  href: Noname.GameAbilitySystem.GameplayAbilityInstance.html#Noname_GameAbilitySystem_GameplayAbilityInstance_Context
+  name: Context
+  nameWithType: GameplayAbilityInstance.Context
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.Context
+- uid: Noname.GameAbilitySystem.IAbilityTaskOwner.Context
+  commentId: P:Noname.GameAbilitySystem.IAbilityTaskOwner.Context
+  parent: Noname.GameAbilitySystem.IAbilityTaskOwner
+  href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_Context
+  name: Context
+  nameWithType: IAbilityTaskOwner.Context
+  fullName: Noname.GameAbilitySystem.IAbilityTaskOwner.Context
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.Handle*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityInstance.Handle
+  href: Noname.GameAbilitySystem.GameplayAbilityInstance.html#Noname_GameAbilitySystem_GameplayAbilityInstance_Handle
+  name: Handle
+  nameWithType: GameplayAbilityInstance.Handle
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.Handle
+- uid: Noname.GameAbilitySystem.IAbilityTaskOwner.Handle
+  commentId: P:Noname.GameAbilitySystem.IAbilityTaskOwner.Handle
+  parent: Noname.GameAbilitySystem.IAbilityTaskOwner
+  href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_Handle
+  name: Handle
+  nameWithType: IAbilityTaskOwner.Handle
+  fullName: Noname.GameAbilitySystem.IAbilityTaskOwner.Handle
+- uid: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
+  commentId: T:Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.html
+  name: FGameplayAbilitySpecHandle
+  nameWithType: FGameplayAbilitySpecHandle
+  fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.Activate*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityInstance.Activate
+  href: Noname.GameAbilitySystem.GameplayAbilityInstance.html#Noname_GameAbilitySystem_GameplayAbilityInstance_Activate
+  name: Activate
+  nameWithType: GameplayAbilityInstance.Activate
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.Activate
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.End*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityInstance.End
+  href: Noname.GameAbilitySystem.GameplayAbilityInstance.html#Noname_GameAbilitySystem_GameplayAbilityInstance_End
+  name: End
+  nameWithType: GameplayAbilityInstance.End
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.End
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.Cancel*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityInstance.Cancel
+  href: Noname.GameAbilitySystem.GameplayAbilityInstance.html#Noname_GameAbilitySystem_GameplayAbilityInstance_Cancel
+  name: Cancel
+  nameWithType: GameplayAbilityInstance.Cancel
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.Cancel
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.StartCoroutine*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityInstance.StartCoroutine
+  href: Noname.GameAbilitySystem.GameplayAbilityInstance.html#Noname_GameAbilitySystem_GameplayAbilityInstance_StartCoroutine_System_Collections_IEnumerator_
+  name: StartCoroutine
+  nameWithType: GameplayAbilityInstance.StartCoroutine
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.StartCoroutine
+- uid: Noname.GameAbilitySystem.IAbilityTaskOwner.StartCoroutine(System.Collections.IEnumerator)
+  commentId: M:Noname.GameAbilitySystem.IAbilityTaskOwner.StartCoroutine(System.Collections.IEnumerator)
+  parent: Noname.GameAbilitySystem.IAbilityTaskOwner
+  isExternal: true
+  href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_StartCoroutine_System_Collections_IEnumerator_
+  name: StartCoroutine(IEnumerator)
+  nameWithType: IAbilityTaskOwner.StartCoroutine(IEnumerator)
+  fullName: Noname.GameAbilitySystem.IAbilityTaskOwner.StartCoroutine(System.Collections.IEnumerator)
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.IAbilityTaskOwner.StartCoroutine(System.Collections.IEnumerator)
+    name: StartCoroutine
+    href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_StartCoroutine_System_Collections_IEnumerator_
+  - name: (
+  - uid: System.Collections.IEnumerator
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.IAbilityTaskOwner.StartCoroutine(System.Collections.IEnumerator)
+    name: StartCoroutine
+    href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_StartCoroutine_System_Collections_IEnumerator_
+  - name: (
+  - uid: System.Collections.IEnumerator
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  - name: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: Coroutine
+  isExternal: true
+  name: Coroutine
+  nameWithType: Coroutine
+  fullName: Coroutine
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.StopCoroutine*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityInstance.StopCoroutine
+  href: Noname.GameAbilitySystem.GameplayAbilityInstance.html#Noname_GameAbilitySystem_GameplayAbilityInstance_StopCoroutine_Coroutine_
+  name: StopCoroutine
+  nameWithType: GameplayAbilityInstance.StopCoroutine
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.StopCoroutine
+- uid: Noname.GameAbilitySystem.IAbilityTaskOwner.StopCoroutine(Coroutine)
+  commentId: M:Noname.GameAbilitySystem.IAbilityTaskOwner.StopCoroutine(Coroutine)
+  parent: Noname.GameAbilitySystem.IAbilityTaskOwner
+  isExternal: true
+  href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_StopCoroutine_Coroutine_
+  name: StopCoroutine(Coroutine)
+  nameWithType: IAbilityTaskOwner.StopCoroutine(Coroutine)
+  fullName: Noname.GameAbilitySystem.IAbilityTaskOwner.StopCoroutine(Coroutine)
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.IAbilityTaskOwner.StopCoroutine(Coroutine)
+    name: StopCoroutine
+    href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_StopCoroutine_Coroutine_
+  - name: (
+  - uid: Coroutine
+    name: Coroutine
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.IAbilityTaskOwner.StopCoroutine(Coroutine)
+    name: StopCoroutine
+    href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_StopCoroutine_Coroutine_
+  - name: (
+  - uid: Coroutine
+    name: Coroutine
+    isExternal: true
+  - name: )
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.RegisterTask*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityInstance.RegisterTask
+  href: Noname.GameAbilitySystem.GameplayAbilityInstance.html#Noname_GameAbilitySystem_GameplayAbilityInstance_RegisterTask_Noname_GameAbilitySystem_AbilityTask_
+  name: RegisterTask
+  nameWithType: GameplayAbilityInstance.RegisterTask
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.RegisterTask
+- uid: Noname.GameAbilitySystem.IAbilityTaskOwner.RegisterTask(Noname.GameAbilitySystem.AbilityTask)
+  commentId: M:Noname.GameAbilitySystem.IAbilityTaskOwner.RegisterTask(Noname.GameAbilitySystem.AbilityTask)
+  parent: Noname.GameAbilitySystem.IAbilityTaskOwner
+  href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_RegisterTask_Noname_GameAbilitySystem_AbilityTask_
+  name: RegisterTask(AbilityTask)
+  nameWithType: IAbilityTaskOwner.RegisterTask(AbilityTask)
+  fullName: Noname.GameAbilitySystem.IAbilityTaskOwner.RegisterTask(Noname.GameAbilitySystem.AbilityTask)
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.IAbilityTaskOwner.RegisterTask(Noname.GameAbilitySystem.AbilityTask)
+    name: RegisterTask
+    href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_RegisterTask_Noname_GameAbilitySystem_AbilityTask_
+  - name: (
+  - uid: Noname.GameAbilitySystem.AbilityTask
+    name: AbilityTask
+    href: Noname.GameAbilitySystem.AbilityTask.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.IAbilityTaskOwner.RegisterTask(Noname.GameAbilitySystem.AbilityTask)
+    name: RegisterTask
+    href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_RegisterTask_Noname_GameAbilitySystem_AbilityTask_
+  - name: (
+  - uid: Noname.GameAbilitySystem.AbilityTask
+    name: AbilityTask
+    href: Noname.GameAbilitySystem.AbilityTask.html
+  - name: )
+- uid: Noname.GameAbilitySystem.AbilityTask
+  commentId: T:Noname.GameAbilitySystem.AbilityTask
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AbilityTask.html
+  name: AbilityTask
+  nameWithType: AbilityTask
+  fullName: Noname.GameAbilitySystem.AbilityTask
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.UnregisterTask*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityInstance.UnregisterTask
+  href: Noname.GameAbilitySystem.GameplayAbilityInstance.html#Noname_GameAbilitySystem_GameplayAbilityInstance_UnregisterTask_Noname_GameAbilitySystem_AbilityTask_
+  name: UnregisterTask
+  nameWithType: GameplayAbilityInstance.UnregisterTask
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.UnregisterTask
+- uid: Noname.GameAbilitySystem.IAbilityTaskOwner.UnregisterTask(Noname.GameAbilitySystem.AbilityTask)
+  commentId: M:Noname.GameAbilitySystem.IAbilityTaskOwner.UnregisterTask(Noname.GameAbilitySystem.AbilityTask)
+  parent: Noname.GameAbilitySystem.IAbilityTaskOwner
+  href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_UnregisterTask_Noname_GameAbilitySystem_AbilityTask_
+  name: UnregisterTask(AbilityTask)
+  nameWithType: IAbilityTaskOwner.UnregisterTask(AbilityTask)
+  fullName: Noname.GameAbilitySystem.IAbilityTaskOwner.UnregisterTask(Noname.GameAbilitySystem.AbilityTask)
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.IAbilityTaskOwner.UnregisterTask(Noname.GameAbilitySystem.AbilityTask)
+    name: UnregisterTask
+    href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_UnregisterTask_Noname_GameAbilitySystem_AbilityTask_
+  - name: (
+  - uid: Noname.GameAbilitySystem.AbilityTask
+    name: AbilityTask
+    href: Noname.GameAbilitySystem.AbilityTask.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.IAbilityTaskOwner.UnregisterTask(Noname.GameAbilitySystem.AbilityTask)
+    name: UnregisterTask
+    href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_UnregisterTask_Noname_GameAbilitySystem_AbilityTask_
+  - name: (
+  - uid: Noname.GameAbilitySystem.AbilityTask
+    name: AbilityTask
+    href: Noname.GameAbilitySystem.AbilityTask.html
+  - name: )
+- uid: Noname.GameAbilitySystem.GameplayAbilityInstance.UpdateContext*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityInstance.UpdateContext
+  href: Noname.GameAbilitySystem.GameplayAbilityInstance.html#Noname_GameAbilitySystem_GameplayAbilityInstance_UpdateContext_Noname_GameAbilitySystem_AbilityContext_
+  name: UpdateContext
+  nameWithType: GameplayAbilityInstance.UpdateContext
+  fullName: Noname.GameAbilitySystem.GameplayAbilityInstance.UpdateContext
+- uid: Noname.GameAbilitySystem.IAbilityTaskOwner.UpdateContext(Noname.GameAbilitySystem.AbilityContext)
+  commentId: M:Noname.GameAbilitySystem.IAbilityTaskOwner.UpdateContext(Noname.GameAbilitySystem.AbilityContext)
+  parent: Noname.GameAbilitySystem.IAbilityTaskOwner
+  href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_UpdateContext_Noname_GameAbilitySystem_AbilityContext_
+  name: UpdateContext(AbilityContext)
+  nameWithType: IAbilityTaskOwner.UpdateContext(AbilityContext)
+  fullName: Noname.GameAbilitySystem.IAbilityTaskOwner.UpdateContext(Noname.GameAbilitySystem.AbilityContext)
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.IAbilityTaskOwner.UpdateContext(Noname.GameAbilitySystem.AbilityContext)
+    name: UpdateContext
+    href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_UpdateContext_Noname_GameAbilitySystem_AbilityContext_
+  - name: (
+  - uid: Noname.GameAbilitySystem.AbilityContext
+    name: AbilityContext
+    href: Noname.GameAbilitySystem.AbilityContext.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.IAbilityTaskOwner.UpdateContext(Noname.GameAbilitySystem.AbilityContext)
+    name: UpdateContext
+    href: Noname.GameAbilitySystem.IAbilityTaskOwner.html#Noname_GameAbilitySystem_IAbilityTaskOwner_UpdateContext_Noname_GameAbilitySystem_AbilityContext_
+  - name: (
+  - uid: Noname.GameAbilitySystem.AbilityContext
+    name: AbilityContext
+    href: Noname.GameAbilitySystem.AbilityContext.html
+  - name: )

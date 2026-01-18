@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Noname.GameAbilitySystem;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -8,6 +8,9 @@ using UnityEngine.UI;
 
 namespace Noname.GameAbilitySystem.DebugTool
 {
+    /// <summary>
+    /// 능력 디버그 패널을 구성하는 루트 컴포넌트입니다.
+    /// </summary>
     public sealed class AbilityDebugUI : MonoBehaviour
     {
         [Header("Data")]
@@ -46,6 +49,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void Awake()
         {
+            // 필수 구성 요소를 준비한다.
             EnsureEventSystem();
             EnsureCanvas();
             ResolveTarget();
@@ -58,18 +62,28 @@ namespace Noname.GameAbilitySystem.DebugTool
         {
             if (_toggleWithKey && Keyboard.current != null && Keyboard.current[_toggleKey].wasPressedThisFrame)
             {
+                // 토글 입력이 들어오면 표시를 전환한다.
                 Toggle();
             }
         }
 
+        /// <summary>
+        /// 패널 표시 여부를 설정합니다.
+        /// </summary>
+        /// <param name="visible">표시 여부</param>
         public void SetVisible(bool visible)
         {
+            // 표시 상태를 반영한다.
             _visible = visible;
             ApplyVisibility();
         }
 
+        /// <summary>
+        /// 패널 표시 상태를 토글합니다.
+        /// </summary>
         public void Toggle()
         {
+            // 현재 상태를 반전한다.
             SetVisible(!_visible);
         }
 
@@ -77,6 +91,7 @@ namespace Noname.GameAbilitySystem.DebugTool
         {
             if (_abilitySystem == null)
             {
+                // 상위에서 능력 시스템을 찾는다.
                 _abilitySystem = GetComponentInParent<AbilitySystemComponent>();
             }
 
@@ -120,6 +135,7 @@ namespace Noname.GameAbilitySystem.DebugTool
                 return;
             }
 
+            // 패널 데이터를 갱신하고 타겟을 지정한다.
             _panel.Initialize(_abilitySystem.gameObject.name, AbilityDefinitions, EffectConfigs, _refreshInterval);
             _panel.SetTarget(_abilitySystem, _abilitySystem.gameObject.name);
 
@@ -151,6 +167,7 @@ namespace Noname.GameAbilitySystem.DebugTool
             {
                 if (_autoCreateCanvas)
                 {
+                    // 디버그용 캔버스를 자동 생성한다.
                     var obj = new GameObject("AbilityDebugCanvas", typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
                     _canvas = obj.GetComponent<Canvas>();
                     _canvas.renderMode = RenderMode.ScreenSpaceOverlay;
@@ -173,6 +190,7 @@ namespace Noname.GameAbilitySystem.DebugTool
             var current = EventSystem.current;
             if (current == null)
             {
+                // 이벤트 시스템이 없으면 생성한다.
                 var obj = new GameObject("EventSystem", typeof(EventSystem));
                 current = obj.GetComponent<EventSystem>();
                 DontDestroyOnLoad(obj);

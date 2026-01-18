@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.AttributeModifierValueMode
+  commentId: T:Noname.GameAbilitySystem.AttributeModifierValueMode
+  id: AttributeModifierValueMode
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.AttributeModifierValueMode.Calculated
+  - Noname.GameAbilitySystem.AttributeModifierValueMode.Static
+  - Noname.GameAbilitySystem.AttributeModifierValueMode.StaticPlusCalculated
+  langs:
+  - csharp
+  - vb
+  name: AttributeModifierValueMode
+  nameWithType: AttributeModifierValueMode
+  fullName: Noname.GameAbilitySystem.AttributeModifierValueMode
+  type: Enum
+  namespace: Noname.GameAbilitySystem
+  summary: 수정자 값 계산 모드입니다.
+  example: []
+  syntax:
+    content: public enum AttributeModifierValueMode
+    content.vb: Public Enum AttributeModifierValueMode
+- uid: Noname.GameAbilitySystem.AttributeModifierValueMode.Static
+  commentId: F:Noname.GameAbilitySystem.AttributeModifierValueMode.Static
+  id: Static
+  parent: Noname.GameAbilitySystem.AttributeModifierValueMode
+  langs:
+  - csharp
+  - vb
+  name: Static
+  nameWithType: AttributeModifierValueMode.Static
+  fullName: Noname.GameAbilitySystem.AttributeModifierValueMode.Static
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: Static = 0
+    return:
+      type: Noname.GameAbilitySystem.AttributeModifierValueMode
+- uid: Noname.GameAbilitySystem.AttributeModifierValueMode.Calculated
+  commentId: F:Noname.GameAbilitySystem.AttributeModifierValueMode.Calculated
+  id: Calculated
+  parent: Noname.GameAbilitySystem.AttributeModifierValueMode
+  langs:
+  - csharp
+  - vb
+  name: Calculated
+  nameWithType: AttributeModifierValueMode.Calculated
+  fullName: Noname.GameAbilitySystem.AttributeModifierValueMode.Calculated
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: Calculated = 1
+    return:
+      type: Noname.GameAbilitySystem.AttributeModifierValueMode
+- uid: Noname.GameAbilitySystem.AttributeModifierValueMode.StaticPlusCalculated
+  commentId: F:Noname.GameAbilitySystem.AttributeModifierValueMode.StaticPlusCalculated
+  id: StaticPlusCalculated
+  parent: Noname.GameAbilitySystem.AttributeModifierValueMode
+  langs:
+  - csharp
+  - vb
+  name: StaticPlusCalculated
+  nameWithType: AttributeModifierValueMode.StaticPlusCalculated
+  fullName: Noname.GameAbilitySystem.AttributeModifierValueMode.StaticPlusCalculated
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: StaticPlusCalculated = 2
+    return:
+      type: Noname.GameAbilitySystem.AttributeModifierValueMode
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: Noname.GameAbilitySystem.AttributeModifierValueMode
+  commentId: T:Noname.GameAbilitySystem.AttributeModifierValueMode
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AttributeModifierValueMode.html
+  name: AttributeModifierValueMode
+  nameWithType: AttributeModifierValueMode
+  fullName: Noname.GameAbilitySystem.AttributeModifierValueMode

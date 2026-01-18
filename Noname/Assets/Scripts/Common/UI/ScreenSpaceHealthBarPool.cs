@@ -4,24 +4,59 @@ using UnityEngine.UI;
 
 namespace MyProject.Common.UI
 {
+    /// <summary>
+    /// ScreenSpaceHealthBar 객체를 재사용하기 위한 풀링 시스템입니다.
+    /// </summary>
     [DisallowMultipleComponent]
     public sealed class ScreenSpaceHealthBarPool : MonoBehaviour
     {
         [Header("Prefab")]
+        /// <summary>
+        /// 생성할 체력바의 프리팹입니다.
+        /// </summary>
         [SerializeField] private ScreenSpaceHealthBar _prefab;
+
+        /// <summary>
+        /// 초기 생성 시 미리 만들어둘 개수입니다.
+        /// </summary>
         [SerializeField] private int _prewarmCount;
 
         [Header("Canvas")]
+        /// <summary>
+        /// UI를 배치할 캔버스입니다.
+        /// </summary>
         [SerializeField] private Canvas _canvas;
+
+        /// <summary>
+        /// 캔버스가 없을 경우 자동으로 생성할지 여부입니다.
+        /// </summary>
         [SerializeField] private bool _autoCreateCanvas = true;
+
+        /// <summary>
+        /// 활성화된 체력바가 위치할 루트입니다.
+        /// </summary>
         [SerializeField] private RectTransform _activeRoot;
+
+        /// <summary>
+        /// 비활성화된 체력바가 위치할 루트입니다.
+        /// </summary>
         [SerializeField] private RectTransform _poolRoot;
 
         private readonly Queue<ScreenSpaceHealthBar> _pool = new();
 
+        /// <summary>
+        /// 싱글톤 인스턴스입니다.
+        /// </summary>
         public static ScreenSpaceHealthBarPool Instance { get; private set; }
 
+        /// <summary>
+        /// 현재 사용 중인 캔버스입니다.
+        /// </summary>
         public Canvas Canvas => _canvas;
+
+        /// <summary>
+        /// 활성 객체가 배치되는 루트 트랜스폼입니다.
+        /// </summary>
         public RectTransform ActiveRoot => _activeRoot != null ? _activeRoot : (_canvas != null ? _canvas.transform as RectTransform : null);
 
         private void Awake()
@@ -46,6 +81,10 @@ namespace MyProject.Common.UI
             }
         }
 
+        /// <summary>
+        /// 체력바 객체를 풀에서 가져오거나 생성합니다.
+        /// </summary>
+        /// <returns>활성화된 ScreenSpaceHealthBar 인스턴스</returns>
         public ScreenSpaceHealthBar Acquire()
         {
             EnsureCanvas();
@@ -82,6 +121,10 @@ namespace MyProject.Common.UI
             return bar;
         }
 
+        /// <summary>
+        /// 사용이 끝난 체력바 객체를 풀에 반환합니다.
+        /// </summary>
+        /// <param name="bar">반환할 체력바 인스턴스</param>
         public void Release(ScreenSpaceHealthBar bar)
         {
             if (bar == null)
@@ -127,6 +170,7 @@ namespace MyProject.Common.UI
                 return;
             }
 
+            // 캔버스가 없으면 1920x1080 해상도 기준으로 오버레이 캔버스 생성
             var obj = new GameObject("HealthBarCanvas", typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
             _canvas = obj.GetComponent<Canvas>();
             _canvas.renderMode = RenderMode.ScreenSpaceOverlay;

@@ -1,0 +1,256 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog
+  commentId: T:Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog
+  id: AbilityDebugCatalog
+  parent: Noname.GameAbilitySystem.DebugTool
+  children:
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Abilities
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Effects
+  langs:
+  - csharp
+  - vb
+  name: AbilityDebugCatalog
+  nameWithType: AbilityDebugCatalog
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog
+  type: Class
+  namespace: Noname.GameAbilitySystem.DebugTool
+  syntax:
+    content: 'public sealed class AbilityDebugCatalog : ScriptableObject'
+    content.vb: Public NotInheritable Class AbilityDebugCatalog Inherits ScriptableObject
+  inheritance:
+  - System.Object
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Abilities
+  commentId: P:Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Abilities
+  id: Abilities
+  parent: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog
+  langs:
+  - csharp
+  - vb
+  name: Abilities
+  nameWithType: AbilityDebugCatalog.Abilities
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Abilities
+  type: Property
+  namespace: Noname.GameAbilitySystem.DebugTool
+  summary: 표시할 능력 목록입니다.
+  example: []
+  syntax:
+    content: public IReadOnlyList<GameplayAbilityDefinition> Abilities { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.GameplayAbilityDefinition}
+    content.vb: Public ReadOnly Property Abilities As IReadOnlyList(Of GameplayAbilityDefinition)
+  overload: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Abilities*
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Effects
+  commentId: P:Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Effects
+  id: Effects
+  parent: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog
+  langs:
+  - csharp
+  - vb
+  name: Effects
+  nameWithType: AbilityDebugCatalog.Effects
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Effects
+  type: Property
+  namespace: Noname.GameAbilitySystem.DebugTool
+  summary: 표시할 효과 목록입니다.
+  example: []
+  syntax:
+    content: public IReadOnlyList<GameplayEffectConfig> Effects { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.GameplayEffectConfig}
+    content.vb: Public ReadOnly Property Effects As IReadOnlyList(Of GameplayEffectConfig)
+  overload: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Effects*
+references:
+- uid: Noname.GameAbilitySystem.DebugTool
+  commentId: N:Noname.GameAbilitySystem.DebugTool
+  href: Noname.html
+  name: Noname.GameAbilitySystem.DebugTool
+  nameWithType: Noname.GameAbilitySystem.DebugTool
+  fullName: Noname.GameAbilitySystem.DebugTool
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.DebugTool
+    name: DebugTool
+    href: Noname.GameAbilitySystem.DebugTool.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.DebugTool
+    name: DebugTool
+    href: Noname.GameAbilitySystem.DebugTool.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Abilities*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Abilities
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.html#Noname_GameAbilitySystem_DebugTool_AbilityDebugCatalog_Abilities
+  name: Abilities
+  nameWithType: AbilityDebugCatalog.Abilities
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Abilities
+- uid: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.GameplayAbilityDefinition}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.GameplayAbilityDefinition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<GameplayAbilityDefinition>
+  nameWithType: IReadOnlyList<GameplayAbilityDefinition>
+  fullName: System.Collections.Generic.IReadOnlyList<Noname.GameAbilitySystem.GameplayAbilityDefinition>
+  nameWithType.vb: IReadOnlyList(Of GameplayAbilityDefinition)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Noname.GameAbilitySystem.GameplayAbilityDefinition)
+  name.vb: IReadOnlyList(Of GameplayAbilityDefinition)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.GameplayAbilityDefinition
+    name: GameplayAbilityDefinition
+    href: Noname.GameAbilitySystem.GameplayAbilityDefinition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.GameplayAbilityDefinition
+    name: GameplayAbilityDefinition
+    href: Noname.GameAbilitySystem.GameplayAbilityDefinition.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Effects*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Effects
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.html#Noname_GameAbilitySystem_DebugTool_AbilityDebugCatalog_Effects
+  name: Effects
+  nameWithType: AbilityDebugCatalog.Effects
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog.Effects
+- uid: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.GameplayEffectConfig}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.GameplayEffectConfig}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<GameplayEffectConfig>
+  nameWithType: IReadOnlyList<GameplayEffectConfig>
+  fullName: System.Collections.Generic.IReadOnlyList<Noname.GameAbilitySystem.GameplayEffectConfig>
+  nameWithType.vb: IReadOnlyList(Of GameplayEffectConfig)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Noname.GameAbilitySystem.GameplayEffectConfig)
+  name.vb: IReadOnlyList(Of GameplayEffectConfig)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.GameplayEffectConfig
+    name: GameplayEffectConfig
+    href: Noname.GameAbilitySystem.GameplayEffectConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.GameplayEffectConfig
+    name: GameplayEffectConfig
+    href: Noname.GameAbilitySystem.GameplayEffectConfig.html
+  - name: )

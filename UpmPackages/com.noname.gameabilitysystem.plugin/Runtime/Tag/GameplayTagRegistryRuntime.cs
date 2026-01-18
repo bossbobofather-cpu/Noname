@@ -1,7 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Noname.GameAbilitySystem
 {
+    /// <summary>
+    /// 런타임 레지스트리를 초기화하는 컴포넌트입니다.
+    /// </summary>
     [DefaultExecutionOrder(-10000)]
     public sealed class GameplayTagRegistryRuntime : MonoBehaviour
     {
@@ -11,6 +14,7 @@ namespace Noname.GameAbilitySystem
         {
             if (_registry == null)
             {
+                // 레지스트리가 없으면 리소스에서 찾는다.
                 _registry = FindRegistry();
             }
 
@@ -25,6 +29,7 @@ namespace Noname.GameAbilitySystem
                 return null;
             }
 
+            // 첫 번째로 찾은 레지스트리를 사용한다.
             return found[0];
         }
     }

@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.UI.ScreenSpaceHealthBar
+  commentId: T:MyProject.Common.UI.ScreenSpaceHealthBar
+  id: ScreenSpaceHealthBar
+  parent: MyProject.Common.UI
+  children:
+  - MyProject.Common.UI.ScreenSpaceHealthBar.Bind(AbilitySystemComponent,Transform,Canvas,Camera,Vector3,AttributeId)
+  - MyProject.Common.UI.ScreenSpaceHealthBar.Unbind
+  langs:
+  - csharp
+  - vb
+  name: ScreenSpaceHealthBar
+  nameWithType: ScreenSpaceHealthBar
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBar
+  type: Class
+  namespace: MyProject.Common.UI
+  summary: 화면 공간(Screen Space)에서 대상을 따라다니는 체력바 UI입니다.
+  example: []
+  syntax:
+    content: 'public sealed class ScreenSpaceHealthBar : MonoBehaviour'
+    content.vb: Public NotInheritable Class ScreenSpaceHealthBar Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MyProject.Common.UI.ScreenSpaceHealthBar.Bind(AbilitySystemComponent,Transform,Canvas,Camera,Vector3,AttributeId)
+  commentId: M:MyProject.Common.UI.ScreenSpaceHealthBar.Bind(AbilitySystemComponent,Transform,Canvas,Camera,Vector3,AttributeId)
+  id: Bind(AbilitySystemComponent,Transform,Canvas,Camera,Vector3,AttributeId)
+  parent: MyProject.Common.UI.ScreenSpaceHealthBar
+  langs:
+  - csharp
+  - vb
+  name: Bind(AbilitySystemComponent, Transform, Canvas, Camera, Vector3, AttributeId)
+  nameWithType: ScreenSpaceHealthBar.Bind(AbilitySystemComponent, Transform, Canvas, Camera, Vector3, AttributeId)
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBar.Bind(AbilitySystemComponent, Transform, Canvas, Camera, Vector3, AttributeId)
+  type: Method
+  namespace: MyProject.Common.UI
+  summary: 체력바를 특정 대상 및 데이터와 연결하고 초기화합니다.
+  example: []
+  syntax:
+    content: public void Bind(AbilitySystemComponent abilitySystem, Transform followTarget, Canvas canvas, Camera camera, Vector3 worldOffset, AttributeId healthAttribute)
+    parameters:
+    - id: abilitySystem
+      type: AbilitySystemComponent
+      description: 체력 정보를 가진 시스템입니다.
+    - id: followTarget
+      type: Transform
+      description: 따라다닐 월드 대상입니다.
+    - id: canvas
+      type: Canvas
+      description: UI가 위치할 캔버스입니다.
+    - id: camera
+      type: Camera
+      description: 월드 좌표 변환에 사용할 카메라입니다.
+    - id: worldOffset
+      type: Vector3
+      description: 대상 위치 오프셋입니다.
+    - id: healthAttribute
+      type: AttributeId
+      description: 체력 속성 ID입니다.
+    content.vb: Public Sub Bind(abilitySystem As AbilitySystemComponent, followTarget As Transform, canvas As Canvas, camera As Camera, worldOffset As Vector3, healthAttribute As AttributeId)
+  overload: MyProject.Common.UI.ScreenSpaceHealthBar.Bind*
+- uid: MyProject.Common.UI.ScreenSpaceHealthBar.Unbind
+  commentId: M:MyProject.Common.UI.ScreenSpaceHealthBar.Unbind
+  id: Unbind
+  parent: MyProject.Common.UI.ScreenSpaceHealthBar
+  langs:
+  - csharp
+  - vb
+  name: Unbind()
+  nameWithType: ScreenSpaceHealthBar.Unbind()
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBar.Unbind()
+  type: Method
+  namespace: MyProject.Common.UI
+  summary: 연결 정보를 해제합니다.
+  example: []
+  syntax:
+    content: public void Unbind()
+    content.vb: Public Sub Unbind()
+  overload: MyProject.Common.UI.ScreenSpaceHealthBar.Unbind*
+references:
+- uid: MyProject.Common.UI
+  commentId: N:MyProject.Common.UI
+  href: MyProject.html
+  name: MyProject.Common.UI
+  nameWithType: MyProject.Common.UI
+  fullName: MyProject.Common.UI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.UI.ScreenSpaceHealthBar.Bind*
+  commentId: Overload:MyProject.Common.UI.ScreenSpaceHealthBar.Bind
+  href: MyProject.Common.UI.ScreenSpaceHealthBar.html#MyProject_Common_UI_ScreenSpaceHealthBar_Bind_AbilitySystemComponent_Transform_Canvas_Camera_Vector3_AttributeId_
+  name: Bind
+  nameWithType: ScreenSpaceHealthBar.Bind
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBar.Bind
+- uid: AbilitySystemComponent
+  isExternal: true
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: AbilitySystemComponent
+- uid: Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: Transform
+- uid: Canvas
+  isExternal: true
+  name: Canvas
+  nameWithType: Canvas
+  fullName: Canvas
+- uid: Camera
+  commentId: '!:Camera'
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: Camera
+- uid: Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Vector3
+- uid: AttributeId
+  commentId: '!:AttributeId'
+  isExternal: true
+  name: AttributeId
+  nameWithType: AttributeId
+  fullName: AttributeId
+- uid: MyProject.Common.UI.ScreenSpaceHealthBar.Unbind*
+  commentId: Overload:MyProject.Common.UI.ScreenSpaceHealthBar.Unbind
+  href: MyProject.Common.UI.ScreenSpaceHealthBar.html#MyProject_Common_UI_ScreenSpaceHealthBar_Unbind
+  name: Unbind
+  nameWithType: ScreenSpaceHealthBar.Unbind
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBar.Unbind

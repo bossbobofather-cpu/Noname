@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Target
+  commentId: N:MyProject.GameplayAbilitySystem.Target
+  id: MyProject.GameplayAbilitySystem.Target
+  children:
+  - MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry
+  - MyProject.GameplayAbilitySystem.Target.TargetRegistry
+  - MyProject.GameplayAbilitySystem.Target.Targetable
+  langs:
+  - csharp
+  - vb
+  name: MyProject.GameplayAbilitySystem.Target
+  nameWithType: MyProject.GameplayAbilitySystem.Target
+  fullName: MyProject.GameplayAbilitySystem.Target
+  type: Namespace
+references:
+- uid: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry
+  commentId: T:MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry
+  href: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry.html
+  name: GameplayTargetActor_Registry
+  nameWithType: GameplayTargetActor_Registry
+  fullName: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry
+- uid: MyProject.GameplayAbilitySystem.Target.Targetable
+  commentId: T:MyProject.GameplayAbilitySystem.Target.Targetable
+  parent: MyProject.GameplayAbilitySystem.Target
+  href: MyProject.GameplayAbilitySystem.Target.Targetable.html
+  name: Targetable
+  nameWithType: Targetable
+  fullName: MyProject.GameplayAbilitySystem.Target.Targetable
+- uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry
+  commentId: T:MyProject.GameplayAbilitySystem.Target.TargetRegistry
+  parent: MyProject.GameplayAbilitySystem.Target
+  href: MyProject.GameplayAbilitySystem.Target.TargetRegistry.html
+  name: TargetRegistry
+  nameWithType: TargetRegistry
+  fullName: MyProject.GameplayAbilitySystem.Target.TargetRegistry
+- uid: MyProject.GameplayAbilitySystem.Target
+  commentId: N:MyProject.GameplayAbilitySystem.Target
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Target
+  nameWithType: MyProject.GameplayAbilitySystem.Target
+  fullName: MyProject.GameplayAbilitySystem.Target
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Target
+    name: Target
+    href: MyProject.GameplayAbilitySystem.Target.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Target
+    name: Target
+    href: MyProject.GameplayAbilitySystem.Target.html

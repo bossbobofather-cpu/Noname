@@ -1,0 +1,487 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry
+  commentId: T:Noname.GameAbilitySystem.GameplayTagRegistry
+  id: GameplayTagRegistry
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.GameplayTagRegistry.GetAllTags(System.Boolean)
+  - Noname.GameAbilitySystem.GameplayTagRegistry.IsSystemMessageIgnored(Noname.GameAbilitySystem.FGameplayTag)
+  - Noname.GameAbilitySystem.GameplayTagRegistry.IsTagDefined(System.String,System.Boolean)
+  - Noname.GameAbilitySystem.GameplayTagRegistry.RuntimeRegistry
+  - Noname.GameAbilitySystem.GameplayTagRegistry.SetRuntimeRegistry(Noname.GameAbilitySystem.GameplayTagRegistry)
+  - Noname.GameAbilitySystem.GameplayTagRegistry.SystemMessageIgnoreTags
+  - Noname.GameAbilitySystem.GameplayTagRegistry.Tags
+  langs:
+  - csharp
+  - vb
+  name: GameplayTagRegistry
+  nameWithType: GameplayTagRegistry
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry
+  type: Class
+  namespace: Noname.GameAbilitySystem
+  summary: 게임플레이 태그 레지스트리입니다.
+  example: []
+  syntax:
+    content: 'public sealed class GameplayTagRegistry : ScriptableObject'
+    content.vb: Public NotInheritable Class GameplayTagRegistry Inherits ScriptableObject
+  inheritance:
+  - System.Object
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.Tags
+  commentId: P:Noname.GameAbilitySystem.GameplayTagRegistry.Tags
+  id: Tags
+  parent: Noname.GameAbilitySystem.GameplayTagRegistry
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: GameplayTagRegistry.Tags
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.Tags
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 등록된 태그 문자열 목록입니다.
+  example: []
+  syntax:
+    content: public IReadOnlyList<string> Tags { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+    content.vb: Public ReadOnly Property Tags As IReadOnlyList(Of String)
+  overload: Noname.GameAbilitySystem.GameplayTagRegistry.Tags*
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.SystemMessageIgnoreTags
+  commentId: P:Noname.GameAbilitySystem.GameplayTagRegistry.SystemMessageIgnoreTags
+  id: SystemMessageIgnoreTags
+  parent: Noname.GameAbilitySystem.GameplayTagRegistry
+  langs:
+  - csharp
+  - vb
+  name: SystemMessageIgnoreTags
+  nameWithType: GameplayTagRegistry.SystemMessageIgnoreTags
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.SystemMessageIgnoreTags
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 시스템 메시지를 무시할 태그 목록입니다.
+  example: []
+  syntax:
+    content: public GameplayTagContainer SystemMessageIgnoreTags { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.GameplayTagContainer
+    content.vb: Public ReadOnly Property SystemMessageIgnoreTags As GameplayTagContainer
+  overload: Noname.GameAbilitySystem.GameplayTagRegistry.SystemMessageIgnoreTags*
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.RuntimeRegistry
+  commentId: P:Noname.GameAbilitySystem.GameplayTagRegistry.RuntimeRegistry
+  id: RuntimeRegistry
+  parent: Noname.GameAbilitySystem.GameplayTagRegistry
+  langs:
+  - csharp
+  - vb
+  name: RuntimeRegistry
+  nameWithType: GameplayTagRegistry.RuntimeRegistry
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.RuntimeRegistry
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 런타임에서 사용 중인 레지스트리입니다.
+  example: []
+  syntax:
+    content: public static GameplayTagRegistry RuntimeRegistry { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.GameplayTagRegistry
+    content.vb: Public Shared ReadOnly Property RuntimeRegistry As GameplayTagRegistry
+  overload: Noname.GameAbilitySystem.GameplayTagRegistry.RuntimeRegistry*
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.SetRuntimeRegistry(Noname.GameAbilitySystem.GameplayTagRegistry)
+  commentId: M:Noname.GameAbilitySystem.GameplayTagRegistry.SetRuntimeRegistry(Noname.GameAbilitySystem.GameplayTagRegistry)
+  id: SetRuntimeRegistry(Noname.GameAbilitySystem.GameplayTagRegistry)
+  parent: Noname.GameAbilitySystem.GameplayTagRegistry
+  langs:
+  - csharp
+  - vb
+  name: SetRuntimeRegistry(GameplayTagRegistry)
+  nameWithType: GameplayTagRegistry.SetRuntimeRegistry(GameplayTagRegistry)
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.SetRuntimeRegistry(Noname.GameAbilitySystem.GameplayTagRegistry)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 런타임 레지스트리를 지정합니다.
+  example: []
+  syntax:
+    content: public static void SetRuntimeRegistry(GameplayTagRegistry registry)
+    parameters:
+    - id: registry
+      type: Noname.GameAbilitySystem.GameplayTagRegistry
+      description: 사용할 레지스트리
+    content.vb: Public Shared Sub SetRuntimeRegistry(registry As GameplayTagRegistry)
+  overload: Noname.GameAbilitySystem.GameplayTagRegistry.SetRuntimeRegistry*
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.IsSystemMessageIgnored(Noname.GameAbilitySystem.FGameplayTag)
+  commentId: M:Noname.GameAbilitySystem.GameplayTagRegistry.IsSystemMessageIgnored(Noname.GameAbilitySystem.FGameplayTag)
+  id: IsSystemMessageIgnored(Noname.GameAbilitySystem.FGameplayTag)
+  parent: Noname.GameAbilitySystem.GameplayTagRegistry
+  langs:
+  - csharp
+  - vb
+  name: IsSystemMessageIgnored(FGameplayTag)
+  nameWithType: GameplayTagRegistry.IsSystemMessageIgnored(FGameplayTag)
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.IsSystemMessageIgnored(Noname.GameAbilitySystem.FGameplayTag)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 시스템 메시지 출력에서 제외할지 확인합니다.
+  example: []
+  syntax:
+    content: public bool IsSystemMessageIgnored(FGameplayTag tag)
+    parameters:
+    - id: tag
+      type: Noname.GameAbilitySystem.FGameplayTag
+      description: 확인할 태그
+    return:
+      type: System.Boolean
+      description: 무시 여부
+    content.vb: Public Function IsSystemMessageIgnored(tag As FGameplayTag) As Boolean
+  overload: Noname.GameAbilitySystem.GameplayTagRegistry.IsSystemMessageIgnored*
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.GetAllTags(System.Boolean)
+  commentId: M:Noname.GameAbilitySystem.GameplayTagRegistry.GetAllTags(System.Boolean)
+  id: GetAllTags(System.Boolean)
+  parent: Noname.GameAbilitySystem.GameplayTagRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetAllTags(bool)
+  nameWithType: GameplayTagRegistry.GetAllTags(bool)
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.GetAllTags(bool)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 등록된 태그 전체 목록을 가져옵니다.
+  example: []
+  syntax:
+    content: public List<string> GetAllTags(bool includeParents = true)
+    parameters:
+    - id: includeParents
+      type: System.Boolean
+      description: 부모 태그 포함 여부
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: 정렬된 태그 목록
+    content.vb: Public Function GetAllTags(includeParents As Boolean = True) As List(Of String)
+  overload: Noname.GameAbilitySystem.GameplayTagRegistry.GetAllTags*
+  nameWithType.vb: GameplayTagRegistry.GetAllTags(Boolean)
+  fullName.vb: Noname.GameAbilitySystem.GameplayTagRegistry.GetAllTags(Boolean)
+  name.vb: GetAllTags(Boolean)
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.IsTagDefined(System.String,System.Boolean)
+  commentId: M:Noname.GameAbilitySystem.GameplayTagRegistry.IsTagDefined(System.String,System.Boolean)
+  id: IsTagDefined(System.String,System.Boolean)
+  parent: Noname.GameAbilitySystem.GameplayTagRegistry
+  langs:
+  - csharp
+  - vb
+  name: IsTagDefined(string, bool)
+  nameWithType: GameplayTagRegistry.IsTagDefined(string, bool)
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.IsTagDefined(string, bool)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 태그가 정의되어 있는지 확인합니다.
+  example: []
+  syntax:
+    content: public bool IsTagDefined(string value, bool includeParents = true)
+    parameters:
+    - id: value
+      type: System.String
+      description: 확인할 태그 문자열
+    - id: includeParents
+      type: System.Boolean
+      description: 부모 태그 포함 여부
+    return:
+      type: System.Boolean
+      description: 정의 여부
+    content.vb: Public Function IsTagDefined(value As String, includeParents As Boolean = True) As Boolean
+  overload: Noname.GameAbilitySystem.GameplayTagRegistry.IsTagDefined*
+  nameWithType.vb: GameplayTagRegistry.IsTagDefined(String, Boolean)
+  fullName.vb: Noname.GameAbilitySystem.GameplayTagRegistry.IsTagDefined(String, Boolean)
+  name.vb: IsTagDefined(String, Boolean)
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.Tags*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTagRegistry.Tags
+  href: Noname.GameAbilitySystem.GameplayTagRegistry.html#Noname_GameAbilitySystem_GameplayTagRegistry_Tags
+  name: Tags
+  nameWithType: GameplayTagRegistry.Tags
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.Tags
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<string>
+  nameWithType: IReadOnlyList<string>
+  fullName: System.Collections.Generic.IReadOnlyList<string>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.SystemMessageIgnoreTags*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTagRegistry.SystemMessageIgnoreTags
+  href: Noname.GameAbilitySystem.GameplayTagRegistry.html#Noname_GameAbilitySystem_GameplayTagRegistry_SystemMessageIgnoreTags
+  name: SystemMessageIgnoreTags
+  nameWithType: GameplayTagRegistry.SystemMessageIgnoreTags
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.SystemMessageIgnoreTags
+- uid: Noname.GameAbilitySystem.GameplayTagContainer
+  commentId: T:Noname.GameAbilitySystem.GameplayTagContainer
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayTagContainer.html
+  name: GameplayTagContainer
+  nameWithType: GameplayTagContainer
+  fullName: Noname.GameAbilitySystem.GameplayTagContainer
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.RuntimeRegistry*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTagRegistry.RuntimeRegistry
+  href: Noname.GameAbilitySystem.GameplayTagRegistry.html#Noname_GameAbilitySystem_GameplayTagRegistry_RuntimeRegistry
+  name: RuntimeRegistry
+  nameWithType: GameplayTagRegistry.RuntimeRegistry
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.RuntimeRegistry
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry
+  commentId: T:Noname.GameAbilitySystem.GameplayTagRegistry
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayTagRegistry.html
+  name: GameplayTagRegistry
+  nameWithType: GameplayTagRegistry
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.SetRuntimeRegistry*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTagRegistry.SetRuntimeRegistry
+  href: Noname.GameAbilitySystem.GameplayTagRegistry.html#Noname_GameAbilitySystem_GameplayTagRegistry_SetRuntimeRegistry_Noname_GameAbilitySystem_GameplayTagRegistry_
+  name: SetRuntimeRegistry
+  nameWithType: GameplayTagRegistry.SetRuntimeRegistry
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.SetRuntimeRegistry
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.IsSystemMessageIgnored*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTagRegistry.IsSystemMessageIgnored
+  href: Noname.GameAbilitySystem.GameplayTagRegistry.html#Noname_GameAbilitySystem_GameplayTagRegistry_IsSystemMessageIgnored_Noname_GameAbilitySystem_FGameplayTag_
+  name: IsSystemMessageIgnored
+  nameWithType: GameplayTagRegistry.IsSystemMessageIgnored
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.IsSystemMessageIgnored
+- uid: Noname.GameAbilitySystem.FGameplayTag
+  commentId: T:Noname.GameAbilitySystem.FGameplayTag
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.FGameplayTag.html
+  name: FGameplayTag
+  nameWithType: FGameplayTag
+  fullName: Noname.GameAbilitySystem.FGameplayTag
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.GetAllTags*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTagRegistry.GetAllTags
+  href: Noname.GameAbilitySystem.GameplayTagRegistry.html#Noname_GameAbilitySystem_GameplayTagRegistry_GetAllTags_System_Boolean_
+  name: GetAllTags
+  nameWithType: GameplayTagRegistry.GetAllTags
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.GetAllTags
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Noname.GameAbilitySystem.GameplayTagRegistry.IsTagDefined*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTagRegistry.IsTagDefined
+  href: Noname.GameAbilitySystem.GameplayTagRegistry.html#Noname_GameAbilitySystem_GameplayTagRegistry_IsTagDefined_System_String_System_Boolean_
+  name: IsTagDefined
+  nameWithType: GameplayTagRegistry.IsTagDefined
+  fullName: Noname.GameAbilitySystem.GameplayTagRegistry.IsTagDefined
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

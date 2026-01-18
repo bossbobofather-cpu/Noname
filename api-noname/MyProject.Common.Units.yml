@@ -1,0 +1,21 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.Units
+  commentId: N:MyProject.Common.Units
+  id: MyProject.Common.Units
+  children:
+  - MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: MyProject.Common.Units
+  nameWithType: MyProject.Common.Units
+  fullName: MyProject.Common.Units
+  type: Namespace
+references:
+- uid: MyProject.Common.Units.Unit
+  commentId: T:MyProject.Common.Units.Unit
+  href: MyProject.Common.Units.Unit.html
+  name: Unit
+  nameWithType: Unit
+  fullName: MyProject.Common.Units.Unit

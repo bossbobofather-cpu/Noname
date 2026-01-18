@@ -1,0 +1,416 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.AttributeModifier
+  commentId: T:Noname.GameAbilitySystem.AttributeModifier
+  id: AttributeModifier
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.AttributeModifier.Attribute
+  - Noname.GameAbilitySystem.AttributeModifier.Calculator
+  - Noname.GameAbilitySystem.AttributeModifier.Magnitude
+  - Noname.GameAbilitySystem.AttributeModifier.Operation
+  - Noname.GameAbilitySystem.AttributeModifier.ValueMode
+  langs:
+  - csharp
+  - vb
+  name: AttributeModifier
+  nameWithType: AttributeModifier
+  fullName: Noname.GameAbilitySystem.AttributeModifier
+  type: Struct
+  namespace: Noname.GameAbilitySystem
+  summary: 속성 수정자 정의입니다.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct AttributeModifier
+    content.vb: >-
+      <Serializable>
+
+      Public Structure AttributeModifier
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Noname.GameAbilitySystem.AttributeModifier.Attribute
+  commentId: F:Noname.GameAbilitySystem.AttributeModifier.Attribute
+  id: Attribute
+  parent: Noname.GameAbilitySystem.AttributeModifier
+  langs:
+  - csharp
+  - vb
+  name: Attribute
+  nameWithType: AttributeModifier.Attribute
+  fullName: Noname.GameAbilitySystem.AttributeModifier.Attribute
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  summary: 대상 속성입니다.
+  example: []
+  syntax:
+    content: public AttributeDefinition Attribute
+    return:
+      type: Noname.GameAbilitySystem.AttributeDefinition
+    content.vb: Public Attribute As AttributeDefinition
+- uid: Noname.GameAbilitySystem.AttributeModifier.ValueMode
+  commentId: F:Noname.GameAbilitySystem.AttributeModifier.ValueMode
+  id: ValueMode
+  parent: Noname.GameAbilitySystem.AttributeModifier
+  langs:
+  - csharp
+  - vb
+  name: ValueMode
+  nameWithType: AttributeModifier.ValueMode
+  fullName: Noname.GameAbilitySystem.AttributeModifier.ValueMode
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  summary: 값 계산 방식입니다.
+  example: []
+  syntax:
+    content: public AttributeModifierValueMode ValueMode
+    return:
+      type: Noname.GameAbilitySystem.AttributeModifierValueMode
+    content.vb: Public ValueMode As AttributeModifierValueMode
+- uid: Noname.GameAbilitySystem.AttributeModifier.Operation
+  commentId: F:Noname.GameAbilitySystem.AttributeModifier.Operation
+  id: Operation
+  parent: Noname.GameAbilitySystem.AttributeModifier
+  langs:
+  - csharp
+  - vb
+  name: Operation
+  nameWithType: AttributeModifier.Operation
+  fullName: Noname.GameAbilitySystem.AttributeModifier.Operation
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  summary: 적용 연산입니다.
+  example: []
+  syntax:
+    content: public GameplayEffectModifierOperation Operation
+    return:
+      type: Noname.GameAbilitySystem.GameplayEffectModifierOperation
+    content.vb: Public Operation As GameplayEffectModifierOperation
+- uid: Noname.GameAbilitySystem.AttributeModifier.Magnitude
+  commentId: F:Noname.GameAbilitySystem.AttributeModifier.Magnitude
+  id: Magnitude
+  parent: Noname.GameAbilitySystem.AttributeModifier
+  langs:
+  - csharp
+  - vb
+  name: Magnitude
+  nameWithType: AttributeModifier.Magnitude
+  fullName: Noname.GameAbilitySystem.AttributeModifier.Magnitude
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  summary: 정적 크기 값입니다.
+  example: []
+  syntax:
+    content: public float Magnitude
+    return:
+      type: System.Single
+    content.vb: Public Magnitude As Single
+- uid: Noname.GameAbilitySystem.AttributeModifier.Calculator
+  commentId: F:Noname.GameAbilitySystem.AttributeModifier.Calculator
+  id: Calculator
+  parent: Noname.GameAbilitySystem.AttributeModifier
+  langs:
+  - csharp
+  - vb
+  name: Calculator
+  nameWithType: AttributeModifier.Calculator
+  fullName: Noname.GameAbilitySystem.AttributeModifier.Calculator
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  summary: 계산기 기반 보정입니다.
+  example: []
+  syntax:
+    content: public GameplayEffectCalculator Calculator
+    return:
+      type: Noname.GameAbilitySystem.GameplayEffectCalculator
+    content.vb: Public Calculator As GameplayEffectCalculator
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.AttributeDefinition
+  commentId: T:Noname.GameAbilitySystem.AttributeDefinition
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AttributeDefinition.html
+  name: AttributeDefinition
+  nameWithType: AttributeDefinition
+  fullName: Noname.GameAbilitySystem.AttributeDefinition
+- uid: Noname.GameAbilitySystem.AttributeModifierValueMode
+  commentId: T:Noname.GameAbilitySystem.AttributeModifierValueMode
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AttributeModifierValueMode.html
+  name: AttributeModifierValueMode
+  nameWithType: AttributeModifierValueMode
+  fullName: Noname.GameAbilitySystem.AttributeModifierValueMode
+- uid: Noname.GameAbilitySystem.GameplayEffectModifierOperation
+  commentId: T:Noname.GameAbilitySystem.GameplayEffectModifierOperation
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayEffectModifierOperation.html
+  name: GameplayEffectModifierOperation
+  nameWithType: GameplayEffectModifierOperation
+  fullName: Noname.GameAbilitySystem.GameplayEffectModifierOperation
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Noname.GameAbilitySystem.GameplayEffectCalculator
+  commentId: T:Noname.GameAbilitySystem.GameplayEffectCalculator
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayEffectCalculator.html
+  name: GameplayEffectCalculator
+  nameWithType: GameplayEffectCalculator
+  fullName: Noname.GameAbilitySystem.GameplayEffectCalculator

@@ -3,33 +3,101 @@ using UnityEngine;
 
 namespace MyProject.Common.UI
 {
+    /// <summary>
+    /// 월드 오브젝트 위에 이름이나 설명을 표시하는 라벨입니다.
+    /// 에디터 모드에서도 동작하도록 ExecuteAlways가 설정되어 있습니다.
+    /// </summary>
     [ExecuteAlways]
     [DisallowMultipleComponent]
     public sealed class WorldObjectLabel : MonoBehaviour
     {
         [Header("Text")]
+        /// <summary>
+        /// 표시할 제목 텍스트입니다.
+        /// </summary>
         [SerializeField] private string _title;
+        
+        /// <summary>
+        /// 표시할 설명 텍스트입니다.
+        /// </summary>
         [SerializeField, TextArea(2, 4)] private string _description;
 
         [Header("Appearance")]
+        /// <summary>
+        /// 텍스트에 사용할 폰트 에셋입니다.
+        /// </summary>
         [SerializeField] private TMP_FontAsset _font;
+        
+        /// <summary>
+        /// 제목 색상입니다.
+        /// </summary>
         [SerializeField] private Color _titleColor = Color.white;
+        
+        /// <summary>
+        /// 설명 색상입니다.
+        /// </summary>
         [SerializeField] private Color _descriptionColor = Color.white;
+        
+        /// <summary>
+        /// 제목 크기입니다.
+        /// </summary>
         [SerializeField] private float _titleSize = 1.6f;
+        
+        /// <summary>
+        /// 설명 크기입니다.
+        /// </summary>
         [SerializeField] private float _descriptionSize = 1.1f;
+        
+        /// <summary>
+        /// 줄 간격입니다.
+        /// </summary>
         [SerializeField] private float _lineSpacing;
+        
+        /// <summary>
+        /// 텍스트 최대 너비입니다. 0보다 크면 자동 줄바꿈이 적용됩니다.
+        /// </summary>
         [SerializeField] private float _maxWidth;
+        
+        /// <summary>
+        /// 제목을 굵게 표시할지 여부입니다.
+        /// </summary>
         [SerializeField] private bool _boldTitle = true;
 
         [Header("Layout")]
+        /// <summary>
+        /// 라벨들을 담을 루트 트랜스폼입니다.
+        /// </summary>
         [SerializeField] private Transform _labelRoot;
+        
+        /// <summary>
+        /// 루트의 오프셋입니다.
+        /// </summary>
         [SerializeField] private Vector3 _rootOffset = new Vector3(0f, 2f, 0f);
+        
+        /// <summary>
+        /// 제목 라벨의 로컬 오프셋입니다.
+        /// </summary>
         [SerializeField] private Vector3 _titleOffset = Vector3.zero;
+        
+        /// <summary>
+        /// 설명 라벨의 로컬 오프셋입니다.
+        /// </summary>
         [SerializeField] private Vector3 _descriptionOffset = new Vector3(0f, -0.4f, 0f);
 
         [Header("Facing")]
+        /// <summary>
+        /// 카메라를 바라볼지 여부입니다.
+        /// </summary>
         [SerializeField] private bool _faceCamera = true;
+        
+        /// <summary>
+        /// Y축 회전만 적용할지 여부입니다.
+        /// </summary>
         [SerializeField] private bool _lockYRotation = true;
+        
+        /// <summary>
+        /// 바라볼 카메라입니다. 없으면 MainCamera를 사용합니다.
+        /// </summary>
         [SerializeField] private Camera _camera;
 
         [Header("References")]

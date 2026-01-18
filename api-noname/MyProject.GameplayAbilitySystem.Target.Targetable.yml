@@ -1,0 +1,204 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Target.Targetable
+  commentId: T:MyProject.GameplayAbilitySystem.Target.Targetable
+  id: Targetable
+  parent: MyProject.GameplayAbilitySystem.Target
+  children:
+  - MyProject.GameplayAbilitySystem.Target.Targetable.AbilitySystem
+  - MyProject.GameplayAbilitySystem.Target.Targetable.GetTransform
+  - MyProject.GameplayAbilitySystem.Target.Targetable.Group
+  langs:
+  - csharp
+  - vb
+  name: Targetable
+  nameWithType: Targetable
+  fullName: MyProject.GameplayAbilitySystem.Target.Targetable
+  type: Class
+  namespace: MyProject.GameplayAbilitySystem.Target
+  summary: >-
+    타겟팅 시스템(TargetRegistry)에 등록되어 식별될 수 있는 컴포넌트입니다.
+
+    진영(Group) 정보를 가지며 활성화 시 자동으로 등록됩니다.
+  example: []
+  syntax:
+    content: 'public sealed class Targetable : MonoBehaviour'
+    content.vb: Public NotInheritable Class Targetable Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MyProject.GameplayAbilitySystem.Target.Targetable.Group
+  commentId: P:MyProject.GameplayAbilitySystem.Target.Targetable.Group
+  id: Group
+  parent: MyProject.GameplayAbilitySystem.Target.Targetable
+  langs:
+  - csharp
+  - vb
+  name: Group
+  nameWithType: Targetable.Group
+  fullName: MyProject.GameplayAbilitySystem.Target.Targetable.Group
+  type: Property
+  namespace: MyProject.GameplayAbilitySystem.Target
+  summary: 이 객체의 소속 그룹입니다.
+  example: []
+  syntax:
+    content: public TargetGroup Group { get; }
+    parameters: []
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetGroup
+    content.vb: Public ReadOnly Property Group As TargetGroup
+  overload: MyProject.GameplayAbilitySystem.Target.Targetable.Group*
+- uid: MyProject.GameplayAbilitySystem.Target.Targetable.AbilitySystem
+  commentId: P:MyProject.GameplayAbilitySystem.Target.Targetable.AbilitySystem
+  id: AbilitySystem
+  parent: MyProject.GameplayAbilitySystem.Target.Targetable
+  langs:
+  - csharp
+  - vb
+  name: AbilitySystem
+  nameWithType: Targetable.AbilitySystem
+  fullName: MyProject.GameplayAbilitySystem.Target.Targetable.AbilitySystem
+  type: Property
+  namespace: MyProject.GameplayAbilitySystem.Target
+  summary: 연동된 AbilitySystemComponent입니다.
+  example: []
+  syntax:
+    content: public AbilitySystemComponent AbilitySystem { get; }
+    parameters: []
+    return:
+      type: AbilitySystemComponent
+    content.vb: Public ReadOnly Property AbilitySystem As AbilitySystemComponent
+  overload: MyProject.GameplayAbilitySystem.Target.Targetable.AbilitySystem*
+- uid: MyProject.GameplayAbilitySystem.Target.Targetable.GetTransform
+  commentId: M:MyProject.GameplayAbilitySystem.Target.Targetable.GetTransform
+  id: GetTransform
+  parent: MyProject.GameplayAbilitySystem.Target.Targetable
+  langs:
+  - csharp
+  - vb
+  name: GetTransform()
+  nameWithType: Targetable.GetTransform()
+  fullName: MyProject.GameplayAbilitySystem.Target.Targetable.GetTransform()
+  type: Method
+  namespace: MyProject.GameplayAbilitySystem.Target
+  summary: 타겟팅 기준이 되는 트랜스폼을 반환합니다.
+  example: []
+  syntax:
+    content: public Transform GetTransform()
+    return:
+      type: Transform
+    content.vb: Public Function GetTransform() As Transform
+  overload: MyProject.GameplayAbilitySystem.Target.Targetable.GetTransform*
+references:
+- uid: MyProject.GameplayAbilitySystem.Target
+  commentId: N:MyProject.GameplayAbilitySystem.Target
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Target
+  nameWithType: MyProject.GameplayAbilitySystem.Target
+  fullName: MyProject.GameplayAbilitySystem.Target
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Target
+    name: Target
+    href: MyProject.GameplayAbilitySystem.Target.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Target
+    name: Target
+    href: MyProject.GameplayAbilitySystem.Target.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.GameplayAbilitySystem.Target.Targetable.Group*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Target.Targetable.Group
+  href: MyProject.GameplayAbilitySystem.Target.Targetable.html#MyProject_GameplayAbilitySystem_Target_Targetable_Group
+  name: Group
+  nameWithType: Targetable.Group
+  fullName: MyProject.GameplayAbilitySystem.Target.Targetable.Group
+- uid: MyProject.GameplayAbilitySystem.Define.TargetGroup
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetGroup
+  parent: MyProject.GameplayAbilitySystem.Define
+  href: MyProject.GameplayAbilitySystem.Define.TargetGroup.html
+  name: TargetGroup
+  nameWithType: TargetGroup
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetGroup
+- uid: MyProject.GameplayAbilitySystem.Define
+  commentId: N:MyProject.GameplayAbilitySystem.Define
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Define
+  nameWithType: MyProject.GameplayAbilitySystem.Define
+  fullName: MyProject.GameplayAbilitySystem.Define
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html
+- uid: MyProject.GameplayAbilitySystem.Target.Targetable.AbilitySystem*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Target.Targetable.AbilitySystem
+  href: MyProject.GameplayAbilitySystem.Target.Targetable.html#MyProject_GameplayAbilitySystem_Target_Targetable_AbilitySystem
+  name: AbilitySystem
+  nameWithType: Targetable.AbilitySystem
+  fullName: MyProject.GameplayAbilitySystem.Target.Targetable.AbilitySystem
+- uid: AbilitySystemComponent
+  isExternal: true
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: AbilitySystemComponent
+- uid: MyProject.GameplayAbilitySystem.Target.Targetable.GetTransform*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Target.Targetable.GetTransform
+  href: MyProject.GameplayAbilitySystem.Target.Targetable.html#MyProject_GameplayAbilitySystem_Target_Targetable_GetTransform
+  name: GetTransform
+  nameWithType: Targetable.GetTransform
+  fullName: MyProject.GameplayAbilitySystem.Target.Targetable.GetTransform
+- uid: Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: Transform

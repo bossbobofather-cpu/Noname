@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.GameplayEffectCalculator
+  commentId: T:Noname.GameAbilitySystem.GameplayEffectCalculator
+  id: GameplayEffectCalculator
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.GameplayEffectCalculator.EvaluateMagnitude(Noname.GameAbilitySystem.GameplayEffectConfig,Noname.GameAbilitySystem.AttributeModifier,Noname.GameAbilitySystem.GameplayEffectContext)
+  langs:
+  - csharp
+  - vb
+  name: GameplayEffectCalculator
+  nameWithType: GameplayEffectCalculator
+  fullName: Noname.GameAbilitySystem.GameplayEffectCalculator
+  type: Class
+  namespace: Noname.GameAbilitySystem
+  summary: 효과 크기를 계산하는 계산기 기본 클래스입니다.
+  example: []
+  syntax:
+    content: 'public abstract class GameplayEffectCalculator : ScriptableObject'
+    content.vb: Public MustInherit Class GameplayEffectCalculator Inherits ScriptableObject
+  inheritance:
+  - System.Object
+- uid: Noname.GameAbilitySystem.GameplayEffectCalculator.EvaluateMagnitude(Noname.GameAbilitySystem.GameplayEffectConfig,Noname.GameAbilitySystem.AttributeModifier,Noname.GameAbilitySystem.GameplayEffectContext)
+  commentId: M:Noname.GameAbilitySystem.GameplayEffectCalculator.EvaluateMagnitude(Noname.GameAbilitySystem.GameplayEffectConfig,Noname.GameAbilitySystem.AttributeModifier,Noname.GameAbilitySystem.GameplayEffectContext)
+  id: EvaluateMagnitude(Noname.GameAbilitySystem.GameplayEffectConfig,Noname.GameAbilitySystem.AttributeModifier,Noname.GameAbilitySystem.GameplayEffectContext)
+  parent: Noname.GameAbilitySystem.GameplayEffectCalculator
+  langs:
+  - csharp
+  - vb
+  name: EvaluateMagnitude(GameplayEffectConfig, AttributeModifier, GameplayEffectContext)
+  nameWithType: GameplayEffectCalculator.EvaluateMagnitude(GameplayEffectConfig, AttributeModifier, GameplayEffectContext)
+  fullName: Noname.GameAbilitySystem.GameplayEffectCalculator.EvaluateMagnitude(Noname.GameAbilitySystem.GameplayEffectConfig, Noname.GameAbilitySystem.AttributeModifier, Noname.GameAbilitySystem.GameplayEffectContext)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 효과 크기를 계산합니다.
+  example: []
+  syntax:
+    content: public abstract float EvaluateMagnitude(GameplayEffectConfig effectConfig, AttributeModifier modifier, GameplayEffectContext context)
+    parameters:
+    - id: effectConfig
+      type: Noname.GameAbilitySystem.GameplayEffectConfig
+      description: 효과 설정
+    - id: modifier
+      type: Noname.GameAbilitySystem.AttributeModifier
+      description: 수정자 정보
+    - id: context
+      type: Noname.GameAbilitySystem.GameplayEffectContext
+      description: 계산 컨텍스트
+    return:
+      type: System.Single
+      description: 계산된 값
+    content.vb: Public MustOverride Function EvaluateMagnitude(effectConfig As GameplayEffectConfig, modifier As AttributeModifier, context As GameplayEffectContext) As Single
+  overload: Noname.GameAbilitySystem.GameplayEffectCalculator.EvaluateMagnitude*
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.GameplayEffectCalculator.EvaluateMagnitude*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayEffectCalculator.EvaluateMagnitude
+  href: Noname.GameAbilitySystem.GameplayEffectCalculator.html#Noname_GameAbilitySystem_GameplayEffectCalculator_EvaluateMagnitude_Noname_GameAbilitySystem_GameplayEffectConfig_Noname_GameAbilitySystem_AttributeModifier_Noname_GameAbilitySystem_GameplayEffectContext_
+  name: EvaluateMagnitude
+  nameWithType: GameplayEffectCalculator.EvaluateMagnitude
+  fullName: Noname.GameAbilitySystem.GameplayEffectCalculator.EvaluateMagnitude
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig
+  commentId: T:Noname.GameAbilitySystem.GameplayEffectConfig
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayEffectConfig.html
+  name: GameplayEffectConfig
+  nameWithType: GameplayEffectConfig
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig
+- uid: Noname.GameAbilitySystem.AttributeModifier
+  commentId: T:Noname.GameAbilitySystem.AttributeModifier
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AttributeModifier.html
+  name: AttributeModifier
+  nameWithType: AttributeModifier
+  fullName: Noname.GameAbilitySystem.AttributeModifier
+- uid: Noname.GameAbilitySystem.GameplayEffectContext
+  commentId: T:Noname.GameAbilitySystem.GameplayEffectContext
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayEffectContext.html
+  name: GameplayEffectContext
+  nameWithType: GameplayEffectContext
+  fullName: Noname.GameAbilitySystem.GameplayEffectContext
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

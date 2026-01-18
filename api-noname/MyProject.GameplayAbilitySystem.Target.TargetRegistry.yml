@@ -1,0 +1,378 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry
+  commentId: T:MyProject.GameplayAbilitySystem.Target.TargetRegistry
+  id: TargetRegistry
+  parent: MyProject.GameplayAbilitySystem.Target
+  children:
+  - MyProject.GameplayAbilitySystem.Target.TargetRegistry.GetTargets(MyProject.GameplayAbilitySystem.Define.TargetGroup)
+  - MyProject.GameplayAbilitySystem.Target.TargetRegistry.Rebuild
+  - MyProject.GameplayAbilitySystem.Target.TargetRegistry.Register(MyProject.GameplayAbilitySystem.Target.Targetable)
+  - MyProject.GameplayAbilitySystem.Target.TargetRegistry.TryGet(MyProject.GameplayAbilitySystem.Target.TargetRegistry@)
+  - MyProject.GameplayAbilitySystem.Target.TargetRegistry.Unregister(MyProject.GameplayAbilitySystem.Target.Targetable)
+  langs:
+  - csharp
+  - vb
+  name: TargetRegistry
+  nameWithType: TargetRegistry
+  fullName: MyProject.GameplayAbilitySystem.Target.TargetRegistry
+  type: Class
+  namespace: MyProject.GameplayAbilitySystem.Target
+  summary: >-
+    게임 내 모든 타겟(Targetable) 객체를 관리하는 레지스트리입니다.
+
+    싱글톤 패턴으로 접근하며, 그룹별로 타겟 리스트를 제공합니다.
+  example: []
+  syntax:
+    content: 'public sealed class TargetRegistry : MonoBehaviour'
+    content.vb: Public NotInheritable Class TargetRegistry Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry.TryGet(MyProject.GameplayAbilitySystem.Target.TargetRegistry@)
+  commentId: M:MyProject.GameplayAbilitySystem.Target.TargetRegistry.TryGet(MyProject.GameplayAbilitySystem.Target.TargetRegistry@)
+  id: TryGet(MyProject.GameplayAbilitySystem.Target.TargetRegistry@)
+  parent: MyProject.GameplayAbilitySystem.Target.TargetRegistry
+  langs:
+  - csharp
+  - vb
+  name: TryGet(out TargetRegistry)
+  nameWithType: TargetRegistry.TryGet(out TargetRegistry)
+  fullName: MyProject.GameplayAbilitySystem.Target.TargetRegistry.TryGet(out MyProject.GameplayAbilitySystem.Target.TargetRegistry)
+  type: Method
+  namespace: MyProject.GameplayAbilitySystem.Target
+  summary: 레지스트리 인스턴스를 가져옵니다. 없으면 씬에서 찾습니다.
+  example: []
+  syntax:
+    content: public static bool TryGet(out TargetRegistry registry)
+    parameters:
+    - id: registry
+      type: MyProject.GameplayAbilitySystem.Target.TargetRegistry
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryGet(registry As TargetRegistry) As Boolean
+  overload: MyProject.GameplayAbilitySystem.Target.TargetRegistry.TryGet*
+  nameWithType.vb: TargetRegistry.TryGet(TargetRegistry)
+  fullName.vb: MyProject.GameplayAbilitySystem.Target.TargetRegistry.TryGet(MyProject.GameplayAbilitySystem.Target.TargetRegistry)
+  name.vb: TryGet(TargetRegistry)
+- uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry.GetTargets(MyProject.GameplayAbilitySystem.Define.TargetGroup)
+  commentId: M:MyProject.GameplayAbilitySystem.Target.TargetRegistry.GetTargets(MyProject.GameplayAbilitySystem.Define.TargetGroup)
+  id: GetTargets(MyProject.GameplayAbilitySystem.Define.TargetGroup)
+  parent: MyProject.GameplayAbilitySystem.Target.TargetRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetTargets(TargetGroup)
+  nameWithType: TargetRegistry.GetTargets(TargetGroup)
+  fullName: MyProject.GameplayAbilitySystem.Target.TargetRegistry.GetTargets(MyProject.GameplayAbilitySystem.Define.TargetGroup)
+  type: Method
+  namespace: MyProject.GameplayAbilitySystem.Target
+  summary: 특정 그룹의 타겟 리스트를 반환합니다.
+  example: []
+  syntax:
+    content: public IReadOnlyList<Targetable> GetTargets(TargetGroup group)
+    parameters:
+    - id: group
+      type: MyProject.GameplayAbilitySystem.Define.TargetGroup
+    return:
+      type: System.Collections.Generic.IReadOnlyList{MyProject.GameplayAbilitySystem.Target.Targetable}
+    content.vb: Public Function GetTargets(group As TargetGroup) As IReadOnlyList(Of Targetable)
+  overload: MyProject.GameplayAbilitySystem.Target.TargetRegistry.GetTargets*
+- uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Register(MyProject.GameplayAbilitySystem.Target.Targetable)
+  commentId: M:MyProject.GameplayAbilitySystem.Target.TargetRegistry.Register(MyProject.GameplayAbilitySystem.Target.Targetable)
+  id: Register(MyProject.GameplayAbilitySystem.Target.Targetable)
+  parent: MyProject.GameplayAbilitySystem.Target.TargetRegistry
+  langs:
+  - csharp
+  - vb
+  name: Register(Targetable)
+  nameWithType: TargetRegistry.Register(Targetable)
+  fullName: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Register(MyProject.GameplayAbilitySystem.Target.Targetable)
+  type: Method
+  namespace: MyProject.GameplayAbilitySystem.Target
+  summary: 타겟을 등록합니다.
+  example: []
+  syntax:
+    content: public void Register(Targetable target)
+    parameters:
+    - id: target
+      type: MyProject.GameplayAbilitySystem.Target.Targetable
+    content.vb: Public Sub Register(target As Targetable)
+  overload: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Register*
+- uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Unregister(MyProject.GameplayAbilitySystem.Target.Targetable)
+  commentId: M:MyProject.GameplayAbilitySystem.Target.TargetRegistry.Unregister(MyProject.GameplayAbilitySystem.Target.Targetable)
+  id: Unregister(MyProject.GameplayAbilitySystem.Target.Targetable)
+  parent: MyProject.GameplayAbilitySystem.Target.TargetRegistry
+  langs:
+  - csharp
+  - vb
+  name: Unregister(Targetable)
+  nameWithType: TargetRegistry.Unregister(Targetable)
+  fullName: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Unregister(MyProject.GameplayAbilitySystem.Target.Targetable)
+  type: Method
+  namespace: MyProject.GameplayAbilitySystem.Target
+  summary: 타겟 등록을 해제합니다.
+  example: []
+  syntax:
+    content: public void Unregister(Targetable target)
+    parameters:
+    - id: target
+      type: MyProject.GameplayAbilitySystem.Target.Targetable
+    content.vb: Public Sub Unregister(target As Targetable)
+  overload: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Unregister*
+- uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Rebuild
+  commentId: M:MyProject.GameplayAbilitySystem.Target.TargetRegistry.Rebuild
+  id: Rebuild
+  parent: MyProject.GameplayAbilitySystem.Target.TargetRegistry
+  langs:
+  - csharp
+  - vb
+  name: Rebuild()
+  nameWithType: TargetRegistry.Rebuild()
+  fullName: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Rebuild()
+  type: Method
+  namespace: MyProject.GameplayAbilitySystem.Target
+  summary: 씬 내의 모든 타겟을 찾아 레지스트리를 재구성합니다.
+  example: []
+  syntax:
+    content: public void Rebuild()
+    content.vb: Public Sub Rebuild()
+  overload: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Rebuild*
+references:
+- uid: MyProject.GameplayAbilitySystem.Target
+  commentId: N:MyProject.GameplayAbilitySystem.Target
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Target
+  nameWithType: MyProject.GameplayAbilitySystem.Target
+  fullName: MyProject.GameplayAbilitySystem.Target
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Target
+    name: Target
+    href: MyProject.GameplayAbilitySystem.Target.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Target
+    name: Target
+    href: MyProject.GameplayAbilitySystem.Target.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry.TryGet*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Target.TargetRegistry.TryGet
+  href: MyProject.GameplayAbilitySystem.Target.TargetRegistry.html#MyProject_GameplayAbilitySystem_Target_TargetRegistry_TryGet_MyProject_GameplayAbilitySystem_Target_TargetRegistry__
+  name: TryGet
+  nameWithType: TargetRegistry.TryGet
+  fullName: MyProject.GameplayAbilitySystem.Target.TargetRegistry.TryGet
+- uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry
+  commentId: T:MyProject.GameplayAbilitySystem.Target.TargetRegistry
+  parent: MyProject.GameplayAbilitySystem.Target
+  href: MyProject.GameplayAbilitySystem.Target.TargetRegistry.html
+  name: TargetRegistry
+  nameWithType: TargetRegistry
+  fullName: MyProject.GameplayAbilitySystem.Target.TargetRegistry
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry.GetTargets*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Target.TargetRegistry.GetTargets
+  href: MyProject.GameplayAbilitySystem.Target.TargetRegistry.html#MyProject_GameplayAbilitySystem_Target_TargetRegistry_GetTargets_MyProject_GameplayAbilitySystem_Define_TargetGroup_
+  name: GetTargets
+  nameWithType: TargetRegistry.GetTargets
+  fullName: MyProject.GameplayAbilitySystem.Target.TargetRegistry.GetTargets
+- uid: MyProject.GameplayAbilitySystem.Define.TargetGroup
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetGroup
+  parent: MyProject.GameplayAbilitySystem.Define
+  href: MyProject.GameplayAbilitySystem.Define.TargetGroup.html
+  name: TargetGroup
+  nameWithType: TargetGroup
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetGroup
+- uid: System.Collections.Generic.IReadOnlyList{MyProject.GameplayAbilitySystem.Target.Targetable}
+  commentId: T:System.Collections.Generic.IReadOnlyList{MyProject.GameplayAbilitySystem.Target.Targetable}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Targetable>
+  nameWithType: IReadOnlyList<Targetable>
+  fullName: System.Collections.Generic.IReadOnlyList<MyProject.GameplayAbilitySystem.Target.Targetable>
+  nameWithType.vb: IReadOnlyList(Of Targetable)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of MyProject.GameplayAbilitySystem.Target.Targetable)
+  name.vb: IReadOnlyList(Of Targetable)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: MyProject.GameplayAbilitySystem.Target.Targetable
+    name: Targetable
+    href: MyProject.GameplayAbilitySystem.Target.Targetable.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.GameplayAbilitySystem.Target.Targetable
+    name: Targetable
+    href: MyProject.GameplayAbilitySystem.Target.Targetable.html
+  - name: )
+- uid: MyProject.GameplayAbilitySystem.Define
+  commentId: N:MyProject.GameplayAbilitySystem.Define
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Define
+  nameWithType: MyProject.GameplayAbilitySystem.Define
+  fullName: MyProject.GameplayAbilitySystem.Define
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Register*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Target.TargetRegistry.Register
+  href: MyProject.GameplayAbilitySystem.Target.TargetRegistry.html#MyProject_GameplayAbilitySystem_Target_TargetRegistry_Register_MyProject_GameplayAbilitySystem_Target_Targetable_
+  name: Register
+  nameWithType: TargetRegistry.Register
+  fullName: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Register
+- uid: MyProject.GameplayAbilitySystem.Target.Targetable
+  commentId: T:MyProject.GameplayAbilitySystem.Target.Targetable
+  parent: MyProject.GameplayAbilitySystem.Target
+  href: MyProject.GameplayAbilitySystem.Target.Targetable.html
+  name: Targetable
+  nameWithType: Targetable
+  fullName: MyProject.GameplayAbilitySystem.Target.Targetable
+- uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Unregister*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Target.TargetRegistry.Unregister
+  href: MyProject.GameplayAbilitySystem.Target.TargetRegistry.html#MyProject_GameplayAbilitySystem_Target_TargetRegistry_Unregister_MyProject_GameplayAbilitySystem_Target_Targetable_
+  name: Unregister
+  nameWithType: TargetRegistry.Unregister
+  fullName: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Unregister
+- uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Rebuild*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Target.TargetRegistry.Rebuild
+  href: MyProject.GameplayAbilitySystem.Target.TargetRegistry.html#MyProject_GameplayAbilitySystem_Target_TargetRegistry_Rebuild
+  name: Rebuild
+  nameWithType: TargetRegistry.Rebuild
+  fullName: MyProject.GameplayAbilitySystem.Target.TargetRegistry.Rebuild

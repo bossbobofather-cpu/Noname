@@ -1,0 +1,152 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.AttributeId
+  commentId: T:Noname.GameAbilitySystem.AttributeId
+  id: AttributeId
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.AttributeId.AttackDamage
+  - Noname.GameAbilitySystem.AttributeId.AttackRange
+  - Noname.GameAbilitySystem.AttributeId.AttackSpeed
+  - Noname.GameAbilitySystem.AttributeId.Health
+  - Noname.GameAbilitySystem.AttributeId.JumpSpeed
+  - Noname.GameAbilitySystem.AttributeId.MoveSpeed
+  langs:
+  - csharp
+  - vb
+  name: AttributeId
+  nameWithType: AttributeId
+  fullName: Noname.GameAbilitySystem.AttributeId
+  type: Enum
+  namespace: Noname.GameAbilitySystem
+  summary: 기본 속성 식별자입니다.
+  example: []
+  syntax:
+    content: public enum AttributeId
+    content.vb: Public Enum AttributeId
+- uid: Noname.GameAbilitySystem.AttributeId.MoveSpeed
+  commentId: F:Noname.GameAbilitySystem.AttributeId.MoveSpeed
+  id: MoveSpeed
+  parent: Noname.GameAbilitySystem.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: MoveSpeed
+  nameWithType: AttributeId.MoveSpeed
+  fullName: Noname.GameAbilitySystem.AttributeId.MoveSpeed
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: MoveSpeed = 0
+    return:
+      type: Noname.GameAbilitySystem.AttributeId
+- uid: Noname.GameAbilitySystem.AttributeId.JumpSpeed
+  commentId: F:Noname.GameAbilitySystem.AttributeId.JumpSpeed
+  id: JumpSpeed
+  parent: Noname.GameAbilitySystem.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: JumpSpeed
+  nameWithType: AttributeId.JumpSpeed
+  fullName: Noname.GameAbilitySystem.AttributeId.JumpSpeed
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: JumpSpeed = 1
+    return:
+      type: Noname.GameAbilitySystem.AttributeId
+- uid: Noname.GameAbilitySystem.AttributeId.Health
+  commentId: F:Noname.GameAbilitySystem.AttributeId.Health
+  id: Health
+  parent: Noname.GameAbilitySystem.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: Health
+  nameWithType: AttributeId.Health
+  fullName: Noname.GameAbilitySystem.AttributeId.Health
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: Health = 2
+    return:
+      type: Noname.GameAbilitySystem.AttributeId
+- uid: Noname.GameAbilitySystem.AttributeId.AttackRange
+  commentId: F:Noname.GameAbilitySystem.AttributeId.AttackRange
+  id: AttackRange
+  parent: Noname.GameAbilitySystem.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: AttackRange
+  nameWithType: AttributeId.AttackRange
+  fullName: Noname.GameAbilitySystem.AttributeId.AttackRange
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: AttackRange = 3
+    return:
+      type: Noname.GameAbilitySystem.AttributeId
+- uid: Noname.GameAbilitySystem.AttributeId.AttackSpeed
+  commentId: F:Noname.GameAbilitySystem.AttributeId.AttackSpeed
+  id: AttackSpeed
+  parent: Noname.GameAbilitySystem.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: AttackSpeed
+  nameWithType: AttributeId.AttackSpeed
+  fullName: Noname.GameAbilitySystem.AttributeId.AttackSpeed
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: AttackSpeed = 4
+    return:
+      type: Noname.GameAbilitySystem.AttributeId
+- uid: Noname.GameAbilitySystem.AttributeId.AttackDamage
+  commentId: F:Noname.GameAbilitySystem.AttributeId.AttackDamage
+  id: AttackDamage
+  parent: Noname.GameAbilitySystem.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: AttackDamage
+  nameWithType: AttributeId.AttackDamage
+  fullName: Noname.GameAbilitySystem.AttributeId.AttackDamage
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: AttackDamage = 5
+    return:
+      type: Noname.GameAbilitySystem.AttributeId
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: Noname.GameAbilitySystem.AttributeId
+  commentId: T:Noname.GameAbilitySystem.AttributeId
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AttributeId.html
+  name: AttributeId
+  nameWithType: AttributeId
+  fullName: Noname.GameAbilitySystem.AttributeId

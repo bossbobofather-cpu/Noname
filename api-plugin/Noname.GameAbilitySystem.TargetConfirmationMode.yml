@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.TargetConfirmationMode
+  commentId: T:Noname.GameAbilitySystem.TargetConfirmationMode
+  id: TargetConfirmationMode
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.TargetConfirmationMode.Instant
+  - Noname.GameAbilitySystem.TargetConfirmationMode.UserConfirmed
+  langs:
+  - csharp
+  - vb
+  name: TargetConfirmationMode
+  nameWithType: TargetConfirmationMode
+  fullName: Noname.GameAbilitySystem.TargetConfirmationMode
+  type: Enum
+  namespace: Noname.GameAbilitySystem
+  summary: 타겟 확정 방식입니다.
+  example: []
+  syntax:
+    content: public enum TargetConfirmationMode
+    content.vb: Public Enum TargetConfirmationMode
+- uid: Noname.GameAbilitySystem.TargetConfirmationMode.Instant
+  commentId: F:Noname.GameAbilitySystem.TargetConfirmationMode.Instant
+  id: Instant
+  parent: Noname.GameAbilitySystem.TargetConfirmationMode
+  langs:
+  - csharp
+  - vb
+  name: Instant
+  nameWithType: TargetConfirmationMode.Instant
+  fullName: Noname.GameAbilitySystem.TargetConfirmationMode.Instant
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  summary: 즉시 확정합니다.
+  example: []
+  syntax:
+    content: Instant = 0
+    return:
+      type: Noname.GameAbilitySystem.TargetConfirmationMode
+- uid: Noname.GameAbilitySystem.TargetConfirmationMode.UserConfirmed
+  commentId: F:Noname.GameAbilitySystem.TargetConfirmationMode.UserConfirmed
+  id: UserConfirmed
+  parent: Noname.GameAbilitySystem.TargetConfirmationMode
+  langs:
+  - csharp
+  - vb
+  name: UserConfirmed
+  nameWithType: TargetConfirmationMode.UserConfirmed
+  fullName: Noname.GameAbilitySystem.TargetConfirmationMode.UserConfirmed
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  summary: 사용자가 확정해야 합니다.
+  example: []
+  syntax:
+    content: UserConfirmed = 1
+    return:
+      type: Noname.GameAbilitySystem.TargetConfirmationMode
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: Noname.GameAbilitySystem.TargetConfirmationMode
+  commentId: T:Noname.GameAbilitySystem.TargetConfirmationMode
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.TargetConfirmationMode.html
+  name: TargetConfirmationMode
+  nameWithType: TargetConfirmationMode
+  fullName: Noname.GameAbilitySystem.TargetConfirmationMode

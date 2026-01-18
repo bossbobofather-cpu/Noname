@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry
+  commentId: T:MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry
+  id: GameplayTargetActor_Registry
+  parent: MyProject.GameplayAbilitySystem.Target
+  children:
+  - MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry.AcquireTargetData(AbilitySystemComponent)
+  langs:
+  - csharp
+  - vb
+  name: GameplayTargetActor_Registry
+  nameWithType: GameplayTargetActor_Registry
+  fullName: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry
+  type: Class
+  namespace: MyProject.GameplayAbilitySystem.Target
+  summary: >-
+    TargetRegistry에 등록된 Targetable 객체들을 대상으로 타겟을 탐색하는 액터입니다.
+
+    범위, 각도, 진영 등의 조건에 따라 대상을 필터링하고 정렬합니다.
+  example: []
+  syntax:
+    content: 'public sealed class GameplayTargetActor_Registry : GameplayTargetActor'
+    content.vb: Public NotInheritable Class GameplayTargetActor_Registry Inherits GameplayTargetActor
+  inheritance:
+  - System.Object
+- uid: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry.AcquireTargetData(AbilitySystemComponent)
+  commentId: M:MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry.AcquireTargetData(AbilitySystemComponent)
+  id: AcquireTargetData(AbilitySystemComponent)
+  parent: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry
+  langs:
+  - csharp
+  - vb
+  name: AcquireTargetData(AbilitySystemComponent)
+  nameWithType: GameplayTargetActor_Registry.AcquireTargetData(AbilitySystemComponent)
+  fullName: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry.AcquireTargetData(AbilitySystemComponent)
+  type: Method
+  namespace: MyProject.GameplayAbilitySystem.Target
+  example: []
+  syntax:
+    content: public override AbilityTargetData AcquireTargetData(AbilitySystemComponent owner)
+    parameters:
+    - id: owner
+      type: AbilitySystemComponent
+    return:
+      type: AbilityTargetData
+    content.vb: Public Overrides Function AcquireTargetData(owner As AbilitySystemComponent) As AbilityTargetData
+  overload: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry.AcquireTargetData*
+references:
+- uid: MyProject.GameplayAbilitySystem.Target
+  commentId: N:MyProject.GameplayAbilitySystem.Target
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Target
+  nameWithType: MyProject.GameplayAbilitySystem.Target
+  fullName: MyProject.GameplayAbilitySystem.Target
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Target
+    name: Target
+    href: MyProject.GameplayAbilitySystem.Target.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Target
+    name: Target
+    href: MyProject.GameplayAbilitySystem.Target.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry.AcquireTargetData*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry.AcquireTargetData
+  href: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry.html#MyProject_GameplayAbilitySystem_Target_GameplayTargetActor_Registry_AcquireTargetData_AbilitySystemComponent_
+  name: AcquireTargetData
+  nameWithType: GameplayTargetActor_Registry.AcquireTargetData
+  fullName: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry.AcquireTargetData
+- uid: AbilitySystemComponent
+  isExternal: true
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: AbilitySystemComponent
+- uid: AbilityTargetData
+  commentId: '!:AbilityTargetData'
+  isExternal: true
+  name: AbilityTargetData
+  nameWithType: AbilityTargetData
+  fullName: AbilityTargetData

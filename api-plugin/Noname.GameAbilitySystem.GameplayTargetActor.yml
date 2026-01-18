@@ -1,0 +1,526 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.GameplayTargetActor
+  commentId: T:Noname.GameAbilitySystem.GameplayTargetActor
+  id: GameplayTargetActor
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.GameplayTargetActor.AcquireTargetData(Noname.GameAbilitySystem.AbilitySystemComponent)
+  - Noname.GameAbilitySystem.GameplayTargetActor.CancelTargeting
+  - Noname.GameAbilitySystem.GameplayTargetActor.ClampMaxTargets(System.Int32)
+  - Noname.GameAbilitySystem.GameplayTargetActor.Config
+  - Noname.GameAbilitySystem.GameplayTargetActor.ConfirmTargetData(Noname.GameAbilitySystem.AbilityTargetData)
+  - Noname.GameAbilitySystem.GameplayTargetActor.Initialize(Noname.GameAbilitySystem.GameplayTargetActorConfig)
+  - Noname.GameAbilitySystem.GameplayTargetActor.OnInitialized
+  - Noname.GameAbilitySystem.GameplayTargetActor.OnStartTargeting
+  - Noname.GameAbilitySystem.GameplayTargetActor.Owner
+  - Noname.GameAbilitySystem.GameplayTargetActor.ResolveOrigin(Noname.GameAbilitySystem.AbilitySystemComponent)
+  - Noname.GameAbilitySystem.GameplayTargetActor.StartTargeting(Noname.GameAbilitySystem.AbilitySystemComponent)
+  - Noname.GameAbilitySystem.GameplayTargetActor.TargetDataReady
+  - Noname.GameAbilitySystem.GameplayTargetActor.TargetingCancelled
+  langs:
+  - csharp
+  - vb
+  name: GameplayTargetActor
+  nameWithType: GameplayTargetActor
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor
+  type: Class
+  namespace: Noname.GameAbilitySystem
+  summary: 타겟 데이터를 수집하는 액터의 기본 클래스입니다.
+  example: []
+  syntax:
+    content: 'public abstract class GameplayTargetActor : MonoBehaviour'
+    content.vb: Public MustInherit Class GameplayTargetActor Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.Config
+  commentId: P:Noname.GameAbilitySystem.GameplayTargetActor.Config
+  id: Config
+  parent: Noname.GameAbilitySystem.GameplayTargetActor
+  langs:
+  - csharp
+  - vb
+  name: Config
+  nameWithType: GameplayTargetActor.Config
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.Config
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 연결된 설정입니다.
+  example: []
+  syntax:
+    content: public GameplayTargetActorConfig Config { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.GameplayTargetActorConfig
+    content.vb: Public ReadOnly Property Config As GameplayTargetActorConfig
+  overload: Noname.GameAbilitySystem.GameplayTargetActor.Config*
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.Owner
+  commentId: P:Noname.GameAbilitySystem.GameplayTargetActor.Owner
+  id: Owner
+  parent: Noname.GameAbilitySystem.GameplayTargetActor
+  langs:
+  - csharp
+  - vb
+  name: Owner
+  nameWithType: GameplayTargetActor.Owner
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.Owner
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 타겟팅을 수행하는 소유자입니다.
+  example: []
+  syntax:
+    content: public AbilitySystemComponent Owner { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.AbilitySystemComponent
+    content.vb: Public Property Owner As AbilitySystemComponent
+  overload: Noname.GameAbilitySystem.GameplayTargetActor.Owner*
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.TargetDataReady
+  commentId: E:Noname.GameAbilitySystem.GameplayTargetActor.TargetDataReady
+  id: TargetDataReady
+  parent: Noname.GameAbilitySystem.GameplayTargetActor
+  langs:
+  - csharp
+  - vb
+  name: TargetDataReady
+  nameWithType: GameplayTargetActor.TargetDataReady
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.TargetDataReady
+  type: Event
+  namespace: Noname.GameAbilitySystem
+  summary: 타겟 데이터가 준비되면 호출됩니다.
+  example: []
+  syntax:
+    content: public event Action<AbilityTargetData> TargetDataReady
+    return:
+      type: System.Action{Noname.GameAbilitySystem.AbilityTargetData}
+    content.vb: Public Event TargetDataReady As Action(Of AbilityTargetData)
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.TargetingCancelled
+  commentId: E:Noname.GameAbilitySystem.GameplayTargetActor.TargetingCancelled
+  id: TargetingCancelled
+  parent: Noname.GameAbilitySystem.GameplayTargetActor
+  langs:
+  - csharp
+  - vb
+  name: TargetingCancelled
+  nameWithType: GameplayTargetActor.TargetingCancelled
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.TargetingCancelled
+  type: Event
+  namespace: Noname.GameAbilitySystem
+  summary: 타겟팅이 취소되면 호출됩니다.
+  example: []
+  syntax:
+    content: public event Action TargetingCancelled
+    return:
+      type: System.Action
+    content.vb: Public Event TargetingCancelled As Action
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.Initialize(Noname.GameAbilitySystem.GameplayTargetActorConfig)
+  commentId: M:Noname.GameAbilitySystem.GameplayTargetActor.Initialize(Noname.GameAbilitySystem.GameplayTargetActorConfig)
+  id: Initialize(Noname.GameAbilitySystem.GameplayTargetActorConfig)
+  parent: Noname.GameAbilitySystem.GameplayTargetActor
+  langs:
+  - csharp
+  - vb
+  name: Initialize(GameplayTargetActorConfig)
+  nameWithType: GameplayTargetActor.Initialize(GameplayTargetActorConfig)
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.Initialize(Noname.GameAbilitySystem.GameplayTargetActorConfig)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 설정을 초기화합니다.
+  example: []
+  syntax:
+    content: public void Initialize(GameplayTargetActorConfig config)
+    parameters:
+    - id: config
+      type: Noname.GameAbilitySystem.GameplayTargetActorConfig
+      description: 타겟 액터 설정
+    content.vb: Public Sub Initialize(config As GameplayTargetActorConfig)
+  overload: Noname.GameAbilitySystem.GameplayTargetActor.Initialize*
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.OnInitialized
+  commentId: M:Noname.GameAbilitySystem.GameplayTargetActor.OnInitialized
+  id: OnInitialized
+  parent: Noname.GameAbilitySystem.GameplayTargetActor
+  langs:
+  - csharp
+  - vb
+  name: OnInitialized()
+  nameWithType: GameplayTargetActor.OnInitialized()
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.OnInitialized()
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 초기화 이후에 호출되는 훅입니다.
+  example: []
+  syntax:
+    content: protected virtual void OnInitialized()
+    content.vb: Protected Overridable Sub OnInitialized()
+  overload: Noname.GameAbilitySystem.GameplayTargetActor.OnInitialized*
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.StartTargeting(Noname.GameAbilitySystem.AbilitySystemComponent)
+  commentId: M:Noname.GameAbilitySystem.GameplayTargetActor.StartTargeting(Noname.GameAbilitySystem.AbilitySystemComponent)
+  id: StartTargeting(Noname.GameAbilitySystem.AbilitySystemComponent)
+  parent: Noname.GameAbilitySystem.GameplayTargetActor
+  langs:
+  - csharp
+  - vb
+  name: StartTargeting(AbilitySystemComponent)
+  nameWithType: GameplayTargetActor.StartTargeting(AbilitySystemComponent)
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.StartTargeting(Noname.GameAbilitySystem.AbilitySystemComponent)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 타겟팅을 시작합니다.
+  example: []
+  syntax:
+    content: public void StartTargeting(AbilitySystemComponent owner)
+    parameters:
+    - id: owner
+      type: Noname.GameAbilitySystem.AbilitySystemComponent
+      description: 소유자
+    content.vb: Public Sub StartTargeting(owner As AbilitySystemComponent)
+  overload: Noname.GameAbilitySystem.GameplayTargetActor.StartTargeting*
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.OnStartTargeting
+  commentId: M:Noname.GameAbilitySystem.GameplayTargetActor.OnStartTargeting
+  id: OnStartTargeting
+  parent: Noname.GameAbilitySystem.GameplayTargetActor
+  langs:
+  - csharp
+  - vb
+  name: OnStartTargeting()
+  nameWithType: GameplayTargetActor.OnStartTargeting()
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.OnStartTargeting()
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 타겟팅 시작 시점 훅입니다.
+  example: []
+  syntax:
+    content: protected virtual void OnStartTargeting()
+    content.vb: Protected Overridable Sub OnStartTargeting()
+  overload: Noname.GameAbilitySystem.GameplayTargetActor.OnStartTargeting*
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.ConfirmTargetData(Noname.GameAbilitySystem.AbilityTargetData)
+  commentId: M:Noname.GameAbilitySystem.GameplayTargetActor.ConfirmTargetData(Noname.GameAbilitySystem.AbilityTargetData)
+  id: ConfirmTargetData(Noname.GameAbilitySystem.AbilityTargetData)
+  parent: Noname.GameAbilitySystem.GameplayTargetActor
+  langs:
+  - csharp
+  - vb
+  name: ConfirmTargetData(AbilityTargetData)
+  nameWithType: GameplayTargetActor.ConfirmTargetData(AbilityTargetData)
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.ConfirmTargetData(Noname.GameAbilitySystem.AbilityTargetData)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 타겟 데이터를 확정합니다.
+  example: []
+  syntax:
+    content: public void ConfirmTargetData(AbilityTargetData data)
+    parameters:
+    - id: data
+      type: Noname.GameAbilitySystem.AbilityTargetData
+      description: 완성된 타겟 데이터
+    content.vb: Public Sub ConfirmTargetData(data As AbilityTargetData)
+  overload: Noname.GameAbilitySystem.GameplayTargetActor.ConfirmTargetData*
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.CancelTargeting
+  commentId: M:Noname.GameAbilitySystem.GameplayTargetActor.CancelTargeting
+  id: CancelTargeting
+  parent: Noname.GameAbilitySystem.GameplayTargetActor
+  langs:
+  - csharp
+  - vb
+  name: CancelTargeting()
+  nameWithType: GameplayTargetActor.CancelTargeting()
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.CancelTargeting()
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 타겟팅을 취소합니다.
+  example: []
+  syntax:
+    content: public void CancelTargeting()
+    content.vb: Public Sub CancelTargeting()
+  overload: Noname.GameAbilitySystem.GameplayTargetActor.CancelTargeting*
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.AcquireTargetData(Noname.GameAbilitySystem.AbilitySystemComponent)
+  commentId: M:Noname.GameAbilitySystem.GameplayTargetActor.AcquireTargetData(Noname.GameAbilitySystem.AbilitySystemComponent)
+  id: AcquireTargetData(Noname.GameAbilitySystem.AbilitySystemComponent)
+  parent: Noname.GameAbilitySystem.GameplayTargetActor
+  langs:
+  - csharp
+  - vb
+  name: AcquireTargetData(AbilitySystemComponent)
+  nameWithType: GameplayTargetActor.AcquireTargetData(AbilitySystemComponent)
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.AcquireTargetData(Noname.GameAbilitySystem.AbilitySystemComponent)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 타겟 데이터를 수집합니다.
+  example: []
+  syntax:
+    content: public abstract AbilityTargetData AcquireTargetData(AbilitySystemComponent owner)
+    parameters:
+    - id: owner
+      type: Noname.GameAbilitySystem.AbilitySystemComponent
+      description: 소유자
+    return:
+      type: Noname.GameAbilitySystem.AbilityTargetData
+      description: 수집된 타겟 데이터
+    content.vb: Public MustOverride Function AcquireTargetData(owner As AbilitySystemComponent) As AbilityTargetData
+  overload: Noname.GameAbilitySystem.GameplayTargetActor.AcquireTargetData*
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.ResolveOrigin(Noname.GameAbilitySystem.AbilitySystemComponent)
+  commentId: M:Noname.GameAbilitySystem.GameplayTargetActor.ResolveOrigin(Noname.GameAbilitySystem.AbilitySystemComponent)
+  id: ResolveOrigin(Noname.GameAbilitySystem.AbilitySystemComponent)
+  parent: Noname.GameAbilitySystem.GameplayTargetActor
+  langs:
+  - csharp
+  - vb
+  name: ResolveOrigin(AbilitySystemComponent)
+  nameWithType: GameplayTargetActor.ResolveOrigin(AbilitySystemComponent)
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.ResolveOrigin(Noname.GameAbilitySystem.AbilitySystemComponent)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 기준 위치를 계산합니다.
+  example: []
+  syntax:
+    content: protected Vector3 ResolveOrigin(AbilitySystemComponent owner)
+    parameters:
+    - id: owner
+      type: Noname.GameAbilitySystem.AbilitySystemComponent
+      description: 소유자
+    return:
+      type: Vector3
+      description: 기준 위치
+    content.vb: Protected Function ResolveOrigin(owner As AbilitySystemComponent) As Vector3
+  overload: Noname.GameAbilitySystem.GameplayTargetActor.ResolveOrigin*
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.ClampMaxTargets(System.Int32)
+  commentId: M:Noname.GameAbilitySystem.GameplayTargetActor.ClampMaxTargets(System.Int32)
+  id: ClampMaxTargets(System.Int32)
+  parent: Noname.GameAbilitySystem.GameplayTargetActor
+  langs:
+  - csharp
+  - vb
+  name: ClampMaxTargets(int)
+  nameWithType: GameplayTargetActor.ClampMaxTargets(int)
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.ClampMaxTargets(int)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 최대 타겟 수 제한을 적용합니다.
+  example: []
+  syntax:
+    content: protected int ClampMaxTargets(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: 현재 타겟 수
+    return:
+      type: System.Int32
+      description: 제한 적용 후 타겟 수
+    content.vb: Protected Function ClampMaxTargets(count As Integer) As Integer
+  overload: Noname.GameAbilitySystem.GameplayTargetActor.ClampMaxTargets*
+  nameWithType.vb: GameplayTargetActor.ClampMaxTargets(Integer)
+  fullName.vb: Noname.GameAbilitySystem.GameplayTargetActor.ClampMaxTargets(Integer)
+  name.vb: ClampMaxTargets(Integer)
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.Config*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActor.Config
+  href: Noname.GameAbilitySystem.GameplayTargetActor.html#Noname_GameAbilitySystem_GameplayTargetActor_Config
+  name: Config
+  nameWithType: GameplayTargetActor.Config
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.Config
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig
+  commentId: T:Noname.GameAbilitySystem.GameplayTargetActorConfig
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayTargetActorConfig.html
+  name: GameplayTargetActorConfig
+  nameWithType: GameplayTargetActorConfig
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.Owner*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActor.Owner
+  href: Noname.GameAbilitySystem.GameplayTargetActor.html#Noname_GameAbilitySystem_GameplayTargetActor_Owner
+  name: Owner
+  nameWithType: GameplayTargetActor.Owner
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.Owner
+- uid: Noname.GameAbilitySystem.AbilitySystemComponent
+  commentId: T:Noname.GameAbilitySystem.AbilitySystemComponent
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AbilitySystemComponent.html
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: Noname.GameAbilitySystem.AbilitySystemComponent
+- uid: System.Action{Noname.GameAbilitySystem.AbilityTargetData}
+  commentId: T:System.Action{Noname.GameAbilitySystem.AbilityTargetData}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<AbilityTargetData>
+  nameWithType: Action<AbilityTargetData>
+  fullName: System.Action<Noname.GameAbilitySystem.AbilityTargetData>
+  nameWithType.vb: Action(Of AbilityTargetData)
+  fullName.vb: System.Action(Of Noname.GameAbilitySystem.AbilityTargetData)
+  name.vb: Action(Of AbilityTargetData)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.AbilityTargetData
+    name: AbilityTargetData
+    href: Noname.GameAbilitySystem.AbilityTargetData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.AbilityTargetData
+    name: AbilityTargetData
+    href: Noname.GameAbilitySystem.AbilityTargetData.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.Initialize*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActor.Initialize
+  href: Noname.GameAbilitySystem.GameplayTargetActor.html#Noname_GameAbilitySystem_GameplayTargetActor_Initialize_Noname_GameAbilitySystem_GameplayTargetActorConfig_
+  name: Initialize
+  nameWithType: GameplayTargetActor.Initialize
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.Initialize
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.OnInitialized*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActor.OnInitialized
+  href: Noname.GameAbilitySystem.GameplayTargetActor.html#Noname_GameAbilitySystem_GameplayTargetActor_OnInitialized
+  name: OnInitialized
+  nameWithType: GameplayTargetActor.OnInitialized
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.OnInitialized
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.StartTargeting*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActor.StartTargeting
+  href: Noname.GameAbilitySystem.GameplayTargetActor.html#Noname_GameAbilitySystem_GameplayTargetActor_StartTargeting_Noname_GameAbilitySystem_AbilitySystemComponent_
+  name: StartTargeting
+  nameWithType: GameplayTargetActor.StartTargeting
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.StartTargeting
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.OnStartTargeting*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActor.OnStartTargeting
+  href: Noname.GameAbilitySystem.GameplayTargetActor.html#Noname_GameAbilitySystem_GameplayTargetActor_OnStartTargeting
+  name: OnStartTargeting
+  nameWithType: GameplayTargetActor.OnStartTargeting
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.OnStartTargeting
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.ConfirmTargetData*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActor.ConfirmTargetData
+  href: Noname.GameAbilitySystem.GameplayTargetActor.html#Noname_GameAbilitySystem_GameplayTargetActor_ConfirmTargetData_Noname_GameAbilitySystem_AbilityTargetData_
+  name: ConfirmTargetData
+  nameWithType: GameplayTargetActor.ConfirmTargetData
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.ConfirmTargetData
+- uid: Noname.GameAbilitySystem.AbilityTargetData
+  commentId: T:Noname.GameAbilitySystem.AbilityTargetData
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AbilityTargetData.html
+  name: AbilityTargetData
+  nameWithType: AbilityTargetData
+  fullName: Noname.GameAbilitySystem.AbilityTargetData
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.CancelTargeting*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActor.CancelTargeting
+  href: Noname.GameAbilitySystem.GameplayTargetActor.html#Noname_GameAbilitySystem_GameplayTargetActor_CancelTargeting
+  name: CancelTargeting
+  nameWithType: GameplayTargetActor.CancelTargeting
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.CancelTargeting
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.AcquireTargetData*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActor.AcquireTargetData
+  href: Noname.GameAbilitySystem.GameplayTargetActor.html#Noname_GameAbilitySystem_GameplayTargetActor_AcquireTargetData_Noname_GameAbilitySystem_AbilitySystemComponent_
+  name: AcquireTargetData
+  nameWithType: GameplayTargetActor.AcquireTargetData
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.AcquireTargetData
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.ResolveOrigin*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActor.ResolveOrigin
+  href: Noname.GameAbilitySystem.GameplayTargetActor.html#Noname_GameAbilitySystem_GameplayTargetActor_ResolveOrigin_Noname_GameAbilitySystem_AbilitySystemComponent_
+  name: ResolveOrigin
+  nameWithType: GameplayTargetActor.ResolveOrigin
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.ResolveOrigin
+- uid: Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Vector3
+- uid: Noname.GameAbilitySystem.GameplayTargetActor.ClampMaxTargets*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActor.ClampMaxTargets
+  href: Noname.GameAbilitySystem.GameplayTargetActor.html#Noname_GameAbilitySystem_GameplayTargetActor_ClampMaxTargets_System_Int32_
+  name: ClampMaxTargets
+  nameWithType: GameplayTargetActor.ClampMaxTargets
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor.ClampMaxTargets
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

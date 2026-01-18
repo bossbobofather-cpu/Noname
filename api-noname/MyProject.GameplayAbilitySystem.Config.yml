@@ -1,0 +1,21 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Config
+  commentId: N:MyProject.GameplayAbilitySystem.Config
+  id: MyProject.GameplayAbilitySystem.Config
+  children:
+  - MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig
+  langs:
+  - csharp
+  - vb
+  name: MyProject.GameplayAbilitySystem.Config
+  nameWithType: MyProject.GameplayAbilitySystem.Config
+  fullName: MyProject.GameplayAbilitySystem.Config
+  type: Namespace
+references:
+- uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig
+  commentId: T:MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig
+  href: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.html
+  name: GameplayTargetActorRegistryConfig
+  nameWithType: GameplayTargetActorRegistryConfig
+  fullName: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig

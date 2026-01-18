@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.UI
+  commentId: N:MyProject.Common.UI
+  id: MyProject.Common.UI
+  children:
+  - MyProject.Common.UI.HealthBarOwner
+  - MyProject.Common.UI.ScreenSpaceHealthBar
+  - MyProject.Common.UI.ScreenSpaceHealthBarPool
+  - MyProject.Common.UI.SystemMessageUI
+  - MyProject.Common.UI.WorldHealthBar
+  - MyProject.Common.UI.WorldObjectLabel
+  langs:
+  - csharp
+  - vb
+  name: MyProject.Common.UI
+  nameWithType: MyProject.Common.UI
+  fullName: MyProject.Common.UI
+  type: Namespace
+references:
+- uid: MyProject.Common.UI.HealthBarOwner
+  commentId: T:MyProject.Common.UI.HealthBarOwner
+  href: MyProject.Common.UI.HealthBarOwner.html
+  name: HealthBarOwner
+  nameWithType: HealthBarOwner
+  fullName: MyProject.Common.UI.HealthBarOwner
+- uid: MyProject.Common.UI.ScreenSpaceHealthBar
+  commentId: T:MyProject.Common.UI.ScreenSpaceHealthBar
+  parent: MyProject.Common.UI
+  href: MyProject.Common.UI.ScreenSpaceHealthBar.html
+  name: ScreenSpaceHealthBar
+  nameWithType: ScreenSpaceHealthBar
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBar
+- uid: MyProject.Common.UI.ScreenSpaceHealthBarPool
+  commentId: T:MyProject.Common.UI.ScreenSpaceHealthBarPool
+  parent: MyProject.Common.UI
+  href: MyProject.Common.UI.ScreenSpaceHealthBarPool.html
+  name: ScreenSpaceHealthBarPool
+  nameWithType: ScreenSpaceHealthBarPool
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool
+- uid: MyProject.Common.UI.SystemMessageUI
+  commentId: T:MyProject.Common.UI.SystemMessageUI
+  href: MyProject.Common.UI.SystemMessageUI.html
+  name: SystemMessageUI
+  nameWithType: SystemMessageUI
+  fullName: MyProject.Common.UI.SystemMessageUI
+- uid: MyProject.Common.UI.WorldHealthBar
+  commentId: T:MyProject.Common.UI.WorldHealthBar
+  href: MyProject.Common.UI.WorldHealthBar.html
+  name: WorldHealthBar
+  nameWithType: WorldHealthBar
+  fullName: MyProject.Common.UI.WorldHealthBar
+- uid: MyProject.Common.UI.WorldObjectLabel
+  commentId: T:MyProject.Common.UI.WorldObjectLabel
+  href: MyProject.Common.UI.WorldObjectLabel.html
+  name: WorldObjectLabel
+  nameWithType: WorldObjectLabel
+  fullName: MyProject.Common.UI.WorldObjectLabel
+- uid: MyProject.Common.UI
+  commentId: N:MyProject.Common.UI
+  href: MyProject.html
+  name: MyProject.Common.UI
+  nameWithType: MyProject.Common.UI
+  fullName: MyProject.Common.UI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html

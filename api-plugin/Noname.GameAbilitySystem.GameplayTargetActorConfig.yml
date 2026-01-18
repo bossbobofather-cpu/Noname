@@ -1,0 +1,356 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig
+  commentId: T:Noname.GameAbilitySystem.GameplayTargetActorConfig
+  id: GameplayTargetActorConfig
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.GameplayTargetActorConfig.ActorPrefab
+  - Noname.GameAbilitySystem.GameplayTargetActorConfig.AnchorKey
+  - Noname.GameAbilitySystem.GameplayTargetActorConfig.CenterOffset
+  - Noname.GameAbilitySystem.GameplayTargetActorConfig.IncludeOwner
+  - Noname.GameAbilitySystem.GameplayTargetActorConfig.MaxTargets
+  - Noname.GameAbilitySystem.GameplayTargetActorConfig.SelectionAttribute
+  - Noname.GameAbilitySystem.GameplayTargetActorConfig.Spawn(Transform)
+  - Noname.GameAbilitySystem.GameplayTargetActorConfig.SpawnOffset
+  langs:
+  - csharp
+  - vb
+  name: GameplayTargetActorConfig
+  nameWithType: GameplayTargetActorConfig
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig
+  type: Class
+  namespace: Noname.GameAbilitySystem
+  summary: 타겟 액터 설정의 기본 클래스입니다.
+  example: []
+  syntax:
+    content: 'public abstract class GameplayTargetActorConfig : GameplayConfig'
+    content.vb: Public MustInherit Class GameplayTargetActorConfig Inherits GameplayConfig
+  inheritance:
+  - System.Object
+  - Noname.GameAbilitySystem.GameplayConfig
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.ActorPrefab
+  commentId: P:Noname.GameAbilitySystem.GameplayTargetActorConfig.ActorPrefab
+  id: ActorPrefab
+  parent: Noname.GameAbilitySystem.GameplayTargetActorConfig
+  langs:
+  - csharp
+  - vb
+  name: ActorPrefab
+  nameWithType: GameplayTargetActorConfig.ActorPrefab
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.ActorPrefab
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 사용할 타겟 액터 프리팹입니다.
+  example: []
+  syntax:
+    content: public GameplayTargetActor ActorPrefab { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.GameplayTargetActor
+    content.vb: Public ReadOnly Property ActorPrefab As GameplayTargetActor
+  overload: Noname.GameAbilitySystem.GameplayTargetActorConfig.ActorPrefab*
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.AnchorKey
+  commentId: P:Noname.GameAbilitySystem.GameplayTargetActorConfig.AnchorKey
+  id: AnchorKey
+  parent: Noname.GameAbilitySystem.GameplayTargetActorConfig
+  langs:
+  - csharp
+  - vb
+  name: AnchorKey
+  nameWithType: GameplayTargetActorConfig.AnchorKey
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.AnchorKey
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 중심 기준이 되는 앵커 키입니다.
+  example: []
+  syntax:
+    content: public string AnchorKey { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property AnchorKey As String
+  overload: Noname.GameAbilitySystem.GameplayTargetActorConfig.AnchorKey*
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.CenterOffset
+  commentId: P:Noname.GameAbilitySystem.GameplayTargetActorConfig.CenterOffset
+  id: CenterOffset
+  parent: Noname.GameAbilitySystem.GameplayTargetActorConfig
+  langs:
+  - csharp
+  - vb
+  name: CenterOffset
+  nameWithType: GameplayTargetActorConfig.CenterOffset
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.CenterOffset
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 타겟 중심 오프셋입니다.
+  example: []
+  syntax:
+    content: public Vector3 CenterOffset { get; }
+    parameters: []
+    return:
+      type: Vector3
+    content.vb: Public ReadOnly Property CenterOffset As Vector3
+  overload: Noname.GameAbilitySystem.GameplayTargetActorConfig.CenterOffset*
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.SpawnOffset
+  commentId: P:Noname.GameAbilitySystem.GameplayTargetActorConfig.SpawnOffset
+  id: SpawnOffset
+  parent: Noname.GameAbilitySystem.GameplayTargetActorConfig
+  langs:
+  - csharp
+  - vb
+  name: SpawnOffset
+  nameWithType: GameplayTargetActorConfig.SpawnOffset
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.SpawnOffset
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 생성 위치 오프셋입니다.
+  example: []
+  syntax:
+    content: public Vector3 SpawnOffset { get; }
+    parameters: []
+    return:
+      type: Vector3
+    content.vb: Public ReadOnly Property SpawnOffset As Vector3
+  overload: Noname.GameAbilitySystem.GameplayTargetActorConfig.SpawnOffset*
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.IncludeOwner
+  commentId: P:Noname.GameAbilitySystem.GameplayTargetActorConfig.IncludeOwner
+  id: IncludeOwner
+  parent: Noname.GameAbilitySystem.GameplayTargetActorConfig
+  langs:
+  - csharp
+  - vb
+  name: IncludeOwner
+  nameWithType: GameplayTargetActorConfig.IncludeOwner
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.IncludeOwner
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 소유자를 포함할지 여부입니다.
+  example: []
+  syntax:
+    content: public bool IncludeOwner { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IncludeOwner As Boolean
+  overload: Noname.GameAbilitySystem.GameplayTargetActorConfig.IncludeOwner*
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.MaxTargets
+  commentId: P:Noname.GameAbilitySystem.GameplayTargetActorConfig.MaxTargets
+  id: MaxTargets
+  parent: Noname.GameAbilitySystem.GameplayTargetActorConfig
+  langs:
+  - csharp
+  - vb
+  name: MaxTargets
+  nameWithType: GameplayTargetActorConfig.MaxTargets
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.MaxTargets
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 최대 타겟 수입니다.
+  example: []
+  syntax:
+    content: public int MaxTargets { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MaxTargets As Integer
+  overload: Noname.GameAbilitySystem.GameplayTargetActorConfig.MaxTargets*
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.SelectionAttribute
+  commentId: P:Noname.GameAbilitySystem.GameplayTargetActorConfig.SelectionAttribute
+  id: SelectionAttribute
+  parent: Noname.GameAbilitySystem.GameplayTargetActorConfig
+  langs:
+  - csharp
+  - vb
+  name: SelectionAttribute
+  nameWithType: GameplayTargetActorConfig.SelectionAttribute
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.SelectionAttribute
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 선택 기준이 되는 속성입니다.
+  example: []
+  syntax:
+    content: public AttributeDefinition SelectionAttribute { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.AttributeDefinition
+    content.vb: Public ReadOnly Property SelectionAttribute As AttributeDefinition
+  overload: Noname.GameAbilitySystem.GameplayTargetActorConfig.SelectionAttribute*
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.Spawn(Transform)
+  commentId: M:Noname.GameAbilitySystem.GameplayTargetActorConfig.Spawn(Transform)
+  id: Spawn(Transform)
+  parent: Noname.GameAbilitySystem.GameplayTargetActorConfig
+  langs:
+  - csharp
+  - vb
+  name: Spawn(Transform)
+  nameWithType: GameplayTargetActorConfig.Spawn(Transform)
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.Spawn(Transform)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 타겟 액터를 생성합니다.
+  example: []
+  syntax:
+    content: public GameplayTargetActor Spawn(Transform parent)
+    parameters:
+    - id: parent
+      type: Transform
+      description: 부모 트랜스폼
+    return:
+      type: Noname.GameAbilitySystem.GameplayTargetActor
+      description: 생성된 타겟 액터
+    content.vb: Public Function Spawn(parent As Transform) As GameplayTargetActor
+  overload: Noname.GameAbilitySystem.GameplayTargetActorConfig.Spawn*
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Noname.GameAbilitySystem.GameplayConfig
+  commentId: T:Noname.GameAbilitySystem.GameplayConfig
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayConfig.html
+  name: GameplayConfig
+  nameWithType: GameplayConfig
+  fullName: Noname.GameAbilitySystem.GameplayConfig
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.ActorPrefab*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActorConfig.ActorPrefab
+  href: Noname.GameAbilitySystem.GameplayTargetActorConfig.html#Noname_GameAbilitySystem_GameplayTargetActorConfig_ActorPrefab
+  name: ActorPrefab
+  nameWithType: GameplayTargetActorConfig.ActorPrefab
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.ActorPrefab
+- uid: Noname.GameAbilitySystem.GameplayTargetActor
+  commentId: T:Noname.GameAbilitySystem.GameplayTargetActor
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayTargetActor.html
+  name: GameplayTargetActor
+  nameWithType: GameplayTargetActor
+  fullName: Noname.GameAbilitySystem.GameplayTargetActor
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.AnchorKey*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActorConfig.AnchorKey
+  href: Noname.GameAbilitySystem.GameplayTargetActorConfig.html#Noname_GameAbilitySystem_GameplayTargetActorConfig_AnchorKey
+  name: AnchorKey
+  nameWithType: GameplayTargetActorConfig.AnchorKey
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.AnchorKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.CenterOffset*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActorConfig.CenterOffset
+  href: Noname.GameAbilitySystem.GameplayTargetActorConfig.html#Noname_GameAbilitySystem_GameplayTargetActorConfig_CenterOffset
+  name: CenterOffset
+  nameWithType: GameplayTargetActorConfig.CenterOffset
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.CenterOffset
+- uid: Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Vector3
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.SpawnOffset*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActorConfig.SpawnOffset
+  href: Noname.GameAbilitySystem.GameplayTargetActorConfig.html#Noname_GameAbilitySystem_GameplayTargetActorConfig_SpawnOffset
+  name: SpawnOffset
+  nameWithType: GameplayTargetActorConfig.SpawnOffset
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.SpawnOffset
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.IncludeOwner*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActorConfig.IncludeOwner
+  href: Noname.GameAbilitySystem.GameplayTargetActorConfig.html#Noname_GameAbilitySystem_GameplayTargetActorConfig_IncludeOwner
+  name: IncludeOwner
+  nameWithType: GameplayTargetActorConfig.IncludeOwner
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.IncludeOwner
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.MaxTargets*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActorConfig.MaxTargets
+  href: Noname.GameAbilitySystem.GameplayTargetActorConfig.html#Noname_GameAbilitySystem_GameplayTargetActorConfig_MaxTargets
+  name: MaxTargets
+  nameWithType: GameplayTargetActorConfig.MaxTargets
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.MaxTargets
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.SelectionAttribute*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActorConfig.SelectionAttribute
+  href: Noname.GameAbilitySystem.GameplayTargetActorConfig.html#Noname_GameAbilitySystem_GameplayTargetActorConfig_SelectionAttribute
+  name: SelectionAttribute
+  nameWithType: GameplayTargetActorConfig.SelectionAttribute
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.SelectionAttribute
+- uid: Noname.GameAbilitySystem.AttributeDefinition
+  commentId: T:Noname.GameAbilitySystem.AttributeDefinition
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AttributeDefinition.html
+  name: AttributeDefinition
+  nameWithType: AttributeDefinition
+  fullName: Noname.GameAbilitySystem.AttributeDefinition
+- uid: Noname.GameAbilitySystem.GameplayTargetActorConfig.Spawn*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTargetActorConfig.Spawn
+  href: Noname.GameAbilitySystem.GameplayTargetActorConfig.html#Noname_GameAbilitySystem_GameplayTargetActorConfig_Spawn_Transform_
+  name: Spawn
+  nameWithType: GameplayTargetActorConfig.Spawn
+  fullName: Noname.GameAbilitySystem.GameplayTargetActorConfig.Spawn
+- uid: Transform
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: Transform

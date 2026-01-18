@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.IAbilitySystemProvider
+  commentId: T:Noname.GameAbilitySystem.IAbilitySystemProvider
+  id: IAbilitySystemProvider
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.IAbilitySystemProvider.GetAbilitySystemComponent
+  langs:
+  - csharp
+  - vb
+  name: IAbilitySystemProvider
+  nameWithType: IAbilitySystemProvider
+  fullName: Noname.GameAbilitySystem.IAbilitySystemProvider
+  type: Interface
+  namespace: Noname.GameAbilitySystem
+  summary: 능력 시스템 컴포넌트를 제공하는 객체가 구현하는 인터페이스입니다.
+  example: []
+  syntax:
+    content: public interface IAbilitySystemProvider
+    content.vb: Public Interface IAbilitySystemProvider
+- uid: Noname.GameAbilitySystem.IAbilitySystemProvider.GetAbilitySystemComponent
+  commentId: M:Noname.GameAbilitySystem.IAbilitySystemProvider.GetAbilitySystemComponent
+  id: GetAbilitySystemComponent
+  parent: Noname.GameAbilitySystem.IAbilitySystemProvider
+  langs:
+  - csharp
+  - vb
+  name: GetAbilitySystemComponent()
+  nameWithType: IAbilitySystemProvider.GetAbilitySystemComponent()
+  fullName: Noname.GameAbilitySystem.IAbilitySystemProvider.GetAbilitySystemComponent()
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 소유 중인 능력 시스템 컴포넌트를 반환합니다.
+  example: []
+  syntax:
+    content: AbilitySystemComponent GetAbilitySystemComponent()
+    return:
+      type: Noname.GameAbilitySystem.AbilitySystemComponent
+      description: 능력 시스템 컴포넌트
+    content.vb: Function GetAbilitySystemComponent() As AbilitySystemComponent
+  overload: Noname.GameAbilitySystem.IAbilitySystemProvider.GetAbilitySystemComponent*
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: Noname.GameAbilitySystem.IAbilitySystemProvider.GetAbilitySystemComponent*
+  commentId: Overload:Noname.GameAbilitySystem.IAbilitySystemProvider.GetAbilitySystemComponent
+  href: Noname.GameAbilitySystem.IAbilitySystemProvider.html#Noname_GameAbilitySystem_IAbilitySystemProvider_GetAbilitySystemComponent
+  name: GetAbilitySystemComponent
+  nameWithType: IAbilitySystemProvider.GetAbilitySystemComponent
+  fullName: Noname.GameAbilitySystem.IAbilitySystemProvider.GetAbilitySystemComponent
+- uid: Noname.GameAbilitySystem.AbilitySystemComponent
+  commentId: T:Noname.GameAbilitySystem.AbilitySystemComponent
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AbilitySystemComponent.html
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: Noname.GameAbilitySystem.AbilitySystemComponent

@@ -4,6 +4,10 @@ using Common.Interface;
 
 namespace MyProject.GameplayAbilitySystem.Ability
 {
+    /// <summary>
+    /// 이동 능력을 정의하는 클래스입니다.
+    /// 입력된 페이로드(Vector2, Vector3 등)를 기반으로 이동 명령을 내립니다.
+    /// </summary>
     public sealed class Ability_Move : GameplayAbility
     {
         private IMovement _movement;
@@ -19,6 +23,7 @@ namespace MyProject.GameplayAbilitySystem.Ability
         }
         protected override void ActivateAbility(AbilityContext context)
         {
+            // 컨텍스트 페이로드에서 이동 입력값 추출 시도
             if (!TryGetMoveInput(context.EventData.Payload, out var input))
             {
                 return;

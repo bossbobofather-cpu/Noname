@@ -1,0 +1,74 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Bridge.MovementBridge
+  commentId: T:MyProject.GameplayAbilitySystem.Bridge.MovementBridge
+  id: MovementBridge
+  parent: MyProject.GameplayAbilitySystem.Bridge
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: MovementBridge
+  nameWithType: MovementBridge
+  fullName: MyProject.GameplayAbilitySystem.Bridge.MovementBridge
+  type: Class
+  namespace: MyProject.GameplayAbilitySystem.Bridge
+  summary: >-
+    ASC의 속성 및 태그 변화를 유닛의 이동 컴포넌트(IMovement)에 반영하는 브리지입니다.
+
+    이동 속도, 점프력 변경 및 이동 차단 상태 등을 동기화합니다.
+  example: []
+  syntax:
+    content: 'public class MovementBridge : MonoBehaviour'
+    content.vb: Public Class MovementBridge Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+references:
+- uid: MyProject.GameplayAbilitySystem.Bridge
+  commentId: N:MyProject.GameplayAbilitySystem.Bridge
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Bridge
+  nameWithType: MyProject.GameplayAbilitySystem.Bridge
+  fullName: MyProject.GameplayAbilitySystem.Bridge
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Bridge
+    name: Bridge
+    href: MyProject.GameplayAbilitySystem.Bridge.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Bridge
+    name: Bridge
+    href: MyProject.GameplayAbilitySystem.Bridge.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,394 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.Units.Locomotion.LocomotionState
+  commentId: T:MyProject.Common.Units.Locomotion.LocomotionState
+  id: LocomotionState
+  parent: MyProject.Common.Units.Locomotion
+  children:
+  - MyProject.Common.Units.Locomotion.LocomotionState.IsAirMoving
+  - MyProject.Common.Units.Locomotion.LocomotionState.IsFalling
+  - MyProject.Common.Units.Locomotion.LocomotionState.IsGrounded
+  - MyProject.Common.Units.Locomotion.LocomotionState.IsJumping
+  - MyProject.Common.Units.Locomotion.LocomotionState.IsMoving
+  langs:
+  - csharp
+  - vb
+  name: LocomotionState
+  nameWithType: LocomotionState
+  fullName: MyProject.Common.Units.Locomotion.LocomotionState
+  type: Struct
+  namespace: MyProject.Common.Units.Locomotion
+  summary: 유닛의 현재 이동 상태 정보를 담는 구조체입니다.
+  example: []
+  syntax:
+    content: public struct LocomotionState
+    content.vb: Public Structure LocomotionState
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: MyProject.Common.Units.Locomotion.LocomotionState.IsGrounded
+  commentId: F:MyProject.Common.Units.Locomotion.LocomotionState.IsGrounded
+  id: IsGrounded
+  parent: MyProject.Common.Units.Locomotion.LocomotionState
+  langs:
+  - csharp
+  - vb
+  name: IsGrounded
+  nameWithType: LocomotionState.IsGrounded
+  fullName: MyProject.Common.Units.Locomotion.LocomotionState.IsGrounded
+  type: Field
+  namespace: MyProject.Common.Units.Locomotion
+  summary: 지면에 닿아있는지 여부입니다.
+  example: []
+  syntax:
+    content: public bool IsGrounded
+    return:
+      type: System.Boolean
+    content.vb: Public IsGrounded As Boolean
+- uid: MyProject.Common.Units.Locomotion.LocomotionState.IsMoving
+  commentId: F:MyProject.Common.Units.Locomotion.LocomotionState.IsMoving
+  id: IsMoving
+  parent: MyProject.Common.Units.Locomotion.LocomotionState
+  langs:
+  - csharp
+  - vb
+  name: IsMoving
+  nameWithType: LocomotionState.IsMoving
+  fullName: MyProject.Common.Units.Locomotion.LocomotionState.IsMoving
+  type: Field
+  namespace: MyProject.Common.Units.Locomotion
+  summary: 지면에서 이동 중인지 여부입니다.
+  example: []
+  syntax:
+    content: public bool IsMoving
+    return:
+      type: System.Boolean
+    content.vb: Public IsMoving As Boolean
+- uid: MyProject.Common.Units.Locomotion.LocomotionState.IsAirMoving
+  commentId: F:MyProject.Common.Units.Locomotion.LocomotionState.IsAirMoving
+  id: IsAirMoving
+  parent: MyProject.Common.Units.Locomotion.LocomotionState
+  langs:
+  - csharp
+  - vb
+  name: IsAirMoving
+  nameWithType: LocomotionState.IsAirMoving
+  fullName: MyProject.Common.Units.Locomotion.LocomotionState.IsAirMoving
+  type: Field
+  namespace: MyProject.Common.Units.Locomotion
+  summary: 공중에서 이동 입력이 있는지 여부입니다.
+  example: []
+  syntax:
+    content: public bool IsAirMoving
+    return:
+      type: System.Boolean
+    content.vb: Public IsAirMoving As Boolean
+- uid: MyProject.Common.Units.Locomotion.LocomotionState.IsJumping
+  commentId: F:MyProject.Common.Units.Locomotion.LocomotionState.IsJumping
+  id: IsJumping
+  parent: MyProject.Common.Units.Locomotion.LocomotionState
+  langs:
+  - csharp
+  - vb
+  name: IsJumping
+  nameWithType: LocomotionState.IsJumping
+  fullName: MyProject.Common.Units.Locomotion.LocomotionState.IsJumping
+  type: Field
+  namespace: MyProject.Common.Units.Locomotion
+  summary: 점프 상승 중인지 여부입니다.
+  example: []
+  syntax:
+    content: public bool IsJumping
+    return:
+      type: System.Boolean
+    content.vb: Public IsJumping As Boolean
+- uid: MyProject.Common.Units.Locomotion.LocomotionState.IsFalling
+  commentId: F:MyProject.Common.Units.Locomotion.LocomotionState.IsFalling
+  id: IsFalling
+  parent: MyProject.Common.Units.Locomotion.LocomotionState
+  langs:
+  - csharp
+  - vb
+  name: IsFalling
+  nameWithType: LocomotionState.IsFalling
+  fullName: MyProject.Common.Units.Locomotion.LocomotionState.IsFalling
+  type: Field
+  namespace: MyProject.Common.Units.Locomotion
+  summary: 낙하 중인지 여부입니다.
+  example: []
+  syntax:
+    content: public bool IsFalling
+    return:
+      type: System.Boolean
+    content.vb: Public IsFalling As Boolean
+references:
+- uid: MyProject.Common.Units.Locomotion
+  commentId: N:MyProject.Common.Units.Locomotion
+  href: MyProject.html
+  name: MyProject.Common.Units.Locomotion
+  nameWithType: MyProject.Common.Units.Locomotion
+  fullName: MyProject.Common.Units.Locomotion
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Units
+    name: Units
+    href: MyProject.Common.Units.html
+  - name: .
+  - uid: MyProject.Common.Units.Locomotion
+    name: Locomotion
+    href: MyProject.Common.Units.Locomotion.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Units
+    name: Units
+    href: MyProject.Common.Units.html
+  - name: .
+  - uid: MyProject.Common.Units.Locomotion
+    name: Locomotion
+    href: MyProject.Common.Units.Locomotion.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

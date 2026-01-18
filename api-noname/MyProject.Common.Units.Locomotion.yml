@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.Units.Locomotion
+  commentId: N:MyProject.Common.Units.Locomotion
+  id: MyProject.Common.Units.Locomotion
+  children:
+  - MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+  - MyProject.Common.Units.Locomotion.LocomotionState
+  langs:
+  - csharp
+  - vb
+  name: MyProject.Common.Units.Locomotion
+  nameWithType: MyProject.Common.Units.Locomotion
+  fullName: MyProject.Common.Units.Locomotion
+  type: Namespace
+references:
+- uid: MyProject.Common.Units.Locomotion.LocomotionState
+  commentId: T:MyProject.Common.Units.Locomotion.LocomotionState
+  parent: MyProject.Common.Units.Locomotion
+  href: MyProject.Common.Units.Locomotion.LocomotionState.html
+  name: LocomotionState
+  nameWithType: LocomotionState
+  fullName: MyProject.Common.Units.Locomotion.LocomotionState
+- uid: MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+  commentId: T:MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+  parent: MyProject.Common.Units.Locomotion
+  href: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.html
+  name: ILocomotionStateProvider
+  nameWithType: ILocomotionStateProvider
+  fullName: MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+- uid: MyProject.Common.Units.Locomotion
+  commentId: N:MyProject.Common.Units.Locomotion
+  href: MyProject.html
+  name: MyProject.Common.Units.Locomotion
+  nameWithType: MyProject.Common.Units.Locomotion
+  fullName: MyProject.Common.Units.Locomotion
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Units
+    name: Units
+    href: MyProject.Common.Units.html
+  - name: .
+  - uid: MyProject.Common.Units.Locomotion
+    name: Locomotion
+    href: MyProject.Common.Units.Locomotion.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Units
+    name: Units
+    href: MyProject.Common.Units.html
+  - name: .
+  - uid: MyProject.Common.Units.Locomotion
+    name: Locomotion
+    href: MyProject.Common.Units.Locomotion.html

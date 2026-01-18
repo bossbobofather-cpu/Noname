@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage
+  commentId: T:MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage
+  id: EC_AttackDamage
+  parent: MyProject.GameplayAbilitySystem.Effect
+  children:
+  - MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage.EvaluateMagnitude(GameplayEffectConfig,AttributeModifier,GameplayEffectContext)
+  langs:
+  - csharp
+  - vb
+  name: EC_AttackDamage
+  nameWithType: EC_AttackDamage
+  fullName: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage
+  type: Class
+  namespace: MyProject.GameplayAbilitySystem.Effect
+  summary: >-
+    공격 데미지를 계산하는 GameplayEffectCalculator입니다.
+
+    시전자의 AttackDamage 속성값을 기반으로 최종 데미지를 산출합니다.
+  example: []
+  syntax:
+    content: 'public sealed class EC_AttackDamage : GameplayEffectCalculator'
+    content.vb: Public NotInheritable Class EC_AttackDamage Inherits GameplayEffectCalculator
+  inheritance:
+  - System.Object
+- uid: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage.EvaluateMagnitude(GameplayEffectConfig,AttributeModifier,GameplayEffectContext)
+  commentId: M:MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage.EvaluateMagnitude(GameplayEffectConfig,AttributeModifier,GameplayEffectContext)
+  id: EvaluateMagnitude(GameplayEffectConfig,AttributeModifier,GameplayEffectContext)
+  parent: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage
+  langs:
+  - csharp
+  - vb
+  name: EvaluateMagnitude(GameplayEffectConfig, AttributeModifier, GameplayEffectContext)
+  nameWithType: EC_AttackDamage.EvaluateMagnitude(GameplayEffectConfig, AttributeModifier, GameplayEffectContext)
+  fullName: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage.EvaluateMagnitude(GameplayEffectConfig, AttributeModifier, GameplayEffectContext)
+  type: Method
+  namespace: MyProject.GameplayAbilitySystem.Effect
+  example: []
+  syntax:
+    content: public override float EvaluateMagnitude(GameplayEffectConfig effectConfig, AttributeModifier modifier, GameplayEffectContext context)
+    parameters:
+    - id: effectConfig
+      type: GameplayEffectConfig
+    - id: modifier
+      type: AttributeModifier
+    - id: context
+      type: GameplayEffectContext
+    return:
+      type: System.Single
+    content.vb: Public Overrides Function EvaluateMagnitude(effectConfig As GameplayEffectConfig, modifier As AttributeModifier, context As GameplayEffectContext) As Single
+  overload: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage.EvaluateMagnitude*
+references:
+- uid: MyProject.GameplayAbilitySystem.Effect
+  commentId: N:MyProject.GameplayAbilitySystem.Effect
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Effect
+  nameWithType: MyProject.GameplayAbilitySystem.Effect
+  fullName: MyProject.GameplayAbilitySystem.Effect
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Effect
+    name: Effect
+    href: MyProject.GameplayAbilitySystem.Effect.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Effect
+    name: Effect
+    href: MyProject.GameplayAbilitySystem.Effect.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage.EvaluateMagnitude*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage.EvaluateMagnitude
+  href: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage.html#MyProject_GameplayAbilitySystem_Effect_EC_AttackDamage_EvaluateMagnitude_GameplayEffectConfig_AttributeModifier_GameplayEffectContext_
+  name: EvaluateMagnitude
+  nameWithType: EC_AttackDamage.EvaluateMagnitude
+  fullName: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage.EvaluateMagnitude
+- uid: GameplayEffectConfig
+  commentId: '!:GameplayEffectConfig'
+  isExternal: true
+  name: GameplayEffectConfig
+  nameWithType: GameplayEffectConfig
+  fullName: GameplayEffectConfig
+- uid: AttributeModifier
+  commentId: '!:AttributeModifier'
+  isExternal: true
+  name: AttributeModifier
+  nameWithType: AttributeModifier
+  fullName: AttributeModifier
+- uid: GameplayEffectContext
+  commentId: '!:GameplayEffectContext'
+  isExternal: true
+  name: GameplayEffectContext
+  nameWithType: GameplayEffectContext
+  fullName: GameplayEffectContext
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

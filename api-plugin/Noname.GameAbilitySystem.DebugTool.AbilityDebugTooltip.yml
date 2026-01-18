@@ -1,0 +1,257 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+  commentId: T:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+  id: AbilityDebugTooltip
+  parent: Noname.GameAbilitySystem.DebugTool
+  children:
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.EnsureBuilt(Font,Color,Color)
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Hide
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.IsVisible
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.SetPosition(Vector2)
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Show(System.String,System.String,Vector2)
+  langs:
+  - csharp
+  - vb
+  name: AbilityDebugTooltip
+  nameWithType: AbilityDebugTooltip
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+  type: Class
+  namespace: Noname.GameAbilitySystem.DebugTool
+  summary: 툴팁 UI를 표시하는 컴포넌트입니다.
+  example: []
+  syntax:
+    content: 'public sealed class AbilityDebugTooltip : MonoBehaviour'
+    content.vb: Public NotInheritable Class AbilityDebugTooltip Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.IsVisible
+  commentId: P:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.IsVisible
+  id: IsVisible
+  parent: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+  langs:
+  - csharp
+  - vb
+  name: IsVisible
+  nameWithType: AbilityDebugTooltip.IsVisible
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.IsVisible
+  type: Property
+  namespace: Noname.GameAbilitySystem.DebugTool
+  summary: 현재 표시 중인지 여부입니다.
+  example: []
+  syntax:
+    content: public bool IsVisible { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsVisible As Boolean
+  overload: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.IsVisible*
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.EnsureBuilt(Font,Color,Color)
+  commentId: M:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.EnsureBuilt(Font,Color,Color)
+  id: EnsureBuilt(Font,Color,Color)
+  parent: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+  langs:
+  - csharp
+  - vb
+  name: EnsureBuilt(Font, Color, Color)
+  nameWithType: AbilityDebugTooltip.EnsureBuilt(Font, Color, Color)
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.EnsureBuilt(Font, Color, Color)
+  type: Method
+  namespace: Noname.GameAbilitySystem.DebugTool
+  summary: 기본 UI 구성 요소를 준비합니다.
+  example: []
+  syntax:
+    content: public void EnsureBuilt(Font font, Color textColor, Color backgroundColor)
+    parameters:
+    - id: font
+      type: Font
+    - id: textColor
+      type: Color
+    - id: backgroundColor
+      type: Color
+    content.vb: Public Sub EnsureBuilt(font As Font, textColor As Color, backgroundColor As Color)
+  overload: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.EnsureBuilt*
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Show(System.String,System.String,Vector2)
+  commentId: M:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Show(System.String,System.String,Vector2)
+  id: Show(System.String,System.String,Vector2)
+  parent: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+  langs:
+  - csharp
+  - vb
+  name: Show(string, string, Vector2)
+  nameWithType: AbilityDebugTooltip.Show(string, string, Vector2)
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Show(string, string, Vector2)
+  type: Method
+  namespace: Noname.GameAbilitySystem.DebugTool
+  summary: 툴팁을 표시합니다.
+  example: []
+  syntax:
+    content: public void Show(string title, string description, Vector2 screenPosition)
+    parameters:
+    - id: title
+      type: System.String
+    - id: description
+      type: System.String
+    - id: screenPosition
+      type: Vector2
+    content.vb: Public Sub Show(title As String, description As String, screenPosition As Vector2)
+  overload: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Show*
+  nameWithType.vb: AbilityDebugTooltip.Show(String, String, Vector2)
+  fullName.vb: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Show(String, String, Vector2)
+  name.vb: Show(String, String, Vector2)
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Hide
+  commentId: M:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Hide
+  id: Hide
+  parent: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+  langs:
+  - csharp
+  - vb
+  name: Hide()
+  nameWithType: AbilityDebugTooltip.Hide()
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Hide()
+  type: Method
+  namespace: Noname.GameAbilitySystem.DebugTool
+  summary: 툴팁을 숨깁니다.
+  example: []
+  syntax:
+    content: public void Hide()
+    content.vb: Public Sub Hide()
+  overload: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Hide*
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.SetPosition(Vector2)
+  commentId: M:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.SetPosition(Vector2)
+  id: SetPosition(Vector2)
+  parent: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+  langs:
+  - csharp
+  - vb
+  name: SetPosition(Vector2)
+  nameWithType: AbilityDebugTooltip.SetPosition(Vector2)
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.SetPosition(Vector2)
+  type: Method
+  namespace: Noname.GameAbilitySystem.DebugTool
+  summary: 화면 좌표를 기준으로 위치를 갱신합니다.
+  example: []
+  syntax:
+    content: public void SetPosition(Vector2 screenPosition)
+    parameters:
+    - id: screenPosition
+      type: Vector2
+    content.vb: Public Sub SetPosition(screenPosition As Vector2)
+  overload: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.SetPosition*
+references:
+- uid: Noname.GameAbilitySystem.DebugTool
+  commentId: N:Noname.GameAbilitySystem.DebugTool
+  href: Noname.html
+  name: Noname.GameAbilitySystem.DebugTool
+  nameWithType: Noname.GameAbilitySystem.DebugTool
+  fullName: Noname.GameAbilitySystem.DebugTool
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.DebugTool
+    name: DebugTool
+    href: Noname.GameAbilitySystem.DebugTool.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.DebugTool
+    name: DebugTool
+    href: Noname.GameAbilitySystem.DebugTool.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.IsVisible*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.IsVisible
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.html#Noname_GameAbilitySystem_DebugTool_AbilityDebugTooltip_IsVisible
+  name: IsVisible
+  nameWithType: AbilityDebugTooltip.IsVisible
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.IsVisible
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.EnsureBuilt*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.EnsureBuilt
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.html#Noname_GameAbilitySystem_DebugTool_AbilityDebugTooltip_EnsureBuilt_Font_Color_Color_
+  name: EnsureBuilt
+  nameWithType: AbilityDebugTooltip.EnsureBuilt
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.EnsureBuilt
+- uid: Font
+  commentId: '!:Font'
+  isExternal: true
+  name: Font
+  nameWithType: Font
+  fullName: Font
+- uid: Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Color
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Show*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Show
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.html#Noname_GameAbilitySystem_DebugTool_AbilityDebugTooltip_Show_System_String_System_String_Vector2_
+  name: Show
+  nameWithType: AbilityDebugTooltip.Show
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Show
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Vector2
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Hide*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Hide
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.html#Noname_GameAbilitySystem_DebugTool_AbilityDebugTooltip_Hide
+  name: Hide
+  nameWithType: AbilityDebugTooltip.Hide
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.Hide
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.SetPosition*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.SetPosition
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.html#Noname_GameAbilitySystem_DebugTool_AbilityDebugTooltip_SetPosition_Vector2_
+  name: SetPosition
+  nameWithType: AbilityDebugTooltip.SetPosition
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.SetPosition

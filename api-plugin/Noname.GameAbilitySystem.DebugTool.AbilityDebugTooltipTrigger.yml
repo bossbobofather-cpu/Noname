@@ -1,0 +1,242 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger
+  commentId: T:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger
+  id: AbilityDebugTooltipTrigger
+  parent: Noname.GameAbilitySystem.DebugTool
+  children:
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerEnter(PointerEventData)
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerExit(PointerEventData)
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerMove(PointerEventData)
+  - Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.Setup(Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip,System.String,System.String,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: AbilityDebugTooltipTrigger
+  nameWithType: AbilityDebugTooltipTrigger
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger
+  type: Class
+  namespace: Noname.GameAbilitySystem.DebugTool
+  summary: 툴팁 표시를 담당하는 트리거 컴포넌트입니다.
+  example: []
+  syntax:
+    content: 'public sealed class AbilityDebugTooltipTrigger : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler'
+    content.vb: Public NotInheritable Class AbilityDebugTooltipTrigger Inherits MonoBehaviour Implements IPointerEnterHandler, IPointerExitHandler, IPointerMoveHandler
+  inheritance:
+  - System.Object
+  implements:
+  - IPointerEnterHandler
+  - IPointerExitHandler
+  - IPointerMoveHandler
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.Setup(Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip,System.String,System.String,System.Single)
+  commentId: M:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.Setup(Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip,System.String,System.String,System.Single)
+  id: Setup(Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip,System.String,System.String,System.Single)
+  parent: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger
+  langs:
+  - csharp
+  - vb
+  name: Setup(AbilityDebugTooltip, string, string, float)
+  nameWithType: AbilityDebugTooltipTrigger.Setup(AbilityDebugTooltip, string, string, float)
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.Setup(Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip, string, string, float)
+  type: Method
+  namespace: Noname.GameAbilitySystem.DebugTool
+  summary: 툴팁 데이터를 설정합니다.
+  example: []
+  syntax:
+    content: public void Setup(AbilityDebugTooltip tooltip, string title, string description, float delay)
+    parameters:
+    - id: tooltip
+      type: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+    - id: title
+      type: System.String
+    - id: description
+      type: System.String
+    - id: delay
+      type: System.Single
+    content.vb: Public Sub Setup(tooltip As AbilityDebugTooltip, title As String, description As String, delay As Single)
+  overload: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.Setup*
+  nameWithType.vb: AbilityDebugTooltipTrigger.Setup(AbilityDebugTooltip, String, String, Single)
+  fullName.vb: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.Setup(Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip, String, String, Single)
+  name.vb: Setup(AbilityDebugTooltip, String, String, Single)
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerEnter(PointerEventData)
+  commentId: M:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerEnter(PointerEventData)
+  id: OnPointerEnter(PointerEventData)
+  parent: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger
+  langs:
+  - csharp
+  - vb
+  name: OnPointerEnter(PointerEventData)
+  nameWithType: AbilityDebugTooltipTrigger.OnPointerEnter(PointerEventData)
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerEnter(PointerEventData)
+  type: Method
+  namespace: Noname.GameAbilitySystem.DebugTool
+  syntax:
+    content: public void OnPointerEnter(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: PointerEventData
+    content.vb: Public Sub OnPointerEnter(eventData As PointerEventData)
+  overload: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerEnter*
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerMove(PointerEventData)
+  commentId: M:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerMove(PointerEventData)
+  id: OnPointerMove(PointerEventData)
+  parent: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger
+  langs:
+  - csharp
+  - vb
+  name: OnPointerMove(PointerEventData)
+  nameWithType: AbilityDebugTooltipTrigger.OnPointerMove(PointerEventData)
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerMove(PointerEventData)
+  type: Method
+  namespace: Noname.GameAbilitySystem.DebugTool
+  syntax:
+    content: public void OnPointerMove(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: PointerEventData
+    content.vb: Public Sub OnPointerMove(eventData As PointerEventData)
+  overload: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerMove*
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerExit(PointerEventData)
+  commentId: M:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerExit(PointerEventData)
+  id: OnPointerExit(PointerEventData)
+  parent: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger
+  langs:
+  - csharp
+  - vb
+  name: OnPointerExit(PointerEventData)
+  nameWithType: AbilityDebugTooltipTrigger.OnPointerExit(PointerEventData)
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerExit(PointerEventData)
+  type: Method
+  namespace: Noname.GameAbilitySystem.DebugTool
+  syntax:
+    content: public void OnPointerExit(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: PointerEventData
+    content.vb: Public Sub OnPointerExit(eventData As PointerEventData)
+  overload: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerExit*
+references:
+- uid: Noname.GameAbilitySystem.DebugTool
+  commentId: N:Noname.GameAbilitySystem.DebugTool
+  href: Noname.html
+  name: Noname.GameAbilitySystem.DebugTool
+  nameWithType: Noname.GameAbilitySystem.DebugTool
+  fullName: Noname.GameAbilitySystem.DebugTool
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.DebugTool
+    name: DebugTool
+    href: Noname.GameAbilitySystem.DebugTool.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.DebugTool
+    name: DebugTool
+    href: Noname.GameAbilitySystem.DebugTool.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: IPointerEnterHandler
+  commentId: '!:IPointerEnterHandler'
+  isExternal: true
+  name: IPointerEnterHandler
+  nameWithType: IPointerEnterHandler
+  fullName: IPointerEnterHandler
+- uid: IPointerExitHandler
+  commentId: '!:IPointerExitHandler'
+  isExternal: true
+  name: IPointerExitHandler
+  nameWithType: IPointerExitHandler
+  fullName: IPointerExitHandler
+- uid: IPointerMoveHandler
+  commentId: '!:IPointerMoveHandler'
+  isExternal: true
+  name: IPointerMoveHandler
+  nameWithType: IPointerMoveHandler
+  fullName: IPointerMoveHandler
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.Setup*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.Setup
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.html#Noname_GameAbilitySystem_DebugTool_AbilityDebugTooltipTrigger_Setup_Noname_GameAbilitySystem_DebugTool_AbilityDebugTooltip_System_String_System_String_System_Single_
+  name: Setup
+  nameWithType: AbilityDebugTooltipTrigger.Setup
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.Setup
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+  commentId: T:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+  parent: Noname.GameAbilitySystem.DebugTool
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip.html
+  name: AbilityDebugTooltip
+  nameWithType: AbilityDebugTooltip
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerEnter*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerEnter
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.html#Noname_GameAbilitySystem_DebugTool_AbilityDebugTooltipTrigger_OnPointerEnter_PointerEventData_
+  name: OnPointerEnter
+  nameWithType: AbilityDebugTooltipTrigger.OnPointerEnter
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerEnter
+- uid: PointerEventData
+  isExternal: true
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: PointerEventData
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerMove*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerMove
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.html#Noname_GameAbilitySystem_DebugTool_AbilityDebugTooltipTrigger_OnPointerMove_PointerEventData_
+  name: OnPointerMove
+  nameWithType: AbilityDebugTooltipTrigger.OnPointerMove
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerMove
+- uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerExit*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerExit
+  href: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.html#Noname_GameAbilitySystem_DebugTool_AbilityDebugTooltipTrigger_OnPointerExit_PointerEventData_
+  name: OnPointerExit
+  nameWithType: AbilityDebugTooltipTrigger.OnPointerExit
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger.OnPointerExit

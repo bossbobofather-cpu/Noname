@@ -21,6 +21,8 @@ MonoBehaviour:
   _effects:
   - {fileID: 11400000, guid: e6aaa1cb12dc5c04481da2a4cb086cd5, type: 2}
   - {fileID: 11400000, guid: 32ec77cc5d7f94242a9eb5b611dd06f6, type: 2}
+  - {fileID: 11400000, guid: 9ee86f913bb8ecb4caec7d6d324eed11, type: 2}
   - {fileID: 11400000, guid: 19f7e9390238429d809196d10ddcc0ac, type: 2}
   - {fileID: 11400000, guid: 1078d98596a6c5d4ab45f296468add87, type: 2}
   - {fileID: 11400000, guid: b9e631296c6e7904491d3efa721c4810, type: 2}
+  - {fileID: 11400000, guid: 6aff276d34495d24f93bcb890498cb3d, type: 2}

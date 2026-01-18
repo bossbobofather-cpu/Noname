@@ -1,0 +1,388 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig
+  commentId: T:Noname.GameAbilitySystem.GameplayEffectConfig
+  id: GameplayEffectConfig
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.GameplayEffectConfig.ActivationBlockedTags
+  - Noname.GameAbilitySystem.GameplayEffectConfig.ActivationRequiredTags
+  - Noname.GameAbilitySystem.GameplayEffectConfig.Duration
+  - Noname.GameAbilitySystem.GameplayEffectConfig.DurationType
+  - Noname.GameAbilitySystem.GameplayEffectConfig.GrantedTags
+  - Noname.GameAbilitySystem.GameplayEffectConfig.Modifiers
+  - Noname.GameAbilitySystem.GameplayEffectConfig.Period
+  langs:
+  - csharp
+  - vb
+  name: GameplayEffectConfig
+  nameWithType: GameplayEffectConfig
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig
+  type: Class
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: 'public class GameplayEffectConfig : GameplayConfig'
+    content.vb: Public Class GameplayEffectConfig Inherits GameplayConfig
+  inheritance:
+  - System.Object
+  - Noname.GameAbilitySystem.GameplayConfig
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.DurationType
+  commentId: P:Noname.GameAbilitySystem.GameplayEffectConfig.DurationType
+  id: DurationType
+  parent: Noname.GameAbilitySystem.GameplayEffectConfig
+  langs:
+  - csharp
+  - vb
+  name: DurationType
+  nameWithType: GameplayEffectConfig.DurationType
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.DurationType
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 지속 타입입니다.
+  example: []
+  syntax:
+    content: public EGameplayEffectDurationType DurationType { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.EGameplayEffectDurationType
+    content.vb: Public ReadOnly Property DurationType As EGameplayEffectDurationType
+  overload: Noname.GameAbilitySystem.GameplayEffectConfig.DurationType*
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.Duration
+  commentId: P:Noname.GameAbilitySystem.GameplayEffectConfig.Duration
+  id: Duration
+  parent: Noname.GameAbilitySystem.GameplayEffectConfig
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: GameplayEffectConfig.Duration
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.Duration
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 지속 시간입니다. 지속 타입이 고정 시간일 때만 의미가 있습니다.
+  example: []
+  syntax:
+    content: public float Duration { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Duration As Single
+  overload: Noname.GameAbilitySystem.GameplayEffectConfig.Duration*
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.Period
+  commentId: P:Noname.GameAbilitySystem.GameplayEffectConfig.Period
+  id: Period
+  parent: Noname.GameAbilitySystem.GameplayEffectConfig
+  langs:
+  - csharp
+  - vb
+  name: Period
+  nameWithType: GameplayEffectConfig.Period
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.Period
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 주기 시간입니다. 지속 타입이 고정 시간 또는 무한일 때만 의미가 있습니다.
+  example: []
+  syntax:
+    content: public float Period { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Period As Single
+  overload: Noname.GameAbilitySystem.GameplayEffectConfig.Period*
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.GrantedTags
+  commentId: P:Noname.GameAbilitySystem.GameplayEffectConfig.GrantedTags
+  id: GrantedTags
+  parent: Noname.GameAbilitySystem.GameplayEffectConfig
+  langs:
+  - csharp
+  - vb
+  name: GrantedTags
+  nameWithType: GameplayEffectConfig.GrantedTags
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.GrantedTags
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 효과로 부여되는 태그입니다.
+  example: []
+  syntax:
+    content: public GameplayTagContainer GrantedTags { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.GameplayTagContainer
+    content.vb: Public ReadOnly Property GrantedTags As GameplayTagContainer
+  overload: Noname.GameAbilitySystem.GameplayEffectConfig.GrantedTags*
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.ActivationRequiredTags
+  commentId: P:Noname.GameAbilitySystem.GameplayEffectConfig.ActivationRequiredTags
+  id: ActivationRequiredTags
+  parent: Noname.GameAbilitySystem.GameplayEffectConfig
+  langs:
+  - csharp
+  - vb
+  name: ActivationRequiredTags
+  nameWithType: GameplayEffectConfig.ActivationRequiredTags
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.ActivationRequiredTags
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 적용 대상이 반드시 가지고 있어야 하는 태그입니다.
+  example: []
+  syntax:
+    content: public GameplayTagContainer ActivationRequiredTags { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.GameplayTagContainer
+    content.vb: Public ReadOnly Property ActivationRequiredTags As GameplayTagContainer
+  overload: Noname.GameAbilitySystem.GameplayEffectConfig.ActivationRequiredTags*
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.ActivationBlockedTags
+  commentId: P:Noname.GameAbilitySystem.GameplayEffectConfig.ActivationBlockedTags
+  id: ActivationBlockedTags
+  parent: Noname.GameAbilitySystem.GameplayEffectConfig
+  langs:
+  - csharp
+  - vb
+  name: ActivationBlockedTags
+  nameWithType: GameplayEffectConfig.ActivationBlockedTags
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.ActivationBlockedTags
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 적용 대상이 가지고 있으면 적용이 막히는 태그입니다.
+  example: []
+  syntax:
+    content: public GameplayTagContainer ActivationBlockedTags { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.GameplayTagContainer
+    content.vb: Public ReadOnly Property ActivationBlockedTags As GameplayTagContainer
+  overload: Noname.GameAbilitySystem.GameplayEffectConfig.ActivationBlockedTags*
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.Modifiers
+  commentId: P:Noname.GameAbilitySystem.GameplayEffectConfig.Modifiers
+  id: Modifiers
+  parent: Noname.GameAbilitySystem.GameplayEffectConfig
+  langs:
+  - csharp
+  - vb
+  name: Modifiers
+  nameWithType: GameplayEffectConfig.Modifiers
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.Modifiers
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 부여되는 속성 수정자 목록입니다.
+  example: []
+  syntax:
+    content: public IReadOnlyList<AttributeModifier> Modifiers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.AttributeModifier}
+    content.vb: Public ReadOnly Property Modifiers As IReadOnlyList(Of AttributeModifier)
+  overload: Noname.GameAbilitySystem.GameplayEffectConfig.Modifiers*
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Noname.GameAbilitySystem.GameplayConfig
+  commentId: T:Noname.GameAbilitySystem.GameplayConfig
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayConfig.html
+  name: GameplayConfig
+  nameWithType: GameplayConfig
+  fullName: Noname.GameAbilitySystem.GameplayConfig
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.DurationType*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayEffectConfig.DurationType
+  href: Noname.GameAbilitySystem.GameplayEffectConfig.html#Noname_GameAbilitySystem_GameplayEffectConfig_DurationType
+  name: DurationType
+  nameWithType: GameplayEffectConfig.DurationType
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.DurationType
+- uid: Noname.GameAbilitySystem.EGameplayEffectDurationType
+  commentId: T:Noname.GameAbilitySystem.EGameplayEffectDurationType
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.EGameplayEffectDurationType.html
+  name: EGameplayEffectDurationType
+  nameWithType: EGameplayEffectDurationType
+  fullName: Noname.GameAbilitySystem.EGameplayEffectDurationType
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.Duration*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayEffectConfig.Duration
+  href: Noname.GameAbilitySystem.GameplayEffectConfig.html#Noname_GameAbilitySystem_GameplayEffectConfig_Duration
+  name: Duration
+  nameWithType: GameplayEffectConfig.Duration
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.Duration
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.Period*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayEffectConfig.Period
+  href: Noname.GameAbilitySystem.GameplayEffectConfig.html#Noname_GameAbilitySystem_GameplayEffectConfig_Period
+  name: Period
+  nameWithType: GameplayEffectConfig.Period
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.Period
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.GrantedTags*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayEffectConfig.GrantedTags
+  href: Noname.GameAbilitySystem.GameplayEffectConfig.html#Noname_GameAbilitySystem_GameplayEffectConfig_GrantedTags
+  name: GrantedTags
+  nameWithType: GameplayEffectConfig.GrantedTags
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.GrantedTags
+- uid: Noname.GameAbilitySystem.GameplayTagContainer
+  commentId: T:Noname.GameAbilitySystem.GameplayTagContainer
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayTagContainer.html
+  name: GameplayTagContainer
+  nameWithType: GameplayTagContainer
+  fullName: Noname.GameAbilitySystem.GameplayTagContainer
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.ActivationRequiredTags*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayEffectConfig.ActivationRequiredTags
+  href: Noname.GameAbilitySystem.GameplayEffectConfig.html#Noname_GameAbilitySystem_GameplayEffectConfig_ActivationRequiredTags
+  name: ActivationRequiredTags
+  nameWithType: GameplayEffectConfig.ActivationRequiredTags
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.ActivationRequiredTags
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.ActivationBlockedTags*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayEffectConfig.ActivationBlockedTags
+  href: Noname.GameAbilitySystem.GameplayEffectConfig.html#Noname_GameAbilitySystem_GameplayEffectConfig_ActivationBlockedTags
+  name: ActivationBlockedTags
+  nameWithType: GameplayEffectConfig.ActivationBlockedTags
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.ActivationBlockedTags
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig.Modifiers*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayEffectConfig.Modifiers
+  href: Noname.GameAbilitySystem.GameplayEffectConfig.html#Noname_GameAbilitySystem_GameplayEffectConfig_Modifiers
+  name: Modifiers
+  nameWithType: GameplayEffectConfig.Modifiers
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig.Modifiers
+- uid: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.AttributeModifier}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.AttributeModifier}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<AttributeModifier>
+  nameWithType: IReadOnlyList<AttributeModifier>
+  fullName: System.Collections.Generic.IReadOnlyList<Noname.GameAbilitySystem.AttributeModifier>
+  nameWithType.vb: IReadOnlyList(Of AttributeModifier)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Noname.GameAbilitySystem.AttributeModifier)
+  name.vb: IReadOnlyList(Of AttributeModifier)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.AttributeModifier
+    name: AttributeModifier
+    href: Noname.GameAbilitySystem.AttributeModifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.AttributeModifier
+    name: AttributeModifier
+    href: Noname.GameAbilitySystem.AttributeModifier.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

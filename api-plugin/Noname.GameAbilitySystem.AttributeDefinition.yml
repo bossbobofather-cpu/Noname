@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.AttributeDefinition
+  commentId: T:Noname.GameAbilitySystem.AttributeDefinition
+  id: AttributeDefinition
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.AttributeDefinition.DefaultBaseValue
+  - Noname.GameAbilitySystem.AttributeDefinition.Id
+  - Noname.GameAbilitySystem.AttributeDefinition.MaxValue
+  - Noname.GameAbilitySystem.AttributeDefinition.MinValue
+  langs:
+  - csharp
+  - vb
+  name: AttributeDefinition
+  nameWithType: AttributeDefinition
+  fullName: Noname.GameAbilitySystem.AttributeDefinition
+  type: Class
+  namespace: Noname.GameAbilitySystem
+  summary: 속성 정의용 ScriptableObject입니다.
+  example: []
+  syntax:
+    content: 'public sealed class AttributeDefinition : ScriptableObject'
+    content.vb: Public NotInheritable Class AttributeDefinition Inherits ScriptableObject
+  inheritance:
+  - System.Object
+- uid: Noname.GameAbilitySystem.AttributeDefinition.Id
+  commentId: P:Noname.GameAbilitySystem.AttributeDefinition.Id
+  id: Id
+  parent: Noname.GameAbilitySystem.AttributeDefinition
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: AttributeDefinition.Id
+  fullName: Noname.GameAbilitySystem.AttributeDefinition.Id
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 속성 식별자입니다.
+  example: []
+  syntax:
+    content: public AttributeId Id { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.AttributeId
+    content.vb: Public ReadOnly Property Id As AttributeId
+  overload: Noname.GameAbilitySystem.AttributeDefinition.Id*
+- uid: Noname.GameAbilitySystem.AttributeDefinition.DefaultBaseValue
+  commentId: P:Noname.GameAbilitySystem.AttributeDefinition.DefaultBaseValue
+  id: DefaultBaseValue
+  parent: Noname.GameAbilitySystem.AttributeDefinition
+  langs:
+  - csharp
+  - vb
+  name: DefaultBaseValue
+  nameWithType: AttributeDefinition.DefaultBaseValue
+  fullName: Noname.GameAbilitySystem.AttributeDefinition.DefaultBaseValue
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 기본 베이스 값입니다.
+  example: []
+  syntax:
+    content: public float DefaultBaseValue { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property DefaultBaseValue As Single
+  overload: Noname.GameAbilitySystem.AttributeDefinition.DefaultBaseValue*
+- uid: Noname.GameAbilitySystem.AttributeDefinition.MinValue
+  commentId: P:Noname.GameAbilitySystem.AttributeDefinition.MinValue
+  id: MinValue
+  parent: Noname.GameAbilitySystem.AttributeDefinition
+  langs:
+  - csharp
+  - vb
+  name: MinValue
+  nameWithType: AttributeDefinition.MinValue
+  fullName: Noname.GameAbilitySystem.AttributeDefinition.MinValue
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 최소값입니다.
+  example: []
+  syntax:
+    content: public float MinValue { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property MinValue As Single
+  overload: Noname.GameAbilitySystem.AttributeDefinition.MinValue*
+- uid: Noname.GameAbilitySystem.AttributeDefinition.MaxValue
+  commentId: P:Noname.GameAbilitySystem.AttributeDefinition.MaxValue
+  id: MaxValue
+  parent: Noname.GameAbilitySystem.AttributeDefinition
+  langs:
+  - csharp
+  - vb
+  name: MaxValue
+  nameWithType: AttributeDefinition.MaxValue
+  fullName: Noname.GameAbilitySystem.AttributeDefinition.MaxValue
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 최대값입니다.
+  example: []
+  syntax:
+    content: public float MaxValue { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property MaxValue As Single
+  overload: Noname.GameAbilitySystem.AttributeDefinition.MaxValue*
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.AttributeDefinition.Id*
+  commentId: Overload:Noname.GameAbilitySystem.AttributeDefinition.Id
+  href: Noname.GameAbilitySystem.AttributeDefinition.html#Noname_GameAbilitySystem_AttributeDefinition_Id
+  name: Id
+  nameWithType: AttributeDefinition.Id
+  fullName: Noname.GameAbilitySystem.AttributeDefinition.Id
+- uid: Noname.GameAbilitySystem.AttributeId
+  commentId: T:Noname.GameAbilitySystem.AttributeId
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AttributeId.html
+  name: AttributeId
+  nameWithType: AttributeId
+  fullName: Noname.GameAbilitySystem.AttributeId
+- uid: Noname.GameAbilitySystem.AttributeDefinition.DefaultBaseValue*
+  commentId: Overload:Noname.GameAbilitySystem.AttributeDefinition.DefaultBaseValue
+  href: Noname.GameAbilitySystem.AttributeDefinition.html#Noname_GameAbilitySystem_AttributeDefinition_DefaultBaseValue
+  name: DefaultBaseValue
+  nameWithType: AttributeDefinition.DefaultBaseValue
+  fullName: Noname.GameAbilitySystem.AttributeDefinition.DefaultBaseValue
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Noname.GameAbilitySystem.AttributeDefinition.MinValue*
+  commentId: Overload:Noname.GameAbilitySystem.AttributeDefinition.MinValue
+  href: Noname.GameAbilitySystem.AttributeDefinition.html#Noname_GameAbilitySystem_AttributeDefinition_MinValue
+  name: MinValue
+  nameWithType: AttributeDefinition.MinValue
+  fullName: Noname.GameAbilitySystem.AttributeDefinition.MinValue
+- uid: Noname.GameAbilitySystem.AttributeDefinition.MaxValue*
+  commentId: Overload:Noname.GameAbilitySystem.AttributeDefinition.MaxValue
+  href: Noname.GameAbilitySystem.AttributeDefinition.html#Noname_GameAbilitySystem_AttributeDefinition_MaxValue
+  name: MaxValue
+  nameWithType: AttributeDefinition.MaxValue
+  fullName: Noname.GameAbilitySystem.AttributeDefinition.MaxValue

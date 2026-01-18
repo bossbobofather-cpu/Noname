@@ -1,0 +1,143 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Ability.Ability_Hit
+  commentId: T:MyProject.GameplayAbilitySystem.Ability.Ability_Hit
+  id: Ability_Hit
+  parent: MyProject.GameplayAbilitySystem.Ability
+  children:
+  - MyProject.GameplayAbilitySystem.Ability.Ability_Hit.ActivateAbility(AbilityContext)
+  - MyProject.GameplayAbilitySystem.Ability.Ability_Hit.CanActivateAbility
+  langs:
+  - csharp
+  - vb
+  name: Ability_Hit
+  nameWithType: Ability_Hit
+  fullName: MyProject.GameplayAbilitySystem.Ability.Ability_Hit
+  type: Class
+  namespace: MyProject.GameplayAbilitySystem.Ability
+  summary: >-
+    타겟에게 효과(GameplayEffect)를 적용하는 능력입니다.
+
+    GameplayTargetConfig 설정에 따라 타겟을 탐지하고 효과를 부여합니다.
+  example: []
+  syntax:
+    content: 'public sealed class Ability_Hit : GameplayAbility'
+    content.vb: Public NotInheritable Class Ability_Hit Inherits GameplayAbility
+  inheritance:
+  - System.Object
+- uid: MyProject.GameplayAbilitySystem.Ability.Ability_Hit.CanActivateAbility
+  commentId: M:MyProject.GameplayAbilitySystem.Ability.Ability_Hit.CanActivateAbility
+  id: CanActivateAbility
+  parent: MyProject.GameplayAbilitySystem.Ability.Ability_Hit
+  langs:
+  - csharp
+  - vb
+  name: CanActivateAbility()
+  nameWithType: Ability_Hit.CanActivateAbility()
+  fullName: MyProject.GameplayAbilitySystem.Ability.Ability_Hit.CanActivateAbility()
+  type: Method
+  namespace: MyProject.GameplayAbilitySystem.Ability
+  example: []
+  syntax:
+    content: public override bool CanActivateAbility()
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function CanActivateAbility() As Boolean
+  overload: MyProject.GameplayAbilitySystem.Ability.Ability_Hit.CanActivateAbility*
+- uid: MyProject.GameplayAbilitySystem.Ability.Ability_Hit.ActivateAbility(AbilityContext)
+  commentId: M:MyProject.GameplayAbilitySystem.Ability.Ability_Hit.ActivateAbility(AbilityContext)
+  id: ActivateAbility(AbilityContext)
+  parent: MyProject.GameplayAbilitySystem.Ability.Ability_Hit
+  langs:
+  - csharp
+  - vb
+  name: ActivateAbility(AbilityContext)
+  nameWithType: Ability_Hit.ActivateAbility(AbilityContext)
+  fullName: MyProject.GameplayAbilitySystem.Ability.Ability_Hit.ActivateAbility(AbilityContext)
+  type: Method
+  namespace: MyProject.GameplayAbilitySystem.Ability
+  example: []
+  syntax:
+    content: protected override void ActivateAbility(AbilityContext context)
+    parameters:
+    - id: context
+      type: AbilityContext
+    content.vb: Protected Overrides Sub ActivateAbility(context As AbilityContext)
+  overload: MyProject.GameplayAbilitySystem.Ability.Ability_Hit.ActivateAbility*
+references:
+- uid: MyProject.GameplayAbilitySystem.Ability
+  commentId: N:MyProject.GameplayAbilitySystem.Ability
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Ability
+  nameWithType: MyProject.GameplayAbilitySystem.Ability
+  fullName: MyProject.GameplayAbilitySystem.Ability
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Ability
+    name: Ability
+    href: MyProject.GameplayAbilitySystem.Ability.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Ability
+    name: Ability
+    href: MyProject.GameplayAbilitySystem.Ability.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.GameplayAbilitySystem.Ability.Ability_Hit.CanActivateAbility*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Ability.Ability_Hit.CanActivateAbility
+  href: MyProject.GameplayAbilitySystem.Ability.Ability_Hit.html#MyProject_GameplayAbilitySystem_Ability_Ability_Hit_CanActivateAbility
+  name: CanActivateAbility
+  nameWithType: Ability_Hit.CanActivateAbility
+  fullName: MyProject.GameplayAbilitySystem.Ability.Ability_Hit.CanActivateAbility
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MyProject.GameplayAbilitySystem.Ability.Ability_Hit.ActivateAbility*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Ability.Ability_Hit.ActivateAbility
+  href: MyProject.GameplayAbilitySystem.Ability.Ability_Hit.html#MyProject_GameplayAbilitySystem_Ability_Ability_Hit_ActivateAbility_AbilityContext_
+  name: ActivateAbility
+  nameWithType: Ability_Hit.ActivateAbility
+  fullName: MyProject.GameplayAbilitySystem.Ability.Ability_Hit.ActivateAbility
+- uid: AbilityContext
+  isExternal: true
+  name: AbilityContext
+  nameWithType: AbilityContext
+  fullName: AbilityContext

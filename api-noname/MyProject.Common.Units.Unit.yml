@@ -1,0 +1,1142 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.Units.Unit
+  commentId: T:MyProject.Common.Units.Unit
+  id: Unit
+  parent: MyProject.Common.Units
+  children:
+  - MyProject.Common.Units.Unit.AbilitySystem
+  - MyProject.Common.Units.Unit.Animator
+  - MyProject.Common.Units.Unit.CurrentState
+  - MyProject.Common.Units.Unit.GetAbilitySystemComponent
+  - MyProject.Common.Units.Unit.GetJumpSpeed
+  - MyProject.Common.Units.Unit.GetMoveSpeed
+  - MyProject.Common.Units.Unit.HasMoveInput
+  - MyProject.Common.Units.Unit.IsGrounded
+  - MyProject.Common.Units.Unit.IsMoveBlocked
+  - MyProject.Common.Units.Unit.OnAnimEventReceived
+  - MyProject.Common.Units.Unit.OnAnimationEventReceive(System.String)
+  - MyProject.Common.Units.Unit.OnLocomotionStateChanged
+  - MyProject.Common.Units.Unit.RequestJump
+  - MyProject.Common.Units.Unit.SetJumpSpeed(System.Single)
+  - MyProject.Common.Units.Unit.SetMoveBlocked(System.Boolean)
+  - MyProject.Common.Units.Unit.SetMoveInput(Vector2)
+  - MyProject.Common.Units.Unit.SetMoveSpeed(System.Single)
+  - MyProject.Common.Units.Unit.Velocity
+  langs:
+  - csharp
+  - vb
+  name: Unit
+  nameWithType: Unit
+  fullName: MyProject.Common.Units.Unit
+  type: Class
+  namespace: MyProject.Common.Units
+  summary: >-
+    게임 내 유닛의 기본 클래스입니다.
+
+    이동(IMovement), 애니메이션 이벤트 수신(IAnimEventReceiver), 능력 시스템 제공(IAbilitySystemProvider) 인터페이스를 구현합니다.
+  example: []
+  syntax:
+    content: 'public sealed class Unit : MonoBehaviour, IMovement, IAnimEventReceiver, IAbilitySystemProvider, ILocomotionStateProvider, MonoBehaviour'
+    content.vb: Public NotInheritable Class Unit Inherits MonoBehaviour Implements IMovement, IAnimEventReceiver, IAbilitySystemProvider, ILocomotionStateProvider, MonoBehaviour
+  inheritance:
+  - System.Object
+  implements:
+  - Common.Interface.IMovement
+  - Common.Interface.IAnimEventReceiver
+  - IAbilitySystemProvider
+  - MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+  - MonoBehaviour
+- uid: MyProject.Common.Units.Unit.AbilitySystem
+  commentId: P:MyProject.Common.Units.Unit.AbilitySystem
+  id: AbilitySystem
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: AbilitySystem
+  nameWithType: Unit.AbilitySystem
+  fullName: MyProject.Common.Units.Unit.AbilitySystem
+  type: Property
+  namespace: MyProject.Common.Units
+  summary: 이 유닛이 소유한 AbilitySystemComponent입니다.
+  example: []
+  syntax:
+    content: public AbilitySystemComponent AbilitySystem { get; }
+    parameters: []
+    return:
+      type: AbilitySystemComponent
+    content.vb: Public ReadOnly Property AbilitySystem As AbilitySystemComponent
+  overload: MyProject.Common.Units.Unit.AbilitySystem*
+- uid: MyProject.Common.Units.Unit.Animator
+  commentId: P:MyProject.Common.Units.Unit.Animator
+  id: Animator
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: Animator
+  nameWithType: Unit.Animator
+  fullName: MyProject.Common.Units.Unit.Animator
+  type: Property
+  namespace: MyProject.Common.Units
+  summary: 이 유닛의 애니메이터 컴포넌트입니다.
+  example: []
+  syntax:
+    content: public Animator Animator { get; }
+    parameters: []
+    return:
+      type: Animator
+    content.vb: Public ReadOnly Property Animator As Animator
+  overload: MyProject.Common.Units.Unit.Animator*
+- uid: MyProject.Common.Units.Unit.OnAnimEventReceived
+  commentId: E:MyProject.Common.Units.Unit.OnAnimEventReceived
+  id: OnAnimEventReceived
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: OnAnimEventReceived
+  nameWithType: Unit.OnAnimEventReceived
+  fullName: MyProject.Common.Units.Unit.OnAnimEventReceived
+  type: Event
+  namespace: MyProject.Common.Units
+  summary: 애니메이션 이벤트가 수신되었을 때 발생하는 이벤트입니다.
+  example: []
+  syntax:
+    content: public event Action<string> OnAnimEventReceived
+    return:
+      type: System.Action{System.String}
+    content.vb: Public Event OnAnimEventReceived As Action(Of String)
+  implements:
+  - Common.Interface.IAnimEventReceiver.OnAnimEventReceived
+- uid: MyProject.Common.Units.Unit.GetAbilitySystemComponent
+  commentId: M:MyProject.Common.Units.Unit.GetAbilitySystemComponent
+  id: GetAbilitySystemComponent
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: GetAbilitySystemComponent()
+  nameWithType: Unit.GetAbilitySystemComponent()
+  fullName: MyProject.Common.Units.Unit.GetAbilitySystemComponent()
+  type: Method
+  namespace: MyProject.Common.Units
+  example: []
+  syntax:
+    content: public AbilitySystemComponent GetAbilitySystemComponent()
+    return:
+      type: AbilitySystemComponent
+    content.vb: Public Function GetAbilitySystemComponent() As AbilitySystemComponent
+  overload: MyProject.Common.Units.Unit.GetAbilitySystemComponent*
+- uid: MyProject.Common.Units.Unit.OnAnimationEventReceive(System.String)
+  commentId: M:MyProject.Common.Units.Unit.OnAnimationEventReceive(System.String)
+  id: OnAnimationEventReceive(System.String)
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: OnAnimationEventReceive(string)
+  nameWithType: Unit.OnAnimationEventReceive(string)
+  fullName: MyProject.Common.Units.Unit.OnAnimationEventReceive(string)
+  type: Method
+  namespace: MyProject.Common.Units
+  summary: 애니메이션 이벤트를 수신했을 때 호출되는 메서드입니다.
+  example: []
+  syntax:
+    content: public void OnAnimationEventReceive(string eventData)
+    parameters:
+    - id: eventData
+      type: System.String
+      description: 이벤트와 함께 전달된 데이터 문자열입니다.
+    content.vb: Public Sub OnAnimationEventReceive(eventData As String)
+  overload: MyProject.Common.Units.Unit.OnAnimationEventReceive*
+  implements:
+  - Common.Interface.IAnimEventReceiver.OnAnimationEventReceive(System.String)
+  nameWithType.vb: Unit.OnAnimationEventReceive(String)
+  fullName.vb: MyProject.Common.Units.Unit.OnAnimationEventReceive(String)
+  name.vb: OnAnimationEventReceive(String)
+- uid: MyProject.Common.Units.Unit.CurrentState
+  commentId: P:MyProject.Common.Units.Unit.CurrentState
+  id: CurrentState
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: CurrentState
+  nameWithType: Unit.CurrentState
+  fullName: MyProject.Common.Units.Unit.CurrentState
+  type: Property
+  namespace: MyProject.Common.Units
+  summary: 현재 이동 상태입니다.
+  example: []
+  syntax:
+    content: public LocomotionState CurrentState { get; }
+    parameters: []
+    return:
+      type: MyProject.Common.Units.Locomotion.LocomotionState
+    content.vb: Public ReadOnly Property CurrentState As LocomotionState
+  overload: MyProject.Common.Units.Unit.CurrentState*
+  implements:
+  - MyProject.Common.Units.Locomotion.ILocomotionStateProvider.CurrentState
+- uid: MyProject.Common.Units.Unit.Velocity
+  commentId: P:MyProject.Common.Units.Unit.Velocity
+  id: Velocity
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: Velocity
+  nameWithType: Unit.Velocity
+  fullName: MyProject.Common.Units.Unit.Velocity
+  type: Property
+  namespace: MyProject.Common.Units
+  summary: 현재 유닛의 속도입니다.
+  example: []
+  syntax:
+    content: public Vector3 Velocity { get; }
+    parameters: []
+    return:
+      type: Vector3
+    content.vb: Public ReadOnly Property Velocity As Vector3
+  overload: MyProject.Common.Units.Unit.Velocity*
+- uid: MyProject.Common.Units.Unit.HasMoveInput
+  commentId: P:MyProject.Common.Units.Unit.HasMoveInput
+  id: HasMoveInput
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: HasMoveInput
+  nameWithType: Unit.HasMoveInput
+  fullName: MyProject.Common.Units.Unit.HasMoveInput
+  type: Property
+  namespace: MyProject.Common.Units
+  summary: 유효한 이동 입력이 있는지 여부입니다. (차단되지 않고 데드존 이상일 때)
+  example: []
+  syntax:
+    content: public bool HasMoveInput { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasMoveInput As Boolean
+  overload: MyProject.Common.Units.Unit.HasMoveInput*
+- uid: MyProject.Common.Units.Unit.OnLocomotionStateChanged
+  commentId: E:MyProject.Common.Units.Unit.OnLocomotionStateChanged
+  id: OnLocomotionStateChanged
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: OnLocomotionStateChanged
+  nameWithType: Unit.OnLocomotionStateChanged
+  fullName: MyProject.Common.Units.Unit.OnLocomotionStateChanged
+  type: Event
+  namespace: MyProject.Common.Units
+  summary: 이동 상태가 변경되었을 때 발생하는 이벤트입니다. (이전 상태, 현재 상태)
+  example: []
+  syntax:
+    content: public event Action<LocomotionState, LocomotionState> OnLocomotionStateChanged
+    return:
+      type: System.Action{MyProject.Common.Units.Locomotion.LocomotionState,MyProject.Common.Units.Locomotion.LocomotionState}
+    content.vb: Public Event OnLocomotionStateChanged As Action(Of LocomotionState, LocomotionState)
+  implements:
+  - MyProject.Common.Units.Locomotion.ILocomotionStateProvider.OnLocomotionStateChanged
+- uid: MyProject.Common.Units.Unit.IsGrounded
+  commentId: P:MyProject.Common.Units.Unit.IsGrounded
+  id: IsGrounded
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: IsGrounded
+  nameWithType: Unit.IsGrounded
+  fullName: MyProject.Common.Units.Unit.IsGrounded
+  type: Property
+  namespace: MyProject.Common.Units
+  summary: 현재 지면에 닿아있는지 여부입니다.
+  example: []
+  syntax:
+    content: public bool IsGrounded { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsGrounded As Boolean
+  overload: MyProject.Common.Units.Unit.IsGrounded*
+- uid: MyProject.Common.Units.Unit.SetMoveInput(Vector2)
+  commentId: M:MyProject.Common.Units.Unit.SetMoveInput(Vector2)
+  id: SetMoveInput(Vector2)
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: SetMoveInput(Vector2)
+  nameWithType: Unit.SetMoveInput(Vector2)
+  fullName: MyProject.Common.Units.Unit.SetMoveInput(Vector2)
+  type: Method
+  namespace: MyProject.Common.Units
+  summary: 이동 입력을 설정합니다.
+  example: []
+  syntax:
+    content: public void SetMoveInput(Vector2 input)
+    parameters:
+    - id: input
+      type: Vector2
+      description: 입력된 이동 벡터입니다 (보통 x, y 축 사용).
+    content.vb: Public Sub SetMoveInput(input As Vector2)
+  overload: MyProject.Common.Units.Unit.SetMoveInput*
+  implements:
+  - Common.Interface.IMovement.SetMoveInput(Vector2)
+- uid: MyProject.Common.Units.Unit.RequestJump
+  commentId: M:MyProject.Common.Units.Unit.RequestJump
+  id: RequestJump
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: RequestJump()
+  nameWithType: Unit.RequestJump()
+  fullName: MyProject.Common.Units.Unit.RequestJump()
+  type: Method
+  namespace: MyProject.Common.Units
+  summary: 점프 동작을 요청합니다.
+  example: []
+  syntax:
+    content: public void RequestJump()
+    content.vb: Public Sub RequestJump()
+  overload: MyProject.Common.Units.Unit.RequestJump*
+  implements:
+  - Common.Interface.IMovement.RequestJump
+- uid: MyProject.Common.Units.Unit.GetMoveSpeed
+  commentId: M:MyProject.Common.Units.Unit.GetMoveSpeed
+  id: GetMoveSpeed
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: GetMoveSpeed()
+  nameWithType: Unit.GetMoveSpeed()
+  fullName: MyProject.Common.Units.Unit.GetMoveSpeed()
+  type: Method
+  namespace: MyProject.Common.Units
+  summary: 현재 이동 속도를 반환합니다.
+  example: []
+  syntax:
+    content: public float GetMoveSpeed()
+    return:
+      type: System.Single
+    content.vb: Public Function GetMoveSpeed() As Single
+  overload: MyProject.Common.Units.Unit.GetMoveSpeed*
+  implements:
+  - Common.Interface.IMovement.GetMoveSpeed
+- uid: MyProject.Common.Units.Unit.GetJumpSpeed
+  commentId: M:MyProject.Common.Units.Unit.GetJumpSpeed
+  id: GetJumpSpeed
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: GetJumpSpeed()
+  nameWithType: Unit.GetJumpSpeed()
+  fullName: MyProject.Common.Units.Unit.GetJumpSpeed()
+  type: Method
+  namespace: MyProject.Common.Units
+  summary: 현재 점프력을 반환합니다.
+  example: []
+  syntax:
+    content: public float GetJumpSpeed()
+    return:
+      type: System.Single
+    content.vb: Public Function GetJumpSpeed() As Single
+  overload: MyProject.Common.Units.Unit.GetJumpSpeed*
+  implements:
+  - Common.Interface.IMovement.GetJumpSpeed
+- uid: MyProject.Common.Units.Unit.SetMoveSpeed(System.Single)
+  commentId: M:MyProject.Common.Units.Unit.SetMoveSpeed(System.Single)
+  id: SetMoveSpeed(System.Single)
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: SetMoveSpeed(float)
+  nameWithType: Unit.SetMoveSpeed(float)
+  fullName: MyProject.Common.Units.Unit.SetMoveSpeed(float)
+  type: Method
+  namespace: MyProject.Common.Units
+  summary: 이동 속도를 설정합니다.
+  example: []
+  syntax:
+    content: public void SetMoveSpeed(float moveSpeed)
+    parameters:
+    - id: moveSpeed
+      type: System.Single
+      description: 설정할 이동 속도입니다.
+    content.vb: Public Sub SetMoveSpeed(moveSpeed As Single)
+  overload: MyProject.Common.Units.Unit.SetMoveSpeed*
+  implements:
+  - Common.Interface.IMovement.SetMoveSpeed(System.Single)
+  nameWithType.vb: Unit.SetMoveSpeed(Single)
+  fullName.vb: MyProject.Common.Units.Unit.SetMoveSpeed(Single)
+  name.vb: SetMoveSpeed(Single)
+- uid: MyProject.Common.Units.Unit.SetJumpSpeed(System.Single)
+  commentId: M:MyProject.Common.Units.Unit.SetJumpSpeed(System.Single)
+  id: SetJumpSpeed(System.Single)
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: SetJumpSpeed(float)
+  nameWithType: Unit.SetJumpSpeed(float)
+  fullName: MyProject.Common.Units.Unit.SetJumpSpeed(float)
+  type: Method
+  namespace: MyProject.Common.Units
+  summary: 점프력을 설정합니다.
+  example: []
+  syntax:
+    content: public void SetJumpSpeed(float jumpSpeed)
+    parameters:
+    - id: jumpSpeed
+      type: System.Single
+      description: 설정할 점프력입니다.
+    content.vb: Public Sub SetJumpSpeed(jumpSpeed As Single)
+  overload: MyProject.Common.Units.Unit.SetJumpSpeed*
+  implements:
+  - Common.Interface.IMovement.SetJumpSpeed(System.Single)
+  nameWithType.vb: Unit.SetJumpSpeed(Single)
+  fullName.vb: MyProject.Common.Units.Unit.SetJumpSpeed(Single)
+  name.vb: SetJumpSpeed(Single)
+- uid: MyProject.Common.Units.Unit.SetMoveBlocked(System.Boolean)
+  commentId: M:MyProject.Common.Units.Unit.SetMoveBlocked(System.Boolean)
+  id: SetMoveBlocked(System.Boolean)
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: SetMoveBlocked(bool)
+  nameWithType: Unit.SetMoveBlocked(bool)
+  fullName: MyProject.Common.Units.Unit.SetMoveBlocked(bool)
+  type: Method
+  namespace: MyProject.Common.Units
+  summary: 이동 차단 여부를 설정합니다.
+  example: []
+  syntax:
+    content: public void SetMoveBlocked(bool isBlocked)
+    parameters:
+    - id: isBlocked
+      type: System.Boolean
+      description: true일 경우 이동을 차단합니다.
+    content.vb: Public Sub SetMoveBlocked(isBlocked As Boolean)
+  overload: MyProject.Common.Units.Unit.SetMoveBlocked*
+  implements:
+  - Common.Interface.IMovement.SetMoveBlocked(System.Boolean)
+  nameWithType.vb: Unit.SetMoveBlocked(Boolean)
+  fullName.vb: MyProject.Common.Units.Unit.SetMoveBlocked(Boolean)
+  name.vb: SetMoveBlocked(Boolean)
+- uid: MyProject.Common.Units.Unit.IsMoveBlocked
+  commentId: M:MyProject.Common.Units.Unit.IsMoveBlocked
+  id: IsMoveBlocked
+  parent: MyProject.Common.Units.Unit
+  langs:
+  - csharp
+  - vb
+  name: IsMoveBlocked()
+  nameWithType: Unit.IsMoveBlocked()
+  fullName: MyProject.Common.Units.Unit.IsMoveBlocked()
+  type: Method
+  namespace: MyProject.Common.Units
+  summary: 이동이 차단된 상태인지 여부를 반환합니다.
+  example: []
+  syntax:
+    content: public bool IsMoveBlocked()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsMoveBlocked() As Boolean
+  overload: MyProject.Common.Units.Unit.IsMoveBlocked*
+  implements:
+  - Common.Interface.IMovement.IsMoveBlocked
+references:
+- uid: MyProject.Common.Units
+  commentId: N:MyProject.Common.Units
+  href: MyProject.html
+  name: MyProject.Common.Units
+  nameWithType: MyProject.Common.Units
+  fullName: MyProject.Common.Units
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Units
+    name: Units
+    href: MyProject.Common.Units.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Units
+    name: Units
+    href: MyProject.Common.Units.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Common.Interface.IMovement
+  commentId: T:Common.Interface.IMovement
+  parent: Common.Interface
+  href: Common.Interface.IMovement.html
+  name: IMovement
+  nameWithType: IMovement
+  fullName: Common.Interface.IMovement
+- uid: Common.Interface.IAnimEventReceiver
+  commentId: T:Common.Interface.IAnimEventReceiver
+  parent: Common.Interface
+  href: Common.Interface.IAnimEventReceiver.html
+  name: IAnimEventReceiver
+  nameWithType: IAnimEventReceiver
+  fullName: Common.Interface.IAnimEventReceiver
+- uid: IAbilitySystemProvider
+  commentId: '!:IAbilitySystemProvider'
+  isExternal: true
+  name: IAbilitySystemProvider
+  nameWithType: IAbilitySystemProvider
+  fullName: IAbilitySystemProvider
+- uid: MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+  commentId: T:MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+  parent: MyProject.Common.Units.Locomotion
+  href: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.html
+  name: ILocomotionStateProvider
+  nameWithType: ILocomotionStateProvider
+  fullName: MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+- uid: MonoBehaviour
+  commentId: '!:MonoBehaviour'
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Common.Interface
+  commentId: N:Common.Interface
+  href: Common.html
+  name: Common.Interface
+  nameWithType: Common.Interface
+  fullName: Common.Interface
+  spec.csharp:
+  - uid: Common
+    name: Common
+    href: Common.html
+  - name: .
+  - uid: Common.Interface
+    name: Interface
+    href: Common.Interface.html
+  spec.vb:
+  - uid: Common
+    name: Common
+    href: Common.html
+  - name: .
+  - uid: Common.Interface
+    name: Interface
+    href: Common.Interface.html
+- uid: MyProject.Common.Units.Locomotion
+  commentId: N:MyProject.Common.Units.Locomotion
+  href: MyProject.html
+  name: MyProject.Common.Units.Locomotion
+  nameWithType: MyProject.Common.Units.Locomotion
+  fullName: MyProject.Common.Units.Locomotion
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Units
+    name: Units
+    href: MyProject.Common.Units.html
+  - name: .
+  - uid: MyProject.Common.Units.Locomotion
+    name: Locomotion
+    href: MyProject.Common.Units.Locomotion.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Units
+    name: Units
+    href: MyProject.Common.Units.html
+  - name: .
+  - uid: MyProject.Common.Units.Locomotion
+    name: Locomotion
+    href: MyProject.Common.Units.Locomotion.html
+- uid: MyProject.Common.Units.Unit.AbilitySystem*
+  commentId: Overload:MyProject.Common.Units.Unit.AbilitySystem
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_AbilitySystem
+  name: AbilitySystem
+  nameWithType: Unit.AbilitySystem
+  fullName: MyProject.Common.Units.Unit.AbilitySystem
+- uid: AbilitySystemComponent
+  isExternal: true
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: AbilitySystemComponent
+- uid: MyProject.Common.Units.Unit.Animator*
+  commentId: Overload:MyProject.Common.Units.Unit.Animator
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_Animator
+  name: Animator
+  nameWithType: Unit.Animator
+  fullName: MyProject.Common.Units.Unit.Animator
+- uid: Animator
+  commentId: '!:Animator'
+  isExternal: true
+  name: Animator
+  nameWithType: Animator
+  fullName: Animator
+- uid: Common.Interface.IAnimEventReceiver.OnAnimEventReceived
+  commentId: E:Common.Interface.IAnimEventReceiver.OnAnimEventReceived
+  parent: Common.Interface.IAnimEventReceiver
+  href: Common.Interface.IAnimEventReceiver.html#Common_Interface_IAnimEventReceiver_OnAnimEventReceived
+  name: OnAnimEventReceived
+  nameWithType: IAnimEventReceiver.OnAnimEventReceived
+  fullName: Common.Interface.IAnimEventReceiver.OnAnimEventReceived
+- uid: System.Action{System.String}
+  commentId: T:System.Action{System.String}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<string>
+  nameWithType: Action<string>
+  fullName: System.Action<string>
+  nameWithType.vb: Action(Of String)
+  fullName.vb: System.Action(Of String)
+  name.vb: Action(Of String)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MyProject.Common.Units.Unit.GetAbilitySystemComponent*
+  commentId: Overload:MyProject.Common.Units.Unit.GetAbilitySystemComponent
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_GetAbilitySystemComponent
+  name: GetAbilitySystemComponent
+  nameWithType: Unit.GetAbilitySystemComponent
+  fullName: MyProject.Common.Units.Unit.GetAbilitySystemComponent
+- uid: MyProject.Common.Units.Unit.OnAnimationEventReceive*
+  commentId: Overload:MyProject.Common.Units.Unit.OnAnimationEventReceive
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_OnAnimationEventReceive_System_String_
+  name: OnAnimationEventReceive
+  nameWithType: Unit.OnAnimationEventReceive
+  fullName: MyProject.Common.Units.Unit.OnAnimationEventReceive
+- uid: Common.Interface.IAnimEventReceiver.OnAnimationEventReceive(System.String)
+  commentId: M:Common.Interface.IAnimEventReceiver.OnAnimationEventReceive(System.String)
+  parent: Common.Interface.IAnimEventReceiver
+  isExternal: true
+  href: Common.Interface.IAnimEventReceiver.html#Common_Interface_IAnimEventReceiver_OnAnimationEventReceive_System_String_
+  name: OnAnimationEventReceive(string)
+  nameWithType: IAnimEventReceiver.OnAnimationEventReceive(string)
+  fullName: Common.Interface.IAnimEventReceiver.OnAnimationEventReceive(string)
+  nameWithType.vb: IAnimEventReceiver.OnAnimationEventReceive(String)
+  fullName.vb: Common.Interface.IAnimEventReceiver.OnAnimationEventReceive(String)
+  name.vb: OnAnimationEventReceive(String)
+  spec.csharp:
+  - uid: Common.Interface.IAnimEventReceiver.OnAnimationEventReceive(System.String)
+    name: OnAnimationEventReceive
+    href: Common.Interface.IAnimEventReceiver.html#Common_Interface_IAnimEventReceiver_OnAnimationEventReceive_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Common.Interface.IAnimEventReceiver.OnAnimationEventReceive(System.String)
+    name: OnAnimationEventReceive
+    href: Common.Interface.IAnimEventReceiver.html#Common_Interface_IAnimEventReceiver_OnAnimationEventReceive_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MyProject.Common.Units.Unit.CurrentState*
+  commentId: Overload:MyProject.Common.Units.Unit.CurrentState
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_CurrentState
+  name: CurrentState
+  nameWithType: Unit.CurrentState
+  fullName: MyProject.Common.Units.Unit.CurrentState
+- uid: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.CurrentState
+  commentId: P:MyProject.Common.Units.Locomotion.ILocomotionStateProvider.CurrentState
+  parent: MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+  href: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.html#MyProject_Common_Units_Locomotion_ILocomotionStateProvider_CurrentState
+  name: CurrentState
+  nameWithType: ILocomotionStateProvider.CurrentState
+  fullName: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.CurrentState
+- uid: MyProject.Common.Units.Locomotion.LocomotionState
+  commentId: T:MyProject.Common.Units.Locomotion.LocomotionState
+  parent: MyProject.Common.Units.Locomotion
+  href: MyProject.Common.Units.Locomotion.LocomotionState.html
+  name: LocomotionState
+  nameWithType: LocomotionState
+  fullName: MyProject.Common.Units.Locomotion.LocomotionState
+- uid: MyProject.Common.Units.Unit.Velocity*
+  commentId: Overload:MyProject.Common.Units.Unit.Velocity
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_Velocity
+  name: Velocity
+  nameWithType: Unit.Velocity
+  fullName: MyProject.Common.Units.Unit.Velocity
+- uid: Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Vector3
+- uid: MyProject.Common.Units.Unit.HasMoveInput*
+  commentId: Overload:MyProject.Common.Units.Unit.HasMoveInput
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_HasMoveInput
+  name: HasMoveInput
+  nameWithType: Unit.HasMoveInput
+  fullName: MyProject.Common.Units.Unit.HasMoveInput
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.OnLocomotionStateChanged
+  commentId: E:MyProject.Common.Units.Locomotion.ILocomotionStateProvider.OnLocomotionStateChanged
+  parent: MyProject.Common.Units.Locomotion.ILocomotionStateProvider
+  href: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.html#MyProject_Common_Units_Locomotion_ILocomotionStateProvider_OnLocomotionStateChanged
+  name: OnLocomotionStateChanged
+  nameWithType: ILocomotionStateProvider.OnLocomotionStateChanged
+  fullName: MyProject.Common.Units.Locomotion.ILocomotionStateProvider.OnLocomotionStateChanged
+- uid: System.Action{MyProject.Common.Units.Locomotion.LocomotionState,MyProject.Common.Units.Locomotion.LocomotionState}
+  commentId: T:System.Action{MyProject.Common.Units.Locomotion.LocomotionState,MyProject.Common.Units.Locomotion.LocomotionState}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<LocomotionState, LocomotionState>
+  nameWithType: Action<LocomotionState, LocomotionState>
+  fullName: System.Action<MyProject.Common.Units.Locomotion.LocomotionState, MyProject.Common.Units.Locomotion.LocomotionState>
+  nameWithType.vb: Action(Of LocomotionState, LocomotionState)
+  fullName.vb: System.Action(Of MyProject.Common.Units.Locomotion.LocomotionState, MyProject.Common.Units.Locomotion.LocomotionState)
+  name.vb: Action(Of LocomotionState, LocomotionState)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: MyProject.Common.Units.Locomotion.LocomotionState
+    name: LocomotionState
+    href: MyProject.Common.Units.Locomotion.LocomotionState.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.Common.Units.Locomotion.LocomotionState
+    name: LocomotionState
+    href: MyProject.Common.Units.Locomotion.LocomotionState.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.Common.Units.Locomotion.LocomotionState
+    name: LocomotionState
+    href: MyProject.Common.Units.Locomotion.LocomotionState.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.Common.Units.Locomotion.LocomotionState
+    name: LocomotionState
+    href: MyProject.Common.Units.Locomotion.LocomotionState.html
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: MyProject.Common.Units.Unit.IsGrounded*
+  commentId: Overload:MyProject.Common.Units.Unit.IsGrounded
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_IsGrounded
+  name: IsGrounded
+  nameWithType: Unit.IsGrounded
+  fullName: MyProject.Common.Units.Unit.IsGrounded
+- uid: MyProject.Common.Units.Unit.SetMoveInput*
+  commentId: Overload:MyProject.Common.Units.Unit.SetMoveInput
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_SetMoveInput_Vector2_
+  name: SetMoveInput
+  nameWithType: Unit.SetMoveInput
+  fullName: MyProject.Common.Units.Unit.SetMoveInput
+- uid: Common.Interface.IMovement.SetMoveInput(Vector2)
+  commentId: M:Common.Interface.IMovement.SetMoveInput(Vector2)
+  parent: Common.Interface.IMovement
+  isExternal: true
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetMoveInput_Vector2_
+  name: SetMoveInput(Vector2)
+  nameWithType: IMovement.SetMoveInput(Vector2)
+  fullName: Common.Interface.IMovement.SetMoveInput(Vector2)
+  spec.csharp:
+  - uid: Common.Interface.IMovement.SetMoveInput(Vector2)
+    name: SetMoveInput
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetMoveInput_Vector2_
+  - name: (
+  - uid: Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Common.Interface.IMovement.SetMoveInput(Vector2)
+    name: SetMoveInput
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetMoveInput_Vector2_
+  - name: (
+  - uid: Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Vector2
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: Vector2
+- uid: MyProject.Common.Units.Unit.RequestJump*
+  commentId: Overload:MyProject.Common.Units.Unit.RequestJump
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_RequestJump
+  name: RequestJump
+  nameWithType: Unit.RequestJump
+  fullName: MyProject.Common.Units.Unit.RequestJump
+- uid: Common.Interface.IMovement.RequestJump
+  commentId: M:Common.Interface.IMovement.RequestJump
+  parent: Common.Interface.IMovement
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_RequestJump
+  name: RequestJump()
+  nameWithType: IMovement.RequestJump()
+  fullName: Common.Interface.IMovement.RequestJump()
+  spec.csharp:
+  - uid: Common.Interface.IMovement.RequestJump
+    name: RequestJump
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_RequestJump
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Common.Interface.IMovement.RequestJump
+    name: RequestJump
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_RequestJump
+  - name: (
+  - name: )
+- uid: MyProject.Common.Units.Unit.GetMoveSpeed*
+  commentId: Overload:MyProject.Common.Units.Unit.GetMoveSpeed
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_GetMoveSpeed
+  name: GetMoveSpeed
+  nameWithType: Unit.GetMoveSpeed
+  fullName: MyProject.Common.Units.Unit.GetMoveSpeed
+- uid: Common.Interface.IMovement.GetMoveSpeed
+  commentId: M:Common.Interface.IMovement.GetMoveSpeed
+  parent: Common.Interface.IMovement
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_GetMoveSpeed
+  name: GetMoveSpeed()
+  nameWithType: IMovement.GetMoveSpeed()
+  fullName: Common.Interface.IMovement.GetMoveSpeed()
+  spec.csharp:
+  - uid: Common.Interface.IMovement.GetMoveSpeed
+    name: GetMoveSpeed
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_GetMoveSpeed
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Common.Interface.IMovement.GetMoveSpeed
+    name: GetMoveSpeed
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_GetMoveSpeed
+  - name: (
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MyProject.Common.Units.Unit.GetJumpSpeed*
+  commentId: Overload:MyProject.Common.Units.Unit.GetJumpSpeed
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_GetJumpSpeed
+  name: GetJumpSpeed
+  nameWithType: Unit.GetJumpSpeed
+  fullName: MyProject.Common.Units.Unit.GetJumpSpeed
+- uid: Common.Interface.IMovement.GetJumpSpeed
+  commentId: M:Common.Interface.IMovement.GetJumpSpeed
+  parent: Common.Interface.IMovement
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_GetJumpSpeed
+  name: GetJumpSpeed()
+  nameWithType: IMovement.GetJumpSpeed()
+  fullName: Common.Interface.IMovement.GetJumpSpeed()
+  spec.csharp:
+  - uid: Common.Interface.IMovement.GetJumpSpeed
+    name: GetJumpSpeed
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_GetJumpSpeed
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Common.Interface.IMovement.GetJumpSpeed
+    name: GetJumpSpeed
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_GetJumpSpeed
+  - name: (
+  - name: )
+- uid: MyProject.Common.Units.Unit.SetMoveSpeed*
+  commentId: Overload:MyProject.Common.Units.Unit.SetMoveSpeed
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_SetMoveSpeed_System_Single_
+  name: SetMoveSpeed
+  nameWithType: Unit.SetMoveSpeed
+  fullName: MyProject.Common.Units.Unit.SetMoveSpeed
+- uid: Common.Interface.IMovement.SetMoveSpeed(System.Single)
+  commentId: M:Common.Interface.IMovement.SetMoveSpeed(System.Single)
+  parent: Common.Interface.IMovement
+  isExternal: true
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetMoveSpeed_System_Single_
+  name: SetMoveSpeed(float)
+  nameWithType: IMovement.SetMoveSpeed(float)
+  fullName: Common.Interface.IMovement.SetMoveSpeed(float)
+  nameWithType.vb: IMovement.SetMoveSpeed(Single)
+  fullName.vb: Common.Interface.IMovement.SetMoveSpeed(Single)
+  name.vb: SetMoveSpeed(Single)
+  spec.csharp:
+  - uid: Common.Interface.IMovement.SetMoveSpeed(System.Single)
+    name: SetMoveSpeed
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetMoveSpeed_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Common.Interface.IMovement.SetMoveSpeed(System.Single)
+    name: SetMoveSpeed
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetMoveSpeed_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: MyProject.Common.Units.Unit.SetJumpSpeed*
+  commentId: Overload:MyProject.Common.Units.Unit.SetJumpSpeed
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_SetJumpSpeed_System_Single_
+  name: SetJumpSpeed
+  nameWithType: Unit.SetJumpSpeed
+  fullName: MyProject.Common.Units.Unit.SetJumpSpeed
+- uid: Common.Interface.IMovement.SetJumpSpeed(System.Single)
+  commentId: M:Common.Interface.IMovement.SetJumpSpeed(System.Single)
+  parent: Common.Interface.IMovement
+  isExternal: true
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetJumpSpeed_System_Single_
+  name: SetJumpSpeed(float)
+  nameWithType: IMovement.SetJumpSpeed(float)
+  fullName: Common.Interface.IMovement.SetJumpSpeed(float)
+  nameWithType.vb: IMovement.SetJumpSpeed(Single)
+  fullName.vb: Common.Interface.IMovement.SetJumpSpeed(Single)
+  name.vb: SetJumpSpeed(Single)
+  spec.csharp:
+  - uid: Common.Interface.IMovement.SetJumpSpeed(System.Single)
+    name: SetJumpSpeed
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetJumpSpeed_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Common.Interface.IMovement.SetJumpSpeed(System.Single)
+    name: SetJumpSpeed
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetJumpSpeed_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: MyProject.Common.Units.Unit.SetMoveBlocked*
+  commentId: Overload:MyProject.Common.Units.Unit.SetMoveBlocked
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_SetMoveBlocked_System_Boolean_
+  name: SetMoveBlocked
+  nameWithType: Unit.SetMoveBlocked
+  fullName: MyProject.Common.Units.Unit.SetMoveBlocked
+- uid: Common.Interface.IMovement.SetMoveBlocked(System.Boolean)
+  commentId: M:Common.Interface.IMovement.SetMoveBlocked(System.Boolean)
+  parent: Common.Interface.IMovement
+  isExternal: true
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetMoveBlocked_System_Boolean_
+  name: SetMoveBlocked(bool)
+  nameWithType: IMovement.SetMoveBlocked(bool)
+  fullName: Common.Interface.IMovement.SetMoveBlocked(bool)
+  nameWithType.vb: IMovement.SetMoveBlocked(Boolean)
+  fullName.vb: Common.Interface.IMovement.SetMoveBlocked(Boolean)
+  name.vb: SetMoveBlocked(Boolean)
+  spec.csharp:
+  - uid: Common.Interface.IMovement.SetMoveBlocked(System.Boolean)
+    name: SetMoveBlocked
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetMoveBlocked_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Common.Interface.IMovement.SetMoveBlocked(System.Boolean)
+    name: SetMoveBlocked
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_SetMoveBlocked_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: MyProject.Common.Units.Unit.IsMoveBlocked*
+  commentId: Overload:MyProject.Common.Units.Unit.IsMoveBlocked
+  href: MyProject.Common.Units.Unit.html#MyProject_Common_Units_Unit_IsMoveBlocked
+  name: IsMoveBlocked
+  nameWithType: Unit.IsMoveBlocked
+  fullName: MyProject.Common.Units.Unit.IsMoveBlocked
+- uid: Common.Interface.IMovement.IsMoveBlocked
+  commentId: M:Common.Interface.IMovement.IsMoveBlocked
+  parent: Common.Interface.IMovement
+  href: Common.Interface.IMovement.html#Common_Interface_IMovement_IsMoveBlocked
+  name: IsMoveBlocked()
+  nameWithType: IMovement.IsMoveBlocked()
+  fullName: Common.Interface.IMovement.IsMoveBlocked()
+  spec.csharp:
+  - uid: Common.Interface.IMovement.IsMoveBlocked
+    name: IsMoveBlocked
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_IsMoveBlocked
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Common.Interface.IMovement.IsMoveBlocked
+    name: IsMoveBlocked
+    href: Common.Interface.IMovement.html#Common_Interface_IMovement_IsMoveBlocked
+  - name: (
+  - name: )

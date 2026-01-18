@@ -1,7 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Noname.GameAbilitySystem.DebugTool
 {
+    /// <summary>
+    /// 월드 위치를 따라가는 UI 보조 컴포넌트입니다.
+    /// </summary>
     public sealed class AbilityDebugWorldFollower : MonoBehaviour
     {
         [SerializeField] private Transform _target;
@@ -16,6 +19,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void Awake()
         {
+            // 필요한 컴포넌트를 캐싱한다.
             _rectTransform = GetComponent<RectTransform>();
             _canvasGroup = GetComponent<CanvasGroup>();
             if (_canvasGroup == null)
@@ -34,8 +38,12 @@ namespace Noname.GameAbilitySystem.DebugTool
             }
         }
 
+        /// <summary>
+        /// 대상과 카메라 정보를 설정합니다.
+        /// </summary>
         public void Setup(Transform target, Camera worldCamera, Canvas canvas, Vector3 worldOffset)
         {
+            // 외부에서 전달된 값을 적용한다.
             _target = target;
             if (worldCamera != null)
             {
@@ -59,6 +67,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
             if (_canvas != null && _canvas.renderMode == RenderMode.WorldSpace)
             {
+                // 월드 스페이스 캔버스는 위치만 맞춘다.
                 _rectTransform.position = _target.position + _worldOffset;
                 return;
             }
@@ -108,6 +117,7 @@ namespace Noname.GameAbilitySystem.DebugTool
                 return localPoint;
             }
 
+            // 가장자리 여백을 넘어가지 않도록 보정한다.
             var half = parentRect.rect.size * 0.5f;
             var min = new Vector2(-half.x + _screenPadding.x, -half.y + _screenPadding.y);
             var max = new Vector2(half.x - _screenPadding.x, half.y - _screenPadding.y);

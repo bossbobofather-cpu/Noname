@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.EGameplayEffectDurationType
+  commentId: T:Noname.GameAbilitySystem.EGameplayEffectDurationType
+  id: EGameplayEffectDurationType
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.EGameplayEffectDurationType.HasDuration
+  - Noname.GameAbilitySystem.EGameplayEffectDurationType.Infinite
+  - Noname.GameAbilitySystem.EGameplayEffectDurationType.Instant
+  langs:
+  - csharp
+  - vb
+  name: EGameplayEffectDurationType
+  nameWithType: EGameplayEffectDurationType
+  fullName: Noname.GameAbilitySystem.EGameplayEffectDurationType
+  type: Enum
+  namespace: Noname.GameAbilitySystem
+  summary: GameplayEffect 지속 방식입니다.
+  example: []
+  syntax:
+    content: public enum EGameplayEffectDurationType
+    content.vb: Public Enum EGameplayEffectDurationType
+- uid: Noname.GameAbilitySystem.EGameplayEffectDurationType.Instant
+  commentId: F:Noname.GameAbilitySystem.EGameplayEffectDurationType.Instant
+  id: Instant
+  parent: Noname.GameAbilitySystem.EGameplayEffectDurationType
+  langs:
+  - csharp
+  - vb
+  name: Instant
+  nameWithType: EGameplayEffectDurationType.Instant
+  fullName: Noname.GameAbilitySystem.EGameplayEffectDurationType.Instant
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: Instant = 0
+    return:
+      type: Noname.GameAbilitySystem.EGameplayEffectDurationType
+- uid: Noname.GameAbilitySystem.EGameplayEffectDurationType.Infinite
+  commentId: F:Noname.GameAbilitySystem.EGameplayEffectDurationType.Infinite
+  id: Infinite
+  parent: Noname.GameAbilitySystem.EGameplayEffectDurationType
+  langs:
+  - csharp
+  - vb
+  name: Infinite
+  nameWithType: EGameplayEffectDurationType.Infinite
+  fullName: Noname.GameAbilitySystem.EGameplayEffectDurationType.Infinite
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: Infinite = 1
+    return:
+      type: Noname.GameAbilitySystem.EGameplayEffectDurationType
+- uid: Noname.GameAbilitySystem.EGameplayEffectDurationType.HasDuration
+  commentId: F:Noname.GameAbilitySystem.EGameplayEffectDurationType.HasDuration
+  id: HasDuration
+  parent: Noname.GameAbilitySystem.EGameplayEffectDurationType
+  langs:
+  - csharp
+  - vb
+  name: HasDuration
+  nameWithType: EGameplayEffectDurationType.HasDuration
+  fullName: Noname.GameAbilitySystem.EGameplayEffectDurationType.HasDuration
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: HasDuration = 2
+    return:
+      type: Noname.GameAbilitySystem.EGameplayEffectDurationType
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: Noname.GameAbilitySystem.EGameplayEffectDurationType
+  commentId: T:Noname.GameAbilitySystem.EGameplayEffectDurationType
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.EGameplayEffectDurationType.html
+  name: EGameplayEffectDurationType
+  nameWithType: EGameplayEffectDurationType
+  fullName: Noname.GameAbilitySystem.EGameplayEffectDurationType

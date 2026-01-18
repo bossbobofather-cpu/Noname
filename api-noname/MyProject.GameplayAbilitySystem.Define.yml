@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Define
+  commentId: N:MyProject.GameplayAbilitySystem.Define
+  id: MyProject.GameplayAbilitySystem.Define
+  children:
+  - MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+  - MyProject.GameplayAbilitySystem.Define.TargetGroup
+  - MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  langs:
+  - csharp
+  - vb
+  name: MyProject.GameplayAbilitySystem.Define
+  nameWithType: MyProject.GameplayAbilitySystem.Define
+  fullName: MyProject.GameplayAbilitySystem.Define
+  type: Namespace
+references:
+- uid: MyProject.GameplayAbilitySystem.Define.TargetGroup
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetGroup
+  parent: MyProject.GameplayAbilitySystem.Define
+  href: MyProject.GameplayAbilitySystem.Define.TargetGroup.html
+  name: TargetGroup
+  nameWithType: TargetGroup
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetGroup
+- uid: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  parent: MyProject.GameplayAbilitySystem.Define
+  href: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.html
+  name: TargetSelectionMode
+  nameWithType: TargetSelectionMode
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+- uid: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+  parent: MyProject.GameplayAbilitySystem.Define
+  href: MyProject.GameplayAbilitySystem.Define.TargetFactionMode.html
+  name: TargetFactionMode
+  nameWithType: TargetFactionMode
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+- uid: MyProject.GameplayAbilitySystem.Define
+  commentId: N:MyProject.GameplayAbilitySystem.Define
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Define
+  nameWithType: MyProject.GameplayAbilitySystem.Define
+  fullName: MyProject.GameplayAbilitySystem.Define
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html

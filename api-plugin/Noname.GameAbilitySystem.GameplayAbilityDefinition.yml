@@ -1,0 +1,226 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.GameplayAbilityDefinition
+  commentId: T:Noname.GameAbilitySystem.GameplayAbilityDefinition
+  id: GameplayAbilityDefinition
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.GameplayAbilityDefinition.AbilityTypeName
+  - Noname.GameAbilitySystem.GameplayAbilityDefinition.Configs
+  langs:
+  - csharp
+  - vb
+  name: GameplayAbilityDefinition
+  nameWithType: GameplayAbilityDefinition
+  fullName: Noname.GameAbilitySystem.GameplayAbilityDefinition
+  type: Class
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: 'public sealed class GameplayAbilityDefinition : ScriptableObject'
+    content.vb: Public NotInheritable Class GameplayAbilityDefinition Inherits ScriptableObject
+  inheritance:
+  - System.Object
+- uid: Noname.GameAbilitySystem.GameplayAbilityDefinition.AbilityTypeName
+  commentId: P:Noname.GameAbilitySystem.GameplayAbilityDefinition.AbilityTypeName
+  id: AbilityTypeName
+  parent: Noname.GameAbilitySystem.GameplayAbilityDefinition
+  langs:
+  - csharp
+  - vb
+  name: AbilityTypeName
+  nameWithType: GameplayAbilityDefinition.AbilityTypeName
+  fullName: Noname.GameAbilitySystem.GameplayAbilityDefinition.AbilityTypeName
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 어빌리티 타입 이름입니다.
+  example: []
+  syntax:
+    content: public string AbilityTypeName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property AbilityTypeName As String
+  overload: Noname.GameAbilitySystem.GameplayAbilityDefinition.AbilityTypeName*
+- uid: Noname.GameAbilitySystem.GameplayAbilityDefinition.Configs
+  commentId: P:Noname.GameAbilitySystem.GameplayAbilityDefinition.Configs
+  id: Configs
+  parent: Noname.GameAbilitySystem.GameplayAbilityDefinition
+  langs:
+  - csharp
+  - vb
+  name: Configs
+  nameWithType: GameplayAbilityDefinition.Configs
+  fullName: Noname.GameAbilitySystem.GameplayAbilityDefinition.Configs
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 연결된 구성 목록입니다.
+  example: []
+  syntax:
+    content: public IReadOnlyList<GameplayConfig> Configs { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.GameplayConfig}
+    content.vb: Public ReadOnly Property Configs As IReadOnlyList(Of GameplayConfig)
+  overload: Noname.GameAbilitySystem.GameplayAbilityDefinition.Configs*
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.GameplayAbilityDefinition.AbilityTypeName*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityDefinition.AbilityTypeName
+  href: Noname.GameAbilitySystem.GameplayAbilityDefinition.html#Noname_GameAbilitySystem_GameplayAbilityDefinition_AbilityTypeName
+  name: AbilityTypeName
+  nameWithType: GameplayAbilityDefinition.AbilityTypeName
+  fullName: Noname.GameAbilitySystem.GameplayAbilityDefinition.AbilityTypeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Noname.GameAbilitySystem.GameplayAbilityDefinition.Configs*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilityDefinition.Configs
+  href: Noname.GameAbilitySystem.GameplayAbilityDefinition.html#Noname_GameAbilitySystem_GameplayAbilityDefinition_Configs
+  name: Configs
+  nameWithType: GameplayAbilityDefinition.Configs
+  fullName: Noname.GameAbilitySystem.GameplayAbilityDefinition.Configs
+- uid: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.GameplayConfig}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.GameplayConfig}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<GameplayConfig>
+  nameWithType: IReadOnlyList<GameplayConfig>
+  fullName: System.Collections.Generic.IReadOnlyList<Noname.GameAbilitySystem.GameplayConfig>
+  nameWithType.vb: IReadOnlyList(Of GameplayConfig)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Noname.GameAbilitySystem.GameplayConfig)
+  name.vb: IReadOnlyList(Of GameplayConfig)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.GameplayConfig
+    name: GameplayConfig
+    href: Noname.GameAbilitySystem.GameplayConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.GameplayConfig
+    name: GameplayConfig
+    href: Noname.GameAbilitySystem.GameplayConfig.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

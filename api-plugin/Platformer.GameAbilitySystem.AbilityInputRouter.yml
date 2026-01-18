@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: Platformer.GameAbilitySystem.AbilityInputRouter
+  commentId: T:Platformer.GameAbilitySystem.AbilityInputRouter
+  id: AbilityInputRouter
+  parent: Platformer.GameAbilitySystem
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: AbilityInputRouter
+  nameWithType: AbilityInputRouter
+  fullName: Platformer.GameAbilitySystem.AbilityInputRouter
+  type: Class
+  namespace: Platformer.GameAbilitySystem
+  summary: 입력을 어빌리티 이벤트로 전달하는 라우터입니다.
+  example: []
+  syntax:
+    content: 'public sealed class AbilityInputRouter : MonoBehaviour'
+    content.vb: Public NotInheritable Class AbilityInputRouter Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+references:
+- uid: Platformer.GameAbilitySystem
+  commentId: N:Platformer.GameAbilitySystem
+  href: Platformer.html
+  name: Platformer.GameAbilitySystem
+  nameWithType: Platformer.GameAbilitySystem
+  fullName: Platformer.GameAbilitySystem
+  spec.csharp:
+  - uid: Platformer
+    name: Platformer
+    href: Platformer.html
+  - name: .
+  - uid: Platformer.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Platformer.GameAbilitySystem.html
+  spec.vb:
+  - uid: Platformer
+    name: Platformer
+    href: Platformer.html
+  - name: .
+  - uid: Platformer.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Platformer.GameAbilitySystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

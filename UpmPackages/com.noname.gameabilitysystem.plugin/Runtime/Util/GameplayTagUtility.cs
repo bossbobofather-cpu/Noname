@@ -1,25 +1,26 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
 /// <summary>
-/// 게임 플레이 태그 유틸리티 클래스
+/// 게임플레이 태그 문자열 유틸리티입니다.
 /// </summary>
 public static class GameplayTagUtility
 {
     /// <summary>
     /// 태그 문자열이 유효한지 확인합니다.
     /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="value">태그 문자열</param>
+    /// <returns>유효 여부</returns>
     public static bool IsValidTagString(string value)
     {
         if (string.IsNullOrWhiteSpace(value))
         {
+            // 비어 있거나 공백이면 유효하지 않다.
             return false;
         }
 
-        // 시작 또는 끝이 점(.)인 경우 잘못된 태그
+        // 시작이나 끝이 점이면 잘못된 태그다.
         if (value[0] == '.' || value[value.Length - 1] == '.')
         {
             return false;
@@ -28,10 +29,10 @@ public static class GameplayTagUtility
         var previousDot = false;
         for (var i = 0; i < value.Length; i++)
         {
-            // 연속된 점(.)이 있는 경우 잘못된 태그
             var c = value[i];
             if (c == '.')
             {
+                // 점이 연속되면 잘못된 태그다.
                 if (previousDot)
                 {
                     return false;
@@ -41,7 +42,7 @@ public static class GameplayTagUtility
                 continue;
             }
 
-            // 허용되지 않는 문자가 있는 경우 잘못된 태그
+            // 허용되지 않은 문자가 있으면 실패한다.
             if (!IsAllowedTagChar(c))
             {
                 return false;
@@ -54,10 +55,10 @@ public static class GameplayTagUtility
     }
 
     /// <summary>
-    /// 부모 태그들을 열거합니다.
+    /// 부모 태그를 순서대로 열거합니다.
     /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="value">태그 문자열</param>
+    /// <returns>부모 태그 열거자</returns>
     public static IEnumerable<string> EnumerateParents(string value)
     {
         if (string.IsNullOrEmpty(value))
@@ -65,6 +66,7 @@ public static class GameplayTagUtility
             yield break;
         }
 
+        // 뒤에서부터 점을 찾아 부모를 만든다.
         var index = value.Length;
         while ((index = value.LastIndexOf('.', index - 1)) >= 0)
         {
@@ -73,10 +75,10 @@ public static class GameplayTagUtility
     }
 
     /// <summary>
-    /// 태그와 부모 태그들을 열거합니다.
+    /// 태그와 부모 태그를 함께 열거합니다.
     /// </summary>
-    /// <param name="value"></param>
-    /// <returns></returns>
+    /// <param name="value">태그 문자열</param>
+    /// <returns>태그와 부모 태그 열거자</returns>
     public static IEnumerable<string> EnumerateTagAndParents(string value)
     {
         if (string.IsNullOrEmpty(value))
@@ -84,6 +86,7 @@ public static class GameplayTagUtility
             yield break;
         }
 
+        // 자기 자신을 먼저 내보낸다.
         yield return value;
         foreach (var parent in EnumerateParents(value))
         {
@@ -92,12 +95,11 @@ public static class GameplayTagUtility
     }
 
     /// <summary>
-    /// child 태그가 parent 태그의 자손인지 확인합니다. (메모리 할당 없음)
-    /// 예: "Status.Debuff"는 "Status"의 자손입니다.
+    /// 자식 태그가 부모 태그의 하위인지 확인합니다.
     /// </summary>
-    /// <param name="child">자식 태그 문자열</param>
-    /// <param name="parent">부모 태그 문자열</param>
-    /// <returns></returns>
+    /// <param name="child">자식 태그</param>
+    /// <param name="parent">부모 태그</param>
+    /// <returns>하위 여부</returns>
     public static bool IsDescendant(string child, string parent)
     {
         if (string.IsNullOrEmpty(child) || string.IsNullOrEmpty(parent))
@@ -105,21 +107,21 @@ public static class GameplayTagUtility
             return false;
         }
 
-        // 부모 길이가 자식보다 길거나 같으면 자손이 될 수 없음 (같으면 exact match)
+        // 부모 길이가 더 길면 하위가 될 수 없다.
         if (parent.Length >= child.Length)
         {
             return false;
         }
 
-        // parent로 시작하고, 그 바로 뒤가 점(.)이어야 함
+        // 부모로 시작하고 바로 다음이 점인지 확인한다.
         return child.StartsWith(parent, StringComparison.Ordinal) && child[parent.Length] == '.';
     }
 
-    /// 태그에 사용 할 수 있는 단어 체크
-    /// 영문자(a-z, A-Z), 숫자(0-9), 언더스코어(_)만 허용
+    // 태그 문자열에 허용되는 문자만 통과시킨다.
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     private static bool IsAllowedTagChar(char c)
     {
+        // 영문, 숫자, 밑줄만 허용한다.
         return (c >= 'a' && c <= 'z')
             || (c >= 'A' && c <= 'Z')
             || (c >= '0' && c <= '9')

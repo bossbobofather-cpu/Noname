@@ -1,0 +1,21 @@
+### YamlMime:ManagedReference
+items:
+- uid: Platformer.GameAbilitySystem
+  commentId: N:Platformer.GameAbilitySystem
+  id: Platformer.GameAbilitySystem
+  children:
+  - Platformer.GameAbilitySystem.AbilityInputRouter
+  langs:
+  - csharp
+  - vb
+  name: Platformer.GameAbilitySystem
+  nameWithType: Platformer.GameAbilitySystem
+  fullName: Platformer.GameAbilitySystem
+  type: Namespace
+references:
+- uid: Platformer.GameAbilitySystem.AbilityInputRouter
+  commentId: T:Platformer.GameAbilitySystem.AbilityInputRouter
+  href: Platformer.GameAbilitySystem.AbilityInputRouter.html
+  name: AbilityInputRouter
+  nameWithType: AbilityInputRouter
+  fullName: Platformer.GameAbilitySystem.AbilityInputRouter

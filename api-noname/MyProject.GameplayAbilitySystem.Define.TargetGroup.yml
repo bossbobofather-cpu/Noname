@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Define.TargetGroup
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetGroup
+  id: TargetGroup
+  parent: MyProject.GameplayAbilitySystem.Define
+  children:
+  - MyProject.GameplayAbilitySystem.Define.TargetGroup.Opponent
+  - MyProject.GameplayAbilitySystem.Define.TargetGroup.Player
+  langs:
+  - csharp
+  - vb
+  name: TargetGroup
+  nameWithType: TargetGroup
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetGroup
+  type: Enum
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 타겟 그룹 정의입니다.
+  example: []
+  syntax:
+    content: public enum TargetGroup
+    content.vb: Public Enum TargetGroup
+- uid: MyProject.GameplayAbilitySystem.Define.TargetGroup.Player
+  commentId: F:MyProject.GameplayAbilitySystem.Define.TargetGroup.Player
+  id: Player
+  parent: MyProject.GameplayAbilitySystem.Define.TargetGroup
+  langs:
+  - csharp
+  - vb
+  name: Player
+  nameWithType: TargetGroup.Player
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetGroup.Player
+  type: Field
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 플레이어 그룹
+  example: []
+  syntax:
+    content: Player = 0
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetGroup
+- uid: MyProject.GameplayAbilitySystem.Define.TargetGroup.Opponent
+  commentId: F:MyProject.GameplayAbilitySystem.Define.TargetGroup.Opponent
+  id: Opponent
+  parent: MyProject.GameplayAbilitySystem.Define.TargetGroup
+  langs:
+  - csharp
+  - vb
+  name: Opponent
+  nameWithType: TargetGroup.Opponent
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetGroup.Opponent
+  type: Field
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 적(상대방) 그룹
+  example: []
+  syntax:
+    content: Opponent = 1
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetGroup
+references:
+- uid: MyProject.GameplayAbilitySystem.Define
+  commentId: N:MyProject.GameplayAbilitySystem.Define
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Define
+  nameWithType: MyProject.GameplayAbilitySystem.Define
+  fullName: MyProject.GameplayAbilitySystem.Define
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html
+- uid: MyProject.GameplayAbilitySystem.Define.TargetGroup
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetGroup
+  parent: MyProject.GameplayAbilitySystem.Define
+  href: MyProject.GameplayAbilitySystem.Define.TargetGroup.html
+  name: TargetGroup
+  nameWithType: TargetGroup
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetGroup

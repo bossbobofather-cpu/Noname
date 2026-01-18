@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Ability
+  commentId: N:MyProject.GameplayAbilitySystem.Ability
+  id: MyProject.GameplayAbilitySystem.Ability
+  children:
+  - MyProject.GameplayAbilitySystem.Ability.Ability_Attack
+  - MyProject.GameplayAbilitySystem.Ability.Ability_Hit
+  - MyProject.GameplayAbilitySystem.Ability.Ability_Jump
+  - MyProject.GameplayAbilitySystem.Ability.Ability_Move
+  langs:
+  - csharp
+  - vb
+  name: MyProject.GameplayAbilitySystem.Ability
+  nameWithType: MyProject.GameplayAbilitySystem.Ability
+  fullName: MyProject.GameplayAbilitySystem.Ability
+  type: Namespace
+references:
+- uid: MyProject.GameplayAbilitySystem.Ability.Ability_Attack
+  commentId: T:MyProject.GameplayAbilitySystem.Ability.Ability_Attack
+  href: MyProject.GameplayAbilitySystem.Ability.Ability_Attack.html
+  name: Ability_Attack
+  nameWithType: Ability_Attack
+  fullName: MyProject.GameplayAbilitySystem.Ability.Ability_Attack
+- uid: MyProject.GameplayAbilitySystem.Ability.Ability_Hit
+  commentId: T:MyProject.GameplayAbilitySystem.Ability.Ability_Hit
+  href: MyProject.GameplayAbilitySystem.Ability.Ability_Hit.html
+  name: Ability_Hit
+  nameWithType: Ability_Hit
+  fullName: MyProject.GameplayAbilitySystem.Ability.Ability_Hit
+- uid: MyProject.GameplayAbilitySystem.Ability.Ability_Jump
+  commentId: T:MyProject.GameplayAbilitySystem.Ability.Ability_Jump
+  href: MyProject.GameplayAbilitySystem.Ability.Ability_Jump.html
+  name: Ability_Jump
+  nameWithType: Ability_Jump
+  fullName: MyProject.GameplayAbilitySystem.Ability.Ability_Jump
+- uid: MyProject.GameplayAbilitySystem.Ability.Ability_Move
+  commentId: T:MyProject.GameplayAbilitySystem.Ability.Ability_Move
+  href: MyProject.GameplayAbilitySystem.Ability.Ability_Move.html
+  name: Ability_Move
+  nameWithType: Ability_Move
+  fullName: MyProject.GameplayAbilitySystem.Ability.Ability_Move

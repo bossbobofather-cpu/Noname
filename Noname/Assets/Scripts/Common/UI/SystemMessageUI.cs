@@ -5,26 +5,79 @@ using UnityEngine.UI;
 
 namespace MyProject.Common.UI
 {
+    /// <summary>
+    /// 화면 중앙 상단 등에 시스템 메시지를 띄우는 UI 매니저입니다.
+    /// SystemMessageBus 이벤트를 구독하여 메시지를 표시합니다.
+    /// </summary>
     [DisallowMultipleComponent]
     public sealed class SystemMessageUI : MonoBehaviour
     {
         [Header("UI")]
+        /// <summary>
+        /// 메시지가 생성될 부모 컨테이너입니다.
+        /// </summary>
         [SerializeField] private RectTransform _container;
+        
+        /// <summary>
+        /// 메시지에 사용할 폰트입니다.
+        /// </summary>
         [SerializeField] private Font _font;
+        
+        /// <summary>
+        /// 메시지 텍스트 크기입니다.
+        /// </summary>
         [SerializeField] private int _fontSize = 16;
+        
+        /// <summary>
+        /// 메시지 텍스트 색상입니다.
+        /// </summary>
         [SerializeField] private Color _textColor = Color.white;
+        
+        /// <summary>
+        /// 메시지 배경 색상입니다.
+        /// </summary>
         [SerializeField] private Color _backgroundColor = new Color(0f, 0f, 0f, 0.6f);
+        
+        /// <summary>
+        /// 메시지 내부 여백(padding)입니다.
+        /// </summary>
         [SerializeField] private Vector2 _padding = new Vector2(10f, 4f);
+        
+        /// <summary>
+        /// 메시지 간의 간격입니다.
+        /// </summary>
         [SerializeField] private float _rowSpacing = 2f;
 
         [Header("Behavior")]
+        /// <summary>
+        /// 메시지가 화면에 머무르는 시간(초)입니다.
+        /// </summary>
         [SerializeField] private float _messageDuration = 2f;
+        
+        /// <summary>
+        /// 메시지가 사라질 때 페이드 아웃 되는 시간(초)입니다.
+        /// </summary>
         [SerializeField] private float _fadeDuration = 0.25f;
+        
+        /// <summary>
+        /// 화면에 동시에 표시될 최대 메시지 개수입니다.
+        /// </summary>
         [SerializeField] private int _maxVisible = 5;
+        
+        /// <summary>
+        /// UnscaledTime 사용 여부입니다.
+        /// </summary>
         [SerializeField] private bool _useUnscaledTime = true;
 
         [Header("Auto Setup")]
+        /// <summary>
+        /// UI가 배치될 캔버스입니다.
+        /// </summary>
         [SerializeField] private Canvas _canvas;
+        
+        /// <summary>
+        /// 캔버스가 없을 경우 자동 생성 여부입니다.
+        /// </summary>
         [SerializeField] private bool _autoCreateCanvas = true;
 
         private readonly List<MessageRow> _activeRows = new();
@@ -75,6 +128,8 @@ namespace MyProject.Common.UI
                 }
 
                 var timeLeft = row.EndTime - now;
+                
+                // 표시 시간 및 페이드 아웃 시간이 모두 지난 경우 제거
                 if (timeLeft <= -_fadeDuration)
                 {
                     RecycleRow(row);
@@ -87,6 +142,7 @@ namespace MyProject.Common.UI
                     continue;
                 }
 
+                // 페이드 아웃 처리
                 var alpha = 1f;
                 if (_fadeDuration > 0f && timeLeft < _fadeDuration)
                 {
@@ -97,6 +153,10 @@ namespace MyProject.Common.UI
             }
         }
 
+        /// <summary>
+        /// 시스템 메시지를 게시합니다.
+        /// </summary>
+        /// <param name="message">표시할 메시지 내용</param>
         public static void Post(string message)
         {
             SystemMessageBus.Publish(message);
@@ -118,6 +178,7 @@ namespace MyProject.Common.UI
                 row.Group.alpha = 1f;
             }
 
+            // 최신 메시지를 상단에 추가
             row.Root.transform.SetAsFirstSibling();
             _activeRows.Insert(0, row);
             TrimOverflow();
@@ -137,6 +198,7 @@ namespace MyProject.Common.UI
 
         private MessageRow CreateRow()
         {
+            // 메시지 행(Row) UI 동적 생성
             var root = new GameObject("SystemMessageRow", typeof(RectTransform));
             var rect = root.GetComponent<RectTransform>();
             rect.SetParent(_container, false);
@@ -191,6 +253,7 @@ namespace MyProject.Common.UI
 
         private void TrimOverflow()
         {
+            // 최대 표시 개수를 초과하면 오래된 메시지부터 제거
             var max = Mathf.Max(1, _maxVisible);
             while (_activeRows.Count > max)
             {
@@ -246,6 +309,7 @@ namespace MyProject.Common.UI
                 return;
             }
 
+            // 상단 중앙 정렬을 위한 컨테이너 설정
             var obj = new GameObject("SystemMessageContainer", typeof(RectTransform));
             _container = obj.GetComponent<RectTransform>();
             _container.SetParent(_canvas.transform, false);

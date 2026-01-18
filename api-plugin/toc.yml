@@ -1,0 +1,206 @@
+### YamlMime:TableOfContent
+items:
+- uid: Noname.GameAbilitySystem
+  name: Noname.GameAbilitySystem
+  type: Namespace
+  items:
+  - uid: Noname.GameAbilitySystem.AbilityContext
+    name: AbilityContext
+    type: Struct
+  - uid: Noname.GameAbilitySystem.AbilityInputBinding
+    name: AbilityInputBinding
+    type: Class
+  - uid: Noname.GameAbilitySystem.AbilityInputMap
+    name: AbilityInputMap
+    type: Class
+  - uid: Noname.GameAbilitySystem.AbilityInputTrigger
+    name: AbilityInputTrigger
+    type: Enum
+  - uid: Noname.GameAbilitySystem.AbilitySystemComponent
+    name: AbilitySystemComponent
+    type: Class
+  - uid: Noname.GameAbilitySystem.AbilityTargetData
+    name: AbilityTargetData
+    type: Class
+  - uid: Noname.GameAbilitySystem.AbilityTask
+    name: AbilityTask
+    type: Class
+  - uid: Noname.GameAbilitySystem.AbilityTask_PlayMontageAndWait
+    name: AbilityTask_PlayMontageAndWait
+    type: Class
+  - uid: Noname.GameAbilitySystem.AbilityTask_WaitGameplayEvent
+    name: AbilityTask_WaitGameplayEvent
+    type: Class
+  - uid: Noname.GameAbilitySystem.AbilityTask_WaitInputPress
+    name: AbilityTask_WaitInputPress
+    type: Class
+  - uid: Noname.GameAbilitySystem.AbilityTask_WaitTargetData
+    name: AbilityTask_WaitTargetData
+    type: Class
+  - uid: Noname.GameAbilitySystem.AttributeDefinition
+    name: AttributeDefinition
+    type: Class
+  - uid: Noname.GameAbilitySystem.AttributeId
+    name: AttributeId
+    type: Enum
+  - uid: Noname.GameAbilitySystem.AttributeModifier
+    name: AttributeModifier
+    type: Struct
+  - uid: Noname.GameAbilitySystem.AttributeModifierValueMode
+    name: AttributeModifierValueMode
+    type: Enum
+  - uid: Noname.GameAbilitySystem.AttributeSet
+    name: AttributeSet
+    type: Class
+  - uid: Noname.GameAbilitySystem.AttributeValue
+    name: AttributeValue
+    type: Class
+  - uid: Noname.GameAbilitySystem.EGameplayEffectDurationType
+    name: EGameplayEffectDurationType
+    type: Enum
+  - uid: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
+    name: FGameplayAbilitySpecHandle
+    type: Struct
+  - uid: Noname.GameAbilitySystem.FGameplayTag
+    name: FGameplayTag
+    type: Struct
+  - uid: Noname.GameAbilitySystem.GameAbilitySystemPlugin
+    name: GameAbilitySystemPlugin
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameAbilitySystemPlugin.AbilitySystemComponent
+    name: GameAbilitySystemPlugin.AbilitySystemComponent
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayAbility
+    name: GameplayAbility
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayAbilityDefinition
+    name: GameplayAbilityDefinition
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayAbilityInstance
+    name: GameplayAbilityInstance
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayAbilitySpec
+    name: GameplayAbilitySpec
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayConfig
+    name: GameplayConfig
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayEffectCalculator
+    name: GameplayEffectCalculator
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayEffectConfig
+    name: GameplayEffectConfig
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayEffectContext
+    name: GameplayEffectContext
+    type: Struct
+  - uid: Noname.GameAbilitySystem.GameplayEffectModifierOperation
+    name: GameplayEffectModifierOperation
+    type: Enum
+  - uid: Noname.GameAbilitySystem.GameplayEventData
+    name: GameplayEventData
+    type: Struct
+  - uid: Noname.GameAbilitySystem.GameplayTagConfig
+    name: GameplayTagConfig
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayTagContainer
+    name: GameplayTagContainer
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayTagRegistry
+    name: GameplayTagRegistry
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayTagRegistryRuntime
+    name: GameplayTagRegistryRuntime
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayTargetActor
+    name: GameplayTargetActor
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayTargetActorConfig
+    name: GameplayTargetActorConfig
+    type: Class
+  - uid: Noname.GameAbilitySystem.GameplayTargetConfig
+    name: GameplayTargetConfig
+    type: Class
+  - uid: Noname.GameAbilitySystem.IAbilitySystemProvider
+    name: IAbilitySystemProvider
+    type: Interface
+  - uid: Noname.GameAbilitySystem.IAbilityTaskOwner
+    name: IAbilityTaskOwner
+    type: Interface
+  - uid: Noname.GameAbilitySystem.ReadOnlyAttribute
+    name: ReadOnlyAttribute
+    type: Class
+  - uid: Noname.GameAbilitySystem.SystemMessageBus
+    name: SystemMessageBus
+    type: Class
+  - uid: Noname.GameAbilitySystem.TargetConfirmationMode
+    name: TargetConfirmationMode
+    type: Enum
+- uid: Noname.GameAbilitySystem.DebugTool
+  name: Noname.GameAbilitySystem.DebugTool
+  type: Namespace
+  items:
+  - uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugCatalog
+    name: AbilityDebugCatalog
+    type: Class
+  - uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugPanel
+    name: AbilityDebugPanel
+    type: Class
+  - uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltip
+    name: AbilityDebugTooltip
+    type: Class
+  - uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipConfig
+    name: AbilityDebugTooltipConfig
+    type: Class
+  - uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugTooltipTrigger
+    name: AbilityDebugTooltipTrigger
+    type: Class
+  - uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugUI
+    name: AbilityDebugUI
+    type: Class
+  - uid: Noname.GameAbilitySystem.DebugTool.AbilityDebugWorldFollower
+    name: AbilityDebugWorldFollower
+    type: Class
+  - uid: Noname.GameAbilitySystem.DebugTool.AbilitySystemTriggerVolume
+    name: AbilitySystemTriggerVolume
+    type: Class
+  - uid: Noname.GameAbilitySystem.DebugTool.UIDraggableItem
+    name: UIDraggableItem
+    type: Class
+- uid: Noname.GameAbilitySystem.Editor
+  name: Noname.GameAbilitySystem.Editor
+  type: Namespace
+  items:
+  - uid: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer
+    name: AttributeModifierDrawer
+    type: Class
+  - uid: Noname.GameAbilitySystem.Editor.GameAbilitySystemPluginEditor
+    name: GameAbilitySystemPluginEditor
+    type: Class
+  - uid: Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor
+    name: GameplayAbilityDefinitionEditor
+    type: Class
+  - uid: Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor
+    name: GameplayEffectConfigEditor
+    type: Class
+  - uid: Noname.GameAbilitySystem.Editor.GameplayTagDrawer
+    name: GameplayTagDrawer
+    type: Class
+  - uid: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer
+    name: ReadOnlyDrawer
+    type: Class
+- uid: Platformer.GameAbilitySystem
+  name: Platformer.GameAbilitySystem
+  type: Namespace
+  items:
+  - uid: Platformer.GameAbilitySystem.AbilityInputRouter
+    name: AbilityInputRouter
+    type: Class
+- uid: noname.GameAbilitySystem
+  name: noname.GameAbilitySystem
+  type: Namespace
+  items:
+  - uid: noname.GameAbilitySystem.GameplayEffect
+    name: GameplayEffect
+    type: Class
+memberLayout: SamePage

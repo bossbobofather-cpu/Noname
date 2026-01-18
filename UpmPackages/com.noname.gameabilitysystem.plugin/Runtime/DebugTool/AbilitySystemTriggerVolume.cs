@@ -1,9 +1,12 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Noname.GameAbilitySystem;
 using UnityEngine;
 
 namespace Noname.GameAbilitySystem.DebugTool
 {
+    /// <summary>
+    /// 태그와 효과를 자동 적용하는 트리거 볼륨입니다.
+    /// </summary>
     [DisallowMultipleComponent]
     [RequireComponent(typeof(Collider))]
     public sealed class AbilitySystemTriggerVolume : MonoBehaviour
@@ -25,6 +28,7 @@ namespace Noname.GameAbilitySystem.DebugTool
             var col = GetComponent<Collider>();
             if (col != null)
             {
+                // 트리거로 강제 설정한다.
                 col.isTrigger = true;
             }
         }
@@ -34,6 +38,7 @@ namespace Noname.GameAbilitySystem.DebugTool
             var col = GetComponent<Collider>();
             if (col != null && !col.isTrigger)
             {
+                // 에디터에서 트리거를 유지한다.
                 col.isTrigger = true;
             }
         }
@@ -46,6 +51,7 @@ namespace Noname.GameAbilitySystem.DebugTool
                 return;
             }
 
+            // 비활성화 시점에 남은 대상들을 정리한다.
             _cleanupTargets.Clear();
             foreach (var pair in _overlaps)
             {

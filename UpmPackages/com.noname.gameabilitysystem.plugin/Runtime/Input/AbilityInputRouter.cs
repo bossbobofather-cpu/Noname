@@ -7,6 +7,9 @@ using UnityEngine.InputSystem;
 
 namespace Platformer.GameAbilitySystem
 {
+    /// <summary>
+    /// 입력을 어빌리티 이벤트로 전달하는 라우터입니다.
+    /// </summary>
     public sealed class AbilityInputRouter : MonoBehaviour
     {
         [SerializeField] private AbilityInputMap _inputMap;
@@ -20,9 +23,11 @@ namespace Platformer.GameAbilitySystem
         {
             if (_abilitySystem == null)
             {
+                // 부모에서 능력 시스템 컴포넌트를 찾는다.
                 _abilitySystem = GetComponentInParent<AbilitySystemComponent>();
             }
 
+            // 입력 바인딩을 구성한다.
             BuildRuntimeBindings();
         }
 
@@ -30,6 +35,7 @@ namespace Platformer.GameAbilitySystem
         {
             if (_autoEnableActions)
             {
+                // 자동 활성화 옵션이 켜져 있으면 활성화한다.
                 SetActionsEnabled(true);
             }
         }
@@ -38,6 +44,7 @@ namespace Platformer.GameAbilitySystem
         {
             if (_autoEnableActions)
             {
+                // 비활성화 시 입력을 끈다.
                 SetActionsEnabled(false);
             }
         }
@@ -46,6 +53,7 @@ namespace Platformer.GameAbilitySystem
         {
             if (_abilitySystem == null || _runtimeBindings.Count == 0)
             {
+                // 준비되지 않았으면 처리하지 않는다.
                 return;
             }
 
@@ -71,6 +79,7 @@ namespace Platformer.GameAbilitySystem
                 {
                     if (pointerOverUi && IsLeftClickAction(binding.Action))
                     {
+                        // UI 위에서의 좌클릭은 막는다.
                         continue;
                     }
 
@@ -80,6 +89,7 @@ namespace Platformer.GameAbilitySystem
                         Payload = binding.Action.ReadValueAsObject()
                     };
 
+                    // 입력 이벤트를 어빌리티 시스템으로 전달한다.
                     _abilitySystem.HandleGameplayEvent(eventData);
                 }
             }
@@ -101,6 +111,7 @@ namespace Platformer.GameAbilitySystem
             var active = action.activeControl;
             if (active != null)
             {
+                // 현재 활성 컨트롤이 왼쪽 버튼인지 확인한다.
                 return active == mouse.leftButton
                     || (active.device is Mouse && string.Equals(active.name, "leftButton", StringComparison.Ordinal));
             }
@@ -123,6 +134,7 @@ namespace Platformer.GameAbilitySystem
 
         private void BuildRuntimeBindings()
         {
+            // 이전 바인딩을 초기화한다.
             _runtimeBindings.Clear();
 
             if (_inputMap == null)
@@ -154,6 +166,7 @@ namespace Platformer.GameAbilitySystem
                     continue;
                 }
 
+                // 유효한 바인딩만 등록한다.
                 _runtimeBindings.Add(new RuntimeBinding(action, eventTag, binding.Trigger));
             }
         }
@@ -170,10 +183,12 @@ namespace Platformer.GameAbilitySystem
 
                 if (enabled)
                 {
+                    // 입력을 활성화한다.
                     action.Enable();
                 }
                 else
                 {
+                    // 입력을 비활성화한다.
                     action.Disable();
                 }
             }
@@ -184,6 +199,7 @@ namespace Platformer.GameAbilitySystem
         {
             public RuntimeBinding(InputAction action, FGameplayTag eventTag, AbilityInputTrigger trigger)
             {
+                // 바인딩 정보를 저장한다.
                 Action = action;
                 EventTag = eventTag;
                 Trigger = trigger;

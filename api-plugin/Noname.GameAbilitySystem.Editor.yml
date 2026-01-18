@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Editor
+  commentId: N:Noname.GameAbilitySystem.Editor
+  id: Noname.GameAbilitySystem.Editor
+  children:
+  - Noname.GameAbilitySystem.Editor.AttributeModifierDrawer
+  - Noname.GameAbilitySystem.Editor.GameAbilitySystemPluginEditor
+  - Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor
+  - Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor
+  - Noname.GameAbilitySystem.Editor.GameplayTagDrawer
+  - Noname.GameAbilitySystem.Editor.ReadOnlyDrawer
+  langs:
+  - csharp
+  - vb
+  name: Noname.GameAbilitySystem.Editor
+  nameWithType: Noname.GameAbilitySystem.Editor
+  fullName: Noname.GameAbilitySystem.Editor
+  type: Namespace
+references:
+- uid: Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor
+  commentId: T:Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor
+  href: Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor.html
+  name: GameplayAbilityDefinitionEditor
+  nameWithType: GameplayAbilityDefinitionEditor
+  fullName: Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor
+- uid: Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor
+  commentId: T:Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor
+  href: Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor.html
+  name: GameplayEffectConfigEditor
+  nameWithType: GameplayEffectConfigEditor
+  fullName: Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor
+- uid: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer
+  commentId: T:Noname.GameAbilitySystem.Editor.AttributeModifierDrawer
+  href: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.html
+  name: AttributeModifierDrawer
+  nameWithType: AttributeModifierDrawer
+  fullName: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer
+- uid: Noname.GameAbilitySystem.Editor.GameAbilitySystemPluginEditor
+  commentId: T:Noname.GameAbilitySystem.Editor.GameAbilitySystemPluginEditor
+  href: Noname.GameAbilitySystem.Editor.GameAbilitySystemPluginEditor.html
+  name: GameAbilitySystemPluginEditor
+  nameWithType: GameAbilitySystemPluginEditor
+  fullName: Noname.GameAbilitySystem.Editor.GameAbilitySystemPluginEditor
+- uid: Noname.GameAbilitySystem.Editor.GameplayTagDrawer
+  commentId: T:Noname.GameAbilitySystem.Editor.GameplayTagDrawer
+  href: Noname.GameAbilitySystem.Editor.GameplayTagDrawer.html
+  name: GameplayTagDrawer
+  nameWithType: GameplayTagDrawer
+  fullName: Noname.GameAbilitySystem.Editor.GameplayTagDrawer
+- uid: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer
+  commentId: T:Noname.GameAbilitySystem.Editor.ReadOnlyDrawer
+  href: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.html
+  name: ReadOnlyDrawer
+  nameWithType: ReadOnlyDrawer
+  fullName: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer

@@ -1,0 +1,210 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.DebugTool.UIDraggableItem
+  commentId: T:Noname.GameAbilitySystem.DebugTool.UIDraggableItem
+  id: UIDraggableItem
+  parent: Noname.GameAbilitySystem.DebugTool
+  children:
+  - Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnBeginDrag(PointerEventData)
+  - Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnDrag(PointerEventData)
+  - Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnEndDrag(PointerEventData)
+  - Noname.GameAbilitySystem.DebugTool.UIDraggableItem.SetDragTarget(RectTransform)
+  langs:
+  - csharp
+  - vb
+  name: UIDraggableItem
+  nameWithType: UIDraggableItem
+  fullName: Noname.GameAbilitySystem.DebugTool.UIDraggableItem
+  type: Class
+  namespace: Noname.GameAbilitySystem.DebugTool
+  summary: 간단한 드래그 기능을 제공하는 컴포넌트입니다.
+  example: []
+  syntax:
+    content: 'public sealed class UIDraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler'
+    content.vb: Public NotInheritable Class UIDraggableItem Inherits MonoBehaviour Implements IBeginDragHandler, IDragHandler, IEndDragHandler
+  inheritance:
+  - System.Object
+  implements:
+  - IBeginDragHandler
+  - IDragHandler
+  - IEndDragHandler
+- uid: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnBeginDrag(PointerEventData)
+  commentId: M:Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnBeginDrag(PointerEventData)
+  id: OnBeginDrag(PointerEventData)
+  parent: Noname.GameAbilitySystem.DebugTool.UIDraggableItem
+  langs:
+  - csharp
+  - vb
+  name: OnBeginDrag(PointerEventData)
+  nameWithType: UIDraggableItem.OnBeginDrag(PointerEventData)
+  fullName: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnBeginDrag(PointerEventData)
+  type: Method
+  namespace: Noname.GameAbilitySystem.DebugTool
+  syntax:
+    content: public void OnBeginDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: PointerEventData
+    content.vb: Public Sub OnBeginDrag(eventData As PointerEventData)
+  overload: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnBeginDrag*
+- uid: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnDrag(PointerEventData)
+  commentId: M:Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnDrag(PointerEventData)
+  id: OnDrag(PointerEventData)
+  parent: Noname.GameAbilitySystem.DebugTool.UIDraggableItem
+  langs:
+  - csharp
+  - vb
+  name: OnDrag(PointerEventData)
+  nameWithType: UIDraggableItem.OnDrag(PointerEventData)
+  fullName: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnDrag(PointerEventData)
+  type: Method
+  namespace: Noname.GameAbilitySystem.DebugTool
+  syntax:
+    content: public void OnDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: PointerEventData
+    content.vb: Public Sub OnDrag(eventData As PointerEventData)
+  overload: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnDrag*
+- uid: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnEndDrag(PointerEventData)
+  commentId: M:Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnEndDrag(PointerEventData)
+  id: OnEndDrag(PointerEventData)
+  parent: Noname.GameAbilitySystem.DebugTool.UIDraggableItem
+  langs:
+  - csharp
+  - vb
+  name: OnEndDrag(PointerEventData)
+  nameWithType: UIDraggableItem.OnEndDrag(PointerEventData)
+  fullName: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnEndDrag(PointerEventData)
+  type: Method
+  namespace: Noname.GameAbilitySystem.DebugTool
+  syntax:
+    content: public void OnEndDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: PointerEventData
+    content.vb: Public Sub OnEndDrag(eventData As PointerEventData)
+  overload: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnEndDrag*
+- uid: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.SetDragTarget(RectTransform)
+  commentId: M:Noname.GameAbilitySystem.DebugTool.UIDraggableItem.SetDragTarget(RectTransform)
+  id: SetDragTarget(RectTransform)
+  parent: Noname.GameAbilitySystem.DebugTool.UIDraggableItem
+  langs:
+  - csharp
+  - vb
+  name: SetDragTarget(RectTransform)
+  nameWithType: UIDraggableItem.SetDragTarget(RectTransform)
+  fullName: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.SetDragTarget(RectTransform)
+  type: Method
+  namespace: Noname.GameAbilitySystem.DebugTool
+  summary: 드래그할 대상을 지정합니다.
+  example: []
+  syntax:
+    content: public void SetDragTarget(RectTransform dragTarget)
+    parameters:
+    - id: dragTarget
+      type: RectTransform
+    content.vb: Public Sub SetDragTarget(dragTarget As RectTransform)
+  overload: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.SetDragTarget*
+references:
+- uid: Noname.GameAbilitySystem.DebugTool
+  commentId: N:Noname.GameAbilitySystem.DebugTool
+  href: Noname.html
+  name: Noname.GameAbilitySystem.DebugTool
+  nameWithType: Noname.GameAbilitySystem.DebugTool
+  fullName: Noname.GameAbilitySystem.DebugTool
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.DebugTool
+    name: DebugTool
+    href: Noname.GameAbilitySystem.DebugTool.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.DebugTool
+    name: DebugTool
+    href: Noname.GameAbilitySystem.DebugTool.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: IBeginDragHandler
+  commentId: '!:IBeginDragHandler'
+  isExternal: true
+  name: IBeginDragHandler
+  nameWithType: IBeginDragHandler
+  fullName: IBeginDragHandler
+- uid: IDragHandler
+  commentId: '!:IDragHandler'
+  isExternal: true
+  name: IDragHandler
+  nameWithType: IDragHandler
+  fullName: IDragHandler
+- uid: IEndDragHandler
+  commentId: '!:IEndDragHandler'
+  isExternal: true
+  name: IEndDragHandler
+  nameWithType: IEndDragHandler
+  fullName: IEndDragHandler
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnBeginDrag*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnBeginDrag
+  href: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.html#Noname_GameAbilitySystem_DebugTool_UIDraggableItem_OnBeginDrag_PointerEventData_
+  name: OnBeginDrag
+  nameWithType: UIDraggableItem.OnBeginDrag
+  fullName: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnBeginDrag
+- uid: PointerEventData
+  isExternal: true
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: PointerEventData
+- uid: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnDrag*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnDrag
+  href: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.html#Noname_GameAbilitySystem_DebugTool_UIDraggableItem_OnDrag_PointerEventData_
+  name: OnDrag
+  nameWithType: UIDraggableItem.OnDrag
+  fullName: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnDrag
+- uid: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnEndDrag*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnEndDrag
+  href: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.html#Noname_GameAbilitySystem_DebugTool_UIDraggableItem_OnEndDrag_PointerEventData_
+  name: OnEndDrag
+  nameWithType: UIDraggableItem.OnEndDrag
+  fullName: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.OnEndDrag
+- uid: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.SetDragTarget*
+  commentId: Overload:Noname.GameAbilitySystem.DebugTool.UIDraggableItem.SetDragTarget
+  href: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.html#Noname_GameAbilitySystem_DebugTool_UIDraggableItem_SetDragTarget_RectTransform_
+  name: SetDragTarget
+  nameWithType: UIDraggableItem.SetDragTarget
+  fullName: Noname.GameAbilitySystem.DebugTool.UIDraggableItem.SetDragTarget
+- uid: RectTransform
+  commentId: '!:RectTransform'
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: RectTransform

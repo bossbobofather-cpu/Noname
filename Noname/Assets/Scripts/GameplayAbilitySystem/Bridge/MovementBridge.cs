@@ -7,15 +7,28 @@ using UnityEngine;
 namespace MyProject.GameplayAbilitySystem.Bridge
 {
     /// <summary>
-    /// Unit Movement 관련 기능과 Ability System Component 간의 브리지 역할을 하는 클래스
+    /// ASC의 속성 및 태그 변화를 유닛의 이동 컴포넌트(IMovement)에 반영하는 브리지입니다.
+    /// 이동 속도, 점프력 변경 및 이동 차단 상태 등을 동기화합니다.
     /// </summary>
     [DisallowMultipleComponent]
     public class MovementBridge : MonoBehaviour
     {
         [SerializeField] private IMovement _movement;
         [SerializeField] private AbilitySystemComponent _abilitySystem;
+        
+        /// <summary>
+        /// 이동 속도 속성 ID입니다.
+        /// </summary>
         [SerializeField] private AttributeId _moveSpeedAttributeId = AttributeId.MoveSpeed;
+        
+        /// <summary>
+        /// 점프력 속성 ID입니다.
+        /// </summary>
         [SerializeField] private AttributeId _jumpSpeedAttributeId = AttributeId.JumpSpeed;
+        
+        /// <summary>
+        /// 이동 차단 시 적용될 태그입니다.
+        /// </summary>
         [SerializeField] private FGameplayTag _blockMoveTag = new FGameplayTag("Block.Move");
 
         private void Awake()
@@ -25,7 +38,7 @@ namespace MyProject.GameplayAbilitySystem.Bridge
                 _movement = GetComponent<IMovement>();
             }
 
-            //Bridge인데 IMovement 없으면 의미가 없으니 자동 추가
+            // Bridge인데 IMovement가 없으면 기능 수행 불가
             if (_movement == null)
             {
                 Debug.LogError($"[IMovement] Missing on {gameObject.name}.");
@@ -38,13 +51,14 @@ namespace MyProject.GameplayAbilitySystem.Bridge
                 _abilitySystem = GetComponent<AbilitySystemComponent>();
             }
 
-            //Bridge인데 AbilitySystemComponent가 없으면 의미가 없으니 자동 추가
+            // ASC 자동 추가
             if (_abilitySystem == null)
             {
                 _abilitySystem = gameObject.AddComponent<AbilitySystemComponent>();
                 Debug.LogWarning($"ASC가 없어서 추가되었습니다. {gameObject.name}.");
             }
 
+            // 초기 속성 값 적용
             if (TryGetAttributeValue(_moveSpeedAttributeId, out var moveSpeed))
             {
                 SetUnitMovementMoveSpeed(moveSpeed);
@@ -78,7 +92,9 @@ namespace MyProject.GameplayAbilitySystem.Bridge
             }
         }
 
-        //MoveSpeed, JumpSpeed 속성 변경시 호출되는 콜백
+        /// <summary>
+        /// 속성 수정자 변경 시 호출됩니다. 이동/점프 속도를 갱신합니다.
+        /// </summary>
         private void OnChangedAttributeModifier(AbilitySystemComponent component, AttributeModifier modifier, AttributeValue prevValue, AttributeValue value)
         {
             if (modifier.Attribute == null || value == null)

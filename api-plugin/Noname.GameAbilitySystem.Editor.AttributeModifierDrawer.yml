@@ -1,0 +1,160 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer
+  commentId: T:Noname.GameAbilitySystem.Editor.AttributeModifierDrawer
+  id: AttributeModifierDrawer
+  parent: Noname.GameAbilitySystem.Editor
+  children:
+  - Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  - Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  langs:
+  - csharp
+  - vb
+  name: AttributeModifierDrawer
+  nameWithType: AttributeModifierDrawer
+  fullName: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer
+  type: Class
+  namespace: Noname.GameAbilitySystem.Editor
+  summary: AttributeModifier를 인스펙터에서 보기 좋게 그리는 드로어입니다.
+  example: []
+  syntax:
+    content: 'public sealed class AttributeModifierDrawer : PropertyDrawer'
+    content.vb: Public NotInheritable Class AttributeModifierDrawer Inherits PropertyDrawer
+  inheritance:
+  - System.Object
+- uid: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  commentId: M:Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  id: OnGUI(Rect,SerializedProperty,GUIContent)
+  parent: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer
+  langs:
+  - csharp
+  - vb
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: AttributeModifierDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  fullName: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Editor
+  summary: ValueMode에 따라 노출 필드를 조절합니다.
+  example: []
+  syntax:
+    content: public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    parameters:
+    - id: position
+      type: Rect
+    - id: property
+      type: SerializedProperty
+    - id: label
+      type: GUIContent
+    content.vb: Public Overrides Sub OnGUI(position As Rect, [property] As SerializedProperty, label As GUIContent)
+  overload: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI*
+- uid: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  commentId: M:Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  id: GetPropertyHeight(SerializedProperty,GUIContent)
+  parent: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer
+  langs:
+  - csharp
+  - vb
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: AttributeModifierDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  fullName: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Editor
+  example: []
+  syntax:
+    content: public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+    parameters:
+    - id: property
+      type: SerializedProperty
+    - id: label
+      type: GUIContent
+    return:
+      type: System.Single
+    content.vb: Public Overrides Function GetPropertyHeight([property] As SerializedProperty, label As GUIContent) As Single
+  overload: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight*
+references:
+- uid: Noname.GameAbilitySystem.Editor
+  commentId: N:Noname.GameAbilitySystem.Editor
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Editor
+  nameWithType: Noname.GameAbilitySystem.Editor
+  fullName: Noname.GameAbilitySystem.Editor
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Editor
+    name: Editor
+    href: Noname.GameAbilitySystem.Editor.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Editor
+    name: Editor
+    href: Noname.GameAbilitySystem.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI*
+  commentId: Overload:Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI
+  href: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.html#Noname_GameAbilitySystem_Editor_AttributeModifierDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  name: OnGUI
+  nameWithType: AttributeModifierDrawer.OnGUI
+  fullName: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI
+- uid: Rect
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Rect
+- uid: SerializedProperty
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: SerializedProperty
+- uid: GUIContent
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: GUIContent
+- uid: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight*
+  commentId: Overload:Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight
+  href: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.html#Noname_GameAbilitySystem_Editor_AttributeModifierDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  name: GetPropertyHeight
+  nameWithType: AttributeModifierDrawer.GetPropertyHeight
+  fullName: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

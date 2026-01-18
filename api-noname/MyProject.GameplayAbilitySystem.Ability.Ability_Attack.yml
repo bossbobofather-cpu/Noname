@@ -1,0 +1,106 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Ability.Ability_Attack
+  commentId: T:MyProject.GameplayAbilitySystem.Ability.Ability_Attack
+  id: Ability_Attack
+  parent: MyProject.GameplayAbilitySystem.Ability
+  children:
+  - MyProject.GameplayAbilitySystem.Ability.Ability_Attack.ActivateAbility(AbilityContext)
+  langs:
+  - csharp
+  - vb
+  name: Ability_Attack
+  nameWithType: Ability_Attack
+  fullName: MyProject.GameplayAbilitySystem.Ability.Ability_Attack
+  type: Class
+  namespace: MyProject.GameplayAbilitySystem.Ability
+  summary: >-
+    공격 능력을 정의하는 클래스입니다.
+
+    애니메이터의 공격 트리거를 발동시킵니다.
+  example: []
+  syntax:
+    content: 'public class Ability_Attack : GameplayAbility'
+    content.vb: Public Class Ability_Attack Inherits GameplayAbility
+  inheritance:
+  - System.Object
+- uid: MyProject.GameplayAbilitySystem.Ability.Ability_Attack.ActivateAbility(AbilityContext)
+  commentId: M:MyProject.GameplayAbilitySystem.Ability.Ability_Attack.ActivateAbility(AbilityContext)
+  id: ActivateAbility(AbilityContext)
+  parent: MyProject.GameplayAbilitySystem.Ability.Ability_Attack
+  langs:
+  - csharp
+  - vb
+  name: ActivateAbility(AbilityContext)
+  nameWithType: Ability_Attack.ActivateAbility(AbilityContext)
+  fullName: MyProject.GameplayAbilitySystem.Ability.Ability_Attack.ActivateAbility(AbilityContext)
+  type: Method
+  namespace: MyProject.GameplayAbilitySystem.Ability
+  example: []
+  syntax:
+    content: protected override void ActivateAbility(AbilityContext context)
+    parameters:
+    - id: context
+      type: AbilityContext
+    content.vb: Protected Overrides Sub ActivateAbility(context As AbilityContext)
+  overload: MyProject.GameplayAbilitySystem.Ability.Ability_Attack.ActivateAbility*
+references:
+- uid: MyProject.GameplayAbilitySystem.Ability
+  commentId: N:MyProject.GameplayAbilitySystem.Ability
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Ability
+  nameWithType: MyProject.GameplayAbilitySystem.Ability
+  fullName: MyProject.GameplayAbilitySystem.Ability
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Ability
+    name: Ability
+    href: MyProject.GameplayAbilitySystem.Ability.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Ability
+    name: Ability
+    href: MyProject.GameplayAbilitySystem.Ability.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.GameplayAbilitySystem.Ability.Ability_Attack.ActivateAbility*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Ability.Ability_Attack.ActivateAbility
+  href: MyProject.GameplayAbilitySystem.Ability.Ability_Attack.html#MyProject_GameplayAbilitySystem_Ability_Ability_Attack_ActivateAbility_AbilityContext_
+  name: ActivateAbility
+  nameWithType: Ability_Attack.ActivateAbility
+  fullName: MyProject.GameplayAbilitySystem.Ability.Ability_Attack.ActivateAbility
+- uid: AbilityContext
+  isExternal: true
+  name: AbilityContext
+  nameWithType: AbilityContext
+  fullName: AbilityContext

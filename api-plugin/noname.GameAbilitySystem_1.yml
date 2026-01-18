@@ -1,0 +1,21 @@
+### YamlMime:ManagedReference
+items:
+- uid: noname.GameAbilitySystem
+  commentId: N:noname.GameAbilitySystem
+  id: noname.GameAbilitySystem
+  children:
+  - noname.GameAbilitySystem.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: noname.GameAbilitySystem
+  nameWithType: noname.GameAbilitySystem
+  fullName: noname.GameAbilitySystem
+  type: Namespace
+references:
+- uid: noname.GameAbilitySystem.GameplayEffect
+  commentId: T:noname.GameAbilitySystem.GameplayEffect
+  href: noname.GameAbilitySystem.GameplayEffect.html
+  name: GameplayEffect
+  nameWithType: GameplayEffect
+  fullName: noname.GameAbilitySystem.GameplayEffect

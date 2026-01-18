@@ -4,6 +4,10 @@ using Common.Interface;
 
 namespace MyProject.GameplayAbilitySystem.Bridge
 {
+    /// <summary>
+    /// 애니메이션 이벤트를 수신하여 AbilitySystemComponent(ASC)에 GameplayEvent로 전달하는 브리지 컴포넌트입니다.
+    /// 애니메이션에서 발생한 문자열 이벤트를 GameplayTag로 변환하여 처리합니다.
+    /// </summary>
     [DisallowMultipleComponent]
     public class AnimationEventBridge : MonoBehaviour
     {
@@ -17,7 +21,7 @@ namespace MyProject.GameplayAbilitySystem.Bridge
                 _receiver = GetComponent<IAnimEventReceiver>();
             }
 
-            //Bridge인데 IAnimEventReceiver 없으면 의미가 없으니 자동 추가
+            // Bridge인데 IAnimEventReceiver가 없으면 기능 수행이 불가능하므로 비활성화
             if (_receiver == null)
             {
                 Debug.LogError($"[IAnimEventReceiver] Missing on {gameObject.name}.");
@@ -30,7 +34,7 @@ namespace MyProject.GameplayAbilitySystem.Bridge
                 _abilitySystem = GetComponent<AbilitySystemComponent>();
             }
 
-            //Bridge인데 AbilitySystemComponent가 없으면 의미가 없으니 자동 추가
+            // ASC가 없으면 자동으로 추가하여 기능 보장
             if (_abilitySystem == null)
             {
                 _abilitySystem = gameObject.AddComponent<AbilitySystemComponent>();
@@ -48,7 +52,11 @@ namespace MyProject.GameplayAbilitySystem.Bridge
             if(_receiver != null) _receiver.OnAnimEventReceived -= OnAnimEventReceived;
         }
 
-        //해당 브릿지는 애니메이션 이벤트 발생 시 string 타입의 Data를 Tag로 변환하여 ASC에 Event Trigger로써 사용 한다.
+        /// <summary>
+        /// 애니메이션 이벤트 수신 시 호출됩니다.
+        /// 이벤트 데이터를 태그로 변환하여 ASC에 이벤트를 발생시킵니다.
+        /// </summary>
+        /// <param name="eventData">이벤트 이름(태그 문자열)</param>
         private void OnAnimEventReceived(string eventData)
         {
             if(string.IsNullOrEmpty(eventData)) return;
@@ -56,7 +64,7 @@ namespace MyProject.GameplayAbilitySystem.Bridge
             var registry = GameplayTagRegistry.RuntimeRegistry;
             if (registry == null) return;
 
-            //정확히 일치한 것만
+            // 정의된 태그인지 확인 (정확히 일치해야 함)
             if (!registry.IsTagDefined(eventData, includeParents: false))
             {
                 Debug.LogWarning($"Unknown tag: {eventData}");

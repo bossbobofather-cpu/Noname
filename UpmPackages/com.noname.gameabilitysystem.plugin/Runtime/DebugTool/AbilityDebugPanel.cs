@@ -1,10 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Noname.GameAbilitySystem.DebugTool
 {
+    /// <summary>
+    /// 능력 디버그 패널을 구성하는 컴포넌트입니다.
+    /// </summary>
     public sealed class AbilityDebugPanel : MonoBehaviour
     {
         private sealed class AbilityItem
@@ -61,6 +64,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void Awake()
         {
+            // 폰트와 툴팁 기본 구성을 준비한다.
             EnsureFont();
             if (_tooltipConfig != null)
             {
@@ -68,8 +72,12 @@ namespace Noname.GameAbilitySystem.DebugTool
             }
         }
 
+        /// <summary>
+        /// 패널을 초기화합니다.
+        /// </summary>
         public void Initialize(string title, IReadOnlyList<GameplayAbilityDefinition> allAbilities, IReadOnlyList<GameplayEffectConfig> allEffects, float refreshInterval)
         {
+            // 폰트를 먼저 확보한다.
             EnsureFont();
             var abilities = allAbilities ?? Array.Empty<GameplayAbilityDefinition>();
             var effects = allEffects ?? Array.Empty<GameplayEffectConfig>();
@@ -89,8 +97,12 @@ namespace Noname.GameAbilitySystem.DebugTool
             _initialized = true;
         }
 
+        /// <summary>
+        /// 패널 대상과 표시 이름을 설정합니다.
+        /// </summary>
         public void SetTarget(AbilitySystemComponent target, string displayName)
         {
+            // 대상과 타이틀을 설정한다.
             _target = target;
             if (_titleText != null)
             {
@@ -107,6 +119,7 @@ namespace Noname.GameAbilitySystem.DebugTool
                 return;
             }
 
+            // 일정 주기마다만 갱신한다.
             if (Time.unscaledTime < _nextRefreshTime)
             {
                 return;
@@ -118,12 +131,14 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void BuildStaticLists()
         {
+            // 정적 리스트를 다시 만든다.
             BuildAbilityList();
             BuildEffectList();
         }
 
         private void BuildAbilityList()
         {
+            // 능력 목록 UI를 다시 만든다.
             if (_abilityContent == null)
             {
                 return;
@@ -176,6 +191,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void BuildEffectList()
         {
+            // 효과 목록 UI를 다시 만든다.
             if (_effectContent == null)
             {
                 return;
@@ -214,6 +230,7 @@ namespace Noname.GameAbilitySystem.DebugTool
                 return;
             }
 
+            // 상태별 목록을 갱신한다.
             RefreshAbilityStates();
             RefreshActiveEffects();
             RefreshTags();
@@ -222,6 +239,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void RefreshAbilityStates()
         {
+            // 장착 상태를 계산한다.
             _equippedKeys.Clear();
             var specs = _target.Abilities;
             for (var i = 0; i < specs.Count; i++)
@@ -259,6 +277,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void RefreshActiveEffects()
         {
+            // 활성 효과 목록을 갱신한다.
             _target.GetActiveEffects(_activeEffectsBuffer);
             if (_activeEffectContent == null)
             {
@@ -303,6 +322,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void RefreshTags()
         {
+            // 태그 목록을 갱신한다.
             if (_tagContent == null)
             {
                 return;
@@ -341,6 +361,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void RefreshAttributes()
         {
+            // 속성 목록을 갱신한다.
             if (_attributeContent == null)
             {
                 return;
@@ -371,6 +392,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private static string BuildAbilityKey(Type abilityType, string abilityName)
         {
+            // 타입과 이름을 결합해 키를 만든다.
             var typeName = abilityType != null ? abilityType.FullName : string.Empty;
             var name = string.IsNullOrWhiteSpace(abilityName) ? string.Empty : abilityName;
             return $"{typeName}|{name}";
@@ -378,6 +400,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void ToggleAbility(AbilityItem item)
         {
+            // 장착 여부에 따라 부여/해제를 토글한다.
             if (_target == null || item == null)
             {
                 return;
@@ -399,6 +422,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void ActivateAbility(AbilityItem item)
         {
+            // 능력을 즉시 실행한다.
             if (_target == null || item == null || item.Definition == null)
             {
                 return;
@@ -409,6 +433,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void EndAbility(AbilityItem item)
         {
+            // 능력을 종료한다.
             if (_target == null || item == null || item.Definition == null)
             {
                 return;
@@ -419,6 +444,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void ApplyEffect(GameplayEffectConfig effect)
         {
+            // 효과를 적용한다.
             if (_target == null || effect == null)
             {
                 return;
@@ -429,6 +455,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void RemoveEffect(GameplayEffectConfig effect)
         {
+            // 효과를 제거하고 목록을 갱신한다.
             if (_target == null || effect == null)
             {
                 return;
@@ -440,6 +467,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private RectTransform CreateUIRect(string name, Transform parent)
         {
+            // 기본 RectTransform을 생성한다.
             var obj = new GameObject(name, typeof(RectTransform));
             var rect = obj.GetComponent<RectTransform>();
             rect.SetParent(parent, false);
@@ -454,6 +482,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private Text CreateText(string name, Transform parent, string text, int fontSize, FontStyle style, TextAnchor alignment, bool stretch)
         {
+            // 텍스트 오브젝트를 생성한다.
             var obj = new GameObject(name, typeof(RectTransform));
             var rect = obj.GetComponent<RectTransform>();
             rect.SetParent(parent, false);
@@ -486,6 +515,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private GameObject CreateRow(RectTransform parent, out Image background, bool horizontal = true)
         {
+            // 행 컨테이너를 만든다.
             var rect = CreateUIRect("Row", parent);
             background = rect.gameObject.AddComponent<Image>();
             background.color = _rowColor;
@@ -509,6 +539,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private Button CreateButton(string name, Transform parent, string label, float width = 0f, bool flexibleWidth = false, RectTransform dragTarget = null)
         {
+            // 버튼 요소를 만든다.
             var rect = CreateUIRect(name, parent);
             var image = rect.gameObject.AddComponent<Image>();
             image.color = _buttonColor;
@@ -542,6 +573,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private Text CreateLabel(string name, Transform parent, string label, TextAnchor alignment)
         {
+            // 라벨 텍스트를 만든다.
             var text = CreateText(name, parent, label, 12, FontStyle.Normal, alignment, stretch: true);
             var element = text.gameObject.AddComponent<LayoutElement>();
             element.flexibleWidth = 1f;
@@ -550,6 +582,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void AddDraggable(GameObject row)
         {
+            // 드래그 컴포넌트를 보장한다.
             if (row.GetComponent<UIDraggableItem>() == null)
             {
                 row.AddComponent<UIDraggableItem>();
@@ -558,6 +591,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private SimpleRow GetOrCreateButtonRow(List<SimpleRow> rows, RectTransform parent, int index)
         {
+            // 필요한 버튼 행을 가져오거나 만든다.
             if (index < rows.Count)
             {
                 return rows[index];
@@ -581,6 +615,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private SimpleRow GetOrCreateLabelRow(List<SimpleRow> rows, RectTransform parent, int index)
         {
+            // 필요한 라벨 행을 가져오거나 만든다.
             if (index < rows.Count)
             {
                 return rows[index];
@@ -602,6 +637,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void DeactivateUnusedRows(List<SimpleRow> rows, int usedCount)
         {
+            // 사용하지 않는 행은 비활성화한다.
             for (var i = usedCount; i < rows.Count; i++)
             {
                 if (rows[i]?.Root != null)
@@ -613,6 +649,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void EnsureFont()
         {
+            // 사용할 폰트를 순서대로 찾는다.
             if (_font != null)
             {
                 return;
@@ -636,6 +673,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void EnsureTooltip()
         {
+            // 툴팁 인스턴스를 준비한다.
             if (_tooltip != null)
             {
                 return;
@@ -657,6 +695,7 @@ namespace Noname.GameAbilitySystem.DebugTool
             title = string.Empty;
             description = string.Empty;
 
+            // 설정에서 능력 툴팁을 조회한다.
             if (_tooltipConfig == null || definition == null)
             {
                 return false;
@@ -680,6 +719,7 @@ namespace Noname.GameAbilitySystem.DebugTool
             title = string.Empty;
             description = string.Empty;
 
+            // 설정에서 효과 툴팁을 조회한다.
             if (_tooltipConfig == null || effect == null)
             {
                 return false;
@@ -700,6 +740,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void TryAttachTooltip(Button button, string title, string description)
         {
+            // 버튼에 툴팁 트리거를 연결한다.
             if (button == null)
             {
                 return;
@@ -718,6 +759,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void RemoveTooltip(Button button)
         {
+            // 버튼에서 툴팁 트리거를 제거한다.
             if (button == null)
             {
                 return;
@@ -732,6 +774,7 @@ namespace Noname.GameAbilitySystem.DebugTool
 
         private void ClearChildren(RectTransform parent)
         {
+            // 자식 오브젝트를 모두 제거한다.
             if (parent == null)
             {
                 return;

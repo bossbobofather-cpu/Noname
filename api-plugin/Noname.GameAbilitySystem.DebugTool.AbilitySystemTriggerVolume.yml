@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.DebugTool.AbilitySystemTriggerVolume
+  commentId: T:Noname.GameAbilitySystem.DebugTool.AbilitySystemTriggerVolume
+  id: AbilitySystemTriggerVolume
+  parent: Noname.GameAbilitySystem.DebugTool
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: AbilitySystemTriggerVolume
+  nameWithType: AbilitySystemTriggerVolume
+  fullName: Noname.GameAbilitySystem.DebugTool.AbilitySystemTriggerVolume
+  type: Class
+  namespace: Noname.GameAbilitySystem.DebugTool
+  summary: 태그와 효과를 자동 적용하는 트리거 볼륨입니다.
+  example: []
+  syntax:
+    content: 'public sealed class AbilitySystemTriggerVolume : MonoBehaviour'
+    content.vb: Public NotInheritable Class AbilitySystemTriggerVolume Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+references:
+- uid: Noname.GameAbilitySystem.DebugTool
+  commentId: N:Noname.GameAbilitySystem.DebugTool
+  href: Noname.html
+  name: Noname.GameAbilitySystem.DebugTool
+  nameWithType: Noname.GameAbilitySystem.DebugTool
+  fullName: Noname.GameAbilitySystem.DebugTool
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.DebugTool
+    name: DebugTool
+    href: Noname.GameAbilitySystem.DebugTool.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.DebugTool
+    name: DebugTool
+    href: Noname.GameAbilitySystem.DebugTool.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

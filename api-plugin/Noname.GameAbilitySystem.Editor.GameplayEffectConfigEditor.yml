@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor
+  commentId: T:Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor
+  id: GameplayEffectConfigEditor
+  parent: Noname.GameAbilitySystem.Editor
+  children:
+  - Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor.OnInspectorGUI
+  langs:
+  - csharp
+  - vb
+  name: GameplayEffectConfigEditor
+  nameWithType: GameplayEffectConfigEditor
+  fullName: Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor
+  type: Class
+  namespace: Noname.GameAbilitySystem.Editor
+  summary: GameplayEffectConfig 인스펙터를 사용자 정의로 표시합니다.
+  example: []
+  syntax:
+    content: 'public sealed class GameplayEffectConfigEditor : UnityEditor.Editor'
+    content.vb: Public NotInheritable Class GameplayEffectConfigEditor Inherits UnityEditor.Editor
+  inheritance:
+  - System.Object
+- uid: Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor.OnInspectorGUI
+  commentId: M:Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor.OnInspectorGUI
+  id: OnInspectorGUI
+  parent: Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor
+  langs:
+  - csharp
+  - vb
+  name: OnInspectorGUI()
+  nameWithType: GameplayEffectConfigEditor.OnInspectorGUI()
+  fullName: Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor.OnInspectorGUI()
+  type: Method
+  namespace: Noname.GameAbilitySystem.Editor
+  summary: 지속 타입에 따라 노출 필드를 조절하며 그립니다.
+  example: []
+  syntax:
+    content: public override void OnInspectorGUI()
+    content.vb: Public Overrides Sub OnInspectorGUI()
+  overload: Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor.OnInspectorGUI*
+references:
+- uid: Noname.GameAbilitySystem.Editor
+  commentId: N:Noname.GameAbilitySystem.Editor
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Editor
+  nameWithType: Noname.GameAbilitySystem.Editor
+  fullName: Noname.GameAbilitySystem.Editor
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Editor
+    name: Editor
+    href: Noname.GameAbilitySystem.Editor.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Editor
+    name: Editor
+    href: Noname.GameAbilitySystem.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor.OnInspectorGUI*
+  commentId: Overload:Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor.OnInspectorGUI
+  href: Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor.html#Noname_GameAbilitySystem_Editor_GameplayEffectConfigEditor_OnInspectorGUI
+  name: OnInspectorGUI
+  nameWithType: GameplayEffectConfigEditor.OnInspectorGUI
+  fullName: Noname.GameAbilitySystem.Editor.GameplayEffectConfigEditor.OnInspectorGUI

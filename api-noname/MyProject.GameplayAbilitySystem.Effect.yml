@@ -1,0 +1,21 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Effect
+  commentId: N:MyProject.GameplayAbilitySystem.Effect
+  id: MyProject.GameplayAbilitySystem.Effect
+  children:
+  - MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage
+  langs:
+  - csharp
+  - vb
+  name: MyProject.GameplayAbilitySystem.Effect
+  nameWithType: MyProject.GameplayAbilitySystem.Effect
+  fullName: MyProject.GameplayAbilitySystem.Effect
+  type: Namespace
+references:
+- uid: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage
+  commentId: T:MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage
+  href: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage.html
+  name: EC_AttackDamage
+  nameWithType: EC_AttackDamage
+  fullName: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage

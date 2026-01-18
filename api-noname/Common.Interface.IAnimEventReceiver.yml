@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: Common.Interface.IAnimEventReceiver
+  commentId: T:Common.Interface.IAnimEventReceiver
+  id: IAnimEventReceiver
+  parent: Common.Interface
+  children:
+  - Common.Interface.IAnimEventReceiver.OnAnimEventReceived
+  - Common.Interface.IAnimEventReceiver.OnAnimationEventReceive(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IAnimEventReceiver
+  nameWithType: IAnimEventReceiver
+  fullName: Common.Interface.IAnimEventReceiver
+  type: Interface
+  namespace: Common.Interface
+  summary: 애니메이션 이벤트를 수신하고 처리하기 위한 인터페이스입니다.
+  example: []
+  syntax:
+    content: public interface IAnimEventReceiver
+    content.vb: Public Interface IAnimEventReceiver
+- uid: Common.Interface.IAnimEventReceiver.OnAnimEventReceived
+  commentId: E:Common.Interface.IAnimEventReceiver.OnAnimEventReceived
+  id: OnAnimEventReceived
+  parent: Common.Interface.IAnimEventReceiver
+  langs:
+  - csharp
+  - vb
+  name: OnAnimEventReceived
+  nameWithType: IAnimEventReceiver.OnAnimEventReceived
+  fullName: Common.Interface.IAnimEventReceiver.OnAnimEventReceived
+  type: Event
+  namespace: Common.Interface
+  summary: 애니메이션 이벤트가 수신되었을 때 발생하는 이벤트입니다.
+  example: []
+  syntax:
+    content: event Action<string> OnAnimEventReceived
+    return:
+      type: System.Action{System.String}
+    content.vb: Event OnAnimEventReceived As Action(Of String)
+- uid: Common.Interface.IAnimEventReceiver.OnAnimationEventReceive(System.String)
+  commentId: M:Common.Interface.IAnimEventReceiver.OnAnimationEventReceive(System.String)
+  id: OnAnimationEventReceive(System.String)
+  parent: Common.Interface.IAnimEventReceiver
+  langs:
+  - csharp
+  - vb
+  name: OnAnimationEventReceive(string)
+  nameWithType: IAnimEventReceiver.OnAnimationEventReceive(string)
+  fullName: Common.Interface.IAnimEventReceiver.OnAnimationEventReceive(string)
+  type: Method
+  namespace: Common.Interface
+  summary: 애니메이션 이벤트를 수신했을 때 호출되는 메서드입니다.
+  example: []
+  syntax:
+    content: void OnAnimationEventReceive(string eventData)
+    parameters:
+    - id: eventData
+      type: System.String
+      description: 이벤트와 함께 전달된 데이터 문자열입니다.
+    content.vb: Sub OnAnimationEventReceive(eventData As String)
+  overload: Common.Interface.IAnimEventReceiver.OnAnimationEventReceive*
+  nameWithType.vb: IAnimEventReceiver.OnAnimationEventReceive(String)
+  fullName.vb: Common.Interface.IAnimEventReceiver.OnAnimationEventReceive(String)
+  name.vb: OnAnimationEventReceive(String)
+references:
+- uid: Common.Interface
+  commentId: N:Common.Interface
+  href: Common.html
+  name: Common.Interface
+  nameWithType: Common.Interface
+  fullName: Common.Interface
+  spec.csharp:
+  - uid: Common
+    name: Common
+    href: Common.html
+  - name: .
+  - uid: Common.Interface
+    name: Interface
+    href: Common.Interface.html
+  spec.vb:
+  - uid: Common
+    name: Common
+    href: Common.html
+  - name: .
+  - uid: Common.Interface
+    name: Interface
+    href: Common.Interface.html
+- uid: System.Action{System.String}
+  commentId: T:System.Action{System.String}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<string>
+  nameWithType: Action<string>
+  fullName: System.Action<string>
+  nameWithType.vb: Action(Of String)
+  fullName.vb: System.Action(Of String)
+  name.vb: Action(Of String)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Common.Interface.IAnimEventReceiver.OnAnimationEventReceive*
+  commentId: Overload:Common.Interface.IAnimEventReceiver.OnAnimationEventReceive
+  href: Common.Interface.IAnimEventReceiver.html#Common_Interface_IAnimEventReceiver_OnAnimationEventReceive_System_String_
+  name: OnAnimationEventReceive
+  nameWithType: IAnimEventReceiver.OnAnimationEventReceive
+  fullName: Common.Interface.IAnimEventReceiver.OnAnimationEventReceive
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

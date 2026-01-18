@@ -1,0 +1,276 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig
+  commentId: T:MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig
+  id: GameplayTargetActorRegistryConfig
+  parent: MyProject.GameplayAbilitySystem.Config
+  children:
+  - MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.FactionMode
+  - MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.LeftAngle
+  - MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.RightAngle
+  - MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.SelectionMode
+  - MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.TargetGroup
+  langs:
+  - csharp
+  - vb
+  name: GameplayTargetActorRegistryConfig
+  nameWithType: GameplayTargetActorRegistryConfig
+  fullName: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig
+  type: Class
+  namespace: MyProject.GameplayAbilitySystem.Config
+  summary: >-
+    타겟 레지스트리를 통해 대상을 탐색하는 방식에 대한 설정입니다.
+
+    대상 그룹, 선택 모드, 진영 모드, 탐색 각도 등을 정의합니다.
+  example: []
+  syntax:
+    content: 'public sealed class GameplayTargetActorRegistryConfig : GameplayTargetActorConfig'
+    content.vb: Public NotInheritable Class GameplayTargetActorRegistryConfig Inherits GameplayTargetActorConfig
+  inheritance:
+  - System.Object
+- uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.TargetGroup
+  commentId: P:MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.TargetGroup
+  id: TargetGroup
+  parent: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig
+  langs:
+  - csharp
+  - vb
+  name: TargetGroup
+  nameWithType: GameplayTargetActorRegistryConfig.TargetGroup
+  fullName: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.TargetGroup
+  type: Property
+  namespace: MyProject.GameplayAbilitySystem.Config
+  summary: '탐색할 대상 그룹입니다 (예: 플레이어, 적).'
+  example: []
+  syntax:
+    content: public TargetGroup TargetGroup { get; }
+    parameters: []
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetGroup
+    content.vb: Public ReadOnly Property TargetGroup As TargetGroup
+  overload: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.TargetGroup*
+- uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.SelectionMode
+  commentId: P:MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.SelectionMode
+  id: SelectionMode
+  parent: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig
+  langs:
+  - csharp
+  - vb
+  name: SelectionMode
+  nameWithType: GameplayTargetActorRegistryConfig.SelectionMode
+  fullName: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.SelectionMode
+  type: Property
+  namespace: MyProject.GameplayAbilitySystem.Config
+  summary: '탐색된 대상 중 어떤 대상을 선택할지 결정하는 모드입니다 (예: 전체, 가장 가까운 대상).'
+  example: []
+  syntax:
+    content: public TargetSelectionMode SelectionMode { get; }
+    parameters: []
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+    content.vb: Public ReadOnly Property SelectionMode As TargetSelectionMode
+  overload: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.SelectionMode*
+- uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.FactionMode
+  commentId: P:MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.FactionMode
+  id: FactionMode
+  parent: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig
+  langs:
+  - csharp
+  - vb
+  name: FactionMode
+  nameWithType: GameplayTargetActorRegistryConfig.FactionMode
+  fullName: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.FactionMode
+  type: Property
+  namespace: MyProject.GameplayAbilitySystem.Config
+  summary: '시전자와의 진영 관계에 따른 필터링 모드입니다 (예: 아군, 적군).'
+  example: []
+  syntax:
+    content: public TargetFactionMode FactionMode { get; }
+    parameters: []
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+    content.vb: Public ReadOnly Property FactionMode As TargetFactionMode
+  overload: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.FactionMode*
+- uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.LeftAngle
+  commentId: P:MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.LeftAngle
+  id: LeftAngle
+  parent: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig
+  langs:
+  - csharp
+  - vb
+  name: LeftAngle
+  nameWithType: GameplayTargetActorRegistryConfig.LeftAngle
+  fullName: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.LeftAngle
+  type: Property
+  namespace: MyProject.GameplayAbilitySystem.Config
+  summary: 탐색 시야의 왼쪽 각도입니다.
+  example: []
+  syntax:
+    content: public float LeftAngle { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property LeftAngle As Single
+  overload: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.LeftAngle*
+- uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.RightAngle
+  commentId: P:MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.RightAngle
+  id: RightAngle
+  parent: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig
+  langs:
+  - csharp
+  - vb
+  name: RightAngle
+  nameWithType: GameplayTargetActorRegistryConfig.RightAngle
+  fullName: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.RightAngle
+  type: Property
+  namespace: MyProject.GameplayAbilitySystem.Config
+  summary: 탐색 시야의 오른쪽 각도입니다.
+  example: []
+  syntax:
+    content: public float RightAngle { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property RightAngle As Single
+  overload: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.RightAngle*
+references:
+- uid: MyProject.GameplayAbilitySystem.Config
+  commentId: N:MyProject.GameplayAbilitySystem.Config
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Config
+  nameWithType: MyProject.GameplayAbilitySystem.Config
+  fullName: MyProject.GameplayAbilitySystem.Config
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Config
+    name: Config
+    href: MyProject.GameplayAbilitySystem.Config.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Config
+    name: Config
+    href: MyProject.GameplayAbilitySystem.Config.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.TargetGroup*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.TargetGroup
+  href: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.html#MyProject_GameplayAbilitySystem_Config_GameplayTargetActorRegistryConfig_TargetGroup
+  name: TargetGroup
+  nameWithType: GameplayTargetActorRegistryConfig.TargetGroup
+  fullName: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.TargetGroup
+- uid: MyProject.GameplayAbilitySystem.Define.TargetGroup
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetGroup
+  parent: MyProject.GameplayAbilitySystem.Define
+  href: MyProject.GameplayAbilitySystem.Define.TargetGroup.html
+  name: TargetGroup
+  nameWithType: TargetGroup
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetGroup
+- uid: MyProject.GameplayAbilitySystem.Define
+  commentId: N:MyProject.GameplayAbilitySystem.Define
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Define
+  nameWithType: MyProject.GameplayAbilitySystem.Define
+  fullName: MyProject.GameplayAbilitySystem.Define
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html
+- uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.SelectionMode*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.SelectionMode
+  href: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.html#MyProject_GameplayAbilitySystem_Config_GameplayTargetActorRegistryConfig_SelectionMode
+  name: SelectionMode
+  nameWithType: GameplayTargetActorRegistryConfig.SelectionMode
+  fullName: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.SelectionMode
+- uid: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+  parent: MyProject.GameplayAbilitySystem.Define
+  href: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode.html
+  name: TargetSelectionMode
+  nameWithType: TargetSelectionMode
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
+- uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.FactionMode*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.FactionMode
+  href: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.html#MyProject_GameplayAbilitySystem_Config_GameplayTargetActorRegistryConfig_FactionMode
+  name: FactionMode
+  nameWithType: GameplayTargetActorRegistryConfig.FactionMode
+  fullName: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.FactionMode
+- uid: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+  parent: MyProject.GameplayAbilitySystem.Define
+  href: MyProject.GameplayAbilitySystem.Define.TargetFactionMode.html
+  name: TargetFactionMode
+  nameWithType: TargetFactionMode
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+- uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.LeftAngle*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.LeftAngle
+  href: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.html#MyProject_GameplayAbilitySystem_Config_GameplayTargetActorRegistryConfig_LeftAngle
+  name: LeftAngle
+  nameWithType: GameplayTargetActorRegistryConfig.LeftAngle
+  fullName: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.LeftAngle
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.RightAngle*
+  commentId: Overload:MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.RightAngle
+  href: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.html#MyProject_GameplayAbilitySystem_Config_GameplayTargetActorRegistryConfig_RightAngle
+  name: RightAngle
+  nameWithType: GameplayTargetActorRegistryConfig.RightAngle
+  fullName: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig.RightAngle

@@ -301,7 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MyProject.Common.UI.HealthBarOwner
   _abilitySystem: {fileID: 0}
   _followTarget: {fileID: 0}
-  _worldOffset: {x: 0, y: 2, z: 0}
+  _worldOffset: {x: 0, y: 7, z: 0}
   _healthAttribute: 2
   _pool: {fileID: 0}
   _camera: {fileID: 0}

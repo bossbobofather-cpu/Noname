@@ -5,25 +5,74 @@ using Noname.GameAbilitySystem;
 
 namespace MyProject.Common.UI
 {
+    /// <summary>
+    /// 월드 공간(World Space)에서 대상을 따라다니는 체력바 UI입니다.
+    /// 대상의 바로 위에 떠 있는 체력바 등을 구현할 때 사용됩니다.
+    /// </summary>
     [DisallowMultipleComponent]
     public sealed class WorldHealthBar : MonoBehaviour
     {
         [Header("Target")]
+        /// <summary>
+        /// 체력바가 따라다닐 대상입니다.
+        /// </summary>
         [SerializeField] private Transform _followTarget;
+        
+        /// <summary>
+        /// 대상 위치로부터의 오프셋입니다.
+        /// </summary>
         [SerializeField] private Vector3 _worldOffset = new Vector3(0f, 2f, 0f);
 
         [Header("Health")]
+        /// <summary>
+        /// 체력 정보를 가져올 AbilitySystem입니다.
+        /// </summary>
         [SerializeField] private AbilitySystemComponent _abilitySystem;
+        
+        /// <summary>
+        /// 표시할 체력 속성의 ID입니다.
+        /// </summary>
         [SerializeField] private AttributeId _healthAttribute = AttributeId.Health;
+        
+        /// <summary>
+        /// 체력 상태를 표시할 이미지입니다.
+        /// </summary>
         [SerializeField] private Image _fillImage;
+        
+        /// <summary>
+        /// 체력 수치를 표시할 텍스트입니다.
+        /// </summary>
         [SerializeField] private TMP_Text _valueLabel;
+        
+        /// <summary>
+        /// 체력 수치 텍스트 표시 여부입니다.
+        /// </summary>
         [SerializeField] private bool _showValue = true;
+        
+        /// <summary>
+        /// 체력 정보 갱신 간격(초)입니다.
+        /// </summary>
         [SerializeField] private float _refreshInterval = 0.1f;
+        
+        /// <summary>
+        /// 게이지 변화 시 부드러운 이동 속도입니다.
+        /// </summary>
         [SerializeField] private float _smoothSpeed = 0f;
 
         [Header("Facing")]
+        /// <summary>
+        /// 항상 카메라를 바라볼지 여부입니다.
+        /// </summary>
         [SerializeField] private bool _faceCamera = true;
+        
+        /// <summary>
+        /// Y축 회전만 고정하여 빌보드 효과를 줄지 여부입니다.
+        /// </summary>
         [SerializeField] private bool _lockYRotation = true;
+        
+        /// <summary>
+        /// 바라볼 카메라입니다. 없으면 MainCamera를 사용합니다.
+        /// </summary>
         [SerializeField] private Camera _camera;
 
         private float _nextRefreshTime;
@@ -106,6 +155,7 @@ namespace MyProject.Common.UI
                 return;
             }
 
+            // 최소/최대값 보정
             var min = health.MinValue;
             var max = health.MaxValue;
             if (max <= min)
@@ -161,6 +211,7 @@ namespace MyProject.Common.UI
                 direction.y = 0f;
             }
 
+            // 방향 벡터가 너무 작으면 회전 계산 생략
             if (direction.sqrMagnitude < 0.0001f)
             {
                 return;

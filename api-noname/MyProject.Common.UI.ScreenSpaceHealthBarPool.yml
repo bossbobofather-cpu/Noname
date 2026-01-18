@@ -1,0 +1,237 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.UI.ScreenSpaceHealthBarPool
+  commentId: T:MyProject.Common.UI.ScreenSpaceHealthBarPool
+  id: ScreenSpaceHealthBarPool
+  parent: MyProject.Common.UI
+  children:
+  - MyProject.Common.UI.ScreenSpaceHealthBarPool.Acquire
+  - MyProject.Common.UI.ScreenSpaceHealthBarPool.ActiveRoot
+  - MyProject.Common.UI.ScreenSpaceHealthBarPool.Canvas
+  - MyProject.Common.UI.ScreenSpaceHealthBarPool.Instance
+  - MyProject.Common.UI.ScreenSpaceHealthBarPool.Release(MyProject.Common.UI.ScreenSpaceHealthBar)
+  langs:
+  - csharp
+  - vb
+  name: ScreenSpaceHealthBarPool
+  nameWithType: ScreenSpaceHealthBarPool
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool
+  type: Class
+  namespace: MyProject.Common.UI
+  summary: ScreenSpaceHealthBar 객체를 재사용하기 위한 풀링 시스템입니다.
+  example: []
+  syntax:
+    content: 'public sealed class ScreenSpaceHealthBarPool : MonoBehaviour'
+    content.vb: Public NotInheritable Class ScreenSpaceHealthBarPool Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MyProject.Common.UI.ScreenSpaceHealthBarPool.Instance
+  commentId: P:MyProject.Common.UI.ScreenSpaceHealthBarPool.Instance
+  id: Instance
+  parent: MyProject.Common.UI.ScreenSpaceHealthBarPool
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: ScreenSpaceHealthBarPool.Instance
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool.Instance
+  type: Property
+  namespace: MyProject.Common.UI
+  summary: 싱글톤 인스턴스입니다.
+  example: []
+  syntax:
+    content: public static ScreenSpaceHealthBarPool Instance { get; }
+    parameters: []
+    return:
+      type: MyProject.Common.UI.ScreenSpaceHealthBarPool
+    content.vb: Public Shared Property Instance As ScreenSpaceHealthBarPool
+  overload: MyProject.Common.UI.ScreenSpaceHealthBarPool.Instance*
+- uid: MyProject.Common.UI.ScreenSpaceHealthBarPool.Canvas
+  commentId: P:MyProject.Common.UI.ScreenSpaceHealthBarPool.Canvas
+  id: Canvas
+  parent: MyProject.Common.UI.ScreenSpaceHealthBarPool
+  langs:
+  - csharp
+  - vb
+  name: Canvas
+  nameWithType: ScreenSpaceHealthBarPool.Canvas
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool.Canvas
+  type: Property
+  namespace: MyProject.Common.UI
+  summary: 현재 사용 중인 캔버스입니다.
+  example: []
+  syntax:
+    content: public Canvas Canvas { get; }
+    parameters: []
+    return:
+      type: Canvas
+    content.vb: Public ReadOnly Property Canvas As Canvas
+  overload: MyProject.Common.UI.ScreenSpaceHealthBarPool.Canvas*
+- uid: MyProject.Common.UI.ScreenSpaceHealthBarPool.ActiveRoot
+  commentId: P:MyProject.Common.UI.ScreenSpaceHealthBarPool.ActiveRoot
+  id: ActiveRoot
+  parent: MyProject.Common.UI.ScreenSpaceHealthBarPool
+  langs:
+  - csharp
+  - vb
+  name: ActiveRoot
+  nameWithType: ScreenSpaceHealthBarPool.ActiveRoot
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool.ActiveRoot
+  type: Property
+  namespace: MyProject.Common.UI
+  summary: 활성 객체가 배치되는 루트 트랜스폼입니다.
+  example: []
+  syntax:
+    content: public RectTransform ActiveRoot { get; }
+    parameters: []
+    return:
+      type: RectTransform
+    content.vb: Public ReadOnly Property ActiveRoot As RectTransform
+  overload: MyProject.Common.UI.ScreenSpaceHealthBarPool.ActiveRoot*
+- uid: MyProject.Common.UI.ScreenSpaceHealthBarPool.Acquire
+  commentId: M:MyProject.Common.UI.ScreenSpaceHealthBarPool.Acquire
+  id: Acquire
+  parent: MyProject.Common.UI.ScreenSpaceHealthBarPool
+  langs:
+  - csharp
+  - vb
+  name: Acquire()
+  nameWithType: ScreenSpaceHealthBarPool.Acquire()
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool.Acquire()
+  type: Method
+  namespace: MyProject.Common.UI
+  summary: 체력바 객체를 풀에서 가져오거나 생성합니다.
+  example: []
+  syntax:
+    content: public ScreenSpaceHealthBar Acquire()
+    return:
+      type: MyProject.Common.UI.ScreenSpaceHealthBar
+      description: 활성화된 ScreenSpaceHealthBar 인스턴스
+    content.vb: Public Function Acquire() As ScreenSpaceHealthBar
+  overload: MyProject.Common.UI.ScreenSpaceHealthBarPool.Acquire*
+- uid: MyProject.Common.UI.ScreenSpaceHealthBarPool.Release(MyProject.Common.UI.ScreenSpaceHealthBar)
+  commentId: M:MyProject.Common.UI.ScreenSpaceHealthBarPool.Release(MyProject.Common.UI.ScreenSpaceHealthBar)
+  id: Release(MyProject.Common.UI.ScreenSpaceHealthBar)
+  parent: MyProject.Common.UI.ScreenSpaceHealthBarPool
+  langs:
+  - csharp
+  - vb
+  name: Release(ScreenSpaceHealthBar)
+  nameWithType: ScreenSpaceHealthBarPool.Release(ScreenSpaceHealthBar)
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool.Release(MyProject.Common.UI.ScreenSpaceHealthBar)
+  type: Method
+  namespace: MyProject.Common.UI
+  summary: 사용이 끝난 체력바 객체를 풀에 반환합니다.
+  example: []
+  syntax:
+    content: public void Release(ScreenSpaceHealthBar bar)
+    parameters:
+    - id: bar
+      type: MyProject.Common.UI.ScreenSpaceHealthBar
+      description: 반환할 체력바 인스턴스
+    content.vb: Public Sub Release(bar As ScreenSpaceHealthBar)
+  overload: MyProject.Common.UI.ScreenSpaceHealthBarPool.Release*
+references:
+- uid: MyProject.Common.UI
+  commentId: N:MyProject.Common.UI
+  href: MyProject.html
+  name: MyProject.Common.UI
+  nameWithType: MyProject.Common.UI
+  fullName: MyProject.Common.UI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.UI.ScreenSpaceHealthBarPool.Instance*
+  commentId: Overload:MyProject.Common.UI.ScreenSpaceHealthBarPool.Instance
+  href: MyProject.Common.UI.ScreenSpaceHealthBarPool.html#MyProject_Common_UI_ScreenSpaceHealthBarPool_Instance
+  name: Instance
+  nameWithType: ScreenSpaceHealthBarPool.Instance
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool.Instance
+- uid: MyProject.Common.UI.ScreenSpaceHealthBarPool
+  commentId: T:MyProject.Common.UI.ScreenSpaceHealthBarPool
+  parent: MyProject.Common.UI
+  href: MyProject.Common.UI.ScreenSpaceHealthBarPool.html
+  name: ScreenSpaceHealthBarPool
+  nameWithType: ScreenSpaceHealthBarPool
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool
+- uid: MyProject.Common.UI.ScreenSpaceHealthBarPool.Canvas*
+  commentId: Overload:MyProject.Common.UI.ScreenSpaceHealthBarPool.Canvas
+  href: MyProject.Common.UI.ScreenSpaceHealthBarPool.html#MyProject_Common_UI_ScreenSpaceHealthBarPool_Canvas
+  name: Canvas
+  nameWithType: ScreenSpaceHealthBarPool.Canvas
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool.Canvas
+- uid: Canvas
+  isExternal: true
+  name: Canvas
+  nameWithType: Canvas
+  fullName: Canvas
+- uid: MyProject.Common.UI.ScreenSpaceHealthBarPool.ActiveRoot*
+  commentId: Overload:MyProject.Common.UI.ScreenSpaceHealthBarPool.ActiveRoot
+  href: MyProject.Common.UI.ScreenSpaceHealthBarPool.html#MyProject_Common_UI_ScreenSpaceHealthBarPool_ActiveRoot
+  name: ActiveRoot
+  nameWithType: ScreenSpaceHealthBarPool.ActiveRoot
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool.ActiveRoot
+- uid: RectTransform
+  commentId: '!:RectTransform'
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: RectTransform
+- uid: MyProject.Common.UI.ScreenSpaceHealthBarPool.Acquire*
+  commentId: Overload:MyProject.Common.UI.ScreenSpaceHealthBarPool.Acquire
+  href: MyProject.Common.UI.ScreenSpaceHealthBarPool.html#MyProject_Common_UI_ScreenSpaceHealthBarPool_Acquire
+  name: Acquire
+  nameWithType: ScreenSpaceHealthBarPool.Acquire
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool.Acquire
+- uid: MyProject.Common.UI.ScreenSpaceHealthBar
+  commentId: T:MyProject.Common.UI.ScreenSpaceHealthBar
+  parent: MyProject.Common.UI
+  href: MyProject.Common.UI.ScreenSpaceHealthBar.html
+  name: ScreenSpaceHealthBar
+  nameWithType: ScreenSpaceHealthBar
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBar
+- uid: MyProject.Common.UI.ScreenSpaceHealthBarPool.Release*
+  commentId: Overload:MyProject.Common.UI.ScreenSpaceHealthBarPool.Release
+  href: MyProject.Common.UI.ScreenSpaceHealthBarPool.html#MyProject_Common_UI_ScreenSpaceHealthBarPool_Release_MyProject_Common_UI_ScreenSpaceHealthBar_
+  name: Release
+  nameWithType: ScreenSpaceHealthBarPool.Release
+  fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool.Release

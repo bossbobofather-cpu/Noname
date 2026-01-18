@@ -1,0 +1,160 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.GameplayTagConfig
+  commentId: T:Noname.GameAbilitySystem.GameplayTagConfig
+  id: GameplayTagConfig
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.GameplayTagConfig.AbilityTags
+  - Noname.GameAbilitySystem.GameplayTagConfig.ActivationBlockedTags
+  - Noname.GameAbilitySystem.GameplayTagConfig.ActivationRequiredTags
+  langs:
+  - csharp
+  - vb
+  name: GameplayTagConfig
+  nameWithType: GameplayTagConfig
+  fullName: Noname.GameAbilitySystem.GameplayTagConfig
+  type: Class
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: 'public class GameplayTagConfig : GameplayConfig'
+    content.vb: Public Class GameplayTagConfig Inherits GameplayConfig
+  inheritance:
+  - System.Object
+  - Noname.GameAbilitySystem.GameplayConfig
+- uid: Noname.GameAbilitySystem.GameplayTagConfig.AbilityTags
+  commentId: P:Noname.GameAbilitySystem.GameplayTagConfig.AbilityTags
+  id: AbilityTags
+  parent: Noname.GameAbilitySystem.GameplayTagConfig
+  langs:
+  - csharp
+  - vb
+  name: AbilityTags
+  nameWithType: GameplayTagConfig.AbilityTags
+  fullName: Noname.GameAbilitySystem.GameplayTagConfig.AbilityTags
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 능력 자체에 부여되는 태그입니다.
+  example: []
+  syntax:
+    content: public GameplayTagContainer AbilityTags { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.GameplayTagContainer
+    content.vb: Public ReadOnly Property AbilityTags As GameplayTagContainer
+  overload: Noname.GameAbilitySystem.GameplayTagConfig.AbilityTags*
+- uid: Noname.GameAbilitySystem.GameplayTagConfig.ActivationRequiredTags
+  commentId: P:Noname.GameAbilitySystem.GameplayTagConfig.ActivationRequiredTags
+  id: ActivationRequiredTags
+  parent: Noname.GameAbilitySystem.GameplayTagConfig
+  langs:
+  - csharp
+  - vb
+  name: ActivationRequiredTags
+  nameWithType: GameplayTagConfig.ActivationRequiredTags
+  fullName: Noname.GameAbilitySystem.GameplayTagConfig.ActivationRequiredTags
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 활성화에 필요한 태그입니다.
+  example: []
+  syntax:
+    content: public GameplayTagContainer ActivationRequiredTags { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.GameplayTagContainer
+    content.vb: Public ReadOnly Property ActivationRequiredTags As GameplayTagContainer
+  overload: Noname.GameAbilitySystem.GameplayTagConfig.ActivationRequiredTags*
+- uid: Noname.GameAbilitySystem.GameplayTagConfig.ActivationBlockedTags
+  commentId: P:Noname.GameAbilitySystem.GameplayTagConfig.ActivationBlockedTags
+  id: ActivationBlockedTags
+  parent: Noname.GameAbilitySystem.GameplayTagConfig
+  langs:
+  - csharp
+  - vb
+  name: ActivationBlockedTags
+  nameWithType: GameplayTagConfig.ActivationBlockedTags
+  fullName: Noname.GameAbilitySystem.GameplayTagConfig.ActivationBlockedTags
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 활성화를 막는 태그입니다.
+  example: []
+  syntax:
+    content: public GameplayTagContainer ActivationBlockedTags { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.GameplayTagContainer
+    content.vb: Public ReadOnly Property ActivationBlockedTags As GameplayTagContainer
+  overload: Noname.GameAbilitySystem.GameplayTagConfig.ActivationBlockedTags*
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Noname.GameAbilitySystem.GameplayConfig
+  commentId: T:Noname.GameAbilitySystem.GameplayConfig
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayConfig.html
+  name: GameplayConfig
+  nameWithType: GameplayConfig
+  fullName: Noname.GameAbilitySystem.GameplayConfig
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.GameplayTagConfig.AbilityTags*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTagConfig.AbilityTags
+  href: Noname.GameAbilitySystem.GameplayTagConfig.html#Noname_GameAbilitySystem_GameplayTagConfig_AbilityTags
+  name: AbilityTags
+  nameWithType: GameplayTagConfig.AbilityTags
+  fullName: Noname.GameAbilitySystem.GameplayTagConfig.AbilityTags
+- uid: Noname.GameAbilitySystem.GameplayTagContainer
+  commentId: T:Noname.GameAbilitySystem.GameplayTagContainer
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayTagContainer.html
+  name: GameplayTagContainer
+  nameWithType: GameplayTagContainer
+  fullName: Noname.GameAbilitySystem.GameplayTagContainer
+- uid: Noname.GameAbilitySystem.GameplayTagConfig.ActivationRequiredTags*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTagConfig.ActivationRequiredTags
+  href: Noname.GameAbilitySystem.GameplayTagConfig.html#Noname_GameAbilitySystem_GameplayTagConfig_ActivationRequiredTags
+  name: ActivationRequiredTags
+  nameWithType: GameplayTagConfig.ActivationRequiredTags
+  fullName: Noname.GameAbilitySystem.GameplayTagConfig.ActivationRequiredTags
+- uid: Noname.GameAbilitySystem.GameplayTagConfig.ActivationBlockedTags*
+  commentId: Overload:Noname.GameAbilitySystem.GameplayTagConfig.ActivationBlockedTags
+  href: Noname.GameAbilitySystem.GameplayTagConfig.html#Noname_GameAbilitySystem_GameplayTagConfig_ActivationBlockedTags
+  name: ActivationBlockedTags
+  nameWithType: GameplayTagConfig.ActivationBlockedTags
+  fullName: Noname.GameAbilitySystem.GameplayTagConfig.ActivationBlockedTags

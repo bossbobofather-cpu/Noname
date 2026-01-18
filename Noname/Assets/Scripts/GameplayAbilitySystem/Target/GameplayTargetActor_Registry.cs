@@ -7,7 +7,8 @@ using MyProject.GameplayAbilitySystem.Define;
 namespace MyProject.GameplayAbilitySystem.Target
 {
     /// <summary>
-    /// Targetable 컴퍼넌트가 부착 된(TargetRegistry에 등록 된) 객체 대상 타게팅
+    /// TargetRegistry에 등록된 Targetable 객체들을 대상으로 타겟을 탐색하는 액터입니다.
+    /// 범위, 각도, 진영 등의 조건에 따라 대상을 필터링하고 정렬합니다.
     /// </summary>
     [DisallowMultipleComponent]
 public sealed class GameplayTargetActor_Registry : GameplayTargetActor
@@ -33,6 +34,7 @@ public sealed class GameplayTargetActor_Registry : GameplayTargetActor
                 return data;
             }
 
+            // 탐색 범위 및 각도 설정 가져오기
             var range = GetAttackRange(owner);
             var useRange = range > 0f;
             var rangeSqr = useRange ? range * range : 0f;
@@ -40,6 +42,7 @@ public sealed class GameplayTargetActor_Registry : GameplayTargetActor
             var rightAngle = groupConfig.RightAngle;
             var useAngle = leftAngle > 0f || rightAngle > 0f;
 
+            // 설정된 타겟 그룹 가져오기
             var targets = registry.GetTargets(groupConfig.TargetGroup);
             if (targets == null || targets.Count == 0)
             {
@@ -56,6 +59,7 @@ public sealed class GameplayTargetActor_Registry : GameplayTargetActor
                 }
 
                 var abilitySystem = targetable.AbilitySystem;
+                // 자기 자신 포함 여부 체크
                 if (!Config.IncludeOwner && abilitySystem == owner)
                 {
                     continue;
@@ -67,6 +71,7 @@ public sealed class GameplayTargetActor_Registry : GameplayTargetActor
                     continue;
                 }
 
+                // 진영 모드에 따른 필터링
                 if (groupConfig.FactionMode == TargetFactionMode.SameAsOwner)
                 {
                     if (targetable.Group != ownerTargetable.Group)
@@ -88,6 +93,7 @@ public sealed class GameplayTargetActor_Registry : GameplayTargetActor
                     continue;
                 }
 
+                // 거리 체크
                 if (useRange)
                 {
                     var offset = targetTransform.position - origin;
@@ -97,11 +103,13 @@ public sealed class GameplayTargetActor_Registry : GameplayTargetActor
                     }
                 }
 
+                // 각도 체크
                 if (useAngle && !IsWithinAngle(owner.transform, origin, targetTransform.position, leftAngle, rightAngle))
                 {
                     continue;
                 }
 
+                // 점수 계산 (정렬 기준)
                 if (!TryGetScore(groupConfig, targetTransform, abilitySystem, origin, out var score))
                 {
                     continue;
@@ -115,8 +123,10 @@ public sealed class GameplayTargetActor_Registry : GameplayTargetActor
                 return data;
             }
 
+            // 점수에 따라 정렬
             SortCandidates(groupConfig, candidates);
 
+            // 최대 타겟 수만큼 데이터 추가
             var limit = ClampMaxTargets(candidates.Count);
             for (var i = 0; i < limit; i++)
             {
@@ -173,6 +183,7 @@ public sealed class GameplayTargetActor_Registry : GameplayTargetActor
             forward.Normalize();
             toTarget.Normalize();
 
+            // 전방 벡터와 타겟 방향 벡터 사이의 각도 계산
             var signedAngle = Vector3.SignedAngle(forward, toTarget, Vector3.up);
             return signedAngle >= -leftAngle && signedAngle <= rightAngle;
         }
@@ -198,7 +209,7 @@ public sealed class GameplayTargetActor_Registry : GameplayTargetActor
                     score = (target.position - origin).sqrMagnitude;
                     return true;
                 case TargetSelectionMode.ClosestFromGoal:
-                    score = -(target.position - origin).sqrMagnitude;
+                    score = -(target.position - origin).sqrMagnitude; // 거리가 멀수록 낮은 점수(가까운게 우선) -> 내림차순 정렬 가정 시 음수로 반전 필요? 로직 확인 필요하나 원본 유지
                     return true;
                 case TargetSelectionMode.HighestAttribute:
                 case TargetSelectionMode.LowestAttribute:
@@ -229,6 +240,9 @@ public sealed class GameplayTargetActor_Registry : GameplayTargetActor
                 return;
             }
 
+            // HighestAttribute일 경우 내림차순, 그 외(거리 등)는 오름차순(점수가 작을수록 우선)
+            // 원본 로직: descending ? right.CompareTo(left) : left.CompareTo(right)
+            // ClosestToOrigin의 경우 거리가 작을수록(오름차순) 앞쪽에 와야 함.
             var descending = config.SelectionMode == TargetSelectionMode.HighestAttribute;
             candidates.Sort((left, right) =>
                 descending ? right.Score.CompareTo(left.Score) : left.Score.CompareTo(right.Score));

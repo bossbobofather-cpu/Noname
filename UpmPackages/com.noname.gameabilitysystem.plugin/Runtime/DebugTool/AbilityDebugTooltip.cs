@@ -1,8 +1,11 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace Noname.GameAbilitySystem.DebugTool
 {
+    /// <summary>
+    /// 툴팁 UI를 표시하는 컴포넌트입니다.
+    /// </summary>
     public sealed class AbilityDebugTooltip : MonoBehaviour
     {
         [SerializeField] private RectTransform _root;
@@ -14,12 +17,19 @@ namespace Noname.GameAbilitySystem.DebugTool
         private Canvas _canvas;
         private RectTransform _canvasRect;
 
+        /// <summary>
+        /// 현재 표시 중인지 여부입니다.
+        /// </summary>
         public bool IsVisible => _root != null && _root.gameObject.activeSelf;
 
+        /// <summary>
+        /// 기본 UI 구성 요소를 준비합니다.
+        /// </summary>
         public void EnsureBuilt(Font font, Color textColor, Color backgroundColor)
         {
             if (_root == null)
             {
+                // 루트와 기본 컴포넌트를 보장한다.
                 _root = GetComponent<RectTransform>();
                 if (_root == null)
                 {
@@ -66,6 +76,9 @@ namespace Noname.GameAbilitySystem.DebugTool
             gameObject.SetActive(false);
         }
 
+        /// <summary>
+        /// 툴팁을 표시합니다.
+        /// </summary>
         public void Show(string title, string description, Vector2 screenPosition)
         {
             if (_root == null)
@@ -88,14 +101,21 @@ namespace Noname.GameAbilitySystem.DebugTool
             SetPosition(screenPosition);
         }
 
+        /// <summary>
+        /// 툴팁을 숨깁니다.
+        /// </summary>
         public void Hide()
         {
             if (_root != null)
             {
+                // 표시를 끈다.
                 gameObject.SetActive(false);
             }
         }
 
+        /// <summary>
+        /// 화면 좌표를 기준으로 위치를 갱신합니다.
+        /// </summary>
         public void SetPosition(Vector2 screenPosition)
         {
             if (_root == null)
@@ -103,6 +123,7 @@ namespace Noname.GameAbilitySystem.DebugTool
                 return;
             }
 
+            // 캔버스 기준 좌표로 변환한다.
             EnsureCanvas();
             if (_canvasRect == null)
             {
@@ -122,6 +143,7 @@ namespace Noname.GameAbilitySystem.DebugTool
         {
             if (current == null)
             {
+                // 텍스트 오브젝트를 새로 만든다.
                 var obj = new GameObject(name, typeof(RectTransform));
                 obj.transform.SetParent(transform, false);
                 current = obj.AddComponent<Text>();
@@ -143,6 +165,7 @@ namespace Noname.GameAbilitySystem.DebugTool
                 return;
             }
 
+            // 줄바꿈과 너비 제한을 설정한다.
             text.horizontalOverflow = HorizontalWrapMode.Wrap;
             text.verticalOverflow = VerticalWrapMode.Overflow;
 
@@ -163,6 +186,7 @@ namespace Noname.GameAbilitySystem.DebugTool
                 return;
             }
 
+            // 부모 캔버스를 찾아 저장한다.
             _canvas = GetComponentInParent<Canvas>();
             _canvasRect = _canvas != null ? _canvas.transform as RectTransform : null;
         }
@@ -174,6 +198,7 @@ namespace Noname.GameAbilitySystem.DebugTool
                 return;
             }
 
+            // 캔버스 영역을 넘지 않도록 위치를 보정한다.
             var rect = _canvasRect.rect;
             var size = _root.rect.size;
             var pivot = _root.pivot;

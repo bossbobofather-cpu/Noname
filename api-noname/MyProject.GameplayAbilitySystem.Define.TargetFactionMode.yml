@@ -1,0 +1,115 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+  id: TargetFactionMode
+  parent: MyProject.GameplayAbilitySystem.Define
+  children:
+  - MyProject.GameplayAbilitySystem.Define.TargetFactionMode.Any
+  - MyProject.GameplayAbilitySystem.Define.TargetFactionMode.DifferentFromOwner
+  - MyProject.GameplayAbilitySystem.Define.TargetFactionMode.SameAsOwner
+  langs:
+  - csharp
+  - vb
+  name: TargetFactionMode
+  nameWithType: TargetFactionMode
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+  type: Enum
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 시전자와의 진영 관계(Faction)에 따른 필터 모드입니다.
+  example: []
+  syntax:
+    content: public enum TargetFactionMode
+    content.vb: Public Enum TargetFactionMode
+- uid: MyProject.GameplayAbilitySystem.Define.TargetFactionMode.Any
+  commentId: F:MyProject.GameplayAbilitySystem.Define.TargetFactionMode.Any
+  id: Any
+  parent: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+  langs:
+  - csharp
+  - vb
+  name: Any
+  nameWithType: TargetFactionMode.Any
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetFactionMode.Any
+  type: Field
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 진영 관계 무관
+  example: []
+  syntax:
+    content: Any = 0
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+- uid: MyProject.GameplayAbilitySystem.Define.TargetFactionMode.SameAsOwner
+  commentId: F:MyProject.GameplayAbilitySystem.Define.TargetFactionMode.SameAsOwner
+  id: SameAsOwner
+  parent: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+  langs:
+  - csharp
+  - vb
+  name: SameAsOwner
+  nameWithType: TargetFactionMode.SameAsOwner
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetFactionMode.SameAsOwner
+  type: Field
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 시전자와 같은 진영(아군)
+  example: []
+  syntax:
+    content: SameAsOwner = 1
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+- uid: MyProject.GameplayAbilitySystem.Define.TargetFactionMode.DifferentFromOwner
+  commentId: F:MyProject.GameplayAbilitySystem.Define.TargetFactionMode.DifferentFromOwner
+  id: DifferentFromOwner
+  parent: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+  langs:
+  - csharp
+  - vb
+  name: DifferentFromOwner
+  nameWithType: TargetFactionMode.DifferentFromOwner
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetFactionMode.DifferentFromOwner
+  type: Field
+  namespace: MyProject.GameplayAbilitySystem.Define
+  summary: 시전자와 다른 진영(적군)
+  example: []
+  syntax:
+    content: DifferentFromOwner = 2
+    return:
+      type: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+references:
+- uid: MyProject.GameplayAbilitySystem.Define
+  commentId: N:MyProject.GameplayAbilitySystem.Define
+  href: MyProject.html
+  name: MyProject.GameplayAbilitySystem.Define
+  nameWithType: MyProject.GameplayAbilitySystem.Define
+  fullName: MyProject.GameplayAbilitySystem.Define
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem
+    name: GameplayAbilitySystem
+    href: MyProject.GameplayAbilitySystem.html
+  - name: .
+  - uid: MyProject.GameplayAbilitySystem.Define
+    name: Define
+    href: MyProject.GameplayAbilitySystem.Define.html
+- uid: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+  commentId: T:MyProject.GameplayAbilitySystem.Define.TargetFactionMode
+  parent: MyProject.GameplayAbilitySystem.Define
+  href: MyProject.GameplayAbilitySystem.Define.TargetFactionMode.html
+  name: TargetFactionMode
+  nameWithType: TargetFactionMode
+  fullName: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
