@@ -1203,6 +1203,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 294430026575606556, guid: 87e346a5c10dc374d9fdd089c79bd5bb, type: 3}
+      propertyPath: _worldOffset.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 294430026575606556, guid: 87e346a5c10dc374d9fdd089c79bd5bb, type: 3}
+      propertyPath: _worldOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919611725619730263, guid: 87e346a5c10dc374d9fdd089c79bd5bb, type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 5299650498574112890, guid: 87e346a5c10dc374d9fdd089c79bd5bb, type: 3}
       propertyPath: _worldCamera
       value: 

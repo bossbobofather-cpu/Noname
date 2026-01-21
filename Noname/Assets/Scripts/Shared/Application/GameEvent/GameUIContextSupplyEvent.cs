@@ -1,0 +1,21 @@
+﻿using MyProject.Common.UI;
+
+namespace MyProject.Common.GameEvent
+{
+    /// <summary>
+    /// UI 컨텍스트를 전달하는 이벤트입니다.
+    /// </summary>
+    public sealed class GameUIContextSupplyEvent : SceneGameEventContext
+    {
+        /// <summary>
+        /// 전달할 UI 컨텍스트입니다.
+        /// </summary>
+        public UIEventContext UIEventCtx { get; }
+
+        public GameUIContextSupplyEvent(UIEventContext eventContext, object source)
+            : base(source)
+        {
+            UIEventCtx = eventContext;
+        }
+    }
+}

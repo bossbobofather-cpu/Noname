@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3383199606093953627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2614634310200212757}
+  - component: {fileID: 8041731062223811073}
+  m_Layer: 0
+  m_Name: RuleModule_Single
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2614634310200212757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3383199606093953627}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -43.31696, y: 0, z: 22.40539}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8041731062223811073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3383199606093953627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44fe9a554ae4221479e06e482e1a4d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MyProject.MergeGame.RuleModule
+  _winCondition: {fileID: 11400000, guid: 4480b8f7000506146bcd718d34a94e84, type: 2}
+  _spawnCostPolicy: {fileID: 11400000, guid: e1b79990c935f124ea6b1bd0c3a022fa, type: 2}
+  _spawnSelectionPolicy: {fileID: 11400000, guid: 03bddb5a795c95a4398233a8157b3fc7, type: 2}
+  _spawnSpecPolicy: {fileID: 11400000, guid: e9bb6089a1aaecf4e8bc0d577d0d21fc, type: 2}
+  _placementPolicy: {fileID: 11400000, guid: 24019e7ddc4d8bb419b9cc62a8867c07, type: 2}
+  _gameSpeed: 1
+  _autoStart: 1
