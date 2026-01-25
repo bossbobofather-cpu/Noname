@@ -12,3 +12,6 @@
 금지
 - MonoBehaviour, ScriptableObject
 - UnityEngine 참조
+사용 예
+- ExploreGame Host/클라이언트가 공유하는 타입 정의
+

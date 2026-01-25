@@ -12,3 +12,7 @@
 - ExploreGame 기능은 `Assets/Scripts/Features/ExploreGame` 아래에 배치합니다.
 - Host 시뮬레이션 로직은 Application/Host 폴더에서 관리합니다.
 - 공용 로직은 `Assets/Scripts/Shared` 아래에 배치합니다.
+현재 Feature
+- ExploreGame: 텍스트 로그 기반 탐방 게임
+  - 문서: Assets/Scripts/Features/ExploreGame/README.md`r
+

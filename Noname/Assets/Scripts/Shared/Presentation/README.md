@@ -12,3 +12,7 @@
 
 금지
 - 특정 게임 기능에 종속된 UI/로직
+사용 예
+- GameBootstrapper에서 공용 Manager를 생성
+- GameMode에서 모듈 수명주기 제어
+
