@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Domain.ExploreSessionPhase
+  commentId: T:MyProject.ExploreGame.Domain.ExploreSessionPhase
+  id: ExploreSessionPhase
+  parent: MyProject.ExploreGame.Domain
+  children:
+  - MyProject.ExploreGame.Domain.ExploreSessionPhase.CombatActive
+  - MyProject.ExploreGame.Domain.ExploreSessionPhase.Ended
+  - MyProject.ExploreGame.Domain.ExploreSessionPhase.Exploring
+  - MyProject.ExploreGame.Domain.ExploreSessionPhase.Idle
+  langs:
+  - csharp
+  - vb
+  name: ExploreSessionPhase
+  nameWithType: ExploreSessionPhase
+  fullName: MyProject.ExploreGame.Domain.ExploreSessionPhase
+  type: Enum
+  namespace: MyProject.ExploreGame.Domain
+  summary: 탐험 게임 세션 단계입니다.
+  example: []
+  syntax:
+    content: public enum ExploreSessionPhase
+    content.vb: Public Enum ExploreSessionPhase
+- uid: MyProject.ExploreGame.Domain.ExploreSessionPhase.Idle
+  commentId: F:MyProject.ExploreGame.Domain.ExploreSessionPhase.Idle
+  id: Idle
+  parent: MyProject.ExploreGame.Domain.ExploreSessionPhase
+  langs:
+  - csharp
+  - vb
+  name: Idle
+  nameWithType: ExploreSessionPhase.Idle
+  fullName: MyProject.ExploreGame.Domain.ExploreSessionPhase.Idle
+  type: Field
+  namespace: MyProject.ExploreGame.Domain
+  summary: 대기 중
+  example: []
+  syntax:
+    content: Idle = 0
+    return:
+      type: MyProject.ExploreGame.Domain.ExploreSessionPhase
+- uid: MyProject.ExploreGame.Domain.ExploreSessionPhase.Exploring
+  commentId: F:MyProject.ExploreGame.Domain.ExploreSessionPhase.Exploring
+  id: Exploring
+  parent: MyProject.ExploreGame.Domain.ExploreSessionPhase
+  langs:
+  - csharp
+  - vb
+  name: Exploring
+  nameWithType: ExploreSessionPhase.Exploring
+  fullName: MyProject.ExploreGame.Domain.ExploreSessionPhase.Exploring
+  type: Field
+  namespace: MyProject.ExploreGame.Domain
+  summary: 던전 탐험 중
+  example: []
+  syntax:
+    content: Exploring = 1
+    return:
+      type: MyProject.ExploreGame.Domain.ExploreSessionPhase
+- uid: MyProject.ExploreGame.Domain.ExploreSessionPhase.CombatActive
+  commentId: F:MyProject.ExploreGame.Domain.ExploreSessionPhase.CombatActive
+  id: CombatActive
+  parent: MyProject.ExploreGame.Domain.ExploreSessionPhase
+  langs:
+  - csharp
+  - vb
+  name: CombatActive
+  nameWithType: ExploreSessionPhase.CombatActive
+  fullName: MyProject.ExploreGame.Domain.ExploreSessionPhase.CombatActive
+  type: Field
+  namespace: MyProject.ExploreGame.Domain
+  summary: 전투 진행 중
+  example: []
+  syntax:
+    content: CombatActive = 2
+    return:
+      type: MyProject.ExploreGame.Domain.ExploreSessionPhase
+- uid: MyProject.ExploreGame.Domain.ExploreSessionPhase.Ended
+  commentId: F:MyProject.ExploreGame.Domain.ExploreSessionPhase.Ended
+  id: Ended
+  parent: MyProject.ExploreGame.Domain.ExploreSessionPhase
+  langs:
+  - csharp
+  - vb
+  name: Ended
+  nameWithType: ExploreSessionPhase.Ended
+  fullName: MyProject.ExploreGame.Domain.ExploreSessionPhase.Ended
+  type: Field
+  namespace: MyProject.ExploreGame.Domain
+  summary: 세션 종료
+  example: []
+  syntax:
+    content: Ended = 3
+    return:
+      type: MyProject.ExploreGame.Domain.ExploreSessionPhase
+references:
+- uid: MyProject.ExploreGame.Domain
+  commentId: N:MyProject.ExploreGame.Domain
+  href: MyProject.html
+  name: MyProject.ExploreGame.Domain
+  nameWithType: MyProject.ExploreGame.Domain
+  fullName: MyProject.ExploreGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+- uid: MyProject.ExploreGame.Domain.ExploreSessionPhase
+  commentId: T:MyProject.ExploreGame.Domain.ExploreSessionPhase
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreSessionPhase.html
+  name: ExploreSessionPhase
+  nameWithType: ExploreSessionPhase
+  fullName: MyProject.ExploreGame.Domain.ExploreSessionPhase

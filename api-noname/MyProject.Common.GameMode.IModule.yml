@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.GameMode.IModule
+  commentId: T:MyProject.Common.GameMode.IModule
+  id: IModule
+  parent: MyProject.Common.GameMode
+  children:
+  - MyProject.Common.GameMode.IModule.Initialize(MyProject.Common.GameMode.GameMode)
+  - MyProject.Common.GameMode.IModule.Shutdown
+  - MyProject.Common.GameMode.IModule.Startup
+  langs:
+  - csharp
+  - vb
+  name: IModule
+  nameWithType: IModule
+  fullName: MyProject.Common.GameMode.IModule
+  type: Interface
+  namespace: MyProject.Common.GameMode
+  summary: 공통 모듈 인터페이스입니다.
+  example: []
+  syntax:
+    content: public interface IModule
+    content.vb: Public Interface IModule
+- uid: MyProject.Common.GameMode.IModule.Initialize(MyProject.Common.GameMode.GameMode)
+  commentId: M:MyProject.Common.GameMode.IModule.Initialize(MyProject.Common.GameMode.GameMode)
+  id: Initialize(MyProject.Common.GameMode.GameMode)
+  parent: MyProject.Common.GameMode.IModule
+  langs:
+  - csharp
+  - vb
+  name: Initialize(GameMode)
+  nameWithType: IModule.Initialize(GameMode)
+  fullName: MyProject.Common.GameMode.IModule.Initialize(MyProject.Common.GameMode.GameMode)
+  type: Method
+  namespace: MyProject.Common.GameMode
+  summary: 모드와 연결되는 초기화 단계입니다.
+  example: []
+  syntax:
+    content: void Initialize(GameMode mode)
+    parameters:
+    - id: mode
+      type: MyProject.Common.GameMode.GameMode
+    content.vb: Sub Initialize(mode As GameMode)
+  overload: MyProject.Common.GameMode.IModule.Initialize*
+- uid: MyProject.Common.GameMode.IModule.Startup
+  commentId: M:MyProject.Common.GameMode.IModule.Startup
+  id: Startup
+  parent: MyProject.Common.GameMode.IModule
+  langs:
+  - csharp
+  - vb
+  name: Startup()
+  nameWithType: IModule.Startup()
+  fullName: MyProject.Common.GameMode.IModule.Startup()
+  type: Method
+  namespace: MyProject.Common.GameMode
+  summary: 모드가 활성화될 때 호출됩니다.
+  example: []
+  syntax:
+    content: void Startup()
+    content.vb: Sub Startup()
+  overload: MyProject.Common.GameMode.IModule.Startup*
+- uid: MyProject.Common.GameMode.IModule.Shutdown
+  commentId: M:MyProject.Common.GameMode.IModule.Shutdown
+  id: Shutdown
+  parent: MyProject.Common.GameMode.IModule
+  langs:
+  - csharp
+  - vb
+  name: Shutdown()
+  nameWithType: IModule.Shutdown()
+  fullName: MyProject.Common.GameMode.IModule.Shutdown()
+  type: Method
+  namespace: MyProject.Common.GameMode
+  summary: 모드가 비활성화될 때 호출됩니다.
+  example: []
+  syntax:
+    content: void Shutdown()
+    content.vb: Sub Shutdown()
+  overload: MyProject.Common.GameMode.IModule.Shutdown*
+references:
+- uid: MyProject.Common.GameMode
+  commentId: N:MyProject.Common.GameMode
+  href: MyProject.html
+  name: MyProject.Common.GameMode
+  nameWithType: MyProject.Common.GameMode
+  fullName: MyProject.Common.GameMode
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.html
+- uid: MyProject.Common.GameMode.IModule.Initialize*
+  commentId: Overload:MyProject.Common.GameMode.IModule.Initialize
+  href: MyProject.Common.GameMode.IModule.html#MyProject_Common_GameMode_IModule_Initialize_MyProject_Common_GameMode_GameMode_
+  name: Initialize
+  nameWithType: IModule.Initialize
+  fullName: MyProject.Common.GameMode.IModule.Initialize
+- uid: MyProject.Common.GameMode.GameMode
+  commentId: T:MyProject.Common.GameMode.GameMode
+  parent: MyProject.Common.GameMode
+  href: MyProject.Common.GameMode.GameMode.html
+  name: GameMode
+  nameWithType: GameMode
+  fullName: MyProject.Common.GameMode.GameMode
+- uid: MyProject.Common.GameMode.IModule.Startup*
+  commentId: Overload:MyProject.Common.GameMode.IModule.Startup
+  href: MyProject.Common.GameMode.IModule.html#MyProject_Common_GameMode_IModule_Startup
+  name: Startup
+  nameWithType: IModule.Startup
+  fullName: MyProject.Common.GameMode.IModule.Startup
+- uid: MyProject.Common.GameMode.IModule.Shutdown*
+  commentId: Overload:MyProject.Common.GameMode.IModule.Shutdown
+  href: MyProject.Common.GameMode.IModule.html#MyProject_Common_GameMode_IModule_Shutdown
+  name: Shutdown
+  nameWithType: IModule.Shutdown
+  fullName: MyProject.Common.GameMode.IModule.Shutdown

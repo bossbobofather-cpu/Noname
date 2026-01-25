@@ -1,0 +1,115 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Domain.CombatPhase
+  commentId: T:MyProject.ExploreGame.Domain.CombatPhase
+  id: CombatPhase
+  parent: MyProject.ExploreGame.Domain
+  children:
+  - MyProject.ExploreGame.Domain.CombatPhase.Ended
+  - MyProject.ExploreGame.Domain.CombatPhase.InProgress
+  - MyProject.ExploreGame.Domain.CombatPhase.Preparing
+  langs:
+  - csharp
+  - vb
+  name: CombatPhase
+  nameWithType: CombatPhase
+  fullName: MyProject.ExploreGame.Domain.CombatPhase
+  type: Enum
+  namespace: MyProject.ExploreGame.Domain
+  summary: 전투 진행 단계입니다.
+  example: []
+  syntax:
+    content: public enum CombatPhase
+    content.vb: Public Enum CombatPhase
+- uid: MyProject.ExploreGame.Domain.CombatPhase.Preparing
+  commentId: F:MyProject.ExploreGame.Domain.CombatPhase.Preparing
+  id: Preparing
+  parent: MyProject.ExploreGame.Domain.CombatPhase
+  langs:
+  - csharp
+  - vb
+  name: Preparing
+  nameWithType: CombatPhase.Preparing
+  fullName: MyProject.ExploreGame.Domain.CombatPhase.Preparing
+  type: Field
+  namespace: MyProject.ExploreGame.Domain
+  summary: 전투 준비 중
+  example: []
+  syntax:
+    content: Preparing = 0
+    return:
+      type: MyProject.ExploreGame.Domain.CombatPhase
+- uid: MyProject.ExploreGame.Domain.CombatPhase.InProgress
+  commentId: F:MyProject.ExploreGame.Domain.CombatPhase.InProgress
+  id: InProgress
+  parent: MyProject.ExploreGame.Domain.CombatPhase
+  langs:
+  - csharp
+  - vb
+  name: InProgress
+  nameWithType: CombatPhase.InProgress
+  fullName: MyProject.ExploreGame.Domain.CombatPhase.InProgress
+  type: Field
+  namespace: MyProject.ExploreGame.Domain
+  summary: 전투 진행 중
+  example: []
+  syntax:
+    content: InProgress = 1
+    return:
+      type: MyProject.ExploreGame.Domain.CombatPhase
+- uid: MyProject.ExploreGame.Domain.CombatPhase.Ended
+  commentId: F:MyProject.ExploreGame.Domain.CombatPhase.Ended
+  id: Ended
+  parent: MyProject.ExploreGame.Domain.CombatPhase
+  langs:
+  - csharp
+  - vb
+  name: Ended
+  nameWithType: CombatPhase.Ended
+  fullName: MyProject.ExploreGame.Domain.CombatPhase.Ended
+  type: Field
+  namespace: MyProject.ExploreGame.Domain
+  summary: 전투 종료
+  example: []
+  syntax:
+    content: Ended = 2
+    return:
+      type: MyProject.ExploreGame.Domain.CombatPhase
+references:
+- uid: MyProject.ExploreGame.Domain
+  commentId: N:MyProject.ExploreGame.Domain
+  href: MyProject.html
+  name: MyProject.ExploreGame.Domain
+  nameWithType: MyProject.ExploreGame.Domain
+  fullName: MyProject.ExploreGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+- uid: MyProject.ExploreGame.Domain.CombatPhase
+  commentId: T:MyProject.ExploreGame.Domain.CombatPhase
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.CombatPhase.html
+  name: CombatPhase
+  nameWithType: CombatPhase
+  fullName: MyProject.ExploreGame.Domain.CombatPhase

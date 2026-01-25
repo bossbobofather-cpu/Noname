@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.UI.UIBase
+  commentId: T:MyProject.Common.UI.UIBase
+  id: UIBase
+  parent: MyProject.Common.UI
+  children:
+  - MyProject.Common.UI.UIBase.Buttons
+  - MyProject.Common.UI.UIBase.CollecteButtons
+  langs:
+  - csharp
+  - vb
+  name: UIBase
+  nameWithType: UIBase
+  fullName: MyProject.Common.UI.UIBase
+  type: Class
+  namespace: MyProject.Common.UI
+  syntax:
+    content: 'public class UIBase : MonoBehaviour'
+    content.vb: Public Class UIBase Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - MyProject.Common.UI.UIPageBase
+  - MyProject.Common.UI.UIPopupBase
+  - MyProject.Common.UI.UISystemBase
+- uid: MyProject.Common.UI.UIBase.Buttons
+  commentId: P:MyProject.Common.UI.UIBase.Buttons
+  id: Buttons
+  parent: MyProject.Common.UI.UIBase
+  langs:
+  - csharp
+  - vb
+  name: Buttons
+  nameWithType: UIBase.Buttons
+  fullName: MyProject.Common.UI.UIBase.Buttons
+  type: Property
+  namespace: MyProject.Common.UI
+  syntax:
+    content: public List<Button> Buttons { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Button}
+    content.vb: Public ReadOnly Property Buttons As List(Of Button)
+  overload: MyProject.Common.UI.UIBase.Buttons*
+- uid: MyProject.Common.UI.UIBase.CollecteButtons
+  commentId: M:MyProject.Common.UI.UIBase.CollecteButtons
+  id: CollecteButtons
+  parent: MyProject.Common.UI.UIBase
+  langs:
+  - csharp
+  - vb
+  name: CollecteButtons()
+  nameWithType: UIBase.CollecteButtons()
+  fullName: MyProject.Common.UI.UIBase.CollecteButtons()
+  type: Method
+  namespace: MyProject.Common.UI
+  syntax:
+    content: public void CollecteButtons()
+    content.vb: Public Sub CollecteButtons()
+  overload: MyProject.Common.UI.UIBase.CollecteButtons*
+references:
+- uid: MyProject.Common.UI
+  commentId: N:MyProject.Common.UI
+  href: MyProject.html
+  name: MyProject.Common.UI
+  nameWithType: MyProject.Common.UI
+  fullName: MyProject.Common.UI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.UI.UIBase.Buttons*
+  commentId: Overload:MyProject.Common.UI.UIBase.Buttons
+  href: MyProject.Common.UI.UIBase.html#MyProject_Common_UI_UIBase_Buttons
+  name: Buttons
+  nameWithType: UIBase.Buttons
+  fullName: MyProject.Common.UI.UIBase.Buttons
+- uid: System.Collections.Generic.List{Button}
+  commentId: T:System.Collections.Generic.List{Button}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Button>
+  nameWithType: List<Button>
+  fullName: System.Collections.Generic.List<Button>
+  nameWithType.vb: List(Of Button)
+  fullName.vb: System.Collections.Generic.List(Of Button)
+  name.vb: List(Of Button)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Button
+    name: Button
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Button
+    name: Button
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MyProject.Common.UI.UIBase.CollecteButtons*
+  commentId: Overload:MyProject.Common.UI.UIBase.CollecteButtons
+  href: MyProject.Common.UI.UIBase.html#MyProject_Common_UI_UIBase_CollecteButtons
+  name: CollecteButtons
+  nameWithType: UIBase.CollecteButtons
+  fullName: MyProject.Common.UI.UIBase.CollecteButtons

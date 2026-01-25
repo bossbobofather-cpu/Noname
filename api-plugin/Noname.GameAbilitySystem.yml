@@ -9,12 +9,16 @@ items:
   - Noname.GameAbilitySystem.AbilityInputMap
   - Noname.GameAbilitySystem.AbilityInputTrigger
   - Noname.GameAbilitySystem.AbilitySystemComponent
+  - Noname.GameAbilitySystem.AbilitySystemModel
+  - Noname.GameAbilitySystem.AbilitySystemModel.ActiveGameplayEffect
+  - Noname.GameAbilitySystem.AbilitySystemSnapshot
   - Noname.GameAbilitySystem.AbilityTargetData
   - Noname.GameAbilitySystem.AbilityTask
   - Noname.GameAbilitySystem.AbilityTask_PlayMontageAndWait
   - Noname.GameAbilitySystem.AbilityTask_WaitGameplayEvent
   - Noname.GameAbilitySystem.AbilityTask_WaitInputPress
   - Noname.GameAbilitySystem.AbilityTask_WaitTargetData
+  - Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot
   - Noname.GameAbilitySystem.AttributeDefinition
   - Noname.GameAbilitySystem.AttributeId
   - Noname.GameAbilitySystem.AttributeModifier
@@ -173,6 +177,48 @@ references:
   name: AbilitySystemComponent
   nameWithType: AbilitySystemComponent
   fullName: Noname.GameAbilitySystem.AbilitySystemComponent
+- uid: Noname.GameAbilitySystem.AbilitySystemModel
+  commentId: T:Noname.GameAbilitySystem.AbilitySystemModel
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html
+  name: AbilitySystemModel
+  nameWithType: AbilitySystemModel
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.ActiveGameplayEffect
+  commentId: T:Noname.GameAbilitySystem.AbilitySystemModel.ActiveGameplayEffect
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html
+  name: AbilitySystemModel.ActiveGameplayEffect
+  nameWithType: AbilitySystemModel.ActiveGameplayEffect
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.ActiveGameplayEffect
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.AbilitySystemModel
+    name: AbilitySystemModel
+    href: Noname.GameAbilitySystem.AbilitySystemModel.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.AbilitySystemModel.ActiveGameplayEffect
+    name: ActiveGameplayEffect
+    href: Noname.GameAbilitySystem.AbilitySystemModel.ActiveGameplayEffect.html
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.AbilitySystemModel
+    name: AbilitySystemModel
+    href: Noname.GameAbilitySystem.AbilitySystemModel.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.AbilitySystemModel.ActiveGameplayEffect
+    name: ActiveGameplayEffect
+    href: Noname.GameAbilitySystem.AbilitySystemModel.ActiveGameplayEffect.html
+- uid: Noname.GameAbilitySystem.AbilitySystemSnapshot
+  commentId: T:Noname.GameAbilitySystem.AbilitySystemSnapshot
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AbilitySystemSnapshot.html
+  name: AbilitySystemSnapshot
+  nameWithType: AbilitySystemSnapshot
+  fullName: Noname.GameAbilitySystem.AbilitySystemSnapshot
+- uid: Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot
+  commentId: T:Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot
+  href: Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot.html
+  name: ActiveGameplayEffectSnapshot
+  nameWithType: ActiveGameplayEffectSnapshot
+  fullName: Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot
 - uid: Noname.GameAbilitySystem.GameplayAbility
   commentId: T:Noname.GameAbilitySystem.GameplayAbility
   parent: Noname.GameAbilitySystem

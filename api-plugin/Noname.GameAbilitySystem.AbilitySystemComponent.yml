@@ -17,6 +17,7 @@ items:
   - Noname.GameAbilitySystem.AbilitySystemComponent.GiveAbility(Noname.GameAbilitySystem.GameplayAbility)
   - Noname.GameAbilitySystem.AbilitySystemComponent.GiveAbility(Noname.GameAbilitySystem.GameplayAbilityDefinition)
   - Noname.GameAbilitySystem.AbilitySystemComponent.HandleGameplayEvent(Noname.GameAbilitySystem.GameplayEventData)
+  - Noname.GameAbilitySystem.AbilitySystemComponent.Model
   - Noname.GameAbilitySystem.AbilitySystemComponent.OwnedTags
   - Noname.GameAbilitySystem.AbilitySystemComponent.Owner
   - Noname.GameAbilitySystem.AbilitySystemComponent.RemoveAbility(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle)
@@ -132,6 +133,27 @@ items:
       type: Noname.GameAbilitySystem.AttributeSet
     content.vb: Public ReadOnly Property Attributes As AttributeSet
   overload: Noname.GameAbilitySystem.AbilitySystemComponent.Attributes*
+- uid: Noname.GameAbilitySystem.AbilitySystemComponent.Model
+  commentId: P:Noname.GameAbilitySystem.AbilitySystemComponent.Model
+  id: Model
+  parent: Noname.GameAbilitySystem.AbilitySystemComponent
+  langs:
+  - csharp
+  - vb
+  name: Model
+  nameWithType: AbilitySystemComponent.Model
+  fullName: Noname.GameAbilitySystem.AbilitySystemComponent.Model
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 순수 데이터 모델입니다.
+  example: []
+  syntax:
+    content: public AbilitySystemModel Model { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.AbilitySystemModel
+    content.vb: Public ReadOnly Property Model As AbilitySystemModel
+  overload: Noname.GameAbilitySystem.AbilitySystemComponent.Model*
 - uid: Noname.GameAbilitySystem.AbilitySystemComponent.GiveAbility(Noname.GameAbilitySystem.GameplayAbilityDefinition)
   commentId: M:Noname.GameAbilitySystem.AbilitySystemComponent.GiveAbility(Noname.GameAbilitySystem.GameplayAbilityDefinition)
   id: GiveAbility(Noname.GameAbilitySystem.GameplayAbilityDefinition)
@@ -882,6 +904,19 @@ references:
   name: AttributeSet
   nameWithType: AttributeSet
   fullName: Noname.GameAbilitySystem.AttributeSet
+- uid: Noname.GameAbilitySystem.AbilitySystemComponent.Model*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemComponent.Model
+  href: Noname.GameAbilitySystem.AbilitySystemComponent.html#Noname_GameAbilitySystem_AbilitySystemComponent_Model
+  name: Model
+  nameWithType: AbilitySystemComponent.Model
+  fullName: Noname.GameAbilitySystem.AbilitySystemComponent.Model
+- uid: Noname.GameAbilitySystem.AbilitySystemModel
+  commentId: T:Noname.GameAbilitySystem.AbilitySystemModel
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html
+  name: AbilitySystemModel
+  nameWithType: AbilitySystemModel
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel
 - uid: Noname.GameAbilitySystem.AbilitySystemComponent.GiveAbility*
   commentId: Overload:Noname.GameAbilitySystem.AbilitySystemComponent.GiveAbility
   href: Noname.GameAbilitySystem.AbilitySystemComponent.html#Noname_GameAbilitySystem_AbilitySystemComponent_GiveAbility_Noname_GameAbilitySystem_GameplayAbilityDefinition_

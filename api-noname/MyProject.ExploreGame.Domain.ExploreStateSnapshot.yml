@@ -1,0 +1,686 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  id: ExploreStateSnapshot
+  parent: MyProject.ExploreGame.Domain
+  children:
+  - MyProject.ExploreGame.Domain.ExploreStateSnapshot.#ctor(System.Int64,MyProject.ExploreGame.Domain.ExploreSessionPhase,System.Collections.Generic.IReadOnlyDictionary{System.Int64,MyProject.ExploreGame.Domain.ExploreCharacterState},MyProject.ExploreGame.Domain.ExploreDungeonState,MyProject.ExploreGame.Domain.ExploreCombatState)
+  - MyProject.ExploreGame.Domain.ExploreStateSnapshot.Characters
+  - MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentCombat
+  - MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentDungeon
+  - MyProject.ExploreGame.Domain.ExploreStateSnapshot.SessionPhase
+  langs:
+  - csharp
+  - vb
+  name: ExploreStateSnapshot
+  nameWithType: ExploreStateSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  type: Class
+  namespace: MyProject.ExploreGame.Domain
+  summary: 탐험 게임 상태의 불변 스냅샷입니다.
+  example: []
+  syntax:
+    content: 'public sealed class ExploreStateSnapshot : GameSnapshotBase'
+    content.vb: Public NotInheritable Class ExploreStateSnapshot Inherits GameSnapshotBase
+  inheritance:
+  - System.Object
+  - MyProject.Common.Host.GameSnapshotBase
+  inheritedMembers:
+  - MyProject.Common.Host.GameSnapshotBase.Tick
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot.SessionPhase
+  commentId: P:MyProject.ExploreGame.Domain.ExploreStateSnapshot.SessionPhase
+  id: SessionPhase
+  parent: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  langs:
+  - csharp
+  - vb
+  name: SessionPhase
+  nameWithType: ExploreStateSnapshot.SessionPhase
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot.SessionPhase
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public ExploreSessionPhase SessionPhase { get; }
+    parameters: []
+    return:
+      type: MyProject.ExploreGame.Domain.ExploreSessionPhase
+    content.vb: Public ReadOnly Property SessionPhase As ExploreSessionPhase
+  overload: MyProject.ExploreGame.Domain.ExploreStateSnapshot.SessionPhase*
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot.Characters
+  commentId: P:MyProject.ExploreGame.Domain.ExploreStateSnapshot.Characters
+  id: Characters
+  parent: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Characters
+  nameWithType: ExploreStateSnapshot.Characters
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot.Characters
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public IReadOnlyList<ExploreCharacterSnapshot> Characters { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{MyProject.ExploreGame.Domain.ExploreCharacterSnapshot}
+    content.vb: Public ReadOnly Property Characters As IReadOnlyList(Of ExploreCharacterSnapshot)
+  overload: MyProject.ExploreGame.Domain.ExploreStateSnapshot.Characters*
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentDungeon
+  commentId: P:MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentDungeon
+  id: CurrentDungeon
+  parent: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  langs:
+  - csharp
+  - vb
+  name: CurrentDungeon
+  nameWithType: ExploreStateSnapshot.CurrentDungeon
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentDungeon
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public ExploreDungeonSnapshot CurrentDungeon { get; }
+    parameters: []
+    return:
+      type: MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
+    content.vb: Public ReadOnly Property CurrentDungeon As ExploreDungeonSnapshot
+  overload: MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentDungeon*
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentCombat
+  commentId: P:MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentCombat
+  id: CurrentCombat
+  parent: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  langs:
+  - csharp
+  - vb
+  name: CurrentCombat
+  nameWithType: ExploreStateSnapshot.CurrentCombat
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentCombat
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public ExploreCombatSnapshot CurrentCombat { get; }
+    parameters: []
+    return:
+      type: MyProject.ExploreGame.Domain.ExploreCombatSnapshot
+    content.vb: Public ReadOnly Property CurrentCombat As ExploreCombatSnapshot
+  overload: MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentCombat*
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot.#ctor(System.Int64,MyProject.ExploreGame.Domain.ExploreSessionPhase,System.Collections.Generic.IReadOnlyDictionary{System.Int64,MyProject.ExploreGame.Domain.ExploreCharacterState},MyProject.ExploreGame.Domain.ExploreDungeonState,MyProject.ExploreGame.Domain.ExploreCombatState)
+  commentId: M:MyProject.ExploreGame.Domain.ExploreStateSnapshot.#ctor(System.Int64,MyProject.ExploreGame.Domain.ExploreSessionPhase,System.Collections.Generic.IReadOnlyDictionary{System.Int64,MyProject.ExploreGame.Domain.ExploreCharacterState},MyProject.ExploreGame.Domain.ExploreDungeonState,MyProject.ExploreGame.Domain.ExploreCombatState)
+  id: '#ctor(System.Int64,MyProject.ExploreGame.Domain.ExploreSessionPhase,System.Collections.Generic.IReadOnlyDictionary{System.Int64,MyProject.ExploreGame.Domain.ExploreCharacterState},MyProject.ExploreGame.Domain.ExploreDungeonState,MyProject.ExploreGame.Domain.ExploreCombatState)'
+  parent: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  langs:
+  - csharp
+  - vb
+  name: ExploreStateSnapshot(long, ExploreSessionPhase, IReadOnlyDictionary<long, ExploreCharacterState>, ExploreDungeonState, ExploreCombatState)
+  nameWithType: ExploreStateSnapshot.ExploreStateSnapshot(long, ExploreSessionPhase, IReadOnlyDictionary<long, ExploreCharacterState>, ExploreDungeonState, ExploreCombatState)
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot.ExploreStateSnapshot(long, MyProject.ExploreGame.Domain.ExploreSessionPhase, System.Collections.Generic.IReadOnlyDictionary<long, MyProject.ExploreGame.Domain.ExploreCharacterState>, MyProject.ExploreGame.Domain.ExploreDungeonState, MyProject.ExploreGame.Domain.ExploreCombatState)
+  type: Constructor
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public ExploreStateSnapshot(long tick, ExploreSessionPhase sessionPhase, IReadOnlyDictionary<long, ExploreCharacterState> characters, ExploreDungeonState dungeon, ExploreCombatState combat)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: sessionPhase
+      type: MyProject.ExploreGame.Domain.ExploreSessionPhase
+    - id: characters
+      type: System.Collections.Generic.IReadOnlyDictionary{System.Int64,MyProject.ExploreGame.Domain.ExploreCharacterState}
+    - id: dungeon
+      type: MyProject.ExploreGame.Domain.ExploreDungeonState
+    - id: combat
+      type: MyProject.ExploreGame.Domain.ExploreCombatState
+    content.vb: Public Sub New(tick As Long, sessionPhase As ExploreSessionPhase, characters As IReadOnlyDictionary(Of Long, ExploreCharacterState), dungeon As ExploreDungeonState, combat As ExploreCombatState)
+  overload: MyProject.ExploreGame.Domain.ExploreStateSnapshot.#ctor*
+  nameWithType.vb: ExploreStateSnapshot.New(Long, ExploreSessionPhase, IReadOnlyDictionary(Of Long, ExploreCharacterState), ExploreDungeonState, ExploreCombatState)
+  fullName.vb: MyProject.ExploreGame.Domain.ExploreStateSnapshot.New(Long, MyProject.ExploreGame.Domain.ExploreSessionPhase, System.Collections.Generic.IReadOnlyDictionary(Of Long, MyProject.ExploreGame.Domain.ExploreCharacterState), MyProject.ExploreGame.Domain.ExploreDungeonState, MyProject.ExploreGame.Domain.ExploreCombatState)
+  name.vb: New(Long, ExploreSessionPhase, IReadOnlyDictionary(Of Long, ExploreCharacterState), ExploreDungeonState, ExploreCombatState)
+references:
+- uid: MyProject.ExploreGame.Domain
+  commentId: N:MyProject.ExploreGame.Domain
+  href: MyProject.html
+  name: MyProject.ExploreGame.Domain
+  nameWithType: MyProject.ExploreGame.Domain
+  fullName: MyProject.ExploreGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.Common.Host.GameSnapshotBase
+  commentId: T:MyProject.Common.Host.GameSnapshotBase
+  parent: MyProject.Common.Host
+  href: MyProject.Common.Host.GameSnapshotBase.html
+  name: GameSnapshotBase
+  nameWithType: GameSnapshotBase
+  fullName: MyProject.Common.Host.GameSnapshotBase
+- uid: MyProject.Common.Host.GameSnapshotBase.Tick
+  commentId: P:MyProject.Common.Host.GameSnapshotBase.Tick
+  parent: MyProject.Common.Host.GameSnapshotBase
+  href: MyProject.Common.Host.GameSnapshotBase.html#MyProject_Common_Host_GameSnapshotBase_Tick
+  name: Tick
+  nameWithType: GameSnapshotBase.Tick
+  fullName: MyProject.Common.Host.GameSnapshotBase.Tick
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.Host
+  commentId: N:MyProject.Common.Host
+  href: MyProject.html
+  name: MyProject.Common.Host
+  nameWithType: MyProject.Common.Host
+  fullName: MyProject.Common.Host
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot.SessionPhase*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreStateSnapshot.SessionPhase
+  href: MyProject.ExploreGame.Domain.ExploreStateSnapshot.html#MyProject_ExploreGame_Domain_ExploreStateSnapshot_SessionPhase
+  name: SessionPhase
+  nameWithType: ExploreStateSnapshot.SessionPhase
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot.SessionPhase
+- uid: MyProject.ExploreGame.Domain.ExploreSessionPhase
+  commentId: T:MyProject.ExploreGame.Domain.ExploreSessionPhase
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreSessionPhase.html
+  name: ExploreSessionPhase
+  nameWithType: ExploreSessionPhase
+  fullName: MyProject.ExploreGame.Domain.ExploreSessionPhase
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot.Characters*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreStateSnapshot.Characters
+  href: MyProject.ExploreGame.Domain.ExploreStateSnapshot.html#MyProject_ExploreGame_Domain_ExploreStateSnapshot_Characters
+  name: Characters
+  nameWithType: ExploreStateSnapshot.Characters
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot.Characters
+- uid: System.Collections.Generic.IReadOnlyList{MyProject.ExploreGame.Domain.ExploreCharacterSnapshot}
+  commentId: T:System.Collections.Generic.IReadOnlyList{MyProject.ExploreGame.Domain.ExploreCharacterSnapshot}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<ExploreCharacterSnapshot>
+  nameWithType: IReadOnlyList<ExploreCharacterSnapshot>
+  fullName: System.Collections.Generic.IReadOnlyList<MyProject.ExploreGame.Domain.ExploreCharacterSnapshot>
+  nameWithType.vb: IReadOnlyList(Of ExploreCharacterSnapshot)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of MyProject.ExploreGame.Domain.ExploreCharacterSnapshot)
+  name.vb: IReadOnlyList(Of ExploreCharacterSnapshot)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: MyProject.ExploreGame.Domain.ExploreCharacterSnapshot
+    name: ExploreCharacterSnapshot
+    href: MyProject.ExploreGame.Domain.ExploreCharacterSnapshot.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.ExploreGame.Domain.ExploreCharacterSnapshot
+    name: ExploreCharacterSnapshot
+    href: MyProject.ExploreGame.Domain.ExploreCharacterSnapshot.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentDungeon*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentDungeon
+  href: MyProject.ExploreGame.Domain.ExploreStateSnapshot.html#MyProject_ExploreGame_Domain_ExploreStateSnapshot_CurrentDungeon
+  name: CurrentDungeon
+  nameWithType: ExploreStateSnapshot.CurrentDungeon
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentDungeon
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreDungeonSnapshot.html
+  name: ExploreDungeonSnapshot
+  nameWithType: ExploreDungeonSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentCombat*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentCombat
+  href: MyProject.ExploreGame.Domain.ExploreStateSnapshot.html#MyProject_ExploreGame_Domain_ExploreStateSnapshot_CurrentCombat
+  name: CurrentCombat
+  nameWithType: ExploreStateSnapshot.CurrentCombat
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot.CurrentCombat
+- uid: MyProject.ExploreGame.Domain.ExploreCombatSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreCombatSnapshot
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreCombatSnapshot.html
+  name: ExploreCombatSnapshot
+  nameWithType: ExploreCombatSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatSnapshot
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot.#ctor*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreStateSnapshot.#ctor
+  href: MyProject.ExploreGame.Domain.ExploreStateSnapshot.html#MyProject_ExploreGame_Domain_ExploreStateSnapshot__ctor_System_Int64_MyProject_ExploreGame_Domain_ExploreSessionPhase_System_Collections_Generic_IReadOnlyDictionary_System_Int64_MyProject_ExploreGame_Domain_ExploreCharacterState__MyProject_ExploreGame_Domain_ExploreDungeonState_MyProject_ExploreGame_Domain_ExploreCombatState_
+  name: ExploreStateSnapshot
+  nameWithType: ExploreStateSnapshot.ExploreStateSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot.ExploreStateSnapshot
+  nameWithType.vb: ExploreStateSnapshot.New
+  fullName.vb: MyProject.ExploreGame.Domain.ExploreStateSnapshot.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.Int64,MyProject.ExploreGame.Domain.ExploreCharacterState}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.Int64,MyProject.ExploreGame.Domain.ExploreCharacterState}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<long, ExploreCharacterState>
+  nameWithType: IReadOnlyDictionary<long, ExploreCharacterState>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<long, MyProject.ExploreGame.Domain.ExploreCharacterState>
+  nameWithType.vb: IReadOnlyDictionary(Of Long, ExploreCharacterState)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of Long, MyProject.ExploreGame.Domain.ExploreCharacterState)
+  name.vb: IReadOnlyDictionary(Of Long, ExploreCharacterState)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Domain.ExploreCharacterState
+    name: ExploreCharacterState
+    href: MyProject.ExploreGame.Domain.ExploreCharacterState.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Domain.ExploreCharacterState
+    name: ExploreCharacterState
+    href: MyProject.ExploreGame.Domain.ExploreCharacterState.html
+  - name: )
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState
+  commentId: T:MyProject.ExploreGame.Domain.ExploreDungeonState
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html
+  name: ExploreDungeonState
+  nameWithType: ExploreDungeonState
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState
+  commentId: T:MyProject.ExploreGame.Domain.ExploreCombatState
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreCombatState.html
+  name: ExploreCombatState
+  nameWithType: ExploreCombatState
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )

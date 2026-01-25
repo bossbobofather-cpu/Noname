@@ -1,0 +1,704 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState
+  commentId: T:MyProject.ExploreGame.Domain.ExploreCombatState
+  id: ExploreCombatState
+  parent: MyProject.ExploreGame.Domain
+  children:
+  - MyProject.ExploreGame.Domain.ExploreCombatState.#ctor
+  - MyProject.ExploreGame.Domain.ExploreCombatState.AddMonster(MyProject.ExploreGame.Domain.ExploreMonsterState)
+  - MyProject.ExploreGame.Domain.ExploreCombatState.AdvanceTurn
+  - MyProject.ExploreGame.Domain.ExploreCombatState.EndCombat(System.Boolean)
+  - MyProject.ExploreGame.Domain.ExploreCombatState.GetAliveMonsters
+  - MyProject.ExploreGame.Domain.ExploreCombatState.GetAllMonsters
+  - MyProject.ExploreGame.Domain.ExploreCombatState.IsEnded
+  - MyProject.ExploreGame.Domain.ExploreCombatState.IsVictory
+  - MyProject.ExploreGame.Domain.ExploreCombatState.Phase
+  - MyProject.ExploreGame.Domain.ExploreCombatState.StartCombat
+  - MyProject.ExploreGame.Domain.ExploreCombatState.TurnCount
+  langs:
+  - csharp
+  - vb
+  name: ExploreCombatState
+  nameWithType: ExploreCombatState
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState
+  type: Class
+  namespace: MyProject.ExploreGame.Domain
+  summary: 전투 상태를 나타냅니다.
+  example: []
+  syntax:
+    content: public sealed class ExploreCombatState
+    content.vb: Public NotInheritable Class ExploreCombatState
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.Phase
+  commentId: P:MyProject.ExploreGame.Domain.ExploreCombatState.Phase
+  id: Phase
+  parent: MyProject.ExploreGame.Domain.ExploreCombatState
+  langs:
+  - csharp
+  - vb
+  name: Phase
+  nameWithType: ExploreCombatState.Phase
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.Phase
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public CombatPhase Phase { get; }
+    parameters: []
+    return:
+      type: MyProject.ExploreGame.Domain.CombatPhase
+    content.vb: Public Property Phase As CombatPhase
+  overload: MyProject.ExploreGame.Domain.ExploreCombatState.Phase*
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.TurnCount
+  commentId: P:MyProject.ExploreGame.Domain.ExploreCombatState.TurnCount
+  id: TurnCount
+  parent: MyProject.ExploreGame.Domain.ExploreCombatState
+  langs:
+  - csharp
+  - vb
+  name: TurnCount
+  nameWithType: ExploreCombatState.TurnCount
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.TurnCount
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public int TurnCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TurnCount As Integer
+  overload: MyProject.ExploreGame.Domain.ExploreCombatState.TurnCount*
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.IsVictory
+  commentId: P:MyProject.ExploreGame.Domain.ExploreCombatState.IsVictory
+  id: IsVictory
+  parent: MyProject.ExploreGame.Domain.ExploreCombatState
+  langs:
+  - csharp
+  - vb
+  name: IsVictory
+  nameWithType: ExploreCombatState.IsVictory
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.IsVictory
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public bool IsVictory { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsVictory As Boolean
+  overload: MyProject.ExploreGame.Domain.ExploreCombatState.IsVictory*
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.#ctor
+  commentId: M:MyProject.ExploreGame.Domain.ExploreCombatState.#ctor
+  id: '#ctor'
+  parent: MyProject.ExploreGame.Domain.ExploreCombatState
+  langs:
+  - csharp
+  - vb
+  name: ExploreCombatState()
+  nameWithType: ExploreCombatState.ExploreCombatState()
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.ExploreCombatState()
+  type: Constructor
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public ExploreCombatState()
+    content.vb: Public Sub New()
+  overload: MyProject.ExploreGame.Domain.ExploreCombatState.#ctor*
+  nameWithType.vb: ExploreCombatState.New()
+  fullName.vb: MyProject.ExploreGame.Domain.ExploreCombatState.New()
+  name.vb: New()
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.AddMonster(MyProject.ExploreGame.Domain.ExploreMonsterState)
+  commentId: M:MyProject.ExploreGame.Domain.ExploreCombatState.AddMonster(MyProject.ExploreGame.Domain.ExploreMonsterState)
+  id: AddMonster(MyProject.ExploreGame.Domain.ExploreMonsterState)
+  parent: MyProject.ExploreGame.Domain.ExploreCombatState
+  langs:
+  - csharp
+  - vb
+  name: AddMonster(ExploreMonsterState)
+  nameWithType: ExploreCombatState.AddMonster(ExploreMonsterState)
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.AddMonster(MyProject.ExploreGame.Domain.ExploreMonsterState)
+  type: Method
+  namespace: MyProject.ExploreGame.Domain
+  summary: 몬스터를 추가합니다.
+  example: []
+  syntax:
+    content: public void AddMonster(ExploreMonsterState monster)
+    parameters:
+    - id: monster
+      type: MyProject.ExploreGame.Domain.ExploreMonsterState
+    content.vb: Public Sub AddMonster(monster As ExploreMonsterState)
+  overload: MyProject.ExploreGame.Domain.ExploreCombatState.AddMonster*
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.StartCombat
+  commentId: M:MyProject.ExploreGame.Domain.ExploreCombatState.StartCombat
+  id: StartCombat
+  parent: MyProject.ExploreGame.Domain.ExploreCombatState
+  langs:
+  - csharp
+  - vb
+  name: StartCombat()
+  nameWithType: ExploreCombatState.StartCombat()
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.StartCombat()
+  type: Method
+  namespace: MyProject.ExploreGame.Domain
+  summary: 전투를 시작합니다.
+  example: []
+  syntax:
+    content: public void StartCombat()
+    content.vb: Public Sub StartCombat()
+  overload: MyProject.ExploreGame.Domain.ExploreCombatState.StartCombat*
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.AdvanceTurn
+  commentId: M:MyProject.ExploreGame.Domain.ExploreCombatState.AdvanceTurn
+  id: AdvanceTurn
+  parent: MyProject.ExploreGame.Domain.ExploreCombatState
+  langs:
+  - csharp
+  - vb
+  name: AdvanceTurn()
+  nameWithType: ExploreCombatState.AdvanceTurn()
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.AdvanceTurn()
+  type: Method
+  namespace: MyProject.ExploreGame.Domain
+  summary: 턴을 진행합니다.
+  example: []
+  syntax:
+    content: public void AdvanceTurn()
+    content.vb: Public Sub AdvanceTurn()
+  overload: MyProject.ExploreGame.Domain.ExploreCombatState.AdvanceTurn*
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.GetAliveMonsters
+  commentId: M:MyProject.ExploreGame.Domain.ExploreCombatState.GetAliveMonsters
+  id: GetAliveMonsters
+  parent: MyProject.ExploreGame.Domain.ExploreCombatState
+  langs:
+  - csharp
+  - vb
+  name: GetAliveMonsters()
+  nameWithType: ExploreCombatState.GetAliveMonsters()
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.GetAliveMonsters()
+  type: Method
+  namespace: MyProject.ExploreGame.Domain
+  summary: 살아있는 몬스터 목록을 반환합니다 (스레드 안전).
+  example: []
+  syntax:
+    content: public List<ExploreMonsterState> GetAliveMonsters()
+    return:
+      type: System.Collections.Generic.List{MyProject.ExploreGame.Domain.ExploreMonsterState}
+    content.vb: Public Function GetAliveMonsters() As List(Of ExploreMonsterState)
+  overload: MyProject.ExploreGame.Domain.ExploreCombatState.GetAliveMonsters*
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.GetAllMonsters
+  commentId: M:MyProject.ExploreGame.Domain.ExploreCombatState.GetAllMonsters
+  id: GetAllMonsters
+  parent: MyProject.ExploreGame.Domain.ExploreCombatState
+  langs:
+  - csharp
+  - vb
+  name: GetAllMonsters()
+  nameWithType: ExploreCombatState.GetAllMonsters()
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.GetAllMonsters()
+  type: Method
+  namespace: MyProject.ExploreGame.Domain
+  summary: 모든 몬스터 목록을 반환합니다 (스레드 안전).
+  example: []
+  syntax:
+    content: public List<ExploreMonsterState> GetAllMonsters()
+    return:
+      type: System.Collections.Generic.List{MyProject.ExploreGame.Domain.ExploreMonsterState}
+    content.vb: Public Function GetAllMonsters() As List(Of ExploreMonsterState)
+  overload: MyProject.ExploreGame.Domain.ExploreCombatState.GetAllMonsters*
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.EndCombat(System.Boolean)
+  commentId: M:MyProject.ExploreGame.Domain.ExploreCombatState.EndCombat(System.Boolean)
+  id: EndCombat(System.Boolean)
+  parent: MyProject.ExploreGame.Domain.ExploreCombatState
+  langs:
+  - csharp
+  - vb
+  name: EndCombat(bool)
+  nameWithType: ExploreCombatState.EndCombat(bool)
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.EndCombat(bool)
+  type: Method
+  namespace: MyProject.ExploreGame.Domain
+  summary: 전투를 종료합니다.
+  example: []
+  syntax:
+    content: public void EndCombat(bool victory)
+    parameters:
+    - id: victory
+      type: System.Boolean
+    content.vb: Public Sub EndCombat(victory As Boolean)
+  overload: MyProject.ExploreGame.Domain.ExploreCombatState.EndCombat*
+  nameWithType.vb: ExploreCombatState.EndCombat(Boolean)
+  fullName.vb: MyProject.ExploreGame.Domain.ExploreCombatState.EndCombat(Boolean)
+  name.vb: EndCombat(Boolean)
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.IsEnded
+  commentId: M:MyProject.ExploreGame.Domain.ExploreCombatState.IsEnded
+  id: IsEnded
+  parent: MyProject.ExploreGame.Domain.ExploreCombatState
+  langs:
+  - csharp
+  - vb
+  name: IsEnded()
+  nameWithType: ExploreCombatState.IsEnded()
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.IsEnded()
+  type: Method
+  namespace: MyProject.ExploreGame.Domain
+  summary: 전투가 종료되었는지 확인합니다.
+  example: []
+  syntax:
+    content: public bool IsEnded()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsEnded() As Boolean
+  overload: MyProject.ExploreGame.Domain.ExploreCombatState.IsEnded*
+references:
+- uid: MyProject.ExploreGame.Domain
+  commentId: N:MyProject.ExploreGame.Domain
+  href: MyProject.html
+  name: MyProject.ExploreGame.Domain
+  nameWithType: MyProject.ExploreGame.Domain
+  fullName: MyProject.ExploreGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.Phase*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreCombatState.Phase
+  href: MyProject.ExploreGame.Domain.ExploreCombatState.html#MyProject_ExploreGame_Domain_ExploreCombatState_Phase
+  name: Phase
+  nameWithType: ExploreCombatState.Phase
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.Phase
+- uid: MyProject.ExploreGame.Domain.CombatPhase
+  commentId: T:MyProject.ExploreGame.Domain.CombatPhase
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.CombatPhase.html
+  name: CombatPhase
+  nameWithType: CombatPhase
+  fullName: MyProject.ExploreGame.Domain.CombatPhase
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.TurnCount*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreCombatState.TurnCount
+  href: MyProject.ExploreGame.Domain.ExploreCombatState.html#MyProject_ExploreGame_Domain_ExploreCombatState_TurnCount
+  name: TurnCount
+  nameWithType: ExploreCombatState.TurnCount
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.TurnCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.IsVictory*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreCombatState.IsVictory
+  href: MyProject.ExploreGame.Domain.ExploreCombatState.html#MyProject_ExploreGame_Domain_ExploreCombatState_IsVictory
+  name: IsVictory
+  nameWithType: ExploreCombatState.IsVictory
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.IsVictory
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.#ctor*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreCombatState.#ctor
+  href: MyProject.ExploreGame.Domain.ExploreCombatState.html#MyProject_ExploreGame_Domain_ExploreCombatState__ctor
+  name: ExploreCombatState
+  nameWithType: ExploreCombatState.ExploreCombatState
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.ExploreCombatState
+  nameWithType.vb: ExploreCombatState.New
+  fullName.vb: MyProject.ExploreGame.Domain.ExploreCombatState.New
+  name.vb: New
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.AddMonster*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreCombatState.AddMonster
+  href: MyProject.ExploreGame.Domain.ExploreCombatState.html#MyProject_ExploreGame_Domain_ExploreCombatState_AddMonster_MyProject_ExploreGame_Domain_ExploreMonsterState_
+  name: AddMonster
+  nameWithType: ExploreCombatState.AddMonster
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.AddMonster
+- uid: MyProject.ExploreGame.Domain.ExploreMonsterState
+  commentId: T:MyProject.ExploreGame.Domain.ExploreMonsterState
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreMonsterState.html
+  name: ExploreMonsterState
+  nameWithType: ExploreMonsterState
+  fullName: MyProject.ExploreGame.Domain.ExploreMonsterState
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.StartCombat*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreCombatState.StartCombat
+  href: MyProject.ExploreGame.Domain.ExploreCombatState.html#MyProject_ExploreGame_Domain_ExploreCombatState_StartCombat
+  name: StartCombat
+  nameWithType: ExploreCombatState.StartCombat
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.StartCombat
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.AdvanceTurn*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreCombatState.AdvanceTurn
+  href: MyProject.ExploreGame.Domain.ExploreCombatState.html#MyProject_ExploreGame_Domain_ExploreCombatState_AdvanceTurn
+  name: AdvanceTurn
+  nameWithType: ExploreCombatState.AdvanceTurn
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.AdvanceTurn
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.GetAliveMonsters*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreCombatState.GetAliveMonsters
+  href: MyProject.ExploreGame.Domain.ExploreCombatState.html#MyProject_ExploreGame_Domain_ExploreCombatState_GetAliveMonsters
+  name: GetAliveMonsters
+  nameWithType: ExploreCombatState.GetAliveMonsters
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.GetAliveMonsters
+- uid: System.Collections.Generic.List{MyProject.ExploreGame.Domain.ExploreMonsterState}
+  commentId: T:System.Collections.Generic.List{MyProject.ExploreGame.Domain.ExploreMonsterState}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ExploreMonsterState>
+  nameWithType: List<ExploreMonsterState>
+  fullName: System.Collections.Generic.List<MyProject.ExploreGame.Domain.ExploreMonsterState>
+  nameWithType.vb: List(Of ExploreMonsterState)
+  fullName.vb: System.Collections.Generic.List(Of MyProject.ExploreGame.Domain.ExploreMonsterState)
+  name.vb: List(Of ExploreMonsterState)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MyProject.ExploreGame.Domain.ExploreMonsterState
+    name: ExploreMonsterState
+    href: MyProject.ExploreGame.Domain.ExploreMonsterState.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.ExploreGame.Domain.ExploreMonsterState
+    name: ExploreMonsterState
+    href: MyProject.ExploreGame.Domain.ExploreMonsterState.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.GetAllMonsters*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreCombatState.GetAllMonsters
+  href: MyProject.ExploreGame.Domain.ExploreCombatState.html#MyProject_ExploreGame_Domain_ExploreCombatState_GetAllMonsters
+  name: GetAllMonsters
+  nameWithType: ExploreCombatState.GetAllMonsters
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.GetAllMonsters
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.EndCombat*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreCombatState.EndCombat
+  href: MyProject.ExploreGame.Domain.ExploreCombatState.html#MyProject_ExploreGame_Domain_ExploreCombatState_EndCombat_System_Boolean_
+  name: EndCombat
+  nameWithType: ExploreCombatState.EndCombat
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.EndCombat
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState.IsEnded*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreCombatState.IsEnded
+  href: MyProject.ExploreGame.Domain.ExploreCombatState.html#MyProject_ExploreGame_Domain_ExploreCombatState_IsEnded
+  name: IsEnded
+  nameWithType: ExploreCombatState.IsEnded
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState.IsEnded

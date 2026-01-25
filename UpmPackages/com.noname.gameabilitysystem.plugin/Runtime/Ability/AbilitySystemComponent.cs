@@ -23,12 +23,9 @@ namespace Noname.GameAbilitySystem
         private readonly Dictionary<FGameplayAbilitySpecHandle, List<GameplayAbilityInstance>> _activeInstances = new();
 
 
-        private readonly Dictionary<int, int> _effectTagCounts = new Dictionary<int, int>();
-
-        private readonly Dictionary<int, int> _looseTagCounts = new Dictionary<int, int>();
-
-        private readonly List<ActiveGameplayEffect> _activeEffects = new();
         private readonly AttributeSet _attributes = new AttributeSet();
+        private readonly List<GameplayEffectConfig> _expiredEffects = new();
+        private AbilitySystemModel _model;
 
         private int _nextAbilityHandleId = 1;
 
@@ -38,16 +35,10 @@ namespace Noname.GameAbilitySystem
         private event Action<AbilitySystemComponent, FGameplayTag> _onRemovedTag;
         private event Action<AbilitySystemComponent, GameplayEventData> _onGameplayEvent;
 
-        private struct ActiveGameplayEffect
-        {
-            public GameplayEffectConfig Config;
-            public float EndTime;
-        }
-
         /// <summary>
         /// 소유한 태그 컨테이너
         /// </summary>
-        public GameplayTagContainer OwnedTags => _ownedTags;
+        public GameplayTagContainer OwnedTags => EnsureModel().OwnedTags;
 
         /// <summary>
         /// 소유한 능력들
@@ -62,12 +53,16 @@ namespace Noname.GameAbilitySystem
         /// <summary>
         /// 속성 집합
         /// </summary>
-        public AttributeSet Attributes => _attributes;
+        public AttributeSet Attributes => EnsureModel().Attributes;
+
+        /// <summary>
+        /// 순수 데이터 모델입니다.
+        /// </summary>
+        public AbilitySystemModel Model => EnsureModel();
 
         private void Awake()
         {
-            // 기본 속성 값을 초기화한다.
-            _attributes.Initialize(_attributeDefaults);
+            EnsureModel();
 
             var found = GetComponentsInChildren<IAbilitySystemProvider>();
             if (found.Length == 0)
@@ -86,32 +81,42 @@ namespace Noname.GameAbilitySystem
             ApplyStartupAbilities();
         }
 
+        private AbilitySystemModel EnsureModel()
+        {
+            if (_model != null)
+            {
+                return _model;
+            }
+
+            // 기본 속성 값을 초기화한다.
+            _attributes.Initialize(_attributeDefaults);
+            if (_ownedTags == null)
+            {
+                _ownedTags = new GameplayTagContainer();
+            }
+
+            _model = new AbilitySystemModel(_attributes, _ownedTags);
+            return _model;
+        }
+
         private void Update()
         {
-            if (_activeEffects.Count == 0)
+            var model = EnsureModel();
+            if (model.ActiveEffectCount == 0)
             {
                 return;
             }
 
-            // 만료된 효과를 정리한다.
-            var now = Time.time;
-            for (var i = _activeEffects.Count - 1; i >= 0; i--)
+            _expiredEffects.Clear();
+            model.CollectExpiredEffects(Time.time, _expiredEffects);
+            if (_expiredEffects.Count == 0)
             {
-                var active = _activeEffects[i];
-                if (active.Config == null || now < active.EndTime)
-                {
-                    continue;
-                }
+                return;
+            }
 
-                RemoveEffectTags(active.Config);
-
-                // Swap and Pop 최적화: 순서가 중요하지 않으므로 마지막 요소와 교체 후 제거
-                var lastIndex = _activeEffects.Count - 1;
-                if (i < lastIndex)
-                {
-                    _activeEffects[i] = _activeEffects[lastIndex];
-                }
-                _activeEffects.RemoveAt(lastIndex);
+            for (var i = 0; i < _expiredEffects.Count; i++)
+            {
+                RemoveEffectTags(_expiredEffects[i]);
             }
         }
 
@@ -428,7 +433,7 @@ namespace Noname.GameAbilitySystem
                 return false;
             }
 
-            if (!_ownedTags.HasAll(tagConfig.ActivationRequiredTags))
+            if (!OwnedTags.HasAll(tagConfig.ActivationRequiredTags))
             {
                 Debug.LogWarning($"필수 활성화 태그가 누락되었습니다. 핸들 ID: {spec.Handle.Id}");
 
@@ -436,7 +441,7 @@ namespace Noname.GameAbilitySystem
                 return false;
             }
 
-            if (_ownedTags.HasAny(tagConfig.ActivationBlockedTags))
+            if (OwnedTags.HasAny(tagConfig.ActivationBlockedTags))
             {
                 Debug.LogWarning($"차단 태그로 인해 활성화할 수 없습니다. 핸들 ID: {spec.Handle.Id}");
 
@@ -559,8 +564,23 @@ namespace Noname.GameAbilitySystem
         /// <param name="tag">추가할 태그</param>
         public void AddLooseTag(FGameplayTag tag)
         {
+            var model = EnsureModel();
+            if (!tag.IsValid)
+            {
+                return;
+            }
+
             // 느슨한 태그 카운트를 갱신한다.
-            AddTagInternal(_looseTagCounts, tag, isLooseTag: true);
+            var addedToOwned = model.AddLooseTag(tag, out var totalCount);
+            if (addedToOwned)
+            {
+                _onAddedTag?.Invoke(this, tag);
+            }
+
+            if (!IsTagMessageIgnored(tag))
+            {
+                PublishSystemMessage($"태그 추가: {tag.Value} (총 {totalCount})");
+            }
         }
 
         /// <summary>
@@ -569,8 +589,28 @@ namespace Noname.GameAbilitySystem
         /// <param name="tag">제거할 태그</param>
         public void RemoveLooseTag(FGameplayTag tag)
         {
+            var model = EnsureModel();
+            if (!tag.IsValid)
+            {
+                return;
+            }
+
             // 느슨한 태그 카운트를 감소시킨다.
-            RemoveTagInternal(_looseTagCounts, tag, isLooseTag: true);
+            var beforeTotal = model.GetTotalTagCount(tag);
+            var removedFromOwned = model.RemoveLooseTag(tag, out var totalCount);
+            if (totalCount == beforeTotal)
+            {
+                return;
+            }
+            if (removedFromOwned)
+            {
+                _onRemovedTag?.Invoke(this, tag);
+            }
+
+            if (!IsTagMessageIgnored(tag))
+            {
+                PublishSystemMessage($"태그 제거: {tag.Value} (총 {totalCount})");
+            }
         }
 
         private void RegisterAbilityInstance(GameplayAbilitySpec spec, GameplayAbilityInstance instance)
@@ -665,14 +705,7 @@ namespace Noname.GameAbilitySystem
 
             // 현재 적용 중인 효과만 모아 반환한다.
             results.Clear();
-            for (var i = 0; i < _activeEffects.Count; i++)
-            {
-                var config = _activeEffects[i].Config;
-                if (config != null)
-                {
-                    results.Add(config);
-                }
-            }
+            EnsureModel().GetActiveEffects(results);
         }
 
         /// <summary>
@@ -865,96 +898,6 @@ namespace Noname.GameAbilitySystem
         }
 
         /// <summary>
-        /// 태그를 내부적으로 추가합니다.
-        /// </summary>
-        /// <param name="counts"></param>
-        /// <param name="tag"></param>
-        /// <param name="isLooseTag">느슨한 태그 여부 (로그용)</param>
-        private void AddTagInternal(Dictionary<int, int> counts, FGameplayTag tag, bool isLooseTag = false)
-        {
-            if (!tag.IsValid)
-            {
-                return;
-            }
-
-            // 태그 카운트를 증가시킨다.
-            var hash = tag.Hash;
-            var beforeTotal = GetTotalTagCount(hash);
-            counts.TryGetValue(hash, out var count);
-            count++;
-            counts[hash] = count;
-
-            if (beforeTotal == 0)
-            {
-                _ownedTags.AddTag(tag);
-
-                _onAddedTag?.Invoke(this, tag);
-            }
-
-            // 로그 메시지가 켜져 있고, 시스템 메시지 무시 태그가 아닐 때만 로그 발생 (느슨한 태그일 때만 주로 로그를 남기거나 필요에 따라 조정)
-            if (isLooseTag && !IsTagMessageIgnored(tag))
-            {
-                PublishSystemMessage($"태그 추가: {tag.Value} (총 {GetTotalTagCount(hash)})");
-            }
-        }
-
-        /// <summary>
-        /// 태그를 내부적으로 제거합니다.
-        /// </summary>
-        /// <param name="counts"></param>
-        /// <param name="tag"></param>
-        /// <param name="isLooseTag">느슨한 태그 여부 (로그용)</param>
-        private void RemoveTagInternal(Dictionary<int, int> counts, FGameplayTag tag, bool isLooseTag = false)
-        {
-            if (!tag.IsValid)
-            {
-                return;
-            }
-
-            // 태그 카운트를 감소시킨다.
-            var hash = tag.Hash;
-            if (!counts.TryGetValue(hash, out var count))
-            {
-                return;
-            }
-
-            count--;
-            if (count <= 0)
-            {
-                counts.Remove(hash);
-            }
-            else
-            {
-                counts[hash] = count;
-            }
-
-            if (GetTotalTagCount(hash) == 0)
-            {
-                _ownedTags.RemoveTag(tag);
-
-                _onRemovedTag?.Invoke(this, tag);
-            }
-
-            if (isLooseTag && !IsTagMessageIgnored(tag))
-            {
-                PublishSystemMessage($"태그 제거: {tag.Value} (총 {GetTotalTagCount(hash)})");
-            }
-        }
-
-        /// <summary>
-        /// 태그의 총 개수를 가져옵니다.
-        /// </summary>
-        /// <param name="hash"></param>
-        /// <returns></returns>
-        private int GetTotalTagCount(int hash)
-        {
-            // 효과/느슨한 태그 카운트를 합산한다.
-            _effectTagCounts.TryGetValue(hash, out var effectCount);
-            _looseTagCounts.TryGetValue(hash, out var looseCount);
-            return effectCount + looseCount;
-        }
-
-        /// <summary>
         /// 이벤트 태그가 트리거 태그와 일치하는지 확인합니다.
         /// </summary>
         /// <param name="eventTag"></param>
@@ -1036,19 +979,11 @@ namespace Noname.GameAbilitySystem
                     return;
                 }
 
-                _activeEffects.Add(new ActiveGameplayEffect
-                {
-                    Config = effectConfig,
-                    EndTime = Time.time + duration
-                });
+                EnsureModel().AddActiveEffect(effectConfig, Time.time + duration);
             }
             else if (effectConfig.DurationType == EGameplayEffectDurationType.Infinite)
             {
-                _activeEffects.Add(new ActiveGameplayEffect
-                {
-                    Config = effectConfig,
-                    EndTime = float.PositiveInfinity
-                });
+                EnsureModel().AddActiveEffect(effectConfig, float.PositiveInfinity);
             }
         }
 
@@ -1060,12 +995,12 @@ namespace Noname.GameAbilitySystem
             }
 
             // 필수/차단 태그 조건을 확인한다.
-            if (!_ownedTags.HasAll(effectConfig.ActivationRequiredTags))
+            if (!OwnedTags.HasAll(effectConfig.ActivationRequiredTags))
             {
                 return false;
             }
 
-            if (_ownedTags.HasAny(effectConfig.ActivationBlockedTags))
+            if (OwnedTags.HasAny(effectConfig.ActivationBlockedTags))
             {
                 return false;
             }
@@ -1100,25 +1035,13 @@ namespace Noname.GameAbilitySystem
             }
 
             // 동일한 설정을 찾아 제거한다.
-            for (var i = _activeEffects.Count - 1; i >= 0; i--)
+            if (!EnsureModel().RemoveActiveEffect(effectConfig))
             {
-                var active = _activeEffects[i];
-                if (active.Config != effectConfig)
-                {
-                    continue;
-                }
-
-                RemoveEffectTags(effectConfig);
-                var lastIndex = _activeEffects.Count - 1;
-                if (i < lastIndex)
-                {
-                    _activeEffects[i] = _activeEffects[lastIndex];
-                }
-                _activeEffects.RemoveAt(lastIndex);
-                return true;
+                return false;
             }
 
-            return false;
+            RemoveEffectTags(effectConfig);
+            return true;
         }
 
         /// <summary>
@@ -1128,9 +1051,14 @@ namespace Noname.GameAbilitySystem
         private void AddEffectTags(GameplayEffectConfig effectConfig)
         {
             // 효과가 부여하는 태그를 추가한다.
+            var model = EnsureModel();
             foreach (var tag in effectConfig.GrantedTags.Tags)
             {
-                AddTagInternal(_effectTagCounts, tag, isLooseTag: false);
+                var addedToOwned = model.AddEffectTag(tag, out _);
+                if (addedToOwned)
+                {
+                    _onAddedTag?.Invoke(this, tag);
+                }
             }
         }
 
@@ -1141,9 +1069,14 @@ namespace Noname.GameAbilitySystem
         private void RemoveEffectTags(GameplayEffectConfig effectConfig)
         {
             // 효과가 부여한 태그를 제거한다.
+            var model = EnsureModel();
             foreach (var tag in effectConfig.GrantedTags.Tags)
             {
-                RemoveTagInternal(_effectTagCounts, tag, isLooseTag: false);
+                var removedFromOwned = model.RemoveEffectTag(tag, out _);
+                if (removedFromOwned)
+                {
+                    _onRemovedTag?.Invoke(this, tag);
+                }
             }
         }
 
@@ -1169,7 +1102,7 @@ namespace Noname.GameAbilitySystem
                     continue;
                 }
 
-                if (!_attributes.TryGet(modifier.Attribute, out var value))
+                if (!Attributes.TryGet(modifier.Attribute, out var value))
                 {
                     continue;
                 }

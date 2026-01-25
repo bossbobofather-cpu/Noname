@@ -1,0 +1,580 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Application.ExploreDungeonModuleHost
+  commentId: T:MyProject.ExploreGame.Application.ExploreDungeonModuleHost
+  id: ExploreDungeonModuleHost
+  parent: MyProject.ExploreGame.Application
+  children:
+  - MyProject.ExploreGame.Application.ExploreDungeonModuleHost.#ctor(MyProject.ExploreGame.Domain.ExploreHostState,MyProject.ExploreGame.Data.ExploreHostConfig,System.Action{MyProject.ExploreGame.Application.ExploreHostEvent})
+  - MyProject.ExploreGame.Application.ExploreDungeonModuleHost.StartDungeon(System.String,System.Int64)
+  - MyProject.ExploreGame.Application.ExploreDungeonModuleHost.Tick(System.Single,System.Int64,System.Action{System.Int64})
+  langs:
+  - csharp
+  - vb
+  name: ExploreDungeonModuleHost
+  nameWithType: ExploreDungeonModuleHost
+  fullName: MyProject.ExploreGame.Application.ExploreDungeonModuleHost
+  type: Class
+  namespace: MyProject.ExploreGame.Application
+  summary: 던전 탐험 로직을 관리하는 Module Host입니다.
+  example: []
+  syntax:
+    content: public sealed class ExploreDungeonModuleHost
+    content.vb: Public NotInheritable Class ExploreDungeonModuleHost
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.#ctor(MyProject.ExploreGame.Domain.ExploreHostState,MyProject.ExploreGame.Data.ExploreHostConfig,System.Action{MyProject.ExploreGame.Application.ExploreHostEvent})
+  commentId: M:MyProject.ExploreGame.Application.ExploreDungeonModuleHost.#ctor(MyProject.ExploreGame.Domain.ExploreHostState,MyProject.ExploreGame.Data.ExploreHostConfig,System.Action{MyProject.ExploreGame.Application.ExploreHostEvent})
+  id: '#ctor(MyProject.ExploreGame.Domain.ExploreHostState,MyProject.ExploreGame.Data.ExploreHostConfig,System.Action{MyProject.ExploreGame.Application.ExploreHostEvent})'
+  parent: MyProject.ExploreGame.Application.ExploreDungeonModuleHost
+  langs:
+  - csharp
+  - vb
+  name: ExploreDungeonModuleHost(ExploreHostState, ExploreHostConfig, Action<ExploreHostEvent>)
+  nameWithType: ExploreDungeonModuleHost.ExploreDungeonModuleHost(ExploreHostState, ExploreHostConfig, Action<ExploreHostEvent>)
+  fullName: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.ExploreDungeonModuleHost(MyProject.ExploreGame.Domain.ExploreHostState, MyProject.ExploreGame.Data.ExploreHostConfig, System.Action<MyProject.ExploreGame.Application.ExploreHostEvent>)
+  type: Constructor
+  namespace: MyProject.ExploreGame.Application
+  syntax:
+    content: public ExploreDungeonModuleHost(ExploreHostState state, ExploreHostConfig config, Action<ExploreHostEvent> publishEvent)
+    parameters:
+    - id: state
+      type: MyProject.ExploreGame.Domain.ExploreHostState
+    - id: config
+      type: MyProject.ExploreGame.Data.ExploreHostConfig
+    - id: publishEvent
+      type: System.Action{MyProject.ExploreGame.Application.ExploreHostEvent}
+    content.vb: Public Sub New(state As ExploreHostState, config As ExploreHostConfig, publishEvent As Action(Of ExploreHostEvent))
+  overload: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.#ctor*
+  nameWithType.vb: ExploreDungeonModuleHost.New(ExploreHostState, ExploreHostConfig, Action(Of ExploreHostEvent))
+  fullName.vb: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.New(MyProject.ExploreGame.Domain.ExploreHostState, MyProject.ExploreGame.Data.ExploreHostConfig, System.Action(Of MyProject.ExploreGame.Application.ExploreHostEvent))
+  name.vb: New(ExploreHostState, ExploreHostConfig, Action(Of ExploreHostEvent))
+- uid: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.StartDungeon(System.String,System.Int64)
+  commentId: M:MyProject.ExploreGame.Application.ExploreDungeonModuleHost.StartDungeon(System.String,System.Int64)
+  id: StartDungeon(System.String,System.Int64)
+  parent: MyProject.ExploreGame.Application.ExploreDungeonModuleHost
+  langs:
+  - csharp
+  - vb
+  name: StartDungeon(string, long)
+  nameWithType: ExploreDungeonModuleHost.StartDungeon(string, long)
+  fullName: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.StartDungeon(string, long)
+  type: Method
+  namespace: MyProject.ExploreGame.Application
+  summary: 던전 탐험을 시작합니다.
+  example: []
+  syntax:
+    content: public void StartDungeon(string dungeonId, long tick)
+    parameters:
+    - id: dungeonId
+      type: System.String
+    - id: tick
+      type: System.Int64
+    content.vb: Public Sub StartDungeon(dungeonId As String, tick As Long)
+  overload: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.StartDungeon*
+  nameWithType.vb: ExploreDungeonModuleHost.StartDungeon(String, Long)
+  fullName.vb: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.StartDungeon(String, Long)
+  name.vb: StartDungeon(String, Long)
+- uid: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.Tick(System.Single,System.Int64,System.Action{System.Int64})
+  commentId: M:MyProject.ExploreGame.Application.ExploreDungeonModuleHost.Tick(System.Single,System.Int64,System.Action{System.Int64})
+  id: Tick(System.Single,System.Int64,System.Action{System.Int64})
+  parent: MyProject.ExploreGame.Application.ExploreDungeonModuleHost
+  langs:
+  - csharp
+  - vb
+  name: Tick(float, long, Action<long>)
+  nameWithType: ExploreDungeonModuleHost.Tick(float, long, Action<long>)
+  fullName: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.Tick(float, long, System.Action<long>)
+  type: Method
+  namespace: MyProject.ExploreGame.Application
+  summary: 매 틱마다 호출되어 자동 진행을 처리합니다.
+  example: []
+  syntax:
+    content: public void Tick(float deltaSeconds, long tick, Action<long> triggerCombat)
+    parameters:
+    - id: deltaSeconds
+      type: System.Single
+    - id: tick
+      type: System.Int64
+    - id: triggerCombat
+      type: System.Action{System.Int64}
+    content.vb: Public Sub Tick(deltaSeconds As Single, tick As Long, triggerCombat As Action(Of Long))
+  overload: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.Tick*
+  nameWithType.vb: ExploreDungeonModuleHost.Tick(Single, Long, Action(Of Long))
+  fullName.vb: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.Tick(Single, Long, System.Action(Of Long))
+  name.vb: Tick(Single, Long, Action(Of Long))
+references:
+- uid: MyProject.ExploreGame.Application
+  commentId: N:MyProject.ExploreGame.Application
+  href: MyProject.html
+  name: MyProject.ExploreGame.Application
+  nameWithType: MyProject.ExploreGame.Application
+  fullName: MyProject.ExploreGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Application
+    name: Application
+    href: MyProject.ExploreGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Application
+    name: Application
+    href: MyProject.ExploreGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.#ctor*
+  commentId: Overload:MyProject.ExploreGame.Application.ExploreDungeonModuleHost.#ctor
+  href: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.html#MyProject_ExploreGame_Application_ExploreDungeonModuleHost__ctor_MyProject_ExploreGame_Domain_ExploreHostState_MyProject_ExploreGame_Data_ExploreHostConfig_System_Action_MyProject_ExploreGame_Application_ExploreHostEvent__
+  name: ExploreDungeonModuleHost
+  nameWithType: ExploreDungeonModuleHost.ExploreDungeonModuleHost
+  fullName: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.ExploreDungeonModuleHost
+  nameWithType.vb: ExploreDungeonModuleHost.New
+  fullName.vb: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.New
+  name.vb: New
+- uid: MyProject.ExploreGame.Domain.ExploreHostState
+  commentId: T:MyProject.ExploreGame.Domain.ExploreHostState
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreHostState.html
+  name: ExploreHostState
+  nameWithType: ExploreHostState
+  fullName: MyProject.ExploreGame.Domain.ExploreHostState
+- uid: MyProject.ExploreGame.Data.ExploreHostConfig
+  commentId: T:MyProject.ExploreGame.Data.ExploreHostConfig
+  parent: MyProject.ExploreGame.Data
+  href: MyProject.ExploreGame.Data.ExploreHostConfig.html
+  name: ExploreHostConfig
+  nameWithType: ExploreHostConfig
+  fullName: MyProject.ExploreGame.Data.ExploreHostConfig
+- uid: System.Action{MyProject.ExploreGame.Application.ExploreHostEvent}
+  commentId: T:System.Action{MyProject.ExploreGame.Application.ExploreHostEvent}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<ExploreHostEvent>
+  nameWithType: Action<ExploreHostEvent>
+  fullName: System.Action<MyProject.ExploreGame.Application.ExploreHostEvent>
+  nameWithType.vb: Action(Of ExploreHostEvent)
+  fullName.vb: System.Action(Of MyProject.ExploreGame.Application.ExploreHostEvent)
+  name.vb: Action(Of ExploreHostEvent)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
+    name: ExploreHostEvent
+    href: MyProject.ExploreGame.Application.ExploreHostEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
+    name: ExploreHostEvent
+    href: MyProject.ExploreGame.Application.ExploreHostEvent.html
+  - name: )
+- uid: MyProject.ExploreGame.Domain
+  commentId: N:MyProject.ExploreGame.Domain
+  href: MyProject.html
+  name: MyProject.ExploreGame.Domain
+  nameWithType: MyProject.ExploreGame.Domain
+  fullName: MyProject.ExploreGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+- uid: MyProject.ExploreGame.Data
+  commentId: N:MyProject.ExploreGame.Data
+  href: MyProject.html
+  name: MyProject.ExploreGame.Data
+  nameWithType: MyProject.ExploreGame.Data
+  fullName: MyProject.ExploreGame.Data
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Data
+    name: Data
+    href: MyProject.ExploreGame.Data.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Data
+    name: Data
+    href: MyProject.ExploreGame.Data.html
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.StartDungeon*
+  commentId: Overload:MyProject.ExploreGame.Application.ExploreDungeonModuleHost.StartDungeon
+  href: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.html#MyProject_ExploreGame_Application_ExploreDungeonModuleHost_StartDungeon_System_String_System_Int64_
+  name: StartDungeon
+  nameWithType: ExploreDungeonModuleHost.StartDungeon
+  fullName: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.StartDungeon
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.Tick*
+  commentId: Overload:MyProject.ExploreGame.Application.ExploreDungeonModuleHost.Tick
+  href: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.html#MyProject_ExploreGame_Application_ExploreDungeonModuleHost_Tick_System_Single_System_Int64_System_Action_System_Int64__
+  name: Tick
+  nameWithType: ExploreDungeonModuleHost.Tick
+  fullName: MyProject.ExploreGame.Application.ExploreDungeonModuleHost.Tick
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Action{System.Int64}
+  commentId: T:System.Action{System.Int64}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<long>
+  nameWithType: Action<long>
+  fullName: System.Action<long>
+  nameWithType.vb: Action(Of Long)
+  fullName.vb: System.Action(Of Long)
+  name.vb: Action(Of Long)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )

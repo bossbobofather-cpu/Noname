@@ -1,0 +1,709 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Application.ExploreModeHost
+  commentId: T:MyProject.ExploreGame.Application.ExploreModeHost
+  id: ExploreModeHost
+  parent: MyProject.ExploreGame.Application
+  children:
+  - MyProject.ExploreGame.Application.ExploreModeHost.#ctor(MyProject.ExploreGame.Data.ExploreHostConfig,System.Action{MyProject.ExploreGame.Application.ExploreCommandResult},System.Action{MyProject.ExploreGame.Application.ExploreHostEvent})
+  - MyProject.ExploreGame.Application.ExploreModeHost.BuildSnapshot(System.Int64)
+  - MyProject.ExploreGame.Application.ExploreModeHost.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand,System.Int64)
+  - MyProject.ExploreGame.Application.ExploreModeHost.OnTick(System.Single,System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: ExploreModeHost
+  nameWithType: ExploreModeHost
+  fullName: MyProject.ExploreGame.Application.ExploreModeHost
+  type: Class
+  namespace: MyProject.ExploreGame.Application
+  summary: 탐험 게임의 게임 모드 로직을 담당하는 Host입니다.
+  example: []
+  syntax:
+    content: public sealed class ExploreModeHost
+    content.vb: Public NotInheritable Class ExploreModeHost
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.ExploreGame.Application.ExploreModeHost.#ctor(MyProject.ExploreGame.Data.ExploreHostConfig,System.Action{MyProject.ExploreGame.Application.ExploreCommandResult},System.Action{MyProject.ExploreGame.Application.ExploreHostEvent})
+  commentId: M:MyProject.ExploreGame.Application.ExploreModeHost.#ctor(MyProject.ExploreGame.Data.ExploreHostConfig,System.Action{MyProject.ExploreGame.Application.ExploreCommandResult},System.Action{MyProject.ExploreGame.Application.ExploreHostEvent})
+  id: '#ctor(MyProject.ExploreGame.Data.ExploreHostConfig,System.Action{MyProject.ExploreGame.Application.ExploreCommandResult},System.Action{MyProject.ExploreGame.Application.ExploreHostEvent})'
+  parent: MyProject.ExploreGame.Application.ExploreModeHost
+  langs:
+  - csharp
+  - vb
+  name: ExploreModeHost(ExploreHostConfig, Action<ExploreCommandResult>, Action<ExploreHostEvent>)
+  nameWithType: ExploreModeHost.ExploreModeHost(ExploreHostConfig, Action<ExploreCommandResult>, Action<ExploreHostEvent>)
+  fullName: MyProject.ExploreGame.Application.ExploreModeHost.ExploreModeHost(MyProject.ExploreGame.Data.ExploreHostConfig, System.Action<MyProject.ExploreGame.Application.ExploreCommandResult>, System.Action<MyProject.ExploreGame.Application.ExploreHostEvent>)
+  type: Constructor
+  namespace: MyProject.ExploreGame.Application
+  syntax:
+    content: public ExploreModeHost(ExploreHostConfig config, Action<ExploreCommandResult> publishResult, Action<ExploreHostEvent> publishEvent)
+    parameters:
+    - id: config
+      type: MyProject.ExploreGame.Data.ExploreHostConfig
+    - id: publishResult
+      type: System.Action{MyProject.ExploreGame.Application.ExploreCommandResult}
+    - id: publishEvent
+      type: System.Action{MyProject.ExploreGame.Application.ExploreHostEvent}
+    content.vb: Public Sub New(config As ExploreHostConfig, publishResult As Action(Of ExploreCommandResult), publishEvent As Action(Of ExploreHostEvent))
+  overload: MyProject.ExploreGame.Application.ExploreModeHost.#ctor*
+  nameWithType.vb: ExploreModeHost.New(ExploreHostConfig, Action(Of ExploreCommandResult), Action(Of ExploreHostEvent))
+  fullName.vb: MyProject.ExploreGame.Application.ExploreModeHost.New(MyProject.ExploreGame.Data.ExploreHostConfig, System.Action(Of MyProject.ExploreGame.Application.ExploreCommandResult), System.Action(Of MyProject.ExploreGame.Application.ExploreHostEvent))
+  name.vb: New(ExploreHostConfig, Action(Of ExploreCommandResult), Action(Of ExploreHostEvent))
+- uid: MyProject.ExploreGame.Application.ExploreModeHost.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand,System.Int64)
+  commentId: M:MyProject.ExploreGame.Application.ExploreModeHost.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand,System.Int64)
+  id: HandleCommand(MyProject.ExploreGame.Application.ExploreCommand,System.Int64)
+  parent: MyProject.ExploreGame.Application.ExploreModeHost
+  langs:
+  - csharp
+  - vb
+  name: HandleCommand(ExploreCommand, long)
+  nameWithType: ExploreModeHost.HandleCommand(ExploreCommand, long)
+  fullName: MyProject.ExploreGame.Application.ExploreModeHost.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand, long)
+  type: Method
+  namespace: MyProject.ExploreGame.Application
+  summary: 커맨드를 처리하고 결과를 반환합니다.
+  example: []
+  syntax:
+    content: public GameCommandOutcome<ExploreCommandResult, ExploreHostEvent> HandleCommand(ExploreCommand command, long tick)
+    parameters:
+    - id: command
+      type: MyProject.ExploreGame.Application.ExploreCommand
+    - id: tick
+      type: System.Int64
+    return:
+      type: MyProject.Common.Host.GameCommandOutcome{MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent}
+    content.vb: Public Function HandleCommand(command As ExploreCommand, tick As Long) As GameCommandOutcome(Of ExploreCommandResult, ExploreHostEvent)
+  overload: MyProject.ExploreGame.Application.ExploreModeHost.HandleCommand*
+  nameWithType.vb: ExploreModeHost.HandleCommand(ExploreCommand, Long)
+  fullName.vb: MyProject.ExploreGame.Application.ExploreModeHost.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand, Long)
+  name.vb: HandleCommand(ExploreCommand, Long)
+- uid: MyProject.ExploreGame.Application.ExploreModeHost.OnTick(System.Single,System.Int64)
+  commentId: M:MyProject.ExploreGame.Application.ExploreModeHost.OnTick(System.Single,System.Int64)
+  id: OnTick(System.Single,System.Int64)
+  parent: MyProject.ExploreGame.Application.ExploreModeHost
+  langs:
+  - csharp
+  - vb
+  name: OnTick(float, long)
+  nameWithType: ExploreModeHost.OnTick(float, long)
+  fullName: MyProject.ExploreGame.Application.ExploreModeHost.OnTick(float, long)
+  type: Method
+  namespace: MyProject.ExploreGame.Application
+  summary: 매 틱마다 호출되어 게임 상태를 업데이트합니다.
+  example: []
+  syntax:
+    content: public void OnTick(float deltaSeconds, long tick)
+    parameters:
+    - id: deltaSeconds
+      type: System.Single
+    - id: tick
+      type: System.Int64
+    content.vb: Public Sub OnTick(deltaSeconds As Single, tick As Long)
+  overload: MyProject.ExploreGame.Application.ExploreModeHost.OnTick*
+  nameWithType.vb: ExploreModeHost.OnTick(Single, Long)
+  fullName.vb: MyProject.ExploreGame.Application.ExploreModeHost.OnTick(Single, Long)
+  name.vb: OnTick(Single, Long)
+- uid: MyProject.ExploreGame.Application.ExploreModeHost.BuildSnapshot(System.Int64)
+  commentId: M:MyProject.ExploreGame.Application.ExploreModeHost.BuildSnapshot(System.Int64)
+  id: BuildSnapshot(System.Int64)
+  parent: MyProject.ExploreGame.Application.ExploreModeHost
+  langs:
+  - csharp
+  - vb
+  name: BuildSnapshot(long)
+  nameWithType: ExploreModeHost.BuildSnapshot(long)
+  fullName: MyProject.ExploreGame.Application.ExploreModeHost.BuildSnapshot(long)
+  type: Method
+  namespace: MyProject.ExploreGame.Application
+  summary: 현재 상태의 스냅샷을 생성합니다.
+  example: []
+  syntax:
+    content: public ExploreStateSnapshot BuildSnapshot(long tick)
+    parameters:
+    - id: tick
+      type: System.Int64
+    return:
+      type: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+    content.vb: Public Function BuildSnapshot(tick As Long) As ExploreStateSnapshot
+  overload: MyProject.ExploreGame.Application.ExploreModeHost.BuildSnapshot*
+  nameWithType.vb: ExploreModeHost.BuildSnapshot(Long)
+  fullName.vb: MyProject.ExploreGame.Application.ExploreModeHost.BuildSnapshot(Long)
+  name.vb: BuildSnapshot(Long)
+references:
+- uid: MyProject.ExploreGame.Application
+  commentId: N:MyProject.ExploreGame.Application
+  href: MyProject.html
+  name: MyProject.ExploreGame.Application
+  nameWithType: MyProject.ExploreGame.Application
+  fullName: MyProject.ExploreGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Application
+    name: Application
+    href: MyProject.ExploreGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Application
+    name: Application
+    href: MyProject.ExploreGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.ExploreGame.Application.ExploreModeHost.#ctor*
+  commentId: Overload:MyProject.ExploreGame.Application.ExploreModeHost.#ctor
+  href: MyProject.ExploreGame.Application.ExploreModeHost.html#MyProject_ExploreGame_Application_ExploreModeHost__ctor_MyProject_ExploreGame_Data_ExploreHostConfig_System_Action_MyProject_ExploreGame_Application_ExploreCommandResult__System_Action_MyProject_ExploreGame_Application_ExploreHostEvent__
+  name: ExploreModeHost
+  nameWithType: ExploreModeHost.ExploreModeHost
+  fullName: MyProject.ExploreGame.Application.ExploreModeHost.ExploreModeHost
+  nameWithType.vb: ExploreModeHost.New
+  fullName.vb: MyProject.ExploreGame.Application.ExploreModeHost.New
+  name.vb: New
+- uid: MyProject.ExploreGame.Data.ExploreHostConfig
+  commentId: T:MyProject.ExploreGame.Data.ExploreHostConfig
+  parent: MyProject.ExploreGame.Data
+  href: MyProject.ExploreGame.Data.ExploreHostConfig.html
+  name: ExploreHostConfig
+  nameWithType: ExploreHostConfig
+  fullName: MyProject.ExploreGame.Data.ExploreHostConfig
+- uid: System.Action{MyProject.ExploreGame.Application.ExploreCommandResult}
+  commentId: T:System.Action{MyProject.ExploreGame.Application.ExploreCommandResult}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<ExploreCommandResult>
+  nameWithType: Action<ExploreCommandResult>
+  fullName: System.Action<MyProject.ExploreGame.Application.ExploreCommandResult>
+  nameWithType.vb: Action(Of ExploreCommandResult)
+  fullName.vb: System.Action(Of MyProject.ExploreGame.Application.ExploreCommandResult)
+  name.vb: Action(Of ExploreCommandResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: MyProject.ExploreGame.Application.ExploreCommandResult
+    name: ExploreCommandResult
+    href: MyProject.ExploreGame.Application.ExploreCommandResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreCommandResult
+    name: ExploreCommandResult
+    href: MyProject.ExploreGame.Application.ExploreCommandResult.html
+  - name: )
+- uid: System.Action{MyProject.ExploreGame.Application.ExploreHostEvent}
+  commentId: T:System.Action{MyProject.ExploreGame.Application.ExploreHostEvent}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<ExploreHostEvent>
+  nameWithType: Action<ExploreHostEvent>
+  fullName: System.Action<MyProject.ExploreGame.Application.ExploreHostEvent>
+  nameWithType.vb: Action(Of ExploreHostEvent)
+  fullName.vb: System.Action(Of MyProject.ExploreGame.Application.ExploreHostEvent)
+  name.vb: Action(Of ExploreHostEvent)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
+    name: ExploreHostEvent
+    href: MyProject.ExploreGame.Application.ExploreHostEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
+    name: ExploreHostEvent
+    href: MyProject.ExploreGame.Application.ExploreHostEvent.html
+  - name: )
+- uid: MyProject.ExploreGame.Data
+  commentId: N:MyProject.ExploreGame.Data
+  href: MyProject.html
+  name: MyProject.ExploreGame.Data
+  nameWithType: MyProject.ExploreGame.Data
+  fullName: MyProject.ExploreGame.Data
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Data
+    name: Data
+    href: MyProject.ExploreGame.Data.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Data
+    name: Data
+    href: MyProject.ExploreGame.Data.html
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MyProject.ExploreGame.Application.ExploreModeHost.HandleCommand*
+  commentId: Overload:MyProject.ExploreGame.Application.ExploreModeHost.HandleCommand
+  href: MyProject.ExploreGame.Application.ExploreModeHost.html#MyProject_ExploreGame_Application_ExploreModeHost_HandleCommand_MyProject_ExploreGame_Application_ExploreCommand_System_Int64_
+  name: HandleCommand
+  nameWithType: ExploreModeHost.HandleCommand
+  fullName: MyProject.ExploreGame.Application.ExploreModeHost.HandleCommand
+- uid: MyProject.ExploreGame.Application.ExploreCommand
+  commentId: T:MyProject.ExploreGame.Application.ExploreCommand
+  parent: MyProject.ExploreGame.Application
+  href: MyProject.ExploreGame.Application.ExploreCommand.html
+  name: ExploreCommand
+  nameWithType: ExploreCommand
+  fullName: MyProject.ExploreGame.Application.ExploreCommand
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MyProject.Common.Host.GameCommandOutcome{MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent}
+  commentId: T:MyProject.Common.Host.GameCommandOutcome{MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent}
+  parent: MyProject.Common.Host
+  definition: MyProject.Common.Host.GameCommandOutcome`2
+  href: MyProject.Common.Host.GameCommandOutcome-2.html
+  name: GameCommandOutcome<ExploreCommandResult, ExploreHostEvent>
+  nameWithType: GameCommandOutcome<ExploreCommandResult, ExploreHostEvent>
+  fullName: MyProject.Common.Host.GameCommandOutcome<MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent>
+  nameWithType.vb: GameCommandOutcome(Of ExploreCommandResult, ExploreHostEvent)
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent)
+  name.vb: GameCommandOutcome(Of ExploreCommandResult, ExploreHostEvent)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: <
+  - uid: MyProject.ExploreGame.Application.ExploreCommandResult
+    name: ExploreCommandResult
+    href: MyProject.ExploreGame.Application.ExploreCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
+    name: ExploreHostEvent
+    href: MyProject.ExploreGame.Application.ExploreHostEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreCommandResult
+    name: ExploreCommandResult
+    href: MyProject.ExploreGame.Application.ExploreCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
+    name: ExploreHostEvent
+    href: MyProject.ExploreGame.Application.ExploreHostEvent.html
+  - name: )
+- uid: MyProject.Common.Host.GameCommandOutcome`2
+  commentId: T:MyProject.Common.Host.GameCommandOutcome`2
+  href: MyProject.Common.Host.GameCommandOutcome-2.html
+  name: GameCommandOutcome<TResult, TEvent>
+  nameWithType: GameCommandOutcome<TResult, TEvent>
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent)
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent)
+  name.vb: GameCommandOutcome(Of TResult, TEvent)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: <
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: MyProject.Common.Host
+  commentId: N:MyProject.Common.Host
+  href: MyProject.html
+  name: MyProject.Common.Host
+  nameWithType: MyProject.Common.Host
+  fullName: MyProject.Common.Host
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+- uid: MyProject.ExploreGame.Application.ExploreModeHost.OnTick*
+  commentId: Overload:MyProject.ExploreGame.Application.ExploreModeHost.OnTick
+  href: MyProject.ExploreGame.Application.ExploreModeHost.html#MyProject_ExploreGame_Application_ExploreModeHost_OnTick_System_Single_System_Int64_
+  name: OnTick
+  nameWithType: ExploreModeHost.OnTick
+  fullName: MyProject.ExploreGame.Application.ExploreModeHost.OnTick
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MyProject.ExploreGame.Application.ExploreModeHost.BuildSnapshot*
+  commentId: Overload:MyProject.ExploreGame.Application.ExploreModeHost.BuildSnapshot
+  href: MyProject.ExploreGame.Application.ExploreModeHost.html#MyProject_ExploreGame_Application_ExploreModeHost_BuildSnapshot_System_Int64_
+  name: BuildSnapshot
+  nameWithType: ExploreModeHost.BuildSnapshot
+  fullName: MyProject.ExploreGame.Application.ExploreModeHost.BuildSnapshot
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreStateSnapshot.html
+  name: ExploreStateSnapshot
+  nameWithType: ExploreStateSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+- uid: MyProject.ExploreGame.Domain
+  commentId: N:MyProject.ExploreGame.Domain
+  href: MyProject.html
+  name: MyProject.ExploreGame.Domain
+  nameWithType: MyProject.ExploreGame.Domain
+  fullName: MyProject.ExploreGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html

@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.Bootstrap
+  commentId: N:MyProject.Common.Bootstrap
+  id: MyProject.Common.Bootstrap
+  children:
+  - MyProject.Common.Bootstrap.BootstrapperBase
+  - MyProject.Common.Bootstrap.GameBootstrapper
+  - MyProject.Common.Bootstrap.IManager
+  langs:
+  - csharp
+  - vb
+  name: MyProject.Common.Bootstrap
+  nameWithType: MyProject.Common.Bootstrap
+  fullName: MyProject.Common.Bootstrap
+  type: Namespace
+references:
+- uid: MyProject.Common.Bootstrap.BootstrapperBase
+  commentId: T:MyProject.Common.Bootstrap.BootstrapperBase
+  parent: MyProject.Common.Bootstrap
+  href: MyProject.Common.Bootstrap.BootstrapperBase.html
+  name: BootstrapperBase
+  nameWithType: BootstrapperBase
+  fullName: MyProject.Common.Bootstrap.BootstrapperBase
+- uid: MyProject.Common.Bootstrap.GameBootstrapper
+  commentId: T:MyProject.Common.Bootstrap.GameBootstrapper
+  href: MyProject.Common.Bootstrap.GameBootstrapper.html
+  name: GameBootstrapper
+  nameWithType: GameBootstrapper
+  fullName: MyProject.Common.Bootstrap.GameBootstrapper
+- uid: MyProject.Common.Bootstrap.IManager
+  commentId: T:MyProject.Common.Bootstrap.IManager
+  parent: MyProject.Common.Bootstrap
+  href: MyProject.Common.Bootstrap.IManager.html
+  name: IManager
+  nameWithType: IManager
+  fullName: MyProject.Common.Bootstrap.IManager
+- uid: MyProject.Common.Bootstrap
+  commentId: N:MyProject.Common.Bootstrap
+  href: MyProject.html
+  name: MyProject.Common.Bootstrap
+  nameWithType: MyProject.Common.Bootstrap
+  fullName: MyProject.Common.Bootstrap
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Bootstrap
+    name: Bootstrap
+    href: MyProject.Common.Bootstrap.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Bootstrap
+    name: Bootstrap
+    href: MyProject.Common.Bootstrap.html

@@ -1,0 +1,152 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.GameEvent
+  commentId: N:MyProject.Common.GameEvent
+  id: MyProject.Common.GameEvent
+  children:
+  - MyProject.Common.GameEvent.GameEventBus
+  - MyProject.Common.GameEvent.GameEventBus.Scope
+  - MyProject.Common.GameEvent.GameEventContext
+  - MyProject.Common.GameEvent.GameEventHub
+  - MyProject.Common.GameEvent.GameHostCommandResultEvent
+  - MyProject.Common.GameEvent.GameHostEventRaisedEvent
+  - MyProject.Common.GameEvent.GameUIContextSupplyEvent
+  - MyProject.Common.GameEvent.GlobalGameEventContext
+  - MyProject.Common.GameEvent.IEventBus`1
+  - MyProject.Common.GameEvent.SceneGameEventContext
+  langs:
+  - csharp
+  - vb
+  name: MyProject.Common.GameEvent
+  nameWithType: MyProject.Common.GameEvent
+  fullName: MyProject.Common.GameEvent
+  type: Namespace
+references:
+- uid: MyProject.Common.GameEvent.GameEventBus
+  commentId: T:MyProject.Common.GameEvent.GameEventBus
+  href: MyProject.Common.GameEvent.GameEventBus.html
+  name: GameEventBus
+  nameWithType: GameEventBus
+  fullName: MyProject.Common.GameEvent.GameEventBus
+- uid: MyProject.Common.GameEvent.GameEventBus.Scope
+  commentId: T:MyProject.Common.GameEvent.GameEventBus.Scope
+  parent: MyProject.Common.GameEvent
+  href: MyProject.Common.GameEvent.GameEventBus.html
+  name: GameEventBus.Scope
+  nameWithType: GameEventBus.Scope
+  fullName: MyProject.Common.GameEvent.GameEventBus.Scope
+  spec.csharp:
+  - uid: MyProject.Common.GameEvent.GameEventBus
+    name: GameEventBus
+    href: MyProject.Common.GameEvent.GameEventBus.html
+  - name: .
+  - uid: MyProject.Common.GameEvent.GameEventBus.Scope
+    name: Scope
+    href: MyProject.Common.GameEvent.GameEventBus.Scope.html
+  spec.vb:
+  - uid: MyProject.Common.GameEvent.GameEventBus
+    name: GameEventBus
+    href: MyProject.Common.GameEvent.GameEventBus.html
+  - name: .
+  - uid: MyProject.Common.GameEvent.GameEventBus.Scope
+    name: Scope
+    href: MyProject.Common.GameEvent.GameEventBus.Scope.html
+- uid: MyProject.Common.GameEvent.GameEventContext
+  commentId: T:MyProject.Common.GameEvent.GameEventContext
+  parent: MyProject.Common.GameEvent
+  href: MyProject.Common.GameEvent.GameEventContext.html
+  name: GameEventContext
+  nameWithType: GameEventContext
+  fullName: MyProject.Common.GameEvent.GameEventContext
+- uid: MyProject.Common.GameEvent.SceneGameEventContext
+  commentId: T:MyProject.Common.GameEvent.SceneGameEventContext
+  parent: MyProject.Common.GameEvent
+  href: MyProject.Common.GameEvent.SceneGameEventContext.html
+  name: SceneGameEventContext
+  nameWithType: SceneGameEventContext
+  fullName: MyProject.Common.GameEvent.SceneGameEventContext
+- uid: MyProject.Common.GameEvent.GlobalGameEventContext
+  commentId: T:MyProject.Common.GameEvent.GlobalGameEventContext
+  href: MyProject.Common.GameEvent.GlobalGameEventContext.html
+  name: GlobalGameEventContext
+  nameWithType: GlobalGameEventContext
+  fullName: MyProject.Common.GameEvent.GlobalGameEventContext
+- uid: MyProject.Common.GameEvent.GameEventHub
+  commentId: T:MyProject.Common.GameEvent.GameEventHub
+  href: MyProject.Common.GameEvent.GameEventHub.html
+  name: GameEventHub
+  nameWithType: GameEventHub
+  fullName: MyProject.Common.GameEvent.GameEventHub
+- uid: MyProject.Common.GameEvent.GameHostCommandResultEvent
+  commentId: T:MyProject.Common.GameEvent.GameHostCommandResultEvent
+  href: MyProject.Common.GameEvent.GameHostCommandResultEvent.html
+  name: GameHostCommandResultEvent
+  nameWithType: GameHostCommandResultEvent
+  fullName: MyProject.Common.GameEvent.GameHostCommandResultEvent
+- uid: MyProject.Common.GameEvent.GameHostEventRaisedEvent
+  commentId: T:MyProject.Common.GameEvent.GameHostEventRaisedEvent
+  href: MyProject.Common.GameEvent.GameHostEventRaisedEvent.html
+  name: GameHostEventRaisedEvent
+  nameWithType: GameHostEventRaisedEvent
+  fullName: MyProject.Common.GameEvent.GameHostEventRaisedEvent
+- uid: MyProject.Common.GameEvent.GameUIContextSupplyEvent
+  commentId: T:MyProject.Common.GameEvent.GameUIContextSupplyEvent
+  href: MyProject.Common.GameEvent.GameUIContextSupplyEvent.html
+  name: GameUIContextSupplyEvent
+  nameWithType: GameUIContextSupplyEvent
+  fullName: MyProject.Common.GameEvent.GameUIContextSupplyEvent
+- uid: MyProject.Common.GameEvent.IEventBus`1
+  commentId: T:MyProject.Common.GameEvent.IEventBus`1
+  href: MyProject.Common.GameEvent.IEventBus-1.html
+  name: IEventBus<TEventBase>
+  nameWithType: IEventBus<TEventBase>
+  fullName: MyProject.Common.GameEvent.IEventBus<TEventBase>
+  nameWithType.vb: IEventBus(Of TEventBase)
+  fullName.vb: MyProject.Common.GameEvent.IEventBus(Of TEventBase)
+  name.vb: IEventBus(Of TEventBase)
+  spec.csharp:
+  - uid: MyProject.Common.GameEvent.IEventBus`1
+    name: IEventBus
+    href: MyProject.Common.GameEvent.IEventBus-1.html
+  - name: <
+  - name: TEventBase
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.GameEvent.IEventBus`1
+    name: IEventBus
+    href: MyProject.Common.GameEvent.IEventBus-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventBase
+  - name: )
+- uid: MyProject.Common.GameEvent
+  commentId: N:MyProject.Common.GameEvent
+  href: MyProject.html
+  name: MyProject.Common.GameEvent
+  nameWithType: MyProject.Common.GameEvent
+  fullName: MyProject.Common.GameEvent
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameEvent
+    name: GameEvent
+    href: MyProject.Common.GameEvent.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameEvent
+    name: GameEvent
+    href: MyProject.Common.GameEvent.html

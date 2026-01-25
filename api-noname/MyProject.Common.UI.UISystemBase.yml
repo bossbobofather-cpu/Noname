@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.UI.UISystemBase
+  commentId: T:MyProject.Common.UI.UISystemBase
+  id: UISystemBase
+  parent: MyProject.Common.UI
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: UISystemBase
+  nameWithType: UISystemBase
+  fullName: MyProject.Common.UI.UISystemBase
+  type: Class
+  namespace: MyProject.Common.UI
+  summary: 시스템 레이어용 UI 베이스입니다.
+  example: []
+  syntax:
+    content: 'public abstract class UISystemBase : UIBase'
+    content.vb: Public MustInherit Class UISystemBase Inherits UIBase
+  inheritance:
+  - System.Object
+  - MyProject.Common.UI.UIBase
+  inheritedMembers:
+  - MyProject.Common.UI.UIBase.Buttons
+  - MyProject.Common.UI.UIBase.CollecteButtons
+references:
+- uid: MyProject.Common.UI
+  commentId: N:MyProject.Common.UI
+  href: MyProject.html
+  name: MyProject.Common.UI
+  nameWithType: MyProject.Common.UI
+  fullName: MyProject.Common.UI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.Common.UI.UIBase
+  commentId: T:MyProject.Common.UI.UIBase
+  parent: MyProject.Common.UI
+  href: MyProject.Common.UI.UIBase.html
+  name: UIBase
+  nameWithType: UIBase
+  fullName: MyProject.Common.UI.UIBase
+- uid: MyProject.Common.UI.UIBase.Buttons
+  commentId: P:MyProject.Common.UI.UIBase.Buttons
+  parent: MyProject.Common.UI.UIBase
+  href: MyProject.Common.UI.UIBase.html#MyProject_Common_UI_UIBase_Buttons
+  name: Buttons
+  nameWithType: UIBase.Buttons
+  fullName: MyProject.Common.UI.UIBase.Buttons
+- uid: MyProject.Common.UI.UIBase.CollecteButtons
+  commentId: M:MyProject.Common.UI.UIBase.CollecteButtons
+  parent: MyProject.Common.UI.UIBase
+  href: MyProject.Common.UI.UIBase.html#MyProject_Common_UI_UIBase_CollecteButtons
+  name: CollecteButtons()
+  nameWithType: UIBase.CollecteButtons()
+  fullName: MyProject.Common.UI.UIBase.CollecteButtons()
+  spec.csharp:
+  - uid: MyProject.Common.UI.UIBase.CollecteButtons
+    name: CollecteButtons
+    href: MyProject.Common.UI.UIBase.html#MyProject_Common_UI_UIBase_CollecteButtons
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.UI.UIBase.CollecteButtons
+    name: CollecteButtons
+    href: MyProject.Common.UI.UIBase.html#MyProject_Common_UI_UIBase_CollecteButtons
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

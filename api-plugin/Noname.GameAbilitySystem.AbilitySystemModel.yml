@@ -1,0 +1,1301 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.AbilitySystemModel
+  commentId: T:Noname.GameAbilitySystem.AbilitySystemModel
+  id: AbilitySystemModel
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.AbilitySystemModel.#ctor
+  - Noname.GameAbilitySystem.AbilitySystemModel.#ctor(Noname.GameAbilitySystem.AttributeSet,Noname.GameAbilitySystem.GameplayTagContainer)
+  - Noname.GameAbilitySystem.AbilitySystemModel.ActiveEffectCount
+  - Noname.GameAbilitySystem.AbilitySystemModel.Add(Noname.GameAbilitySystem.AttributeId,System.Single)
+  - Noname.GameAbilitySystem.AbilitySystemModel.AddActiveEffect(Noname.GameAbilitySystem.GameplayEffectConfig,System.Single)
+  - Noname.GameAbilitySystem.AbilitySystemModel.AddEffectTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  - Noname.GameAbilitySystem.AbilitySystemModel.AddLooseTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  - Noname.GameAbilitySystem.AbilitySystemModel.AddPercent(Noname.GameAbilitySystem.AttributeId,System.Single)
+  - Noname.GameAbilitySystem.AbilitySystemModel.AddSkill(System.String)
+  - Noname.GameAbilitySystem.AbilitySystemModel.Attributes
+  - Noname.GameAbilitySystem.AbilitySystemModel.BuildSnapshot
+  - Noname.GameAbilitySystem.AbilitySystemModel.CollectExpiredEffects(System.Single,System.Collections.Generic.List{Noname.GameAbilitySystem.GameplayEffectConfig})
+  - Noname.GameAbilitySystem.AbilitySystemModel.Get(Noname.GameAbilitySystem.AttributeId)
+  - Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects
+  - Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects(System.Collections.Generic.List{Noname.GameAbilitySystem.GameplayEffectConfig})
+  - Noname.GameAbilitySystem.AbilitySystemModel.GetSkills
+  - Noname.GameAbilitySystem.AbilitySystemModel.GetTotalTagCount(Noname.GameAbilitySystem.FGameplayTag)
+  - Noname.GameAbilitySystem.AbilitySystemModel.InitializeAttributes(System.Collections.Generic.IEnumerable{Noname.GameAbilitySystem.AttributeDefinition})
+  - Noname.GameAbilitySystem.AbilitySystemModel.OwnedTags
+  - Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffect(Noname.GameAbilitySystem.GameplayEffectConfig)
+  - Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffectByUid(System.Int64)
+  - Noname.GameAbilitySystem.AbilitySystemModel.RemoveEffectTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  - Noname.GameAbilitySystem.AbilitySystemModel.RemoveLooseTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  - Noname.GameAbilitySystem.AbilitySystemModel.Set(Noname.GameAbilitySystem.AttributeId,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: AbilitySystemModel
+  nameWithType: AbilitySystemModel
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel
+  type: Class
+  namespace: Noname.GameAbilitySystem
+  summary: >-
+    AbilitySystem의 상태 모델입니다.
+
+    Host 환경에서 스레드 안전하게 동작합니다.
+  example: []
+  syntax:
+    content: public sealed class AbilitySystemModel
+    content.vb: Public NotInheritable Class AbilitySystemModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.#ctor
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.#ctor
+  id: '#ctor'
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: AbilitySystemModel()
+  nameWithType: AbilitySystemModel.AbilitySystemModel()
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.AbilitySystemModel()
+  type: Constructor
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: public AbilitySystemModel()
+    content.vb: Public Sub New()
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.#ctor*
+  nameWithType.vb: AbilitySystemModel.New()
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.New()
+  name.vb: New()
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.#ctor(Noname.GameAbilitySystem.AttributeSet,Noname.GameAbilitySystem.GameplayTagContainer)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.#ctor(Noname.GameAbilitySystem.AttributeSet,Noname.GameAbilitySystem.GameplayTagContainer)
+  id: '#ctor(Noname.GameAbilitySystem.AttributeSet,Noname.GameAbilitySystem.GameplayTagContainer)'
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: AbilitySystemModel(AttributeSet, GameplayTagContainer)
+  nameWithType: AbilitySystemModel.AbilitySystemModel(AttributeSet, GameplayTagContainer)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.AbilitySystemModel(Noname.GameAbilitySystem.AttributeSet, Noname.GameAbilitySystem.GameplayTagContainer)
+  type: Constructor
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: public AbilitySystemModel(AttributeSet attributes, GameplayTagContainer ownedTags)
+    parameters:
+    - id: attributes
+      type: Noname.GameAbilitySystem.AttributeSet
+    - id: ownedTags
+      type: Noname.GameAbilitySystem.GameplayTagContainer
+    content.vb: Public Sub New(attributes As AttributeSet, ownedTags As GameplayTagContainer)
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.#ctor*
+  nameWithType.vb: AbilitySystemModel.New(AttributeSet, GameplayTagContainer)
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.New(Noname.GameAbilitySystem.AttributeSet, Noname.GameAbilitySystem.GameplayTagContainer)
+  name.vb: New(AttributeSet, GameplayTagContainer)
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.Attributes
+  commentId: P:Noname.GameAbilitySystem.AbilitySystemModel.Attributes
+  id: Attributes
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: Attributes
+  nameWithType: AbilitySystemModel.Attributes
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.Attributes
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 속성 컨테이너입니다. (스레드 안전하지 않음 - 직접 수정 금지)
+  example: []
+  syntax:
+    content: public AttributeSet Attributes { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.AttributeSet
+    content.vb: Public ReadOnly Property Attributes As AttributeSet
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.Attributes*
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.OwnedTags
+  commentId: P:Noname.GameAbilitySystem.AbilitySystemModel.OwnedTags
+  id: OwnedTags
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: OwnedTags
+  nameWithType: AbilitySystemModel.OwnedTags
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.OwnedTags
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 소유 태그 컨테이너입니다. (스레드 안전하지 않음 - 직접 수정 금지)
+  example: []
+  syntax:
+    content: public GameplayTagContainer OwnedTags { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.GameplayTagContainer
+    content.vb: Public ReadOnly Property OwnedTags As GameplayTagContainer
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.OwnedTags*
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.ActiveEffectCount
+  commentId: P:Noname.GameAbilitySystem.AbilitySystemModel.ActiveEffectCount
+  id: ActiveEffectCount
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: ActiveEffectCount
+  nameWithType: AbilitySystemModel.ActiveEffectCount
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.ActiveEffectCount
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 활성 효과 개수입니다.
+  example: []
+  syntax:
+    content: public int ActiveEffectCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ActiveEffectCount As Integer
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.ActiveEffectCount*
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.InitializeAttributes(System.Collections.Generic.IEnumerable{Noname.GameAbilitySystem.AttributeDefinition})
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.InitializeAttributes(System.Collections.Generic.IEnumerable{Noname.GameAbilitySystem.AttributeDefinition})
+  id: InitializeAttributes(System.Collections.Generic.IEnumerable{Noname.GameAbilitySystem.AttributeDefinition})
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: InitializeAttributes(IEnumerable<AttributeDefinition>)
+  nameWithType: AbilitySystemModel.InitializeAttributes(IEnumerable<AttributeDefinition>)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.InitializeAttributes(System.Collections.Generic.IEnumerable<Noname.GameAbilitySystem.AttributeDefinition>)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 기본 속성을 초기화합니다.
+  example: []
+  syntax:
+    content: public void InitializeAttributes(IEnumerable<AttributeDefinition> definitions)
+    parameters:
+    - id: definitions
+      type: System.Collections.Generic.IEnumerable{Noname.GameAbilitySystem.AttributeDefinition}
+    content.vb: Public Sub InitializeAttributes(definitions As IEnumerable(Of AttributeDefinition))
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.InitializeAttributes*
+  nameWithType.vb: AbilitySystemModel.InitializeAttributes(IEnumerable(Of AttributeDefinition))
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.InitializeAttributes(System.Collections.Generic.IEnumerable(Of Noname.GameAbilitySystem.AttributeDefinition))
+  name.vb: InitializeAttributes(IEnumerable(Of AttributeDefinition))
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.Get(Noname.GameAbilitySystem.AttributeId)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.Get(Noname.GameAbilitySystem.AttributeId)
+  id: Get(Noname.GameAbilitySystem.AttributeId)
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: Get(AttributeId)
+  nameWithType: AbilitySystemModel.Get(AttributeId)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.Get(Noname.GameAbilitySystem.AttributeId)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 속성 값을 조회합니다.
+  example: []
+  syntax:
+    content: public float Get(AttributeId id)
+    parameters:
+    - id: id
+      type: Noname.GameAbilitySystem.AttributeId
+    return:
+      type: System.Single
+    content.vb: Public Function [Get](id As AttributeId) As Single
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.Get*
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.Set(Noname.GameAbilitySystem.AttributeId,System.Single)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.Set(Noname.GameAbilitySystem.AttributeId,System.Single)
+  id: Set(Noname.GameAbilitySystem.AttributeId,System.Single)
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: Set(AttributeId, float)
+  nameWithType: AbilitySystemModel.Set(AttributeId, float)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.Set(Noname.GameAbilitySystem.AttributeId, float)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 속성 값을 설정합니다.
+  example: []
+  syntax:
+    content: public void Set(AttributeId id, float value)
+    parameters:
+    - id: id
+      type: Noname.GameAbilitySystem.AttributeId
+    - id: value
+      type: System.Single
+    content.vb: Public Sub [Set](id As AttributeId, value As Single)
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.Set*
+  nameWithType.vb: AbilitySystemModel.Set(AttributeId, Single)
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.Set(Noname.GameAbilitySystem.AttributeId, Single)
+  name.vb: Set(AttributeId, Single)
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.Add(Noname.GameAbilitySystem.AttributeId,System.Single)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.Add(Noname.GameAbilitySystem.AttributeId,System.Single)
+  id: Add(Noname.GameAbilitySystem.AttributeId,System.Single)
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: Add(AttributeId, float)
+  nameWithType: AbilitySystemModel.Add(AttributeId, float)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.Add(Noname.GameAbilitySystem.AttributeId, float)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 속성 값을 증감합니다.
+  example: []
+  syntax:
+    content: public void Add(AttributeId id, float delta)
+    parameters:
+    - id: id
+      type: Noname.GameAbilitySystem.AttributeId
+    - id: delta
+      type: System.Single
+    content.vb: Public Sub Add(id As AttributeId, delta As Single)
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.Add*
+  nameWithType.vb: AbilitySystemModel.Add(AttributeId, Single)
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.Add(Noname.GameAbilitySystem.AttributeId, Single)
+  name.vb: Add(AttributeId, Single)
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.AddPercent(Noname.GameAbilitySystem.AttributeId,System.Single)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.AddPercent(Noname.GameAbilitySystem.AttributeId,System.Single)
+  id: AddPercent(Noname.GameAbilitySystem.AttributeId,System.Single)
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: AddPercent(AttributeId, float)
+  nameWithType: AbilitySystemModel.AddPercent(AttributeId, float)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.AddPercent(Noname.GameAbilitySystem.AttributeId, float)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: >-
+    속성 값을 퍼센트로 증감합니다.
+
+    양수 퍼센트는 증가, 음수 퍼센트는 감소를 의미합니다.
+  example: []
+  syntax:
+    content: public void AddPercent(AttributeId id, float percent)
+    parameters:
+    - id: id
+      type: Noname.GameAbilitySystem.AttributeId
+    - id: percent
+      type: System.Single
+    content.vb: Public Sub AddPercent(id As AttributeId, percent As Single)
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.AddPercent*
+  nameWithType.vb: AbilitySystemModel.AddPercent(AttributeId, Single)
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.AddPercent(Noname.GameAbilitySystem.AttributeId, Single)
+  name.vb: AddPercent(AttributeId, Single)
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.AddSkill(System.String)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.AddSkill(System.String)
+  id: AddSkill(System.String)
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: AddSkill(string)
+  nameWithType: AbilitySystemModel.AddSkill(string)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.AddSkill(string)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 스킬을 추가합니다.
+  example: []
+  syntax:
+    content: public void AddSkill(string skillId)
+    parameters:
+    - id: skillId
+      type: System.String
+    content.vb: Public Sub AddSkill(skillId As String)
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.AddSkill*
+  nameWithType.vb: AbilitySystemModel.AddSkill(String)
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.AddSkill(String)
+  name.vb: AddSkill(String)
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.GetSkills
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.GetSkills
+  id: GetSkills
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: GetSkills()
+  nameWithType: AbilitySystemModel.GetSkills()
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.GetSkills()
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 스킬 목록을 복사하여 반환합니다. (스레드 안전)
+  example: []
+  syntax:
+    content: public List<string> GetSkills()
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Function GetSkills() As List(Of String)
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.GetSkills*
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.AddLooseTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.AddLooseTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  id: AddLooseTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: AddLooseTag(FGameplayTag, out int)
+  nameWithType: AbilitySystemModel.AddLooseTag(FGameplayTag, out int)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.AddLooseTag(Noname.GameAbilitySystem.FGameplayTag, out int)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 루즈 태그를 추가합니다.
+  example: []
+  syntax:
+    content: public bool AddLooseTag(FGameplayTag tag, out int totalCount)
+    parameters:
+    - id: tag
+      type: Noname.GameAbilitySystem.FGameplayTag
+    - id: totalCount
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function AddLooseTag(tag As FGameplayTag, totalCount As Integer) As Boolean
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.AddLooseTag*
+  nameWithType.vb: AbilitySystemModel.AddLooseTag(FGameplayTag, Integer)
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.AddLooseTag(Noname.GameAbilitySystem.FGameplayTag, Integer)
+  name.vb: AddLooseTag(FGameplayTag, Integer)
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.RemoveLooseTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.RemoveLooseTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  id: RemoveLooseTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: RemoveLooseTag(FGameplayTag, out int)
+  nameWithType: AbilitySystemModel.RemoveLooseTag(FGameplayTag, out int)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.RemoveLooseTag(Noname.GameAbilitySystem.FGameplayTag, out int)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 루즈 태그를 제거합니다.
+  example: []
+  syntax:
+    content: public bool RemoveLooseTag(FGameplayTag tag, out int totalCount)
+    parameters:
+    - id: tag
+      type: Noname.GameAbilitySystem.FGameplayTag
+    - id: totalCount
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function RemoveLooseTag(tag As FGameplayTag, totalCount As Integer) As Boolean
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.RemoveLooseTag*
+  nameWithType.vb: AbilitySystemModel.RemoveLooseTag(FGameplayTag, Integer)
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.RemoveLooseTag(Noname.GameAbilitySystem.FGameplayTag, Integer)
+  name.vb: RemoveLooseTag(FGameplayTag, Integer)
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.AddEffectTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.AddEffectTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  id: AddEffectTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: AddEffectTag(FGameplayTag, out int)
+  nameWithType: AbilitySystemModel.AddEffectTag(FGameplayTag, out int)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.AddEffectTag(Noname.GameAbilitySystem.FGameplayTag, out int)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 효과 태그를 추가합니다.
+  example: []
+  syntax:
+    content: public bool AddEffectTag(FGameplayTag tag, out int totalCount)
+    parameters:
+    - id: tag
+      type: Noname.GameAbilitySystem.FGameplayTag
+    - id: totalCount
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function AddEffectTag(tag As FGameplayTag, totalCount As Integer) As Boolean
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.AddEffectTag*
+  nameWithType.vb: AbilitySystemModel.AddEffectTag(FGameplayTag, Integer)
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.AddEffectTag(Noname.GameAbilitySystem.FGameplayTag, Integer)
+  name.vb: AddEffectTag(FGameplayTag, Integer)
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.RemoveEffectTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.RemoveEffectTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  id: RemoveEffectTag(Noname.GameAbilitySystem.FGameplayTag,System.Int32@)
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: RemoveEffectTag(FGameplayTag, out int)
+  nameWithType: AbilitySystemModel.RemoveEffectTag(FGameplayTag, out int)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.RemoveEffectTag(Noname.GameAbilitySystem.FGameplayTag, out int)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 효과 태그를 제거합니다.
+  example: []
+  syntax:
+    content: public bool RemoveEffectTag(FGameplayTag tag, out int totalCount)
+    parameters:
+    - id: tag
+      type: Noname.GameAbilitySystem.FGameplayTag
+    - id: totalCount
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function RemoveEffectTag(tag As FGameplayTag, totalCount As Integer) As Boolean
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.RemoveEffectTag*
+  nameWithType.vb: AbilitySystemModel.RemoveEffectTag(FGameplayTag, Integer)
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.RemoveEffectTag(Noname.GameAbilitySystem.FGameplayTag, Integer)
+  name.vb: RemoveEffectTag(FGameplayTag, Integer)
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.GetTotalTagCount(Noname.GameAbilitySystem.FGameplayTag)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.GetTotalTagCount(Noname.GameAbilitySystem.FGameplayTag)
+  id: GetTotalTagCount(Noname.GameAbilitySystem.FGameplayTag)
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: GetTotalTagCount(FGameplayTag)
+  nameWithType: AbilitySystemModel.GetTotalTagCount(FGameplayTag)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.GetTotalTagCount(Noname.GameAbilitySystem.FGameplayTag)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 태그의 총 개수를 조회합니다.
+  example: []
+  syntax:
+    content: public int GetTotalTagCount(FGameplayTag tag)
+    parameters:
+    - id: tag
+      type: Noname.GameAbilitySystem.FGameplayTag
+    return:
+      type: System.Int32
+    content.vb: Public Function GetTotalTagCount(tag As FGameplayTag) As Integer
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.GetTotalTagCount*
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.AddActiveEffect(Noname.GameAbilitySystem.GameplayEffectConfig,System.Single)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.AddActiveEffect(Noname.GameAbilitySystem.GameplayEffectConfig,System.Single)
+  id: AddActiveEffect(Noname.GameAbilitySystem.GameplayEffectConfig,System.Single)
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: AddActiveEffect(GameplayEffectConfig, float)
+  nameWithType: AbilitySystemModel.AddActiveEffect(GameplayEffectConfig, float)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.AddActiveEffect(Noname.GameAbilitySystem.GameplayEffectConfig, float)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 활성 효과를 추가하고 생성된 UID를 반환합니다.
+  example: []
+  syntax:
+    content: public long AddActiveEffect(GameplayEffectConfig config, float endTime)
+    parameters:
+    - id: config
+      type: Noname.GameAbilitySystem.GameplayEffectConfig
+    - id: endTime
+      type: System.Single
+    return:
+      type: System.Int64
+    content.vb: Public Function AddActiveEffect(config As GameplayEffectConfig, endTime As Single) As Long
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.AddActiveEffect*
+  nameWithType.vb: AbilitySystemModel.AddActiveEffect(GameplayEffectConfig, Single)
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.AddActiveEffect(Noname.GameAbilitySystem.GameplayEffectConfig, Single)
+  name.vb: AddActiveEffect(GameplayEffectConfig, Single)
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffectByUid(System.Int64)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffectByUid(System.Int64)
+  id: RemoveActiveEffectByUid(System.Int64)
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: RemoveActiveEffectByUid(long)
+  nameWithType: AbilitySystemModel.RemoveActiveEffectByUid(long)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffectByUid(long)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: UID로 활성 효과를 제거합니다.
+  example: []
+  syntax:
+    content: public bool RemoveActiveEffectByUid(long effectUid)
+    parameters:
+    - id: effectUid
+      type: System.Int64
+    return:
+      type: System.Boolean
+    content.vb: Public Function RemoveActiveEffectByUid(effectUid As Long) As Boolean
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffectByUid*
+  nameWithType.vb: AbilitySystemModel.RemoveActiveEffectByUid(Long)
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffectByUid(Long)
+  name.vb: RemoveActiveEffectByUid(Long)
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffect(Noname.GameAbilitySystem.GameplayEffectConfig)
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffect(Noname.GameAbilitySystem.GameplayEffectConfig)
+  id: RemoveActiveEffect(Noname.GameAbilitySystem.GameplayEffectConfig)
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: RemoveActiveEffect(GameplayEffectConfig)
+  nameWithType: AbilitySystemModel.RemoveActiveEffect(GameplayEffectConfig)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffect(Noname.GameAbilitySystem.GameplayEffectConfig)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: Config로 활성 효과를 제거합니다. (같은 Config의 첫 번째 효과만 제거)
+  example: []
+  syntax:
+    content: public bool RemoveActiveEffect(GameplayEffectConfig config)
+    parameters:
+    - id: config
+      type: Noname.GameAbilitySystem.GameplayEffectConfig
+    return:
+      type: System.Boolean
+    content.vb: Public Function RemoveActiveEffect(config As GameplayEffectConfig) As Boolean
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffect*
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.CollectExpiredEffects(System.Single,System.Collections.Generic.List{Noname.GameAbilitySystem.GameplayEffectConfig})
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.CollectExpiredEffects(System.Single,System.Collections.Generic.List{Noname.GameAbilitySystem.GameplayEffectConfig})
+  id: CollectExpiredEffects(System.Single,System.Collections.Generic.List{Noname.GameAbilitySystem.GameplayEffectConfig})
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: CollectExpiredEffects(float, List<GameplayEffectConfig>)
+  nameWithType: AbilitySystemModel.CollectExpiredEffects(float, List<GameplayEffectConfig>)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.CollectExpiredEffects(float, System.Collections.Generic.List<Noname.GameAbilitySystem.GameplayEffectConfig>)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 만료된 효과를 수집하고 제거합니다.
+  example: []
+  syntax:
+    content: public void CollectExpiredEffects(float now, List<GameplayEffectConfig> expired)
+    parameters:
+    - id: now
+      type: System.Single
+    - id: expired
+      type: System.Collections.Generic.List{Noname.GameAbilitySystem.GameplayEffectConfig}
+    content.vb: Public Sub CollectExpiredEffects(now As Single, expired As List(Of GameplayEffectConfig))
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.CollectExpiredEffects*
+  nameWithType.vb: AbilitySystemModel.CollectExpiredEffects(Single, List(Of GameplayEffectConfig))
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.CollectExpiredEffects(Single, System.Collections.Generic.List(Of Noname.GameAbilitySystem.GameplayEffectConfig))
+  name.vb: CollectExpiredEffects(Single, List(Of GameplayEffectConfig))
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects
+  id: GetActiveEffects
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: GetActiveEffects()
+  nameWithType: AbilitySystemModel.GetActiveEffects()
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects()
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 활성 효과 목록을 복사하여 반환합니다. (스레드 안전)
+  example: []
+  syntax:
+    content: public List<GameplayEffectConfig> GetActiveEffects()
+    return:
+      type: System.Collections.Generic.List{Noname.GameAbilitySystem.GameplayEffectConfig}
+    content.vb: Public Function GetActiveEffects() As List(Of GameplayEffectConfig)
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects*
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects(System.Collections.Generic.List{Noname.GameAbilitySystem.GameplayEffectConfig})
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects(System.Collections.Generic.List{Noname.GameAbilitySystem.GameplayEffectConfig})
+  id: GetActiveEffects(System.Collections.Generic.List{Noname.GameAbilitySystem.GameplayEffectConfig})
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: GetActiveEffects(List<GameplayEffectConfig>)
+  nameWithType: AbilitySystemModel.GetActiveEffects(List<GameplayEffectConfig>)
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects(System.Collections.Generic.List<Noname.GameAbilitySystem.GameplayEffectConfig>)
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: 활성 효과 목록을 제공된 리스트에 추가합니다. (스레드 안전)
+  example: []
+  syntax:
+    content: public void GetActiveEffects(List<GameplayEffectConfig> results)
+    parameters:
+    - id: results
+      type: System.Collections.Generic.List{Noname.GameAbilitySystem.GameplayEffectConfig}
+    content.vb: Public Sub GetActiveEffects(results As List(Of GameplayEffectConfig))
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects*
+  nameWithType.vb: AbilitySystemModel.GetActiveEffects(List(Of GameplayEffectConfig))
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects(System.Collections.Generic.List(Of Noname.GameAbilitySystem.GameplayEffectConfig))
+  name.vb: GetActiveEffects(List(Of GameplayEffectConfig))
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.BuildSnapshot
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemModel.BuildSnapshot
+  id: BuildSnapshot
+  parent: Noname.GameAbilitySystem.AbilitySystemModel
+  langs:
+  - csharp
+  - vb
+  name: BuildSnapshot()
+  nameWithType: AbilitySystemModel.BuildSnapshot()
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.BuildSnapshot()
+  type: Method
+  namespace: Noname.GameAbilitySystem
+  summary: >-
+    현재 상태의 불변 스냅샷을 생성합니다. (스레드 안전)
+
+    Host 환경에서 클라이언트로 상태를 전송할 때 사용됩니다.
+  example: []
+  syntax:
+    content: public AbilitySystemSnapshot BuildSnapshot()
+    return:
+      type: Noname.GameAbilitySystem.AbilitySystemSnapshot
+    content.vb: Public Function BuildSnapshot() As AbilitySystemSnapshot
+  overload: Noname.GameAbilitySystem.AbilitySystemModel.BuildSnapshot*
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.#ctor*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.#ctor
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel__ctor
+  name: AbilitySystemModel
+  nameWithType: AbilitySystemModel.AbilitySystemModel
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.AbilitySystemModel
+  nameWithType.vb: AbilitySystemModel.New
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemModel.New
+  name.vb: New
+- uid: Noname.GameAbilitySystem.AttributeSet
+  commentId: T:Noname.GameAbilitySystem.AttributeSet
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AttributeSet.html
+  name: AttributeSet
+  nameWithType: AttributeSet
+  fullName: Noname.GameAbilitySystem.AttributeSet
+- uid: Noname.GameAbilitySystem.GameplayTagContainer
+  commentId: T:Noname.GameAbilitySystem.GameplayTagContainer
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayTagContainer.html
+  name: GameplayTagContainer
+  nameWithType: GameplayTagContainer
+  fullName: Noname.GameAbilitySystem.GameplayTagContainer
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.Attributes*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.Attributes
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_Attributes
+  name: Attributes
+  nameWithType: AbilitySystemModel.Attributes
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.Attributes
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.OwnedTags*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.OwnedTags
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_OwnedTags
+  name: OwnedTags
+  nameWithType: AbilitySystemModel.OwnedTags
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.OwnedTags
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.ActiveEffectCount*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.ActiveEffectCount
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_ActiveEffectCount
+  name: ActiveEffectCount
+  nameWithType: AbilitySystemModel.ActiveEffectCount
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.ActiveEffectCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.InitializeAttributes*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.InitializeAttributes
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_InitializeAttributes_System_Collections_Generic_IEnumerable_Noname_GameAbilitySystem_AttributeDefinition__
+  name: InitializeAttributes
+  nameWithType: AbilitySystemModel.InitializeAttributes
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.InitializeAttributes
+- uid: System.Collections.Generic.IEnumerable{Noname.GameAbilitySystem.AttributeDefinition}
+  commentId: T:System.Collections.Generic.IEnumerable{Noname.GameAbilitySystem.AttributeDefinition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<AttributeDefinition>
+  nameWithType: IEnumerable<AttributeDefinition>
+  fullName: System.Collections.Generic.IEnumerable<Noname.GameAbilitySystem.AttributeDefinition>
+  nameWithType.vb: IEnumerable(Of AttributeDefinition)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Noname.GameAbilitySystem.AttributeDefinition)
+  name.vb: IEnumerable(Of AttributeDefinition)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.AttributeDefinition
+    name: AttributeDefinition
+    href: Noname.GameAbilitySystem.AttributeDefinition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.AttributeDefinition
+    name: AttributeDefinition
+    href: Noname.GameAbilitySystem.AttributeDefinition.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.Get*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.Get
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_Get_Noname_GameAbilitySystem_AttributeId_
+  name: Get
+  nameWithType: AbilitySystemModel.Get
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.Get
+- uid: Noname.GameAbilitySystem.AttributeId
+  commentId: T:Noname.GameAbilitySystem.AttributeId
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AttributeId.html
+  name: AttributeId
+  nameWithType: AttributeId
+  fullName: Noname.GameAbilitySystem.AttributeId
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.Set*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.Set
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_Set_Noname_GameAbilitySystem_AttributeId_System_Single_
+  name: Set
+  nameWithType: AbilitySystemModel.Set
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.Set
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.Add*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.Add
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_Add_Noname_GameAbilitySystem_AttributeId_System_Single_
+  name: Add
+  nameWithType: AbilitySystemModel.Add
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.Add
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.AddPercent*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.AddPercent
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_AddPercent_Noname_GameAbilitySystem_AttributeId_System_Single_
+  name: AddPercent
+  nameWithType: AbilitySystemModel.AddPercent
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.AddPercent
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.AddSkill*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.AddSkill
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_AddSkill_System_String_
+  name: AddSkill
+  nameWithType: AbilitySystemModel.AddSkill
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.AddSkill
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.GetSkills*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.GetSkills
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_GetSkills
+  name: GetSkills
+  nameWithType: AbilitySystemModel.GetSkills
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.GetSkills
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.AddLooseTag*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.AddLooseTag
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_AddLooseTag_Noname_GameAbilitySystem_FGameplayTag_System_Int32__
+  name: AddLooseTag
+  nameWithType: AbilitySystemModel.AddLooseTag
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.AddLooseTag
+- uid: Noname.GameAbilitySystem.FGameplayTag
+  commentId: T:Noname.GameAbilitySystem.FGameplayTag
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.FGameplayTag.html
+  name: FGameplayTag
+  nameWithType: FGameplayTag
+  fullName: Noname.GameAbilitySystem.FGameplayTag
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.RemoveLooseTag*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.RemoveLooseTag
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_RemoveLooseTag_Noname_GameAbilitySystem_FGameplayTag_System_Int32__
+  name: RemoveLooseTag
+  nameWithType: AbilitySystemModel.RemoveLooseTag
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.RemoveLooseTag
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.AddEffectTag*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.AddEffectTag
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_AddEffectTag_Noname_GameAbilitySystem_FGameplayTag_System_Int32__
+  name: AddEffectTag
+  nameWithType: AbilitySystemModel.AddEffectTag
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.AddEffectTag
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.RemoveEffectTag*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.RemoveEffectTag
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_RemoveEffectTag_Noname_GameAbilitySystem_FGameplayTag_System_Int32__
+  name: RemoveEffectTag
+  nameWithType: AbilitySystemModel.RemoveEffectTag
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.RemoveEffectTag
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.GetTotalTagCount*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.GetTotalTagCount
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_GetTotalTagCount_Noname_GameAbilitySystem_FGameplayTag_
+  name: GetTotalTagCount
+  nameWithType: AbilitySystemModel.GetTotalTagCount
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.GetTotalTagCount
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.AddActiveEffect*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.AddActiveEffect
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_AddActiveEffect_Noname_GameAbilitySystem_GameplayEffectConfig_System_Single_
+  name: AddActiveEffect
+  nameWithType: AbilitySystemModel.AddActiveEffect
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.AddActiveEffect
+- uid: Noname.GameAbilitySystem.GameplayEffectConfig
+  commentId: T:Noname.GameAbilitySystem.GameplayEffectConfig
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.GameplayEffectConfig.html
+  name: GameplayEffectConfig
+  nameWithType: GameplayEffectConfig
+  fullName: Noname.GameAbilitySystem.GameplayEffectConfig
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffectByUid*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffectByUid
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_RemoveActiveEffectByUid_System_Int64_
+  name: RemoveActiveEffectByUid
+  nameWithType: AbilitySystemModel.RemoveActiveEffectByUid
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffectByUid
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffect*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffect
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_RemoveActiveEffect_Noname_GameAbilitySystem_GameplayEffectConfig_
+  name: RemoveActiveEffect
+  nameWithType: AbilitySystemModel.RemoveActiveEffect
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.RemoveActiveEffect
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.CollectExpiredEffects*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.CollectExpiredEffects
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_CollectExpiredEffects_System_Single_System_Collections_Generic_List_Noname_GameAbilitySystem_GameplayEffectConfig__
+  name: CollectExpiredEffects
+  nameWithType: AbilitySystemModel.CollectExpiredEffects
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.CollectExpiredEffects
+- uid: System.Collections.Generic.List{Noname.GameAbilitySystem.GameplayEffectConfig}
+  commentId: T:System.Collections.Generic.List{Noname.GameAbilitySystem.GameplayEffectConfig}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GameplayEffectConfig>
+  nameWithType: List<GameplayEffectConfig>
+  fullName: System.Collections.Generic.List<Noname.GameAbilitySystem.GameplayEffectConfig>
+  nameWithType.vb: List(Of GameplayEffectConfig)
+  fullName.vb: System.Collections.Generic.List(Of Noname.GameAbilitySystem.GameplayEffectConfig)
+  name.vb: List(Of GameplayEffectConfig)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.GameplayEffectConfig
+    name: GameplayEffectConfig
+    href: Noname.GameAbilitySystem.GameplayEffectConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.GameplayEffectConfig
+    name: GameplayEffectConfig
+    href: Noname.GameAbilitySystem.GameplayEffectConfig.html
+  - name: )
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_GetActiveEffects
+  name: GetActiveEffects
+  nameWithType: AbilitySystemModel.GetActiveEffects
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.GetActiveEffects
+- uid: Noname.GameAbilitySystem.AbilitySystemModel.BuildSnapshot*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemModel.BuildSnapshot
+  href: Noname.GameAbilitySystem.AbilitySystemModel.html#Noname_GameAbilitySystem_AbilitySystemModel_BuildSnapshot
+  name: BuildSnapshot
+  nameWithType: AbilitySystemModel.BuildSnapshot
+  fullName: Noname.GameAbilitySystem.AbilitySystemModel.BuildSnapshot
+- uid: Noname.GameAbilitySystem.AbilitySystemSnapshot
+  commentId: T:Noname.GameAbilitySystem.AbilitySystemSnapshot
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.AbilitySystemSnapshot.html
+  name: AbilitySystemSnapshot
+  nameWithType: AbilitySystemSnapshot
+  fullName: Noname.GameAbilitySystem.AbilitySystemSnapshot

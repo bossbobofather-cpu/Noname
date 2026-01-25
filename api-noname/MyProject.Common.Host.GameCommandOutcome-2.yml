@@ -1,0 +1,536 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.Host.GameCommandOutcome`2
+  commentId: T:MyProject.Common.Host.GameCommandOutcome`2
+  id: GameCommandOutcome`2
+  parent: MyProject.Common.Host
+  children:
+  - MyProject.Common.Host.GameCommandOutcome`2.#ctor(System.Collections.Generic.IReadOnlyList{`1},`0,System.Collections.Generic.IReadOnlyList{`1})
+  - MyProject.Common.Host.GameCommandOutcome`2.#ctor(`0,System.Collections.Generic.IReadOnlyList{`1})
+  - MyProject.Common.Host.GameCommandOutcome`2.PostEvents
+  - MyProject.Common.Host.GameCommandOutcome`2.PreEvents
+  - MyProject.Common.Host.GameCommandOutcome`2.Result
+  langs:
+  - csharp
+  - vb
+  name: GameCommandOutcome<TResult, TEvent>
+  nameWithType: GameCommandOutcome<TResult, TEvent>
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>
+  type: Struct
+  namespace: MyProject.Common.Host
+  summary: 명령 처리의 결과와 전후 이벤트를 묶어 전달합니다.
+  example: []
+  syntax:
+    content: public readonly struct GameCommandOutcome<TResult, TEvent>
+    typeParameters:
+    - id: TResult
+    - id: TEvent
+    content.vb: Public Structure GameCommandOutcome(Of TResult, TEvent)
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent)
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent)
+  name.vb: GameCommandOutcome(Of TResult, TEvent)
+- uid: MyProject.Common.Host.GameCommandOutcome`2.PreEvents
+  commentId: P:MyProject.Common.Host.GameCommandOutcome`2.PreEvents
+  id: PreEvents
+  parent: MyProject.Common.Host.GameCommandOutcome`2
+  langs:
+  - csharp
+  - vb
+  name: PreEvents
+  nameWithType: GameCommandOutcome<TResult, TEvent>.PreEvents
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>.PreEvents
+  type: Property
+  namespace: MyProject.Common.Host
+  syntax:
+    content: public IReadOnlyList<TEvent> PreEvents { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{{TEvent}}
+    content.vb: Public ReadOnly Property PreEvents As IReadOnlyList(Of TEvent)
+  overload: MyProject.Common.Host.GameCommandOutcome`2.PreEvents*
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).PreEvents
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent).PreEvents
+- uid: MyProject.Common.Host.GameCommandOutcome`2.Result
+  commentId: P:MyProject.Common.Host.GameCommandOutcome`2.Result
+  id: Result
+  parent: MyProject.Common.Host.GameCommandOutcome`2
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: GameCommandOutcome<TResult, TEvent>.Result
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>.Result
+  type: Property
+  namespace: MyProject.Common.Host
+  syntax:
+    content: public TResult Result { get; }
+    parameters: []
+    return:
+      type: '{TResult}'
+    content.vb: Public ReadOnly Property Result As TResult
+  overload: MyProject.Common.Host.GameCommandOutcome`2.Result*
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).Result
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent).Result
+- uid: MyProject.Common.Host.GameCommandOutcome`2.PostEvents
+  commentId: P:MyProject.Common.Host.GameCommandOutcome`2.PostEvents
+  id: PostEvents
+  parent: MyProject.Common.Host.GameCommandOutcome`2
+  langs:
+  - csharp
+  - vb
+  name: PostEvents
+  nameWithType: GameCommandOutcome<TResult, TEvent>.PostEvents
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>.PostEvents
+  type: Property
+  namespace: MyProject.Common.Host
+  syntax:
+    content: public IReadOnlyList<TEvent> PostEvents { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{{TEvent}}
+    content.vb: Public ReadOnly Property PostEvents As IReadOnlyList(Of TEvent)
+  overload: MyProject.Common.Host.GameCommandOutcome`2.PostEvents*
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).PostEvents
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent).PostEvents
+- uid: MyProject.Common.Host.GameCommandOutcome`2.#ctor(`0,System.Collections.Generic.IReadOnlyList{`1})
+  commentId: M:MyProject.Common.Host.GameCommandOutcome`2.#ctor(`0,System.Collections.Generic.IReadOnlyList{`1})
+  id: '#ctor(`0,System.Collections.Generic.IReadOnlyList{`1})'
+  parent: MyProject.Common.Host.GameCommandOutcome`2
+  langs:
+  - csharp
+  - vb
+  name: GameCommandOutcome(TResult, IReadOnlyList<TEvent>)
+  nameWithType: GameCommandOutcome<TResult, TEvent>.GameCommandOutcome(TResult, IReadOnlyList<TEvent>)
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>.GameCommandOutcome(TResult, System.Collections.Generic.IReadOnlyList<TEvent>)
+  type: Constructor
+  namespace: MyProject.Common.Host
+  syntax:
+    content: public GameCommandOutcome(TResult result, IReadOnlyList<TEvent> postEvents = null)
+    parameters:
+    - id: result
+      type: '{TResult}'
+    - id: postEvents
+      type: System.Collections.Generic.IReadOnlyList{{TEvent}}
+    content.vb: Public Sub New(result As TResult, postEvents As IReadOnlyList(Of TEvent) = Nothing)
+  overload: MyProject.Common.Host.GameCommandOutcome`2.#ctor*
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).New(TResult, IReadOnlyList(Of TEvent))
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent).New(TResult, System.Collections.Generic.IReadOnlyList(Of TEvent))
+  name.vb: New(TResult, IReadOnlyList(Of TEvent))
+- uid: MyProject.Common.Host.GameCommandOutcome`2.#ctor(System.Collections.Generic.IReadOnlyList{`1},`0,System.Collections.Generic.IReadOnlyList{`1})
+  commentId: M:MyProject.Common.Host.GameCommandOutcome`2.#ctor(System.Collections.Generic.IReadOnlyList{`1},`0,System.Collections.Generic.IReadOnlyList{`1})
+  id: '#ctor(System.Collections.Generic.IReadOnlyList{`1},`0,System.Collections.Generic.IReadOnlyList{`1})'
+  parent: MyProject.Common.Host.GameCommandOutcome`2
+  langs:
+  - csharp
+  - vb
+  name: GameCommandOutcome(IReadOnlyList<TEvent>, TResult, IReadOnlyList<TEvent>)
+  nameWithType: GameCommandOutcome<TResult, TEvent>.GameCommandOutcome(IReadOnlyList<TEvent>, TResult, IReadOnlyList<TEvent>)
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>.GameCommandOutcome(System.Collections.Generic.IReadOnlyList<TEvent>, TResult, System.Collections.Generic.IReadOnlyList<TEvent>)
+  type: Constructor
+  namespace: MyProject.Common.Host
+  syntax:
+    content: public GameCommandOutcome(IReadOnlyList<TEvent> preEvents, TResult result, IReadOnlyList<TEvent> postEvents = null)
+    parameters:
+    - id: preEvents
+      type: System.Collections.Generic.IReadOnlyList{{TEvent}}
+    - id: result
+      type: '{TResult}'
+    - id: postEvents
+      type: System.Collections.Generic.IReadOnlyList{{TEvent}}
+    content.vb: Public Sub New(preEvents As IReadOnlyList(Of TEvent), result As TResult, postEvents As IReadOnlyList(Of TEvent) = Nothing)
+  overload: MyProject.Common.Host.GameCommandOutcome`2.#ctor*
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).New(IReadOnlyList(Of TEvent), TResult, IReadOnlyList(Of TEvent))
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent).New(System.Collections.Generic.IReadOnlyList(Of TEvent), TResult, System.Collections.Generic.IReadOnlyList(Of TEvent))
+  name.vb: New(IReadOnlyList(Of TEvent), TResult, IReadOnlyList(Of TEvent))
+references:
+- uid: MyProject.Common.Host
+  commentId: N:MyProject.Common.Host
+  href: MyProject.html
+  name: MyProject.Common.Host
+  nameWithType: MyProject.Common.Host
+  fullName: MyProject.Common.Host
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.Host.GameCommandOutcome`2.PreEvents*
+  commentId: Overload:MyProject.Common.Host.GameCommandOutcome`2.PreEvents
+  href: MyProject.Common.Host.GameCommandOutcome-2.html#MyProject_Common_Host_GameCommandOutcome_2_PreEvents
+  name: PreEvents
+  nameWithType: GameCommandOutcome<TResult, TEvent>.PreEvents
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>.PreEvents
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).PreEvents
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent).PreEvents
+- uid: System.Collections.Generic.IReadOnlyList{{TEvent}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<TEvent>
+  nameWithType: IReadOnlyList<TEvent>
+  fullName: System.Collections.Generic.IReadOnlyList<TEvent>
+  nameWithType.vb: IReadOnlyList(Of TEvent)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of TEvent)
+  name.vb: IReadOnlyList(Of TEvent)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MyProject.Common.Host.GameCommandOutcome`2.Result*
+  commentId: Overload:MyProject.Common.Host.GameCommandOutcome`2.Result
+  href: MyProject.Common.Host.GameCommandOutcome-2.html#MyProject_Common_Host_GameCommandOutcome_2_Result
+  name: Result
+  nameWithType: GameCommandOutcome<TResult, TEvent>.Result
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>.Result
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).Result
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent).Result
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: MyProject.Common.Host.GameCommandOutcome`2.PostEvents*
+  commentId: Overload:MyProject.Common.Host.GameCommandOutcome`2.PostEvents
+  href: MyProject.Common.Host.GameCommandOutcome-2.html#MyProject_Common_Host_GameCommandOutcome_2_PostEvents
+  name: PostEvents
+  nameWithType: GameCommandOutcome<TResult, TEvent>.PostEvents
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>.PostEvents
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).PostEvents
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent).PostEvents
+- uid: MyProject.Common.Host.GameCommandOutcome`2.#ctor*
+  commentId: Overload:MyProject.Common.Host.GameCommandOutcome`2.#ctor
+  href: MyProject.Common.Host.GameCommandOutcome-2.html#MyProject_Common_Host_GameCommandOutcome_2__ctor__0_System_Collections_Generic_IReadOnlyList__1__
+  name: GameCommandOutcome
+  nameWithType: GameCommandOutcome<TResult, TEvent>.GameCommandOutcome
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>.GameCommandOutcome
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).New
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent).New
+  name.vb: New

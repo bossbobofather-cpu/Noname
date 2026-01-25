@@ -1,0 +1,871 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.AbilitySystemSnapshot
+  commentId: T:Noname.GameAbilitySystem.AbilitySystemSnapshot
+  id: AbilitySystemSnapshot
+  parent: Noname.GameAbilitySystem
+  children:
+  - Noname.GameAbilitySystem.AbilitySystemSnapshot.#ctor(System.Collections.Generic.Dictionary{Noname.GameAbilitySystem.AttributeId,System.Single},System.Collections.Generic.List{Noname.GameAbilitySystem.FGameplayTag},System.Collections.Generic.List{System.String},System.Collections.Generic.List{Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot})
+  - Noname.GameAbilitySystem.AbilitySystemSnapshot.ActiveEffects
+  - Noname.GameAbilitySystem.AbilitySystemSnapshot.Attributes
+  - Noname.GameAbilitySystem.AbilitySystemSnapshot.OwnedTags
+  - Noname.GameAbilitySystem.AbilitySystemSnapshot.Skills
+  langs:
+  - csharp
+  - vb
+  name: AbilitySystemSnapshot
+  nameWithType: AbilitySystemSnapshot
+  fullName: Noname.GameAbilitySystem.AbilitySystemSnapshot
+  type: Class
+  namespace: Noname.GameAbilitySystem
+  summary: >-
+    AbilitySystem의 불변 스냅샷입니다.
+
+    스레드 간 안전한 데이터 전송을 위해 사용됩니다.
+  example: []
+  syntax:
+    content: public sealed class AbilitySystemSnapshot
+    content.vb: Public NotInheritable Class AbilitySystemSnapshot
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Noname.GameAbilitySystem.AbilitySystemSnapshot.Attributes
+  commentId: P:Noname.GameAbilitySystem.AbilitySystemSnapshot.Attributes
+  id: Attributes
+  parent: Noname.GameAbilitySystem.AbilitySystemSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Attributes
+  nameWithType: AbilitySystemSnapshot.Attributes
+  fullName: Noname.GameAbilitySystem.AbilitySystemSnapshot.Attributes
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 속성 값 스냅샷입니다.
+  example: []
+  syntax:
+    content: public IReadOnlyDictionary<AttributeId, float> Attributes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{Noname.GameAbilitySystem.AttributeId,System.Single}
+    content.vb: Public ReadOnly Property Attributes As IReadOnlyDictionary(Of AttributeId, Single)
+  overload: Noname.GameAbilitySystem.AbilitySystemSnapshot.Attributes*
+- uid: Noname.GameAbilitySystem.AbilitySystemSnapshot.OwnedTags
+  commentId: P:Noname.GameAbilitySystem.AbilitySystemSnapshot.OwnedTags
+  id: OwnedTags
+  parent: Noname.GameAbilitySystem.AbilitySystemSnapshot
+  langs:
+  - csharp
+  - vb
+  name: OwnedTags
+  nameWithType: AbilitySystemSnapshot.OwnedTags
+  fullName: Noname.GameAbilitySystem.AbilitySystemSnapshot.OwnedTags
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 소유한 태그 스냅샷입니다.
+  example: []
+  syntax:
+    content: public IReadOnlyList<FGameplayTag> OwnedTags { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.FGameplayTag}
+    content.vb: Public ReadOnly Property OwnedTags As IReadOnlyList(Of FGameplayTag)
+  overload: Noname.GameAbilitySystem.AbilitySystemSnapshot.OwnedTags*
+- uid: Noname.GameAbilitySystem.AbilitySystemSnapshot.Skills
+  commentId: P:Noname.GameAbilitySystem.AbilitySystemSnapshot.Skills
+  id: Skills
+  parent: Noname.GameAbilitySystem.AbilitySystemSnapshot
+  langs:
+  - csharp
+  - vb
+  name: Skills
+  nameWithType: AbilitySystemSnapshot.Skills
+  fullName: Noname.GameAbilitySystem.AbilitySystemSnapshot.Skills
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 스킬 목록 스냅샷입니다.
+  example: []
+  syntax:
+    content: public IReadOnlyList<string> Skills { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+    content.vb: Public ReadOnly Property Skills As IReadOnlyList(Of String)
+  overload: Noname.GameAbilitySystem.AbilitySystemSnapshot.Skills*
+- uid: Noname.GameAbilitySystem.AbilitySystemSnapshot.ActiveEffects
+  commentId: P:Noname.GameAbilitySystem.AbilitySystemSnapshot.ActiveEffects
+  id: ActiveEffects
+  parent: Noname.GameAbilitySystem.AbilitySystemSnapshot
+  langs:
+  - csharp
+  - vb
+  name: ActiveEffects
+  nameWithType: AbilitySystemSnapshot.ActiveEffects
+  fullName: Noname.GameAbilitySystem.AbilitySystemSnapshot.ActiveEffects
+  type: Property
+  namespace: Noname.GameAbilitySystem
+  summary: 활성 효과 스냅샷입니다.
+  example: []
+  syntax:
+    content: public IReadOnlyList<ActiveGameplayEffectSnapshot> ActiveEffects { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot}
+    content.vb: Public ReadOnly Property ActiveEffects As IReadOnlyList(Of ActiveGameplayEffectSnapshot)
+  overload: Noname.GameAbilitySystem.AbilitySystemSnapshot.ActiveEffects*
+- uid: Noname.GameAbilitySystem.AbilitySystemSnapshot.#ctor(System.Collections.Generic.Dictionary{Noname.GameAbilitySystem.AttributeId,System.Single},System.Collections.Generic.List{Noname.GameAbilitySystem.FGameplayTag},System.Collections.Generic.List{System.String},System.Collections.Generic.List{Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot})
+  commentId: M:Noname.GameAbilitySystem.AbilitySystemSnapshot.#ctor(System.Collections.Generic.Dictionary{Noname.GameAbilitySystem.AttributeId,System.Single},System.Collections.Generic.List{Noname.GameAbilitySystem.FGameplayTag},System.Collections.Generic.List{System.String},System.Collections.Generic.List{Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot})
+  id: '#ctor(System.Collections.Generic.Dictionary{Noname.GameAbilitySystem.AttributeId,System.Single},System.Collections.Generic.List{Noname.GameAbilitySystem.FGameplayTag},System.Collections.Generic.List{System.String},System.Collections.Generic.List{Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot})'
+  parent: Noname.GameAbilitySystem.AbilitySystemSnapshot
+  langs:
+  - csharp
+  - vb
+  name: AbilitySystemSnapshot(Dictionary<AttributeId, float>, List<FGameplayTag>, List<string>, List<ActiveGameplayEffectSnapshot>)
+  nameWithType: AbilitySystemSnapshot.AbilitySystemSnapshot(Dictionary<AttributeId, float>, List<FGameplayTag>, List<string>, List<ActiveGameplayEffectSnapshot>)
+  fullName: Noname.GameAbilitySystem.AbilitySystemSnapshot.AbilitySystemSnapshot(System.Collections.Generic.Dictionary<Noname.GameAbilitySystem.AttributeId, float>, System.Collections.Generic.List<Noname.GameAbilitySystem.FGameplayTag>, System.Collections.Generic.List<string>, System.Collections.Generic.List<Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot>)
+  type: Constructor
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: public AbilitySystemSnapshot(Dictionary<AttributeId, float> attributes, List<FGameplayTag> ownedTags, List<string> skills, List<ActiveGameplayEffectSnapshot> activeEffects)
+    parameters:
+    - id: attributes
+      type: System.Collections.Generic.Dictionary{Noname.GameAbilitySystem.AttributeId,System.Single}
+    - id: ownedTags
+      type: System.Collections.Generic.List{Noname.GameAbilitySystem.FGameplayTag}
+    - id: skills
+      type: System.Collections.Generic.List{System.String}
+    - id: activeEffects
+      type: System.Collections.Generic.List{Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot}
+    content.vb: Public Sub New(attributes As Dictionary(Of AttributeId, Single), ownedTags As List(Of FGameplayTag), skills As List(Of String), activeEffects As List(Of ActiveGameplayEffectSnapshot))
+  overload: Noname.GameAbilitySystem.AbilitySystemSnapshot.#ctor*
+  nameWithType.vb: AbilitySystemSnapshot.New(Dictionary(Of AttributeId, Single), List(Of FGameplayTag), List(Of String), List(Of ActiveGameplayEffectSnapshot))
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemSnapshot.New(System.Collections.Generic.Dictionary(Of Noname.GameAbilitySystem.AttributeId, Single), System.Collections.Generic.List(Of Noname.GameAbilitySystem.FGameplayTag), System.Collections.Generic.List(Of String), System.Collections.Generic.List(Of Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot))
+  name.vb: New(Dictionary(Of AttributeId, Single), List(Of FGameplayTag), List(Of String), List(Of ActiveGameplayEffectSnapshot))
+references:
+- uid: Noname.GameAbilitySystem
+  commentId: N:Noname.GameAbilitySystem
+  href: Noname.html
+  name: Noname.GameAbilitySystem
+  nameWithType: Noname.GameAbilitySystem
+  fullName: Noname.GameAbilitySystem
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.AbilitySystemSnapshot.Attributes*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemSnapshot.Attributes
+  href: Noname.GameAbilitySystem.AbilitySystemSnapshot.html#Noname_GameAbilitySystem_AbilitySystemSnapshot_Attributes
+  name: Attributes
+  nameWithType: AbilitySystemSnapshot.Attributes
+  fullName: Noname.GameAbilitySystem.AbilitySystemSnapshot.Attributes
+- uid: System.Collections.Generic.IReadOnlyDictionary{Noname.GameAbilitySystem.AttributeId,System.Single}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{Noname.GameAbilitySystem.AttributeId,System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<AttributeId, float>
+  nameWithType: IReadOnlyDictionary<AttributeId, float>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<Noname.GameAbilitySystem.AttributeId, float>
+  nameWithType.vb: IReadOnlyDictionary(Of AttributeId, Single)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of Noname.GameAbilitySystem.AttributeId, Single)
+  name.vb: IReadOnlyDictionary(Of AttributeId, Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: Noname.GameAbilitySystem.AttributeId
+    name: AttributeId
+    href: Noname.GameAbilitySystem.AttributeId.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.AttributeId
+    name: AttributeId
+    href: Noname.GameAbilitySystem.AttributeId.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Noname.GameAbilitySystem.AbilitySystemSnapshot.OwnedTags*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemSnapshot.OwnedTags
+  href: Noname.GameAbilitySystem.AbilitySystemSnapshot.html#Noname_GameAbilitySystem_AbilitySystemSnapshot_OwnedTags
+  name: OwnedTags
+  nameWithType: AbilitySystemSnapshot.OwnedTags
+  fullName: Noname.GameAbilitySystem.AbilitySystemSnapshot.OwnedTags
+- uid: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.FGameplayTag}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.FGameplayTag}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<FGameplayTag>
+  nameWithType: IReadOnlyList<FGameplayTag>
+  fullName: System.Collections.Generic.IReadOnlyList<Noname.GameAbilitySystem.FGameplayTag>
+  nameWithType.vb: IReadOnlyList(Of FGameplayTag)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Noname.GameAbilitySystem.FGameplayTag)
+  name.vb: IReadOnlyList(Of FGameplayTag)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.FGameplayTag
+    name: FGameplayTag
+    href: Noname.GameAbilitySystem.FGameplayTag.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.FGameplayTag
+    name: FGameplayTag
+    href: Noname.GameAbilitySystem.FGameplayTag.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Noname.GameAbilitySystem.AbilitySystemSnapshot.Skills*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemSnapshot.Skills
+  href: Noname.GameAbilitySystem.AbilitySystemSnapshot.html#Noname_GameAbilitySystem_AbilitySystemSnapshot_Skills
+  name: Skills
+  nameWithType: AbilitySystemSnapshot.Skills
+  fullName: Noname.GameAbilitySystem.AbilitySystemSnapshot.Skills
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<string>
+  nameWithType: IReadOnlyList<string>
+  fullName: System.Collections.Generic.IReadOnlyList<string>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Noname.GameAbilitySystem.AbilitySystemSnapshot.ActiveEffects*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemSnapshot.ActiveEffects
+  href: Noname.GameAbilitySystem.AbilitySystemSnapshot.html#Noname_GameAbilitySystem_AbilitySystemSnapshot_ActiveEffects
+  name: ActiveEffects
+  nameWithType: AbilitySystemSnapshot.ActiveEffects
+  fullName: Noname.GameAbilitySystem.AbilitySystemSnapshot.ActiveEffects
+- uid: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<ActiveGameplayEffectSnapshot>
+  nameWithType: IReadOnlyList<ActiveGameplayEffectSnapshot>
+  fullName: System.Collections.Generic.IReadOnlyList<Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot>
+  nameWithType.vb: IReadOnlyList(Of ActiveGameplayEffectSnapshot)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot)
+  name.vb: IReadOnlyList(Of ActiveGameplayEffectSnapshot)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot
+    name: ActiveGameplayEffectSnapshot
+    href: Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot
+    name: ActiveGameplayEffectSnapshot
+    href: Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot.html
+  - name: )
+- uid: Noname.GameAbilitySystem.AbilitySystemSnapshot.#ctor*
+  commentId: Overload:Noname.GameAbilitySystem.AbilitySystemSnapshot.#ctor
+  href: Noname.GameAbilitySystem.AbilitySystemSnapshot.html#Noname_GameAbilitySystem_AbilitySystemSnapshot__ctor_System_Collections_Generic_Dictionary_Noname_GameAbilitySystem_AttributeId_System_Single__System_Collections_Generic_List_Noname_GameAbilitySystem_FGameplayTag__System_Collections_Generic_List_System_String__System_Collections_Generic_List_Noname_GameAbilitySystem_ActiveGameplayEffectSnapshot__
+  name: AbilitySystemSnapshot
+  nameWithType: AbilitySystemSnapshot.AbilitySystemSnapshot
+  fullName: Noname.GameAbilitySystem.AbilitySystemSnapshot.AbilitySystemSnapshot
+  nameWithType.vb: AbilitySystemSnapshot.New
+  fullName.vb: Noname.GameAbilitySystem.AbilitySystemSnapshot.New
+  name.vb: New
+- uid: System.Collections.Generic.Dictionary{Noname.GameAbilitySystem.AttributeId,System.Single}
+  commentId: T:System.Collections.Generic.Dictionary{Noname.GameAbilitySystem.AttributeId,System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<AttributeId, float>
+  nameWithType: Dictionary<AttributeId, float>
+  fullName: System.Collections.Generic.Dictionary<Noname.GameAbilitySystem.AttributeId, float>
+  nameWithType.vb: Dictionary(Of AttributeId, Single)
+  fullName.vb: System.Collections.Generic.Dictionary(Of Noname.GameAbilitySystem.AttributeId, Single)
+  name.vb: Dictionary(Of AttributeId, Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: Noname.GameAbilitySystem.AttributeId
+    name: AttributeId
+    href: Noname.GameAbilitySystem.AttributeId.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.AttributeId
+    name: AttributeId
+    href: Noname.GameAbilitySystem.AttributeId.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Collections.Generic.List{Noname.GameAbilitySystem.FGameplayTag}
+  commentId: T:System.Collections.Generic.List{Noname.GameAbilitySystem.FGameplayTag}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<FGameplayTag>
+  nameWithType: List<FGameplayTag>
+  fullName: System.Collections.Generic.List<Noname.GameAbilitySystem.FGameplayTag>
+  nameWithType.vb: List(Of FGameplayTag)
+  fullName.vb: System.Collections.Generic.List(Of Noname.GameAbilitySystem.FGameplayTag)
+  name.vb: List(Of FGameplayTag)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.FGameplayTag
+    name: FGameplayTag
+    href: Noname.GameAbilitySystem.FGameplayTag.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.FGameplayTag
+    name: FGameplayTag
+    href: Noname.GameAbilitySystem.FGameplayTag.html
+  - name: )
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List{Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot}
+  commentId: T:System.Collections.Generic.List{Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ActiveGameplayEffectSnapshot>
+  nameWithType: List<ActiveGameplayEffectSnapshot>
+  fullName: System.Collections.Generic.List<Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot>
+  nameWithType.vb: List(Of ActiveGameplayEffectSnapshot)
+  fullName.vb: System.Collections.Generic.List(Of Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot)
+  name.vb: List(Of ActiveGameplayEffectSnapshot)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot
+    name: ActiveGameplayEffectSnapshot
+    href: Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot
+    name: ActiveGameplayEffectSnapshot
+    href: Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

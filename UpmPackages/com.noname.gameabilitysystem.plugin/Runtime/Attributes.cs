@@ -13,7 +13,10 @@ namespace Noname.GameAbilitySystem
         Health = 2,
         AttackRange = 3,
         AttackSpeed = 4,
-        AttackDamage = 5
+        AttackDamage = 5,
+        MaxHealth = 6,
+        Exp = 7,
+        Gold = 8
     }
 
     /// <summary>

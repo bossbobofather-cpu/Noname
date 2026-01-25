@@ -19,6 +19,15 @@ items:
   - uid: Noname.GameAbilitySystem.AbilitySystemComponent
     name: AbilitySystemComponent
     type: Class
+  - uid: Noname.GameAbilitySystem.AbilitySystemModel
+    name: AbilitySystemModel
+    type: Class
+  - uid: Noname.GameAbilitySystem.AbilitySystemModel.ActiveGameplayEffect
+    name: AbilitySystemModel.ActiveGameplayEffect
+    type: Struct
+  - uid: Noname.GameAbilitySystem.AbilitySystemSnapshot
+    name: AbilitySystemSnapshot
+    type: Class
   - uid: Noname.GameAbilitySystem.AbilityTargetData
     name: AbilityTargetData
     type: Class
@@ -37,6 +46,9 @@ items:
   - uid: Noname.GameAbilitySystem.AbilityTask_WaitTargetData
     name: AbilityTask_WaitTargetData
     type: Class
+  - uid: Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot
+    name: ActiveGameplayEffectSnapshot
+    type: Struct
   - uid: Noname.GameAbilitySystem.AttributeDefinition
     name: AttributeDefinition
     type: Class

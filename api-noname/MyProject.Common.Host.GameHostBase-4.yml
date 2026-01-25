@@ -1,0 +1,1620 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.Host.GameHostBase`4
+  commentId: T:MyProject.Common.Host.GameHostBase`4
+  id: GameHostBase`4
+  parent: MyProject.Common.Host
+  children:
+  - MyProject.Common.Host.GameHostBase`4.Advance(System.Single)
+  - MyProject.Common.Host.GameHostBase`4.BuildSnapshot
+  - MyProject.Common.Host.GameHostBase`4.BuildSnapshotInternal
+  - MyProject.Common.Host.GameHostBase`4.CreateErrorEvent(`0,System.Exception)
+  - MyProject.Common.Host.GameHostBase`4.Dispose
+  - MyProject.Common.Host.GameHostBase`4.EventRaised
+  - MyProject.Common.Host.GameHostBase`4.FixedStep
+  - MyProject.Common.Host.GameHostBase`4.FlushEvents
+  - MyProject.Common.Host.GameHostBase`4.HandleCommand(`0)
+  - MyProject.Common.Host.GameHostBase`4.IsRunning
+  - MyProject.Common.Host.GameHostBase`4.LoopException
+  - MyProject.Common.Host.GameHostBase`4.MaxStepsPerTick
+  - MyProject.Common.Host.GameHostBase`4.OnTick(System.Single)
+  - MyProject.Common.Host.GameHostBase`4.PublishEvent(`2)
+  - MyProject.Common.Host.GameHostBase`4.PublishResult(`1)
+  - MyProject.Common.Host.GameHostBase`4.ResultProduced
+  - MyProject.Common.Host.GameHostBase`4.SleepMilliseconds
+  - MyProject.Common.Host.GameHostBase`4.SnapshotInterval
+  - MyProject.Common.Host.GameHostBase`4.StartSimulation
+  - MyProject.Common.Host.GameHostBase`4.StopSimulation
+  - MyProject.Common.Host.GameHostBase`4.StopTimeoutMilliseconds
+  - MyProject.Common.Host.GameHostBase`4.Submit(`0)
+  - MyProject.Common.Host.GameHostBase`4.ThrowIfDisposed
+  - MyProject.Common.Host.GameHostBase`4.Tick
+  langs:
+  - csharp
+  - vb
+  name: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  type: Class
+  namespace: MyProject.Common.Host
+  summary: >-
+    게임 호스트 기본 클래스입니다.
+
+    서버 측 게임 시뮬레이션을 관리하며, 스레드 안전 커맨드 처리, 이벤트 디스패칭, 스냅샷 생성을 제공합니다.
+  example: []
+  syntax:
+    content: 'public abstract class GameHostBase<TCommand, TResult, TEvent, TSnapshot> : IGameHost<TCommand, TResult, TEvent, TSnapshot>, IDisposable where TCommand : GameCommandBase where TResult : GameCommandResultBase where TEvent : GameEventBase where TSnapshot : GameSnapshotBase'
+    typeParameters:
+    - id: TCommand
+    - id: TResult
+    - id: TEvent
+    - id: TSnapshot
+    content.vb: Public MustInherit Class GameHostBase(Of TCommand As GameCommandBase, TResult As GameCommandResultBase, TEvent As GameEventBase, TSnapshot As GameSnapshotBase) Implements IGameHost(Of TCommand, TResult, TEvent, TSnapshot), IDisposable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - MyProject.ExploreGame.Application.ExploreHost
+  implements:
+  - MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+- uid: MyProject.Common.Host.GameHostBase`4.Tick
+  commentId: P:MyProject.Common.Host.GameHostBase`4.Tick
+  id: Tick
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: Tick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  type: Property
+  namespace: MyProject.Common.Host
+  example: []
+  syntax:
+    content: public long Tick { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property Tick As Long
+  overload: MyProject.Common.Host.GameHostBase`4.Tick*
+  implements:
+  - MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.Tick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+- uid: MyProject.Common.Host.GameHostBase`4.IsRunning
+  commentId: P:MyProject.Common.Host.GameHostBase`4.IsRunning
+  id: IsRunning
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: IsRunning
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  type: Property
+  namespace: MyProject.Common.Host
+  syntax:
+    content: public bool IsRunning { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsRunning As Boolean
+  overload: MyProject.Common.Host.GameHostBase`4.IsRunning*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+- uid: MyProject.Common.Host.GameHostBase`4.LoopException
+  commentId: P:MyProject.Common.Host.GameHostBase`4.LoopException
+  id: LoopException
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: LoopException
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  type: Property
+  namespace: MyProject.Common.Host
+  syntax:
+    content: public Exception LoopException { get; }
+    parameters: []
+    return:
+      type: System.Exception
+    content.vb: Public ReadOnly Property LoopException As Exception
+  overload: MyProject.Common.Host.GameHostBase`4.LoopException*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+- uid: MyProject.Common.Host.GameHostBase`4.FixedStep
+  commentId: P:MyProject.Common.Host.GameHostBase`4.FixedStep
+  id: FixedStep
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: FixedStep
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  type: Property
+  namespace: MyProject.Common.Host
+  summary: 고정 시뮬레이션 타임스텝(초)입니다.
+  example: []
+  syntax:
+    content: public float FixedStep { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property FixedStep As Single
+  overload: MyProject.Common.Host.GameHostBase`4.FixedStep*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+- uid: MyProject.Common.Host.GameHostBase`4.MaxStepsPerTick
+  commentId: P:MyProject.Common.Host.GameHostBase`4.MaxStepsPerTick
+  id: MaxStepsPerTick
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: MaxStepsPerTick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  type: Property
+  namespace: MyProject.Common.Host
+  summary: 틱당 최대 시뮬레이션 스텝 수입니다. Spiral of Death를 방지합니다.
+  example: []
+  syntax:
+    content: public int MaxStepsPerTick { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxStepsPerTick As Integer
+  overload: MyProject.Common.Host.GameHostBase`4.MaxStepsPerTick*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+- uid: MyProject.Common.Host.GameHostBase`4.SleepMilliseconds
+  commentId: P:MyProject.Common.Host.GameHostBase`4.SleepMilliseconds
+  id: SleepMilliseconds
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: SleepMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  type: Property
+  namespace: MyProject.Common.Host
+  summary: 시뮬레이션 틱 간 슬립 시간(밀리초)입니다.
+  example: []
+  syntax:
+    content: public int SleepMilliseconds { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SleepMilliseconds As Integer
+  overload: MyProject.Common.Host.GameHostBase`4.SleepMilliseconds*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+- uid: MyProject.Common.Host.GameHostBase`4.StopTimeoutMilliseconds
+  commentId: P:MyProject.Common.Host.GameHostBase`4.StopTimeoutMilliseconds
+  id: StopTimeoutMilliseconds
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: StopTimeoutMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  type: Property
+  namespace: MyProject.Common.Host
+  summary: 시뮬레이션 스레드 정지 시 타임아웃(밀리초)입니다.
+  example: []
+  syntax:
+    content: public int StopTimeoutMilliseconds { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property StopTimeoutMilliseconds As Integer
+  overload: MyProject.Common.Host.GameHostBase`4.StopTimeoutMilliseconds*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+- uid: MyProject.Common.Host.GameHostBase`4.SnapshotInterval
+  commentId: P:MyProject.Common.Host.GameHostBase`4.SnapshotInterval
+  id: SnapshotInterval
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: SnapshotInterval
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  type: Property
+  namespace: MyProject.Common.Host
+  summary: 스냅샷 생성 간격(초)입니다. 0이면 매 틱마다 생성합니다.
+  example: []
+  syntax:
+    content: public float SnapshotInterval { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property SnapshotInterval As Single
+  overload: MyProject.Common.Host.GameHostBase`4.SnapshotInterval*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+- uid: MyProject.Common.Host.GameHostBase`4.ResultProduced
+  commentId: E:MyProject.Common.Host.GameHostBase`4.ResultProduced
+  id: ResultProduced
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: ResultProduced
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  type: Event
+  namespace: MyProject.Common.Host
+  example: []
+  syntax:
+    content: public event Action<TResult> ResultProduced
+    return:
+      type: System.Action{{TResult}}
+    content.vb: Public Event ResultProduced As Action(Of TResult)
+  implements:
+  - MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.ResultProduced
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+- uid: MyProject.Common.Host.GameHostBase`4.EventRaised
+  commentId: E:MyProject.Common.Host.GameHostBase`4.EventRaised
+  id: EventRaised
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: EventRaised
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  type: Event
+  namespace: MyProject.Common.Host
+  example: []
+  syntax:
+    content: public event Action<TEvent> EventRaised
+    return:
+      type: System.Action{{TEvent}}
+    content.vb: Public Event EventRaised As Action(Of TEvent)
+  implements:
+  - MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.EventRaised
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+- uid: MyProject.Common.Host.GameHostBase`4.Submit(`0)
+  commentId: M:MyProject.Common.Host.GameHostBase`4.Submit(`0)
+  id: Submit(`0)
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: Submit(TCommand)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Submit(TCommand)
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Submit(TCommand)
+  type: Method
+  namespace: MyProject.Common.Host
+  example: []
+  syntax:
+    content: public void Submit(TCommand command)
+    parameters:
+    - id: command
+      type: '{TCommand}'
+    content.vb: Public Sub Submit(command As TCommand)
+  overload: MyProject.Common.Host.GameHostBase`4.Submit*
+  implements:
+  - MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.Submit({TCommand})
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Submit(TCommand)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Submit(TCommand)
+- uid: MyProject.Common.Host.GameHostBase`4.StartSimulation
+  commentId: M:MyProject.Common.Host.GameHostBase`4.StartSimulation
+  id: StartSimulation
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: StartSimulation()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  type: Method
+  namespace: MyProject.Common.Host
+  summary: 백그라운드 스레드에서 시뮬레이션 루프를 시작합니다.
+  example: []
+  syntax:
+    content: public void StartSimulation()
+    content.vb: Public Sub StartSimulation()
+  overload: MyProject.Common.Host.GameHostBase`4.StartSimulation*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+- uid: MyProject.Common.Host.GameHostBase`4.StopSimulation
+  commentId: M:MyProject.Common.Host.GameHostBase`4.StopSimulation
+  id: StopSimulation
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: StopSimulation()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  type: Method
+  namespace: MyProject.Common.Host
+  summary: 시뮬레이션 루프를 정지하고 스레드가 종료될 때까지 대기합니다.
+  example: []
+  syntax:
+    content: public void StopSimulation()
+    content.vb: Public Sub StopSimulation()
+  overload: MyProject.Common.Host.GameHostBase`4.StopSimulation*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+- uid: MyProject.Common.Host.GameHostBase`4.Advance(System.Single)
+  commentId: M:MyProject.Common.Host.GameHostBase`4.Advance(System.Single)
+  id: Advance(System.Single)
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: Advance(float)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Advance(float)
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Advance(float)
+  type: Method
+  namespace: MyProject.Common.Host
+  example: []
+  syntax:
+    content: public void Advance(float deltaSeconds)
+    parameters:
+    - id: deltaSeconds
+      type: System.Single
+    content.vb: Public Sub Advance(deltaSeconds As Single)
+  overload: MyProject.Common.Host.GameHostBase`4.Advance*
+  implements:
+  - MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.Advance(System.Single)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Advance(Single)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Advance(Single)
+  name.vb: Advance(Single)
+- uid: MyProject.Common.Host.GameHostBase`4.BuildSnapshot
+  commentId: M:MyProject.Common.Host.GameHostBase`4.BuildSnapshot
+  id: BuildSnapshot
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: BuildSnapshot()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshot()
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshot()
+  type: Method
+  namespace: MyProject.Common.Host
+  example: []
+  syntax:
+    content: public TSnapshot BuildSnapshot()
+    return:
+      type: '{TSnapshot}'
+    content.vb: Public Function BuildSnapshot() As TSnapshot
+  overload: MyProject.Common.Host.GameHostBase`4.BuildSnapshot*
+  implements:
+  - MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.BuildSnapshot
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshot()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshot()
+- uid: MyProject.Common.Host.GameHostBase`4.HandleCommand(`0)
+  commentId: M:MyProject.Common.Host.GameHostBase`4.HandleCommand(`0)
+  id: HandleCommand(`0)
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: HandleCommand(TCommand)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand(TCommand)
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand(TCommand)
+  type: Method
+  namespace: MyProject.Common.Host
+  summary: 커맨드를 처리하고 결과 및 이벤트가 포함된 결과를 반환합니다.
+  example: []
+  syntax:
+    content: protected abstract GameCommandOutcome<TResult, TEvent> HandleCommand(TCommand command)
+    parameters:
+    - id: command
+      type: '{TCommand}'
+    return:
+      type: MyProject.Common.Host.GameCommandOutcome{{TResult},{TEvent}}
+    content.vb: Protected MustOverride Function HandleCommand(command As TCommand) As GameCommandOutcome(Of TResult, TEvent)
+  overload: MyProject.Common.Host.GameHostBase`4.HandleCommand*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand(TCommand)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand(TCommand)
+- uid: MyProject.Common.Host.GameHostBase`4.OnTick(System.Single)
+  commentId: M:MyProject.Common.Host.GameHostBase`4.OnTick(System.Single)
+  id: OnTick(System.Single)
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: OnTick(float)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick(float)
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick(float)
+  type: Method
+  namespace: MyProject.Common.Host
+  summary: 매 시뮬레이션 틱마다 호출되어 게임 상태를 업데이트합니다.
+  example: []
+  syntax:
+    content: protected abstract void OnTick(float deltaSeconds)
+    parameters:
+    - id: deltaSeconds
+      type: System.Single
+    content.vb: Protected MustOverride Sub OnTick(deltaSeconds As Single)
+  overload: MyProject.Common.Host.GameHostBase`4.OnTick*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick(Single)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick(Single)
+  name.vb: OnTick(Single)
+- uid: MyProject.Common.Host.GameHostBase`4.BuildSnapshotInternal
+  commentId: M:MyProject.Common.Host.GameHostBase`4.BuildSnapshotInternal
+  id: BuildSnapshotInternal
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: BuildSnapshotInternal()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal()
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal()
+  type: Method
+  namespace: MyProject.Common.Host
+  summary: 현재 게임 상태의 스냅샷을 생성합니다 (시뮬레이션 스레드에서 호출됨).
+  example: []
+  syntax:
+    content: protected abstract TSnapshot BuildSnapshotInternal()
+    return:
+      type: '{TSnapshot}'
+    content.vb: Protected MustOverride Function BuildSnapshotInternal() As TSnapshot
+  overload: MyProject.Common.Host.GameHostBase`4.BuildSnapshotInternal*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal()
+- uid: MyProject.Common.Host.GameHostBase`4.CreateErrorEvent(`0,System.Exception)
+  commentId: M:MyProject.Common.Host.GameHostBase`4.CreateErrorEvent(`0,System.Exception)
+  id: CreateErrorEvent(`0,System.Exception)
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: CreateErrorEvent(TCommand, Exception)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.CreateErrorEvent(TCommand, Exception)
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.CreateErrorEvent(TCommand, System.Exception)
+  type: Method
+  namespace: MyProject.Common.Host
+  summary: >-
+    커맨드 처리 실패 시 에러 이벤트를 생성합니다.
+
+    커스텀 에러 이벤트 생성을 위해 오버라이드할 수 있습니다.
+  example: []
+  syntax:
+    content: protected virtual TEvent CreateErrorEvent(TCommand command, Exception exception)
+    parameters:
+    - id: command
+      type: '{TCommand}'
+    - id: exception
+      type: System.Exception
+    return:
+      type: '{TEvent}'
+    content.vb: Protected Overridable Function CreateErrorEvent(command As TCommand, exception As Exception) As TEvent
+  overload: MyProject.Common.Host.GameHostBase`4.CreateErrorEvent*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).CreateErrorEvent(TCommand, Exception)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).CreateErrorEvent(TCommand, System.Exception)
+- uid: MyProject.Common.Host.GameHostBase`4.PublishResult(`1)
+  commentId: M:MyProject.Common.Host.GameHostBase`4.PublishResult(`1)
+  id: PublishResult(`1)
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: PublishResult(TResult)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishResult(TResult)
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishResult(TResult)
+  type: Method
+  namespace: MyProject.Common.Host
+  syntax:
+    content: protected void PublishResult(TResult result)
+    parameters:
+    - id: result
+      type: '{TResult}'
+    content.vb: Protected Sub PublishResult(result As TResult)
+  overload: MyProject.Common.Host.GameHostBase`4.PublishResult*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishResult(TResult)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishResult(TResult)
+- uid: MyProject.Common.Host.GameHostBase`4.PublishEvent(`2)
+  commentId: M:MyProject.Common.Host.GameHostBase`4.PublishEvent(`2)
+  id: PublishEvent(`2)
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: PublishEvent(TEvent)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishEvent(TEvent)
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishEvent(TEvent)
+  type: Method
+  namespace: MyProject.Common.Host
+  syntax:
+    content: protected void PublishEvent(TEvent eventData)
+    parameters:
+    - id: eventData
+      type: '{TEvent}'
+    content.vb: Protected Sub PublishEvent(eventData As TEvent)
+  overload: MyProject.Common.Host.GameHostBase`4.PublishEvent*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishEvent(TEvent)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishEvent(TEvent)
+- uid: MyProject.Common.Host.GameHostBase`4.FlushEvents
+  commentId: M:MyProject.Common.Host.GameHostBase`4.FlushEvents
+  id: FlushEvents
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: FlushEvents()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  type: Method
+  namespace: MyProject.Common.Host
+  summary: >-
+    메인 스레드에서 대기 중인 모든 결과와 이벤트를 디스패치합니다.
+
+    Unity의 Update 루프에서 정기적으로 호출해야 합니다.
+  example: []
+  syntax:
+    content: public void FlushEvents()
+    content.vb: Public Sub FlushEvents()
+  overload: MyProject.Common.Host.GameHostBase`4.FlushEvents*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+- uid: MyProject.Common.Host.GameHostBase`4.ThrowIfDisposed
+  commentId: M:MyProject.Common.Host.GameHostBase`4.ThrowIfDisposed
+  id: ThrowIfDisposed
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfDisposed()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ThrowIfDisposed()
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ThrowIfDisposed()
+  type: Method
+  namespace: MyProject.Common.Host
+  syntax:
+    content: protected void ThrowIfDisposed()
+    content.vb: Protected Sub ThrowIfDisposed()
+  overload: MyProject.Common.Host.GameHostBase`4.ThrowIfDisposed*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ThrowIfDisposed()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ThrowIfDisposed()
+- uid: MyProject.Common.Host.GameHostBase`4.Dispose
+  commentId: M:MyProject.Common.Host.GameHostBase`4.Dispose
+  id: Dispose
+  parent: MyProject.Common.Host.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose()
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose()
+  type: Method
+  namespace: MyProject.Common.Host
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: MyProject.Common.Host.GameHostBase`4.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose()
+references:
+- uid: MyProject.Common.Host
+  commentId: N:MyProject.Common.Host
+  href: MyProject.html
+  name: MyProject.Common.Host
+  nameWithType: MyProject.Common.Host
+  fullName: MyProject.Common.Host
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  commentId: T:MyProject.Common.Host.IGameHost{`0,`1,`2,`3}
+  parent: MyProject.Common.Host
+  definition: MyProject.Common.Host.IGameHost`4
+  href: MyProject.Common.Host.IGameHost-4.html
+  name: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: MyProject.Common.Host.IGameHost`4
+    name: IGameHost
+    href: MyProject.Common.Host.IGameHost-4.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.IGameHost`4
+    name: IGameHost
+    href: MyProject.Common.Host.IGameHost-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.Host.IGameHost`4
+  commentId: T:MyProject.Common.Host.IGameHost`4
+  href: MyProject.Common.Host.IGameHost-4.html
+  name: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: MyProject.Common.Host.IGameHost`4
+    name: IGameHost
+    href: MyProject.Common.Host.IGameHost-4.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.IGameHost`4
+    name: IGameHost
+    href: MyProject.Common.Host.IGameHost-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase`4.Tick*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.Tick
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Tick
+  name: Tick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+- uid: MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.Tick
+  commentId: P:MyProject.Common.Host.IGameHost{`0,`1,`2,`3}.Tick
+  parent: MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  definition: MyProject.Common.Host.IGameHost`4.Tick
+  href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Tick
+  name: Tick
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.Tick
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>.Tick
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).Tick
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).Tick
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MyProject.Common.Host.IGameHost`4.Tick
+  commentId: P:MyProject.Common.Host.IGameHost`4.Tick
+  href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Tick
+  name: Tick
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.Tick
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>.Tick
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).Tick
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).Tick
+- uid: MyProject.Common.Host.GameHostBase`4.IsRunning*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.IsRunning
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_IsRunning
+  name: IsRunning
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MyProject.Common.Host.GameHostBase`4.LoopException*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.LoopException
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_LoopException
+  name: LoopException
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: MyProject.Common.Host.GameHostBase`4.FixedStep*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.FixedStep
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_FixedStep
+  name: FixedStep
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MyProject.Common.Host.GameHostBase`4.MaxStepsPerTick*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.MaxStepsPerTick
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_MaxStepsPerTick
+  name: MaxStepsPerTick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MyProject.Common.Host.GameHostBase`4.SleepMilliseconds*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.SleepMilliseconds
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_SleepMilliseconds
+  name: SleepMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+- uid: MyProject.Common.Host.GameHostBase`4.StopTimeoutMilliseconds*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.StopTimeoutMilliseconds
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StopTimeoutMilliseconds
+  name: StopTimeoutMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+- uid: MyProject.Common.Host.GameHostBase`4.SnapshotInterval*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.SnapshotInterval
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_SnapshotInterval
+  name: SnapshotInterval
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+- uid: MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.ResultProduced
+  commentId: E:MyProject.Common.Host.IGameHost{`0,`1,`2,`3}.ResultProduced
+  parent: MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  definition: MyProject.Common.Host.IGameHost`4.ResultProduced
+  href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_ResultProduced
+  name: ResultProduced
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+- uid: System.Action{{TResult}}
+  commentId: T:System.Action{`1}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<TResult>
+  nameWithType: Action<TResult>
+  fullName: System.Action<TResult>
+  nameWithType.vb: Action(Of TResult)
+  fullName.vb: System.Action(Of TResult)
+  name.vb: Action(Of TResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: MyProject.Common.Host.IGameHost`4.ResultProduced
+  commentId: E:MyProject.Common.Host.IGameHost`4.ResultProduced
+  href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_ResultProduced
+  name: ResultProduced
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.EventRaised
+  commentId: E:MyProject.Common.Host.IGameHost{`0,`1,`2,`3}.EventRaised
+  parent: MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  definition: MyProject.Common.Host.IGameHost`4.EventRaised
+  href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_EventRaised
+  name: EventRaised
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+- uid: System.Action{{TEvent}}
+  commentId: T:System.Action{`2}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<TEvent>
+  nameWithType: Action<TEvent>
+  fullName: System.Action<TEvent>
+  nameWithType.vb: Action(Of TEvent)
+  fullName.vb: System.Action(Of TEvent)
+  name.vb: Action(Of TEvent)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: MyProject.Common.Host.IGameHost`4.EventRaised
+  commentId: E:MyProject.Common.Host.IGameHost`4.EventRaised
+  href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_EventRaised
+  name: EventRaised
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+- uid: MyProject.Common.Host.GameHostBase`4.Submit*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.Submit
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Submit__0_
+  name: Submit
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Submit
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Submit
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Submit
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Submit
+- uid: MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.Submit({TCommand})
+  commentId: M:MyProject.Common.Host.IGameHost{`0,`1,`2,`3}.Submit(`0)
+  parent: MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  definition: MyProject.Common.Host.IGameHost`4.Submit(`0)
+  href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Submit__0_
+  name: Submit(TCommand)
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.Submit(TCommand)
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>.Submit(TCommand)
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).Submit(TCommand)
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).Submit(TCommand)
+  spec.csharp:
+  - uid: MyProject.Common.Host.IGameHost{`0,`1,`2,`3}.Submit(`0)
+    name: Submit
+    href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Submit__0_
+  - name: (
+  - name: TCommand
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.IGameHost{`0,`1,`2,`3}.Submit(`0)
+    name: Submit
+    href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Submit__0_
+  - name: (
+  - name: TCommand
+  - name: )
+- uid: '{TCommand}'
+  commentId: '!:TCommand'
+  definition: TCommand
+  name: TCommand
+  nameWithType: TCommand
+  fullName: TCommand
+- uid: MyProject.Common.Host.IGameHost`4.Submit(`0)
+  commentId: M:MyProject.Common.Host.IGameHost`4.Submit(`0)
+  href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Submit__0_
+  name: Submit(TCommand)
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.Submit(TCommand)
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>.Submit(TCommand)
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).Submit(TCommand)
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).Submit(TCommand)
+  spec.csharp:
+  - uid: MyProject.Common.Host.IGameHost`4.Submit(`0)
+    name: Submit
+    href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Submit__0_
+  - name: (
+  - name: TCommand
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.IGameHost`4.Submit(`0)
+    name: Submit
+    href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Submit__0_
+  - name: (
+  - name: TCommand
+  - name: )
+- uid: TCommand
+  name: TCommand
+  nameWithType: TCommand
+  fullName: TCommand
+- uid: MyProject.Common.Host.GameHostBase`4.StartSimulation*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.StartSimulation
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StartSimulation
+  name: StartSimulation
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation
+- uid: MyProject.Common.Host.GameHostBase`4.StopSimulation*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.StopSimulation
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StopSimulation
+  name: StopSimulation
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation
+- uid: MyProject.Common.Host.GameHostBase`4.Advance*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.Advance
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Advance_System_Single_
+  name: Advance
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Advance
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Advance
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Advance
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Advance
+- uid: MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.Advance(System.Single)
+  commentId: M:MyProject.Common.Host.IGameHost{`0,`1,`2,`3}.Advance(System.Single)
+  parent: MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  definition: MyProject.Common.Host.IGameHost`4.Advance(System.Single)
+  href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Advance_System_Single_
+  name: Advance(float)
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.Advance(float)
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>.Advance(float)
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).Advance(Single)
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).Advance(Single)
+  name.vb: Advance(Single)
+  spec.csharp:
+  - uid: MyProject.Common.Host.IGameHost{`0,`1,`2,`3}.Advance(System.Single)
+    name: Advance
+    href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Advance_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.IGameHost{`0,`1,`2,`3}.Advance(System.Single)
+    name: Advance
+    href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Advance_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: MyProject.Common.Host.IGameHost`4.Advance(System.Single)
+  commentId: M:MyProject.Common.Host.IGameHost`4.Advance(System.Single)
+  isExternal: true
+  href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Advance_System_Single_
+  name: Advance(float)
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.Advance(float)
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>.Advance(float)
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).Advance(Single)
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).Advance(Single)
+  name.vb: Advance(Single)
+  spec.csharp:
+  - uid: MyProject.Common.Host.IGameHost`4.Advance(System.Single)
+    name: Advance
+    href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Advance_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.IGameHost`4.Advance(System.Single)
+    name: Advance
+    href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_Advance_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase`4.BuildSnapshot*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.BuildSnapshot
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshot
+  name: BuildSnapshot
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshot
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshot
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshot
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshot
+- uid: MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.BuildSnapshot
+  commentId: M:MyProject.Common.Host.IGameHost{`0,`1,`2,`3}.BuildSnapshot
+  parent: MyProject.Common.Host.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  definition: MyProject.Common.Host.IGameHost`4.BuildSnapshot
+  href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_BuildSnapshot
+  name: BuildSnapshot()
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshot()
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshot()
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshot()
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshot()
+  spec.csharp:
+  - uid: MyProject.Common.Host.IGameHost{`0,`1,`2,`3}.BuildSnapshot
+    name: BuildSnapshot
+    href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_BuildSnapshot
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.IGameHost{`0,`1,`2,`3}.BuildSnapshot
+    name: BuildSnapshot
+    href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_BuildSnapshot
+  - name: (
+  - name: )
+- uid: '{TSnapshot}'
+  commentId: '!:TSnapshot'
+  definition: TSnapshot
+  name: TSnapshot
+  nameWithType: TSnapshot
+  fullName: TSnapshot
+- uid: MyProject.Common.Host.IGameHost`4.BuildSnapshot
+  commentId: M:MyProject.Common.Host.IGameHost`4.BuildSnapshot
+  href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_BuildSnapshot
+  name: BuildSnapshot()
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshot()
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshot()
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshot()
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshot()
+  spec.csharp:
+  - uid: MyProject.Common.Host.IGameHost`4.BuildSnapshot
+    name: BuildSnapshot
+    href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_BuildSnapshot
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.IGameHost`4.BuildSnapshot
+    name: BuildSnapshot
+    href: MyProject.Common.Host.IGameHost-4.html#MyProject_Common_Host_IGameHost_4_BuildSnapshot
+  - name: (
+  - name: )
+- uid: TSnapshot
+  name: TSnapshot
+  nameWithType: TSnapshot
+  fullName: TSnapshot
+- uid: MyProject.Common.Host.GameHostBase`4.HandleCommand*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.HandleCommand
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_HandleCommand__0_
+  name: HandleCommand
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand
+- uid: MyProject.Common.Host.GameCommandOutcome{{TResult},{TEvent}}
+  commentId: T:MyProject.Common.Host.GameCommandOutcome{`1,`2}
+  parent: MyProject.Common.Host
+  definition: MyProject.Common.Host.GameCommandOutcome`2
+  href: MyProject.Common.Host.GameCommandOutcome-2.html
+  name: GameCommandOutcome<TResult, TEvent>
+  nameWithType: GameCommandOutcome<TResult, TEvent>
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent)
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent)
+  name.vb: GameCommandOutcome(Of TResult, TEvent)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: <
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: MyProject.Common.Host.GameCommandOutcome`2
+  commentId: T:MyProject.Common.Host.GameCommandOutcome`2
+  href: MyProject.Common.Host.GameCommandOutcome-2.html
+  name: GameCommandOutcome<TResult, TEvent>
+  nameWithType: GameCommandOutcome<TResult, TEvent>
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent)
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent)
+  name.vb: GameCommandOutcome(Of TResult, TEvent)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: <
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase`4.OnTick*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.OnTick
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_OnTick_System_Single_
+  name: OnTick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick
+- uid: MyProject.Common.Host.GameHostBase`4.BuildSnapshotInternal*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.BuildSnapshotInternal
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshotInternal
+  name: BuildSnapshotInternal
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal
+- uid: MyProject.Common.Host.GameHostBase`4.CreateErrorEvent*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.CreateErrorEvent
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_CreateErrorEvent__0_System_Exception_
+  name: CreateErrorEvent
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.CreateErrorEvent
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.CreateErrorEvent
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).CreateErrorEvent
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).CreateErrorEvent
+- uid: '{TEvent}'
+  commentId: '!:TEvent'
+  definition: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: MyProject.Common.Host.GameHostBase`4.PublishResult*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.PublishResult
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_PublishResult__1_
+  name: PublishResult
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishResult
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishResult
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishResult
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishResult
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: MyProject.Common.Host.GameHostBase`4.PublishEvent*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.PublishEvent
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_PublishEvent__2_
+  name: PublishEvent
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishEvent
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishEvent
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishEvent
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishEvent
+- uid: MyProject.Common.Host.GameHostBase`4.FlushEvents*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.FlushEvents
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_FlushEvents
+  name: FlushEvents
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents
+- uid: MyProject.Common.Host.GameHostBase`4.ThrowIfDisposed*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.ThrowIfDisposed
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_ThrowIfDisposed
+  name: ThrowIfDisposed
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ThrowIfDisposed
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ThrowIfDisposed
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ThrowIfDisposed
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ThrowIfDisposed
+- uid: MyProject.Common.Host.GameHostBase`4.Dispose*
+  commentId: Overload:MyProject.Common.Host.GameHostBase`4.Dispose
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Dispose
+  name: Dispose
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

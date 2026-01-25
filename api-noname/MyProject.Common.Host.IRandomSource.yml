@@ -1,0 +1,138 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.Host.IRandomSource
+  commentId: T:MyProject.Common.Host.IRandomSource
+  id: IRandomSource
+  parent: MyProject.Common.Host
+  children:
+  - MyProject.Common.Host.IRandomSource.NextFloat
+  - MyProject.Common.Host.IRandomSource.NextInt(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IRandomSource
+  nameWithType: IRandomSource
+  fullName: MyProject.Common.Host.IRandomSource
+  type: Interface
+  namespace: MyProject.Common.Host
+  summary: 호스트에서 사용할 난수 공급 인터페이스입니다.
+  example: []
+  syntax:
+    content: public interface IRandomSource
+    content.vb: Public Interface IRandomSource
+- uid: MyProject.Common.Host.IRandomSource.NextInt(System.Int32,System.Int32)
+  commentId: M:MyProject.Common.Host.IRandomSource.NextInt(System.Int32,System.Int32)
+  id: NextInt(System.Int32,System.Int32)
+  parent: MyProject.Common.Host.IRandomSource
+  langs:
+  - csharp
+  - vb
+  name: NextInt(int, int)
+  nameWithType: IRandomSource.NextInt(int, int)
+  fullName: MyProject.Common.Host.IRandomSource.NextInt(int, int)
+  type: Method
+  namespace: MyProject.Common.Host
+  syntax:
+    content: int NextInt(int minInclusive, int maxExclusive)
+    parameters:
+    - id: minInclusive
+      type: System.Int32
+    - id: maxExclusive
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function NextInt(minInclusive As Integer, maxExclusive As Integer) As Integer
+  overload: MyProject.Common.Host.IRandomSource.NextInt*
+  nameWithType.vb: IRandomSource.NextInt(Integer, Integer)
+  fullName.vb: MyProject.Common.Host.IRandomSource.NextInt(Integer, Integer)
+  name.vb: NextInt(Integer, Integer)
+- uid: MyProject.Common.Host.IRandomSource.NextFloat
+  commentId: M:MyProject.Common.Host.IRandomSource.NextFloat
+  id: NextFloat
+  parent: MyProject.Common.Host.IRandomSource
+  langs:
+  - csharp
+  - vb
+  name: NextFloat()
+  nameWithType: IRandomSource.NextFloat()
+  fullName: MyProject.Common.Host.IRandomSource.NextFloat()
+  type: Method
+  namespace: MyProject.Common.Host
+  syntax:
+    content: float NextFloat()
+    return:
+      type: System.Single
+    content.vb: Function NextFloat() As Single
+  overload: MyProject.Common.Host.IRandomSource.NextFloat*
+references:
+- uid: MyProject.Common.Host
+  commentId: N:MyProject.Common.Host
+  href: MyProject.html
+  name: MyProject.Common.Host
+  nameWithType: MyProject.Common.Host
+  fullName: MyProject.Common.Host
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+- uid: MyProject.Common.Host.IRandomSource.NextInt*
+  commentId: Overload:MyProject.Common.Host.IRandomSource.NextInt
+  href: MyProject.Common.Host.IRandomSource.html#MyProject_Common_Host_IRandomSource_NextInt_System_Int32_System_Int32_
+  name: NextInt
+  nameWithType: IRandomSource.NextInt
+  fullName: MyProject.Common.Host.IRandomSource.NextInt
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.Host.IRandomSource.NextFloat*
+  commentId: Overload:MyProject.Common.Host.IRandomSource.NextFloat
+  href: MyProject.Common.Host.IRandomSource.html#MyProject_Common_Host_IRandomSource_NextFloat
+  name: NextFloat
+  nameWithType: IRandomSource.NextFloat
+  fullName: MyProject.Common.Host.IRandomSource.NextFloat
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

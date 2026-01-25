@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Data
+  commentId: N:MyProject.ExploreGame.Data
+  id: MyProject.ExploreGame.Data
+  children:
+  - MyProject.ExploreGame.Data.ExploreHostConfig
+  langs:
+  - csharp
+  - vb
+  name: MyProject.ExploreGame.Data
+  nameWithType: MyProject.ExploreGame.Data
+  fullName: MyProject.ExploreGame.Data
+  type: Namespace
+references:
+- uid: MyProject.ExploreGame.Data.ExploreHostConfig
+  commentId: T:MyProject.ExploreGame.Data.ExploreHostConfig
+  parent: MyProject.ExploreGame.Data
+  href: MyProject.ExploreGame.Data.ExploreHostConfig.html
+  name: ExploreHostConfig
+  nameWithType: ExploreHostConfig
+  fullName: MyProject.ExploreGame.Data.ExploreHostConfig
+- uid: MyProject.ExploreGame.Data
+  commentId: N:MyProject.ExploreGame.Data
+  href: MyProject.html
+  name: MyProject.ExploreGame.Data
+  nameWithType: MyProject.ExploreGame.Data
+  fullName: MyProject.ExploreGame.Data
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Data
+    name: Data
+    href: MyProject.ExploreGame.Data.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Data
+    name: Data
+    href: MyProject.ExploreGame.Data.html

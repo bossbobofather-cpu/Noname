@@ -211,7 +211,6 @@ references:
   nameWithType: ScreenSpaceHealthBarPool.ActiveRoot
   fullName: MyProject.Common.UI.ScreenSpaceHealthBarPool.ActiveRoot
 - uid: RectTransform
-  commentId: '!:RectTransform'
   isExternal: true
   name: RectTransform
   nameWithType: RectTransform

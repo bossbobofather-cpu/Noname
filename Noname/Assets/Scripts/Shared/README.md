@@ -1,7 +1,16 @@
-ï»¿# Shared
+# Shared
 
-ì—¬ëŸ¬ ê¸°ëŠ¥ì—ì„œ ê³µí†µìœ¼ë¡œ ì‚¬ìš©í•˜ëŠ” ì½”ë“œë¥¼ ëª¨ìë‹ˆë‹¤.
+¿©·¯ ±â´É¿¡¼­ °øÅëÀ¸·Î »ç¿ëÇÏ´Â ÀÎÇÁ¶ó¸¦ ¸ğÀ¾´Ï´Ù.
 
-êµ¬ì„±
-- Domain / Application / Presentationìœ¼ë¡œ ë¶„ë¦¬í•©ë‹ˆë‹¤.
-- ê¸°ëŠ¥ íŠ¹í™” ë¡œì§ì€ ì—¬ê¸°ì— ë‘ì§€ ì•ŠìŠµë‹ˆë‹¤.
+±¸¼º
+- Domain / Application / PresentationÀ¸·Î ºĞ¸®ÇÕ´Ï´Ù.
+- ±â´É Æ¯È­ ·ÎÁ÷Àº ¿©±â¿¡ µÎÁö ¾Ê½À´Ï´Ù.
+
+Æ÷ÇÔ ¿¹½Ã
+- GameHostBase, GameHostTypes, GameCommandOutcome
+- GameEventBus, GameEventHub
+- GameMode, ModuleBase, Bootstrapper
+- UIManager, UIRoot, °ø¿ë UI º£ÀÌ½º
+
+±İÁö
+- Æ¯Á¤ °ÔÀÓ ±ÔÄ¢/ÄÜÅÙÃ÷ ±¸Çö

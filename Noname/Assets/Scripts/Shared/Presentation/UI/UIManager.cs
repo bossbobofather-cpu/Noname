@@ -241,11 +241,12 @@ namespace MyProject.Common.UI
             _rootInstance = FindFirstObjectByType<UIRoot>();
             if (_rootInstance == null && _rootPrefab != null)
             {
-                _rootInstance = Instantiate(_rootPrefab, transform);
+                _rootInstance = Instantiate(_rootPrefab);
             }
 
             if (_rootInstance != null && _dontDestroyOnLoad)
             {
+                _rootInstance.transform.position = Vector3.zero;
                 DontDestroyOnLoad(_rootInstance.gameObject);
             }
         }

@@ -1,0 +1,694 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState
+  commentId: T:MyProject.ExploreGame.Domain.ExploreDungeonState
+  id: ExploreDungeonState
+  parent: MyProject.ExploreGame.Domain
+  children:
+  - MyProject.ExploreGame.Domain.ExploreDungeonState.#ctor(System.String,System.Int32,MyProject.ExploreGame.Domain.DungeonStageData[])
+  - MyProject.ExploreGame.Domain.ExploreDungeonState.AdvanceStage
+  - MyProject.ExploreGame.Domain.ExploreDungeonState.CurrentStage
+  - MyProject.ExploreGame.Domain.ExploreDungeonState.DungeonId
+  - MyProject.ExploreGame.Domain.ExploreDungeonState.EnterCombat
+  - MyProject.ExploreGame.Domain.ExploreDungeonState.ExitCombat(System.Boolean)
+  - MyProject.ExploreGame.Domain.ExploreDungeonState.GetCurrentStageData
+  - MyProject.ExploreGame.Domain.ExploreDungeonState.IsCompleted
+  - MyProject.ExploreGame.Domain.ExploreDungeonState.IsFailed
+  - MyProject.ExploreGame.Domain.ExploreDungeonState.Phase
+  - MyProject.ExploreGame.Domain.ExploreDungeonState.Stages
+  - MyProject.ExploreGame.Domain.ExploreDungeonState.StartExploration
+  - MyProject.ExploreGame.Domain.ExploreDungeonState.TotalStages
+  langs:
+  - csharp
+  - vb
+  name: ExploreDungeonState
+  nameWithType: ExploreDungeonState
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState
+  type: Class
+  namespace: MyProject.ExploreGame.Domain
+  summary: 던전 탐험 상태를 나타냅니다.
+  example: []
+  syntax:
+    content: public sealed class ExploreDungeonState
+    content.vb: Public NotInheritable Class ExploreDungeonState
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.DungeonId
+  commentId: P:MyProject.ExploreGame.Domain.ExploreDungeonState.DungeonId
+  id: DungeonId
+  parent: MyProject.ExploreGame.Domain.ExploreDungeonState
+  langs:
+  - csharp
+  - vb
+  name: DungeonId
+  nameWithType: ExploreDungeonState.DungeonId
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.DungeonId
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public string DungeonId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DungeonId As String
+  overload: MyProject.ExploreGame.Domain.ExploreDungeonState.DungeonId*
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.TotalStages
+  commentId: P:MyProject.ExploreGame.Domain.ExploreDungeonState.TotalStages
+  id: TotalStages
+  parent: MyProject.ExploreGame.Domain.ExploreDungeonState
+  langs:
+  - csharp
+  - vb
+  name: TotalStages
+  nameWithType: ExploreDungeonState.TotalStages
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.TotalStages
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public int TotalStages { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TotalStages As Integer
+  overload: MyProject.ExploreGame.Domain.ExploreDungeonState.TotalStages*
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.CurrentStage
+  commentId: P:MyProject.ExploreGame.Domain.ExploreDungeonState.CurrentStage
+  id: CurrentStage
+  parent: MyProject.ExploreGame.Domain.ExploreDungeonState
+  langs:
+  - csharp
+  - vb
+  name: CurrentStage
+  nameWithType: ExploreDungeonState.CurrentStage
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.CurrentStage
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public int CurrentStage { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CurrentStage As Integer
+  overload: MyProject.ExploreGame.Domain.ExploreDungeonState.CurrentStage*
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.Phase
+  commentId: P:MyProject.ExploreGame.Domain.ExploreDungeonState.Phase
+  id: Phase
+  parent: MyProject.ExploreGame.Domain.ExploreDungeonState
+  langs:
+  - csharp
+  - vb
+  name: Phase
+  nameWithType: ExploreDungeonState.Phase
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.Phase
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public DungeonPhase Phase { get; }
+    parameters: []
+    return:
+      type: MyProject.ExploreGame.Domain.DungeonPhase
+    content.vb: Public Property Phase As DungeonPhase
+  overload: MyProject.ExploreGame.Domain.ExploreDungeonState.Phase*
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.Stages
+  commentId: P:MyProject.ExploreGame.Domain.ExploreDungeonState.Stages
+  id: Stages
+  parent: MyProject.ExploreGame.Domain.ExploreDungeonState
+  langs:
+  - csharp
+  - vb
+  name: Stages
+  nameWithType: ExploreDungeonState.Stages
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.Stages
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public DungeonStageData[] Stages { get; }
+    parameters: []
+    return:
+      type: MyProject.ExploreGame.Domain.DungeonStageData[]
+    content.vb: Public ReadOnly Property Stages As DungeonStageData()
+  overload: MyProject.ExploreGame.Domain.ExploreDungeonState.Stages*
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.IsCompleted
+  commentId: P:MyProject.ExploreGame.Domain.ExploreDungeonState.IsCompleted
+  id: IsCompleted
+  parent: MyProject.ExploreGame.Domain.ExploreDungeonState
+  langs:
+  - csharp
+  - vb
+  name: IsCompleted
+  nameWithType: ExploreDungeonState.IsCompleted
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.IsCompleted
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public bool IsCompleted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsCompleted As Boolean
+  overload: MyProject.ExploreGame.Domain.ExploreDungeonState.IsCompleted*
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.IsFailed
+  commentId: P:MyProject.ExploreGame.Domain.ExploreDungeonState.IsFailed
+  id: IsFailed
+  parent: MyProject.ExploreGame.Domain.ExploreDungeonState
+  langs:
+  - csharp
+  - vb
+  name: IsFailed
+  nameWithType: ExploreDungeonState.IsFailed
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.IsFailed
+  type: Property
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public bool IsFailed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsFailed As Boolean
+  overload: MyProject.ExploreGame.Domain.ExploreDungeonState.IsFailed*
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.#ctor(System.String,System.Int32,MyProject.ExploreGame.Domain.DungeonStageData[])
+  commentId: M:MyProject.ExploreGame.Domain.ExploreDungeonState.#ctor(System.String,System.Int32,MyProject.ExploreGame.Domain.DungeonStageData[])
+  id: '#ctor(System.String,System.Int32,MyProject.ExploreGame.Domain.DungeonStageData[])'
+  parent: MyProject.ExploreGame.Domain.ExploreDungeonState
+  langs:
+  - csharp
+  - vb
+  name: ExploreDungeonState(string, int, DungeonStageData[])
+  nameWithType: ExploreDungeonState.ExploreDungeonState(string, int, DungeonStageData[])
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.ExploreDungeonState(string, int, MyProject.ExploreGame.Domain.DungeonStageData[])
+  type: Constructor
+  namespace: MyProject.ExploreGame.Domain
+  syntax:
+    content: public ExploreDungeonState(string dungeonId, int totalStages, DungeonStageData[] stages)
+    parameters:
+    - id: dungeonId
+      type: System.String
+    - id: totalStages
+      type: System.Int32
+    - id: stages
+      type: MyProject.ExploreGame.Domain.DungeonStageData[]
+    content.vb: Public Sub New(dungeonId As String, totalStages As Integer, stages As DungeonStageData())
+  overload: MyProject.ExploreGame.Domain.ExploreDungeonState.#ctor*
+  nameWithType.vb: ExploreDungeonState.New(String, Integer, DungeonStageData())
+  fullName.vb: MyProject.ExploreGame.Domain.ExploreDungeonState.New(String, Integer, MyProject.ExploreGame.Domain.DungeonStageData())
+  name.vb: New(String, Integer, DungeonStageData())
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.StartExploration
+  commentId: M:MyProject.ExploreGame.Domain.ExploreDungeonState.StartExploration
+  id: StartExploration
+  parent: MyProject.ExploreGame.Domain.ExploreDungeonState
+  langs:
+  - csharp
+  - vb
+  name: StartExploration()
+  nameWithType: ExploreDungeonState.StartExploration()
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.StartExploration()
+  type: Method
+  namespace: MyProject.ExploreGame.Domain
+  summary: 던전 탐험을 시작합니다.
+  example: []
+  syntax:
+    content: public void StartExploration()
+    content.vb: Public Sub StartExploration()
+  overload: MyProject.ExploreGame.Domain.ExploreDungeonState.StartExploration*
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.AdvanceStage
+  commentId: M:MyProject.ExploreGame.Domain.ExploreDungeonState.AdvanceStage
+  id: AdvanceStage
+  parent: MyProject.ExploreGame.Domain.ExploreDungeonState
+  langs:
+  - csharp
+  - vb
+  name: AdvanceStage()
+  nameWithType: ExploreDungeonState.AdvanceStage()
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.AdvanceStage()
+  type: Method
+  namespace: MyProject.ExploreGame.Domain
+  summary: 다음 스테이지로 이동합니다.
+  example: []
+  syntax:
+    content: public bool AdvanceStage()
+    return:
+      type: System.Boolean
+    content.vb: Public Function AdvanceStage() As Boolean
+  overload: MyProject.ExploreGame.Domain.ExploreDungeonState.AdvanceStage*
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.EnterCombat
+  commentId: M:MyProject.ExploreGame.Domain.ExploreDungeonState.EnterCombat
+  id: EnterCombat
+  parent: MyProject.ExploreGame.Domain.ExploreDungeonState
+  langs:
+  - csharp
+  - vb
+  name: EnterCombat()
+  nameWithType: ExploreDungeonState.EnterCombat()
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.EnterCombat()
+  type: Method
+  namespace: MyProject.ExploreGame.Domain
+  summary: 전투 단계로 전환합니다.
+  example: []
+  syntax:
+    content: public void EnterCombat()
+    content.vb: Public Sub EnterCombat()
+  overload: MyProject.ExploreGame.Domain.ExploreDungeonState.EnterCombat*
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.ExitCombat(System.Boolean)
+  commentId: M:MyProject.ExploreGame.Domain.ExploreDungeonState.ExitCombat(System.Boolean)
+  id: ExitCombat(System.Boolean)
+  parent: MyProject.ExploreGame.Domain.ExploreDungeonState
+  langs:
+  - csharp
+  - vb
+  name: ExitCombat(bool)
+  nameWithType: ExploreDungeonState.ExitCombat(bool)
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.ExitCombat(bool)
+  type: Method
+  namespace: MyProject.ExploreGame.Domain
+  summary: 전투 종료 후 탐험 단계로 복귀합니다.
+  example: []
+  syntax:
+    content: public void ExitCombat(bool victory)
+    parameters:
+    - id: victory
+      type: System.Boolean
+    content.vb: Public Sub ExitCombat(victory As Boolean)
+  overload: MyProject.ExploreGame.Domain.ExploreDungeonState.ExitCombat*
+  nameWithType.vb: ExploreDungeonState.ExitCombat(Boolean)
+  fullName.vb: MyProject.ExploreGame.Domain.ExploreDungeonState.ExitCombat(Boolean)
+  name.vb: ExitCombat(Boolean)
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.GetCurrentStageData
+  commentId: M:MyProject.ExploreGame.Domain.ExploreDungeonState.GetCurrentStageData
+  id: GetCurrentStageData
+  parent: MyProject.ExploreGame.Domain.ExploreDungeonState
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentStageData()
+  nameWithType: ExploreDungeonState.GetCurrentStageData()
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.GetCurrentStageData()
+  type: Method
+  namespace: MyProject.ExploreGame.Domain
+  summary: 현재 스테이지 데이터를 반환합니다.
+  example: []
+  syntax:
+    content: public DungeonStageData GetCurrentStageData()
+    return:
+      type: MyProject.ExploreGame.Domain.DungeonStageData
+    content.vb: Public Function GetCurrentStageData() As DungeonStageData
+  overload: MyProject.ExploreGame.Domain.ExploreDungeonState.GetCurrentStageData*
+references:
+- uid: MyProject.ExploreGame.Domain
+  commentId: N:MyProject.ExploreGame.Domain
+  href: MyProject.html
+  name: MyProject.ExploreGame.Domain
+  nameWithType: MyProject.ExploreGame.Domain
+  fullName: MyProject.ExploreGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.DungeonId*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreDungeonState.DungeonId
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html#MyProject_ExploreGame_Domain_ExploreDungeonState_DungeonId
+  name: DungeonId
+  nameWithType: ExploreDungeonState.DungeonId
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.DungeonId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.TotalStages*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreDungeonState.TotalStages
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html#MyProject_ExploreGame_Domain_ExploreDungeonState_TotalStages
+  name: TotalStages
+  nameWithType: ExploreDungeonState.TotalStages
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.TotalStages
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.CurrentStage*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreDungeonState.CurrentStage
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html#MyProject_ExploreGame_Domain_ExploreDungeonState_CurrentStage
+  name: CurrentStage
+  nameWithType: ExploreDungeonState.CurrentStage
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.CurrentStage
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.Phase*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreDungeonState.Phase
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html#MyProject_ExploreGame_Domain_ExploreDungeonState_Phase
+  name: Phase
+  nameWithType: ExploreDungeonState.Phase
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.Phase
+- uid: MyProject.ExploreGame.Domain.DungeonPhase
+  commentId: T:MyProject.ExploreGame.Domain.DungeonPhase
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.DungeonPhase.html
+  name: DungeonPhase
+  nameWithType: DungeonPhase
+  fullName: MyProject.ExploreGame.Domain.DungeonPhase
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.Stages*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreDungeonState.Stages
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html#MyProject_ExploreGame_Domain_ExploreDungeonState_Stages
+  name: Stages
+  nameWithType: ExploreDungeonState.Stages
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.Stages
+- uid: MyProject.ExploreGame.Domain.DungeonStageData[]
+  isExternal: true
+  href: MyProject.ExploreGame.Domain.DungeonStageData.html
+  name: DungeonStageData[]
+  nameWithType: DungeonStageData[]
+  fullName: MyProject.ExploreGame.Domain.DungeonStageData[]
+  nameWithType.vb: DungeonStageData()
+  fullName.vb: MyProject.ExploreGame.Domain.DungeonStageData()
+  name.vb: DungeonStageData()
+  spec.csharp:
+  - uid: MyProject.ExploreGame.Domain.DungeonStageData
+    name: DungeonStageData
+    href: MyProject.ExploreGame.Domain.DungeonStageData.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: MyProject.ExploreGame.Domain.DungeonStageData
+    name: DungeonStageData
+    href: MyProject.ExploreGame.Domain.DungeonStageData.html
+  - name: (
+  - name: )
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.IsCompleted*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreDungeonState.IsCompleted
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html#MyProject_ExploreGame_Domain_ExploreDungeonState_IsCompleted
+  name: IsCompleted
+  nameWithType: ExploreDungeonState.IsCompleted
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.IsCompleted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.IsFailed*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreDungeonState.IsFailed
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html#MyProject_ExploreGame_Domain_ExploreDungeonState_IsFailed
+  name: IsFailed
+  nameWithType: ExploreDungeonState.IsFailed
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.IsFailed
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.#ctor*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreDungeonState.#ctor
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html#MyProject_ExploreGame_Domain_ExploreDungeonState__ctor_System_String_System_Int32_MyProject_ExploreGame_Domain_DungeonStageData___
+  name: ExploreDungeonState
+  nameWithType: ExploreDungeonState.ExploreDungeonState
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.ExploreDungeonState
+  nameWithType.vb: ExploreDungeonState.New
+  fullName.vb: MyProject.ExploreGame.Domain.ExploreDungeonState.New
+  name.vb: New
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.StartExploration*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreDungeonState.StartExploration
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html#MyProject_ExploreGame_Domain_ExploreDungeonState_StartExploration
+  name: StartExploration
+  nameWithType: ExploreDungeonState.StartExploration
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.StartExploration
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.AdvanceStage*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreDungeonState.AdvanceStage
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html#MyProject_ExploreGame_Domain_ExploreDungeonState_AdvanceStage
+  name: AdvanceStage
+  nameWithType: ExploreDungeonState.AdvanceStage
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.AdvanceStage
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.EnterCombat*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreDungeonState.EnterCombat
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html#MyProject_ExploreGame_Domain_ExploreDungeonState_EnterCombat
+  name: EnterCombat
+  nameWithType: ExploreDungeonState.EnterCombat
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.EnterCombat
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.ExitCombat*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreDungeonState.ExitCombat
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html#MyProject_ExploreGame_Domain_ExploreDungeonState_ExitCombat_System_Boolean_
+  name: ExitCombat
+  nameWithType: ExploreDungeonState.ExitCombat
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.ExitCombat
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState.GetCurrentStageData*
+  commentId: Overload:MyProject.ExploreGame.Domain.ExploreDungeonState.GetCurrentStageData
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html#MyProject_ExploreGame_Domain_ExploreDungeonState_GetCurrentStageData
+  name: GetCurrentStageData
+  nameWithType: ExploreDungeonState.GetCurrentStageData
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState.GetCurrentStageData
+- uid: MyProject.ExploreGame.Domain.DungeonStageData
+  commentId: T:MyProject.ExploreGame.Domain.DungeonStageData
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.DungeonStageData.html
+  name: DungeonStageData
+  nameWithType: DungeonStageData
+  fullName: MyProject.ExploreGame.Domain.DungeonStageData

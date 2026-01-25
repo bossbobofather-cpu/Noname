@@ -1,0 +1,256 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.GameEvent.IEventBus`1
+  commentId: T:MyProject.Common.GameEvent.IEventBus`1
+  id: IEventBus`1
+  parent: MyProject.Common.GameEvent
+  children:
+  - MyProject.Common.GameEvent.IEventBus`1.Clear
+  - MyProject.Common.GameEvent.IEventBus`1.Publish``1(``0)
+  - MyProject.Common.GameEvent.IEventBus`1.Subscribe``1(System.Action{``0})
+  - MyProject.Common.GameEvent.IEventBus`1.Unsubscribe``1(System.Action{``0})
+  langs:
+  - csharp
+  - vb
+  name: IEventBus<TEventBase>
+  nameWithType: IEventBus<TEventBase>
+  fullName: MyProject.Common.GameEvent.IEventBus<TEventBase>
+  type: Interface
+  namespace: MyProject.Common.GameEvent
+  summary: 이벤트 버스의 공용 인터페이스입니다.
+  example: []
+  syntax:
+    content: 'public interface IEventBus<TEventBase> where TEventBase : class'
+    typeParameters:
+    - id: TEventBase
+    content.vb: Public Interface IEventBus(Of TEventBase As Class)
+  nameWithType.vb: IEventBus(Of TEventBase)
+  fullName.vb: MyProject.Common.GameEvent.IEventBus(Of TEventBase)
+  name.vb: IEventBus(Of TEventBase)
+- uid: MyProject.Common.GameEvent.IEventBus`1.Subscribe``1(System.Action{``0})
+  commentId: M:MyProject.Common.GameEvent.IEventBus`1.Subscribe``1(System.Action{``0})
+  id: Subscribe``1(System.Action{``0})
+  parent: MyProject.Common.GameEvent.IEventBus`1
+  langs:
+  - csharp
+  - vb
+  name: Subscribe<TEvent>(Action<TEvent>)
+  nameWithType: IEventBus<TEventBase>.Subscribe<TEvent>(Action<TEvent>)
+  fullName: MyProject.Common.GameEvent.IEventBus<TEventBase>.Subscribe<TEvent>(System.Action<TEvent>)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: 'void Subscribe<TEvent>(Action<TEvent> handler) where TEvent : TEventBase'
+    parameters:
+    - id: handler
+      type: System.Action{{TEvent}}
+    typeParameters:
+    - id: TEvent
+    content.vb: Sub Subscribe(Of TEvent As TEventBase)(handler As Action(Of TEvent))
+  overload: MyProject.Common.GameEvent.IEventBus`1.Subscribe*
+  nameWithType.vb: IEventBus(Of TEventBase).Subscribe(Of TEvent)(Action(Of TEvent))
+  fullName.vb: MyProject.Common.GameEvent.IEventBus(Of TEventBase).Subscribe(Of TEvent)(System.Action(Of TEvent))
+  name.vb: Subscribe(Of TEvent)(Action(Of TEvent))
+- uid: MyProject.Common.GameEvent.IEventBus`1.Unsubscribe``1(System.Action{``0})
+  commentId: M:MyProject.Common.GameEvent.IEventBus`1.Unsubscribe``1(System.Action{``0})
+  id: Unsubscribe``1(System.Action{``0})
+  parent: MyProject.Common.GameEvent.IEventBus`1
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe<TEvent>(Action<TEvent>)
+  nameWithType: IEventBus<TEventBase>.Unsubscribe<TEvent>(Action<TEvent>)
+  fullName: MyProject.Common.GameEvent.IEventBus<TEventBase>.Unsubscribe<TEvent>(System.Action<TEvent>)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: 'void Unsubscribe<TEvent>(Action<TEvent> handler) where TEvent : TEventBase'
+    parameters:
+    - id: handler
+      type: System.Action{{TEvent}}
+    typeParameters:
+    - id: TEvent
+    content.vb: Sub Unsubscribe(Of TEvent As TEventBase)(handler As Action(Of TEvent))
+  overload: MyProject.Common.GameEvent.IEventBus`1.Unsubscribe*
+  nameWithType.vb: IEventBus(Of TEventBase).Unsubscribe(Of TEvent)(Action(Of TEvent))
+  fullName.vb: MyProject.Common.GameEvent.IEventBus(Of TEventBase).Unsubscribe(Of TEvent)(System.Action(Of TEvent))
+  name.vb: Unsubscribe(Of TEvent)(Action(Of TEvent))
+- uid: MyProject.Common.GameEvent.IEventBus`1.Publish``1(``0)
+  commentId: M:MyProject.Common.GameEvent.IEventBus`1.Publish``1(``0)
+  id: Publish``1(``0)
+  parent: MyProject.Common.GameEvent.IEventBus`1
+  langs:
+  - csharp
+  - vb
+  name: Publish<TEvent>(TEvent)
+  nameWithType: IEventBus<TEventBase>.Publish<TEvent>(TEvent)
+  fullName: MyProject.Common.GameEvent.IEventBus<TEventBase>.Publish<TEvent>(TEvent)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: 'void Publish<TEvent>(TEvent context) where TEvent : TEventBase'
+    parameters:
+    - id: context
+      type: '{TEvent}'
+    typeParameters:
+    - id: TEvent
+    content.vb: Sub Publish(Of TEvent As TEventBase)(context As TEvent)
+  overload: MyProject.Common.GameEvent.IEventBus`1.Publish*
+  nameWithType.vb: IEventBus(Of TEventBase).Publish(Of TEvent)(TEvent)
+  fullName.vb: MyProject.Common.GameEvent.IEventBus(Of TEventBase).Publish(Of TEvent)(TEvent)
+  name.vb: Publish(Of TEvent)(TEvent)
+- uid: MyProject.Common.GameEvent.IEventBus`1.Clear
+  commentId: M:MyProject.Common.GameEvent.IEventBus`1.Clear
+  id: Clear
+  parent: MyProject.Common.GameEvent.IEventBus`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: IEventBus<TEventBase>.Clear()
+  fullName: MyProject.Common.GameEvent.IEventBus<TEventBase>.Clear()
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: void Clear()
+    content.vb: Sub Clear()
+  overload: MyProject.Common.GameEvent.IEventBus`1.Clear*
+  nameWithType.vb: IEventBus(Of TEventBase).Clear()
+  fullName.vb: MyProject.Common.GameEvent.IEventBus(Of TEventBase).Clear()
+references:
+- uid: MyProject.Common.GameEvent
+  commentId: N:MyProject.Common.GameEvent
+  href: MyProject.html
+  name: MyProject.Common.GameEvent
+  nameWithType: MyProject.Common.GameEvent
+  fullName: MyProject.Common.GameEvent
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameEvent
+    name: GameEvent
+    href: MyProject.Common.GameEvent.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameEvent
+    name: GameEvent
+    href: MyProject.Common.GameEvent.html
+- uid: MyProject.Common.GameEvent.IEventBus`1.Subscribe*
+  commentId: Overload:MyProject.Common.GameEvent.IEventBus`1.Subscribe
+  href: MyProject.Common.GameEvent.IEventBus-1.html#MyProject_Common_GameEvent_IEventBus_1_Subscribe__1_System_Action___0__
+  name: Subscribe
+  nameWithType: IEventBus<TEventBase>.Subscribe
+  fullName: MyProject.Common.GameEvent.IEventBus<TEventBase>.Subscribe
+  nameWithType.vb: IEventBus(Of TEventBase).Subscribe
+  fullName.vb: MyProject.Common.GameEvent.IEventBus(Of TEventBase).Subscribe
+- uid: System.Action{{TEvent}}
+  commentId: T:System.Action{`2}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<TEvent>
+  nameWithType: Action<TEvent>
+  fullName: System.Action<TEvent>
+  nameWithType.vb: Action(Of TEvent)
+  fullName.vb: System.Action(Of TEvent)
+  name.vb: Action(Of TEvent)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.GameEvent.IEventBus`1.Unsubscribe*
+  commentId: Overload:MyProject.Common.GameEvent.IEventBus`1.Unsubscribe
+  href: MyProject.Common.GameEvent.IEventBus-1.html#MyProject_Common_GameEvent_IEventBus_1_Unsubscribe__1_System_Action___0__
+  name: Unsubscribe
+  nameWithType: IEventBus<TEventBase>.Unsubscribe
+  fullName: MyProject.Common.GameEvent.IEventBus<TEventBase>.Unsubscribe
+  nameWithType.vb: IEventBus(Of TEventBase).Unsubscribe
+  fullName.vb: MyProject.Common.GameEvent.IEventBus(Of TEventBase).Unsubscribe
+- uid: MyProject.Common.GameEvent.IEventBus`1.Publish*
+  commentId: Overload:MyProject.Common.GameEvent.IEventBus`1.Publish
+  href: MyProject.Common.GameEvent.IEventBus-1.html#MyProject_Common_GameEvent_IEventBus_1_Publish__1___0_
+  name: Publish
+  nameWithType: IEventBus<TEventBase>.Publish
+  fullName: MyProject.Common.GameEvent.IEventBus<TEventBase>.Publish
+  nameWithType.vb: IEventBus(Of TEventBase).Publish
+  fullName.vb: MyProject.Common.GameEvent.IEventBus(Of TEventBase).Publish
+- uid: '{TEvent}'
+  commentId: '!:TEvent'
+  definition: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: MyProject.Common.GameEvent.IEventBus`1.Clear*
+  commentId: Overload:MyProject.Common.GameEvent.IEventBus`1.Clear
+  href: MyProject.Common.GameEvent.IEventBus-1.html#MyProject_Common_GameEvent_IEventBus_1_Clear
+  name: Clear
+  nameWithType: IEventBus<TEventBase>.Clear
+  fullName: MyProject.Common.GameEvent.IEventBus<TEventBase>.Clear
+  nameWithType.vb: IEventBus(Of TEventBase).Clear
+  fullName.vb: MyProject.Common.GameEvent.IEventBus(Of TEventBase).Clear

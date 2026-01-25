@@ -1,0 +1,1484 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Application.ExploreHost
+  commentId: T:MyProject.ExploreGame.Application.ExploreHost
+  id: ExploreHost
+  parent: MyProject.ExploreGame.Application
+  children:
+  - MyProject.ExploreGame.Application.ExploreHost.#ctor(MyProject.ExploreGame.Data.ExploreHostConfig)
+  - MyProject.ExploreGame.Application.ExploreHost.BuildSnapshotInternal
+  - MyProject.ExploreGame.Application.ExploreHost.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand)
+  - MyProject.ExploreGame.Application.ExploreHost.OnTick(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: ExploreHost
+  nameWithType: ExploreHost
+  fullName: MyProject.ExploreGame.Application.ExploreHost
+  type: Class
+  namespace: MyProject.ExploreGame.Application
+  summary: >-
+    탐험 게임의 Host입니다.
+
+    별도 스레드에서 시뮬레이션을 실행하며, CQRS 패턴을 따릅니다.
+  example: []
+  syntax:
+    content: 'public sealed class ExploreHost : GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>, IGameHost<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>, IDisposable'
+    content.vb: Public NotInheritable Class ExploreHost Inherits GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot) Implements IGameHost(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot), IDisposable
+  inheritance:
+  - System.Object
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  implements:
+  - MyProject.Common.Host.IGameHost{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  - System.IDisposable
+  inheritedMembers:
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Tick
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.IsRunning
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.LoopException
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.FixedStep
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.MaxStepsPerTick
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.SleepMilliseconds
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.StopTimeoutMilliseconds
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.SnapshotInterval
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.ResultProduced
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.EventRaised
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Submit(MyProject.ExploreGame.Application.ExploreCommand)
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.StartSimulation
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.StopSimulation
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Advance(System.Single)
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.BuildSnapshot
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.FlushEvents
+  - MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Dispose
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.ExploreGame.Application.ExploreHost.#ctor(MyProject.ExploreGame.Data.ExploreHostConfig)
+  commentId: M:MyProject.ExploreGame.Application.ExploreHost.#ctor(MyProject.ExploreGame.Data.ExploreHostConfig)
+  id: '#ctor(MyProject.ExploreGame.Data.ExploreHostConfig)'
+  parent: MyProject.ExploreGame.Application.ExploreHost
+  langs:
+  - csharp
+  - vb
+  name: ExploreHost(ExploreHostConfig)
+  nameWithType: ExploreHost.ExploreHost(ExploreHostConfig)
+  fullName: MyProject.ExploreGame.Application.ExploreHost.ExploreHost(MyProject.ExploreGame.Data.ExploreHostConfig)
+  type: Constructor
+  namespace: MyProject.ExploreGame.Application
+  syntax:
+    content: public ExploreHost(ExploreHostConfig config)
+    parameters:
+    - id: config
+      type: MyProject.ExploreGame.Data.ExploreHostConfig
+    content.vb: Public Sub New(config As ExploreHostConfig)
+  overload: MyProject.ExploreGame.Application.ExploreHost.#ctor*
+  nameWithType.vb: ExploreHost.New(ExploreHostConfig)
+  fullName.vb: MyProject.ExploreGame.Application.ExploreHost.New(MyProject.ExploreGame.Data.ExploreHostConfig)
+  name.vb: New(ExploreHostConfig)
+- uid: MyProject.ExploreGame.Application.ExploreHost.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand)
+  commentId: M:MyProject.ExploreGame.Application.ExploreHost.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand)
+  id: HandleCommand(MyProject.ExploreGame.Application.ExploreCommand)
+  parent: MyProject.ExploreGame.Application.ExploreHost
+  langs:
+  - csharp
+  - vb
+  name: HandleCommand(ExploreCommand)
+  nameWithType: ExploreHost.HandleCommand(ExploreCommand)
+  fullName: MyProject.ExploreGame.Application.ExploreHost.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand)
+  type: Method
+  namespace: MyProject.ExploreGame.Application
+  summary: 커맨드를 처리하고 결과를 반환합니다.
+  example: []
+  syntax:
+    content: protected override GameCommandOutcome<ExploreCommandResult, ExploreHostEvent> HandleCommand(ExploreCommand command)
+    parameters:
+    - id: command
+      type: MyProject.ExploreGame.Application.ExploreCommand
+    return:
+      type: MyProject.Common.Host.GameCommandOutcome{MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent}
+    content.vb: Protected Overrides Function HandleCommand(command As ExploreCommand) As GameCommandOutcome(Of ExploreCommandResult, ExploreHostEvent)
+  overridden: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand)
+  overload: MyProject.ExploreGame.Application.ExploreHost.HandleCommand*
+- uid: MyProject.ExploreGame.Application.ExploreHost.OnTick(System.Single)
+  commentId: M:MyProject.ExploreGame.Application.ExploreHost.OnTick(System.Single)
+  id: OnTick(System.Single)
+  parent: MyProject.ExploreGame.Application.ExploreHost
+  langs:
+  - csharp
+  - vb
+  name: OnTick(float)
+  nameWithType: ExploreHost.OnTick(float)
+  fullName: MyProject.ExploreGame.Application.ExploreHost.OnTick(float)
+  type: Method
+  namespace: MyProject.ExploreGame.Application
+  summary: 매 틱마다 호출되어 게임 상태를 업데이트합니다.
+  example: []
+  syntax:
+    content: protected override void OnTick(float deltaSeconds)
+    parameters:
+    - id: deltaSeconds
+      type: System.Single
+    content.vb: Protected Overrides Sub OnTick(deltaSeconds As Single)
+  overridden: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.OnTick(System.Single)
+  overload: MyProject.ExploreGame.Application.ExploreHost.OnTick*
+  nameWithType.vb: ExploreHost.OnTick(Single)
+  fullName.vb: MyProject.ExploreGame.Application.ExploreHost.OnTick(Single)
+  name.vb: OnTick(Single)
+- uid: MyProject.ExploreGame.Application.ExploreHost.BuildSnapshotInternal
+  commentId: M:MyProject.ExploreGame.Application.ExploreHost.BuildSnapshotInternal
+  id: BuildSnapshotInternal
+  parent: MyProject.ExploreGame.Application.ExploreHost
+  langs:
+  - csharp
+  - vb
+  name: BuildSnapshotInternal()
+  nameWithType: ExploreHost.BuildSnapshotInternal()
+  fullName: MyProject.ExploreGame.Application.ExploreHost.BuildSnapshotInternal()
+  type: Method
+  namespace: MyProject.ExploreGame.Application
+  summary: 현재 게임 상태의 스냅샷을 생성합니다.
+  example: []
+  syntax:
+    content: protected override ExploreStateSnapshot BuildSnapshotInternal()
+    return:
+      type: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+    content.vb: Protected Overrides Function BuildSnapshotInternal() As ExploreStateSnapshot
+  overridden: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.BuildSnapshotInternal
+  overload: MyProject.ExploreGame.Application.ExploreHost.BuildSnapshotInternal*
+references:
+- uid: MyProject.ExploreGame.Application
+  commentId: N:MyProject.ExploreGame.Application
+  href: MyProject.html
+  name: MyProject.ExploreGame.Application
+  nameWithType: MyProject.ExploreGame.Application
+  fullName: MyProject.ExploreGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Application
+    name: Application
+    href: MyProject.ExploreGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Application
+    name: Application
+    href: MyProject.ExploreGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  commentId: T:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  parent: MyProject.Common.Host
+  definition: MyProject.Common.Host.GameHostBase`4
+  href: MyProject.Common.Host.GameHostBase-4.html
+  name: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot)
+  name.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase`4
+    name: GameHostBase
+    href: MyProject.Common.Host.GameHostBase-4.html
+  - name: <
+  - uid: MyProject.ExploreGame.Application.ExploreCommand
+    name: ExploreCommand
+    href: MyProject.ExploreGame.Application.ExploreCommand.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreCommandResult
+    name: ExploreCommandResult
+    href: MyProject.ExploreGame.Application.ExploreCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
+    name: ExploreHostEvent
+    href: MyProject.ExploreGame.Application.ExploreHostEvent.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+    name: ExploreStateSnapshot
+    href: MyProject.ExploreGame.Domain.ExploreStateSnapshot.html
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase`4
+    name: GameHostBase
+    href: MyProject.Common.Host.GameHostBase-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreCommand
+    name: ExploreCommand
+    href: MyProject.ExploreGame.Application.ExploreCommand.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreCommandResult
+    name: ExploreCommandResult
+    href: MyProject.ExploreGame.Application.ExploreCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
+    name: ExploreHostEvent
+    href: MyProject.ExploreGame.Application.ExploreHostEvent.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+    name: ExploreStateSnapshot
+    href: MyProject.ExploreGame.Domain.ExploreStateSnapshot.html
+  - name: )
+- uid: MyProject.Common.Host.IGameHost{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  commentId: T:MyProject.Common.Host.IGameHost{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  parent: MyProject.Common.Host
+  definition: MyProject.Common.Host.IGameHost`4
+  href: MyProject.Common.Host.IGameHost-4.html
+  name: IGameHost<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>
+  nameWithType: IGameHost<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>
+  fullName: MyProject.Common.Host.IGameHost<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>
+  nameWithType.vb: IGameHost(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot)
+  fullName.vb: MyProject.Common.Host.IGameHost(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot)
+  name.vb: IGameHost(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot)
+  spec.csharp:
+  - uid: MyProject.Common.Host.IGameHost`4
+    name: IGameHost
+    href: MyProject.Common.Host.IGameHost-4.html
+  - name: <
+  - uid: MyProject.ExploreGame.Application.ExploreCommand
+    name: ExploreCommand
+    href: MyProject.ExploreGame.Application.ExploreCommand.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreCommandResult
+    name: ExploreCommandResult
+    href: MyProject.ExploreGame.Application.ExploreCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
+    name: ExploreHostEvent
+    href: MyProject.ExploreGame.Application.ExploreHostEvent.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+    name: ExploreStateSnapshot
+    href: MyProject.ExploreGame.Domain.ExploreStateSnapshot.html
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.IGameHost`4
+    name: IGameHost
+    href: MyProject.Common.Host.IGameHost-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreCommand
+    name: ExploreCommand
+    href: MyProject.ExploreGame.Application.ExploreCommand.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreCommandResult
+    name: ExploreCommandResult
+    href: MyProject.ExploreGame.Application.ExploreCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
+    name: ExploreHostEvent
+    href: MyProject.ExploreGame.Application.ExploreHostEvent.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+    name: ExploreStateSnapshot
+    href: MyProject.ExploreGame.Domain.ExploreStateSnapshot.html
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Tick
+  commentId: P:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Tick
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.Tick
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Tick
+  name: Tick
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.Tick
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.Tick
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).Tick
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).Tick
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.IsRunning
+  commentId: P:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.IsRunning
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.IsRunning
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_IsRunning
+  name: IsRunning
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.IsRunning
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.IsRunning
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).IsRunning
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).IsRunning
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.LoopException
+  commentId: P:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.LoopException
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.LoopException
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_LoopException
+  name: LoopException
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.LoopException
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.LoopException
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).LoopException
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).LoopException
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.FixedStep
+  commentId: P:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.FixedStep
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.FixedStep
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_FixedStep
+  name: FixedStep
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.FixedStep
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.FixedStep
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).FixedStep
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).FixedStep
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.MaxStepsPerTick
+  commentId: P:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.MaxStepsPerTick
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.MaxStepsPerTick
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_MaxStepsPerTick
+  name: MaxStepsPerTick
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.MaxStepsPerTick
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.MaxStepsPerTick
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).MaxStepsPerTick
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).MaxStepsPerTick
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.SleepMilliseconds
+  commentId: P:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.SleepMilliseconds
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.SleepMilliseconds
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_SleepMilliseconds
+  name: SleepMilliseconds
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.SleepMilliseconds
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.SleepMilliseconds
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).SleepMilliseconds
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).SleepMilliseconds
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.StopTimeoutMilliseconds
+  commentId: P:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.StopTimeoutMilliseconds
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.StopTimeoutMilliseconds
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StopTimeoutMilliseconds
+  name: StopTimeoutMilliseconds
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.StopTimeoutMilliseconds
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.StopTimeoutMilliseconds
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).StopTimeoutMilliseconds
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).StopTimeoutMilliseconds
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.SnapshotInterval
+  commentId: P:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.SnapshotInterval
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.SnapshotInterval
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_SnapshotInterval
+  name: SnapshotInterval
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.SnapshotInterval
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.SnapshotInterval
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).SnapshotInterval
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).SnapshotInterval
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.ResultProduced
+  commentId: E:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.ResultProduced
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.ResultProduced
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_ResultProduced
+  name: ResultProduced
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.ResultProduced
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.ResultProduced
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).ResultProduced
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).ResultProduced
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.EventRaised
+  commentId: E:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.EventRaised
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.EventRaised
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_EventRaised
+  name: EventRaised
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.EventRaised
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.EventRaised
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).EventRaised
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).EventRaised
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Submit(MyProject.ExploreGame.Application.ExploreCommand)
+  commentId: M:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Submit(MyProject.ExploreGame.Application.ExploreCommand)
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.Submit(`0)
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Submit__0_
+  name: Submit(ExploreCommand)
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.Submit(ExploreCommand)
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.Submit(MyProject.ExploreGame.Application.ExploreCommand)
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).Submit(ExploreCommand)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).Submit(MyProject.ExploreGame.Application.ExploreCommand)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Submit(MyProject.ExploreGame.Application.ExploreCommand)
+    name: Submit
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Submit__0_
+  - name: (
+  - uid: MyProject.ExploreGame.Application.ExploreCommand
+    name: ExploreCommand
+    href: MyProject.ExploreGame.Application.ExploreCommand.html
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Submit(MyProject.ExploreGame.Application.ExploreCommand)
+    name: Submit
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Submit__0_
+  - name: (
+  - uid: MyProject.ExploreGame.Application.ExploreCommand
+    name: ExploreCommand
+    href: MyProject.ExploreGame.Application.ExploreCommand.html
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.StartSimulation
+  commentId: M:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.StartSimulation
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.StartSimulation
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StartSimulation
+  name: StartSimulation()
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.StartSimulation()
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.StartSimulation()
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).StartSimulation()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).StartSimulation()
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.StartSimulation
+    name: StartSimulation
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StartSimulation
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.StartSimulation
+    name: StartSimulation
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StartSimulation
+  - name: (
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.StopSimulation
+  commentId: M:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.StopSimulation
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.StopSimulation
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StopSimulation
+  name: StopSimulation()
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.StopSimulation()
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.StopSimulation()
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).StopSimulation()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).StopSimulation()
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.StopSimulation
+    name: StopSimulation
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StopSimulation
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.StopSimulation
+    name: StopSimulation
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StopSimulation
+  - name: (
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Advance(System.Single)
+  commentId: M:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Advance(System.Single)
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.Advance(System.Single)
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Advance_System_Single_
+  name: Advance(float)
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.Advance(float)
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.Advance(float)
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).Advance(Single)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).Advance(Single)
+  name.vb: Advance(Single)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Advance(System.Single)
+    name: Advance
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Advance_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Advance(System.Single)
+    name: Advance
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Advance_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.BuildSnapshot
+  commentId: M:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.BuildSnapshot
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.BuildSnapshot
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshot
+  name: BuildSnapshot()
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.BuildSnapshot()
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.BuildSnapshot()
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).BuildSnapshot()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).BuildSnapshot()
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.BuildSnapshot
+    name: BuildSnapshot
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshot
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.BuildSnapshot
+    name: BuildSnapshot
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshot
+  - name: (
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.FlushEvents
+  commentId: M:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.FlushEvents
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.FlushEvents
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_FlushEvents
+  name: FlushEvents()
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.FlushEvents()
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.FlushEvents()
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).FlushEvents()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).FlushEvents()
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.FlushEvents
+    name: FlushEvents
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_FlushEvents
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.FlushEvents
+    name: FlushEvents
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_FlushEvents
+  - name: (
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Dispose
+  commentId: M:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Dispose
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.Dispose
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Dispose
+  name: Dispose()
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.Dispose()
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.Dispose()
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).Dispose()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).Dispose()
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Dispose
+    name: Dispose
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.Dispose
+    name: Dispose
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Dispose
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.Host.GameHostBase`4
+  commentId: T:MyProject.Common.Host.GameHostBase`4
+  href: MyProject.Common.Host.GameHostBase-4.html
+  name: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase`4
+    name: GameHostBase
+    href: MyProject.Common.Host.GameHostBase-4.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase`4
+    name: GameHostBase
+    href: MyProject.Common.Host.GameHostBase-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
+- uid: MyProject.Common.Host
+  commentId: N:MyProject.Common.Host
+  href: MyProject.html
+  name: MyProject.Common.Host
+  nameWithType: MyProject.Common.Host
+  fullName: MyProject.Common.Host
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+- uid: MyProject.Common.Host.IGameHost`4
+  commentId: T:MyProject.Common.Host.IGameHost`4
+  href: MyProject.Common.Host.IGameHost-4.html
+  name: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: MyProject.Common.Host.IGameHost`4
+    name: IGameHost
+    href: MyProject.Common.Host.IGameHost-4.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.IGameHost`4
+    name: IGameHost
+    href: MyProject.Common.Host.IGameHost-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase`4.Tick
+  commentId: P:MyProject.Common.Host.GameHostBase`4.Tick
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Tick
+  name: Tick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+- uid: MyProject.Common.Host.GameHostBase`4.IsRunning
+  commentId: P:MyProject.Common.Host.GameHostBase`4.IsRunning
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_IsRunning
+  name: IsRunning
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+- uid: MyProject.Common.Host.GameHostBase`4.LoopException
+  commentId: P:MyProject.Common.Host.GameHostBase`4.LoopException
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_LoopException
+  name: LoopException
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+- uid: MyProject.Common.Host.GameHostBase`4.FixedStep
+  commentId: P:MyProject.Common.Host.GameHostBase`4.FixedStep
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_FixedStep
+  name: FixedStep
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+- uid: MyProject.Common.Host.GameHostBase`4.MaxStepsPerTick
+  commentId: P:MyProject.Common.Host.GameHostBase`4.MaxStepsPerTick
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_MaxStepsPerTick
+  name: MaxStepsPerTick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+- uid: MyProject.Common.Host.GameHostBase`4.SleepMilliseconds
+  commentId: P:MyProject.Common.Host.GameHostBase`4.SleepMilliseconds
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_SleepMilliseconds
+  name: SleepMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+- uid: MyProject.Common.Host.GameHostBase`4.StopTimeoutMilliseconds
+  commentId: P:MyProject.Common.Host.GameHostBase`4.StopTimeoutMilliseconds
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StopTimeoutMilliseconds
+  name: StopTimeoutMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+- uid: MyProject.Common.Host.GameHostBase`4.SnapshotInterval
+  commentId: P:MyProject.Common.Host.GameHostBase`4.SnapshotInterval
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_SnapshotInterval
+  name: SnapshotInterval
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+- uid: MyProject.Common.Host.GameHostBase`4.ResultProduced
+  commentId: E:MyProject.Common.Host.GameHostBase`4.ResultProduced
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_ResultProduced
+  name: ResultProduced
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+- uid: MyProject.Common.Host.GameHostBase`4.EventRaised
+  commentId: E:MyProject.Common.Host.GameHostBase`4.EventRaised
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_EventRaised
+  name: EventRaised
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+- uid: MyProject.Common.Host.GameHostBase`4.Submit(`0)
+  commentId: M:MyProject.Common.Host.GameHostBase`4.Submit(`0)
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Submit__0_
+  name: Submit(TCommand)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Submit(TCommand)
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Submit(TCommand)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Submit(TCommand)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Submit(TCommand)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase`4.Submit(`0)
+    name: Submit
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Submit__0_
+  - name: (
+  - name: TCommand
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase`4.Submit(`0)
+    name: Submit
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Submit__0_
+  - name: (
+  - name: TCommand
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase`4.StartSimulation
+  commentId: M:MyProject.Common.Host.GameHostBase`4.StartSimulation
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StartSimulation
+  name: StartSimulation()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase`4.StartSimulation
+    name: StartSimulation
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StartSimulation
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase`4.StartSimulation
+    name: StartSimulation
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StartSimulation
+  - name: (
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase`4.StopSimulation
+  commentId: M:MyProject.Common.Host.GameHostBase`4.StopSimulation
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StopSimulation
+  name: StopSimulation()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase`4.StopSimulation
+    name: StopSimulation
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StopSimulation
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase`4.StopSimulation
+    name: StopSimulation
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_StopSimulation
+  - name: (
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase`4.Advance(System.Single)
+  commentId: M:MyProject.Common.Host.GameHostBase`4.Advance(System.Single)
+  isExternal: true
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Advance_System_Single_
+  name: Advance(float)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Advance(float)
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Advance(float)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Advance(Single)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Advance(Single)
+  name.vb: Advance(Single)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase`4.Advance(System.Single)
+    name: Advance
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Advance_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase`4.Advance(System.Single)
+    name: Advance
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Advance_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase`4.BuildSnapshot
+  commentId: M:MyProject.Common.Host.GameHostBase`4.BuildSnapshot
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshot
+  name: BuildSnapshot()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshot()
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshot()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshot()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshot()
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase`4.BuildSnapshot
+    name: BuildSnapshot
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshot
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase`4.BuildSnapshot
+    name: BuildSnapshot
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshot
+  - name: (
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase`4.FlushEvents
+  commentId: M:MyProject.Common.Host.GameHostBase`4.FlushEvents
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_FlushEvents
+  name: FlushEvents()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase`4.FlushEvents
+    name: FlushEvents
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_FlushEvents
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase`4.FlushEvents
+    name: FlushEvents
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_FlushEvents
+  - name: (
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase`4.Dispose
+  commentId: M:MyProject.Common.Host.GameHostBase`4.Dispose
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Dispose
+  name: Dispose()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose()
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose()
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase`4.Dispose
+    name: Dispose
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase`4.Dispose
+    name: Dispose
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_Dispose
+  - name: (
+  - name: )
+- uid: MyProject.ExploreGame.Application.ExploreHost.#ctor*
+  commentId: Overload:MyProject.ExploreGame.Application.ExploreHost.#ctor
+  href: MyProject.ExploreGame.Application.ExploreHost.html#MyProject_ExploreGame_Application_ExploreHost__ctor_MyProject_ExploreGame_Data_ExploreHostConfig_
+  name: ExploreHost
+  nameWithType: ExploreHost.ExploreHost
+  fullName: MyProject.ExploreGame.Application.ExploreHost.ExploreHost
+  nameWithType.vb: ExploreHost.New
+  fullName.vb: MyProject.ExploreGame.Application.ExploreHost.New
+  name.vb: New
+- uid: MyProject.ExploreGame.Data.ExploreHostConfig
+  commentId: T:MyProject.ExploreGame.Data.ExploreHostConfig
+  parent: MyProject.ExploreGame.Data
+  href: MyProject.ExploreGame.Data.ExploreHostConfig.html
+  name: ExploreHostConfig
+  nameWithType: ExploreHostConfig
+  fullName: MyProject.ExploreGame.Data.ExploreHostConfig
+- uid: MyProject.ExploreGame.Data
+  commentId: N:MyProject.ExploreGame.Data
+  href: MyProject.html
+  name: MyProject.ExploreGame.Data
+  nameWithType: MyProject.ExploreGame.Data
+  fullName: MyProject.ExploreGame.Data
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Data
+    name: Data
+    href: MyProject.ExploreGame.Data.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Data
+    name: Data
+    href: MyProject.ExploreGame.Data.html
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand)
+  commentId: M:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand)
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.HandleCommand(`0)
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_HandleCommand__0_
+  name: HandleCommand(ExploreCommand)
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.HandleCommand(ExploreCommand)
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand)
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).HandleCommand(ExploreCommand)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).HandleCommand(MyProject.ExploreGame.Application.ExploreCommand)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand)
+    name: HandleCommand
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_HandleCommand__0_
+  - name: (
+  - uid: MyProject.ExploreGame.Application.ExploreCommand
+    name: ExploreCommand
+    href: MyProject.ExploreGame.Application.ExploreCommand.html
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.HandleCommand(MyProject.ExploreGame.Application.ExploreCommand)
+    name: HandleCommand
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_HandleCommand__0_
+  - name: (
+  - uid: MyProject.ExploreGame.Application.ExploreCommand
+    name: ExploreCommand
+    href: MyProject.ExploreGame.Application.ExploreCommand.html
+  - name: )
+- uid: MyProject.ExploreGame.Application.ExploreHost.HandleCommand*
+  commentId: Overload:MyProject.ExploreGame.Application.ExploreHost.HandleCommand
+  href: MyProject.ExploreGame.Application.ExploreHost.html#MyProject_ExploreGame_Application_ExploreHost_HandleCommand_MyProject_ExploreGame_Application_ExploreCommand_
+  name: HandleCommand
+  nameWithType: ExploreHost.HandleCommand
+  fullName: MyProject.ExploreGame.Application.ExploreHost.HandleCommand
+- uid: MyProject.ExploreGame.Application.ExploreCommand
+  commentId: T:MyProject.ExploreGame.Application.ExploreCommand
+  parent: MyProject.ExploreGame.Application
+  href: MyProject.ExploreGame.Application.ExploreCommand.html
+  name: ExploreCommand
+  nameWithType: ExploreCommand
+  fullName: MyProject.ExploreGame.Application.ExploreCommand
+- uid: MyProject.Common.Host.GameCommandOutcome{MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent}
+  commentId: T:MyProject.Common.Host.GameCommandOutcome{MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent}
+  parent: MyProject.Common.Host
+  definition: MyProject.Common.Host.GameCommandOutcome`2
+  href: MyProject.Common.Host.GameCommandOutcome-2.html
+  name: GameCommandOutcome<ExploreCommandResult, ExploreHostEvent>
+  nameWithType: GameCommandOutcome<ExploreCommandResult, ExploreHostEvent>
+  fullName: MyProject.Common.Host.GameCommandOutcome<MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent>
+  nameWithType.vb: GameCommandOutcome(Of ExploreCommandResult, ExploreHostEvent)
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent)
+  name.vb: GameCommandOutcome(Of ExploreCommandResult, ExploreHostEvent)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: <
+  - uid: MyProject.ExploreGame.Application.ExploreCommandResult
+    name: ExploreCommandResult
+    href: MyProject.ExploreGame.Application.ExploreCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
+    name: ExploreHostEvent
+    href: MyProject.ExploreGame.Application.ExploreHostEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreCommandResult
+    name: ExploreCommandResult
+    href: MyProject.ExploreGame.Application.ExploreCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
+    name: ExploreHostEvent
+    href: MyProject.ExploreGame.Application.ExploreHostEvent.html
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase`4.HandleCommand(`0)
+  commentId: M:MyProject.Common.Host.GameHostBase`4.HandleCommand(`0)
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_HandleCommand__0_
+  name: HandleCommand(TCommand)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand(TCommand)
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand(TCommand)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand(TCommand)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand(TCommand)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase`4.HandleCommand(`0)
+    name: HandleCommand
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_HandleCommand__0_
+  - name: (
+  - name: TCommand
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase`4.HandleCommand(`0)
+    name: HandleCommand
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_HandleCommand__0_
+  - name: (
+  - name: TCommand
+  - name: )
+- uid: MyProject.Common.Host.GameCommandOutcome`2
+  commentId: T:MyProject.Common.Host.GameCommandOutcome`2
+  href: MyProject.Common.Host.GameCommandOutcome-2.html
+  name: GameCommandOutcome<TResult, TEvent>
+  nameWithType: GameCommandOutcome<TResult, TEvent>
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent)
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent)
+  name.vb: GameCommandOutcome(Of TResult, TEvent)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: <
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.OnTick(System.Single)
+  commentId: M:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.OnTick(System.Single)
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.OnTick(System.Single)
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_OnTick_System_Single_
+  name: OnTick(float)
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.OnTick(float)
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.OnTick(float)
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).OnTick(Single)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).OnTick(Single)
+  name.vb: OnTick(Single)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.OnTick(System.Single)
+    name: OnTick
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_OnTick_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.OnTick(System.Single)
+    name: OnTick
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_OnTick_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: MyProject.ExploreGame.Application.ExploreHost.OnTick*
+  commentId: Overload:MyProject.ExploreGame.Application.ExploreHost.OnTick
+  href: MyProject.ExploreGame.Application.ExploreHost.html#MyProject_ExploreGame_Application_ExploreHost_OnTick_System_Single_
+  name: OnTick
+  nameWithType: ExploreHost.OnTick
+  fullName: MyProject.ExploreGame.Application.ExploreHost.OnTick
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MyProject.Common.Host.GameHostBase`4.OnTick(System.Single)
+  commentId: M:MyProject.Common.Host.GameHostBase`4.OnTick(System.Single)
+  isExternal: true
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_OnTick_System_Single_
+  name: OnTick(float)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick(float)
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick(float)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick(Single)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick(Single)
+  name.vb: OnTick(Single)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase`4.OnTick(System.Single)
+    name: OnTick
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_OnTick_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase`4.OnTick(System.Single)
+    name: OnTick
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_OnTick_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.BuildSnapshotInternal
+  commentId: M:MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.BuildSnapshotInternal
+  parent: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}
+  definition: MyProject.Common.Host.GameHostBase`4.BuildSnapshotInternal
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshotInternal
+  name: BuildSnapshotInternal()
+  nameWithType: GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>.BuildSnapshotInternal()
+  fullName: MyProject.Common.Host.GameHostBase<MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot>.BuildSnapshotInternal()
+  nameWithType.vb: GameHostBase(Of ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot).BuildSnapshotInternal()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of MyProject.ExploreGame.Application.ExploreCommand, MyProject.ExploreGame.Application.ExploreCommandResult, MyProject.ExploreGame.Application.ExploreHostEvent, MyProject.ExploreGame.Domain.ExploreStateSnapshot).BuildSnapshotInternal()
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.BuildSnapshotInternal
+    name: BuildSnapshotInternal
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshotInternal
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase{MyProject.ExploreGame.Application.ExploreCommand,MyProject.ExploreGame.Application.ExploreCommandResult,MyProject.ExploreGame.Application.ExploreHostEvent,MyProject.ExploreGame.Domain.ExploreStateSnapshot}.BuildSnapshotInternal
+    name: BuildSnapshotInternal
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshotInternal
+  - name: (
+  - name: )
+- uid: MyProject.ExploreGame.Application.ExploreHost.BuildSnapshotInternal*
+  commentId: Overload:MyProject.ExploreGame.Application.ExploreHost.BuildSnapshotInternal
+  href: MyProject.ExploreGame.Application.ExploreHost.html#MyProject_ExploreGame_Application_ExploreHost_BuildSnapshotInternal
+  name: BuildSnapshotInternal
+  nameWithType: ExploreHost.BuildSnapshotInternal
+  fullName: MyProject.ExploreGame.Application.ExploreHost.BuildSnapshotInternal
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreStateSnapshot.html
+  name: ExploreStateSnapshot
+  nameWithType: ExploreStateSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+- uid: MyProject.Common.Host.GameHostBase`4.BuildSnapshotInternal
+  commentId: M:MyProject.Common.Host.GameHostBase`4.BuildSnapshotInternal
+  href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshotInternal
+  name: BuildSnapshotInternal()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal()
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal()
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal()
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase`4.BuildSnapshotInternal
+    name: BuildSnapshotInternal
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshotInternal
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase`4.BuildSnapshotInternal
+    name: BuildSnapshotInternal
+    href: MyProject.Common.Host.GameHostBase-4.html#MyProject_Common_Host_GameHostBase_4_BuildSnapshotInternal
+  - name: (
+  - name: )
+- uid: MyProject.ExploreGame.Domain
+  commentId: N:MyProject.ExploreGame.Domain
+  href: MyProject.html
+  name: MyProject.ExploreGame.Domain
+  nameWithType: MyProject.ExploreGame.Domain
+  fullName: MyProject.ExploreGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html

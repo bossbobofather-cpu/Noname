@@ -8,8 +8,11 @@ items:
   - Noname.GameAbilitySystem.AttributeId.AttackDamage
   - Noname.GameAbilitySystem.AttributeId.AttackRange
   - Noname.GameAbilitySystem.AttributeId.AttackSpeed
+  - Noname.GameAbilitySystem.AttributeId.Exp
+  - Noname.GameAbilitySystem.AttributeId.Gold
   - Noname.GameAbilitySystem.AttributeId.Health
   - Noname.GameAbilitySystem.AttributeId.JumpSpeed
+  - Noname.GameAbilitySystem.AttributeId.MaxHealth
   - Noname.GameAbilitySystem.AttributeId.MoveSpeed
   langs:
   - csharp
@@ -118,6 +121,54 @@ items:
   namespace: Noname.GameAbilitySystem
   syntax:
     content: AttackDamage = 5
+    return:
+      type: Noname.GameAbilitySystem.AttributeId
+- uid: Noname.GameAbilitySystem.AttributeId.MaxHealth
+  commentId: F:Noname.GameAbilitySystem.AttributeId.MaxHealth
+  id: MaxHealth
+  parent: Noname.GameAbilitySystem.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: MaxHealth
+  nameWithType: AttributeId.MaxHealth
+  fullName: Noname.GameAbilitySystem.AttributeId.MaxHealth
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: MaxHealth = 6
+    return:
+      type: Noname.GameAbilitySystem.AttributeId
+- uid: Noname.GameAbilitySystem.AttributeId.Exp
+  commentId: F:Noname.GameAbilitySystem.AttributeId.Exp
+  id: Exp
+  parent: Noname.GameAbilitySystem.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: Exp
+  nameWithType: AttributeId.Exp
+  fullName: Noname.GameAbilitySystem.AttributeId.Exp
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: Exp = 7
+    return:
+      type: Noname.GameAbilitySystem.AttributeId
+- uid: Noname.GameAbilitySystem.AttributeId.Gold
+  commentId: F:Noname.GameAbilitySystem.AttributeId.Gold
+  id: Gold
+  parent: Noname.GameAbilitySystem.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: Gold
+  nameWithType: AttributeId.Gold
+  fullName: Noname.GameAbilitySystem.AttributeId.Gold
+  type: Field
+  namespace: Noname.GameAbilitySystem
+  syntax:
+    content: Gold = 8
     return:
       type: Noname.GameAbilitySystem.AttributeId
 references:

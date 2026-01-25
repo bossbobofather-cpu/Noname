@@ -1,13 +1,14 @@
-ï»¿# Features
+# Features
 
-í”„ë¡œì íŠ¸ ê¸°ëŠ¥(Feature)ì„ ê¸°ì¤€ìœ¼ë¡œ ë¬¶ê³ , ê° ê¸°ëŠ¥ ë‚´ë¶€ëŠ” Clean ë ˆì´ì–´ë¡œ ë‚˜ëˆ•ë‹ˆë‹¤.
+ÇÁ·ÎÁ§Æ®ÀÇ ±â´É(Feature) ´ÜÀ§·Î ÄÚµå¸¦ ¹­°í, °¢ ±â´É ³»ºÎ´Â Clean ·¹ÀÌ¾î·Î ºĞ¸®ÇÕ´Ï´Ù.
 
-êµ¬ì„± ì›ì¹™
-- Domain: ìˆœìˆ˜ ê·œì¹™/ìƒíƒœ/ì •ì±…. Unity ì˜ì¡´ ì—†ìŒ.
-- Application: ìœ ìŠ¤ì¼€ì´ìŠ¤/ì„œë¹„ìŠ¤. Domainì—ë§Œ ì˜ì¡´.
-- Presentation: MonoBehaviour, ì…ë ¥, UI, ì”¬ ì—°ê²°.
-- Data: ScriptableObject/í”„ë¦¬íŒ¹/ì—ì…‹ ì°¸ì¡°.
+±¸¼º ¿øÄ¢
+- Domain: ¼ø¼ö ±ÔÄ¢/»óÅÂ/Á¤Ã¥. Unity ÀÇÁ¸ ¾øÀ½.
+- Application: À¯½ºÄÉÀÌ½º/È£½ºÆ® ·ÎÁ÷. Domain¿¡¸¸ ÀÇÁ¸.
+- Presentation: MonoBehaviour, ÀÔ·Â, UI, ¾À ¿¬°á.
+- Data: ScriptableObject/ÇÁ¸®ÆÕ/¿¡¼Â ÂüÁ¶.
 
-ì˜ˆì‹œ
-- MergeGame ê¸°ëŠ¥ì€ `Assets/Features/MergeGame` ì•„ë˜ì— ë°°ì¹˜í•©ë‹ˆë‹¤.
-- ê³µìš© ë¡œì§ì€ `Assets/Shared` ì•„ë˜ì— ë°°ì¹˜í•©ë‹ˆë‹¤.
+¿¹½Ã
+- ExploreGame ±â´ÉÀº `Assets/Scripts/Features/ExploreGame` ¾Æ·¡¿¡ ¹èÄ¡ÇÕ´Ï´Ù.
+- Host ½Ã¹Ä·¹ÀÌ¼Ç ·ÎÁ÷Àº Application/Host Æú´õ¿¡¼­ °ü¸®ÇÕ´Ï´Ù.
+- °ø¿ë ·ÎÁ÷Àº `Assets/Scripts/Shared` ¾Æ·¡¿¡ ¹èÄ¡ÇÕ´Ï´Ù.

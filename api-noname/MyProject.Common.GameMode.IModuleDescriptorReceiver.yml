@@ -1,0 +1,162 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.GameMode.IModuleDescriptorReceiver
+  commentId: T:MyProject.Common.GameMode.IModuleDescriptorReceiver
+  id: IModuleDescriptorReceiver
+  parent: MyProject.Common.GameMode
+  children:
+  - MyProject.Common.GameMode.IModuleDescriptorReceiver.ApplyDescriptor(MyProject.Common.Host.GameModuleDescriptor)
+  - MyProject.Common.GameMode.IModuleDescriptorReceiver.ModuleKey
+  langs:
+  - csharp
+  - vb
+  name: IModuleDescriptorReceiver
+  nameWithType: IModuleDescriptorReceiver
+  fullName: MyProject.Common.GameMode.IModuleDescriptorReceiver
+  type: Interface
+  namespace: MyProject.Common.GameMode
+  summary: 세션 설명서를 받아 모듈 설정을 적용하는 인터페이스입니다.
+  example: []
+  syntax:
+    content: public interface IModuleDescriptorReceiver
+    content.vb: Public Interface IModuleDescriptorReceiver
+- uid: MyProject.Common.GameMode.IModuleDescriptorReceiver.ModuleKey
+  commentId: P:MyProject.Common.GameMode.IModuleDescriptorReceiver.ModuleKey
+  id: ModuleKey
+  parent: MyProject.Common.GameMode.IModuleDescriptorReceiver
+  langs:
+  - csharp
+  - vb
+  name: ModuleKey
+  nameWithType: IModuleDescriptorReceiver.ModuleKey
+  fullName: MyProject.Common.GameMode.IModuleDescriptorReceiver.ModuleKey
+  type: Property
+  namespace: MyProject.Common.GameMode
+  summary: 모듈을 식별하기 위한 키입니다.
+  example: []
+  syntax:
+    content: string ModuleKey { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ModuleKey As String
+  overload: MyProject.Common.GameMode.IModuleDescriptorReceiver.ModuleKey*
+- uid: MyProject.Common.GameMode.IModuleDescriptorReceiver.ApplyDescriptor(MyProject.Common.Host.GameModuleDescriptor)
+  commentId: M:MyProject.Common.GameMode.IModuleDescriptorReceiver.ApplyDescriptor(MyProject.Common.Host.GameModuleDescriptor)
+  id: ApplyDescriptor(MyProject.Common.Host.GameModuleDescriptor)
+  parent: MyProject.Common.GameMode.IModuleDescriptorReceiver
+  langs:
+  - csharp
+  - vb
+  name: ApplyDescriptor(GameModuleDescriptor)
+  nameWithType: IModuleDescriptorReceiver.ApplyDescriptor(GameModuleDescriptor)
+  fullName: MyProject.Common.GameMode.IModuleDescriptorReceiver.ApplyDescriptor(MyProject.Common.Host.GameModuleDescriptor)
+  type: Method
+  namespace: MyProject.Common.GameMode
+  summary: 모듈 설정 데이터를 적용합니다.
+  example: []
+  syntax:
+    content: void ApplyDescriptor(GameModuleDescriptor descriptor)
+    parameters:
+    - id: descriptor
+      type: MyProject.Common.Host.GameModuleDescriptor
+    content.vb: Sub ApplyDescriptor(descriptor As GameModuleDescriptor)
+  overload: MyProject.Common.GameMode.IModuleDescriptorReceiver.ApplyDescriptor*
+references:
+- uid: MyProject.Common.GameMode
+  commentId: N:MyProject.Common.GameMode
+  href: MyProject.html
+  name: MyProject.Common.GameMode
+  nameWithType: MyProject.Common.GameMode
+  fullName: MyProject.Common.GameMode
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.html
+- uid: MyProject.Common.GameMode.IModuleDescriptorReceiver.ModuleKey*
+  commentId: Overload:MyProject.Common.GameMode.IModuleDescriptorReceiver.ModuleKey
+  href: MyProject.Common.GameMode.IModuleDescriptorReceiver.html#MyProject_Common_GameMode_IModuleDescriptorReceiver_ModuleKey
+  name: ModuleKey
+  nameWithType: IModuleDescriptorReceiver.ModuleKey
+  fullName: MyProject.Common.GameMode.IModuleDescriptorReceiver.ModuleKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.GameMode.IModuleDescriptorReceiver.ApplyDescriptor*
+  commentId: Overload:MyProject.Common.GameMode.IModuleDescriptorReceiver.ApplyDescriptor
+  href: MyProject.Common.GameMode.IModuleDescriptorReceiver.html#MyProject_Common_GameMode_IModuleDescriptorReceiver_ApplyDescriptor_MyProject_Common_Host_GameModuleDescriptor_
+  name: ApplyDescriptor
+  nameWithType: IModuleDescriptorReceiver.ApplyDescriptor
+  fullName: MyProject.Common.GameMode.IModuleDescriptorReceiver.ApplyDescriptor
+- uid: MyProject.Common.Host.GameModuleDescriptor
+  commentId: T:MyProject.Common.Host.GameModuleDescriptor
+  parent: MyProject.Common.Host
+  href: MyProject.Common.Host.GameModuleDescriptor.html
+  name: GameModuleDescriptor
+  nameWithType: GameModuleDescriptor
+  fullName: MyProject.Common.Host.GameModuleDescriptor
+- uid: MyProject.Common.Host
+  commentId: N:MyProject.Common.Host
+  href: MyProject.html
+  name: MyProject.Common.Host
+  nameWithType: MyProject.Common.Host
+  fullName: MyProject.Common.Host
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html

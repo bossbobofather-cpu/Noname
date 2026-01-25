@@ -148,7 +148,6 @@ references:
   nameWithType: Canvas
   fullName: Canvas
 - uid: Camera
-  commentId: '!:Camera'
   isExternal: true
   name: Camera
   nameWithType: Camera

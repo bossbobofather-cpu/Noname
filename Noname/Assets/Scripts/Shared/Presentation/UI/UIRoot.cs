@@ -1,7 +1,8 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 namespace MyProject.Common.UI
-{    
+{
     /// <summary>
     /// UGUI 루트 프리팹의 기본 구성 요소를 관리합니다.
     /// </summary>
@@ -60,9 +61,17 @@ namespace MyProject.Common.UI
         /// </summary>
         public RectTransform SystemRoot => _systemRoot;
 
+
         private void Awake()
         {
             ApplyCanvasSettings();
+
+            AttackToMainCameraStack();
+        }
+
+        private void OnDestroy()
+        {
+            DettachFromMainCameraStack();    
         }
 
         private void OnValidate()
@@ -88,6 +97,19 @@ namespace MyProject.Common.UI
             canvas.worldCamera = _uiCamera;
             canvas.overrideSorting = true;
             canvas.sortingOrder = sortingOrder;
+        }
+
+        private void AttackToMainCameraStack()
+        {
+            var baseData = Camera.main.GetUniversalAdditionalCameraData();
+            if (!baseData.cameraStack.Contains(_uiCamera))
+                baseData.cameraStack.Add(_uiCamera);
+        }
+
+        private void DettachFromMainCameraStack()
+        {
+            var baseData = Camera.main.GetUniversalAdditionalCameraData();
+            if (baseData != null) baseData.cameraStack.Remove(_uiCamera);
         }
     }
 }

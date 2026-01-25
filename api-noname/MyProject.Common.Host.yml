@@ -1,0 +1,227 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.Host
+  commentId: N:MyProject.Common.Host
+  id: MyProject.Common.Host
+  children:
+  - MyProject.Common.Host.GameCommandBase
+  - MyProject.Common.Host.GameCommandOutcome`2
+  - MyProject.Common.Host.GameCommandResultBase
+  - MyProject.Common.Host.GameEventBase
+  - MyProject.Common.Host.GameHostBase`4
+  - MyProject.Common.Host.GameModuleConfig
+  - MyProject.Common.Host.GameModuleDescriptor
+  - MyProject.Common.Host.GameSessionDescriptor
+  - MyProject.Common.Host.GameSnapshotBase
+  - MyProject.Common.Host.IGameHost`4
+  - MyProject.Common.Host.IRandomSource
+  langs:
+  - csharp
+  - vb
+  name: MyProject.Common.Host
+  nameWithType: MyProject.Common.Host
+  fullName: MyProject.Common.Host
+  type: Namespace
+references:
+- uid: MyProject.Common.Host.GameCommandOutcome`2
+  commentId: T:MyProject.Common.Host.GameCommandOutcome`2
+  href: MyProject.Common.Host.GameCommandOutcome-2.html
+  name: GameCommandOutcome<TResult, TEvent>
+  nameWithType: GameCommandOutcome<TResult, TEvent>
+  fullName: MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent)
+  fullName.vb: MyProject.Common.Host.GameCommandOutcome(Of TResult, TEvent)
+  name.vb: GameCommandOutcome(Of TResult, TEvent)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: <
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: MyProject.Common.Host.GameCommandOutcome-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: MyProject.Common.Host.GameHostBase`4
+  commentId: T:MyProject.Common.Host.GameHostBase`4
+  href: MyProject.Common.Host.GameHostBase-4.html
+  name: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  fullName: MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: MyProject.Common.Host.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: MyProject.Common.Host.GameHostBase`4
+    name: GameHostBase
+    href: MyProject.Common.Host.GameHostBase-4.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.GameHostBase`4
+    name: GameHostBase
+    href: MyProject.Common.Host.GameHostBase-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
+- uid: MyProject.Common.Host.GameCommandBase
+  commentId: T:MyProject.Common.Host.GameCommandBase
+  parent: MyProject.Common.Host
+  href: MyProject.Common.Host.GameCommandBase.html
+  name: GameCommandBase
+  nameWithType: GameCommandBase
+  fullName: MyProject.Common.Host.GameCommandBase
+- uid: MyProject.Common.Host.GameCommandResultBase
+  commentId: T:MyProject.Common.Host.GameCommandResultBase
+  parent: MyProject.Common.Host
+  href: MyProject.Common.Host.GameCommandResultBase.html
+  name: GameCommandResultBase
+  nameWithType: GameCommandResultBase
+  fullName: MyProject.Common.Host.GameCommandResultBase
+- uid: MyProject.Common.Host.GameEventBase
+  commentId: T:MyProject.Common.Host.GameEventBase
+  parent: MyProject.Common.Host
+  href: MyProject.Common.Host.GameEventBase.html
+  name: GameEventBase
+  nameWithType: GameEventBase
+  fullName: MyProject.Common.Host.GameEventBase
+- uid: MyProject.Common.Host.GameSnapshotBase
+  commentId: T:MyProject.Common.Host.GameSnapshotBase
+  parent: MyProject.Common.Host
+  href: MyProject.Common.Host.GameSnapshotBase.html
+  name: GameSnapshotBase
+  nameWithType: GameSnapshotBase
+  fullName: MyProject.Common.Host.GameSnapshotBase
+- uid: MyProject.Common.Host.IRandomSource
+  commentId: T:MyProject.Common.Host.IRandomSource
+  href: MyProject.Common.Host.IRandomSource.html
+  name: IRandomSource
+  nameWithType: IRandomSource
+  fullName: MyProject.Common.Host.IRandomSource
+- uid: MyProject.Common.Host.IGameHost`4
+  commentId: T:MyProject.Common.Host.IGameHost`4
+  href: MyProject.Common.Host.IGameHost-4.html
+  name: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  fullName: MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: MyProject.Common.Host.IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: MyProject.Common.Host.IGameHost`4
+    name: IGameHost
+    href: MyProject.Common.Host.IGameHost-4.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.Host.IGameHost`4
+    name: IGameHost
+    href: MyProject.Common.Host.IGameHost-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
+- uid: MyProject.Common.Host.GameSessionDescriptor
+  commentId: T:MyProject.Common.Host.GameSessionDescriptor
+  parent: MyProject.Common.Host
+  href: MyProject.Common.Host.GameSessionDescriptor.html
+  name: GameSessionDescriptor
+  nameWithType: GameSessionDescriptor
+  fullName: MyProject.Common.Host.GameSessionDescriptor
+- uid: MyProject.Common.Host.GameModuleDescriptor
+  commentId: T:MyProject.Common.Host.GameModuleDescriptor
+  parent: MyProject.Common.Host
+  href: MyProject.Common.Host.GameModuleDescriptor.html
+  name: GameModuleDescriptor
+  nameWithType: GameModuleDescriptor
+  fullName: MyProject.Common.Host.GameModuleDescriptor
+- uid: MyProject.Common.Host.GameModuleConfig
+  commentId: T:MyProject.Common.Host.GameModuleConfig
+  parent: MyProject.Common.Host
+  href: MyProject.Common.Host.GameModuleConfig.html
+  name: GameModuleConfig
+  nameWithType: GameModuleConfig
+  fullName: MyProject.Common.Host.GameModuleConfig
+- uid: MyProject.Common.Host
+  commentId: N:MyProject.Common.Host
+  href: MyProject.html
+  name: MyProject.Common.Host
+  nameWithType: MyProject.Common.Host
+  fullName: MyProject.Common.Host
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html

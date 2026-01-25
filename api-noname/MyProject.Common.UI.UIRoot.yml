@@ -1,0 +1,282 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.UI.UIRoot
+  commentId: T:MyProject.Common.UI.UIRoot
+  id: UIRoot
+  parent: MyProject.Common.UI
+  children:
+  - MyProject.Common.UI.UIRoot.PageCanvas
+  - MyProject.Common.UI.UIRoot.PageRoot
+  - MyProject.Common.UI.UIRoot.PopupCanvas
+  - MyProject.Common.UI.UIRoot.PopupRoot
+  - MyProject.Common.UI.UIRoot.SystemCanvas
+  - MyProject.Common.UI.UIRoot.SystemRoot
+  - MyProject.Common.UI.UIRoot.UICamera
+  langs:
+  - csharp
+  - vb
+  name: UIRoot
+  nameWithType: UIRoot
+  fullName: MyProject.Common.UI.UIRoot
+  type: Class
+  namespace: MyProject.Common.UI
+  summary: UGUI 루트 프리팹의 기본 구성 요소를 관리합니다.
+  example: []
+  syntax:
+    content: 'public sealed class UIRoot : MonoBehaviour'
+    content.vb: Public NotInheritable Class UIRoot Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: MyProject.Common.UI.UIRoot.UICamera
+  commentId: P:MyProject.Common.UI.UIRoot.UICamera
+  id: UICamera
+  parent: MyProject.Common.UI.UIRoot
+  langs:
+  - csharp
+  - vb
+  name: UICamera
+  nameWithType: UIRoot.UICamera
+  fullName: MyProject.Common.UI.UIRoot.UICamera
+  type: Property
+  namespace: MyProject.Common.UI
+  summary: UI 전용 카메라입니다.
+  example: []
+  syntax:
+    content: public Camera UICamera { get; }
+    parameters: []
+    return:
+      type: Camera
+    content.vb: Public ReadOnly Property UICamera As Camera
+  overload: MyProject.Common.UI.UIRoot.UICamera*
+- uid: MyProject.Common.UI.UIRoot.PageCanvas
+  commentId: P:MyProject.Common.UI.UIRoot.PageCanvas
+  id: PageCanvas
+  parent: MyProject.Common.UI.UIRoot
+  langs:
+  - csharp
+  - vb
+  name: PageCanvas
+  nameWithType: UIRoot.PageCanvas
+  fullName: MyProject.Common.UI.UIRoot.PageCanvas
+  type: Property
+  namespace: MyProject.Common.UI
+  summary: 페이지 캔버스입니다.
+  example: []
+  syntax:
+    content: public Canvas PageCanvas { get; }
+    parameters: []
+    return:
+      type: Canvas
+    content.vb: Public ReadOnly Property PageCanvas As Canvas
+  overload: MyProject.Common.UI.UIRoot.PageCanvas*
+- uid: MyProject.Common.UI.UIRoot.PopupCanvas
+  commentId: P:MyProject.Common.UI.UIRoot.PopupCanvas
+  id: PopupCanvas
+  parent: MyProject.Common.UI.UIRoot
+  langs:
+  - csharp
+  - vb
+  name: PopupCanvas
+  nameWithType: UIRoot.PopupCanvas
+  fullName: MyProject.Common.UI.UIRoot.PopupCanvas
+  type: Property
+  namespace: MyProject.Common.UI
+  summary: 팝업 캔버스입니다.
+  example: []
+  syntax:
+    content: public Canvas PopupCanvas { get; }
+    parameters: []
+    return:
+      type: Canvas
+    content.vb: Public ReadOnly Property PopupCanvas As Canvas
+  overload: MyProject.Common.UI.UIRoot.PopupCanvas*
+- uid: MyProject.Common.UI.UIRoot.SystemCanvas
+  commentId: P:MyProject.Common.UI.UIRoot.SystemCanvas
+  id: SystemCanvas
+  parent: MyProject.Common.UI.UIRoot
+  langs:
+  - csharp
+  - vb
+  name: SystemCanvas
+  nameWithType: UIRoot.SystemCanvas
+  fullName: MyProject.Common.UI.UIRoot.SystemCanvas
+  type: Property
+  namespace: MyProject.Common.UI
+  summary: 시스템 캔버스입니다.
+  example: []
+  syntax:
+    content: public Canvas SystemCanvas { get; }
+    parameters: []
+    return:
+      type: Canvas
+    content.vb: Public ReadOnly Property SystemCanvas As Canvas
+  overload: MyProject.Common.UI.UIRoot.SystemCanvas*
+- uid: MyProject.Common.UI.UIRoot.PageRoot
+  commentId: P:MyProject.Common.UI.UIRoot.PageRoot
+  id: PageRoot
+  parent: MyProject.Common.UI.UIRoot
+  langs:
+  - csharp
+  - vb
+  name: PageRoot
+  nameWithType: UIRoot.PageRoot
+  fullName: MyProject.Common.UI.UIRoot.PageRoot
+  type: Property
+  namespace: MyProject.Common.UI
+  summary: 페이지 루트입니다.
+  example: []
+  syntax:
+    content: public RectTransform PageRoot { get; }
+    parameters: []
+    return:
+      type: RectTransform
+    content.vb: Public ReadOnly Property PageRoot As RectTransform
+  overload: MyProject.Common.UI.UIRoot.PageRoot*
+- uid: MyProject.Common.UI.UIRoot.PopupRoot
+  commentId: P:MyProject.Common.UI.UIRoot.PopupRoot
+  id: PopupRoot
+  parent: MyProject.Common.UI.UIRoot
+  langs:
+  - csharp
+  - vb
+  name: PopupRoot
+  nameWithType: UIRoot.PopupRoot
+  fullName: MyProject.Common.UI.UIRoot.PopupRoot
+  type: Property
+  namespace: MyProject.Common.UI
+  summary: 팝업 루트입니다.
+  example: []
+  syntax:
+    content: public RectTransform PopupRoot { get; }
+    parameters: []
+    return:
+      type: RectTransform
+    content.vb: Public ReadOnly Property PopupRoot As RectTransform
+  overload: MyProject.Common.UI.UIRoot.PopupRoot*
+- uid: MyProject.Common.UI.UIRoot.SystemRoot
+  commentId: P:MyProject.Common.UI.UIRoot.SystemRoot
+  id: SystemRoot
+  parent: MyProject.Common.UI.UIRoot
+  langs:
+  - csharp
+  - vb
+  name: SystemRoot
+  nameWithType: UIRoot.SystemRoot
+  fullName: MyProject.Common.UI.UIRoot.SystemRoot
+  type: Property
+  namespace: MyProject.Common.UI
+  summary: 시스템 루트입니다.
+  example: []
+  syntax:
+    content: public RectTransform SystemRoot { get; }
+    parameters: []
+    return:
+      type: RectTransform
+    content.vb: Public ReadOnly Property SystemRoot As RectTransform
+  overload: MyProject.Common.UI.UIRoot.SystemRoot*
+references:
+- uid: MyProject.Common.UI
+  commentId: N:MyProject.Common.UI
+  href: MyProject.html
+  name: MyProject.Common.UI
+  nameWithType: MyProject.Common.UI
+  fullName: MyProject.Common.UI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.UI.UIRoot.UICamera*
+  commentId: Overload:MyProject.Common.UI.UIRoot.UICamera
+  href: MyProject.Common.UI.UIRoot.html#MyProject_Common_UI_UIRoot_UICamera
+  name: UICamera
+  nameWithType: UIRoot.UICamera
+  fullName: MyProject.Common.UI.UIRoot.UICamera
+- uid: Camera
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: Camera
+- uid: MyProject.Common.UI.UIRoot.PageCanvas*
+  commentId: Overload:MyProject.Common.UI.UIRoot.PageCanvas
+  href: MyProject.Common.UI.UIRoot.html#MyProject_Common_UI_UIRoot_PageCanvas
+  name: PageCanvas
+  nameWithType: UIRoot.PageCanvas
+  fullName: MyProject.Common.UI.UIRoot.PageCanvas
+- uid: Canvas
+  isExternal: true
+  name: Canvas
+  nameWithType: Canvas
+  fullName: Canvas
+- uid: MyProject.Common.UI.UIRoot.PopupCanvas*
+  commentId: Overload:MyProject.Common.UI.UIRoot.PopupCanvas
+  href: MyProject.Common.UI.UIRoot.html#MyProject_Common_UI_UIRoot_PopupCanvas
+  name: PopupCanvas
+  nameWithType: UIRoot.PopupCanvas
+  fullName: MyProject.Common.UI.UIRoot.PopupCanvas
+- uid: MyProject.Common.UI.UIRoot.SystemCanvas*
+  commentId: Overload:MyProject.Common.UI.UIRoot.SystemCanvas
+  href: MyProject.Common.UI.UIRoot.html#MyProject_Common_UI_UIRoot_SystemCanvas
+  name: SystemCanvas
+  nameWithType: UIRoot.SystemCanvas
+  fullName: MyProject.Common.UI.UIRoot.SystemCanvas
+- uid: MyProject.Common.UI.UIRoot.PageRoot*
+  commentId: Overload:MyProject.Common.UI.UIRoot.PageRoot
+  href: MyProject.Common.UI.UIRoot.html#MyProject_Common_UI_UIRoot_PageRoot
+  name: PageRoot
+  nameWithType: UIRoot.PageRoot
+  fullName: MyProject.Common.UI.UIRoot.PageRoot
+- uid: RectTransform
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: RectTransform
+- uid: MyProject.Common.UI.UIRoot.PopupRoot*
+  commentId: Overload:MyProject.Common.UI.UIRoot.PopupRoot
+  href: MyProject.Common.UI.UIRoot.html#MyProject_Common_UI_UIRoot_PopupRoot
+  name: PopupRoot
+  nameWithType: UIRoot.PopupRoot
+  fullName: MyProject.Common.UI.UIRoot.PopupRoot
+- uid: MyProject.Common.UI.UIRoot.SystemRoot*
+  commentId: Overload:MyProject.Common.UI.UIRoot.SystemRoot
+  href: MyProject.Common.UI.UIRoot.html#MyProject_Common_UI_UIRoot_SystemRoot
+  name: SystemRoot
+  nameWithType: UIRoot.SystemRoot
+  fullName: MyProject.Common.UI.UIRoot.SystemRoot

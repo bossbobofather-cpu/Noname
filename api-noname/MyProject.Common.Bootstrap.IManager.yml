@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.Bootstrap.IManager
+  commentId: T:MyProject.Common.Bootstrap.IManager
+  id: IManager
+  parent: MyProject.Common.Bootstrap
+  children:
+  - MyProject.Common.Bootstrap.IManager.Initialize
+  langs:
+  - csharp
+  - vb
+  name: IManager
+  nameWithType: IManager
+  fullName: MyProject.Common.Bootstrap.IManager
+  type: Interface
+  namespace: MyProject.Common.Bootstrap
+  summary: 씬과 무관하게 유지되는 매니저 인터페이스입니다.
+  example: []
+  syntax:
+    content: public interface IManager
+    content.vb: Public Interface IManager
+- uid: MyProject.Common.Bootstrap.IManager.Initialize
+  commentId: M:MyProject.Common.Bootstrap.IManager.Initialize
+  id: Initialize
+  parent: MyProject.Common.Bootstrap.IManager
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: IManager.Initialize()
+  fullName: MyProject.Common.Bootstrap.IManager.Initialize()
+  type: Method
+  namespace: MyProject.Common.Bootstrap
+  summary: 매니저를 명시적으로 초기화합니다.
+  example: []
+  syntax:
+    content: void Initialize()
+    content.vb: Sub Initialize()
+  overload: MyProject.Common.Bootstrap.IManager.Initialize*
+references:
+- uid: MyProject.Common.Bootstrap
+  commentId: N:MyProject.Common.Bootstrap
+  href: MyProject.html
+  name: MyProject.Common.Bootstrap
+  nameWithType: MyProject.Common.Bootstrap
+  fullName: MyProject.Common.Bootstrap
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Bootstrap
+    name: Bootstrap
+    href: MyProject.Common.Bootstrap.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Bootstrap
+    name: Bootstrap
+    href: MyProject.Common.Bootstrap.html
+- uid: MyProject.Common.Bootstrap.IManager.Initialize*
+  commentId: Overload:MyProject.Common.Bootstrap.IManager.Initialize
+  href: MyProject.Common.Bootstrap.IManager.html#MyProject_Common_Bootstrap_IManager_Initialize
+  name: Initialize
+  nameWithType: IManager.Initialize
+  fullName: MyProject.Common.Bootstrap.IManager.Initialize

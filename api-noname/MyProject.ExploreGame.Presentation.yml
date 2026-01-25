@@ -1,0 +1,80 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Presentation
+  commentId: N:MyProject.ExploreGame.Presentation
+  id: MyProject.ExploreGame.Presentation
+  children:
+  - MyProject.ExploreGame.Presentation.ExploreHostEventRaisedEvent
+  - MyProject.ExploreGame.Presentation.ExploreMode
+  - MyProject.ExploreGame.Presentation.ExploreViewModel
+  - MyProject.ExploreGame.Presentation.StatusDisplayModule
+  - MyProject.ExploreGame.Presentation.TextLogModule
+  langs:
+  - csharp
+  - vb
+  name: MyProject.ExploreGame.Presentation
+  nameWithType: MyProject.ExploreGame.Presentation
+  fullName: MyProject.ExploreGame.Presentation
+  type: Namespace
+references:
+- uid: MyProject.ExploreGame.Presentation.ExploreMode
+  commentId: T:MyProject.ExploreGame.Presentation.ExploreMode
+  href: MyProject.ExploreGame.Presentation.ExploreMode.html
+  name: ExploreMode
+  nameWithType: ExploreMode
+  fullName: MyProject.ExploreGame.Presentation.ExploreMode
+- uid: MyProject.ExploreGame.Presentation.ExploreHostEventRaisedEvent
+  commentId: T:MyProject.ExploreGame.Presentation.ExploreHostEventRaisedEvent
+  href: MyProject.ExploreGame.Presentation.ExploreHostEventRaisedEvent.html
+  name: ExploreHostEventRaisedEvent
+  nameWithType: ExploreHostEventRaisedEvent
+  fullName: MyProject.ExploreGame.Presentation.ExploreHostEventRaisedEvent
+- uid: MyProject.ExploreGame.Presentation.StatusDisplayModule
+  commentId: T:MyProject.ExploreGame.Presentation.StatusDisplayModule
+  href: MyProject.ExploreGame.Presentation.StatusDisplayModule.html
+  name: StatusDisplayModule
+  nameWithType: StatusDisplayModule
+  fullName: MyProject.ExploreGame.Presentation.StatusDisplayModule
+- uid: MyProject.ExploreGame.Presentation.TextLogModule
+  commentId: T:MyProject.ExploreGame.Presentation.TextLogModule
+  href: MyProject.ExploreGame.Presentation.TextLogModule.html
+  name: TextLogModule
+  nameWithType: TextLogModule
+  fullName: MyProject.ExploreGame.Presentation.TextLogModule
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel
+  commentId: T:MyProject.ExploreGame.Presentation.ExploreViewModel
+  parent: MyProject.ExploreGame.Presentation
+  href: MyProject.ExploreGame.Presentation.ExploreViewModel.html
+  name: ExploreViewModel
+  nameWithType: ExploreViewModel
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel
+- uid: MyProject.ExploreGame.Presentation
+  commentId: N:MyProject.ExploreGame.Presentation
+  href: MyProject.html
+  name: MyProject.ExploreGame.Presentation
+  nameWithType: MyProject.ExploreGame.Presentation
+  fullName: MyProject.ExploreGame.Presentation
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Presentation
+    name: Presentation
+    href: MyProject.ExploreGame.Presentation.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Presentation
+    name: Presentation
+    href: MyProject.ExploreGame.Presentation.html

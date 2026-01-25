@@ -1,0 +1,783 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.GameMode.GameMode
+  commentId: T:MyProject.Common.GameMode.GameMode
+  id: GameMode
+  parent: MyProject.Common.GameMode
+  children:
+  - MyProject.Common.GameMode.GameMode.ApplySessionDescriptor(MyProject.Common.Host.GameSessionDescriptor)
+  - MyProject.Common.GameMode.GameMode.GetModule``1
+  - MyProject.Common.GameMode.GameMode.Initialize
+  - MyProject.Common.GameMode.GameMode.Modules
+  - MyProject.Common.GameMode.GameMode.OnDestroy
+  - MyProject.Common.GameMode.GameMode.OnInitialize
+  - MyProject.Common.GameMode.GameMode.OnShutdown
+  - MyProject.Common.GameMode.GameMode.OnStartup
+  - MyProject.Common.GameMode.GameMode.Publish``1(``0)
+  - MyProject.Common.GameMode.GameMode.RequestCommand(MyProject.Common.Host.GameCommandBase)
+  - MyProject.Common.GameMode.GameMode.SceneBus
+  - MyProject.Common.GameMode.GameMode.SessionDescriptor
+  - MyProject.Common.GameMode.GameMode.ShutdownModule
+  - MyProject.Common.GameMode.GameMode.StartupModule
+  - MyProject.Common.GameMode.GameMode.Subscribe``1(System.Action{``0})
+  - MyProject.Common.GameMode.GameMode.Unsubscribe``1(System.Action{``0})
+  langs:
+  - csharp
+  - vb
+  name: GameMode
+  nameWithType: GameMode
+  fullName: MyProject.Common.GameMode.GameMode
+  type: Class
+  namespace: MyProject.Common.GameMode
+  summary: 공통 게임 모드 베이스입니다.
+  example: []
+  syntax:
+    content: 'public abstract class GameMode : MonoBehaviour'
+    content.vb: Public MustInherit Class GameMode Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - MyProject.ExploreGame.Presentation.ExploreMode
+- uid: MyProject.Common.GameMode.GameMode.Modules
+  commentId: P:MyProject.Common.GameMode.GameMode.Modules
+  id: Modules
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: Modules
+  nameWithType: GameMode.Modules
+  fullName: MyProject.Common.GameMode.GameMode.Modules
+  type: Property
+  namespace: MyProject.Common.GameMode
+  summary: 등록된 모듈 목록입니다.
+  example: []
+  syntax:
+    content: public IReadOnlyList<IModule> Modules { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{MyProject.Common.GameMode.IModule}
+    content.vb: Public ReadOnly Property Modules As IReadOnlyList(Of IModule)
+  overload: MyProject.Common.GameMode.GameMode.Modules*
+- uid: MyProject.Common.GameMode.GameMode.SceneBus
+  commentId: P:MyProject.Common.GameMode.GameMode.SceneBus
+  id: SceneBus
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: SceneBus
+  nameWithType: GameMode.SceneBus
+  fullName: MyProject.Common.GameMode.GameMode.SceneBus
+  type: Property
+  namespace: MyProject.Common.GameMode
+  summary: 현재 씬에서 사용하는 이벤트 버스입니다.
+  example: []
+  syntax:
+    content: public GameEventBus.Scope SceneBus { get; }
+    parameters: []
+    return:
+      type: MyProject.Common.GameEvent.GameEventBus.Scope
+    content.vb: Public ReadOnly Property SceneBus As GameEventBus.Scope
+  overload: MyProject.Common.GameMode.GameMode.SceneBus*
+- uid: MyProject.Common.GameMode.GameMode.SessionDescriptor
+  commentId: P:MyProject.Common.GameMode.GameMode.SessionDescriptor
+  id: SessionDescriptor
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: SessionDescriptor
+  nameWithType: GameMode.SessionDescriptor
+  fullName: MyProject.Common.GameMode.GameMode.SessionDescriptor
+  type: Property
+  namespace: MyProject.Common.GameMode
+  summary: 적용된 세션 설명서입니다.
+  example: []
+  syntax:
+    content: public GameSessionDescriptor SessionDescriptor { get; }
+    parameters: []
+    return:
+      type: MyProject.Common.Host.GameSessionDescriptor
+    content.vb: Public Property SessionDescriptor As GameSessionDescriptor
+  overload: MyProject.Common.GameMode.GameMode.SessionDescriptor*
+- uid: MyProject.Common.GameMode.GameMode.Initialize
+  commentId: M:MyProject.Common.GameMode.GameMode.Initialize
+  id: Initialize
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: GameMode.Initialize()
+  fullName: MyProject.Common.GameMode.GameMode.Initialize()
+  type: Method
+  namespace: MyProject.Common.GameMode
+  summary: 모듈을 생성하고 초기화합니다.
+  example: []
+  syntax:
+    content: public void Initialize()
+    content.vb: Public Sub Initialize()
+  overload: MyProject.Common.GameMode.GameMode.Initialize*
+- uid: MyProject.Common.GameMode.GameMode.StartupModule
+  commentId: M:MyProject.Common.GameMode.GameMode.StartupModule
+  id: StartupModule
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: StartupModule()
+  nameWithType: GameMode.StartupModule()
+  fullName: MyProject.Common.GameMode.GameMode.StartupModule()
+  type: Method
+  namespace: MyProject.Common.GameMode
+  summary: 모듈의 Startup을 호출합니다.
+  example: []
+  syntax:
+    content: public void StartupModule()
+    content.vb: Public Sub StartupModule()
+  overload: MyProject.Common.GameMode.GameMode.StartupModule*
+- uid: MyProject.Common.GameMode.GameMode.ShutdownModule
+  commentId: M:MyProject.Common.GameMode.GameMode.ShutdownModule
+  id: ShutdownModule
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: ShutdownModule()
+  nameWithType: GameMode.ShutdownModule()
+  fullName: MyProject.Common.GameMode.GameMode.ShutdownModule()
+  type: Method
+  namespace: MyProject.Common.GameMode
+  summary: 모듈의 Shutdown을 호출합니다.
+  example: []
+  syntax:
+    content: public void ShutdownModule()
+    content.vb: Public Sub ShutdownModule()
+  overload: MyProject.Common.GameMode.GameMode.ShutdownModule*
+- uid: MyProject.Common.GameMode.GameMode.ApplySessionDescriptor(MyProject.Common.Host.GameSessionDescriptor)
+  commentId: M:MyProject.Common.GameMode.GameMode.ApplySessionDescriptor(MyProject.Common.Host.GameSessionDescriptor)
+  id: ApplySessionDescriptor(MyProject.Common.Host.GameSessionDescriptor)
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: ApplySessionDescriptor(GameSessionDescriptor)
+  nameWithType: GameMode.ApplySessionDescriptor(GameSessionDescriptor)
+  fullName: MyProject.Common.GameMode.GameMode.ApplySessionDescriptor(MyProject.Common.Host.GameSessionDescriptor)
+  type: Method
+  namespace: MyProject.Common.GameMode
+  summary: 호스트가 제공한 세션 설명서를 적용합니다.
+  example: []
+  syntax:
+    content: public void ApplySessionDescriptor(GameSessionDescriptor descriptor)
+    parameters:
+    - id: descriptor
+      type: MyProject.Common.Host.GameSessionDescriptor
+    content.vb: Public Sub ApplySessionDescriptor(descriptor As GameSessionDescriptor)
+  overload: MyProject.Common.GameMode.GameMode.ApplySessionDescriptor*
+- uid: MyProject.Common.GameMode.GameMode.GetModule``1
+  commentId: M:MyProject.Common.GameMode.GameMode.GetModule``1
+  id: GetModule``1
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: GetModule<T>()
+  nameWithType: GameMode.GetModule<T>()
+  fullName: MyProject.Common.GameMode.GameMode.GetModule<T>()
+  type: Method
+  namespace: MyProject.Common.GameMode
+  summary: 지정한 타입의 모듈을 반환합니다.
+  example: []
+  syntax:
+    content: 'public T GetModule<T>() where T : class, IModule'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function GetModule(Of T As {Class, IModule})() As T
+  overload: MyProject.Common.GameMode.GameMode.GetModule*
+  nameWithType.vb: GameMode.GetModule(Of T)()
+  fullName.vb: MyProject.Common.GameMode.GameMode.GetModule(Of T)()
+  name.vb: GetModule(Of T)()
+- uid: MyProject.Common.GameMode.GameMode.Subscribe``1(System.Action{``0})
+  commentId: M:MyProject.Common.GameMode.GameMode.Subscribe``1(System.Action{``0})
+  id: Subscribe``1(System.Action{``0})
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: Subscribe<TEvent>(Action<TEvent>)
+  nameWithType: GameMode.Subscribe<TEvent>(Action<TEvent>)
+  fullName: MyProject.Common.GameMode.GameMode.Subscribe<TEvent>(System.Action<TEvent>)
+  type: Method
+  namespace: MyProject.Common.GameMode
+  syntax:
+    content: 'public void Subscribe<TEvent>(Action<TEvent> handler) where TEvent : GameEventContext'
+    parameters:
+    - id: handler
+      type: System.Action{{TEvent}}
+    typeParameters:
+    - id: TEvent
+    content.vb: Public Sub Subscribe(Of TEvent As GameEventContext)(handler As Action(Of TEvent))
+  overload: MyProject.Common.GameMode.GameMode.Subscribe*
+  nameWithType.vb: GameMode.Subscribe(Of TEvent)(Action(Of TEvent))
+  fullName.vb: MyProject.Common.GameMode.GameMode.Subscribe(Of TEvent)(System.Action(Of TEvent))
+  name.vb: Subscribe(Of TEvent)(Action(Of TEvent))
+- uid: MyProject.Common.GameMode.GameMode.Unsubscribe``1(System.Action{``0})
+  commentId: M:MyProject.Common.GameMode.GameMode.Unsubscribe``1(System.Action{``0})
+  id: Unsubscribe``1(System.Action{``0})
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe<TEvent>(Action<TEvent>)
+  nameWithType: GameMode.Unsubscribe<TEvent>(Action<TEvent>)
+  fullName: MyProject.Common.GameMode.GameMode.Unsubscribe<TEvent>(System.Action<TEvent>)
+  type: Method
+  namespace: MyProject.Common.GameMode
+  syntax:
+    content: 'public void Unsubscribe<TEvent>(Action<TEvent> handler) where TEvent : GameEventContext'
+    parameters:
+    - id: handler
+      type: System.Action{{TEvent}}
+    typeParameters:
+    - id: TEvent
+    content.vb: Public Sub Unsubscribe(Of TEvent As GameEventContext)(handler As Action(Of TEvent))
+  overload: MyProject.Common.GameMode.GameMode.Unsubscribe*
+  nameWithType.vb: GameMode.Unsubscribe(Of TEvent)(Action(Of TEvent))
+  fullName.vb: MyProject.Common.GameMode.GameMode.Unsubscribe(Of TEvent)(System.Action(Of TEvent))
+  name.vb: Unsubscribe(Of TEvent)(Action(Of TEvent))
+- uid: MyProject.Common.GameMode.GameMode.Publish``1(``0)
+  commentId: M:MyProject.Common.GameMode.GameMode.Publish``1(``0)
+  id: Publish``1(``0)
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: Publish<TEvent>(TEvent)
+  nameWithType: GameMode.Publish<TEvent>(TEvent)
+  fullName: MyProject.Common.GameMode.GameMode.Publish<TEvent>(TEvent)
+  type: Method
+  namespace: MyProject.Common.GameMode
+  syntax:
+    content: 'public void Publish<TEvent>(TEvent context) where TEvent : GameEventContext'
+    parameters:
+    - id: context
+      type: '{TEvent}'
+    typeParameters:
+    - id: TEvent
+    content.vb: Public Sub Publish(Of TEvent As GameEventContext)(context As TEvent)
+  overload: MyProject.Common.GameMode.GameMode.Publish*
+  nameWithType.vb: GameMode.Publish(Of TEvent)(TEvent)
+  fullName.vb: MyProject.Common.GameMode.GameMode.Publish(Of TEvent)(TEvent)
+  name.vb: Publish(Of TEvent)(TEvent)
+- uid: MyProject.Common.GameMode.GameMode.OnDestroy
+  commentId: M:MyProject.Common.GameMode.GameMode.OnDestroy
+  id: OnDestroy
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: OnDestroy()
+  nameWithType: GameMode.OnDestroy()
+  fullName: MyProject.Common.GameMode.GameMode.OnDestroy()
+  type: Method
+  namespace: MyProject.Common.GameMode
+  syntax:
+    content: protected virtual void OnDestroy()
+    content.vb: Protected Overridable Sub OnDestroy()
+  overload: MyProject.Common.GameMode.GameMode.OnDestroy*
+- uid: MyProject.Common.GameMode.GameMode.OnInitialize
+  commentId: M:MyProject.Common.GameMode.GameMode.OnInitialize
+  id: OnInitialize
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: OnInitialize()
+  nameWithType: GameMode.OnInitialize()
+  fullName: MyProject.Common.GameMode.GameMode.OnInitialize()
+  type: Method
+  namespace: MyProject.Common.GameMode
+  summary: 모드 초기화 완료 시 호출됩니다.
+  example: []
+  syntax:
+    content: protected virtual void OnInitialize()
+    content.vb: Protected Overridable Sub OnInitialize()
+  overload: MyProject.Common.GameMode.GameMode.OnInitialize*
+- uid: MyProject.Common.GameMode.GameMode.OnStartup
+  commentId: M:MyProject.Common.GameMode.GameMode.OnStartup
+  id: OnStartup
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: OnStartup()
+  nameWithType: GameMode.OnStartup()
+  fullName: MyProject.Common.GameMode.GameMode.OnStartup()
+  type: Method
+  namespace: MyProject.Common.GameMode
+  summary: 모듈 Startup 이후 호출됩니다.
+  example: []
+  syntax:
+    content: protected virtual void OnStartup()
+    content.vb: Protected Overridable Sub OnStartup()
+  overload: MyProject.Common.GameMode.GameMode.OnStartup*
+- uid: MyProject.Common.GameMode.GameMode.OnShutdown
+  commentId: M:MyProject.Common.GameMode.GameMode.OnShutdown
+  id: OnShutdown
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: OnShutdown()
+  nameWithType: GameMode.OnShutdown()
+  fullName: MyProject.Common.GameMode.GameMode.OnShutdown()
+  type: Method
+  namespace: MyProject.Common.GameMode
+  summary: 모듈 Shutdown 이후 호출됩니다.
+  example: []
+  syntax:
+    content: protected virtual void OnShutdown()
+    content.vb: Protected Overridable Sub OnShutdown()
+  overload: MyProject.Common.GameMode.GameMode.OnShutdown*
+- uid: MyProject.Common.GameMode.GameMode.RequestCommand(MyProject.Common.Host.GameCommandBase)
+  commentId: M:MyProject.Common.GameMode.GameMode.RequestCommand(MyProject.Common.Host.GameCommandBase)
+  id: RequestCommand(MyProject.Common.Host.GameCommandBase)
+  parent: MyProject.Common.GameMode.GameMode
+  langs:
+  - csharp
+  - vb
+  name: RequestCommand(GameCommandBase)
+  nameWithType: GameMode.RequestCommand(GameCommandBase)
+  fullName: MyProject.Common.GameMode.GameMode.RequestCommand(MyProject.Common.Host.GameCommandBase)
+  type: Method
+  namespace: MyProject.Common.GameMode
+  summary: 게임 커맨드를 요청 합니다.
+  example: []
+  syntax:
+    content: public abstract void RequestCommand(GameCommandBase command)
+    parameters:
+    - id: command
+      type: MyProject.Common.Host.GameCommandBase
+    content.vb: Public MustOverride Sub RequestCommand(command As GameCommandBase)
+  overload: MyProject.Common.GameMode.GameMode.RequestCommand*
+references:
+- uid: MyProject.Common.GameMode
+  commentId: N:MyProject.Common.GameMode
+  href: MyProject.html
+  name: MyProject.Common.GameMode
+  nameWithType: MyProject.Common.GameMode
+  fullName: MyProject.Common.GameMode
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.GameMode.GameMode.Modules*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.Modules
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_Modules
+  name: Modules
+  nameWithType: GameMode.Modules
+  fullName: MyProject.Common.GameMode.GameMode.Modules
+- uid: System.Collections.Generic.IReadOnlyList{MyProject.Common.GameMode.IModule}
+  commentId: T:System.Collections.Generic.IReadOnlyList{MyProject.Common.GameMode.IModule}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IModule>
+  nameWithType: IReadOnlyList<IModule>
+  fullName: System.Collections.Generic.IReadOnlyList<MyProject.Common.GameMode.IModule>
+  nameWithType.vb: IReadOnlyList(Of IModule)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of MyProject.Common.GameMode.IModule)
+  name.vb: IReadOnlyList(Of IModule)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: MyProject.Common.GameMode.IModule
+    name: IModule
+    href: MyProject.Common.GameMode.IModule.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.Common.GameMode.IModule
+    name: IModule
+    href: MyProject.Common.GameMode.IModule.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MyProject.Common.GameMode.GameMode.SceneBus*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.SceneBus
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_SceneBus
+  name: SceneBus
+  nameWithType: GameMode.SceneBus
+  fullName: MyProject.Common.GameMode.GameMode.SceneBus
+- uid: MyProject.Common.GameEvent.GameEventBus.Scope
+  commentId: T:MyProject.Common.GameEvent.GameEventBus.Scope
+  parent: MyProject.Common.GameEvent
+  href: MyProject.Common.GameEvent.GameEventBus.html
+  name: GameEventBus.Scope
+  nameWithType: GameEventBus.Scope
+  fullName: MyProject.Common.GameEvent.GameEventBus.Scope
+  spec.csharp:
+  - uid: MyProject.Common.GameEvent.GameEventBus
+    name: GameEventBus
+    href: MyProject.Common.GameEvent.GameEventBus.html
+  - name: .
+  - uid: MyProject.Common.GameEvent.GameEventBus.Scope
+    name: Scope
+    href: MyProject.Common.GameEvent.GameEventBus.Scope.html
+  spec.vb:
+  - uid: MyProject.Common.GameEvent.GameEventBus
+    name: GameEventBus
+    href: MyProject.Common.GameEvent.GameEventBus.html
+  - name: .
+  - uid: MyProject.Common.GameEvent.GameEventBus.Scope
+    name: Scope
+    href: MyProject.Common.GameEvent.GameEventBus.Scope.html
+- uid: MyProject.Common.GameEvent
+  commentId: N:MyProject.Common.GameEvent
+  href: MyProject.html
+  name: MyProject.Common.GameEvent
+  nameWithType: MyProject.Common.GameEvent
+  fullName: MyProject.Common.GameEvent
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameEvent
+    name: GameEvent
+    href: MyProject.Common.GameEvent.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameEvent
+    name: GameEvent
+    href: MyProject.Common.GameEvent.html
+- uid: MyProject.Common.GameMode.GameMode.SessionDescriptor*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.SessionDescriptor
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_SessionDescriptor
+  name: SessionDescriptor
+  nameWithType: GameMode.SessionDescriptor
+  fullName: MyProject.Common.GameMode.GameMode.SessionDescriptor
+- uid: MyProject.Common.Host.GameSessionDescriptor
+  commentId: T:MyProject.Common.Host.GameSessionDescriptor
+  parent: MyProject.Common.Host
+  href: MyProject.Common.Host.GameSessionDescriptor.html
+  name: GameSessionDescriptor
+  nameWithType: GameSessionDescriptor
+  fullName: MyProject.Common.Host.GameSessionDescriptor
+- uid: MyProject.Common.Host
+  commentId: N:MyProject.Common.Host
+  href: MyProject.html
+  name: MyProject.Common.Host
+  nameWithType: MyProject.Common.Host
+  fullName: MyProject.Common.Host
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Host
+    name: Host
+    href: MyProject.Common.Host.html
+- uid: MyProject.Common.GameMode.GameMode.Initialize*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.Initialize
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_Initialize
+  name: Initialize
+  nameWithType: GameMode.Initialize
+  fullName: MyProject.Common.GameMode.GameMode.Initialize
+- uid: MyProject.Common.GameMode.GameMode.StartupModule*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.StartupModule
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_StartupModule
+  name: StartupModule
+  nameWithType: GameMode.StartupModule
+  fullName: MyProject.Common.GameMode.GameMode.StartupModule
+- uid: MyProject.Common.GameMode.GameMode.ShutdownModule*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.ShutdownModule
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_ShutdownModule
+  name: ShutdownModule
+  nameWithType: GameMode.ShutdownModule
+  fullName: MyProject.Common.GameMode.GameMode.ShutdownModule
+- uid: MyProject.Common.GameMode.GameMode.ApplySessionDescriptor*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.ApplySessionDescriptor
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_ApplySessionDescriptor_MyProject_Common_Host_GameSessionDescriptor_
+  name: ApplySessionDescriptor
+  nameWithType: GameMode.ApplySessionDescriptor
+  fullName: MyProject.Common.GameMode.GameMode.ApplySessionDescriptor
+- uid: MyProject.Common.GameMode.GameMode.GetModule*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.GetModule
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_GetModule__1
+  name: GetModule
+  nameWithType: GameMode.GetModule
+  fullName: MyProject.Common.GameMode.GameMode.GetModule
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MyProject.Common.GameMode.GameMode.Subscribe*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.Subscribe
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_Subscribe__1_System_Action___0__
+  name: Subscribe
+  nameWithType: GameMode.Subscribe
+  fullName: MyProject.Common.GameMode.GameMode.Subscribe
+- uid: System.Action{{TEvent}}
+  commentId: T:System.Action{`2}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<TEvent>
+  nameWithType: Action<TEvent>
+  fullName: System.Action<TEvent>
+  nameWithType.vb: Action(Of TEvent)
+  fullName.vb: System.Action(Of TEvent)
+  name.vb: Action(Of TEvent)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode.Unsubscribe*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.Unsubscribe
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_Unsubscribe__1_System_Action___0__
+  name: Unsubscribe
+  nameWithType: GameMode.Unsubscribe
+  fullName: MyProject.Common.GameMode.GameMode.Unsubscribe
+- uid: MyProject.Common.GameMode.GameMode.Publish*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.Publish
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_Publish__1___0_
+  name: Publish
+  nameWithType: GameMode.Publish
+  fullName: MyProject.Common.GameMode.GameMode.Publish
+- uid: '{TEvent}'
+  commentId: '!:TEvent'
+  definition: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: MyProject.Common.GameMode.GameMode.OnDestroy*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.OnDestroy
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_OnDestroy
+  name: OnDestroy
+  nameWithType: GameMode.OnDestroy
+  fullName: MyProject.Common.GameMode.GameMode.OnDestroy
+- uid: MyProject.Common.GameMode.GameMode.OnInitialize*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.OnInitialize
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_OnInitialize
+  name: OnInitialize
+  nameWithType: GameMode.OnInitialize
+  fullName: MyProject.Common.GameMode.GameMode.OnInitialize
+- uid: MyProject.Common.GameMode.GameMode.OnStartup*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.OnStartup
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_OnStartup
+  name: OnStartup
+  nameWithType: GameMode.OnStartup
+  fullName: MyProject.Common.GameMode.GameMode.OnStartup
+- uid: MyProject.Common.GameMode.GameMode.OnShutdown*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.OnShutdown
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_OnShutdown
+  name: OnShutdown
+  nameWithType: GameMode.OnShutdown
+  fullName: MyProject.Common.GameMode.GameMode.OnShutdown
+- uid: MyProject.Common.GameMode.GameMode.RequestCommand*
+  commentId: Overload:MyProject.Common.GameMode.GameMode.RequestCommand
+  href: MyProject.Common.GameMode.GameMode.html#MyProject_Common_GameMode_GameMode_RequestCommand_MyProject_Common_Host_GameCommandBase_
+  name: RequestCommand
+  nameWithType: GameMode.RequestCommand
+  fullName: MyProject.Common.GameMode.GameMode.RequestCommand
+- uid: MyProject.Common.Host.GameCommandBase
+  commentId: T:MyProject.Common.Host.GameCommandBase
+  parent: MyProject.Common.Host
+  href: MyProject.Common.Host.GameCommandBase.html
+  name: GameCommandBase
+  nameWithType: GameCommandBase
+  fullName: MyProject.Common.Host.GameCommandBase

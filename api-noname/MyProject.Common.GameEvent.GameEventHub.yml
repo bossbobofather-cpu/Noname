@@ -1,0 +1,533 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.GameEvent.GameEventHub
+  commentId: T:MyProject.Common.GameEvent.GameEventHub
+  id: GameEventHub
+  parent: MyProject.Common.GameEvent
+  children:
+  - MyProject.Common.GameEvent.GameEventHub.Global
+  - MyProject.Common.GameEvent.GameEventHub.Publish``1(``0)
+  - MyProject.Common.GameEvent.GameEventHub.Scene
+  - MyProject.Common.GameEvent.GameEventHub.Subscribe``1(System.Action{``0})
+  - MyProject.Common.GameEvent.GameEventHub.Unsubscribe``1(System.Action{``0})
+  langs:
+  - csharp
+  - vb
+  name: GameEventHub
+  nameWithType: GameEventHub
+  fullName: MyProject.Common.GameEvent.GameEventHub
+  type: Class
+  namespace: MyProject.Common.GameEvent
+  summary: 전역/씬 이벤트 버스를 간단히 접근하기 위한 허브입니다.
+  example: []
+  syntax:
+    content: public static class GameEventHub
+    content.vb: Public Module GameEventHub
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.Common.GameEvent.GameEventHub.Global
+  commentId: P:MyProject.Common.GameEvent.GameEventHub.Global
+  id: Global
+  parent: MyProject.Common.GameEvent.GameEventHub
+  langs:
+  - csharp
+  - vb
+  name: Global
+  nameWithType: GameEventHub.Global
+  fullName: MyProject.Common.GameEvent.GameEventHub.Global
+  type: Property
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: public static GameEventBus.Scope Global { get; }
+    parameters: []
+    return:
+      type: MyProject.Common.GameEvent.GameEventBus.Scope
+    content.vb: Public Shared ReadOnly Property [Global] As GameEventBus.Scope
+  overload: MyProject.Common.GameEvent.GameEventHub.Global*
+- uid: MyProject.Common.GameEvent.GameEventHub.Scene
+  commentId: P:MyProject.Common.GameEvent.GameEventHub.Scene
+  id: Scene
+  parent: MyProject.Common.GameEvent.GameEventHub
+  langs:
+  - csharp
+  - vb
+  name: Scene
+  nameWithType: GameEventHub.Scene
+  fullName: MyProject.Common.GameEvent.GameEventHub.Scene
+  type: Property
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: public static GameEventBus.Scope Scene { get; }
+    parameters: []
+    return:
+      type: MyProject.Common.GameEvent.GameEventBus.Scope
+    content.vb: Public Shared ReadOnly Property Scene As GameEventBus.Scope
+  overload: MyProject.Common.GameEvent.GameEventHub.Scene*
+- uid: MyProject.Common.GameEvent.GameEventHub.Subscribe``1(System.Action{``0})
+  commentId: M:MyProject.Common.GameEvent.GameEventHub.Subscribe``1(System.Action{``0})
+  id: Subscribe``1(System.Action{``0})
+  parent: MyProject.Common.GameEvent.GameEventHub
+  langs:
+  - csharp
+  - vb
+  name: Subscribe<TEvent>(Action<TEvent>)
+  nameWithType: GameEventHub.Subscribe<TEvent>(Action<TEvent>)
+  fullName: MyProject.Common.GameEvent.GameEventHub.Subscribe<TEvent>(System.Action<TEvent>)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: 'public static void Subscribe<TEvent>(Action<TEvent> handler) where TEvent : GameEventContext'
+    parameters:
+    - id: handler
+      type: System.Action{{TEvent}}
+    typeParameters:
+    - id: TEvent
+    content.vb: Public Shared Sub Subscribe(Of TEvent As GameEventContext)(handler As Action(Of TEvent))
+  overload: MyProject.Common.GameEvent.GameEventHub.Subscribe*
+  nameWithType.vb: GameEventHub.Subscribe(Of TEvent)(Action(Of TEvent))
+  fullName.vb: MyProject.Common.GameEvent.GameEventHub.Subscribe(Of TEvent)(System.Action(Of TEvent))
+  name.vb: Subscribe(Of TEvent)(Action(Of TEvent))
+- uid: MyProject.Common.GameEvent.GameEventHub.Unsubscribe``1(System.Action{``0})
+  commentId: M:MyProject.Common.GameEvent.GameEventHub.Unsubscribe``1(System.Action{``0})
+  id: Unsubscribe``1(System.Action{``0})
+  parent: MyProject.Common.GameEvent.GameEventHub
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe<TEvent>(Action<TEvent>)
+  nameWithType: GameEventHub.Unsubscribe<TEvent>(Action<TEvent>)
+  fullName: MyProject.Common.GameEvent.GameEventHub.Unsubscribe<TEvent>(System.Action<TEvent>)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: 'public static void Unsubscribe<TEvent>(Action<TEvent> handler) where TEvent : GameEventContext'
+    parameters:
+    - id: handler
+      type: System.Action{{TEvent}}
+    typeParameters:
+    - id: TEvent
+    content.vb: Public Shared Sub Unsubscribe(Of TEvent As GameEventContext)(handler As Action(Of TEvent))
+  overload: MyProject.Common.GameEvent.GameEventHub.Unsubscribe*
+  nameWithType.vb: GameEventHub.Unsubscribe(Of TEvent)(Action(Of TEvent))
+  fullName.vb: MyProject.Common.GameEvent.GameEventHub.Unsubscribe(Of TEvent)(System.Action(Of TEvent))
+  name.vb: Unsubscribe(Of TEvent)(Action(Of TEvent))
+- uid: MyProject.Common.GameEvent.GameEventHub.Publish``1(``0)
+  commentId: M:MyProject.Common.GameEvent.GameEventHub.Publish``1(``0)
+  id: Publish``1(``0)
+  parent: MyProject.Common.GameEvent.GameEventHub
+  langs:
+  - csharp
+  - vb
+  name: Publish<TEvent>(TEvent)
+  nameWithType: GameEventHub.Publish<TEvent>(TEvent)
+  fullName: MyProject.Common.GameEvent.GameEventHub.Publish<TEvent>(TEvent)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: 'public static void Publish<TEvent>(TEvent context) where TEvent : GameEventContext'
+    parameters:
+    - id: context
+      type: '{TEvent}'
+    typeParameters:
+    - id: TEvent
+    content.vb: Public Shared Sub Publish(Of TEvent As GameEventContext)(context As TEvent)
+  overload: MyProject.Common.GameEvent.GameEventHub.Publish*
+  nameWithType.vb: GameEventHub.Publish(Of TEvent)(TEvent)
+  fullName.vb: MyProject.Common.GameEvent.GameEventHub.Publish(Of TEvent)(TEvent)
+  name.vb: Publish(Of TEvent)(TEvent)
+references:
+- uid: MyProject.Common.GameEvent
+  commentId: N:MyProject.Common.GameEvent
+  href: MyProject.html
+  name: MyProject.Common.GameEvent
+  nameWithType: MyProject.Common.GameEvent
+  fullName: MyProject.Common.GameEvent
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameEvent
+    name: GameEvent
+    href: MyProject.Common.GameEvent.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameEvent
+    name: GameEvent
+    href: MyProject.Common.GameEvent.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.GameEvent.GameEventHub.Global*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventHub.Global
+  href: MyProject.Common.GameEvent.GameEventHub.html#MyProject_Common_GameEvent_GameEventHub_Global
+  name: Global
+  nameWithType: GameEventHub.Global
+  fullName: MyProject.Common.GameEvent.GameEventHub.Global
+- uid: MyProject.Common.GameEvent.GameEventBus.Scope
+  commentId: T:MyProject.Common.GameEvent.GameEventBus.Scope
+  parent: MyProject.Common.GameEvent
+  href: MyProject.Common.GameEvent.GameEventBus.html
+  name: GameEventBus.Scope
+  nameWithType: GameEventBus.Scope
+  fullName: MyProject.Common.GameEvent.GameEventBus.Scope
+  spec.csharp:
+  - uid: MyProject.Common.GameEvent.GameEventBus
+    name: GameEventBus
+    href: MyProject.Common.GameEvent.GameEventBus.html
+  - name: .
+  - uid: MyProject.Common.GameEvent.GameEventBus.Scope
+    name: Scope
+    href: MyProject.Common.GameEvent.GameEventBus.Scope.html
+  spec.vb:
+  - uid: MyProject.Common.GameEvent.GameEventBus
+    name: GameEventBus
+    href: MyProject.Common.GameEvent.GameEventBus.html
+  - name: .
+  - uid: MyProject.Common.GameEvent.GameEventBus.Scope
+    name: Scope
+    href: MyProject.Common.GameEvent.GameEventBus.Scope.html
+- uid: MyProject.Common.GameEvent.GameEventHub.Scene*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventHub.Scene
+  href: MyProject.Common.GameEvent.GameEventHub.html#MyProject_Common_GameEvent_GameEventHub_Scene
+  name: Scene
+  nameWithType: GameEventHub.Scene
+  fullName: MyProject.Common.GameEvent.GameEventHub.Scene
+- uid: MyProject.Common.GameEvent.GameEventHub.Subscribe*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventHub.Subscribe
+  href: MyProject.Common.GameEvent.GameEventHub.html#MyProject_Common_GameEvent_GameEventHub_Subscribe__1_System_Action___0__
+  name: Subscribe
+  nameWithType: GameEventHub.Subscribe
+  fullName: MyProject.Common.GameEvent.GameEventHub.Subscribe
+- uid: System.Action{{TEvent}}
+  commentId: T:System.Action{`2}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<TEvent>
+  nameWithType: Action<TEvent>
+  fullName: System.Action<TEvent>
+  nameWithType.vb: Action(Of TEvent)
+  fullName.vb: System.Action(Of TEvent)
+  name.vb: Action(Of TEvent)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MyProject.Common.GameEvent.GameEventHub.Unsubscribe*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventHub.Unsubscribe
+  href: MyProject.Common.GameEvent.GameEventHub.html#MyProject_Common_GameEvent_GameEventHub_Unsubscribe__1_System_Action___0__
+  name: Unsubscribe
+  nameWithType: GameEventHub.Unsubscribe
+  fullName: MyProject.Common.GameEvent.GameEventHub.Unsubscribe
+- uid: MyProject.Common.GameEvent.GameEventHub.Publish*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventHub.Publish
+  href: MyProject.Common.GameEvent.GameEventHub.html#MyProject_Common_GameEvent_GameEventHub_Publish__1___0_
+  name: Publish
+  nameWithType: GameEventHub.Publish
+  fullName: MyProject.Common.GameEvent.GameEventHub.Publish
+- uid: '{TEvent}'
+  commentId: '!:TEvent'
+  definition: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent

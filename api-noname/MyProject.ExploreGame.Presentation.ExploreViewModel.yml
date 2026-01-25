@@ -1,0 +1,566 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel
+  commentId: T:MyProject.ExploreGame.Presentation.ExploreViewModel
+  id: ExploreViewModel
+  parent: MyProject.ExploreGame.Presentation
+  children:
+  - MyProject.ExploreGame.Presentation.ExploreViewModel.#ctor
+  - MyProject.ExploreGame.Presentation.ExploreViewModel.ApplySnapshot(MyProject.ExploreGame.Domain.ExploreStateSnapshot,System.Int64)
+  - MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentCombat
+  - MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentDungeon
+  - MyProject.ExploreGame.Presentation.ExploreViewModel.GetStatusSummary
+  - MyProject.ExploreGame.Presentation.ExploreViewModel.LocalCharacter
+  - MyProject.ExploreGame.Presentation.ExploreViewModel.SessionPhase
+  langs:
+  - csharp
+  - vb
+  name: ExploreViewModel
+  nameWithType: ExploreViewModel
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel
+  type: Class
+  namespace: MyProject.ExploreGame.Presentation
+  summary: >-
+    탐험 게임의 View Model입니다.
+
+    Snapshot 데이터를 UI에 표시 가능한 형태로 제공합니다.
+  example: []
+  syntax:
+    content: public sealed class ExploreViewModel
+    content.vb: Public NotInheritable Class ExploreViewModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.SessionPhase
+  commentId: P:MyProject.ExploreGame.Presentation.ExploreViewModel.SessionPhase
+  id: SessionPhase
+  parent: MyProject.ExploreGame.Presentation.ExploreViewModel
+  langs:
+  - csharp
+  - vb
+  name: SessionPhase
+  nameWithType: ExploreViewModel.SessionPhase
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.SessionPhase
+  type: Property
+  namespace: MyProject.ExploreGame.Presentation
+  summary: 현재 세션 단계입니다.
+  example: []
+  syntax:
+    content: public ExploreSessionPhase SessionPhase { get; }
+    parameters: []
+    return:
+      type: MyProject.ExploreGame.Domain.ExploreSessionPhase
+    content.vb: Public Property SessionPhase As ExploreSessionPhase
+  overload: MyProject.ExploreGame.Presentation.ExploreViewModel.SessionPhase*
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentDungeon
+  commentId: P:MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentDungeon
+  id: CurrentDungeon
+  parent: MyProject.ExploreGame.Presentation.ExploreViewModel
+  langs:
+  - csharp
+  - vb
+  name: CurrentDungeon
+  nameWithType: ExploreViewModel.CurrentDungeon
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentDungeon
+  type: Property
+  namespace: MyProject.ExploreGame.Presentation
+  summary: 현재 던전 정보입니다.
+  example: []
+  syntax:
+    content: public ExploreDungeonSnapshot CurrentDungeon { get; }
+    parameters: []
+    return:
+      type: MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
+    content.vb: Public Property CurrentDungeon As ExploreDungeonSnapshot
+  overload: MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentDungeon*
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentCombat
+  commentId: P:MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentCombat
+  id: CurrentCombat
+  parent: MyProject.ExploreGame.Presentation.ExploreViewModel
+  langs:
+  - csharp
+  - vb
+  name: CurrentCombat
+  nameWithType: ExploreViewModel.CurrentCombat
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentCombat
+  type: Property
+  namespace: MyProject.ExploreGame.Presentation
+  summary: 현재 전투 정보입니다.
+  example: []
+  syntax:
+    content: public ExploreCombatSnapshot CurrentCombat { get; }
+    parameters: []
+    return:
+      type: MyProject.ExploreGame.Domain.ExploreCombatSnapshot
+    content.vb: Public Property CurrentCombat As ExploreCombatSnapshot
+  overload: MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentCombat*
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.LocalCharacter
+  commentId: P:MyProject.ExploreGame.Presentation.ExploreViewModel.LocalCharacter
+  id: LocalCharacter
+  parent: MyProject.ExploreGame.Presentation.ExploreViewModel
+  langs:
+  - csharp
+  - vb
+  name: LocalCharacter
+  nameWithType: ExploreViewModel.LocalCharacter
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.LocalCharacter
+  type: Property
+  namespace: MyProject.ExploreGame.Presentation
+  summary: 로컬 플레이어 캐릭터 정보입니다.
+  example: []
+  syntax:
+    content: public ExploreCharacterSnapshot LocalCharacter { get; }
+    parameters: []
+    return:
+      type: MyProject.ExploreGame.Domain.ExploreCharacterSnapshot
+    content.vb: Public Property LocalCharacter As ExploreCharacterSnapshot
+  overload: MyProject.ExploreGame.Presentation.ExploreViewModel.LocalCharacter*
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.#ctor
+  commentId: M:MyProject.ExploreGame.Presentation.ExploreViewModel.#ctor
+  id: '#ctor'
+  parent: MyProject.ExploreGame.Presentation.ExploreViewModel
+  langs:
+  - csharp
+  - vb
+  name: ExploreViewModel()
+  nameWithType: ExploreViewModel.ExploreViewModel()
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.ExploreViewModel()
+  type: Constructor
+  namespace: MyProject.ExploreGame.Presentation
+  summary: ViewModel을 생성합니다.
+  example: []
+  syntax:
+    content: public ExploreViewModel()
+    content.vb: Public Sub New()
+  overload: MyProject.ExploreGame.Presentation.ExploreViewModel.#ctor*
+  nameWithType.vb: ExploreViewModel.New()
+  fullName.vb: MyProject.ExploreGame.Presentation.ExploreViewModel.New()
+  name.vb: New()
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.ApplySnapshot(MyProject.ExploreGame.Domain.ExploreStateSnapshot,System.Int64)
+  commentId: M:MyProject.ExploreGame.Presentation.ExploreViewModel.ApplySnapshot(MyProject.ExploreGame.Domain.ExploreStateSnapshot,System.Int64)
+  id: ApplySnapshot(MyProject.ExploreGame.Domain.ExploreStateSnapshot,System.Int64)
+  parent: MyProject.ExploreGame.Presentation.ExploreViewModel
+  langs:
+  - csharp
+  - vb
+  name: ApplySnapshot(ExploreStateSnapshot, long)
+  nameWithType: ExploreViewModel.ApplySnapshot(ExploreStateSnapshot, long)
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.ApplySnapshot(MyProject.ExploreGame.Domain.ExploreStateSnapshot, long)
+  type: Method
+  namespace: MyProject.ExploreGame.Presentation
+  summary: Snapshot을 적용하여 ViewModel을 업데이트합니다.
+  example: []
+  syntax:
+    content: public void ApplySnapshot(ExploreStateSnapshot snapshot, long localPlayerId)
+    parameters:
+    - id: snapshot
+      type: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+    - id: localPlayerId
+      type: System.Int64
+    content.vb: Public Sub ApplySnapshot(snapshot As ExploreStateSnapshot, localPlayerId As Long)
+  overload: MyProject.ExploreGame.Presentation.ExploreViewModel.ApplySnapshot*
+  nameWithType.vb: ExploreViewModel.ApplySnapshot(ExploreStateSnapshot, Long)
+  fullName.vb: MyProject.ExploreGame.Presentation.ExploreViewModel.ApplySnapshot(MyProject.ExploreGame.Domain.ExploreStateSnapshot, Long)
+  name.vb: ApplySnapshot(ExploreStateSnapshot, Long)
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.GetStatusSummary
+  commentId: M:MyProject.ExploreGame.Presentation.ExploreViewModel.GetStatusSummary
+  id: GetStatusSummary
+  parent: MyProject.ExploreGame.Presentation.ExploreViewModel
+  langs:
+  - csharp
+  - vb
+  name: GetStatusSummary()
+  nameWithType: ExploreViewModel.GetStatusSummary()
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.GetStatusSummary()
+  type: Method
+  namespace: MyProject.ExploreGame.Presentation
+  summary: 현재 상태의 요약 문자열을 반환합니다.
+  example: []
+  syntax:
+    content: public string GetStatusSummary()
+    return:
+      type: System.String
+    content.vb: Public Function GetStatusSummary() As String
+  overload: MyProject.ExploreGame.Presentation.ExploreViewModel.GetStatusSummary*
+references:
+- uid: MyProject.ExploreGame.Presentation
+  commentId: N:MyProject.ExploreGame.Presentation
+  href: MyProject.html
+  name: MyProject.ExploreGame.Presentation
+  nameWithType: MyProject.ExploreGame.Presentation
+  fullName: MyProject.ExploreGame.Presentation
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Presentation
+    name: Presentation
+    href: MyProject.ExploreGame.Presentation.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Presentation
+    name: Presentation
+    href: MyProject.ExploreGame.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.SessionPhase*
+  commentId: Overload:MyProject.ExploreGame.Presentation.ExploreViewModel.SessionPhase
+  href: MyProject.ExploreGame.Presentation.ExploreViewModel.html#MyProject_ExploreGame_Presentation_ExploreViewModel_SessionPhase
+  name: SessionPhase
+  nameWithType: ExploreViewModel.SessionPhase
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.SessionPhase
+- uid: MyProject.ExploreGame.Domain.ExploreSessionPhase
+  commentId: T:MyProject.ExploreGame.Domain.ExploreSessionPhase
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreSessionPhase.html
+  name: ExploreSessionPhase
+  nameWithType: ExploreSessionPhase
+  fullName: MyProject.ExploreGame.Domain.ExploreSessionPhase
+- uid: MyProject.ExploreGame.Domain
+  commentId: N:MyProject.ExploreGame.Domain
+  href: MyProject.html
+  name: MyProject.ExploreGame.Domain
+  nameWithType: MyProject.ExploreGame.Domain
+  fullName: MyProject.ExploreGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentDungeon*
+  commentId: Overload:MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentDungeon
+  href: MyProject.ExploreGame.Presentation.ExploreViewModel.html#MyProject_ExploreGame_Presentation_ExploreViewModel_CurrentDungeon
+  name: CurrentDungeon
+  nameWithType: ExploreViewModel.CurrentDungeon
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentDungeon
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreDungeonSnapshot.html
+  name: ExploreDungeonSnapshot
+  nameWithType: ExploreDungeonSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentCombat*
+  commentId: Overload:MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentCombat
+  href: MyProject.ExploreGame.Presentation.ExploreViewModel.html#MyProject_ExploreGame_Presentation_ExploreViewModel_CurrentCombat
+  name: CurrentCombat
+  nameWithType: ExploreViewModel.CurrentCombat
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.CurrentCombat
+- uid: MyProject.ExploreGame.Domain.ExploreCombatSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreCombatSnapshot
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreCombatSnapshot.html
+  name: ExploreCombatSnapshot
+  nameWithType: ExploreCombatSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatSnapshot
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.LocalCharacter*
+  commentId: Overload:MyProject.ExploreGame.Presentation.ExploreViewModel.LocalCharacter
+  href: MyProject.ExploreGame.Presentation.ExploreViewModel.html#MyProject_ExploreGame_Presentation_ExploreViewModel_LocalCharacter
+  name: LocalCharacter
+  nameWithType: ExploreViewModel.LocalCharacter
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.LocalCharacter
+- uid: MyProject.ExploreGame.Domain.ExploreCharacterSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreCharacterSnapshot
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreCharacterSnapshot.html
+  name: ExploreCharacterSnapshot
+  nameWithType: ExploreCharacterSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreCharacterSnapshot
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.#ctor*
+  commentId: Overload:MyProject.ExploreGame.Presentation.ExploreViewModel.#ctor
+  href: MyProject.ExploreGame.Presentation.ExploreViewModel.html#MyProject_ExploreGame_Presentation_ExploreViewModel__ctor
+  name: ExploreViewModel
+  nameWithType: ExploreViewModel.ExploreViewModel
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.ExploreViewModel
+  nameWithType.vb: ExploreViewModel.New
+  fullName.vb: MyProject.ExploreGame.Presentation.ExploreViewModel.New
+  name.vb: New
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.ApplySnapshot*
+  commentId: Overload:MyProject.ExploreGame.Presentation.ExploreViewModel.ApplySnapshot
+  href: MyProject.ExploreGame.Presentation.ExploreViewModel.html#MyProject_ExploreGame_Presentation_ExploreViewModel_ApplySnapshot_MyProject_ExploreGame_Domain_ExploreStateSnapshot_System_Int64_
+  name: ApplySnapshot
+  nameWithType: ExploreViewModel.ApplySnapshot
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.ApplySnapshot
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreStateSnapshot.html
+  name: ExploreStateSnapshot
+  nameWithType: ExploreStateSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MyProject.ExploreGame.Presentation.ExploreViewModel.GetStatusSummary*
+  commentId: Overload:MyProject.ExploreGame.Presentation.ExploreViewModel.GetStatusSummary
+  href: MyProject.ExploreGame.Presentation.ExploreViewModel.html#MyProject_ExploreGame_Presentation_ExploreViewModel_GetStatusSummary
+  name: GetStatusSummary
+  nameWithType: ExploreViewModel.GetStatusSummary
+  fullName: MyProject.ExploreGame.Presentation.ExploreViewModel.GetStatusSummary
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

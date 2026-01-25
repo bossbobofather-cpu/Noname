@@ -1,0 +1,772 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.GameEvent.GameEventBus
+  commentId: T:MyProject.Common.GameEvent.GameEventBus
+  id: GameEventBus
+  parent: MyProject.Common.GameEvent
+  children:
+  - MyProject.Common.GameEvent.GameEventBus.ClearGlobal
+  - MyProject.Common.GameEvent.GameEventBus.ClearScene(Scene)
+  - MyProject.Common.GameEvent.GameEventBus.ClearScene(System.Int32)
+  - MyProject.Common.GameEvent.GameEventBus.ForScene(Scene)
+  - MyProject.Common.GameEvent.GameEventBus.ForScene(System.Int32)
+  - MyProject.Common.GameEvent.GameEventBus.Global
+  - MyProject.Common.GameEvent.GameEventBus.Publish``1(``0)
+  - MyProject.Common.GameEvent.GameEventBus.ResetAll
+  - MyProject.Common.GameEvent.GameEventBus.Scene
+  - MyProject.Common.GameEvent.GameEventBus.SetActiveScene(Scene)
+  - MyProject.Common.GameEvent.GameEventBus.Subscribe``1(System.Action{``0})
+  - MyProject.Common.GameEvent.GameEventBus.TrySetActiveScene(Scene)
+  - MyProject.Common.GameEvent.GameEventBus.Unsubscribe``1(System.Action{``0})
+  langs:
+  - csharp
+  - vb
+  name: GameEventBus
+  nameWithType: GameEventBus
+  fullName: MyProject.Common.GameEvent.GameEventBus
+  type: Class
+  namespace: MyProject.Common.GameEvent
+  summary: 전역/씬 스코프를 가진 게임 이벤트 버스입니다.
+  example: []
+  syntax:
+    content: public static class GameEventBus
+    content.vb: Public Module GameEventBus
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.Common.GameEvent.GameEventBus.Global
+  commentId: P:MyProject.Common.GameEvent.GameEventBus.Global
+  id: Global
+  parent: MyProject.Common.GameEvent.GameEventBus
+  langs:
+  - csharp
+  - vb
+  name: Global
+  nameWithType: GameEventBus.Global
+  fullName: MyProject.Common.GameEvent.GameEventBus.Global
+  type: Property
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: public static GameEventBus.Scope Global { get; }
+    parameters: []
+    return:
+      type: MyProject.Common.GameEvent.GameEventBus.Scope
+    content.vb: Public Shared ReadOnly Property [Global] As GameEventBus.Scope
+  overload: MyProject.Common.GameEvent.GameEventBus.Global*
+- uid: MyProject.Common.GameEvent.GameEventBus.Scene
+  commentId: P:MyProject.Common.GameEvent.GameEventBus.Scene
+  id: Scene
+  parent: MyProject.Common.GameEvent.GameEventBus
+  langs:
+  - csharp
+  - vb
+  name: Scene
+  nameWithType: GameEventBus.Scene
+  fullName: MyProject.Common.GameEvent.GameEventBus.Scene
+  type: Property
+  namespace: MyProject.Common.GameEvent
+  summary: 현재 Active 씬에 해당하는 버스입니다.
+  example: []
+  syntax:
+    content: public static GameEventBus.Scope Scene { get; }
+    parameters: []
+    return:
+      type: MyProject.Common.GameEvent.GameEventBus.Scope
+    content.vb: Public Shared ReadOnly Property Scene As GameEventBus.Scope
+  overload: MyProject.Common.GameEvent.GameEventBus.Scene*
+- uid: MyProject.Common.GameEvent.GameEventBus.Subscribe``1(System.Action{``0})
+  commentId: M:MyProject.Common.GameEvent.GameEventBus.Subscribe``1(System.Action{``0})
+  id: Subscribe``1(System.Action{``0})
+  parent: MyProject.Common.GameEvent.GameEventBus
+  langs:
+  - csharp
+  - vb
+  name: Subscribe<TEvent>(Action<TEvent>)
+  nameWithType: GameEventBus.Subscribe<TEvent>(Action<TEvent>)
+  fullName: MyProject.Common.GameEvent.GameEventBus.Subscribe<TEvent>(System.Action<TEvent>)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  summary: 이벤트 타입의 스코프에 맞춰 구독합니다.
+  example: []
+  syntax:
+    content: 'public static void Subscribe<TEvent>(Action<TEvent> handler) where TEvent : GameEventContext'
+    parameters:
+    - id: handler
+      type: System.Action{{TEvent}}
+    typeParameters:
+    - id: TEvent
+    content.vb: Public Shared Sub Subscribe(Of TEvent As GameEventContext)(handler As Action(Of TEvent))
+  overload: MyProject.Common.GameEvent.GameEventBus.Subscribe*
+  nameWithType.vb: GameEventBus.Subscribe(Of TEvent)(Action(Of TEvent))
+  fullName.vb: MyProject.Common.GameEvent.GameEventBus.Subscribe(Of TEvent)(System.Action(Of TEvent))
+  name.vb: Subscribe(Of TEvent)(Action(Of TEvent))
+- uid: MyProject.Common.GameEvent.GameEventBus.Unsubscribe``1(System.Action{``0})
+  commentId: M:MyProject.Common.GameEvent.GameEventBus.Unsubscribe``1(System.Action{``0})
+  id: Unsubscribe``1(System.Action{``0})
+  parent: MyProject.Common.GameEvent.GameEventBus
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe<TEvent>(Action<TEvent>)
+  nameWithType: GameEventBus.Unsubscribe<TEvent>(Action<TEvent>)
+  fullName: MyProject.Common.GameEvent.GameEventBus.Unsubscribe<TEvent>(System.Action<TEvent>)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  summary: 이벤트 타입의 스코프에 맞춰 구독을 해제합니다.
+  example: []
+  syntax:
+    content: 'public static void Unsubscribe<TEvent>(Action<TEvent> handler) where TEvent : GameEventContext'
+    parameters:
+    - id: handler
+      type: System.Action{{TEvent}}
+    typeParameters:
+    - id: TEvent
+    content.vb: Public Shared Sub Unsubscribe(Of TEvent As GameEventContext)(handler As Action(Of TEvent))
+  overload: MyProject.Common.GameEvent.GameEventBus.Unsubscribe*
+  nameWithType.vb: GameEventBus.Unsubscribe(Of TEvent)(Action(Of TEvent))
+  fullName.vb: MyProject.Common.GameEvent.GameEventBus.Unsubscribe(Of TEvent)(System.Action(Of TEvent))
+  name.vb: Unsubscribe(Of TEvent)(Action(Of TEvent))
+- uid: MyProject.Common.GameEvent.GameEventBus.Publish``1(``0)
+  commentId: M:MyProject.Common.GameEvent.GameEventBus.Publish``1(``0)
+  id: Publish``1(``0)
+  parent: MyProject.Common.GameEvent.GameEventBus
+  langs:
+  - csharp
+  - vb
+  name: Publish<TEvent>(TEvent)
+  nameWithType: GameEventBus.Publish<TEvent>(TEvent)
+  fullName: MyProject.Common.GameEvent.GameEventBus.Publish<TEvent>(TEvent)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  summary: 이벤트 타입의 스코프에 맞춰 발행합니다.
+  example: []
+  syntax:
+    content: 'public static void Publish<TEvent>(TEvent context) where TEvent : GameEventContext'
+    parameters:
+    - id: context
+      type: '{TEvent}'
+    typeParameters:
+    - id: TEvent
+    content.vb: Public Shared Sub Publish(Of TEvent As GameEventContext)(context As TEvent)
+  overload: MyProject.Common.GameEvent.GameEventBus.Publish*
+  nameWithType.vb: GameEventBus.Publish(Of TEvent)(TEvent)
+  fullName.vb: MyProject.Common.GameEvent.GameEventBus.Publish(Of TEvent)(TEvent)
+  name.vb: Publish(Of TEvent)(TEvent)
+- uid: MyProject.Common.GameEvent.GameEventBus.ForScene(Scene)
+  commentId: M:MyProject.Common.GameEvent.GameEventBus.ForScene(Scene)
+  id: ForScene(Scene)
+  parent: MyProject.Common.GameEvent.GameEventBus
+  langs:
+  - csharp
+  - vb
+  name: ForScene(Scene)
+  nameWithType: GameEventBus.ForScene(Scene)
+  fullName: MyProject.Common.GameEvent.GameEventBus.ForScene(Scene)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: public static GameEventBus.Scope ForScene(Scene scene)
+    parameters:
+    - id: scene
+      type: Scene
+    return:
+      type: MyProject.Common.GameEvent.GameEventBus.Scope
+    content.vb: Public Shared Function ForScene(scene As Scene) As GameEventBus.Scope
+  overload: MyProject.Common.GameEvent.GameEventBus.ForScene*
+- uid: MyProject.Common.GameEvent.GameEventBus.ForScene(System.Int32)
+  commentId: M:MyProject.Common.GameEvent.GameEventBus.ForScene(System.Int32)
+  id: ForScene(System.Int32)
+  parent: MyProject.Common.GameEvent.GameEventBus
+  langs:
+  - csharp
+  - vb
+  name: ForScene(int)
+  nameWithType: GameEventBus.ForScene(int)
+  fullName: MyProject.Common.GameEvent.GameEventBus.ForScene(int)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: public static GameEventBus.Scope ForScene(int handle)
+    parameters:
+    - id: handle
+      type: System.Int32
+    return:
+      type: MyProject.Common.GameEvent.GameEventBus.Scope
+    content.vb: Public Shared Function ForScene(handle As Integer) As GameEventBus.Scope
+  overload: MyProject.Common.GameEvent.GameEventBus.ForScene*
+  nameWithType.vb: GameEventBus.ForScene(Integer)
+  fullName.vb: MyProject.Common.GameEvent.GameEventBus.ForScene(Integer)
+  name.vb: ForScene(Integer)
+- uid: MyProject.Common.GameEvent.GameEventBus.SetActiveScene(Scene)
+  commentId: M:MyProject.Common.GameEvent.GameEventBus.SetActiveScene(Scene)
+  id: SetActiveScene(Scene)
+  parent: MyProject.Common.GameEvent.GameEventBus
+  langs:
+  - csharp
+  - vb
+  name: SetActiveScene(Scene)
+  nameWithType: GameEventBus.SetActiveScene(Scene)
+  fullName: MyProject.Common.GameEvent.GameEventBus.SetActiveScene(Scene)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: public static void SetActiveScene(Scene scene)
+    parameters:
+    - id: scene
+      type: Scene
+    content.vb: Public Shared Sub SetActiveScene(scene As Scene)
+  overload: MyProject.Common.GameEvent.GameEventBus.SetActiveScene*
+- uid: MyProject.Common.GameEvent.GameEventBus.TrySetActiveScene(Scene)
+  commentId: M:MyProject.Common.GameEvent.GameEventBus.TrySetActiveScene(Scene)
+  id: TrySetActiveScene(Scene)
+  parent: MyProject.Common.GameEvent.GameEventBus
+  langs:
+  - csharp
+  - vb
+  name: TrySetActiveScene(Scene)
+  nameWithType: GameEventBus.TrySetActiveScene(Scene)
+  fullName: MyProject.Common.GameEvent.GameEventBus.TrySetActiveScene(Scene)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  summary: Active 씬이 비어있을 때만 설정합니다.
+  example: []
+  syntax:
+    content: public static bool TrySetActiveScene(Scene scene)
+    parameters:
+    - id: scene
+      type: Scene
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TrySetActiveScene(scene As Scene) As Boolean
+  overload: MyProject.Common.GameEvent.GameEventBus.TrySetActiveScene*
+- uid: MyProject.Common.GameEvent.GameEventBus.ClearGlobal
+  commentId: M:MyProject.Common.GameEvent.GameEventBus.ClearGlobal
+  id: ClearGlobal
+  parent: MyProject.Common.GameEvent.GameEventBus
+  langs:
+  - csharp
+  - vb
+  name: ClearGlobal()
+  nameWithType: GameEventBus.ClearGlobal()
+  fullName: MyProject.Common.GameEvent.GameEventBus.ClearGlobal()
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: public static void ClearGlobal()
+    content.vb: Public Shared Sub ClearGlobal()
+  overload: MyProject.Common.GameEvent.GameEventBus.ClearGlobal*
+- uid: MyProject.Common.GameEvent.GameEventBus.ResetAll
+  commentId: M:MyProject.Common.GameEvent.GameEventBus.ResetAll
+  id: ResetAll
+  parent: MyProject.Common.GameEvent.GameEventBus
+  langs:
+  - csharp
+  - vb
+  name: ResetAll()
+  nameWithType: GameEventBus.ResetAll()
+  fullName: MyProject.Common.GameEvent.GameEventBus.ResetAll()
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: public static void ResetAll()
+    content.vb: Public Shared Sub ResetAll()
+  overload: MyProject.Common.GameEvent.GameEventBus.ResetAll*
+- uid: MyProject.Common.GameEvent.GameEventBus.ClearScene(Scene)
+  commentId: M:MyProject.Common.GameEvent.GameEventBus.ClearScene(Scene)
+  id: ClearScene(Scene)
+  parent: MyProject.Common.GameEvent.GameEventBus
+  langs:
+  - csharp
+  - vb
+  name: ClearScene(Scene)
+  nameWithType: GameEventBus.ClearScene(Scene)
+  fullName: MyProject.Common.GameEvent.GameEventBus.ClearScene(Scene)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: public static void ClearScene(Scene scene)
+    parameters:
+    - id: scene
+      type: Scene
+    content.vb: Public Shared Sub ClearScene(scene As Scene)
+  overload: MyProject.Common.GameEvent.GameEventBus.ClearScene*
+- uid: MyProject.Common.GameEvent.GameEventBus.ClearScene(System.Int32)
+  commentId: M:MyProject.Common.GameEvent.GameEventBus.ClearScene(System.Int32)
+  id: ClearScene(System.Int32)
+  parent: MyProject.Common.GameEvent.GameEventBus
+  langs:
+  - csharp
+  - vb
+  name: ClearScene(int)
+  nameWithType: GameEventBus.ClearScene(int)
+  fullName: MyProject.Common.GameEvent.GameEventBus.ClearScene(int)
+  type: Method
+  namespace: MyProject.Common.GameEvent
+  syntax:
+    content: public static void ClearScene(int handle)
+    parameters:
+    - id: handle
+      type: System.Int32
+    content.vb: Public Shared Sub ClearScene(handle As Integer)
+  overload: MyProject.Common.GameEvent.GameEventBus.ClearScene*
+  nameWithType.vb: GameEventBus.ClearScene(Integer)
+  fullName.vb: MyProject.Common.GameEvent.GameEventBus.ClearScene(Integer)
+  name.vb: ClearScene(Integer)
+references:
+- uid: MyProject.Common.GameEvent
+  commentId: N:MyProject.Common.GameEvent
+  href: MyProject.html
+  name: MyProject.Common.GameEvent
+  nameWithType: MyProject.Common.GameEvent
+  fullName: MyProject.Common.GameEvent
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameEvent
+    name: GameEvent
+    href: MyProject.Common.GameEvent.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameEvent
+    name: GameEvent
+    href: MyProject.Common.GameEvent.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.GameEvent.GameEventBus.Global*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventBus.Global
+  href: MyProject.Common.GameEvent.GameEventBus.html#MyProject_Common_GameEvent_GameEventBus_Global
+  name: Global
+  nameWithType: GameEventBus.Global
+  fullName: MyProject.Common.GameEvent.GameEventBus.Global
+- uid: MyProject.Common.GameEvent.GameEventBus.Scope
+  commentId: T:MyProject.Common.GameEvent.GameEventBus.Scope
+  parent: MyProject.Common.GameEvent
+  href: MyProject.Common.GameEvent.GameEventBus.html
+  name: GameEventBus.Scope
+  nameWithType: GameEventBus.Scope
+  fullName: MyProject.Common.GameEvent.GameEventBus.Scope
+  spec.csharp:
+  - uid: MyProject.Common.GameEvent.GameEventBus
+    name: GameEventBus
+    href: MyProject.Common.GameEvent.GameEventBus.html
+  - name: .
+  - uid: MyProject.Common.GameEvent.GameEventBus.Scope
+    name: Scope
+    href: MyProject.Common.GameEvent.GameEventBus.Scope.html
+  spec.vb:
+  - uid: MyProject.Common.GameEvent.GameEventBus
+    name: GameEventBus
+    href: MyProject.Common.GameEvent.GameEventBus.html
+  - name: .
+  - uid: MyProject.Common.GameEvent.GameEventBus.Scope
+    name: Scope
+    href: MyProject.Common.GameEvent.GameEventBus.Scope.html
+- uid: MyProject.Common.GameEvent.GameEventBus.Scene*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventBus.Scene
+  href: MyProject.Common.GameEvent.GameEventBus.html#MyProject_Common_GameEvent_GameEventBus_Scene
+  name: Scene
+  nameWithType: GameEventBus.Scene
+  fullName: MyProject.Common.GameEvent.GameEventBus.Scene
+- uid: MyProject.Common.GameEvent.GameEventBus.Subscribe*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventBus.Subscribe
+  href: MyProject.Common.GameEvent.GameEventBus.html#MyProject_Common_GameEvent_GameEventBus_Subscribe__1_System_Action___0__
+  name: Subscribe
+  nameWithType: GameEventBus.Subscribe
+  fullName: MyProject.Common.GameEvent.GameEventBus.Subscribe
+- uid: System.Action{{TEvent}}
+  commentId: T:System.Action{`2}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<TEvent>
+  nameWithType: Action<TEvent>
+  fullName: System.Action<TEvent>
+  nameWithType.vb: Action(Of TEvent)
+  fullName.vb: System.Action(Of TEvent)
+  name.vb: Action(Of TEvent)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MyProject.Common.GameEvent.GameEventBus.Unsubscribe*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventBus.Unsubscribe
+  href: MyProject.Common.GameEvent.GameEventBus.html#MyProject_Common_GameEvent_GameEventBus_Unsubscribe__1_System_Action___0__
+  name: Unsubscribe
+  nameWithType: GameEventBus.Unsubscribe
+  fullName: MyProject.Common.GameEvent.GameEventBus.Unsubscribe
+- uid: MyProject.Common.GameEvent.GameEventBus.Publish*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventBus.Publish
+  href: MyProject.Common.GameEvent.GameEventBus.html#MyProject_Common_GameEvent_GameEventBus_Publish__1___0_
+  name: Publish
+  nameWithType: GameEventBus.Publish
+  fullName: MyProject.Common.GameEvent.GameEventBus.Publish
+- uid: '{TEvent}'
+  commentId: '!:TEvent'
+  definition: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: MyProject.Common.GameEvent.GameEventBus.ForScene*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventBus.ForScene
+  href: MyProject.Common.GameEvent.GameEventBus.html#MyProject_Common_GameEvent_GameEventBus_ForScene_Scene_
+  name: ForScene
+  nameWithType: GameEventBus.ForScene
+  fullName: MyProject.Common.GameEvent.GameEventBus.ForScene
+- uid: Scene
+  isExternal: true
+  name: Scene
+  nameWithType: Scene
+  fullName: Scene
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MyProject.Common.GameEvent.GameEventBus.SetActiveScene*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventBus.SetActiveScene
+  href: MyProject.Common.GameEvent.GameEventBus.html#MyProject_Common_GameEvent_GameEventBus_SetActiveScene_Scene_
+  name: SetActiveScene
+  nameWithType: GameEventBus.SetActiveScene
+  fullName: MyProject.Common.GameEvent.GameEventBus.SetActiveScene
+- uid: MyProject.Common.GameEvent.GameEventBus.TrySetActiveScene*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventBus.TrySetActiveScene
+  href: MyProject.Common.GameEvent.GameEventBus.html#MyProject_Common_GameEvent_GameEventBus_TrySetActiveScene_Scene_
+  name: TrySetActiveScene
+  nameWithType: GameEventBus.TrySetActiveScene
+  fullName: MyProject.Common.GameEvent.GameEventBus.TrySetActiveScene
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MyProject.Common.GameEvent.GameEventBus.ClearGlobal*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventBus.ClearGlobal
+  href: MyProject.Common.GameEvent.GameEventBus.html#MyProject_Common_GameEvent_GameEventBus_ClearGlobal
+  name: ClearGlobal
+  nameWithType: GameEventBus.ClearGlobal
+  fullName: MyProject.Common.GameEvent.GameEventBus.ClearGlobal
+- uid: MyProject.Common.GameEvent.GameEventBus.ResetAll*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventBus.ResetAll
+  href: MyProject.Common.GameEvent.GameEventBus.html#MyProject_Common_GameEvent_GameEventBus_ResetAll
+  name: ResetAll
+  nameWithType: GameEventBus.ResetAll
+  fullName: MyProject.Common.GameEvent.GameEventBus.ResetAll
+- uid: MyProject.Common.GameEvent.GameEventBus.ClearScene*
+  commentId: Overload:MyProject.Common.GameEvent.GameEventBus.ClearScene
+  href: MyProject.Common.GameEvent.GameEventBus.html#MyProject_Common_GameEvent_GameEventBus_ClearScene_Scene_
+  name: ClearScene
+  nameWithType: GameEventBus.ClearScene
+  fullName: MyProject.Common.GameEvent.GameEventBus.ClearScene

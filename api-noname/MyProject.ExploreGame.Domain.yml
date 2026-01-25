@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Domain
+  commentId: N:MyProject.ExploreGame.Domain
+  id: MyProject.ExploreGame.Domain
+  children:
+  - MyProject.ExploreGame.Domain.CombatPhase
+  - MyProject.ExploreGame.Domain.DungeonPhase
+  - MyProject.ExploreGame.Domain.DungeonStageData
+  - MyProject.ExploreGame.Domain.ExploreCharacterSnapshot
+  - MyProject.ExploreGame.Domain.ExploreCharacterState
+  - MyProject.ExploreGame.Domain.ExploreCombatSnapshot
+  - MyProject.ExploreGame.Domain.ExploreCombatState
+  - MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
+  - MyProject.ExploreGame.Domain.ExploreDungeonState
+  - MyProject.ExploreGame.Domain.ExploreHostState
+  - MyProject.ExploreGame.Domain.ExploreMonsterSnapshot
+  - MyProject.ExploreGame.Domain.ExploreMonsterState
+  - MyProject.ExploreGame.Domain.ExploreSessionPhase
+  - MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  langs:
+  - csharp
+  - vb
+  name: MyProject.ExploreGame.Domain
+  nameWithType: MyProject.ExploreGame.Domain
+  fullName: MyProject.ExploreGame.Domain
+  type: Namespace
+references:
+- uid: MyProject.ExploreGame.Domain.ExploreCharacterState
+  commentId: T:MyProject.ExploreGame.Domain.ExploreCharacterState
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreCharacterState.html
+  name: ExploreCharacterState
+  nameWithType: ExploreCharacterState
+  fullName: MyProject.ExploreGame.Domain.ExploreCharacterState
+- uid: MyProject.ExploreGame.Domain.CombatPhase
+  commentId: T:MyProject.ExploreGame.Domain.CombatPhase
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.CombatPhase.html
+  name: CombatPhase
+  nameWithType: CombatPhase
+  fullName: MyProject.ExploreGame.Domain.CombatPhase
+- uid: MyProject.ExploreGame.Domain.ExploreCombatState
+  commentId: T:MyProject.ExploreGame.Domain.ExploreCombatState
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreCombatState.html
+  name: ExploreCombatState
+  nameWithType: ExploreCombatState
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatState
+- uid: MyProject.ExploreGame.Domain.DungeonPhase
+  commentId: T:MyProject.ExploreGame.Domain.DungeonPhase
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.DungeonPhase.html
+  name: DungeonPhase
+  nameWithType: DungeonPhase
+  fullName: MyProject.ExploreGame.Domain.DungeonPhase
+- uid: MyProject.ExploreGame.Domain.DungeonStageData
+  commentId: T:MyProject.ExploreGame.Domain.DungeonStageData
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.DungeonStageData.html
+  name: DungeonStageData
+  nameWithType: DungeonStageData
+  fullName: MyProject.ExploreGame.Domain.DungeonStageData
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonState
+  commentId: T:MyProject.ExploreGame.Domain.ExploreDungeonState
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreDungeonState.html
+  name: ExploreDungeonState
+  nameWithType: ExploreDungeonState
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonState
+- uid: MyProject.ExploreGame.Domain.ExploreSessionPhase
+  commentId: T:MyProject.ExploreGame.Domain.ExploreSessionPhase
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreSessionPhase.html
+  name: ExploreSessionPhase
+  nameWithType: ExploreSessionPhase
+  fullName: MyProject.ExploreGame.Domain.ExploreSessionPhase
+- uid: MyProject.ExploreGame.Domain.ExploreHostState
+  commentId: T:MyProject.ExploreGame.Domain.ExploreHostState
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreHostState.html
+  name: ExploreHostState
+  nameWithType: ExploreHostState
+  fullName: MyProject.ExploreGame.Domain.ExploreHostState
+- uid: MyProject.ExploreGame.Domain.ExploreMonsterState
+  commentId: T:MyProject.ExploreGame.Domain.ExploreMonsterState
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreMonsterState.html
+  name: ExploreMonsterState
+  nameWithType: ExploreMonsterState
+  fullName: MyProject.ExploreGame.Domain.ExploreMonsterState
+- uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreStateSnapshot
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreStateSnapshot.html
+  name: ExploreStateSnapshot
+  nameWithType: ExploreStateSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+- uid: MyProject.ExploreGame.Domain.ExploreCharacterSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreCharacterSnapshot
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreCharacterSnapshot.html
+  name: ExploreCharacterSnapshot
+  nameWithType: ExploreCharacterSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreCharacterSnapshot
+- uid: MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreDungeonSnapshot.html
+  name: ExploreDungeonSnapshot
+  nameWithType: ExploreDungeonSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
+- uid: MyProject.ExploreGame.Domain.ExploreCombatSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreCombatSnapshot
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.ExploreCombatSnapshot.html
+  name: ExploreCombatSnapshot
+  nameWithType: ExploreCombatSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreCombatSnapshot
+- uid: MyProject.ExploreGame.Domain.ExploreMonsterSnapshot
+  commentId: T:MyProject.ExploreGame.Domain.ExploreMonsterSnapshot
+  href: MyProject.ExploreGame.Domain.ExploreMonsterSnapshot.html
+  name: ExploreMonsterSnapshot
+  nameWithType: ExploreMonsterSnapshot
+  fullName: MyProject.ExploreGame.Domain.ExploreMonsterSnapshot
+- uid: MyProject.ExploreGame.Domain
+  commentId: N:MyProject.ExploreGame.Domain
+  href: MyProject.html
+  name: MyProject.ExploreGame.Domain
+  nameWithType: MyProject.ExploreGame.Domain
+  fullName: MyProject.ExploreGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html

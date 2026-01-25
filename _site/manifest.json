@@ -54,6 +54,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Bootstrap.BootstrapperBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Bootstrap.BootstrapperBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Bootstrap.BootstrapperBase",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Bootstrap.BootstrapperBase.yml\" sourcestartlinenumber=\"1\">공통 부트스트래퍼 베이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Bootstrap.GameBootstrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Bootstrap.GameBootstrapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Bootstrap.GameBootstrapper",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Bootstrap.GameBootstrapper.yml\" sourcestartlinenumber=\"1\">게임 모드를 생성하고 수명주기를 제어하는 부트스트래퍼입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Bootstrap.IManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Bootstrap.IManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Bootstrap.IManager",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Bootstrap.IManager.yml\" sourcestartlinenumber=\"1\">씬과 무관하게 유지되는 매니저 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Bootstrap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Bootstrap.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Bootstrap",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api-noname/MyProject.Common.CameraSystem.QuarterViewFollowCamera.yml",
       "output": {
         ".html": {
@@ -78,6 +134,398 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MyProject.Common.CameraSystem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameEvent.GameEventBus.Scope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameEvent.GameEventBus.Scope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameEvent.GameEventBus.Scope",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameEvent.GameEventBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameEvent.GameEventBus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameEvent.GameEventBus",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameEvent.GameEventBus.yml\" sourcestartlinenumber=\"1\">전역/씬 스코프를 가진 게임 이벤트 버스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameEvent.GameEventContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameEvent.GameEventContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameEvent.GameEventContext",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameEvent.GameEventContext.yml\" sourcestartlinenumber=\"1\">게임 이벤트의 기본 컨텍스트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameEvent.GameEventHub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameEvent.GameEventHub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameEvent.GameEventHub",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameEvent.GameEventHub.yml\" sourcestartlinenumber=\"1\">전역/씬 이벤트 버스를 간단히 접근하기 위한 허브입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameEvent.GameHostCommandResultEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameEvent.GameHostCommandResultEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameEvent.GameHostCommandResultEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameEvent.GameHostCommandResultEvent.yml\" sourcestartlinenumber=\"1\">호스트 명령 처리 결과를 전달하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameEvent.GameHostEventRaisedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameEvent.GameHostEventRaisedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameEvent.GameHostEventRaisedEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameEvent.GameHostEventRaisedEvent.yml\" sourcestartlinenumber=\"1\">호스트에서 발생한 이벤트를 전달하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameEvent.GameUIContextSupplyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameEvent.GameUIContextSupplyEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameEvent.GameUIContextSupplyEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameEvent.GameUIContextSupplyEvent.yml\" sourcestartlinenumber=\"1\">UI 컨텍스트를 전달하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameEvent.GlobalGameEventContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameEvent.GlobalGameEventContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameEvent.GlobalGameEventContext",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameEvent.GlobalGameEventContext.yml\" sourcestartlinenumber=\"1\">전역 스코프에서 처리되는 이벤트 컨텍스트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameEvent.IEventBus-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameEvent.IEventBus-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameEvent.IEventBus<TEventBase>",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameEvent.IEventBus-1.yml\" sourcestartlinenumber=\"1\">이벤트 버스의 공용 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameEvent.SceneGameEventContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameEvent.SceneGameEventContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameEvent.SceneGameEventContext",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameEvent.SceneGameEventContext.yml\" sourcestartlinenumber=\"1\">씬 스코프에서 처리되는 이벤트 컨텍스트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameEvent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameMode.GameMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameMode.GameMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameMode.GameMode",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameMode.GameMode.yml\" sourcestartlinenumber=\"1\">공통 게임 모드 베이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameMode.IModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameMode.IModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameMode.IModule",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameMode.IModule.yml\" sourcestartlinenumber=\"1\">공통 모듈 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameMode.IModuleDescriptorReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameMode.IModuleDescriptorReceiver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameMode.IModuleDescriptorReceiver",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameMode.IModuleDescriptorReceiver.yml\" sourcestartlinenumber=\"1\">세션 설명서를 받아 모듈 설정을 적용하는 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameMode.ModuleBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameMode.ModuleBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameMode.ModuleBase",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameMode.ModuleBase.yml\" sourcestartlinenumber=\"1\">공통 모듈 베이스 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Host.GameCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Host.GameCommandBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Host.GameCommandBase",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Host.GameCommandBase.yml\" sourcestartlinenumber=\"1\">게임 로직 요청의 최소 단위입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Host.GameCommandOutcome-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Host.GameCommandOutcome-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Host.GameCommandOutcome<TResult, TEvent>",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Host.GameCommandOutcome-2.yml\" sourcestartlinenumber=\"1\">명령 처리의 결과와 전후 이벤트를 묶어 전달합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Host.GameCommandResultBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Host.GameCommandResultBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Host.GameCommandResultBase",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Host.GameCommandResultBase.yml\" sourcestartlinenumber=\"1\">명령 처리 결과의 기본 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Host.GameEventBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Host.GameEventBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Host.GameEventBase",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Host.GameEventBase.yml\" sourcestartlinenumber=\"1\">게임 상태 변화 이벤트의 기본 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Host.GameHostBase-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Host.GameHostBase-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Host.GameHostBase<TCommand, TResult, TEvent, TSnapshot>",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Host.GameHostBase-4.yml\" sourcestartlinenumber=\"1\">게임 호스트 기본 클래스입니다.\n서버 측 게임 시뮬레이션을 관리하며, 스레드 안전 커맨드 처리, 이벤트 디스패칭, 스냅샷 생성을 제공합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Host.GameModuleConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Host.GameModuleConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Host.GameModuleConfig",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Host.GameModuleConfig.yml\" sourcestartlinenumber=\"1\">모듈별 설정 데이터의 기본 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Host.GameModuleDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Host.GameModuleDescriptor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Host.GameModuleDescriptor",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Host.GameModuleDescriptor.yml\" sourcestartlinenumber=\"1\">게임 모듈 구성을 전달하는 단위입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Host.GameSessionDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Host.GameSessionDescriptor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Host.GameSessionDescriptor",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Host.GameSessionDescriptor.yml\" sourcestartlinenumber=\"1\">게임 세션을 구성하는 기본 설명서입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Host.GameSnapshotBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Host.GameSnapshotBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Host.GameSnapshotBase",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Host.GameSnapshotBase.yml\" sourcestartlinenumber=\"1\">동기화용 스냅샷의 기본 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Host.IGameHost-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Host.IGameHost-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Host.IGameHost<TCommand, TResult, TEvent, TSnapshot>",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Host.IGameHost-4.yml\" sourcestartlinenumber=\"1\">게임 호스트의 기본 계약입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Host.IRandomSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Host.IRandomSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Host.IRandomSource",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Host.IRandomSource.yml\" sourcestartlinenumber=\"1\">호스트에서 사용할 난수 공급 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Host.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Host.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Host",
       "Summary": null
     },
     {
@@ -135,6 +583,132 @@
       "IsMRef": true,
       "Title": "MyProject.Common.UI.SystemMessageUI",
       "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.SystemMessageUI.yml\" sourcestartlinenumber=\"1\">화면 중앙 상단 등에 시스템 메시지를 띄우는 UI 매니저입니다.\nSystemMessageBus 이벤트를 구독하여 메시지를 표시합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.UIBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.UIBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.UIBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.UIEventContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.UIEventContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.UIEventContext",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.UIEventContext.yml\" sourcestartlinenumber=\"1\">UI 이벤트 컨텍스트 베이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.UIEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.UIEventType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.UIEventType",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.UIEventType.yml\" sourcestartlinenumber=\"1\">UI 이벤트 종류입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.UIManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.UIManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.UIManager",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.UIManager.yml\" sourcestartlinenumber=\"1\">UGUI용 싱글턴 UI 매니저입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.UIPageBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.UIPageBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.UIPageBase",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.UIPageBase.yml\" sourcestartlinenumber=\"1\">페이지 레이어용 UI 베이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.UIPopupBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.UIPopupBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.UIPopupBase",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.UIPopupBase.yml\" sourcestartlinenumber=\"1\">팝업 레이어용 UI 베이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.UIRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.UIRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.UIRegistry",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.UIRegistry.yml\" sourcestartlinenumber=\"1\">UI 타입과 프리팹을 연결하는 레지스트리입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.UIRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.UIRoot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.UIRoot",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.UIRoot.yml\" sourcestartlinenumber=\"1\">UGUI 루트 프리팹의 기본 구성 요소를 관리합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.UISystemBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.UISystemBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.UISystemBase",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.UISystemBase.yml\" sourcestartlinenumber=\"1\">시스템 레이어용 UI 베이스입니다.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -246,6 +820,636 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MyProject.Common.Units",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCharacterLevelUpEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCharacterLevelUpEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreCharacterLevelUpEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreCharacterLevelUpEvent.yml\" sourcestartlinenumber=\"1\">캐릭터가 레벨업했을 때 발생하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCombatActionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCombatActionEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreCombatActionEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreCombatActionEvent.yml\" sourcestartlinenumber=\"1\">전투 행동이 발생했을 때 발생하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCombatEndedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCombatEndedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreCombatEndedEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreCombatEndedEvent.yml\" sourcestartlinenumber=\"1\">전투가 종료되었을 때 발생하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCombatModuleHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCombatModuleHost.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreCombatModuleHost",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreCombatModuleHost.yml\" sourcestartlinenumber=\"1\">자동 전투 시스템을 관리하는 Module Host입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCombatStartedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCombatStartedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreCombatStartedEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreCombatStartedEvent.yml\" sourcestartlinenumber=\"1\">전투가 시작되었을 때 발생하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreCommand",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreCommand.yml\" sourcestartlinenumber=\"1\">탐험 게임 커맨드의 기본 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCommandResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreCommandResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreCommandResult",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreCommandResult.yml\" sourcestartlinenumber=\"1\">탐험 게임 커맨드 결과의 기본 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreDungeonCompletedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreDungeonCompletedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreDungeonCompletedEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreDungeonCompletedEvent.yml\" sourcestartlinenumber=\"1\">던전 탐험이 완료되었을 때 발생하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreDungeonFailedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreDungeonFailedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreDungeonFailedEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreDungeonFailedEvent.yml\" sourcestartlinenumber=\"1\">던전 탐험이 실패했을 때 발생하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreDungeonModuleHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreDungeonModuleHost.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreDungeonModuleHost",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreDungeonModuleHost.yml\" sourcestartlinenumber=\"1\">던전 탐험 로직을 관리하는 Module Host입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreDungeonStartedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreDungeonStartedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreDungeonStartedEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreDungeonStartedEvent.yml\" sourcestartlinenumber=\"1\">던전 탐험이 시작되었을 때 발생하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreHost.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreHost",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreHost.yml\" sourcestartlinenumber=\"1\">탐험 게임의 Host입니다.\n별도 스레드에서 시뮬레이션을 실행하며, CQRS 패턴을 따릅니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreHostEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreHostEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreHostEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreHostEvent.yml\" sourcestartlinenumber=\"1\">탐험 게임 이벤트의 기본 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreJoinCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreJoinCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreJoinCommand",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreJoinCommand.yml\" sourcestartlinenumber=\"1\">게임 참가 커맨드입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreJoinResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreJoinResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreJoinResult",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreJoinResult.yml\" sourcestartlinenumber=\"1\">게임 참가 결과입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreModeHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreModeHost.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreModeHost",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreModeHost.yml\" sourcestartlinenumber=\"1\">탐험 게임의 게임 모드 로직을 담당하는 Host입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExplorePlayerJoinedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExplorePlayerJoinedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExplorePlayerJoinedEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExplorePlayerJoinedEvent.yml\" sourcestartlinenumber=\"1\">플레이어가 게임에 참가했을 때 발생하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreRewardGrantedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreRewardGrantedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreRewardGrantedEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreRewardGrantedEvent.yml\" sourcestartlinenumber=\"1\">보상이 지급되었을 때 발생하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreStageChangedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreStageChangedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreStageChangedEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreStageChangedEvent.yml\" sourcestartlinenumber=\"1\">스테이지가 변경되었을 때 발생하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreStartDungeonCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreStartDungeonCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreStartDungeonCommand",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreStartDungeonCommand.yml\" sourcestartlinenumber=\"1\">던전 시작 커맨드입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreStartDungeonResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.ExploreStartDungeonResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application.ExploreStartDungeonResult",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Application.ExploreStartDungeonResult.yml\" sourcestartlinenumber=\"1\">던전 시작 결과입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Application.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Application",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Data.ExploreHostConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Data.ExploreHostConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Data.ExploreHostConfig",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Data.ExploreHostConfig.yml\" sourcestartlinenumber=\"1\">탐험 게임 Host 설정입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.CombatPhase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.CombatPhase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.CombatPhase",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.CombatPhase.yml\" sourcestartlinenumber=\"1\">전투 진행 단계입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.DungeonPhase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.DungeonPhase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.DungeonPhase",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.DungeonPhase.yml\" sourcestartlinenumber=\"1\">던전 탐험 단계입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.DungeonStageData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.DungeonStageData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.DungeonStageData",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.DungeonStageData.yml\" sourcestartlinenumber=\"1\">던전 스테이지 데이터입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreCharacterSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreCharacterSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.ExploreCharacterSnapshot",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.ExploreCharacterSnapshot.yml\" sourcestartlinenumber=\"1\">캐릭터 상태의 불변 스냅샷입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreCharacterState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreCharacterState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.ExploreCharacterState",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.ExploreCharacterState.yml\" sourcestartlinenumber=\"1\">탐험 캐릭터의 상태를 나타냅니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreCombatSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreCombatSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.ExploreCombatSnapshot",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.ExploreCombatSnapshot.yml\" sourcestartlinenumber=\"1\">전투 상태의 불변 스냅샷입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreCombatState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreCombatState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.ExploreCombatState",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.ExploreCombatState.yml\" sourcestartlinenumber=\"1\">전투 상태를 나타냅니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreDungeonSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreDungeonSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.ExploreDungeonSnapshot",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.ExploreDungeonSnapshot.yml\" sourcestartlinenumber=\"1\">던전 상태의 불변 스냅샷입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreDungeonState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreDungeonState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.ExploreDungeonState",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.ExploreDungeonState.yml\" sourcestartlinenumber=\"1\">던전 탐험 상태를 나타냅니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreHostState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreHostState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.ExploreHostState",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.ExploreHostState.yml\" sourcestartlinenumber=\"1\">탐험 게임의 전체 상태를 관리하는 스레드 안전 컨테이너입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreMonsterSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreMonsterSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.ExploreMonsterSnapshot",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.ExploreMonsterSnapshot.yml\" sourcestartlinenumber=\"1\">몬스터 상태의 불변 스냅샷입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreMonsterState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreMonsterState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.ExploreMonsterState",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.ExploreMonsterState.yml\" sourcestartlinenumber=\"1\">몬스터의 상태를 나타냅니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreSessionPhase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreSessionPhase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.ExploreSessionPhase",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.ExploreSessionPhase.yml\" sourcestartlinenumber=\"1\">탐험 게임 세션 단계입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreStateSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.ExploreStateSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain.ExploreStateSnapshot",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Domain.ExploreStateSnapshot.yml\" sourcestartlinenumber=\"1\">탐험 게임 상태의 불변 스냅샷입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Domain",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Presentation.ExploreHostEventRaisedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Presentation.ExploreHostEventRaisedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Presentation.ExploreHostEventRaisedEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Presentation.ExploreHostEventRaisedEvent.yml\" sourcestartlinenumber=\"1\">Host에서 이벤트가 발생했을 때 GameMode로 전달되는 이벤트입니다.\n씬 스코프에서 처리됩니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Presentation.ExploreMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Presentation.ExploreMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Presentation.ExploreMode",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Presentation.ExploreMode.yml\" sourcestartlinenumber=\"1\">탐험 게임 모드입니다.\nHost를 관리하고 Module들과 통신합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Presentation.ExploreViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Presentation.ExploreViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Presentation.ExploreViewModel",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Presentation.ExploreViewModel.yml\" sourcestartlinenumber=\"1\">탐험 게임의 View Model입니다.\nSnapshot 데이터를 UI에 표시 가능한 형태로 제공합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Presentation.StatusDisplayModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Presentation.StatusDisplayModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Presentation.StatusDisplayModule",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Presentation.StatusDisplayModule.yml\" sourcestartlinenumber=\"1\">주기적으로 캐릭터 상태를 출력하는 모듈입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Presentation.TextLogModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Presentation.TextLogModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Presentation.TextLogModule",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.ExploreGame.Presentation.TextLogModule.yml\" sourcestartlinenumber=\"1\">게임 진행 상황을 텍스트 로그로 출력하는 모듈입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.ExploreGame.Presentation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.ExploreGame.Presentation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.ExploreGame.Presentation",
       "Summary": null
     },
     {
@@ -637,6 +1841,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilitySystemModel.ActiveGameplayEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilitySystemModel.ActiveGameplayEffect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilitySystemModel.ActiveGameplayEffect",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilitySystemModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilitySystemModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilitySystemModel",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilitySystemModel.yml\" sourcestartlinenumber=\"1\">AbilitySystem의 상태 모델입니다.\nHost 환경에서 스레드 안전하게 동작합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilitySystemSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.AbilitySystemSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.AbilitySystemSnapshot",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilitySystemSnapshot.yml\" sourcestartlinenumber=\"1\">AbilitySystem의 불변 스냅샷입니다.\n스레드 간 안전한 데이터 전송을 위해 사용됩니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api-plugin/Noname.GameAbilitySystem.AbilityTargetData.yml",
       "output": {
         ".html": {
@@ -718,6 +1964,20 @@
       "IsMRef": true,
       "Title": "Noname.GameAbilitySystem.AbilityTask_WaitTargetData",
       "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.AbilityTask_WaitTargetData.yml\" sourcestartlinenumber=\"1\">타겟 데이터를 기다리는 태스크입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.ActiveGameplayEffectSnapshot.yml\" sourcestartlinenumber=\"1\">활성 효과의 불변 스냅샷입니다.</p>\n"
     },
     {
       "type": "ManagedReference",

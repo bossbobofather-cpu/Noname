@@ -524,7 +524,6 @@ references:
   nameWithType: ILocomotionStateProvider
   fullName: MyProject.Common.Units.Locomotion.ILocomotionStateProvider
 - uid: MonoBehaviour
-  commentId: '!:MonoBehaviour'
   isExternal: true
   name: MonoBehaviour
   nameWithType: MonoBehaviour

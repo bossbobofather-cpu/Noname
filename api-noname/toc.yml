@@ -10,6 +10,19 @@ items:
   - uid: Common.Interface.IMovement
     name: IMovement
     type: Interface
+- uid: MyProject.Common.Bootstrap
+  name: MyProject.Common.Bootstrap
+  type: Namespace
+  items:
+  - uid: MyProject.Common.Bootstrap.BootstrapperBase
+    name: BootstrapperBase
+    type: Class
+  - uid: MyProject.Common.Bootstrap.GameBootstrapper
+    name: GameBootstrapper
+    type: Class
+  - uid: MyProject.Common.Bootstrap.IManager
+    name: IManager
+    type: Interface
 - uid: MyProject.Common.CameraSystem
   name: MyProject.Common.CameraSystem
   type: Namespace
@@ -17,6 +30,93 @@ items:
   - uid: MyProject.Common.CameraSystem.QuarterViewFollowCamera
     name: QuarterViewFollowCamera
     type: Class
+- uid: MyProject.Common.GameEvent
+  name: MyProject.Common.GameEvent
+  type: Namespace
+  items:
+  - uid: MyProject.Common.GameEvent.GameEventBus
+    name: GameEventBus
+    type: Class
+  - uid: MyProject.Common.GameEvent.GameEventBus.Scope
+    name: GameEventBus.Scope
+    type: Class
+  - uid: MyProject.Common.GameEvent.GameEventContext
+    name: GameEventContext
+    type: Class
+  - uid: MyProject.Common.GameEvent.GameEventHub
+    name: GameEventHub
+    type: Class
+  - uid: MyProject.Common.GameEvent.GameHostCommandResultEvent
+    name: GameHostCommandResultEvent
+    type: Class
+  - uid: MyProject.Common.GameEvent.GameHostEventRaisedEvent
+    name: GameHostEventRaisedEvent
+    type: Class
+  - uid: MyProject.Common.GameEvent.GameUIContextSupplyEvent
+    name: GameUIContextSupplyEvent
+    type: Class
+  - uid: MyProject.Common.GameEvent.GlobalGameEventContext
+    name: GlobalGameEventContext
+    type: Class
+  - uid: MyProject.Common.GameEvent.IEventBus`1
+    name: IEventBus<TEventBase>
+    type: Interface
+  - uid: MyProject.Common.GameEvent.SceneGameEventContext
+    name: SceneGameEventContext
+    type: Class
+- uid: MyProject.Common.GameMode
+  name: MyProject.Common.GameMode
+  type: Namespace
+  items:
+  - uid: MyProject.Common.GameMode.GameMode
+    name: GameMode
+    type: Class
+  - uid: MyProject.Common.GameMode.IModule
+    name: IModule
+    type: Interface
+  - uid: MyProject.Common.GameMode.IModuleDescriptorReceiver
+    name: IModuleDescriptorReceiver
+    type: Interface
+  - uid: MyProject.Common.GameMode.ModuleBase
+    name: ModuleBase
+    type: Class
+- uid: MyProject.Common.Host
+  name: MyProject.Common.Host
+  type: Namespace
+  items:
+  - uid: MyProject.Common.Host.GameCommandBase
+    name: GameCommandBase
+    type: Class
+  - uid: MyProject.Common.Host.GameCommandOutcome`2
+    name: GameCommandOutcome<TResult, TEvent>
+    type: Struct
+  - uid: MyProject.Common.Host.GameCommandResultBase
+    name: GameCommandResultBase
+    type: Class
+  - uid: MyProject.Common.Host.GameEventBase
+    name: GameEventBase
+    type: Class
+  - uid: MyProject.Common.Host.GameHostBase`4
+    name: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+    type: Class
+  - uid: MyProject.Common.Host.GameModuleConfig
+    name: GameModuleConfig
+    type: Class
+  - uid: MyProject.Common.Host.GameModuleDescriptor
+    name: GameModuleDescriptor
+    type: Class
+  - uid: MyProject.Common.Host.GameSessionDescriptor
+    name: GameSessionDescriptor
+    type: Class
+  - uid: MyProject.Common.Host.GameSnapshotBase
+    name: GameSnapshotBase
+    type: Class
+  - uid: MyProject.Common.Host.IGameHost`4
+    name: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+    type: Interface
+  - uid: MyProject.Common.Host.IRandomSource
+    name: IRandomSource
+    type: Interface
 - uid: MyProject.Common.UI
   name: MyProject.Common.UI
   type: Namespace
@@ -32,6 +132,33 @@ items:
     type: Class
   - uid: MyProject.Common.UI.SystemMessageUI
     name: SystemMessageUI
+    type: Class
+  - uid: MyProject.Common.UI.UIBase
+    name: UIBase
+    type: Class
+  - uid: MyProject.Common.UI.UIEventContext
+    name: UIEventContext
+    type: Class
+  - uid: MyProject.Common.UI.UIEventType
+    name: UIEventType
+    type: Enum
+  - uid: MyProject.Common.UI.UIManager
+    name: UIManager
+    type: Class
+  - uid: MyProject.Common.UI.UIPageBase
+    name: UIPageBase
+    type: Class
+  - uid: MyProject.Common.UI.UIPopupBase
+    name: UIPopupBase
+    type: Class
+  - uid: MyProject.Common.UI.UIRegistry
+    name: UIRegistry
+    type: Class
+  - uid: MyProject.Common.UI.UIRoot
+    name: UIRoot
+    type: Class
+  - uid: MyProject.Common.UI.UISystemBase
+    name: UISystemBase
     type: Class
   - uid: MyProject.Common.UI.WorldHealthBar
     name: WorldHealthBar
@@ -56,6 +183,145 @@ items:
   - uid: MyProject.Common.Units.Locomotion.LocomotionState
     name: LocomotionState
     type: Struct
+- uid: MyProject.ExploreGame.Application
+  name: MyProject.ExploreGame.Application
+  type: Namespace
+  items:
+  - uid: MyProject.ExploreGame.Application.ExploreCharacterLevelUpEvent
+    name: ExploreCharacterLevelUpEvent
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreCombatActionEvent
+    name: ExploreCombatActionEvent
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreCombatEndedEvent
+    name: ExploreCombatEndedEvent
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreCombatModuleHost
+    name: ExploreCombatModuleHost
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreCombatStartedEvent
+    name: ExploreCombatStartedEvent
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreCommand
+    name: ExploreCommand
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreCommandResult
+    name: ExploreCommandResult
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreDungeonCompletedEvent
+    name: ExploreDungeonCompletedEvent
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreDungeonFailedEvent
+    name: ExploreDungeonFailedEvent
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreDungeonModuleHost
+    name: ExploreDungeonModuleHost
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreDungeonStartedEvent
+    name: ExploreDungeonStartedEvent
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreHost
+    name: ExploreHost
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
+    name: ExploreHostEvent
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreJoinCommand
+    name: ExploreJoinCommand
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreJoinResult
+    name: ExploreJoinResult
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreModeHost
+    name: ExploreModeHost
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExplorePlayerJoinedEvent
+    name: ExplorePlayerJoinedEvent
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreRewardGrantedEvent
+    name: ExploreRewardGrantedEvent
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreStageChangedEvent
+    name: ExploreStageChangedEvent
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreStartDungeonCommand
+    name: ExploreStartDungeonCommand
+    type: Class
+  - uid: MyProject.ExploreGame.Application.ExploreStartDungeonResult
+    name: ExploreStartDungeonResult
+    type: Class
+- uid: MyProject.ExploreGame.Data
+  name: MyProject.ExploreGame.Data
+  type: Namespace
+  items:
+  - uid: MyProject.ExploreGame.Data.ExploreHostConfig
+    name: ExploreHostConfig
+    type: Class
+- uid: MyProject.ExploreGame.Domain
+  name: MyProject.ExploreGame.Domain
+  type: Namespace
+  items:
+  - uid: MyProject.ExploreGame.Domain.CombatPhase
+    name: CombatPhase
+    type: Enum
+  - uid: MyProject.ExploreGame.Domain.DungeonPhase
+    name: DungeonPhase
+    type: Enum
+  - uid: MyProject.ExploreGame.Domain.DungeonStageData
+    name: DungeonStageData
+    type: Class
+  - uid: MyProject.ExploreGame.Domain.ExploreCharacterSnapshot
+    name: ExploreCharacterSnapshot
+    type: Class
+  - uid: MyProject.ExploreGame.Domain.ExploreCharacterState
+    name: ExploreCharacterState
+    type: Class
+  - uid: MyProject.ExploreGame.Domain.ExploreCombatSnapshot
+    name: ExploreCombatSnapshot
+    type: Class
+  - uid: MyProject.ExploreGame.Domain.ExploreCombatState
+    name: ExploreCombatState
+    type: Class
+  - uid: MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
+    name: ExploreDungeonSnapshot
+    type: Class
+  - uid: MyProject.ExploreGame.Domain.ExploreDungeonState
+    name: ExploreDungeonState
+    type: Class
+  - uid: MyProject.ExploreGame.Domain.ExploreHostState
+    name: ExploreHostState
+    type: Class
+  - uid: MyProject.ExploreGame.Domain.ExploreMonsterSnapshot
+    name: ExploreMonsterSnapshot
+    type: Class
+  - uid: MyProject.ExploreGame.Domain.ExploreMonsterState
+    name: ExploreMonsterState
+    type: Class
+  - uid: MyProject.ExploreGame.Domain.ExploreSessionPhase
+    name: ExploreSessionPhase
+    type: Enum
+  - uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot
+    name: ExploreStateSnapshot
+    type: Class
+- uid: MyProject.ExploreGame.Presentation
+  name: MyProject.ExploreGame.Presentation
+  type: Namespace
+  items:
+  - uid: MyProject.ExploreGame.Presentation.ExploreHostEventRaisedEvent
+    name: ExploreHostEventRaisedEvent
+    type: Class
+  - uid: MyProject.ExploreGame.Presentation.ExploreMode
+    name: ExploreMode
+    type: Class
+  - uid: MyProject.ExploreGame.Presentation.ExploreViewModel
+    name: ExploreViewModel
+    type: Class
+  - uid: MyProject.ExploreGame.Presentation.StatusDisplayModule
+    name: StatusDisplayModule
+    type: Class
+  - uid: MyProject.ExploreGame.Presentation.TextLogModule
+    name: TextLogModule
+    type: Class
 - uid: MyProject.GameplayAbilitySystem.Ability
   name: MyProject.GameplayAbilitySystem.Ability
   type: Namespace

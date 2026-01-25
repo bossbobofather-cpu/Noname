@@ -1,0 +1,161 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.Bootstrap.BootstrapperBase
+  commentId: T:MyProject.Common.Bootstrap.BootstrapperBase
+  id: BootstrapperBase
+  parent: MyProject.Common.Bootstrap
+  children:
+  - MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
+  - MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy
+  - MyProject.Common.Bootstrap.BootstrapperBase.OnInit
+  langs:
+  - csharp
+  - vb
+  name: BootstrapperBase
+  nameWithType: BootstrapperBase
+  fullName: MyProject.Common.Bootstrap.BootstrapperBase
+  type: Class
+  namespace: MyProject.Common.Bootstrap
+  summary: 공통 부트스트래퍼 베이스입니다.
+  example: []
+  syntax:
+    content: 'public abstract class BootstrapperBase : MonoBehaviour'
+    content.vb: Public MustInherit Class BootstrapperBase Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - MyProject.Common.Bootstrap.GameBootstrapper
+- uid: MyProject.Common.Bootstrap.BootstrapperBase.OnInit
+  commentId: M:MyProject.Common.Bootstrap.BootstrapperBase.OnInit
+  id: OnInit
+  parent: MyProject.Common.Bootstrap.BootstrapperBase
+  langs:
+  - csharp
+  - vb
+  name: OnInit()
+  nameWithType: BootstrapperBase.OnInit()
+  fullName: MyProject.Common.Bootstrap.BootstrapperBase.OnInit()
+  type: Method
+  namespace: MyProject.Common.Bootstrap
+  syntax:
+    content: protected virtual void OnInit()
+    content.vb: Protected Overridable Sub OnInit()
+  overload: MyProject.Common.Bootstrap.BootstrapperBase.OnInit*
+- uid: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
+  commentId: M:MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
+  id: CreateManager(MonoBehaviour)
+  parent: MyProject.Common.Bootstrap.BootstrapperBase
+  langs:
+  - csharp
+  - vb
+  name: CreateManager(MonoBehaviour)
+  nameWithType: BootstrapperBase.CreateManager(MonoBehaviour)
+  fullName: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
+  type: Method
+  namespace: MyProject.Common.Bootstrap
+  summary: 매니저 프리팹을 생성합니다.
+  example: []
+  syntax:
+    content: protected IManager CreateManager(MonoBehaviour prefab)
+    parameters:
+    - id: prefab
+      type: MonoBehaviour
+    return:
+      type: MyProject.Common.Bootstrap.IManager
+    content.vb: Protected Function CreateManager(prefab As MonoBehaviour) As IManager
+  overload: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager*
+- uid: MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy
+  commentId: M:MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy
+  id: OnDestroy
+  parent: MyProject.Common.Bootstrap.BootstrapperBase
+  langs:
+  - csharp
+  - vb
+  name: OnDestroy()
+  nameWithType: BootstrapperBase.OnDestroy()
+  fullName: MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy()
+  type: Method
+  namespace: MyProject.Common.Bootstrap
+  syntax:
+    content: protected virtual void OnDestroy()
+    content.vb: Protected Overridable Sub OnDestroy()
+  overload: MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy*
+references:
+- uid: MyProject.Common.Bootstrap
+  commentId: N:MyProject.Common.Bootstrap
+  href: MyProject.html
+  name: MyProject.Common.Bootstrap
+  nameWithType: MyProject.Common.Bootstrap
+  fullName: MyProject.Common.Bootstrap
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Bootstrap
+    name: Bootstrap
+    href: MyProject.Common.Bootstrap.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Bootstrap
+    name: Bootstrap
+    href: MyProject.Common.Bootstrap.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.Bootstrap.BootstrapperBase.OnInit*
+  commentId: Overload:MyProject.Common.Bootstrap.BootstrapperBase.OnInit
+  href: MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_OnInit
+  name: OnInit
+  nameWithType: BootstrapperBase.OnInit
+  fullName: MyProject.Common.Bootstrap.BootstrapperBase.OnInit
+- uid: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager*
+  commentId: Overload:MyProject.Common.Bootstrap.BootstrapperBase.CreateManager
+  href: MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_CreateManager_MonoBehaviour_
+  name: CreateManager
+  nameWithType: BootstrapperBase.CreateManager
+  fullName: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager
+- uid: MonoBehaviour
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: MonoBehaviour
+- uid: MyProject.Common.Bootstrap.IManager
+  commentId: T:MyProject.Common.Bootstrap.IManager
+  parent: MyProject.Common.Bootstrap
+  href: MyProject.Common.Bootstrap.IManager.html
+  name: IManager
+  nameWithType: IManager
+  fullName: MyProject.Common.Bootstrap.IManager
+- uid: MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy*
+  commentId: Overload:MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy
+  href: MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_OnDestroy
+  name: OnDestroy
+  nameWithType: BootstrapperBase.OnDestroy
+  fullName: MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy

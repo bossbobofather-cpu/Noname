@@ -1,0 +1,280 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Presentation.StatusDisplayModule
+  commentId: T:MyProject.ExploreGame.Presentation.StatusDisplayModule
+  id: StatusDisplayModule
+  parent: MyProject.ExploreGame.Presentation
+  children:
+  - MyProject.ExploreGame.Presentation.StatusDisplayModule.OnInit
+  langs:
+  - csharp
+  - vb
+  name: StatusDisplayModule
+  nameWithType: StatusDisplayModule
+  fullName: MyProject.ExploreGame.Presentation.StatusDisplayModule
+  type: Class
+  namespace: MyProject.ExploreGame.Presentation
+  summary: 주기적으로 캐릭터 상태를 출력하는 모듈입니다.
+  example: []
+  syntax:
+    content: 'public sealed class StatusDisplayModule : ModuleBase, IModule, IModuleDescriptorReceiver'
+    content.vb: Public NotInheritable Class StatusDisplayModule Inherits ModuleBase Implements IModule, IModuleDescriptorReceiver
+  inheritance:
+  - System.Object
+  - MyProject.Common.GameMode.ModuleBase
+  implements:
+  - MyProject.Common.GameMode.IModule
+  - MyProject.Common.GameMode.IModuleDescriptorReceiver
+  inheritedMembers:
+  - MyProject.Common.GameMode.ModuleBase.Mode
+  - MyProject.Common.GameMode.ModuleBase.ModuleKey
+  - MyProject.Common.GameMode.ModuleBase.Initialize(MyProject.Common.GameMode.GameMode)
+  - MyProject.Common.GameMode.ModuleBase.Startup
+  - MyProject.Common.GameMode.ModuleBase.Shutdown
+  - MyProject.Common.GameMode.ModuleBase.ApplyDescriptor(MyProject.Common.Host.GameModuleDescriptor)
+- uid: MyProject.ExploreGame.Presentation.StatusDisplayModule.OnInit
+  commentId: M:MyProject.ExploreGame.Presentation.StatusDisplayModule.OnInit
+  id: OnInit
+  parent: MyProject.ExploreGame.Presentation.StatusDisplayModule
+  langs:
+  - csharp
+  - vb
+  name: OnInit()
+  nameWithType: StatusDisplayModule.OnInit()
+  fullName: MyProject.ExploreGame.Presentation.StatusDisplayModule.OnInit()
+  type: Method
+  namespace: MyProject.ExploreGame.Presentation
+  summary: 구독 등록이 필요한 경우 이 단계에서 처리합니다.
+  example: []
+  syntax:
+    content: protected override void OnInit()
+    content.vb: Protected Overrides Sub OnInit()
+  overridden: MyProject.Common.GameMode.ModuleBase.OnInit
+  overload: MyProject.ExploreGame.Presentation.StatusDisplayModule.OnInit*
+references:
+- uid: MyProject.ExploreGame.Presentation
+  commentId: N:MyProject.ExploreGame.Presentation
+  href: MyProject.html
+  name: MyProject.ExploreGame.Presentation
+  nameWithType: MyProject.ExploreGame.Presentation
+  fullName: MyProject.ExploreGame.Presentation
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Presentation
+    name: Presentation
+    href: MyProject.ExploreGame.Presentation.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Presentation
+    name: Presentation
+    href: MyProject.ExploreGame.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.Common.GameMode.ModuleBase
+  commentId: T:MyProject.Common.GameMode.ModuleBase
+  parent: MyProject.Common.GameMode
+  href: MyProject.Common.GameMode.ModuleBase.html
+  name: ModuleBase
+  nameWithType: ModuleBase
+  fullName: MyProject.Common.GameMode.ModuleBase
+- uid: MyProject.Common.GameMode.IModule
+  commentId: T:MyProject.Common.GameMode.IModule
+  parent: MyProject.Common.GameMode
+  href: MyProject.Common.GameMode.IModule.html
+  name: IModule
+  nameWithType: IModule
+  fullName: MyProject.Common.GameMode.IModule
+- uid: MyProject.Common.GameMode.IModuleDescriptorReceiver
+  commentId: T:MyProject.Common.GameMode.IModuleDescriptorReceiver
+  parent: MyProject.Common.GameMode
+  href: MyProject.Common.GameMode.IModuleDescriptorReceiver.html
+  name: IModuleDescriptorReceiver
+  nameWithType: IModuleDescriptorReceiver
+  fullName: MyProject.Common.GameMode.IModuleDescriptorReceiver
+- uid: MyProject.Common.GameMode.ModuleBase.Mode
+  commentId: P:MyProject.Common.GameMode.ModuleBase.Mode
+  parent: MyProject.Common.GameMode.ModuleBase
+  href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_Mode
+  name: Mode
+  nameWithType: ModuleBase.Mode
+  fullName: MyProject.Common.GameMode.ModuleBase.Mode
+- uid: MyProject.Common.GameMode.ModuleBase.ModuleKey
+  commentId: P:MyProject.Common.GameMode.ModuleBase.ModuleKey
+  parent: MyProject.Common.GameMode.ModuleBase
+  href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_ModuleKey
+  name: ModuleKey
+  nameWithType: ModuleBase.ModuleKey
+  fullName: MyProject.Common.GameMode.ModuleBase.ModuleKey
+- uid: MyProject.Common.GameMode.ModuleBase.Initialize(MyProject.Common.GameMode.GameMode)
+  commentId: M:MyProject.Common.GameMode.ModuleBase.Initialize(MyProject.Common.GameMode.GameMode)
+  parent: MyProject.Common.GameMode.ModuleBase
+  href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_Initialize_MyProject_Common_GameMode_GameMode_
+  name: Initialize(GameMode)
+  nameWithType: ModuleBase.Initialize(GameMode)
+  fullName: MyProject.Common.GameMode.ModuleBase.Initialize(MyProject.Common.GameMode.GameMode)
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.ModuleBase.Initialize(MyProject.Common.GameMode.GameMode)
+    name: Initialize
+    href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_Initialize_MyProject_Common_GameMode_GameMode_
+  - name: (
+  - uid: MyProject.Common.GameMode.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.GameMode.html
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.ModuleBase.Initialize(MyProject.Common.GameMode.GameMode)
+    name: Initialize
+    href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_Initialize_MyProject_Common_GameMode_GameMode_
+  - name: (
+  - uid: MyProject.Common.GameMode.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.GameMode.html
+  - name: )
+- uid: MyProject.Common.GameMode.ModuleBase.Startup
+  commentId: M:MyProject.Common.GameMode.ModuleBase.Startup
+  parent: MyProject.Common.GameMode.ModuleBase
+  href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_Startup
+  name: Startup()
+  nameWithType: ModuleBase.Startup()
+  fullName: MyProject.Common.GameMode.ModuleBase.Startup()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.ModuleBase.Startup
+    name: Startup
+    href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_Startup
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.ModuleBase.Startup
+    name: Startup
+    href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_Startup
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.ModuleBase.Shutdown
+  commentId: M:MyProject.Common.GameMode.ModuleBase.Shutdown
+  parent: MyProject.Common.GameMode.ModuleBase
+  href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_Shutdown
+  name: Shutdown()
+  nameWithType: ModuleBase.Shutdown()
+  fullName: MyProject.Common.GameMode.ModuleBase.Shutdown()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.ModuleBase.Shutdown
+    name: Shutdown
+    href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_Shutdown
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.ModuleBase.Shutdown
+    name: Shutdown
+    href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_Shutdown
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.ModuleBase.ApplyDescriptor(MyProject.Common.Host.GameModuleDescriptor)
+  commentId: M:MyProject.Common.GameMode.ModuleBase.ApplyDescriptor(MyProject.Common.Host.GameModuleDescriptor)
+  parent: MyProject.Common.GameMode.ModuleBase
+  href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_ApplyDescriptor_MyProject_Common_Host_GameModuleDescriptor_
+  name: ApplyDescriptor(GameModuleDescriptor)
+  nameWithType: ModuleBase.ApplyDescriptor(GameModuleDescriptor)
+  fullName: MyProject.Common.GameMode.ModuleBase.ApplyDescriptor(MyProject.Common.Host.GameModuleDescriptor)
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.ModuleBase.ApplyDescriptor(MyProject.Common.Host.GameModuleDescriptor)
+    name: ApplyDescriptor
+    href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_ApplyDescriptor_MyProject_Common_Host_GameModuleDescriptor_
+  - name: (
+  - uid: MyProject.Common.Host.GameModuleDescriptor
+    name: GameModuleDescriptor
+    href: MyProject.Common.Host.GameModuleDescriptor.html
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.ModuleBase.ApplyDescriptor(MyProject.Common.Host.GameModuleDescriptor)
+    name: ApplyDescriptor
+    href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_ApplyDescriptor_MyProject_Common_Host_GameModuleDescriptor_
+  - name: (
+  - uid: MyProject.Common.Host.GameModuleDescriptor
+    name: GameModuleDescriptor
+    href: MyProject.Common.Host.GameModuleDescriptor.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.GameMode
+  commentId: N:MyProject.Common.GameMode
+  href: MyProject.html
+  name: MyProject.Common.GameMode
+  nameWithType: MyProject.Common.GameMode
+  fullName: MyProject.Common.GameMode
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.html
+- uid: MyProject.Common.GameMode.ModuleBase.OnInit
+  commentId: M:MyProject.Common.GameMode.ModuleBase.OnInit
+  parent: MyProject.Common.GameMode.ModuleBase
+  href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_OnInit
+  name: OnInit()
+  nameWithType: ModuleBase.OnInit()
+  fullName: MyProject.Common.GameMode.ModuleBase.OnInit()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.ModuleBase.OnInit
+    name: OnInit
+    href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_OnInit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.ModuleBase.OnInit
+    name: OnInit
+    href: MyProject.Common.GameMode.ModuleBase.html#MyProject_Common_GameMode_ModuleBase_OnInit
+  - name: (
+  - name: )
+- uid: MyProject.ExploreGame.Presentation.StatusDisplayModule.OnInit*
+  commentId: Overload:MyProject.ExploreGame.Presentation.StatusDisplayModule.OnInit
+  href: MyProject.ExploreGame.Presentation.StatusDisplayModule.html#MyProject_ExploreGame_Presentation_StatusDisplayModule_OnInit
+  name: OnInit
+  nameWithType: StatusDisplayModule.OnInit
+  fullName: MyProject.ExploreGame.Presentation.StatusDisplayModule.OnInit

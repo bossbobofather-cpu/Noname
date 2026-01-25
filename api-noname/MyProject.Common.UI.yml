@@ -8,6 +8,15 @@ items:
   - MyProject.Common.UI.ScreenSpaceHealthBar
   - MyProject.Common.UI.ScreenSpaceHealthBarPool
   - MyProject.Common.UI.SystemMessageUI
+  - MyProject.Common.UI.UIBase
+  - MyProject.Common.UI.UIEventContext
+  - MyProject.Common.UI.UIEventType
+  - MyProject.Common.UI.UIManager
+  - MyProject.Common.UI.UIPageBase
+  - MyProject.Common.UI.UIPopupBase
+  - MyProject.Common.UI.UIRegistry
+  - MyProject.Common.UI.UIRoot
+  - MyProject.Common.UI.UISystemBase
   - MyProject.Common.UI.WorldHealthBar
   - MyProject.Common.UI.WorldObjectLabel
   langs:
@@ -44,6 +53,51 @@ references:
   name: SystemMessageUI
   nameWithType: SystemMessageUI
   fullName: MyProject.Common.UI.SystemMessageUI
+- uid: MyProject.Common.UI.UIBase
+  commentId: T:MyProject.Common.UI.UIBase
+  parent: MyProject.Common.UI
+  href: MyProject.Common.UI.UIBase.html
+  name: UIBase
+  nameWithType: UIBase
+  fullName: MyProject.Common.UI.UIBase
+- uid: MyProject.Common.UI.UIManager
+  commentId: T:MyProject.Common.UI.UIManager
+  parent: MyProject.Common.UI
+  href: MyProject.Common.UI.UIManager.html
+  name: UIManager
+  nameWithType: UIManager
+  fullName: MyProject.Common.UI.UIManager
+- uid: MyProject.Common.UI.UIPageBase
+  commentId: T:MyProject.Common.UI.UIPageBase
+  href: MyProject.Common.UI.UIPageBase.html
+  name: UIPageBase
+  nameWithType: UIPageBase
+  fullName: MyProject.Common.UI.UIPageBase
+- uid: MyProject.Common.UI.UIPopupBase
+  commentId: T:MyProject.Common.UI.UIPopupBase
+  href: MyProject.Common.UI.UIPopupBase.html
+  name: UIPopupBase
+  nameWithType: UIPopupBase
+  fullName: MyProject.Common.UI.UIPopupBase
+- uid: MyProject.Common.UI.UIRegistry
+  commentId: T:MyProject.Common.UI.UIRegistry
+  href: MyProject.Common.UI.UIRegistry.html
+  name: UIRegistry
+  nameWithType: UIRegistry
+  fullName: MyProject.Common.UI.UIRegistry
+- uid: MyProject.Common.UI.UIRoot
+  commentId: T:MyProject.Common.UI.UIRoot
+  parent: MyProject.Common.UI
+  href: MyProject.Common.UI.UIRoot.html
+  name: UIRoot
+  nameWithType: UIRoot
+  fullName: MyProject.Common.UI.UIRoot
+- uid: MyProject.Common.UI.UISystemBase
+  commentId: T:MyProject.Common.UI.UISystemBase
+  href: MyProject.Common.UI.UISystemBase.html
+  name: UISystemBase
+  nameWithType: UISystemBase
+  fullName: MyProject.Common.UI.UISystemBase
 - uid: MyProject.Common.UI.WorldHealthBar
   commentId: T:MyProject.Common.UI.WorldHealthBar
   href: MyProject.Common.UI.WorldHealthBar.html
@@ -56,6 +110,20 @@ references:
   name: WorldObjectLabel
   nameWithType: WorldObjectLabel
   fullName: MyProject.Common.UI.WorldObjectLabel
+- uid: MyProject.Common.UI.UIEventType
+  commentId: T:MyProject.Common.UI.UIEventType
+  parent: MyProject.Common.UI
+  href: MyProject.Common.UI.UIEventType.html
+  name: UIEventType
+  nameWithType: UIEventType
+  fullName: MyProject.Common.UI.UIEventType
+- uid: MyProject.Common.UI.UIEventContext
+  commentId: T:MyProject.Common.UI.UIEventContext
+  parent: MyProject.Common.UI
+  href: MyProject.Common.UI.UIEventContext.html
+  name: UIEventContext
+  nameWithType: UIEventContext
+  fullName: MyProject.Common.UI.UIEventContext
 - uid: MyProject.Common.UI
   commentId: N:MyProject.Common.UI
   href: MyProject.html

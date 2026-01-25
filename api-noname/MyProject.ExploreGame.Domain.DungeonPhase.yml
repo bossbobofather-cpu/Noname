@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.ExploreGame.Domain.DungeonPhase
+  commentId: T:MyProject.ExploreGame.Domain.DungeonPhase
+  id: DungeonPhase
+  parent: MyProject.ExploreGame.Domain
+  children:
+  - MyProject.ExploreGame.Domain.DungeonPhase.Completed
+  - MyProject.ExploreGame.Domain.DungeonPhase.Exploring
+  - MyProject.ExploreGame.Domain.DungeonPhase.Failed
+  - MyProject.ExploreGame.Domain.DungeonPhase.InCombat
+  - MyProject.ExploreGame.Domain.DungeonPhase.Preparing
+  langs:
+  - csharp
+  - vb
+  name: DungeonPhase
+  nameWithType: DungeonPhase
+  fullName: MyProject.ExploreGame.Domain.DungeonPhase
+  type: Enum
+  namespace: MyProject.ExploreGame.Domain
+  summary: 던전 탐험 단계입니다.
+  example: []
+  syntax:
+    content: public enum DungeonPhase
+    content.vb: Public Enum DungeonPhase
+- uid: MyProject.ExploreGame.Domain.DungeonPhase.Preparing
+  commentId: F:MyProject.ExploreGame.Domain.DungeonPhase.Preparing
+  id: Preparing
+  parent: MyProject.ExploreGame.Domain.DungeonPhase
+  langs:
+  - csharp
+  - vb
+  name: Preparing
+  nameWithType: DungeonPhase.Preparing
+  fullName: MyProject.ExploreGame.Domain.DungeonPhase.Preparing
+  type: Field
+  namespace: MyProject.ExploreGame.Domain
+  summary: 탐험 준비 중
+  example: []
+  syntax:
+    content: Preparing = 0
+    return:
+      type: MyProject.ExploreGame.Domain.DungeonPhase
+- uid: MyProject.ExploreGame.Domain.DungeonPhase.Exploring
+  commentId: F:MyProject.ExploreGame.Domain.DungeonPhase.Exploring
+  id: Exploring
+  parent: MyProject.ExploreGame.Domain.DungeonPhase
+  langs:
+  - csharp
+  - vb
+  name: Exploring
+  nameWithType: DungeonPhase.Exploring
+  fullName: MyProject.ExploreGame.Domain.DungeonPhase.Exploring
+  type: Field
+  namespace: MyProject.ExploreGame.Domain
+  summary: 탐험 진행 중
+  example: []
+  syntax:
+    content: Exploring = 1
+    return:
+      type: MyProject.ExploreGame.Domain.DungeonPhase
+- uid: MyProject.ExploreGame.Domain.DungeonPhase.InCombat
+  commentId: F:MyProject.ExploreGame.Domain.DungeonPhase.InCombat
+  id: InCombat
+  parent: MyProject.ExploreGame.Domain.DungeonPhase
+  langs:
+  - csharp
+  - vb
+  name: InCombat
+  nameWithType: DungeonPhase.InCombat
+  fullName: MyProject.ExploreGame.Domain.DungeonPhase.InCombat
+  type: Field
+  namespace: MyProject.ExploreGame.Domain
+  summary: 전투 중
+  example: []
+  syntax:
+    content: InCombat = 2
+    return:
+      type: MyProject.ExploreGame.Domain.DungeonPhase
+- uid: MyProject.ExploreGame.Domain.DungeonPhase.Completed
+  commentId: F:MyProject.ExploreGame.Domain.DungeonPhase.Completed
+  id: Completed
+  parent: MyProject.ExploreGame.Domain.DungeonPhase
+  langs:
+  - csharp
+  - vb
+  name: Completed
+  nameWithType: DungeonPhase.Completed
+  fullName: MyProject.ExploreGame.Domain.DungeonPhase.Completed
+  type: Field
+  namespace: MyProject.ExploreGame.Domain
+  summary: 탐험 완료
+  example: []
+  syntax:
+    content: Completed = 3
+    return:
+      type: MyProject.ExploreGame.Domain.DungeonPhase
+- uid: MyProject.ExploreGame.Domain.DungeonPhase.Failed
+  commentId: F:MyProject.ExploreGame.Domain.DungeonPhase.Failed
+  id: Failed
+  parent: MyProject.ExploreGame.Domain.DungeonPhase
+  langs:
+  - csharp
+  - vb
+  name: Failed
+  nameWithType: DungeonPhase.Failed
+  fullName: MyProject.ExploreGame.Domain.DungeonPhase.Failed
+  type: Field
+  namespace: MyProject.ExploreGame.Domain
+  summary: 탐험 실패
+  example: []
+  syntax:
+    content: Failed = 4
+    return:
+      type: MyProject.ExploreGame.Domain.DungeonPhase
+references:
+- uid: MyProject.ExploreGame.Domain
+  commentId: N:MyProject.ExploreGame.Domain
+  href: MyProject.html
+  name: MyProject.ExploreGame.Domain
+  nameWithType: MyProject.ExploreGame.Domain
+  fullName: MyProject.ExploreGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.ExploreGame
+    name: ExploreGame
+    href: MyProject.ExploreGame.html
+  - name: .
+  - uid: MyProject.ExploreGame.Domain
+    name: Domain
+    href: MyProject.ExploreGame.Domain.html
+- uid: MyProject.ExploreGame.Domain.DungeonPhase
+  commentId: T:MyProject.ExploreGame.Domain.DungeonPhase
+  parent: MyProject.ExploreGame.Domain
+  href: MyProject.ExploreGame.Domain.DungeonPhase.html
+  name: DungeonPhase
+  nameWithType: DungeonPhase
+  fullName: MyProject.ExploreGame.Domain.DungeonPhase

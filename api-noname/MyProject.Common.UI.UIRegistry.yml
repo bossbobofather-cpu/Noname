@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.UI.UIRegistry
+  commentId: T:MyProject.Common.UI.UIRegistry
+  id: UIRegistry
+  parent: MyProject.Common.UI
+  children:
+  - MyProject.Common.UI.UIRegistry.TryGetPrefab(System.Type,MyProject.Common.UI.UIBase@)
+  - MyProject.Common.UI.UIRegistry.TryGetPrefab``1(``0@)
+  langs:
+  - csharp
+  - vb
+  name: UIRegistry
+  nameWithType: UIRegistry
+  fullName: MyProject.Common.UI.UIRegistry
+  type: Class
+  namespace: MyProject.Common.UI
+  summary: UI 타입과 프리팹을 연결하는 레지스트리입니다.
+  example: []
+  syntax:
+    content: 'public sealed class UIRegistry : ScriptableObject'
+    content.vb: Public NotInheritable Class UIRegistry Inherits ScriptableObject
+  inheritance:
+  - System.Object
+- uid: MyProject.Common.UI.UIRegistry.TryGetPrefab``1(``0@)
+  commentId: M:MyProject.Common.UI.UIRegistry.TryGetPrefab``1(``0@)
+  id: TryGetPrefab``1(``0@)
+  parent: MyProject.Common.UI.UIRegistry
+  langs:
+  - csharp
+  - vb
+  name: TryGetPrefab<T>(out T)
+  nameWithType: UIRegistry.TryGetPrefab<T>(out T)
+  fullName: MyProject.Common.UI.UIRegistry.TryGetPrefab<T>(out T)
+  type: Method
+  namespace: MyProject.Common.UI
+  summary: 타입으로 UI 프리팹을 찾습니다.
+  example: []
+  syntax:
+    content: 'public bool TryGetPrefab<T>(out T prefab) where T : UIBase'
+    parameters:
+    - id: prefab
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetPrefab(Of T As UIBase)(prefab As T) As Boolean
+  overload: MyProject.Common.UI.UIRegistry.TryGetPrefab*
+  nameWithType.vb: UIRegistry.TryGetPrefab(Of T)(T)
+  fullName.vb: MyProject.Common.UI.UIRegistry.TryGetPrefab(Of T)(T)
+  name.vb: TryGetPrefab(Of T)(T)
+- uid: MyProject.Common.UI.UIRegistry.TryGetPrefab(System.Type,MyProject.Common.UI.UIBase@)
+  commentId: M:MyProject.Common.UI.UIRegistry.TryGetPrefab(System.Type,MyProject.Common.UI.UIBase@)
+  id: TryGetPrefab(System.Type,MyProject.Common.UI.UIBase@)
+  parent: MyProject.Common.UI.UIRegistry
+  langs:
+  - csharp
+  - vb
+  name: TryGetPrefab(Type, out UIBase)
+  nameWithType: UIRegistry.TryGetPrefab(Type, out UIBase)
+  fullName: MyProject.Common.UI.UIRegistry.TryGetPrefab(System.Type, out MyProject.Common.UI.UIBase)
+  type: Method
+  namespace: MyProject.Common.UI
+  summary: 타입으로 UI 프리팹을 찾습니다.
+  example: []
+  syntax:
+    content: public bool TryGetPrefab(Type type, out UIBase prefab)
+    parameters:
+    - id: type
+      type: System.Type
+    - id: prefab
+      type: MyProject.Common.UI.UIBase
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetPrefab(type As Type, prefab As UIBase) As Boolean
+  overload: MyProject.Common.UI.UIRegistry.TryGetPrefab*
+  nameWithType.vb: UIRegistry.TryGetPrefab(Type, UIBase)
+  fullName.vb: MyProject.Common.UI.UIRegistry.TryGetPrefab(System.Type, MyProject.Common.UI.UIBase)
+  name.vb: TryGetPrefab(Type, UIBase)
+references:
+- uid: MyProject.Common.UI
+  commentId: N:MyProject.Common.UI
+  href: MyProject.html
+  name: MyProject.Common.UI
+  nameWithType: MyProject.Common.UI
+  fullName: MyProject.Common.UI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.UI.UIRegistry.TryGetPrefab*
+  commentId: Overload:MyProject.Common.UI.UIRegistry.TryGetPrefab
+  href: MyProject.Common.UI.UIRegistry.html#MyProject_Common_UI_UIRegistry_TryGetPrefab__1___0__
+  name: TryGetPrefab
+  nameWithType: UIRegistry.TryGetPrefab
+  fullName: MyProject.Common.UI.UIRegistry.TryGetPrefab
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: MyProject.Common.UI.UIBase
+  commentId: T:MyProject.Common.UI.UIBase
+  parent: MyProject.Common.UI
+  href: MyProject.Common.UI.UIBase.html
+  name: UIBase
+  nameWithType: UIBase
+  fullName: MyProject.Common.UI.UIBase

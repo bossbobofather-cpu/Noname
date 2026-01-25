@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.UI.UIEventType
+  commentId: T:MyProject.Common.UI.UIEventType
+  id: UIEventType
+  parent: MyProject.Common.UI
+  children:
+  - MyProject.Common.UI.UIEventType.Button_Click
+  langs:
+  - csharp
+  - vb
+  name: UIEventType
+  nameWithType: UIEventType
+  fullName: MyProject.Common.UI.UIEventType
+  type: Enum
+  namespace: MyProject.Common.UI
+  summary: UI 이벤트 종류입니다.
+  example: []
+  syntax:
+    content: public enum UIEventType
+    content.vb: Public Enum UIEventType
+- uid: MyProject.Common.UI.UIEventType.Button_Click
+  commentId: F:MyProject.Common.UI.UIEventType.Button_Click
+  id: Button_Click
+  parent: MyProject.Common.UI.UIEventType
+  langs:
+  - csharp
+  - vb
+  name: Button_Click
+  nameWithType: UIEventType.Button_Click
+  fullName: MyProject.Common.UI.UIEventType.Button_Click
+  type: Field
+  namespace: MyProject.Common.UI
+  syntax:
+    content: Button_Click = 0
+    return:
+      type: MyProject.Common.UI.UIEventType
+references:
+- uid: MyProject.Common.UI
+  commentId: N:MyProject.Common.UI
+  href: MyProject.html
+  name: MyProject.Common.UI
+  nameWithType: MyProject.Common.UI
+  fullName: MyProject.Common.UI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.UI
+    name: UI
+    href: MyProject.Common.UI.html
+- uid: MyProject.Common.UI.UIEventType
+  commentId: T:MyProject.Common.UI.UIEventType
+  parent: MyProject.Common.UI
+  href: MyProject.Common.UI.UIEventType.html
+  name: UIEventType
+  nameWithType: UIEventType
+  fullName: MyProject.Common.UI.UIEventType

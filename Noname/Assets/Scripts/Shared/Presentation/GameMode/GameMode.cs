@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 using MyProject.Common.GameEvent;
-
+using MyProject.Common.Host;
 namespace MyProject.Common.GameMode
 {
     /// <summary>
@@ -31,6 +31,11 @@ namespace MyProject.Common.GameMode
         public GameEventBus.Scope SceneBus => GameEventBus.Scene;
 
         /// <summary>
+        /// 적용된 세션 설명서입니다.
+        /// </summary>
+        public GameSessionDescriptor SessionDescriptor { get; private set; }
+
+        /// <summary>
         /// 모듈을 생성하고 초기화합니다.
         /// </summary>
         public void Initialize()
@@ -47,6 +52,8 @@ namespace MyProject.Common.GameMode
             {
                 _modules[i].Initialize(this);
             }
+
+            OnInitialize();
         }
 
         /// <summary>
@@ -65,6 +72,8 @@ namespace MyProject.Common.GameMode
             {
                 _modules[i].Startup();
             }
+
+            OnStartup();
         }
 
         /// <summary>
@@ -82,6 +91,46 @@ namespace MyProject.Common.GameMode
             for (var i = 0; i < _modules.Count; i++)
             {
                 _modules[i].Shutdown();
+            }
+
+            OnShutdown();
+        }
+
+        /// <summary>
+        /// 호스트가 제공한 세션 설명서를 적용합니다.
+        /// </summary>
+        public void ApplySessionDescriptor(GameSessionDescriptor descriptor)
+        {
+            SessionDescriptor = descriptor;
+            if (descriptor == null)
+            {
+                return;
+            }
+
+            var receivers = new Dictionary<string, IModuleDescriptorReceiver>();
+            for (var i = 0; i < _modules.Count; i++)
+            {
+                if (_modules[i] is IModuleDescriptorReceiver receiver)
+                {
+                    receivers[receiver.ModuleKey] = receiver;
+                }
+            }
+
+            foreach (var moduleDescriptor in descriptor.Modules)
+            {
+                if (moduleDescriptor == null)
+                {
+                    continue;
+                }
+
+                if (receivers.TryGetValue(moduleDescriptor.ModuleKey, out var receiver))
+                {
+                    receiver.ApplyDescriptor(moduleDescriptor);
+                }
+                else
+                {
+                    Debug.LogWarning($"설명서에 등록된 모듈이 존재하지 않습니다: {moduleDescriptor.ModuleKey}");
+                }
             }
         }
 
@@ -168,5 +217,32 @@ namespace MyProject.Common.GameMode
         protected virtual void OnDestroy()
         {
         }
+
+        /// <summary>
+        /// 모드 초기화 완료 시 호출됩니다.
+        /// </summary>
+        protected virtual void OnInitialize()
+        {
+        }
+
+        /// <summary>
+        /// 모듈 Startup 이후 호출됩니다.
+        /// </summary>
+        protected virtual void OnStartup()
+        {
+        }
+
+        /// <summary>
+        /// 모듈 Shutdown 이후 호출됩니다.
+        /// </summary>
+        protected virtual void OnShutdown()
+        {
+        }
+
+
+        /// <summary>
+        /// 게임 커맨드를 요청 합니다.
+        /// </summary>      
+        public abstract void RequestCommand(GameCommandBase command);
     }
 }
