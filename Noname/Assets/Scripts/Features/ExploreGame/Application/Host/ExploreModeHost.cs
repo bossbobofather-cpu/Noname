@@ -84,8 +84,16 @@ namespace MyProject.ExploreGame.Application
                 _config.InitialLevel,
                 _config.InitialMaxHp,
                 _config.InitialAttack,
-                _config.InitialDefense
+                _config.InitialDefense,
+                _config.InitialSpeed
             );
+
+            // 기본 어빌리티 추가
+            var abilities = ExploreAbilityFactory.CreateDefaultAbilities();
+            for (var i = 0; i < abilities.Count; i++)
+            {
+                character.AddAbility(abilities[i]);
+            }
 
             var success = _state.TryAddCharacter(character);
 

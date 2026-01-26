@@ -101,6 +101,8 @@ namespace MyProject.Common.UI
 
         private void AttackToMainCameraStack()
         {
+            if(Camera.main == null) return;
+
             var baseData = Camera.main.GetUniversalAdditionalCameraData();
             if (!baseData.cameraStack.Contains(_uiCamera))
                 baseData.cameraStack.Add(_uiCamera);
@@ -108,6 +110,8 @@ namespace MyProject.Common.UI
 
         private void DettachFromMainCameraStack()
         {
+            if(Camera.main == null) return;
+
             var baseData = Camera.main.GetUniversalAdditionalCameraData();
             if (baseData != null) baseData.cameraStack.Remove(_uiCamera);
         }

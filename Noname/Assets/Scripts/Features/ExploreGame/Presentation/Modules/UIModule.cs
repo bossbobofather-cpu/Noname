@@ -2,21 +2,23 @@ using System;
 using UnityEngine;
 using MyProject.Common.GameEvent;
 using MyProject.Common.GameMode;
-using MyProject.ExploreGame.Application;
 using MyProject.Common.UI;
+using MyProject.ExploreGame.Application;
 
 namespace MyProject.ExploreGame.Presentation
 {
     /// <summary>
-    /// 게임 진행 상황을 텍스트 로그로 출력하는 모듈입니다.
+    /// 게임 진행 상황을 SystemMessageUI로 출력하는 모듈입니다.
     /// </summary>
-    public sealed class TextLogModule : ModuleBase
+    public sealed class UIModule : ModuleBase
     {
-        [Header("Log Settings")]
-        [SerializeField] private bool _enableDetailedLogs = true;
-        [SerializeField] private Color _eventColor = Color.cyan;
-        [SerializeField] private Color _combatColor = Color.yellow;
-        [SerializeField] private Color _rewardColor = Color.green;
+        [Header("Message Colors")]
+        [SerializeField] private Color _defaultColor = new Color(0f, 0f, 0f, 0.6f);
+        [SerializeField] private Color _eventColor = new Color(0.2f, 0.4f, 0.6f, 0.8f); // 파란색
+        [SerializeField] private Color _combatColor = new Color(0.6f, 0.4f, 0.2f, 0.8f); // 주황색
+        [SerializeField] private Color _abilityColor = new Color(0.6f, 0.2f, 0.6f, 0.8f); // 보라색
+        [SerializeField] private Color _rewardColor = new Color(0.2f, 0.6f, 0.2f, 0.8f); // 초록색
+        [SerializeField] private Color _dangerColor = new Color(0.6f, 0.2f, 0.2f, 0.8f); // 빨간색
 
         private Action<ExploreHostEventRaisedEvent> _eventHandler;
 
@@ -41,7 +43,7 @@ namespace MyProject.ExploreGame.Presentation
         }
 
         /// <summary>
-        /// Host 이벤트를 받아서 로그로 출력합니다.
+        /// Host 이벤트를 받아서 SystemMessageUI로 출력합니다.
         /// </summary>
         private void OnHostEvent(ExploreHostEventRaisedEvent evt)
         {
@@ -53,8 +55,14 @@ namespace MyProject.ExploreGame.Presentation
             var message = FormatEventMessage(evt.Event);
             if (!string.IsNullOrEmpty(message))
             {
-                LogMessage(message, GetEventColor(evt.Event));
+                var color = GetEventColor(evt.Event);
+                SystemMessageBus.Publish(message, color);
             }
+        }
+
+        private void OnDetectedChangePlayerStatus(string message, Color color)
+        {
+            SystemMessageBus.Publish(message, color);
         }
 
         /// <summary>
@@ -65,16 +73,16 @@ namespace MyProject.ExploreGame.Presentation
             return evt switch
             {
                 ExplorePlayerJoinedEvent e =>
-                    $"[게임 시작] '{e.CharacterName}'이(가) 탐험을 시작했습니다!",
+                    $"'{e.CharacterName}' 탐험 시작!",
 
                 ExploreDungeonStartedEvent e =>
-                    $"[던전 시작] {e.DungeonId} 던전 입장! (총 {e.TotalStages}층)",
+                    $"{e.DungeonId} 던전 입장 ({e.TotalStages}층)",
 
                 ExploreStageChangedEvent e =>
-                    $"[층 이동] {e.Stage}층에 도착했습니다.",
+                    $"{e.Stage}층 도착",
 
                 ExploreCombatStartedEvent e =>
-                    $"[전투 시작] {e.MonsterType} {e.MonsterCount}마리가 나타났습니다!",
+                    $"{e.MonsterType} {e.MonsterCount}마리 출현!",
 
                 ExploreCombatActionEvent e =>
                     FormatCombatAction(e),
@@ -83,23 +91,21 @@ namespace MyProject.ExploreGame.Presentation
                     FormatAbilityUsed(e),
 
                 ExploreCombatEndedEvent e =>
-                    e.Victory
-                        ? "[승리] 전투에서 승리했습니다!"
-                        : "[패배] 전투에서 패배했습니다...",
+                    e.Victory ? "전투 승리!" : "전투 패배...",
 
                 ExploreRewardGrantedEvent e =>
-                    $"[보상] 골드 +{e.Gold}, 경험치 +{e.Experience}",
+                    $"골드 +{e.Gold}, 경험치 +{e.Experience}",
 
                 ExploreCharacterLevelUpEvent e =>
-                    $"[레벨업] 레벨 {e.NewLevel}로 레벨업했습니다!",
+                    $"레벨 {e.NewLevel} 달성!",
 
                 ExploreDungeonCompletedEvent e =>
-                    $"[던전 완료] {e.DungeonId} 던전을 완료했습니다!",
+                    $"{e.DungeonId} 던전 완료!",
 
                 ExploreDungeonFailedEvent e =>
-                    $"[던전 실패] {e.DungeonId} 던전 {e.ReachedStage}층에서 실패했습니다.",
+                    $"{e.DungeonId} {e.ReachedStage}층 실패",
 
-                _ => _enableDetailedLogs ? $"[이벤트] {evt.GetType().Name}" : null
+                _ => null
             };
         }
 
@@ -108,11 +114,11 @@ namespace MyProject.ExploreGame.Presentation
         /// </summary>
         private string FormatCombatAction(ExploreCombatActionEvent evt)
         {
-            var message = $"[전투] {evt.ActorName} → {evt.TargetName}: {evt.Damage} 데미지";
+            var message = $"{evt.ActorName} → {evt.TargetName} ({evt.Damage})";
 
             if (evt.IsTargetDead)
             {
-                message += " [사망]";
+                message += " ☠";
             }
 
             return message;
@@ -123,38 +129,36 @@ namespace MyProject.ExploreGame.Presentation
         /// </summary>
         private string FormatAbilityUsed(ExploreAbilityUsedEvent evt)
         {
-            var message = $"[스킬] {evt.ActorName}의 '{evt.AbilityName}'! {evt.TargetName}에게 {evt.Damage} 데미지!";
+            var message = $"⚡ {evt.AbilityName} → {evt.TargetName} ({evt.Damage})";
 
             if (evt.IsTargetDead)
             {
-                message += " [사망]";
+                message += " ☠";
             }
 
             return message;
         }
 
         /// <summary>
-        /// 이벤트 타입에 따른 색상을 반환합니다.
+        /// 이벤트 타입에 따른 배경 색상을 반환합니다.
         /// </summary>
         private Color GetEventColor(ExploreHostEvent evt)
         {
             return evt switch
             {
+                ExplorePlayerJoinedEvent => _eventColor,
+                ExploreDungeonStartedEvent => _eventColor,
+                ExploreStageChangedEvent => _eventColor,
+                ExploreCombatStartedEvent => _dangerColor,
                 ExploreCombatActionEvent => _combatColor,
-                ExploreAbilityUsedEvent => Color.magenta,
+                ExploreAbilityUsedEvent => _abilityColor,
+                ExploreCombatEndedEvent e => e.Victory ? _rewardColor : _dangerColor,
                 ExploreRewardGrantedEvent => _rewardColor,
                 ExploreCharacterLevelUpEvent => _rewardColor,
-                _ => _eventColor
+                ExploreDungeonCompletedEvent => _rewardColor,
+                ExploreDungeonFailedEvent => _dangerColor,
+                _ => _defaultColor
             };
-        }
-
-        /// <summary>
-        /// 색상이 적용된 로그를 출력합니다.
-        /// </summary>
-        private void LogMessage(string message, Color color)
-        {
-            var hexColor = ColorUtility.ToHtmlStringRGB(color);
-            Debug.Log($"<color=#{hexColor}>{message}</color>");
         }
     }
 }

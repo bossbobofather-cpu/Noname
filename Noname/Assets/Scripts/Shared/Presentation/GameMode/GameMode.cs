@@ -238,11 +238,5 @@ namespace MyProject.Common.GameMode
         protected virtual void OnShutdown()
         {
         }
-
-
-        /// <summary>
-        /// 게임 커맨드를 요청 합니다.
-        /// </summary>      
-        public abstract void RequestCommand(GameCommandBase command);
     }
 }

@@ -33,27 +33,6 @@ namespace MyProject.ExploreGame.Presentation
         /// </summary>
         public ExploreViewModel ViewModel => _viewModel;
 
-        /// <summary>
-        /// GameMode의 추상 메서드 구현: Host에 커맨드를 제출합니다.
-        /// </summary>
-        public override void RequestCommand(GameCommandBase command)
-        {
-            if (_host == null)
-            {
-                Debug.LogWarning("[ExploreMode] Host가 초기화되지 않았습니다.");
-                return;
-            }
-
-            if (command is ExploreCommand exploreCommand)
-            {
-                _host.Submit(exploreCommand);
-            }
-            else
-            {
-                Debug.LogWarning($"[ExploreMode] 지원하지 않는 커맨드 타입: {command?.GetType().Name}");
-            }
-        }
-
         protected override void OnInitialize()
         {
             base.OnInitialize();
@@ -67,7 +46,9 @@ namespace MyProject.ExploreGame.Presentation
                 InitialLevel = 1,
                 InitialMaxHp = 100,
                 InitialAttack = 10,
-                InitialDefense = 5
+                InitialDefense = 5,
+                InitialSpeed = 10,
+                MaxCombatTurns = 10
             };
 
             _host = new ExploreHost(config);

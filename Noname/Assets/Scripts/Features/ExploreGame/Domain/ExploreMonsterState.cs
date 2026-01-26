@@ -14,8 +14,14 @@ namespace MyProject.ExploreGame.Domain
         public int MaxHp { get; }
         public int AttackPower { get; }
         public int Defense { get; }
+        public int Speed { get; }
         public int GoldReward { get; }
         public int ExpReward { get; }
+
+        /// <summary>
+        /// ATB 시스템을 위한 턴 게이지입니다 (0.0 ~ 100.0).
+        /// </summary>
+        public float TurnGauge { get; private set; }
 
         public bool IsDead => CurrentHp <= 0;
 
@@ -26,6 +32,7 @@ namespace MyProject.ExploreGame.Domain
             int maxHp,
             int attackPower,
             int defense,
+            int speed,
             int goldReward,
             int expReward)
         {
@@ -51,8 +58,10 @@ namespace MyProject.ExploreGame.Domain
             CurrentHp = maxHp;
             AttackPower = attackPower;
             Defense = defense;
+            Speed = speed;
             GoldReward = goldReward;
             ExpReward = expReward;
+            TurnGauge = 0f;
         }
 
         /// <summary>
@@ -66,6 +75,34 @@ namespace MyProject.ExploreGame.Domain
             }
 
             CurrentHp = Math.Max(0, CurrentHp - damage);
+        }
+
+        /// <summary>
+        /// 턴 게이지를 증가시킵니다.
+        /// </summary>
+        public void AddTurnGauge(float amount)
+        {
+            TurnGauge += amount;
+        }
+
+        /// <summary>
+        /// 턴 게이지를 소비합니다 (행동 후).
+        /// </summary>
+        public void ConsumeTurnGauge(float amount = 100f)
+        {
+            TurnGauge -= amount;
+            if (TurnGauge < 0f)
+            {
+                TurnGauge = 0f;
+            }
+        }
+
+        /// <summary>
+        /// 행동 가능한 상태인지 확인합니다.
+        /// </summary>
+        public bool CanAct()
+        {
+            return !IsDead && TurnGauge >= 100f;
         }
     }
 }

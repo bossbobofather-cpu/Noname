@@ -12,7 +12,7 @@
 
 ## 아키텍처
 
-Clean Architecture + DDD 패턴을 따르며, Host-Client 분리를 통해 멀티스레드 시뮬레이션을 지원합니다.
+Clean Architecture. Host-Client 분리를 통해 멀티스레드 시뮬레이션을 지원합니다.
 
 ### 레이어 구조
 

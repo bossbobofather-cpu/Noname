@@ -6,7 +6,7 @@ namespace MyProject.ExploreGame.Application
 {
     /// <summary>
     /// 탐험 게임의 Host입니다.
-    /// 별도 스레드에서 시뮬레이션을 실행하며, CQRS 패턴을 따릅니다.
+    /// 별도 스레드에서 시뮬레이션을 실행합니다.
     /// </summary>
     public sealed class ExploreHost
         : GameHostBase<ExploreCommand, ExploreCommandResult, ExploreHostEvent, ExploreStateSnapshot>

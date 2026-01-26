@@ -379,7 +379,7 @@ namespace MyProject.Common.Host
 
                     if (steps >= _maxStepsPerTick)
                     {
-                        // 최대 스텝에 도달하면 누적기를 리셋합니다 (Spiral of Death 방지).
+                        // 최대 스텝에 도달하면 누적기를 리셋합니다. //프레임 밀렸을때 한번에 많이 따라잡지 않게하자
                         accumulator = 0.0;
                     }
 

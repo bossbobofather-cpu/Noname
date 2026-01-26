@@ -26,12 +26,19 @@ namespace MyProject.ExploreGame.Domain
 
         public CombatPhase Phase { get; private set; }
         public int TurnCount { get; private set; }
+        public int MaxTurns { get; }
         public bool IsVictory { get; private set; }
 
-        public ExploreCombatState()
+        public ExploreCombatState(int maxTurns = 10)
         {
+            if (maxTurns < 1)
+            {
+                throw new ArgumentOutOfRangeException(nameof(maxTurns), "최대 턴 수는 1 이상이어야 합니다.");
+            }
+
             Phase = CombatPhase.Preparing;
             TurnCount = 0;
+            MaxTurns = maxTurns;
             IsVictory = false;
         }
 
@@ -149,6 +156,77 @@ namespace MyProject.ExploreGame.Domain
             lock (_combatLock)
             {
                 return Phase == CombatPhase.Ended;
+            }
+        }
+
+        /// <summary>
+        /// 최대 턴 수를 초과했는지 확인합니다.
+        /// </summary>
+        public bool IsTurnLimitExceeded()
+        {
+            lock (_combatLock)
+            {
+                return TurnCount >= MaxTurns;
+            }
+        }
+
+        /// <summary>
+        /// 모든 몬스터가 사망했는지 확인합니다.
+        /// </summary>
+        public bool AreAllMonstersDead()
+        {
+            lock (_combatLock)
+            {
+                for (var i = 0; i < _monsters.Count; i++)
+                {
+                    if (!_monsters[i].IsDead)
+                    {
+                        return false;
+                    }
+                }
+                return _monsters.Count > 0;
+            }
+        }
+
+        /// <summary>
+        /// 행동 가능한 몬스터를 반환합니다 (TurnGauge >= 100).
+        /// </summary>
+        public ExploreMonsterState GetReadyMonster()
+        {
+            lock (_combatLock)
+            {
+                for (var i = 0; i < _monsters.Count; i++)
+                {
+                    if (_monsters[i].CanAct())
+                    {
+                        return _monsters[i];
+                    }
+                }
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 모든 유닛(몬스터)의 턴 게이지를 증가시킵니다.
+        /// </summary>
+        public void UpdateTurnGauges(float deltaSeconds)
+        {
+            lock (_combatLock)
+            {
+                if (Phase != CombatPhase.InProgress)
+                {
+                    return;
+                }
+
+                for (var i = 0; i < _monsters.Count; i++)
+                {
+                    if (!_monsters[i].IsDead)
+                    {
+                        // Speed에 비례해서 게이지 증가
+                        var gaugeIncrease = _monsters[i].Speed * deltaSeconds;
+                        _monsters[i].AddTurnGauge(gaugeIncrease);
+                    }
+                }
             }
         }
     }

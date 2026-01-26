@@ -91,6 +91,32 @@ namespace MyProject.ExploreGame.Presentation
             if (CurrentCombat != null && !CurrentCombat.Phase.Equals(CombatPhase.Ended))
             {
                 summary += $" | 전투중 (턴:{CurrentCombat.TurnCount})";
+
+                // 몬스터 상태 추가
+                if (CurrentCombat.Monsters != null && CurrentCombat.Monsters.Count > 0)
+                {
+                    var aliveMonsters = 0;
+                    for (var i = 0; i < CurrentCombat.Monsters.Count; i++)
+                    {
+                        if (CurrentCombat.Monsters[i].CurrentHp > 0)
+                        {
+                            aliveMonsters++;
+                        }
+                    }
+
+                    summary += $" 몬스터:{aliveMonsters}/{CurrentCombat.Monsters.Count}";
+
+                    // 첫 번째 살아있는 몬스터 HP 표시
+                    for (var i = 0; i < CurrentCombat.Monsters.Count; i++)
+                    {
+                        var monster = CurrentCombat.Monsters[i];
+                        if (monster.CurrentHp > 0)
+                        {
+                            summary += $" [{monster.MonsterType} HP:{monster.CurrentHp}/{monster.MaxHp}]";
+                            break;
+                        }
+                    }
+                }
             }
 
             return summary;

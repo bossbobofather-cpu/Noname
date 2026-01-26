@@ -1,5 +1,6 @@
 using UnityEngine;
 using MyProject.Common.GameMode;
+using MyProject.Common.UI;
 
 namespace MyProject.ExploreGame.Presentation
 {
@@ -11,6 +12,7 @@ namespace MyProject.ExploreGame.Presentation
         [Header("Display Settings")]
         [SerializeField] private float _updateInterval = 5f;
         [SerializeField] private bool _enabled = true;
+        [SerializeField] private Color _statusColor = new Color(0.3f, 0.3f, 0.5f, 0.8f); // 진한 회색-파랑
 
         private ExploreMode _exploreMode;
         private float _timer;
@@ -33,6 +35,12 @@ namespace MyProject.ExploreGame.Presentation
                 return;
             }
 
+            // 게임이 종료되면 상태 출력 중지
+            if (_exploreMode.ViewModel.SessionPhase == Domain.ExploreSessionPhase.Ended)
+            {
+                return;
+            }
+
             _timer += Time.deltaTime;
             if (_timer < _updateInterval)
             {
@@ -50,7 +58,12 @@ namespace MyProject.ExploreGame.Presentation
         private void DisplayStatus()
         {
             var summary = _exploreMode.ViewModel.GetStatusSummary();
+
+            // 콘솔 로그
             Debug.Log($"<color=#00FFFF>[상태] {summary}</color>");
+
+            // SystemMessageUI에도 표시
+            SystemMessageBus.Publish(summary, _statusColor);
         }
     }
 }

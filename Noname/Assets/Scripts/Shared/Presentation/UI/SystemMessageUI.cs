@@ -26,7 +26,7 @@ namespace MyProject.Common.UI
         /// <summary>
         /// 메시지 텍스트 크기입니다.
         /// </summary>
-        [SerializeField] private int _fontSize = 16;
+        [SerializeField] private int _fontSize = 24;
         
         /// <summary>
         /// 메시지 텍스트 색상입니다.
@@ -50,24 +50,9 @@ namespace MyProject.Common.UI
 
         [Header("Behavior")]
         /// <summary>
-        /// 메시지가 화면에 머무르는 시간(초)입니다.
-        /// </summary>
-        [SerializeField] private float _messageDuration = 2f;
-        
-        /// <summary>
-        /// 메시지가 사라질 때 페이드 아웃 되는 시간(초)입니다.
-        /// </summary>
-        [SerializeField] private float _fadeDuration = 0.25f;
-        
-        /// <summary>
         /// 화면에 동시에 표시될 최대 메시지 개수입니다.
         /// </summary>
-        [SerializeField] private int _maxVisible = 5;
-        
-        /// <summary>
-        /// UnscaledTime 사용 여부입니다.
-        /// </summary>
-        [SerializeField] private bool _useUnscaledTime = true;
+        [SerializeField] private int _maxVisible = 30;
 
         [Header("Auto Setup")]
         /// <summary>
@@ -87,12 +72,9 @@ namespace MyProject.Common.UI
         {
             public GameObject Root;
             public Text Label;
+            public Image Background;
             public CanvasGroup Group;
-            public float StartTime;
-            public float EndTime;
         }
-
-        private float Now => _useUnscaledTime ? Time.unscaledTime : Time.time;
 
         private void Awake()
         {
@@ -111,47 +93,7 @@ namespace MyProject.Common.UI
             SystemMessageBus.MessagePublished -= HandleMessage;
         }
 
-        private void Update()
-        {
-            if (_activeRows.Count == 0)
-            {
-                return;
-            }
-
-            var now = Now;
-            for (var i = _activeRows.Count - 1; i >= 0; i--)
-            {
-                var row = _activeRows[i];
-                if (row == null)
-                {
-                    continue;
-                }
-
-                var timeLeft = row.EndTime - now;
-                
-                // 표시 시간 및 페이드 아웃 시간이 모두 지난 경우 제거
-                if (timeLeft <= -_fadeDuration)
-                {
-                    RecycleRow(row);
-                    _activeRows.RemoveAt(i);
-                    continue;
-                }
-
-                if (row.Group == null)
-                {
-                    continue;
-                }
-
-                // 페이드 아웃 처리
-                var alpha = 1f;
-                if (_fadeDuration > 0f && timeLeft < _fadeDuration)
-                {
-                    alpha = Mathf.Clamp01(timeLeft / _fadeDuration);
-                }
-
-                row.Group.alpha = alpha;
-            }
-        }
+        // Update는 개수 기반으로만 동작하므로 제거
 
         /// <summary>
         /// 시스템 메시지를 게시합니다.
@@ -162,25 +104,30 @@ namespace MyProject.Common.UI
             SystemMessageBus.Publish(message);
         }
 
-        private void HandleMessage(string message)
+        private void HandleMessage(SystemMessage message)
         {
-            if (string.IsNullOrWhiteSpace(message))
+            if (string.IsNullOrWhiteSpace(message.Text))
             {
                 return;
             }
 
             var row = GetOrCreateRow();
-            row.Label.text = message;
-            row.StartTime = Now;
-            row.EndTime = row.StartTime + Mathf.Max(0.1f, _messageDuration);
+            row.Label.text = message.Text;
+
+            // 배경색 적용
+            if (row.Background != null)
+            {
+                row.Background.color = message.BackgroundColor;
+            }
+
             if (row.Group != null)
             {
                 row.Group.alpha = 1f;
             }
 
-            // 최신 메시지를 상단에 추가
-            row.Root.transform.SetAsFirstSibling();
-            _activeRows.Insert(0, row);
+            // 최신 메시지를 하단에 추가 (위로 쌓임)
+            row.Root.transform.SetAsLastSibling();
+            _activeRows.Add(row);
             TrimOverflow();
         }
 
@@ -247,18 +194,19 @@ namespace MyProject.Common.UI
             {
                 Root = root,
                 Label = text,
+                Background = background,
                 Group = group
             };
         }
 
         private void TrimOverflow()
         {
-            // 최대 표시 개수를 초과하면 오래된 메시지부터 제거
+            // 최대 표시 개수를 초과하면 가장 오래된 메시지부터 제거 (맨 위부터)
             var max = Mathf.Max(1, _maxVisible);
             while (_activeRows.Count > max)
             {
-                var row = _activeRows[_activeRows.Count - 1];
-                _activeRows.RemoveAt(_activeRows.Count - 1);
+                var row = _activeRows[0];
+                _activeRows.RemoveAt(0);
                 RecycleRow(row);
             }
         }
@@ -309,18 +257,18 @@ namespace MyProject.Common.UI
                 return;
             }
 
-            // 상단 중앙 정렬을 위한 컨테이너 설정
+            // 화면 최하단 중앙에 배치 (위로 쌓이는 스택형)
             var obj = new GameObject("SystemMessageContainer", typeof(RectTransform));
             _container = obj.GetComponent<RectTransform>();
             _container.SetParent(_canvas.transform, false);
-            _container.anchorMin = new Vector2(0.5f, 1f);
-            _container.anchorMax = new Vector2(0.5f, 1f);
-            _container.pivot = new Vector2(0.5f, 1f);
-            _container.anchoredPosition = new Vector2(0f, -16f);
-            _container.sizeDelta = new Vector2(600f, 0f);
+            _container.anchorMin = new Vector2(0.5f, 0f);
+            _container.anchorMax = new Vector2(0.5f, 0f);
+            _container.pivot = new Vector2(0.5f, 0f);
+            _container.anchoredPosition = new Vector2(0f, 10f); // 하단에서 10px 위
+            _container.sizeDelta = new Vector2(1200f, 0f);
 
             var layout = obj.AddComponent<VerticalLayoutGroup>();
-            layout.childAlignment = TextAnchor.UpperCenter;
+            layout.childAlignment = TextAnchor.LowerCenter;
             layout.spacing = _rowSpacing;
             layout.childControlHeight = true;
             layout.childControlWidth = true;

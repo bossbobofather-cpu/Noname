@@ -172,6 +172,28 @@ namespace MyProject.ExploreGame.Application
     }
 
     /// <summary>
+    /// 어빌리티가 사용되었을 때 발생하는 이벤트입니다.
+    /// </summary>
+    public sealed class ExploreAbilityUsedEvent : ExploreHostEvent
+    {
+        public string ActorName { get; }
+        public string AbilityName { get; }
+        public string TargetName { get; }
+        public int Damage { get; }
+        public bool IsTargetDead { get; }
+
+        public ExploreAbilityUsedEvent(long tick, string actorName, string abilityName, string targetName, int damage, bool isTargetDead)
+            : base(tick)
+        {
+            ActorName = actorName;
+            AbilityName = abilityName;
+            TargetName = targetName;
+            Damage = damage;
+            IsTargetDead = isTargetDead;
+        }
+    }
+
+    /// <summary>
     /// 전투가 종료되었을 때 발생하는 이벤트입니다.
     /// </summary>
     public sealed class ExploreCombatEndedEvent : ExploreHostEvent

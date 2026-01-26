@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using noname.GameAbilitySystem;
+using Noname.GameAbilitySystem.Domain;
 using UnityEngine;
 
 namespace Noname.GameAbilitySystem

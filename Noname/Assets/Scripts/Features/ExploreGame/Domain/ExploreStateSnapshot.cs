@@ -54,8 +54,10 @@ namespace MyProject.ExploreGame.Domain
         public int MaxHp { get; }
         public int AttackPower { get; }
         public int Defense { get; }
+        public int Speed { get; }
         public int Gold { get; }
         public int Experience { get; }
+        public float TurnGauge { get; }
         public bool IsAlive { get; }
 
         public ExploreCharacterSnapshot(ExploreCharacterState state)
@@ -67,8 +69,10 @@ namespace MyProject.ExploreGame.Domain
             MaxHp = state.MaxHp;
             AttackPower = state.AttackPower;
             Defense = state.Defense;
+            Speed = state.Speed;
             Gold = state.Gold;
             Experience = state.Experience;
+            TurnGauge = state.TurnGauge;
             IsAlive = state.IsAlive;
         }
     }
@@ -103,6 +107,7 @@ namespace MyProject.ExploreGame.Domain
     {
         public CombatPhase Phase { get; }
         public int TurnCount { get; }
+        public int MaxTurns { get; }
         public bool IsVictory { get; }
         public IReadOnlyList<ExploreMonsterSnapshot> Monsters { get; }
 
@@ -110,6 +115,7 @@ namespace MyProject.ExploreGame.Domain
         {
             Phase = state.Phase;
             TurnCount = state.TurnCount;
+            MaxTurns = state.MaxTurns;
             IsVictory = state.IsVictory;
 
             var monsters = state.GetAllMonsters();
@@ -134,6 +140,8 @@ namespace MyProject.ExploreGame.Domain
         public int MaxHp { get; }
         public int AttackPower { get; }
         public int Defense { get; }
+        public int Speed { get; }
+        public float TurnGauge { get; }
         public bool IsDead { get; }
 
         public ExploreMonsterSnapshot(ExploreMonsterState state)
@@ -145,6 +153,8 @@ namespace MyProject.ExploreGame.Domain
             MaxHp = state.MaxHp;
             AttackPower = state.AttackPower;
             Defense = state.Defense;
+            Speed = state.Speed;
+            TurnGauge = state.TurnGauge;
             IsDead = state.IsDead;
         }
     }

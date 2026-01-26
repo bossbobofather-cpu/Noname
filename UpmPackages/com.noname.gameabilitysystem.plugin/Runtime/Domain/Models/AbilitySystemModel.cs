@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Noname.GameAbilitySystem
+namespace Noname.GameAbilitySystem.Domain
 {
     /// <summary>
     /// AbilitySystem의 상태 모델입니다.

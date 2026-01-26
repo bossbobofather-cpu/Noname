@@ -39,5 +39,15 @@ namespace MyProject.ExploreGame.Data
         /// 초기 방어력입니다.
         /// </summary>
         public int InitialDefense { get; set; } = 5;
+
+        /// <summary>
+        /// 초기 속도입니다 (ATB 시스템용).
+        /// </summary>
+        public int InitialSpeed { get; set; } = 10;
+
+        /// <summary>
+        /// 전투 최대 턴 수입니다.
+        /// </summary>
+        public int MaxCombatTurns { get; set; } = 10;
     }
 }
