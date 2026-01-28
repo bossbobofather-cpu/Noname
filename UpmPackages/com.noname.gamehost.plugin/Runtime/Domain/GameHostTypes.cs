@@ -1,19 +1,19 @@
-using System;
+﻿using System;
 
 namespace Noname.GameHost
 {
     /// <summary>
-    /// ���� ���� ��û�� �ּ� �����Դϴ�.
+    /// 커맨드 요청의 기본 타입입니다.
     /// </summary>
     public abstract class GameCommandBase
     {
         /// <summary>
-        /// ��û�� �ĺ��ϱ� ���� ���� ID�Դϴ�.
+        /// 커맨드 고유 ID입니다.
         /// </summary>
         public Guid CommandId { get; }
 
         /// <summary>
-        /// ��û�� ���� �÷��̾�/������ ID�Դϴ�.
+        /// 요청을 보낸 사용자/플레이어 ID입니다.
         /// </summary>
         public long SenderUid { get; }
 
@@ -25,27 +25,27 @@ namespace Noname.GameHost
     }
 
     /// <summary>
-    /// ���� ó�� �����?�⺻ Ÿ���Դϴ�.
+    /// 커맨드 처리 결과의 기본 타입입니다.
     /// </summary>
     public abstract class GameCommandResultBase
     {
         /// <summary>
-        /// �����?������ ȣ��Ʈ ƽ�Դϴ�.
+        /// 결과가 만들어진 호스트 틱입니다.
         /// </summary>
         public long Tick { get; }
 
         /// <summary>
-        /// ��û�� ���� �÷��̾�/������ ID�Դϴ�.
+        /// 요청을 보낸 사용자/플레이어 ID입니다.
         /// </summary>
         public long SenderUid { get; }
 
         /// <summary>
-        /// ó�� ���� �����Դϴ�.
+        /// 처리 성공 여부입니다.
         /// </summary>
         public bool Success { get; }
 
         /// <summary>
-        /// ���� ���� �Ǵ� �߰� �޽����Դϴ�.
+        /// 실패 사유 메시지입니다.
         /// </summary>
         public string ErrorMessage { get; }
 
@@ -59,12 +59,12 @@ namespace Noname.GameHost
     }
 
     /// <summary>
-    /// ���� ���� ��ȭ �̺�Ʈ�� �⺻ Ÿ���Դϴ�.
+    /// 게임 이벤트의 기본 타입입니다.
     /// </summary>
     public abstract class GameEventBase
     {
         /// <summary>
-        /// �̺�Ʈ�� �߻��� ȣ��Ʈ ƽ�Դϴ�.
+        /// 이벤트가 발생한 호스트 틱입니다.
         /// </summary>
         public long Tick { get; }
 
@@ -75,12 +75,12 @@ namespace Noname.GameHost
     }
 
     /// <summary>
-    /// ����ȭ�� �������� �⺻ Ÿ���Դϴ�.
+    /// 게임 스냅샷의 기본 타입입니다.
     /// </summary>
     public abstract class GameSnapshotBase
     {
         /// <summary>
-        /// �������� ������ ȣ��Ʈ ƽ�Դϴ�.
+        /// 스냅샷이 생성된 호스트 틱입니다.
         /// </summary>
         public long Tick { get; }
 
@@ -91,7 +91,7 @@ namespace Noname.GameHost
     }
 
     /// <summary>
-    /// ȣ��Ʈ���� �����?���� ���� �������̽��Դϴ�.
+    /// 호스트에서 사용할 랜덤 소스 인터페이스입니다.
     /// </summary>
     public interface IRandomSource
     {
@@ -99,6 +99,9 @@ namespace Noname.GameHost
         float NextFloat();
     }
 
+    /// <summary>
+    /// 외부에서 사용할 커맨드 전송 버스입니다.
+    /// </summary>
     public interface IHostCommandBus<TCommand, TResult, TEvent>
         where TCommand : GameCommandBase
         where TResult : GameCommandResultBase
@@ -108,8 +111,10 @@ namespace Noname.GameHost
         event Action<TEvent> EventRaised;
 
         void SendCommand(TCommand command);
-    }    /// <summary>
-    /// ���� ȣ��Ʈ�� �⺻ ����Դϴ�?
+    }
+
+    /// <summary>
+    /// 호스트 내부 동작용 인터페이스입니다.
     /// </summary>
     internal interface IGameHost<TCommand, TResult, TEvent, TSnapshot>
         where TCommand : GameCommandBase
@@ -118,9 +123,6 @@ namespace Noname.GameHost
         where TSnapshot : GameSnapshotBase
     {
         long Tick { get; }
-
-        // event Action<TResult> ResultProduced;
-        // event Action<TEvent> EventRaised;
 
         void Submit(TCommand command);
         void Advance(float deltaSeconds);

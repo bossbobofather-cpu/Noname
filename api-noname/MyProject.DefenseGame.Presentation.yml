@@ -1,0 +1,21 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Presentation
+  commentId: N:MyProject.DefenseGame.Presentation
+  id: MyProject.DefenseGame.Presentation
+  children:
+  - MyProject.DefenseGame.Presentation.DefenseGameMode
+  langs:
+  - csharp
+  - vb
+  name: MyProject.DefenseGame.Presentation
+  nameWithType: MyProject.DefenseGame.Presentation
+  fullName: MyProject.DefenseGame.Presentation
+  type: Namespace
+references:
+- uid: MyProject.DefenseGame.Presentation.DefenseGameMode
+  commentId: T:MyProject.DefenseGame.Presentation.DefenseGameMode
+  href: MyProject.DefenseGame.Presentation.DefenseGameMode.html
+  name: DefenseGameMode
+  nameWithType: DefenseGameMode
+  fullName: MyProject.DefenseGame.Presentation.DefenseGameMode

@@ -5,11 +5,11 @@ items:
   id: AbilityContext
   parent: Noname.GameAbilitySystem
   children:
-  - Noname.GameAbilitySystem.AbilityContext.#ctor(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.GameplayEventData,Noname.GameAbilitySystem.AbilityTargetData)
+  - Noname.GameAbilitySystem.AbilityContext.#ctor(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.Domain.GameplayTagEventData,Noname.GameAbilitySystem.Presentation.AbilityTargetData)
   - Noname.GameAbilitySystem.AbilityContext.EventData
   - Noname.GameAbilitySystem.AbilityContext.Handle
   - Noname.GameAbilitySystem.AbilityContext.TargetData
-  - Noname.GameAbilitySystem.AbilityContext.WithTargetData(Noname.GameAbilitySystem.AbilityTargetData)
+  - Noname.GameAbilitySystem.AbilityContext.WithTargetData(Noname.GameAbilitySystem.Presentation.AbilityTargetData)
   langs:
   - csharp
   - vb
@@ -30,37 +30,37 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
-- uid: Noname.GameAbilitySystem.AbilityContext.#ctor(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.GameplayEventData,Noname.GameAbilitySystem.AbilityTargetData)
-  commentId: M:Noname.GameAbilitySystem.AbilityContext.#ctor(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.GameplayEventData,Noname.GameAbilitySystem.AbilityTargetData)
-  id: '#ctor(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.GameplayEventData,Noname.GameAbilitySystem.AbilityTargetData)'
+- uid: Noname.GameAbilitySystem.AbilityContext.#ctor(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.Domain.GameplayTagEventData,Noname.GameAbilitySystem.Presentation.AbilityTargetData)
+  commentId: M:Noname.GameAbilitySystem.AbilityContext.#ctor(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.Domain.GameplayTagEventData,Noname.GameAbilitySystem.Presentation.AbilityTargetData)
+  id: '#ctor(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.Domain.GameplayTagEventData,Noname.GameAbilitySystem.Presentation.AbilityTargetData)'
   parent: Noname.GameAbilitySystem.AbilityContext
   langs:
   - csharp
   - vb
-  name: AbilityContext(FGameplayAbilitySpecHandle, GameplayEventData, AbilityTargetData)
-  nameWithType: AbilityContext.AbilityContext(FGameplayAbilitySpecHandle, GameplayEventData, AbilityTargetData)
-  fullName: Noname.GameAbilitySystem.AbilityContext.AbilityContext(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle, Noname.GameAbilitySystem.GameplayEventData, Noname.GameAbilitySystem.AbilityTargetData)
+  name: AbilityContext(FGameplayAbilitySpecHandle, GameplayTagEventData, AbilityTargetData)
+  nameWithType: AbilityContext.AbilityContext(FGameplayAbilitySpecHandle, GameplayTagEventData, AbilityTargetData)
+  fullName: Noname.GameAbilitySystem.AbilityContext.AbilityContext(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle, Noname.GameAbilitySystem.Domain.GameplayTagEventData, Noname.GameAbilitySystem.Presentation.AbilityTargetData)
   type: Constructor
   namespace: Noname.GameAbilitySystem
   summary: 어빌리티 실행에 필요한 데이터를 묶어 생성합니다.
   example: []
   syntax:
-    content: public AbilityContext(FGameplayAbilitySpecHandle handle, GameplayEventData eventData, AbilityTargetData targetData = null)
+    content: public AbilityContext(FGameplayAbilitySpecHandle handle, GameplayTagEventData eventData, AbilityTargetData targetData = null)
     parameters:
     - id: handle
-      type: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
+      type: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
       description: 실행 중인 어빌리티 스펙 핸들
     - id: eventData
-      type: Noname.GameAbilitySystem.GameplayEventData
+      type: Noname.GameAbilitySystem.Domain.GameplayTagEventData
       description: 트리거를 일으킨 이벤트 데이터
     - id: targetData
-      type: Noname.GameAbilitySystem.AbilityTargetData
+      type: Noname.GameAbilitySystem.Presentation.AbilityTargetData
       description: 타겟팅 결과 데이터(없으면 null)
-    content.vb: Public Sub New(handle As FGameplayAbilitySpecHandle, eventData As GameplayEventData, targetData As AbilityTargetData = Nothing)
+    content.vb: Public Sub New(handle As FGameplayAbilitySpecHandle, eventData As GameplayTagEventData, targetData As AbilityTargetData = Nothing)
   overload: Noname.GameAbilitySystem.AbilityContext.#ctor*
-  nameWithType.vb: AbilityContext.New(FGameplayAbilitySpecHandle, GameplayEventData, AbilityTargetData)
-  fullName.vb: Noname.GameAbilitySystem.AbilityContext.New(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle, Noname.GameAbilitySystem.GameplayEventData, Noname.GameAbilitySystem.AbilityTargetData)
-  name.vb: New(FGameplayAbilitySpecHandle, GameplayEventData, AbilityTargetData)
+  nameWithType.vb: AbilityContext.New(FGameplayAbilitySpecHandle, GameplayTagEventData, AbilityTargetData)
+  fullName.vb: Noname.GameAbilitySystem.AbilityContext.New(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle, Noname.GameAbilitySystem.Domain.GameplayTagEventData, Noname.GameAbilitySystem.Presentation.AbilityTargetData)
+  name.vb: New(FGameplayAbilitySpecHandle, GameplayTagEventData, AbilityTargetData)
 - uid: Noname.GameAbilitySystem.AbilityContext.Handle
   commentId: P:Noname.GameAbilitySystem.AbilityContext.Handle
   id: Handle
@@ -79,7 +79,7 @@ items:
     content: public FGameplayAbilitySpecHandle Handle { get; }
     parameters: []
     return:
-      type: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
+      type: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
     content.vb: Public ReadOnly Property Handle As FGameplayAbilitySpecHandle
   overload: Noname.GameAbilitySystem.AbilityContext.Handle*
 - uid: Noname.GameAbilitySystem.AbilityContext.EventData
@@ -97,11 +97,11 @@ items:
   summary: 어빌리티를 유발한 이벤트 데이터입니다.
   example: []
   syntax:
-    content: public GameplayEventData EventData { get; }
+    content: public GameplayTagEventData EventData { get; }
     parameters: []
     return:
-      type: Noname.GameAbilitySystem.GameplayEventData
-    content.vb: Public ReadOnly Property EventData As GameplayEventData
+      type: Noname.GameAbilitySystem.Domain.GameplayTagEventData
+    content.vb: Public ReadOnly Property EventData As GameplayTagEventData
   overload: Noname.GameAbilitySystem.AbilityContext.EventData*
 - uid: Noname.GameAbilitySystem.AbilityContext.TargetData
   commentId: P:Noname.GameAbilitySystem.AbilityContext.TargetData
@@ -121,19 +121,19 @@ items:
     content: public AbilityTargetData TargetData { get; }
     parameters: []
     return:
-      type: Noname.GameAbilitySystem.AbilityTargetData
+      type: Noname.GameAbilitySystem.Presentation.AbilityTargetData
     content.vb: Public ReadOnly Property TargetData As AbilityTargetData
   overload: Noname.GameAbilitySystem.AbilityContext.TargetData*
-- uid: Noname.GameAbilitySystem.AbilityContext.WithTargetData(Noname.GameAbilitySystem.AbilityTargetData)
-  commentId: M:Noname.GameAbilitySystem.AbilityContext.WithTargetData(Noname.GameAbilitySystem.AbilityTargetData)
-  id: WithTargetData(Noname.GameAbilitySystem.AbilityTargetData)
+- uid: Noname.GameAbilitySystem.AbilityContext.WithTargetData(Noname.GameAbilitySystem.Presentation.AbilityTargetData)
+  commentId: M:Noname.GameAbilitySystem.AbilityContext.WithTargetData(Noname.GameAbilitySystem.Presentation.AbilityTargetData)
+  id: WithTargetData(Noname.GameAbilitySystem.Presentation.AbilityTargetData)
   parent: Noname.GameAbilitySystem.AbilityContext
   langs:
   - csharp
   - vb
   name: WithTargetData(AbilityTargetData)
   nameWithType: AbilityContext.WithTargetData(AbilityTargetData)
-  fullName: Noname.GameAbilitySystem.AbilityContext.WithTargetData(Noname.GameAbilitySystem.AbilityTargetData)
+  fullName: Noname.GameAbilitySystem.AbilityContext.WithTargetData(Noname.GameAbilitySystem.Presentation.AbilityTargetData)
   type: Method
   namespace: Noname.GameAbilitySystem
   summary: 타겟 데이터만 교체한 새 컨텍스트를 만듭니다.
@@ -142,7 +142,7 @@ items:
     content: public AbilityContext WithTargetData(AbilityTargetData targetData)
     parameters:
     - id: targetData
-      type: Noname.GameAbilitySystem.AbilityTargetData
+      type: Noname.GameAbilitySystem.Presentation.AbilityTargetData
       description: 새 타겟 데이터
     return:
       type: Noname.GameAbilitySystem.AbilityContext
@@ -391,34 +391,94 @@ references:
   fullName: System
 - uid: Noname.GameAbilitySystem.AbilityContext.#ctor*
   commentId: Overload:Noname.GameAbilitySystem.AbilityContext.#ctor
-  href: Noname.GameAbilitySystem.AbilityContext.html#Noname_GameAbilitySystem_AbilityContext__ctor_Noname_GameAbilitySystem_FGameplayAbilitySpecHandle_Noname_GameAbilitySystem_GameplayEventData_Noname_GameAbilitySystem_AbilityTargetData_
+  href: Noname.GameAbilitySystem.AbilityContext.html#Noname_GameAbilitySystem_AbilityContext__ctor_Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_Noname_GameAbilitySystem_Domain_GameplayTagEventData_Noname_GameAbilitySystem_Presentation_AbilityTargetData_
   name: AbilityContext
   nameWithType: AbilityContext.AbilityContext
   fullName: Noname.GameAbilitySystem.AbilityContext.AbilityContext
   nameWithType.vb: AbilityContext.New
   fullName.vb: Noname.GameAbilitySystem.AbilityContext.New
   name.vb: New
-- uid: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
-  commentId: T:Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
-  parent: Noname.GameAbilitySystem
-  href: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.html
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html
   name: FGameplayAbilitySpecHandle
   nameWithType: FGameplayAbilitySpecHandle
-  fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
-- uid: Noname.GameAbilitySystem.GameplayEventData
-  commentId: T:Noname.GameAbilitySystem.GameplayEventData
-  parent: Noname.GameAbilitySystem
-  href: Noname.GameAbilitySystem.GameplayEventData.html
-  name: GameplayEventData
-  nameWithType: GameplayEventData
-  fullName: Noname.GameAbilitySystem.GameplayEventData
-- uid: Noname.GameAbilitySystem.AbilityTargetData
-  commentId: T:Noname.GameAbilitySystem.AbilityTargetData
-  parent: Noname.GameAbilitySystem
-  href: Noname.GameAbilitySystem.AbilityTargetData.html
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+- uid: Noname.GameAbilitySystem.Domain.GameplayTagEventData
+  commentId: T:Noname.GameAbilitySystem.Domain.GameplayTagEventData
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.GameplayTagEventData.html
+  name: GameplayTagEventData
+  nameWithType: GameplayTagEventData
+  fullName: Noname.GameAbilitySystem.Domain.GameplayTagEventData
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTargetData
+  commentId: T:Noname.GameAbilitySystem.Presentation.AbilityTargetData
+  parent: Noname.GameAbilitySystem.Presentation
+  href: Noname.GameAbilitySystem.Presentation.AbilityTargetData.html
   name: AbilityTargetData
   nameWithType: AbilityTargetData
-  fullName: Noname.GameAbilitySystem.AbilityTargetData
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTargetData
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+- uid: Noname.GameAbilitySystem.Presentation
+  commentId: N:Noname.GameAbilitySystem.Presentation
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Presentation
+  nameWithType: Noname.GameAbilitySystem.Presentation
+  fullName: Noname.GameAbilitySystem.Presentation
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
 - uid: Noname.GameAbilitySystem.AbilityContext.Handle*
   commentId: Overload:Noname.GameAbilitySystem.AbilityContext.Handle
   href: Noname.GameAbilitySystem.AbilityContext.html#Noname_GameAbilitySystem_AbilityContext_Handle
@@ -439,7 +499,7 @@ references:
   fullName: Noname.GameAbilitySystem.AbilityContext.TargetData
 - uid: Noname.GameAbilitySystem.AbilityContext.WithTargetData*
   commentId: Overload:Noname.GameAbilitySystem.AbilityContext.WithTargetData
-  href: Noname.GameAbilitySystem.AbilityContext.html#Noname_GameAbilitySystem_AbilityContext_WithTargetData_Noname_GameAbilitySystem_AbilityTargetData_
+  href: Noname.GameAbilitySystem.AbilityContext.html#Noname_GameAbilitySystem_AbilityContext_WithTargetData_Noname_GameAbilitySystem_Presentation_AbilityTargetData_
   name: WithTargetData
   nameWithType: AbilityContext.WithTargetData
   fullName: Noname.GameAbilitySystem.AbilityContext.WithTargetData

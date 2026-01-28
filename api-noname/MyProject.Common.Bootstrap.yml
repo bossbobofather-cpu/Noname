@@ -5,7 +5,7 @@ items:
   id: MyProject.Common.Bootstrap
   children:
   - MyProject.Common.Bootstrap.BootstrapperBase
-  - MyProject.Common.Bootstrap.GameBootstrapper
+  - MyProject.Common.Bootstrap.DefenseGameBootstrapper
   - MyProject.Common.Bootstrap.IManager
   langs:
   - csharp
@@ -15,6 +15,12 @@ items:
   fullName: MyProject.Common.Bootstrap
   type: Namespace
 references:
+- uid: MyProject.Common.Bootstrap.DefenseGameBootstrapper
+  commentId: T:MyProject.Common.Bootstrap.DefenseGameBootstrapper
+  href: MyProject.Common.Bootstrap.DefenseGameBootstrapper.html
+  name: DefenseGameBootstrapper
+  nameWithType: DefenseGameBootstrapper
+  fullName: MyProject.Common.Bootstrap.DefenseGameBootstrapper
 - uid: MyProject.Common.Bootstrap.BootstrapperBase
   commentId: T:MyProject.Common.Bootstrap.BootstrapperBase
   parent: MyProject.Common.Bootstrap
@@ -22,12 +28,6 @@ references:
   name: BootstrapperBase
   nameWithType: BootstrapperBase
   fullName: MyProject.Common.Bootstrap.BootstrapperBase
-- uid: MyProject.Common.Bootstrap.GameBootstrapper
-  commentId: T:MyProject.Common.Bootstrap.GameBootstrapper
-  href: MyProject.Common.Bootstrap.GameBootstrapper.html
-  name: GameBootstrapper
-  nameWithType: GameBootstrapper
-  fullName: MyProject.Common.Bootstrap.GameBootstrapper
 - uid: MyProject.Common.Bootstrap.IManager
   commentId: T:MyProject.Common.Bootstrap.IManager
   parent: MyProject.Common.Bootstrap

@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  id: DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefenseHostEvent.#ctor(System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+  type: Class
+  namespace: MyProject.DefenseGame.Application
+  summary: ���潺 ���� �̺�Ʈ�� �⺻ Ÿ���Դϴ�.
+  example: []
+  syntax:
+    content: 'public abstract class DefenseHostEvent : GameEventBase'
+    content.vb: Public MustInherit Class DefenseHostEvent Inherits GameEventBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
+  - MyProject.DefenseGame.Application.DefenseGameOverEvent
+  - MyProject.DefenseGame.Application.DefenseGameStartedEvent
+  - MyProject.DefenseGame.Application.DefenseLevelUpEvent
+  - MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
+  - MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+  - MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+  - MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent
+  - MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+  - MyProject.DefenseGame.Application.DefensePlayerDeathEvent
+  - MyProject.DefenseGame.Application.DefenseWaveChangedEvent
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent.#ctor(System.Int64)
+  commentId: M:MyProject.DefenseGame.Application.DefenseHostEvent.#ctor(System.Int64)
+  id: '#ctor(System.Int64)'
+  parent: MyProject.DefenseGame.Application.DefenseHostEvent
+  langs:
+  - csharp
+  - vb
+  name: DefenseHostEvent(long)
+  nameWithType: DefenseHostEvent.DefenseHostEvent(long)
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent.DefenseHostEvent(long)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: protected DefenseHostEvent(long tick)
+    parameters:
+    - id: tick
+      type: System.Int64
+    content.vb: Protected Sub New(tick As Long)
+  overload: MyProject.DefenseGame.Application.DefenseHostEvent.#ctor*
+  nameWithType.vb: DefenseHostEvent.New(Long)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseHostEvent.New(Long)
+  name.vb: New(Long)
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostEvent.#ctor
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html#MyProject_DefenseGame_Application_DefenseHostEvent__ctor_System_Int64_
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent.DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent.DefenseHostEvent
+  nameWithType.vb: DefenseHostEvent.New
+  fullName.vb: MyProject.DefenseGame.Application.DefenseHostEvent.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

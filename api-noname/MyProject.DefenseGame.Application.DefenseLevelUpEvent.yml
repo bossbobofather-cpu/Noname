@@ -1,0 +1,161 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefenseLevelUpEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseLevelUpEvent
+  id: DefenseLevelUpEvent
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefenseLevelUpEvent.#ctor(System.Int64,System.Int32)
+  - MyProject.DefenseGame.Application.DefenseLevelUpEvent.NewLevel
+  langs:
+  - csharp
+  - vb
+  name: DefenseLevelUpEvent
+  nameWithType: DefenseLevelUpEvent
+  fullName: MyProject.DefenseGame.Application.DefenseLevelUpEvent
+  type: Class
+  namespace: MyProject.DefenseGame.Application
+  summary: ?�벨???�벤?�입?�다.
+  example: []
+  syntax:
+    content: 'public sealed class DefenseLevelUpEvent : DefenseHostEvent'
+    content.vb: Public NotInheritable Class DefenseLevelUpEvent Inherits DefenseHostEvent
+  inheritance:
+  - System.Object
+  - MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: MyProject.DefenseGame.Application.DefenseLevelUpEvent.NewLevel
+  commentId: P:MyProject.DefenseGame.Application.DefenseLevelUpEvent.NewLevel
+  id: NewLevel
+  parent: MyProject.DefenseGame.Application.DefenseLevelUpEvent
+  langs:
+  - csharp
+  - vb
+  name: NewLevel
+  nameWithType: DefenseLevelUpEvent.NewLevel
+  fullName: MyProject.DefenseGame.Application.DefenseLevelUpEvent.NewLevel
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public int NewLevel { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property NewLevel As Integer
+  overload: MyProject.DefenseGame.Application.DefenseLevelUpEvent.NewLevel*
+- uid: MyProject.DefenseGame.Application.DefenseLevelUpEvent.#ctor(System.Int64,System.Int32)
+  commentId: M:MyProject.DefenseGame.Application.DefenseLevelUpEvent.#ctor(System.Int64,System.Int32)
+  id: '#ctor(System.Int64,System.Int32)'
+  parent: MyProject.DefenseGame.Application.DefenseLevelUpEvent
+  langs:
+  - csharp
+  - vb
+  name: DefenseLevelUpEvent(long, int)
+  nameWithType: DefenseLevelUpEvent.DefenseLevelUpEvent(long, int)
+  fullName: MyProject.DefenseGame.Application.DefenseLevelUpEvent.DefenseLevelUpEvent(long, int)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public DefenseLevelUpEvent(long tick, int newLevel)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: newLevel
+      type: System.Int32
+    content.vb: Public Sub New(tick As Long, newLevel As Integer)
+  overload: MyProject.DefenseGame.Application.DefenseLevelUpEvent.#ctor*
+  nameWithType.vb: DefenseLevelUpEvent.New(Long, Integer)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseLevelUpEvent.New(Long, Integer)
+  name.vb: New(Long, Integer)
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.DefenseLevelUpEvent.NewLevel*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseLevelUpEvent.NewLevel
+  href: MyProject.DefenseGame.Application.DefenseLevelUpEvent.html#MyProject_DefenseGame_Application_DefenseLevelUpEvent_NewLevel
+  name: NewLevel
+  nameWithType: DefenseLevelUpEvent.NewLevel
+  fullName: MyProject.DefenseGame.Application.DefenseLevelUpEvent.NewLevel
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MyProject.DefenseGame.Application.DefenseLevelUpEvent.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseLevelUpEvent.#ctor
+  href: MyProject.DefenseGame.Application.DefenseLevelUpEvent.html#MyProject_DefenseGame_Application_DefenseLevelUpEvent__ctor_System_Int64_System_Int32_
+  name: DefenseLevelUpEvent
+  nameWithType: DefenseLevelUpEvent.DefenseLevelUpEvent
+  fullName: MyProject.DefenseGame.Application.DefenseLevelUpEvent.DefenseLevelUpEvent
+  nameWithType.vb: DefenseLevelUpEvent.New
+  fullName.vb: MyProject.DefenseGame.Application.DefenseLevelUpEvent.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

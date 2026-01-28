@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Domain.LevelUp
+  commentId: N:MyProject.DefenseGame.Domain.LevelUp
+  id: MyProject.DefenseGame.Domain.LevelUp
+  children:
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
+  langs:
+  - csharp
+  - vb
+  name: MyProject.DefenseGame.Domain.LevelUp
+  nameWithType: MyProject.DefenseGame.Domain.LevelUp
+  fullName: MyProject.DefenseGame.Domain.LevelUp
+  type: Namespace
+references:
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  parent: MyProject.DefenseGame.Domain.LevelUp
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
+  name: LevelUpAbilityId
+  nameWithType: LevelUpAbilityId
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+  commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+  parent: MyProject.DefenseGame.Domain.LevelUp
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html
+  name: LevelUpAbilityDefinition
+  nameWithType: LevelUpAbilityDefinition
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
+  commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html
+  name: LevelUpAbilityRegistry
+  nameWithType: LevelUpAbilityRegistry
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
+- uid: MyProject.DefenseGame.Domain.LevelUp
+  commentId: N:MyProject.DefenseGame.Domain.LevelUp
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain.LevelUp
+  nameWithType: MyProject.DefenseGame.Domain.LevelUp
+  fullName: MyProject.DefenseGame.Domain.LevelUp
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.LevelUp
+    name: LevelUp
+    href: MyProject.DefenseGame.Domain.LevelUp.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.LevelUp
+    name: LevelUp
+    href: MyProject.DefenseGame.Domain.LevelUp.html

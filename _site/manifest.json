@@ -64,7 +64,21 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MyProject.Common.Bootstrap.BootstrapperBase",
-      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Bootstrap.BootstrapperBase.yml\" sourcestartlinenumber=\"1\">공통 부트스트래퍼 베이스입니다.</p>\n"
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Bootstrap.BootstrapperBase.yml\" sourcestartlinenumber=\"1\">���� ��Ʈ��Ʈ���� ���̽��Դϴ�.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.Bootstrap.DefenseGameBootstrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.Bootstrap.DefenseGameBootstrapper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.Bootstrap.DefenseGameBootstrapper",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Bootstrap.DefenseGameBootstrapper.yml\" sourcestartlinenumber=\"1\">게임 모드를 생성하고 수명주기를 제어하는 부트스트래퍼입니다.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -292,6 +306,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameMode.GameMode-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameMode.GameMode-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameMode.GameMode-4.yml\" sourcestartlinenumber=\"1\">게임 모드 베이스 클래스입니다.\n구체적인 게임 모드는 이 클래스를 상속해서 구현합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api-noname/MyProject.Common.GameMode.GameMode.yml",
       "output": {
         ".html": {
@@ -306,6 +334,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.GameMode.IGameMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.GameMode.IGameMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.GameMode.IGameMode",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameMode.IGameMode.yml\" sourcestartlinenumber=\"1\">���� ��尡 �����ϴ� ���� �������̽��Դϴ�.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api-noname/MyProject.Common.GameMode.IModule.yml",
       "output": {
         ".html": {
@@ -316,7 +358,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MyProject.Common.GameMode.IModule",
-      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameMode.IModule.yml\" sourcestartlinenumber=\"1\">공통 모듈 인터페이스입니다.</p>\n"
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameMode.IModule.yml\" sourcestartlinenumber=\"1\">���� ��� �������̽��Դϴ�.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -344,7 +386,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MyProject.Common.GameMode.ModuleBase",
-      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameMode.ModuleBase.yml\" sourcestartlinenumber=\"1\">공통 모듈 베이스 클래스입니다.</p>\n"
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.GameMode.ModuleBase.yml\" sourcestartlinenumber=\"1\">���� ��� ���̽� Ŭ�����Դϴ�.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -569,6 +611,34 @@
       "IsMRef": true,
       "Title": "MyProject.Common.UI.ScreenSpaceHealthBarPool",
       "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.ScreenSpaceHealthBarPool.yml\" sourcestartlinenumber=\"1\">ScreenSpaceHealthBar 객체를 재사용하기 위한 풀링 시스템입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.SystemMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.SystemMessage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.SystemMessage",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.SystemMessage.yml\" sourcestartlinenumber=\"1\">시스템 메시지 데이터입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.Common.UI.SystemMessageBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.Common.UI.SystemMessageBus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.Common.UI.SystemMessageBus",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.UI.SystemMessageBus.yml\" sourcestartlinenumber=\"1\">시스템 메시지 전달을 위한 정적 이벤트 버스입니다.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -820,6 +890,720 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MyProject.Common.Units",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.DefenseCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.DefenseCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.Commands.DefenseCommand",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.Commands.DefenseCommand.yml\" sourcestartlinenumber=\"1\">DefenseGame용 Command 기본 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.DefenseCommandResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.Commands.DefenseCommandResult",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.Commands.DefenseCommandResult.yml\" sourcestartlinenumber=\"1\">DefenseGame용 Command 처리 결과 기본 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.EndGameCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.EndGameCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.Commands.EndGameCommand",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.Commands.EndGameCommand.yml\" sourcestartlinenumber=\"1\">게임 종료 Command입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.EndGameResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.EndGameResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.Commands.EndGameResult",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.Commands.EndGameResult.yml\" sourcestartlinenumber=\"1\">게임 종료 Result입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityCommand",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityCommand.yml\" sourcestartlinenumber=\"1\">레벨업 선택 Command입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.yml\" sourcestartlinenumber=\"1\">레벨업 선택 Result입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.StartGameCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.StartGameCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.Commands.StartGameCommand",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.Commands.StartGameCommand.yml\" sourcestartlinenumber=\"1\">게임 시작 Command입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.StartGameResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.StartGameResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.Commands.StartGameResult",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.Commands.StartGameResult.yml\" sourcestartlinenumber=\"1\">게임 시작 Result입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.Commands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.Commands",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.yml\" sourcestartlinenumber=\"1\">?�빌리티 ?�택 ?�료 ?�벤?�입?�다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseCombatModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseCombatModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseCombatModule",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseCombatModule.yml\" sourcestartlinenumber=\"1\">전투를 처리하는 모듈입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseEntityFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseEntityFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseEntityFactory",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseEntityFactory.yml\" sourcestartlinenumber=\"1\">DefenseGame 전용 엔티티(플레이어/몬스터)를 생성하고 ASC를 초기화하는 팩토리입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseGameHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseGameHost.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseGameHost",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseGameHost.yml\" sourcestartlinenumber=\"1\">DefenseGame 전용 호스트입니다.\nCQRS 방식으로 Command를 처리하고 Result/Event를 발행합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseGameOverEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseGameOverEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseGameOverEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseGameOverEvent.yml\" sourcestartlinenumber=\"1\">게임 ?�버 ?�벤?�입?�다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseGameStartedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseGameStartedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseGameStartedEvent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseHostEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseHostEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseHostEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseHostEvent.yml\" sourcestartlinenumber=\"1\">���潺 ���� �̺�Ʈ�� �⺻ Ÿ���Դϴ�.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseHostSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseHostSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseHostSnapshot",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseHostSnapshot.yml\" sourcestartlinenumber=\"1\">디펜스 게임 호스트 상태를 저장하는 스냅샷입니다.\nView/클라이언트에서 이 데이터를 읽어 화면을 갱신합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseHostState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseHostState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseHostState",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseHostState.yml\" sourcestartlinenumber=\"1\">디펜스 게임 호스트 상태입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseLevelUpEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseLevelUpEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseLevelUpEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseLevelUpEvent.yml\" sourcestartlinenumber=\"1\">?�벨???�벤?�입?�다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.yml\" sourcestartlinenumber=\"1\">?�벨???�택지 ?�벤?�입?�다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseMonsterAttackEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.yml\" sourcestartlinenumber=\"1\">몬스??공격 ?�벤?�입?�다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseMonsterKilledEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.yml\" sourcestartlinenumber=\"1\">몬스???�망 ?�벤?�입?�다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.yml\" sourcestartlinenumber=\"1\">몬스???�폰 ?�벤?�입?�다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefensePlayerAttackEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefensePlayerAttackEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefensePlayerAttackEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefensePlayerAttackEvent.yml\" sourcestartlinenumber=\"1\">?�레?�어 공격 ?�벤?�입?�다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefensePlayerDeathEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefensePlayerDeathEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefensePlayerDeathEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefensePlayerDeathEvent.yml\" sourcestartlinenumber=\"1\">?�레?�어 ?�망 ?�벤?�입?�다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseSessionPhase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseSessionPhase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseSessionPhase",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseSessionPhase.yml\" sourcestartlinenumber=\"1\">디펜스 게임 세션 상태입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseSpawnModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseSpawnModule.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseSpawnModule",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseSpawnModule.yml\" sourcestartlinenumber=\"1\">몬스터 스폰을 담당하는 모듈입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseWaveChangedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseWaveChangedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseWaveChangedEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseWaveChangedEvent.yml\" sourcestartlinenumber=\"1\">?�이�?변�??�벤?�입?�다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.AI.IDefenseAI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.AI.IDefenseAI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.AI.IDefenseAI",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.AI.IDefenseAI.yml\" sourcestartlinenumber=\"1\">디펜스 게임 엔티티의 인공지능(의사결정) 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.yml\" sourcestartlinenumber=\"1\">플레이어 자동 전투 AI입니다.\nDirty Flag 패턴을 사용하여 태그가 변경되었을 때만 능력 활성화를 체크합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.AI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.AI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.AI",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseAbilityUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseAbilityUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.DefenseAbilityUtility",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.DefenseAbilityUtility.yml\" sourcestartlinenumber=\"1\">디펜스 게임의 어빌리티 생성 유틸리티입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseAttributeIds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseAttributeIds.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.DefenseAttributeIds",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.DefenseAttributeIds.yml\" sourcestartlinenumber=\"1\">디펜스 게임 공통 속성 ID입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseCombatState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseCombatState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.DefenseCombatState",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.DefenseCombatState.yml\" sourcestartlinenumber=\"1\">디펜스 게임의 전투 상태입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseEntity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.DefenseEntity",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.DefenseEntity.yml\" sourcestartlinenumber=\"1\">디펜스 게임 엔티티의 기본 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseHostConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseHostConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.DefenseHostConfig",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.DefenseHostConfig.yml\" sourcestartlinenumber=\"1\">디펜스 게임 호스트 설정입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseMonster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseMonster.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.DefenseMonster",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.DefenseMonster.yml\" sourcestartlinenumber=\"1\">디펜스 게임 몬스터입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseMonsterType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseMonsterType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.DefenseMonsterType",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.DefenseMonsterType.yml\" sourcestartlinenumber=\"1\">몬스터 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.DefensePlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.DefensePlayer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.DefensePlayer",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.DefensePlayer.yml\" sourcestartlinenumber=\"1\">디펜스 게임 플레이어입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseTags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.DefenseTags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.DefenseTags",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.DefenseTags.yml\" sourcestartlinenumber=\"1\">디펜스 게임에서 사용하는 태그 정의입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.IAbilitySystemOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.IAbilitySystemOwner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.IAbilitySystemOwner",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.IAbilitySystemOwner.yml\" sourcestartlinenumber=\"1\">ASC(AbilitySystemComponent)에 대한 접근을 제공하는 인터페이스입니다.\n구체적인 클래스에 의존하지 않고 ASC 기능을 사용하기 위해 도입되었습니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.yml\" sourcestartlinenumber=\"1\">레벨업 어빌리티 정의입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.yml\" sourcestartlinenumber=\"1\">레벨업 어빌리티 ID입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.yml\" sourcestartlinenumber=\"1\">레벨업 어빌리티 레지스트리입니다.\n모든 레벨업 어빌리티를 관리하고 랜덤 선택을 제공합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.LevelUp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.LevelUp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.LevelUp",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.MonsterAttributeIds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.MonsterAttributeIds.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.MonsterAttributeIds",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.MonsterAttributeIds.yml\" sourcestartlinenumber=\"1\">몬스터 전용 속성 ID입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.PlayerAttributeIds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.PlayerAttributeIds.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.PlayerAttributeIds",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.PlayerAttributeIds.yml\" sourcestartlinenumber=\"1\">플레이어 전용 속성 ID입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Presentation.DefenseGameMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Presentation.DefenseGameMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Presentation.DefenseGameMode",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Presentation.DefenseGameMode.yml\" sourcestartlinenumber=\"1\">디펜스 게임 뷰입니다.\n호스트 이벤트를 수신하여 로그 출력 및 UI 업데이트를 수행합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Presentation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Presentation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Presentation",
       "Summary": null
     },
     {
@@ -2205,6 +2989,426 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.AbilitySystemComponent",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.yml\" sourcestartlinenumber=\"1\">AbilitySystemComponent 상태 모델입니다 (순수 C# 모델).\nUnity에 의존하지 않으며 Host 환경에서 스레드 안전하게 동작합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot.yml\" sourcestartlinenumber=\"1\">AbilitySystem의 불변 스냅샷입니다 (순수 C# 모델).\n스레드 간 안전한 데이터 전송을 위해 사용됩니다.\nUnity에 의존하지 않으며 Host 환경에서 사용 가능합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.ActiveGameplayEffectSnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.ActiveGameplayEffectSnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.ActiveGameplayEffectSnapshot",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.ActiveGameplayEffectSnapshot.yml\" sourcestartlinenumber=\"1\">활성 효과의 불변 스냅샷입니다 (순수 C# 모델).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AreaTargetingStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AreaTargetingStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.AreaTargetingStrategy",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.AreaTargetingStrategy.yml\" sourcestartlinenumber=\"1\">특정 반경 내의 모든 적을 선택합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.AttributeId",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.yml\" sourcestartlinenumber=\"1\">속성 식별자입니다 (순수 C# 구조체).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AttributeModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AttributeModifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.AttributeModifier",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.AttributeModifier.yml\" sourcestartlinenumber=\"1\">속성 수정자 정의입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AttributeModifierGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AttributeModifierGroup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.AttributeModifierGroup",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.AttributeModifierGroup.yml\" sourcestartlinenumber=\"1\">수정자 그룹입니다 (순수 C# 모델).\n여러 수정자를 하나의 그룹으로 관리합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AttributeModifierOperationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AttributeModifierOperationType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.AttributeModifierOperationType",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.AttributeModifierOperationType.yml\" sourcestartlinenumber=\"1\">속성 수정자의 연산 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AttributeSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AttributeSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.AttributeSet",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.AttributeSet.yml\" sourcestartlinenumber=\"1\">속성 집합을 관리합니다 (순수 C# 모델).\nUnity에 의존하지 않으며 Host 환경에서 사용 가능합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AttributeValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.AttributeValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.AttributeValue",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.AttributeValue.yml\" sourcestartlinenumber=\"1\">런타임 속성 값 컨테이너입니다 (순수 C# 모델).\nUnity에 의존하지 않으며 Host 환경에서 사용 가능합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.EffectDurationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.EffectDurationType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.EffectDurationType",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.EffectDurationType.yml\" sourcestartlinenumber=\"1\">게임플레이 효과의 지속 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.yml\" sourcestartlinenumber=\"1\">능력 사양을 식별하기 위한 핸들입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.FGameplayTag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.FGameplayTag.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.FGameplayTag",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.FGameplayTag.yml\" sourcestartlinenumber=\"1\">게임플레이 태그 구조체입니다 (순수 C# 모델).\nUnity에 의존하지 않으며 Host 환경에서 사용 가능합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.GameplayAbility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.GameplayAbility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.GameplayAbility",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.GameplayAbility.yml\" sourcestartlinenumber=\"1\">게임플레이 어빌리티 설정입니다 (순수 C# 모델).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.GameplayAbilitySpec",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.yml\" sourcestartlinenumber=\"1\">능력 사양 정보를 담는 구조입니다.\nASC에 부여된 능력의 런타임 상태를 관리합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.GameplayEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.GameplayEffect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.GameplayEffect",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.GameplayEffect.yml\" sourcestartlinenumber=\"1\">게임플레이 효과 설정입니다 (순수 C# 모델).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.GameplayTagContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.GameplayTagContainer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.GameplayTagContainer",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.GameplayTagContainer.yml\" sourcestartlinenumber=\"1\">게임플레이 태그를 관리하는 컨테이너입니다 (순수 C# 모델).\nUnity에 의존하지 않으며 Host 환경에서 사용 가능합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.GameplayTagEventData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.GameplayTagEventData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.GameplayTagEventData",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.GameplayTagEventData.yml\" sourcestartlinenumber=\"1\">게임플레이 이벤트 전달용 데이터입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.GameplayTagUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.GameplayTagUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.GameplayTagUtility",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.GameplayTagUtility.yml\" sourcestartlinenumber=\"1\">게임플레이 태그 문자열 유틸리티입니다 (순수 C#).\nUnity에 의존하지 않으며 Host 환경에서 사용 가능합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.ITargetingStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.ITargetingStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.ITargetingStrategy",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.ITargetingStrategy.yml\" sourcestartlinenumber=\"1\">타겟 선정 전략 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.LowestHpTargetingStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.LowestHpTargetingStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.LowestHpTargetingStrategy",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.LowestHpTargetingStrategy.yml\" sourcestartlinenumber=\"1\">체력이 가장 낮은 적을 선택합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.NearestEnemyTargetingStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.NearestEnemyTargetingStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.NearestEnemyTargetingStrategy",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.NearestEnemyTargetingStrategy.yml\" sourcestartlinenumber=\"1\">가장 가까운 적을 선택합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.yml\" sourcestartlinenumber=\"1\">가장 가까운 N명의 적을 선택합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.Point2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.Point2D.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.Point2D",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.Point2D.yml\" sourcestartlinenumber=\"1\">도메인에서 사용하는 좌표 데이터입니다.\nUnity 의존성 없이 위치를 표현합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.RandomTargetingStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.RandomTargetingStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.RandomTargetingStrategy",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.RandomTargetingStrategy.yml\" sourcestartlinenumber=\"1\">랜덤 적을 선택합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.SelfTargetingStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.SelfTargetingStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.SelfTargetingStrategy",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.SelfTargetingStrategy.yml\" sourcestartlinenumber=\"1\">자기 자신을 타겟으로 선택합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.TargetContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.TargetContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.TargetContext",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.TargetContext.yml\" sourcestartlinenumber=\"1\">타겟팅에 필요한 월드 조회 함수를 제공하는 컨텍스트입니다.\nHost/서버 환경에서 주입하여 사용합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.TargetData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.TargetData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.TargetData",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.TargetData.yml\" sourcestartlinenumber=\"1\">타겟팅 결과를 담는 데이터입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api-plugin/Noname.GameAbilitySystem.EGameplayEffectDurationType.yml",
       "output": {
         ".html": {
@@ -2257,7 +3461,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor",
-      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor.yml\" sourcestartlinenumber=\"1\">GameplayAbilityDefinition 인스펙터를 사용자 정의로 표시합니다.</p>\n"
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor.yml\" sourcestartlinenumber=\"1\">GameplayAbilityConfig 인스펙터를 사용자 정의로 표시합니다.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2636,6 +3840,258 @@
       "IsMRef": true,
       "Title": "Noname.GameAbilitySystem.IAbilityTaskOwner",
       "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.IAbilityTaskOwner.yml\" sourcestartlinenumber=\"1\">어빌리티 태스크 소유자 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.AbilitySystemComponentAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.AbilitySystemComponentAdapter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.AbilitySystemComponentAdapter",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.AbilitySystemComponentAdapter.yml\" sourcestartlinenumber=\"1\">능력 시스템을 관리하는 Unity 어댑터입니다.\nDomain의 AbilitySystemComponent를 래핑하고 Unity 환경과 연동합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.AbilityTargetData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.AbilityTargetData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.AbilityTargetData",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.AbilityTargetData.yml\" sourcestartlinenumber=\"1\">어빌리티 타겟팅 결과를 담는 데이터입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.AbilityTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.AbilityTask.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.AbilityTask",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.AbilityTask.yml\" sourcestartlinenumber=\"1\">어빌리티에서 사용하는 태스크의 기본 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.AbilityTask_PlayMontageAndWait.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.AbilityTask_PlayMontageAndWait.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.AbilityTask_PlayMontageAndWait",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.AbilityTask_PlayMontageAndWait.yml\" sourcestartlinenumber=\"1\">애니메이션 재생을 기다리는 태스크입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.yml\" sourcestartlinenumber=\"1\">입력 눌림을 기다리는 태스크입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.AttributeDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.AttributeDefinition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.AttributeDefinition",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.AttributeDefinition.yml\" sourcestartlinenumber=\"1\">속성 정의용 ScriptableObject입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.DomainConversionExtensions",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.yml\" sourcestartlinenumber=\"1\">Domain 레이어와 Presentation 레이어 간 변환을 위한 확장 메서드입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin.yml\" sourcestartlinenumber=\"1\">플러그인 버전 정보를 제공합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameplayConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameplayConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.GameplayConfig",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.GameplayConfig.yml\" sourcestartlinenumber=\"1\">게임플레이 구성 데이터의 기본 클래스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameplayEffectConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameplayEffectConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.GameplayEffectConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.GameplayTagContainerView",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.yml\" sourcestartlinenumber=\"1\">게임플레이 태그를 관리하는 컨테이너입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameplayTagRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameplayTagRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.GameplayTagRegistry",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.GameplayTagRegistry.yml\" sourcestartlinenumber=\"1\">게임플레이 태그 레지스트리입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameplayTagRegistryRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.GameplayTagRegistryRuntime.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.GameplayTagRegistryRuntime",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.GameplayTagRegistryRuntime.yml\" sourcestartlinenumber=\"1\">런타임 레지스트리를 초기화하는 컴포넌트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner.yml\" sourcestartlinenumber=\"1\">어빌리티 태스크 소유자 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute.yml\" sourcestartlinenumber=\"1\">인스펙터에서 읽기 전용으로 표시하기 위한 속성입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.SystemMessageBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.SystemMessageBus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation.SystemMessageBus",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Presentation.SystemMessageBus.yml\" sourcestartlinenumber=\"1\">시스템 메시지를 전파하는 버스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Presentation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Presentation",
+      "Summary": null
     },
     {
       "type": "ManagedReference",

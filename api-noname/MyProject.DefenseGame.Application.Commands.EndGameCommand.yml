@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.Commands.EndGameCommand
+  commentId: T:MyProject.DefenseGame.Application.Commands.EndGameCommand
+  id: EndGameCommand
+  parent: MyProject.DefenseGame.Application.Commands
+  children:
+  - MyProject.DefenseGame.Application.Commands.EndGameCommand.#ctor(System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: EndGameCommand
+  nameWithType: EndGameCommand
+  fullName: MyProject.DefenseGame.Application.Commands.EndGameCommand
+  type: Class
+  namespace: MyProject.DefenseGame.Application.Commands
+  summary: 게임 종료 Command입니다.
+  example: []
+  syntax:
+    content: 'public sealed class EndGameCommand : DefenseCommand'
+    content.vb: Public NotInheritable Class EndGameCommand Inherits DefenseCommand
+  inheritance:
+  - System.Object
+  - MyProject.DefenseGame.Application.Commands.DefenseCommand
+- uid: MyProject.DefenseGame.Application.Commands.EndGameCommand.#ctor(System.Int64)
+  commentId: M:MyProject.DefenseGame.Application.Commands.EndGameCommand.#ctor(System.Int64)
+  id: '#ctor(System.Int64)'
+  parent: MyProject.DefenseGame.Application.Commands.EndGameCommand
+  langs:
+  - csharp
+  - vb
+  name: EndGameCommand(long)
+  nameWithType: EndGameCommand.EndGameCommand(long)
+  fullName: MyProject.DefenseGame.Application.Commands.EndGameCommand.EndGameCommand(long)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application.Commands
+  syntax:
+    content: public EndGameCommand(long senderUid)
+    parameters:
+    - id: senderUid
+      type: System.Int64
+    content.vb: Public Sub New(senderUid As Long)
+  overload: MyProject.DefenseGame.Application.Commands.EndGameCommand.#ctor*
+  nameWithType.vb: EndGameCommand.New(Long)
+  fullName.vb: MyProject.DefenseGame.Application.Commands.EndGameCommand.New(Long)
+  name.vb: New(Long)
+references:
+- uid: MyProject.DefenseGame.Application.Commands
+  commentId: N:MyProject.DefenseGame.Application.Commands
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application.Commands
+  nameWithType: MyProject.DefenseGame.Application.Commands
+  fullName: MyProject.DefenseGame.Application.Commands
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application.Commands
+    name: Commands
+    href: MyProject.DefenseGame.Application.Commands.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application.Commands
+    name: Commands
+    href: MyProject.DefenseGame.Application.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+  commentId: T:MyProject.DefenseGame.Application.Commands.DefenseCommand
+  parent: MyProject.DefenseGame.Application.Commands
+  href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  name: DefenseCommand
+  nameWithType: DefenseCommand
+  fullName: MyProject.DefenseGame.Application.Commands.DefenseCommand
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.Commands.EndGameCommand.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.Commands.EndGameCommand.#ctor
+  href: MyProject.DefenseGame.Application.Commands.EndGameCommand.html#MyProject_DefenseGame_Application_Commands_EndGameCommand__ctor_System_Int64_
+  name: EndGameCommand
+  nameWithType: EndGameCommand.EndGameCommand
+  fullName: MyProject.DefenseGame.Application.Commands.EndGameCommand.EndGameCommand
+  nameWithType.vb: EndGameCommand.New
+  fullName.vb: MyProject.DefenseGame.Application.Commands.EndGameCommand.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

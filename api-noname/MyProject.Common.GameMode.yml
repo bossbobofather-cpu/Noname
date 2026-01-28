@@ -4,9 +4,9 @@ items:
   commentId: N:MyProject.Common.GameMode
   id: MyProject.Common.GameMode
   children:
-  - MyProject.Common.GameMode.GameMode
+  - MyProject.Common.GameMode.GameMode`4
+  - MyProject.Common.GameMode.IGameMode
   - MyProject.Common.GameMode.IModule
-  - MyProject.Common.GameMode.IModuleDescriptorReceiver
   - MyProject.Common.GameMode.ModuleBase
   langs:
   - csharp
@@ -16,13 +16,56 @@ items:
   fullName: MyProject.Common.GameMode
   type: Namespace
 references:
-- uid: MyProject.Common.GameMode.GameMode
-  commentId: T:MyProject.Common.GameMode.GameMode
+- uid: MyProject.Common.GameMode.GameMode`4
+  commentId: T:MyProject.Common.GameMode.GameMode`4
+  href: MyProject.Common.GameMode.GameMode-4.html
+  name: GameMode<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4
+    name: GameMode
+    href: MyProject.Common.GameMode.GameMode-4.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4
+    name: GameMode
+    href: MyProject.Common.GameMode.GameMode-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
+- uid: MyProject.Common.GameMode.IGameMode
+  commentId: T:MyProject.Common.GameMode.IGameMode
   parent: MyProject.Common.GameMode
-  href: MyProject.Common.GameMode.GameMode.html
-  name: GameMode
-  nameWithType: GameMode
-  fullName: MyProject.Common.GameMode.GameMode
+  href: MyProject.Common.GameMode.IGameMode.html
+  name: IGameMode
+  nameWithType: IGameMode
+  fullName: MyProject.Common.GameMode.IGameMode
 - uid: MyProject.Common.GameMode.IModule
   commentId: T:MyProject.Common.GameMode.IModule
   parent: MyProject.Common.GameMode
@@ -30,16 +73,8 @@ references:
   name: IModule
   nameWithType: IModule
   fullName: MyProject.Common.GameMode.IModule
-- uid: MyProject.Common.GameMode.IModuleDescriptorReceiver
-  commentId: T:MyProject.Common.GameMode.IModuleDescriptorReceiver
-  parent: MyProject.Common.GameMode
-  href: MyProject.Common.GameMode.IModuleDescriptorReceiver.html
-  name: IModuleDescriptorReceiver
-  nameWithType: IModuleDescriptorReceiver
-  fullName: MyProject.Common.GameMode.IModuleDescriptorReceiver
 - uid: MyProject.Common.GameMode.ModuleBase
   commentId: T:MyProject.Common.GameMode.ModuleBase
-  parent: MyProject.Common.GameMode
   href: MyProject.Common.GameMode.ModuleBase.html
   name: ModuleBase
   nameWithType: ModuleBase

@@ -1,12 +1,12 @@
-namespace Noname.GameHost.GameEvent
+﻿namespace Noname.GameHost.GameEvent
 {
     /// <summary>
-    /// 게임 ?�벤?�의 기본 컨텍?�트?�니??
+    /// 게임 이벤트의 기본 컨텍스트입니다.
     /// </summary>
     public abstract class GameEventContext
     {
         /// <summary>
-        /// ?�벤??발신?�입?�다.
+        /// 이벤트 발신자입니다.
         /// </summary>
         public object Source { get; }
 
@@ -17,7 +17,7 @@ namespace Noname.GameHost.GameEvent
     }
 
     /// <summary>
-    /// ???�코?�에??처리?�는 ?�벤??컨텍?�트?�니??
+    /// 씬 스코프에서 처리되는 이벤트 컨텍스트입니다.
     /// </summary>
     public abstract class SceneGameEventContext : GameEventContext
     {
@@ -28,7 +28,7 @@ namespace Noname.GameHost.GameEvent
     }
 
     /// <summary>
-    /// ?�역 ?�코?�에??처리?�는 ?�벤??컨텍?�트?�니??
+    /// 전역 스코프에서 처리되는 이벤트 컨텍스트입니다.
     /// </summary>
     public abstract class GlobalGameEventContext : GameEventContext
     {

@@ -1,0 +1,765 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect
+  commentId: T:Noname.GameAbilitySystem.Domain.GameplayEffect
+  id: GameplayEffect
+  parent: Noname.GameAbilitySystem.Domain
+  children:
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.#ctor
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.BlockedTags
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.Description
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.DisplayName
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.Duration
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.DurationType
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.EffectId
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.GrantedTags
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.MaxStack
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.Period
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.RequiredTags
+  langs:
+  - csharp
+  - vb
+  name: GameplayEffect
+  nameWithType: GameplayEffect
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect
+  type: Class
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 게임플레이 효과 설정입니다 (순수 C# 모델).
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public sealed class GameplayEffect
+    content.vb: >-
+      <Serializable>
+
+      Public NotInheritable Class GameplayEffect
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.EffectId
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.EffectId
+  id: EffectId
+  parent: Noname.GameAbilitySystem.Domain.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: EffectId
+  nameWithType: GameplayEffect.EffectId
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.EffectId
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 효과 ID입니다.
+  example: []
+  syntax:
+    content: public string EffectId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EffectId As String
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.EffectId*
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.DisplayName
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.DisplayName
+  id: DisplayName
+  parent: Noname.GameAbilitySystem.Domain.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: GameplayEffect.DisplayName
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.DisplayName
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 표시 이름입니다.
+  example: []
+  syntax:
+    content: public string DisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DisplayName As String
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.DisplayName*
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.Description
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.Description
+  id: Description
+  parent: Noname.GameAbilitySystem.Domain.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: GameplayEffect.Description
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Description
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 설명입니다.
+  example: []
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.Description*
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationType
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.DurationType
+  id: DurationType
+  parent: Noname.GameAbilitySystem.Domain.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: DurationType
+  nameWithType: GameplayEffect.DurationType
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationType
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 지속 타입입니다.
+  example: []
+  syntax:
+    content: public EffectDurationType DurationType { get; set; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.Domain.EffectDurationType
+    content.vb: Public Property DurationType As EffectDurationType
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationType*
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.Duration
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.Duration
+  id: Duration
+  parent: Noname.GameAbilitySystem.Domain.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: GameplayEffect.Duration
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Duration
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 지속 시간입니다 (초).
+  example: []
+  syntax:
+    content: public float Duration { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Duration As Single
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.Duration*
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.Period
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.Period
+  id: Period
+  parent: Noname.GameAbilitySystem.Domain.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: Period
+  nameWithType: GameplayEffect.Period
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Period
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 주기 시간입니다 (초).
+  example: []
+  syntax:
+    content: public float Period { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Period As Single
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.Period*
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.MaxStack
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.MaxStack
+  id: MaxStack
+  parent: Noname.GameAbilitySystem.Domain.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: MaxStack
+  nameWithType: GameplayEffect.MaxStack
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.MaxStack
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 최대 스택 수입니다.
+  example: []
+  syntax:
+    content: public int MaxStack { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxStack As Integer
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.MaxStack*
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
+  id: ModifierGroups
+  parent: Noname.GameAbilitySystem.Domain.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: ModifierGroups
+  nameWithType: GameplayEffect.ModifierGroups
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 수정자 그룹 목록입니다.
+  example: []
+  syntax:
+    content: public List<AttributeModifierGroup> ModifierGroups { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.AttributeModifierGroup}
+    content.vb: Public Property ModifierGroups As List(Of AttributeModifierGroup)
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups*
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.GrantedTags
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.GrantedTags
+  id: GrantedTags
+  parent: Noname.GameAbilitySystem.Domain.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: GrantedTags
+  nameWithType: GameplayEffect.GrantedTags
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.GrantedTags
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 부여되는 태그 목록입니다.
+  example: []
+  syntax:
+    content: public GameplayTagContainer GrantedTags { get; set; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.Domain.GameplayTagContainer
+    content.vb: Public Property GrantedTags As GameplayTagContainer
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.GrantedTags*
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.RequiredTags
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.RequiredTags
+  id: RequiredTags
+  parent: Noname.GameAbilitySystem.Domain.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: RequiredTags
+  nameWithType: GameplayEffect.RequiredTags
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.RequiredTags
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 적용 필수 태그 목록입니다.
+  example: []
+  syntax:
+    content: public GameplayTagContainer RequiredTags { get; set; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.Domain.GameplayTagContainer
+    content.vb: Public Property RequiredTags As GameplayTagContainer
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.RequiredTags*
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.BlockedTags
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.BlockedTags
+  id: BlockedTags
+  parent: Noname.GameAbilitySystem.Domain.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: BlockedTags
+  nameWithType: GameplayEffect.BlockedTags
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.BlockedTags
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 적용 차단 태그 목록입니다.
+  example: []
+  syntax:
+    content: public GameplayTagContainer BlockedTags { get; set; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.Domain.GameplayTagContainer
+    content.vb: Public Property BlockedTags As GameplayTagContainer
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.BlockedTags*
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.#ctor
+  commentId: M:Noname.GameAbilitySystem.Domain.GameplayEffect.#ctor
+  id: '#ctor'
+  parent: Noname.GameAbilitySystem.Domain.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: GameplayEffect()
+  nameWithType: GameplayEffect.GameplayEffect()
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.GameplayEffect()
+  type: Constructor
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public GameplayEffect()
+    content.vb: Public Sub New()
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.#ctor*
+  nameWithType.vb: GameplayEffect.New()
+  fullName.vb: Noname.GameAbilitySystem.Domain.GameplayEffect.New()
+  name.vb: New()
+references:
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.EffectId*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.EffectId
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_EffectId
+  name: EffectId
+  nameWithType: GameplayEffect.EffectId
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.EffectId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.DisplayName*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.DisplayName
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_DisplayName
+  name: DisplayName
+  nameWithType: GameplayEffect.DisplayName
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.DisplayName
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.Description*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.Description
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_Description
+  name: Description
+  nameWithType: GameplayEffect.Description
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Description
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationType*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.DurationType
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_DurationType
+  name: DurationType
+  nameWithType: GameplayEffect.DurationType
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationType
+- uid: Noname.GameAbilitySystem.Domain.EffectDurationType
+  commentId: T:Noname.GameAbilitySystem.Domain.EffectDurationType
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.EffectDurationType.html
+  name: EffectDurationType
+  nameWithType: EffectDurationType
+  fullName: Noname.GameAbilitySystem.Domain.EffectDurationType
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.Duration*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.Duration
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_Duration
+  name: Duration
+  nameWithType: GameplayEffect.Duration
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Duration
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.Period*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.Period
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_Period
+  name: Period
+  nameWithType: GameplayEffect.Period
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Period
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.MaxStack*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.MaxStack
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_MaxStack
+  name: MaxStack
+  nameWithType: GameplayEffect.MaxStack
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.MaxStack
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_ModifierGroups
+  name: ModifierGroups
+  nameWithType: GameplayEffect.ModifierGroups
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
+- uid: System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.AttributeModifierGroup}
+  commentId: T:System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.AttributeModifierGroup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<AttributeModifierGroup>
+  nameWithType: List<AttributeModifierGroup>
+  fullName: System.Collections.Generic.List<Noname.GameAbilitySystem.Domain.AttributeModifierGroup>
+  nameWithType.vb: List(Of AttributeModifierGroup)
+  fullName.vb: System.Collections.Generic.List(Of Noname.GameAbilitySystem.Domain.AttributeModifierGroup)
+  name.vb: List(Of AttributeModifierGroup)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.Domain.AttributeModifierGroup
+    name: AttributeModifierGroup
+    href: Noname.GameAbilitySystem.Domain.AttributeModifierGroup.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.Domain.AttributeModifierGroup
+    name: AttributeModifierGroup
+    href: Noname.GameAbilitySystem.Domain.AttributeModifierGroup.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.GrantedTags*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.GrantedTags
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_GrantedTags
+  name: GrantedTags
+  nameWithType: GameplayEffect.GrantedTags
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.GrantedTags
+- uid: Noname.GameAbilitySystem.Domain.GameplayTagContainer
+  commentId: T:Noname.GameAbilitySystem.Domain.GameplayTagContainer
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.GameplayTagContainer.html
+  name: GameplayTagContainer
+  nameWithType: GameplayTagContainer
+  fullName: Noname.GameAbilitySystem.Domain.GameplayTagContainer
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.RequiredTags*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.RequiredTags
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_RequiredTags
+  name: RequiredTags
+  nameWithType: GameplayEffect.RequiredTags
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.RequiredTags
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.BlockedTags*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.BlockedTags
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_BlockedTags
+  name: BlockedTags
+  nameWithType: GameplayEffect.BlockedTags
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.BlockedTags
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.#ctor*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.#ctor
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect__ctor
+  name: GameplayEffect
+  nameWithType: GameplayEffect.GameplayEffect
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.GameplayEffect
+  nameWithType.vb: GameplayEffect.New
+  fullName.vb: Noname.GameAbilitySystem.Domain.GameplayEffect.New
+  name.vb: New

@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 
 namespace Noname.GameHost.GameEvent
 {
     /// <summary>
-    /// ?�역/???�벤??버스�?간단???�근?�기 ?�한 ?�브?�니??
+    /// 전역/씬 이벤트 버스에 대한 간단 접근자입니다.
     /// </summary>
     public static class GameEventHub
     {

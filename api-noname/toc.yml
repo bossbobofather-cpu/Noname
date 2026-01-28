@@ -1,15 +1,5 @@
 ### YamlMime:TableOfContent
 items:
-- uid: Common.Interface
-  name: Common.Interface
-  type: Namespace
-  items:
-  - uid: Common.Interface.IAnimEventReceiver
-    name: IAnimEventReceiver
-    type: Interface
-  - uid: Common.Interface.IMovement
-    name: IMovement
-    type: Interface
 - uid: MyProject.Common.Bootstrap
   name: MyProject.Common.Bootstrap
   type: Namespace
@@ -17,118 +7,37 @@ items:
   - uid: MyProject.Common.Bootstrap.BootstrapperBase
     name: BootstrapperBase
     type: Class
-  - uid: MyProject.Common.Bootstrap.GameBootstrapper
-    name: GameBootstrapper
+  - uid: MyProject.Common.Bootstrap.DefenseGameBootstrapper
+    name: DefenseGameBootstrapper
     type: Class
   - uid: MyProject.Common.Bootstrap.IManager
     name: IManager
     type: Interface
-- uid: MyProject.Common.CameraSystem
-  name: MyProject.Common.CameraSystem
-  type: Namespace
-  items:
-  - uid: MyProject.Common.CameraSystem.QuarterViewFollowCamera
-    name: QuarterViewFollowCamera
-    type: Class
-- uid: MyProject.Common.GameEvent
-  name: MyProject.Common.GameEvent
-  type: Namespace
-  items:
-  - uid: MyProject.Common.GameEvent.GameEventBus
-    name: GameEventBus
-    type: Class
-  - uid: MyProject.Common.GameEvent.GameEventBus.Scope
-    name: GameEventBus.Scope
-    type: Class
-  - uid: MyProject.Common.GameEvent.GameEventContext
-    name: GameEventContext
-    type: Class
-  - uid: MyProject.Common.GameEvent.GameEventHub
-    name: GameEventHub
-    type: Class
-  - uid: MyProject.Common.GameEvent.GameHostCommandResultEvent
-    name: GameHostCommandResultEvent
-    type: Class
-  - uid: MyProject.Common.GameEvent.GameHostEventRaisedEvent
-    name: GameHostEventRaisedEvent
-    type: Class
-  - uid: MyProject.Common.GameEvent.GameUIContextSupplyEvent
-    name: GameUIContextSupplyEvent
-    type: Class
-  - uid: MyProject.Common.GameEvent.GlobalGameEventContext
-    name: GlobalGameEventContext
-    type: Class
-  - uid: MyProject.Common.GameEvent.IEventBus`1
-    name: IEventBus<TEventBase>
-    type: Interface
-  - uid: MyProject.Common.GameEvent.SceneGameEventContext
-    name: SceneGameEventContext
-    type: Class
 - uid: MyProject.Common.GameMode
   name: MyProject.Common.GameMode
   type: Namespace
   items:
-  - uid: MyProject.Common.GameMode.GameMode
-    name: GameMode
+  - uid: MyProject.Common.GameMode.GameMode`4
+    name: GameMode<TCommand, TResult, TEvent, TSnapshot>
     type: Class
+  - uid: MyProject.Common.GameMode.IGameMode
+    name: IGameMode
+    type: Interface
   - uid: MyProject.Common.GameMode.IModule
     name: IModule
-    type: Interface
-  - uid: MyProject.Common.GameMode.IModuleDescriptorReceiver
-    name: IModuleDescriptorReceiver
     type: Interface
   - uid: MyProject.Common.GameMode.ModuleBase
     name: ModuleBase
     type: Class
-- uid: MyProject.Common.Host
-  name: MyProject.Common.Host
-  type: Namespace
-  items:
-  - uid: MyProject.Common.Host.GameCommandBase
-    name: GameCommandBase
-    type: Class
-  - uid: MyProject.Common.Host.GameCommandOutcome`2
-    name: GameCommandOutcome<TResult, TEvent>
-    type: Struct
-  - uid: MyProject.Common.Host.GameCommandResultBase
-    name: GameCommandResultBase
-    type: Class
-  - uid: MyProject.Common.Host.GameEventBase
-    name: GameEventBase
-    type: Class
-  - uid: MyProject.Common.Host.GameHostBase`4
-    name: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
-    type: Class
-  - uid: MyProject.Common.Host.GameModuleConfig
-    name: GameModuleConfig
-    type: Class
-  - uid: MyProject.Common.Host.GameModuleDescriptor
-    name: GameModuleDescriptor
-    type: Class
-  - uid: MyProject.Common.Host.GameSessionDescriptor
-    name: GameSessionDescriptor
-    type: Class
-  - uid: MyProject.Common.Host.GameSnapshotBase
-    name: GameSnapshotBase
-    type: Class
-  - uid: MyProject.Common.Host.IGameHost`4
-    name: IGameHost<TCommand, TResult, TEvent, TSnapshot>
-    type: Interface
-  - uid: MyProject.Common.Host.IRandomSource
-    name: IRandomSource
-    type: Interface
 - uid: MyProject.Common.UI
   name: MyProject.Common.UI
   type: Namespace
   items:
-  - uid: MyProject.Common.UI.HealthBarOwner
-    name: HealthBarOwner
-    type: Class
-  - uid: MyProject.Common.UI.ScreenSpaceHealthBar
-    name: ScreenSpaceHealthBar
-    type: Class
-  - uid: MyProject.Common.UI.ScreenSpaceHealthBarPool
-    name: ScreenSpaceHealthBarPool
+  - uid: MyProject.Common.UI.SystemMessage
+    name: SystemMessage
+    type: Struct
+  - uid: MyProject.Common.UI.SystemMessageBus
+    name: SystemMessageBus
     type: Class
   - uid: MyProject.Common.UI.SystemMessageUI
     name: SystemMessageUI
@@ -136,12 +45,6 @@ items:
   - uid: MyProject.Common.UI.UIBase
     name: UIBase
     type: Class
-  - uid: MyProject.Common.UI.UIEventContext
-    name: UIEventContext
-    type: Class
-  - uid: MyProject.Common.UI.UIEventType
-    name: UIEventType
-    type: Enum
   - uid: MyProject.Common.UI.UIManager
     name: UIManager
     type: Class
@@ -160,235 +63,163 @@ items:
   - uid: MyProject.Common.UI.UISystemBase
     name: UISystemBase
     type: Class
-  - uid: MyProject.Common.UI.WorldHealthBar
-    name: WorldHealthBar
-    type: Class
-  - uid: MyProject.Common.UI.WorldObjectLabel
-    name: WorldObjectLabel
-    type: Class
-- uid: MyProject.Common.Units
-  name: MyProject.Common.Units
+- uid: MyProject.DefenseGame.Application
+  name: MyProject.DefenseGame.Application
   type: Namespace
   items:
-  - uid: MyProject.Common.Units.Unit
-    name: Unit
+  - uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
+    name: DefenseAbilitySelectedEvent
     type: Class
-- uid: MyProject.Common.Units.Locomotion
-  name: MyProject.Common.Units.Locomotion
+  - uid: MyProject.DefenseGame.Application.DefenseCombatModule
+    name: DefenseCombatModule
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseEntityFactory
+    name: DefenseEntityFactory
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseGameHost
+    name: DefenseGameHost
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseGameOverEvent
+    name: DefenseGameOverEvent
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseGameStartedEvent
+    name: DefenseGameStartedEvent
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseHostSnapshot
+    name: DefenseHostSnapshot
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseHostState
+    name: DefenseHostState
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseLevelUpEvent
+    name: DefenseLevelUpEvent
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
+    name: DefenseLevelUpOptionsEvent
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+    name: DefenseMonsterAttackEvent
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+    name: DefenseMonsterKilledEvent
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent
+    name: DefenseMonsterSpawnedEvent
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+    name: DefensePlayerAttackEvent
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefensePlayerDeathEvent
+    name: DefensePlayerDeathEvent
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseSessionPhase
+    name: DefenseSessionPhase
+    type: Enum
+  - uid: MyProject.DefenseGame.Application.DefenseSpawnModule
+    name: DefenseSpawnModule
+    type: Class
+  - uid: MyProject.DefenseGame.Application.DefenseWaveChangedEvent
+    name: DefenseWaveChangedEvent
+    type: Class
+- uid: MyProject.DefenseGame.Application.Commands
+  name: MyProject.DefenseGame.Application.Commands
   type: Namespace
   items:
-  - uid: MyProject.Common.Units.Locomotion.ILocomotionStateProvider
-    name: ILocomotionStateProvider
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+    name: DefenseCommand
+    type: Class
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+    name: DefenseCommandResult
+    type: Class
+  - uid: MyProject.DefenseGame.Application.Commands.EndGameCommand
+    name: EndGameCommand
+    type: Class
+  - uid: MyProject.DefenseGame.Application.Commands.EndGameResult
+    name: EndGameResult
+    type: Class
+  - uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityCommand
+    name: SelectLevelUpAbilityCommand
+    type: Class
+  - uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+    name: SelectLevelUpAbilityResult
+    type: Class
+  - uid: MyProject.DefenseGame.Application.Commands.StartGameCommand
+    name: StartGameCommand
+    type: Class
+  - uid: MyProject.DefenseGame.Application.Commands.StartGameResult
+    name: StartGameResult
+    type: Class
+- uid: MyProject.DefenseGame.Domain
+  name: MyProject.DefenseGame.Domain
+  type: Namespace
+  items:
+  - uid: MyProject.DefenseGame.Domain.DefenseAbilityUtility
+    name: DefenseAbilityUtility
+    type: Class
+  - uid: MyProject.DefenseGame.Domain.DefenseAttributeIds
+    name: DefenseAttributeIds
+    type: Class
+  - uid: MyProject.DefenseGame.Domain.DefenseCombatState
+    name: DefenseCombatState
+    type: Class
+  - uid: MyProject.DefenseGame.Domain.DefenseEntity
+    name: DefenseEntity
+    type: Class
+  - uid: MyProject.DefenseGame.Domain.DefenseHostConfig
+    name: DefenseHostConfig
+    type: Class
+  - uid: MyProject.DefenseGame.Domain.DefenseMonster
+    name: DefenseMonster
+    type: Class
+  - uid: MyProject.DefenseGame.Domain.DefenseMonsterType
+    name: DefenseMonsterType
+    type: Enum
+  - uid: MyProject.DefenseGame.Domain.DefensePlayer
+    name: DefensePlayer
+    type: Class
+  - uid: MyProject.DefenseGame.Domain.DefenseTags
+    name: DefenseTags
+    type: Class
+  - uid: MyProject.DefenseGame.Domain.IAbilitySystemOwner
+    name: IAbilitySystemOwner
     type: Interface
-  - uid: MyProject.Common.Units.Locomotion.LocomotionState
-    name: LocomotionState
-    type: Struct
-- uid: MyProject.ExploreGame.Application
-  name: MyProject.ExploreGame.Application
+  - uid: MyProject.DefenseGame.Domain.MonsterAttributeIds
+    name: MonsterAttributeIds
+    type: Class
+  - uid: MyProject.DefenseGame.Domain.PlayerAttributeIds
+    name: PlayerAttributeIds
+    type: Class
+- uid: MyProject.DefenseGame.Domain.AI
+  name: MyProject.DefenseGame.Domain.AI
   type: Namespace
   items:
-  - uid: MyProject.ExploreGame.Application.ExploreCharacterLevelUpEvent
-    name: ExploreCharacterLevelUpEvent
+  - uid: MyProject.DefenseGame.Domain.AI.IDefenseAI
+    name: IDefenseAI
+    type: Interface
+  - uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
+    name: PlayerAutoBattleAI
     type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreCombatActionEvent
-    name: ExploreCombatActionEvent
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreCombatEndedEvent
-    name: ExploreCombatEndedEvent
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreCombatModuleHost
-    name: ExploreCombatModuleHost
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreCombatStartedEvent
-    name: ExploreCombatStartedEvent
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreCommand
-    name: ExploreCommand
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreCommandResult
-    name: ExploreCommandResult
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreDungeonCompletedEvent
-    name: ExploreDungeonCompletedEvent
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreDungeonFailedEvent
-    name: ExploreDungeonFailedEvent
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreDungeonModuleHost
-    name: ExploreDungeonModuleHost
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreDungeonStartedEvent
-    name: ExploreDungeonStartedEvent
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreHost
-    name: ExploreHost
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreHostEvent
-    name: ExploreHostEvent
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreJoinCommand
-    name: ExploreJoinCommand
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreJoinResult
-    name: ExploreJoinResult
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreModeHost
-    name: ExploreModeHost
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExplorePlayerJoinedEvent
-    name: ExplorePlayerJoinedEvent
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreRewardGrantedEvent
-    name: ExploreRewardGrantedEvent
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreStageChangedEvent
-    name: ExploreStageChangedEvent
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreStartDungeonCommand
-    name: ExploreStartDungeonCommand
-    type: Class
-  - uid: MyProject.ExploreGame.Application.ExploreStartDungeonResult
-    name: ExploreStartDungeonResult
-    type: Class
-- uid: MyProject.ExploreGame.Data
-  name: MyProject.ExploreGame.Data
+- uid: MyProject.DefenseGame.Domain.LevelUp
+  name: MyProject.DefenseGame.Domain.LevelUp
   type: Namespace
   items:
-  - uid: MyProject.ExploreGame.Data.ExploreHostConfig
-    name: ExploreHostConfig
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+    name: LevelUpAbilityDefinition
     type: Class
-- uid: MyProject.ExploreGame.Domain
-  name: MyProject.ExploreGame.Domain
-  type: Namespace
-  items:
-  - uid: MyProject.ExploreGame.Domain.CombatPhase
-    name: CombatPhase
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+    name: LevelUpAbilityId
     type: Enum
-  - uid: MyProject.ExploreGame.Domain.DungeonPhase
-    name: DungeonPhase
-    type: Enum
-  - uid: MyProject.ExploreGame.Domain.DungeonStageData
-    name: DungeonStageData
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
+    name: LevelUpAbilityRegistry
     type: Class
-  - uid: MyProject.ExploreGame.Domain.ExploreCharacterSnapshot
-    name: ExploreCharacterSnapshot
-    type: Class
-  - uid: MyProject.ExploreGame.Domain.ExploreCharacterState
-    name: ExploreCharacterState
-    type: Class
-  - uid: MyProject.ExploreGame.Domain.ExploreCombatSnapshot
-    name: ExploreCombatSnapshot
-    type: Class
-  - uid: MyProject.ExploreGame.Domain.ExploreCombatState
-    name: ExploreCombatState
-    type: Class
-  - uid: MyProject.ExploreGame.Domain.ExploreDungeonSnapshot
-    name: ExploreDungeonSnapshot
-    type: Class
-  - uid: MyProject.ExploreGame.Domain.ExploreDungeonState
-    name: ExploreDungeonState
-    type: Class
-  - uid: MyProject.ExploreGame.Domain.ExploreHostState
-    name: ExploreHostState
-    type: Class
-  - uid: MyProject.ExploreGame.Domain.ExploreMonsterSnapshot
-    name: ExploreMonsterSnapshot
-    type: Class
-  - uid: MyProject.ExploreGame.Domain.ExploreMonsterState
-    name: ExploreMonsterState
-    type: Class
-  - uid: MyProject.ExploreGame.Domain.ExploreSessionPhase
-    name: ExploreSessionPhase
-    type: Enum
-  - uid: MyProject.ExploreGame.Domain.ExploreStateSnapshot
-    name: ExploreStateSnapshot
-    type: Class
-- uid: MyProject.ExploreGame.Presentation
-  name: MyProject.ExploreGame.Presentation
+- uid: MyProject.DefenseGame.Presentation
+  name: MyProject.DefenseGame.Presentation
   type: Namespace
   items:
-  - uid: MyProject.ExploreGame.Presentation.ExploreHostEventRaisedEvent
-    name: ExploreHostEventRaisedEvent
-    type: Class
-  - uid: MyProject.ExploreGame.Presentation.ExploreMode
-    name: ExploreMode
-    type: Class
-  - uid: MyProject.ExploreGame.Presentation.ExploreViewModel
-    name: ExploreViewModel
-    type: Class
-  - uid: MyProject.ExploreGame.Presentation.StatusDisplayModule
-    name: StatusDisplayModule
-    type: Class
-  - uid: MyProject.ExploreGame.Presentation.TextLogModule
-    name: TextLogModule
-    type: Class
-- uid: MyProject.GameplayAbilitySystem.Ability
-  name: MyProject.GameplayAbilitySystem.Ability
-  type: Namespace
-  items:
-  - uid: MyProject.GameplayAbilitySystem.Ability.Ability_Attack
-    name: Ability_Attack
-    type: Class
-  - uid: MyProject.GameplayAbilitySystem.Ability.Ability_Hit
-    name: Ability_Hit
-    type: Class
-  - uid: MyProject.GameplayAbilitySystem.Ability.Ability_Jump
-    name: Ability_Jump
-    type: Class
-  - uid: MyProject.GameplayAbilitySystem.Ability.Ability_Move
-    name: Ability_Move
-    type: Class
-- uid: MyProject.GameplayAbilitySystem.Bridge
-  name: MyProject.GameplayAbilitySystem.Bridge
-  type: Namespace
-  items:
-  - uid: MyProject.GameplayAbilitySystem.Bridge.AnimationEventBridge
-    name: AnimationEventBridge
-    type: Class
-  - uid: MyProject.GameplayAbilitySystem.Bridge.LocomotionStateBridge
-    name: LocomotionStateBridge
-    type: Class
-  - uid: MyProject.GameplayAbilitySystem.Bridge.MovementBridge
-    name: MovementBridge
-    type: Class
-- uid: MyProject.GameplayAbilitySystem.Config
-  name: MyProject.GameplayAbilitySystem.Config
-  type: Namespace
-  items:
-  - uid: MyProject.GameplayAbilitySystem.Config.GameplayTargetActorRegistryConfig
-    name: GameplayTargetActorRegistryConfig
-    type: Class
-- uid: MyProject.GameplayAbilitySystem.Define
-  name: MyProject.GameplayAbilitySystem.Define
-  type: Namespace
-  items:
-  - uid: MyProject.GameplayAbilitySystem.Define.TargetFactionMode
-    name: TargetFactionMode
-    type: Enum
-  - uid: MyProject.GameplayAbilitySystem.Define.TargetGroup
-    name: TargetGroup
-    type: Enum
-  - uid: MyProject.GameplayAbilitySystem.Define.TargetSelectionMode
-    name: TargetSelectionMode
-    type: Enum
-- uid: MyProject.GameplayAbilitySystem.Effect
-  name: MyProject.GameplayAbilitySystem.Effect
-  type: Namespace
-  items:
-  - uid: MyProject.GameplayAbilitySystem.Effect.EC_AttackDamage
-    name: EC_AttackDamage
-    type: Class
-- uid: MyProject.GameplayAbilitySystem.Target
-  name: MyProject.GameplayAbilitySystem.Target
-  type: Namespace
-  items:
-  - uid: MyProject.GameplayAbilitySystem.Target.GameplayTargetActor_Registry
-    name: GameplayTargetActor_Registry
-    type: Class
-  - uid: MyProject.GameplayAbilitySystem.Target.TargetRegistry
-    name: TargetRegistry
-    type: Class
-  - uid: MyProject.GameplayAbilitySystem.Target.Targetable
-    name: Targetable
+  - uid: MyProject.DefenseGame.Presentation.DefenseGameMode
+    name: DefenseGameMode
     type: Class
 memberLayout: SamePage

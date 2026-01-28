@@ -1,0 +1,641 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  id: FGameplayAbilitySpecHandle
+  parent: Noname.GameAbilitySystem.Domain
+  children:
+  - Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  - Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals(System.Object)
+  - Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.GetHashCode
+  - Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Id
+  - Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Invalid
+  - Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Equality(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  - Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Inequality(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  langs:
+  - csharp
+  - vb
+  name: FGameplayAbilitySpecHandle
+  nameWithType: FGameplayAbilitySpecHandle
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  type: Struct
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 능력 사양을 식별하기 위한 핸들입니다.
+  example: []
+  syntax:
+    content: 'public struct FGameplayAbilitySpecHandle : IEquatable<FGameplayAbilitySpecHandle>'
+    content.vb: Public Structure FGameplayAbilitySpecHandle Implements IEquatable(Of FGameplayAbilitySpecHandle)
+  implements:
+  - System.IEquatable{Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Invalid
+  commentId: F:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Invalid
+  id: Invalid
+  parent: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  langs:
+  - csharp
+  - vb
+  name: Invalid
+  nameWithType: FGameplayAbilitySpecHandle.Invalid
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Invalid
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 유효하지 않은 핸들 값입니다.
+  example: []
+  syntax:
+    content: public static readonly FGameplayAbilitySpecHandle Invalid
+    return:
+      type: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+    content.vb: Public Shared ReadOnly Invalid As FGameplayAbilitySpecHandle
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Id
+  commentId: F:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Id
+  id: Id
+  parent: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: FGameplayAbilitySpecHandle.Id
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Id
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 식별자 값입니다.
+  example: []
+  syntax:
+    content: public int Id
+    return:
+      type: System.Int32
+    content.vb: Public Id As Integer
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  commentId: M:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  id: Equals(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  parent: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  langs:
+  - csharp
+  - vb
+  name: Equals(FGameplayAbilitySpecHandle)
+  nameWithType: FGameplayAbilitySpecHandle.Equals(FGameplayAbilitySpecHandle)
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 다른 핸들과 동일한지 비교합니다.
+  example: []
+  syntax:
+    content: public bool Equals(FGameplayAbilitySpecHandle other)
+    parameters:
+    - id: other
+      type: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+      description: 비교 대상
+    return:
+      type: System.Boolean
+      description: 동일 여부
+    content.vb: Public Function Equals(other As FGameplayAbilitySpecHandle) As Boolean
+  overload: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals*
+  implements:
+  - System.IEquatable{Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle}.Equals(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals(System.Object)
+  commentId: M:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: FGameplayAbilitySpecHandle.Equals(object)
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals(object)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 객체 동일 여부를 비교합니다.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: 비교 대상
+    return:
+      type: System.Boolean
+      description: 동일 여부
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals*
+  nameWithType.vb: FGameplayAbilitySpecHandle.Equals(Object)
+  fullName.vb: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.GetHashCode
+  commentId: M:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.GetHashCode
+  id: GetHashCode
+  parent: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: FGameplayAbilitySpecHandle.GetHashCode()
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.GetHashCode()
+  type: Method
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 해시 코드를 반환합니다.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: 해시 값
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.GetHashCode*
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Equality(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  commentId: M:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Equality(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  id: op_Equality(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  parent: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  langs:
+  - csharp
+  - vb
+  name: operator ==(FGameplayAbilitySpecHandle, FGameplayAbilitySpecHandle)
+  nameWithType: FGameplayAbilitySpecHandle.operator ==(FGameplayAbilitySpecHandle, FGameplayAbilitySpecHandle)
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.operator ==(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle, Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  type: Operator
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 동일 연산자입니다.
+  example: []
+  syntax:
+    content: public static bool operator ==(FGameplayAbilitySpecHandle a, FGameplayAbilitySpecHandle b)
+    parameters:
+    - id: a
+      type: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+    - id: b
+      type: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As FGameplayAbilitySpecHandle, b As FGameplayAbilitySpecHandle) As Boolean
+  overload: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Equality*
+  nameWithType.vb: FGameplayAbilitySpecHandle.=(FGameplayAbilitySpecHandle, FGameplayAbilitySpecHandle)
+  fullName.vb: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.=(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle, Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  name.vb: =(FGameplayAbilitySpecHandle, FGameplayAbilitySpecHandle)
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Inequality(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  commentId: M:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Inequality(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  id: op_Inequality(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  parent: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  langs:
+  - csharp
+  - vb
+  name: operator !=(FGameplayAbilitySpecHandle, FGameplayAbilitySpecHandle)
+  nameWithType: FGameplayAbilitySpecHandle.operator !=(FGameplayAbilitySpecHandle, FGameplayAbilitySpecHandle)
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.operator !=(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle, Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  type: Operator
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 다름 연산자입니다.
+  example: []
+  syntax:
+    content: public static bool operator !=(FGameplayAbilitySpecHandle a, FGameplayAbilitySpecHandle b)
+    parameters:
+    - id: a
+      type: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+    - id: b
+      type: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As FGameplayAbilitySpecHandle, b As FGameplayAbilitySpecHandle) As Boolean
+  overload: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Inequality*
+  nameWithType.vb: FGameplayAbilitySpecHandle.<>(FGameplayAbilitySpecHandle, FGameplayAbilitySpecHandle)
+  fullName.vb: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.<>(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle, Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  name.vb: <>(FGameplayAbilitySpecHandle, FGameplayAbilitySpecHandle)
+references:
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+- uid: System.IEquatable{Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle}
+  commentId: T:System.IEquatable{Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<FGameplayAbilitySpecHandle>
+  nameWithType: IEquatable<FGameplayAbilitySpecHandle>
+  fullName: System.IEquatable<Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle>
+  nameWithType.vb: IEquatable(Of FGameplayAbilitySpecHandle)
+  fullName.vb: System.IEquatable(Of Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  name.vb: IEquatable(Of FGameplayAbilitySpecHandle)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+    name: FGameplayAbilitySpecHandle
+    href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+    name: FGameplayAbilitySpecHandle
+    href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html
+  name: FGameplayAbilitySpecHandle
+  nameWithType: FGameplayAbilitySpecHandle
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals
+  href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html#Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_Equals_Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_
+  name: Equals
+  nameWithType: FGameplayAbilitySpecHandle.Equals
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.Equals
+- uid: System.IEquatable{Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle}.Equals(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  commentId: M:System.IEquatable{Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle}.Equals(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  parent: System.IEquatable{Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(FGameplayAbilitySpecHandle)
+  nameWithType: IEquatable<FGameplayAbilitySpecHandle>.Equals(FGameplayAbilitySpecHandle)
+  fullName: System.IEquatable<Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle>.Equals(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  nameWithType.vb: IEquatable(Of FGameplayAbilitySpecHandle).Equals(FGameplayAbilitySpecHandle)
+  fullName.vb: System.IEquatable(Of Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle).Equals(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+  spec.csharp:
+  - uid: System.IEquatable{Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle}.Equals(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+    name: FGameplayAbilitySpecHandle
+    href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle}.Equals(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+    name: FGameplayAbilitySpecHandle
+    href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.GetHashCode*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.GetHashCode
+  href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html#Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_GetHashCode
+  name: GetHashCode
+  nameWithType: FGameplayAbilitySpecHandle.GetHashCode
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.GetHashCode
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Equality*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Equality
+  href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html#Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_op_Equality_Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_
+  name: operator ==
+  nameWithType: FGameplayAbilitySpecHandle.operator ==
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.operator ==
+  nameWithType.vb: FGameplayAbilitySpecHandle.=
+  fullName.vb: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Equality*
+    name: ==
+    href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html#Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_op_Equality_Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Inequality*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Inequality
+  href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html#Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_op_Inequality_Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_
+  name: operator !=
+  nameWithType: FGameplayAbilitySpecHandle.operator !=
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.operator !=
+  nameWithType.vb: FGameplayAbilitySpecHandle.<>
+  fullName.vb: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.op_Inequality*
+    name: '!='
+    href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html#Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_op_Inequality_Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_

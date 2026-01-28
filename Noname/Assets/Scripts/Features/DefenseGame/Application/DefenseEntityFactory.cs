@@ -1,14 +1,17 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MyProject.DefenseGame.Domain;
 using Noname.GameAbilitySystem.Domain;
 
 namespace MyProject.DefenseGame.Application
 {
     /// <summary>
-    /// ���潺 ���� ��ƼƼ(�÷��̾�/����) ������ ASC �ʱ�ȭ�� ����մϴ�.
+    /// DefenseGame 전용 엔티티(플레이어/몬스터)를 생성하고 ASC를 초기화하는 팩토리입니다.
     /// </summary>
     public sealed class DefenseEntityFactory
     {
+        /// <summary>
+        /// 호스트 설정입니다.
+        /// </summary>
         private readonly DefenseHostConfig _config;
 
         public DefenseEntityFactory(DefenseHostConfig config)

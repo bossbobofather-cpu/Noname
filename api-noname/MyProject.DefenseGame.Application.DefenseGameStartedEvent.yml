@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefenseGameStartedEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseGameStartedEvent
+  id: DefenseGameStartedEvent
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefenseGameStartedEvent.#ctor(System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: DefenseGameStartedEvent
+  nameWithType: DefenseGameStartedEvent
+  fullName: MyProject.DefenseGame.Application.DefenseGameStartedEvent
+  type: Class
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: 'public sealed class DefenseGameStartedEvent : DefenseHostEvent'
+    content.vb: Public NotInheritable Class DefenseGameStartedEvent Inherits DefenseHostEvent
+  inheritance:
+  - System.Object
+  - MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: MyProject.DefenseGame.Application.DefenseGameStartedEvent.#ctor(System.Int64)
+  commentId: M:MyProject.DefenseGame.Application.DefenseGameStartedEvent.#ctor(System.Int64)
+  id: '#ctor(System.Int64)'
+  parent: MyProject.DefenseGame.Application.DefenseGameStartedEvent
+  langs:
+  - csharp
+  - vb
+  name: DefenseGameStartedEvent(long)
+  nameWithType: DefenseGameStartedEvent.DefenseGameStartedEvent(long)
+  fullName: MyProject.DefenseGame.Application.DefenseGameStartedEvent.DefenseGameStartedEvent(long)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public DefenseGameStartedEvent(long tick)
+    parameters:
+    - id: tick
+      type: System.Int64
+    content.vb: Public Sub New(tick As Long)
+  overload: MyProject.DefenseGame.Application.DefenseGameStartedEvent.#ctor*
+  nameWithType.vb: DefenseGameStartedEvent.New(Long)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseGameStartedEvent.New(Long)
+  name.vb: New(Long)
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.DefenseGameStartedEvent.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseGameStartedEvent.#ctor
+  href: MyProject.DefenseGame.Application.DefenseGameStartedEvent.html#MyProject_DefenseGame_Application_DefenseGameStartedEvent__ctor_System_Int64_
+  name: DefenseGameStartedEvent
+  nameWithType: DefenseGameStartedEvent.DefenseGameStartedEvent
+  fullName: MyProject.DefenseGame.Application.DefenseGameStartedEvent.DefenseGameStartedEvent
+  nameWithType.vb: DefenseGameStartedEvent.New
+  fullName.vb: MyProject.DefenseGame.Application.DefenseGameStartedEvent.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

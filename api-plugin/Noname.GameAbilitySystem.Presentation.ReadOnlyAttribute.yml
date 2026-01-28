@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute
+  commentId: T:Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute
+  id: ReadOnlyAttribute
+  parent: Noname.GameAbilitySystem.Presentation
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlyAttribute
+  nameWithType: ReadOnlyAttribute
+  fullName: Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute
+  type: Class
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 인스펙터에서 읽기 전용으로 표시하기 위한 속성입니다.
+  example: []
+  syntax:
+    content: 'public sealed class ReadOnlyAttribute : PropertyAttribute'
+    content.vb: Public NotInheritable Class ReadOnlyAttribute Inherits PropertyAttribute
+  inheritance:
+  - System.Object
+references:
+- uid: Noname.GameAbilitySystem.Presentation
+  commentId: N:Noname.GameAbilitySystem.Presentation
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Presentation
+  nameWithType: Noname.GameAbilitySystem.Presentation
+  fullName: Noname.GameAbilitySystem.Presentation
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

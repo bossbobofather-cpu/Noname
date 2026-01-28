@@ -1,0 +1,503 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule
+  commentId: T:MyProject.DefenseGame.Application.DefenseSpawnModule
+  id: DefenseSpawnModule
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent})
+  - MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
+  - MyProject.DefenseGame.Application.DefenseSpawnModule.Tick(System.Single,System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: DefenseSpawnModule
+  nameWithType: DefenseSpawnModule
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule
+  type: Class
+  namespace: MyProject.DefenseGame.Application
+  summary: 몬스터 스폰을 담당하는 모듈입니다.
+  example: []
+  syntax:
+    content: public sealed class DefenseSpawnModule
+    content.vb: Public NotInheritable Class DefenseSpawnModule
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent})
+  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent})
+  id: '#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent})'
+  parent: MyProject.DefenseGame.Application.DefenseSpawnModule
+  langs:
+  - csharp
+  - vb
+  name: DefenseSpawnModule(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action<DefenseHostEvent>)
+  nameWithType: DefenseSpawnModule.DefenseSpawnModule(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action<DefenseHostEvent>)
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.DefenseSpawnModule(MyProject.DefenseGame.Application.DefenseHostState, MyProject.DefenseGame.Domain.DefenseHostConfig, MyProject.DefenseGame.Application.DefenseEntityFactory, System.Action<MyProject.DefenseGame.Application.DefenseHostEvent>)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public DefenseSpawnModule(DefenseHostState state, DefenseHostConfig config, DefenseEntityFactory factory, Action<DefenseHostEvent> publishEvent)
+    parameters:
+    - id: state
+      type: MyProject.DefenseGame.Application.DefenseHostState
+    - id: config
+      type: MyProject.DefenseGame.Domain.DefenseHostConfig
+    - id: factory
+      type: MyProject.DefenseGame.Application.DefenseEntityFactory
+    - id: publishEvent
+      type: System.Action{MyProject.DefenseGame.Application.DefenseHostEvent}
+    content.vb: Public Sub New(state As DefenseHostState, config As DefenseHostConfig, factory As DefenseEntityFactory, publishEvent As Action(Of DefenseHostEvent))
+  overload: MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor*
+  nameWithType.vb: DefenseSpawnModule.New(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action(Of DefenseHostEvent))
+  fullName.vb: MyProject.DefenseGame.Application.DefenseSpawnModule.New(MyProject.DefenseGame.Application.DefenseHostState, MyProject.DefenseGame.Domain.DefenseHostConfig, MyProject.DefenseGame.Application.DefenseEntityFactory, System.Action(Of MyProject.DefenseGame.Application.DefenseHostEvent))
+  name.vb: New(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action(Of DefenseHostEvent))
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
+  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
+  id: Initialize
+  parent: MyProject.DefenseGame.Application.DefenseSpawnModule
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: DefenseSpawnModule.Initialize()
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize()
+  type: Method
+  namespace: MyProject.DefenseGame.Application
+  summary: 스폰 시스템을 초기화합니다.
+  example: []
+  syntax:
+    content: public void Initialize()
+    content.vb: Public Sub Initialize()
+  overload: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize*
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Tick(System.Single,System.Int64)
+  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.Tick(System.Single,System.Int64)
+  id: Tick(System.Single,System.Int64)
+  parent: MyProject.DefenseGame.Application.DefenseSpawnModule
+  langs:
+  - csharp
+  - vb
+  name: Tick(float, long)
+  nameWithType: DefenseSpawnModule.Tick(float, long)
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Tick(float, long)
+  type: Method
+  namespace: MyProject.DefenseGame.Application
+  summary: 매 프레임 호출되어 스폰을 처리합니다.
+  example: []
+  syntax:
+    content: public void Tick(float deltaTime, long tick)
+    parameters:
+    - id: deltaTime
+      type: System.Single
+    - id: tick
+      type: System.Int64
+    content.vb: Public Sub Tick(deltaTime As Single, tick As Long)
+  overload: MyProject.DefenseGame.Application.DefenseSpawnModule.Tick*
+  nameWithType.vb: DefenseSpawnModule.Tick(Single, Long)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseSpawnModule.Tick(Single, Long)
+  name.vb: Tick(Single, Long)
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor
+  href: MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule__ctor_MyProject_DefenseGame_Application_DefenseHostState_MyProject_DefenseGame_Domain_DefenseHostConfig_MyProject_DefenseGame_Application_DefenseEntityFactory_System_Action_MyProject_DefenseGame_Application_DefenseHostEvent__
+  name: DefenseSpawnModule
+  nameWithType: DefenseSpawnModule.DefenseSpawnModule
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.DefenseSpawnModule
+  nameWithType.vb: DefenseSpawnModule.New
+  fullName.vb: MyProject.DefenseGame.Application.DefenseSpawnModule.New
+  name.vb: New
+- uid: MyProject.DefenseGame.Application.DefenseHostState
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostState
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostState.html
+  name: DefenseHostState
+  nameWithType: DefenseHostState
+  fullName: MyProject.DefenseGame.Application.DefenseHostState
+- uid: MyProject.DefenseGame.Domain.DefenseHostConfig
+  commentId: T:MyProject.DefenseGame.Domain.DefenseHostConfig
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefenseHostConfig.html
+  name: DefenseHostConfig
+  nameWithType: DefenseHostConfig
+  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig
+- uid: MyProject.DefenseGame.Application.DefenseEntityFactory
+  commentId: T:MyProject.DefenseGame.Application.DefenseEntityFactory
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseEntityFactory.html
+  name: DefenseEntityFactory
+  nameWithType: DefenseEntityFactory
+  fullName: MyProject.DefenseGame.Application.DefenseEntityFactory
+- uid: System.Action{MyProject.DefenseGame.Application.DefenseHostEvent}
+  commentId: T:System.Action{MyProject.DefenseGame.Application.DefenseHostEvent}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<DefenseHostEvent>
+  nameWithType: Action<DefenseHostEvent>
+  fullName: System.Action<MyProject.DefenseGame.Application.DefenseHostEvent>
+  nameWithType.vb: Action(Of DefenseHostEvent)
+  fullName.vb: System.Action(Of MyProject.DefenseGame.Application.DefenseHostEvent)
+  name.vb: Action(Of DefenseHostEvent)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: )
+- uid: MyProject.DefenseGame.Domain
+  commentId: N:MyProject.DefenseGame.Domain
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain
+  nameWithType: MyProject.DefenseGame.Domain
+  fullName: MyProject.DefenseGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
+  href: MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule_Initialize
+  name: Initialize
+  nameWithType: DefenseSpawnModule.Initialize
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Tick*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseSpawnModule.Tick
+  href: MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule_Tick_System_Single_System_Int64_
+  name: Tick
+  nameWithType: DefenseSpawnModule.Tick
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Tick
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

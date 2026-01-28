@@ -1,0 +1,910 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefenseHostState
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostState
+  id: DefenseHostState
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  - MyProject.DefenseGame.Application.DefenseHostState.Combat
+  - MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions
+  - MyProject.DefenseGame.Application.DefenseHostState.GenerateMonsterUid
+  - MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities
+  - MyProject.DefenseGame.Application.DefenseHostState.Player
+  - MyProject.DefenseGame.Application.DefenseHostState.SessionPhase
+  - MyProject.DefenseGame.Application.DefenseHostState.SetCombat(MyProject.DefenseGame.Domain.DefenseCombatState)
+  - MyProject.DefenseGame.Application.DefenseHostState.SetLevelUpOptions(System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  - MyProject.DefenseGame.Application.DefenseHostState.SetPlayer(MyProject.DefenseGame.Domain.DefensePlayer)
+  - MyProject.DefenseGame.Application.DefenseHostState.SetSessionPhase(MyProject.DefenseGame.Application.DefenseSessionPhase)
+  langs:
+  - csharp
+  - vb
+  name: DefenseHostState
+  nameWithType: DefenseHostState
+  fullName: MyProject.DefenseGame.Application.DefenseHostState
+  type: Class
+  namespace: MyProject.DefenseGame.Application
+  summary: 디펜스 게임 호스트 상태입니다.
+  example: []
+  syntax:
+    content: public sealed class DefenseHostState
+    content.vb: Public NotInheritable Class DefenseHostState
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities
+  commentId: P:MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities
+  id: GrantedAbilities
+  parent: MyProject.DefenseGame.Application.DefenseHostState
+  langs:
+  - csharp
+  - vb
+  name: GrantedAbilities
+  nameWithType: DefenseHostState.GrantedAbilities
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  summary: 획득한 레벨업 어빌리티 ID 목록입니다.
+  example: []
+  syntax:
+    content: public HashSet<LevelUpAbilityId> GrantedAbilities { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId}
+    content.vb: Public ReadOnly Property GrantedAbilities As HashSet(Of LevelUpAbilityId)
+  overload: MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities*
+- uid: MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions
+  commentId: P:MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions
+  id: CurrentLevelUpOptions
+  parent: MyProject.DefenseGame.Application.DefenseHostState
+  langs:
+  - csharp
+  - vb
+  name: CurrentLevelUpOptions
+  nameWithType: DefenseHostState.CurrentLevelUpOptions
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  summary: 현재 레벨업 선택지 목록입니다.
+  example: []
+  syntax:
+    content: public IReadOnlyList<LevelUpAbilityDefinition> CurrentLevelUpOptions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition}
+    content.vb: Public ReadOnly Property CurrentLevelUpOptions As IReadOnlyList(Of LevelUpAbilityDefinition)
+  overload: MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions*
+- uid: MyProject.DefenseGame.Application.DefenseHostState.SetLevelUpOptions(System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.SetLevelUpOptions(System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  id: SetLevelUpOptions(System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  parent: MyProject.DefenseGame.Application.DefenseHostState
+  langs:
+  - csharp
+  - vb
+  name: SetLevelUpOptions(List<LevelUpAbilityDefinition>)
+  nameWithType: DefenseHostState.SetLevelUpOptions(List<LevelUpAbilityDefinition>)
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.SetLevelUpOptions(System.Collections.Generic.List<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>)
+  type: Method
+  namespace: MyProject.DefenseGame.Application
+  summary: 레벨업 선택지를 설정합니다.
+  example: []
+  syntax:
+    content: public void SetLevelUpOptions(List<LevelUpAbilityDefinition> options)
+    parameters:
+    - id: options
+      type: System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition}
+    content.vb: Public Sub SetLevelUpOptions(options As List(Of LevelUpAbilityDefinition))
+  overload: MyProject.DefenseGame.Application.DefenseHostState.SetLevelUpOptions*
+  nameWithType.vb: DefenseHostState.SetLevelUpOptions(List(Of LevelUpAbilityDefinition))
+  fullName.vb: MyProject.DefenseGame.Application.DefenseHostState.SetLevelUpOptions(System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition))
+  name.vb: SetLevelUpOptions(List(Of LevelUpAbilityDefinition))
+- uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  id: AddGrantedAbility(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  parent: MyProject.DefenseGame.Application.DefenseHostState
+  langs:
+  - csharp
+  - vb
+  name: AddGrantedAbility(LevelUpAbilityId)
+  nameWithType: DefenseHostState.AddGrantedAbility(LevelUpAbilityId)
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  type: Method
+  namespace: MyProject.DefenseGame.Application
+  summary: 레벨업 어빌리티를 획득 목록에 추가합니다.
+  example: []
+  syntax:
+    content: public void AddGrantedAbility(LevelUpAbilityId id)
+    parameters:
+    - id: id
+      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+    content.vb: Public Sub AddGrantedAbility(id As LevelUpAbilityId)
+  overload: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility*
+- uid: MyProject.DefenseGame.Application.DefenseHostState.SessionPhase
+  commentId: P:MyProject.DefenseGame.Application.DefenseHostState.SessionPhase
+  id: SessionPhase
+  parent: MyProject.DefenseGame.Application.DefenseHostState
+  langs:
+  - csharp
+  - vb
+  name: SessionPhase
+  nameWithType: DefenseHostState.SessionPhase
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.SessionPhase
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  summary: 현재 세션 상태입니다.
+  example: []
+  syntax:
+    content: public DefenseSessionPhase SessionPhase { get; }
+    parameters: []
+    return:
+      type: MyProject.DefenseGame.Application.DefenseSessionPhase
+    content.vb: Public Property SessionPhase As DefenseSessionPhase
+  overload: MyProject.DefenseGame.Application.DefenseHostState.SessionPhase*
+- uid: MyProject.DefenseGame.Application.DefenseHostState.Player
+  commentId: P:MyProject.DefenseGame.Application.DefenseHostState.Player
+  id: Player
+  parent: MyProject.DefenseGame.Application.DefenseHostState
+  langs:
+  - csharp
+  - vb
+  name: Player
+  nameWithType: DefenseHostState.Player
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.Player
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  summary: 플레이어입니다.
+  example: []
+  syntax:
+    content: public DefensePlayer Player { get; }
+    parameters: []
+    return:
+      type: MyProject.DefenseGame.Domain.DefensePlayer
+    content.vb: Public Property Player As DefensePlayer
+  overload: MyProject.DefenseGame.Application.DefenseHostState.Player*
+- uid: MyProject.DefenseGame.Application.DefenseHostState.Combat
+  commentId: P:MyProject.DefenseGame.Application.DefenseHostState.Combat
+  id: Combat
+  parent: MyProject.DefenseGame.Application.DefenseHostState
+  langs:
+  - csharp
+  - vb
+  name: Combat
+  nameWithType: DefenseHostState.Combat
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.Combat
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  summary: 전투 상태입니다.
+  example: []
+  syntax:
+    content: public DefenseCombatState Combat { get; }
+    parameters: []
+    return:
+      type: MyProject.DefenseGame.Domain.DefenseCombatState
+    content.vb: Public Property Combat As DefenseCombatState
+  overload: MyProject.DefenseGame.Application.DefenseHostState.Combat*
+- uid: MyProject.DefenseGame.Application.DefenseHostState.SetSessionPhase(MyProject.DefenseGame.Application.DefenseSessionPhase)
+  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.SetSessionPhase(MyProject.DefenseGame.Application.DefenseSessionPhase)
+  id: SetSessionPhase(MyProject.DefenseGame.Application.DefenseSessionPhase)
+  parent: MyProject.DefenseGame.Application.DefenseHostState
+  langs:
+  - csharp
+  - vb
+  name: SetSessionPhase(DefenseSessionPhase)
+  nameWithType: DefenseHostState.SetSessionPhase(DefenseSessionPhase)
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.SetSessionPhase(MyProject.DefenseGame.Application.DefenseSessionPhase)
+  type: Method
+  namespace: MyProject.DefenseGame.Application
+  summary: 세션 상태를 설정합니다.
+  example: []
+  syntax:
+    content: public void SetSessionPhase(DefenseSessionPhase phase)
+    parameters:
+    - id: phase
+      type: MyProject.DefenseGame.Application.DefenseSessionPhase
+    content.vb: Public Sub SetSessionPhase(phase As DefenseSessionPhase)
+  overload: MyProject.DefenseGame.Application.DefenseHostState.SetSessionPhase*
+- uid: MyProject.DefenseGame.Application.DefenseHostState.SetPlayer(MyProject.DefenseGame.Domain.DefensePlayer)
+  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.SetPlayer(MyProject.DefenseGame.Domain.DefensePlayer)
+  id: SetPlayer(MyProject.DefenseGame.Domain.DefensePlayer)
+  parent: MyProject.DefenseGame.Application.DefenseHostState
+  langs:
+  - csharp
+  - vb
+  name: SetPlayer(DefensePlayer)
+  nameWithType: DefenseHostState.SetPlayer(DefensePlayer)
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.SetPlayer(MyProject.DefenseGame.Domain.DefensePlayer)
+  type: Method
+  namespace: MyProject.DefenseGame.Application
+  summary: 플레이어를 설정합니다.
+  example: []
+  syntax:
+    content: public void SetPlayer(DefensePlayer player)
+    parameters:
+    - id: player
+      type: MyProject.DefenseGame.Domain.DefensePlayer
+    content.vb: Public Sub SetPlayer(player As DefensePlayer)
+  overload: MyProject.DefenseGame.Application.DefenseHostState.SetPlayer*
+- uid: MyProject.DefenseGame.Application.DefenseHostState.SetCombat(MyProject.DefenseGame.Domain.DefenseCombatState)
+  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.SetCombat(MyProject.DefenseGame.Domain.DefenseCombatState)
+  id: SetCombat(MyProject.DefenseGame.Domain.DefenseCombatState)
+  parent: MyProject.DefenseGame.Application.DefenseHostState
+  langs:
+  - csharp
+  - vb
+  name: SetCombat(DefenseCombatState)
+  nameWithType: DefenseHostState.SetCombat(DefenseCombatState)
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.SetCombat(MyProject.DefenseGame.Domain.DefenseCombatState)
+  type: Method
+  namespace: MyProject.DefenseGame.Application
+  summary: 전투 상태를 설정합니다.
+  example: []
+  syntax:
+    content: public void SetCombat(DefenseCombatState combat)
+    parameters:
+    - id: combat
+      type: MyProject.DefenseGame.Domain.DefenseCombatState
+    content.vb: Public Sub SetCombat(combat As DefenseCombatState)
+  overload: MyProject.DefenseGame.Application.DefenseHostState.SetCombat*
+- uid: MyProject.DefenseGame.Application.DefenseHostState.GenerateMonsterUid
+  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.GenerateMonsterUid
+  id: GenerateMonsterUid
+  parent: MyProject.DefenseGame.Application.DefenseHostState
+  langs:
+  - csharp
+  - vb
+  name: GenerateMonsterUid()
+  nameWithType: DefenseHostState.GenerateMonsterUid()
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.GenerateMonsterUid()
+  type: Method
+  namespace: MyProject.DefenseGame.Application
+  summary: 몬스터 UID를 생성합니다.
+  example: []
+  syntax:
+    content: public long GenerateMonsterUid()
+    return:
+      type: System.Int64
+    content.vb: Public Function GenerateMonsterUid() As Long
+  overload: MyProject.DefenseGame.Application.DefenseHostState.GenerateMonsterUid*
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_GrantedAbilities
+  name: GrantedAbilities
+  nameWithType: DefenseHostState.GrantedAbilities
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities
+- uid: System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId}
+  commentId: T:System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<LevelUpAbilityId>
+  nameWithType: HashSet<LevelUpAbilityId>
+  fullName: System.Collections.Generic.HashSet<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId>
+  nameWithType.vb: HashSet(Of LevelUpAbilityId)
+  fullName.vb: System.Collections.Generic.HashSet(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  name.vb: HashSet(Of LevelUpAbilityId)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+    name: LevelUpAbilityId
+    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+    name: LevelUpAbilityId
+    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
+  - name: )
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_CurrentLevelUpOptions
+  name: CurrentLevelUpOptions
+  nameWithType: DefenseHostState.CurrentLevelUpOptions
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions
+- uid: System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition}
+  commentId: T:System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<LevelUpAbilityDefinition>
+  nameWithType: IReadOnlyList<LevelUpAbilityDefinition>
+  fullName: System.Collections.Generic.IReadOnlyList<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>
+  nameWithType.vb: IReadOnlyList(Of LevelUpAbilityDefinition)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition)
+  name.vb: IReadOnlyList(Of LevelUpAbilityDefinition)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+    name: LevelUpAbilityDefinition
+    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+    name: LevelUpAbilityDefinition
+    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MyProject.DefenseGame.Application.DefenseHostState.SetLevelUpOptions*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.SetLevelUpOptions
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_SetLevelUpOptions_System_Collections_Generic_List_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__
+  name: SetLevelUpOptions
+  nameWithType: DefenseHostState.SetLevelUpOptions
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.SetLevelUpOptions
+- uid: System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition}
+  commentId: T:System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LevelUpAbilityDefinition>
+  nameWithType: List<LevelUpAbilityDefinition>
+  fullName: System.Collections.Generic.List<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>
+  nameWithType.vb: List(Of LevelUpAbilityDefinition)
+  fullName.vb: System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition)
+  name.vb: List(Of LevelUpAbilityDefinition)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+    name: LevelUpAbilityDefinition
+    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+    name: LevelUpAbilityDefinition
+    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_AddGrantedAbility_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_
+  name: AddGrantedAbility
+  nameWithType: DefenseHostState.AddGrantedAbility
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  parent: MyProject.DefenseGame.Domain.LevelUp
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
+  name: LevelUpAbilityId
+  nameWithType: LevelUpAbilityId
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp
+  commentId: N:MyProject.DefenseGame.Domain.LevelUp
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain.LevelUp
+  nameWithType: MyProject.DefenseGame.Domain.LevelUp
+  fullName: MyProject.DefenseGame.Domain.LevelUp
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.LevelUp
+    name: LevelUp
+    href: MyProject.DefenseGame.Domain.LevelUp.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.LevelUp
+    name: LevelUp
+    href: MyProject.DefenseGame.Domain.LevelUp.html
+- uid: MyProject.DefenseGame.Application.DefenseHostState.SessionPhase*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.SessionPhase
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_SessionPhase
+  name: SessionPhase
+  nameWithType: DefenseHostState.SessionPhase
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.SessionPhase
+- uid: MyProject.DefenseGame.Application.DefenseSessionPhase
+  commentId: T:MyProject.DefenseGame.Application.DefenseSessionPhase
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseSessionPhase.html
+  name: DefenseSessionPhase
+  nameWithType: DefenseSessionPhase
+  fullName: MyProject.DefenseGame.Application.DefenseSessionPhase
+- uid: MyProject.DefenseGame.Application.DefenseHostState.Player*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.Player
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_Player
+  name: Player
+  nameWithType: DefenseHostState.Player
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.Player
+- uid: MyProject.DefenseGame.Domain.DefensePlayer
+  commentId: T:MyProject.DefenseGame.Domain.DefensePlayer
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefensePlayer.html
+  name: DefensePlayer
+  nameWithType: DefensePlayer
+  fullName: MyProject.DefenseGame.Domain.DefensePlayer
+- uid: MyProject.DefenseGame.Domain
+  commentId: N:MyProject.DefenseGame.Domain
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain
+  nameWithType: MyProject.DefenseGame.Domain
+  fullName: MyProject.DefenseGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+- uid: MyProject.DefenseGame.Application.DefenseHostState.Combat*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.Combat
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_Combat
+  name: Combat
+  nameWithType: DefenseHostState.Combat
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.Combat
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState
+  commentId: T:MyProject.DefenseGame.Domain.DefenseCombatState
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html
+  name: DefenseCombatState
+  nameWithType: DefenseCombatState
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState
+- uid: MyProject.DefenseGame.Application.DefenseHostState.SetSessionPhase*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.SetSessionPhase
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_SetSessionPhase_MyProject_DefenseGame_Application_DefenseSessionPhase_
+  name: SetSessionPhase
+  nameWithType: DefenseHostState.SetSessionPhase
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.SetSessionPhase
+- uid: MyProject.DefenseGame.Application.DefenseHostState.SetPlayer*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.SetPlayer
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_SetPlayer_MyProject_DefenseGame_Domain_DefensePlayer_
+  name: SetPlayer
+  nameWithType: DefenseHostState.SetPlayer
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.SetPlayer
+- uid: MyProject.DefenseGame.Application.DefenseHostState.SetCombat*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.SetCombat
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_SetCombat_MyProject_DefenseGame_Domain_DefenseCombatState_
+  name: SetCombat
+  nameWithType: DefenseHostState.SetCombat
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.SetCombat
+- uid: MyProject.DefenseGame.Application.DefenseHostState.GenerateMonsterUid*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.GenerateMonsterUid
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_GenerateMonsterUid
+  name: GenerateMonsterUid
+  nameWithType: DefenseHostState.GenerateMonsterUid
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.GenerateMonsterUid
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 namespace Noname.GameHost.GameEvent
 {
     /// <summary>
-    /// ����/�� �������� ���� ���� �̺�Ʈ �����Դϴ�.
+    /// 전역/씬 스코프를 함께 제공하는 게임 이벤트 버스입니다.
     /// </summary>
     public static class GameEventBus
     {
@@ -18,7 +18,7 @@ namespace Noname.GameHost.GameEvent
         public static Scope Global => GlobalScope;
 
         /// <summary>
-        /// ���� Active ���� �ش��ϴ� �����Դϴ�.
+        /// 현재 Active Scene에 해당하는 스코프를 반환합니다.
         /// </summary>
         public static Scope Scene
         {
@@ -41,7 +41,7 @@ namespace Noname.GameHost.GameEvent
         }
 
         /// <summary>
-        /// �̺�Ʈ Ÿ���� �������� ���� �����մϴ�.
+        /// 이벤트 타입에 맞는 스코프로 구독을 등록합니다.
         /// </summary>
         public static void Subscribe<TEvent>(Action<TEvent> handler) where TEvent : GameEventContext
         {
@@ -50,7 +50,7 @@ namespace Noname.GameHost.GameEvent
         }
 
         /// <summary>
-        /// �̺�Ʈ Ÿ���� �������� ���� ������ �����մϴ�.
+        /// 이벤트 타입에 맞는 스코프에서 구독을 해제합니다.
         /// </summary>
         public static void Unsubscribe<TEvent>(Action<TEvent> handler) where TEvent : GameEventContext
         {
@@ -59,7 +59,7 @@ namespace Noname.GameHost.GameEvent
         }
 
         /// <summary>
-        /// �̺�Ʈ Ÿ���� �������� ���� �����մϴ�.
+        /// 이벤트 타입에 맞는 스코프로 이벤트를 발행합니다.
         /// </summary>
         public static void Publish<TEvent>(TEvent context) where TEvent : GameEventContext
         {
@@ -115,7 +115,7 @@ namespace Noname.GameHost.GameEvent
         }
 
         /// <summary>
-        /// Active ���� ������� ���� �����մϴ�.
+        /// Active Scene이 아직 설정되지 않았을 때만 설정합니다.
         /// </summary>
         public static bool TrySetActiveScene(Scene scene)
         {
@@ -179,7 +179,7 @@ namespace Noname.GameHost.GameEvent
             }
 
             _missingActiveSceneLogged = true;
-            UnityEngine.Debug.LogWarning("Active Scene�� �������� �ʾ� Scene Event Bus�� ����� �� �����ϴ�.");
+            UnityEngine.Debug.LogWarning("Active Scene이 설정되지 않아 Scene Event Bus를 사용할 수 없습니다.");
         }
 
         private static Scope ResolveScope(Type eventType)
@@ -211,7 +211,7 @@ namespace Noname.GameHost.GameEvent
             }
 
             UnityEngine.Debug.LogWarning(
-                $"{eventType.Name} �̺�Ʈ�� �������� �������� �ʾҽ��ϴ�. SceneGameEventContext �Ǵ� GlobalGameEventContext�� ����ϼ���.");
+                $"{eventType.Name} 이벤트가 스코프를 지정하지 않았습니다. SceneGameEventContext 또는 GlobalGameEventContext를 사용하세요.");
         }
 
         private static Scene? FindLoadedSceneByHandle(int handle)

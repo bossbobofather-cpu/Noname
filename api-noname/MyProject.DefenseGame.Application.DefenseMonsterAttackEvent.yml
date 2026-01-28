@@ -1,0 +1,217 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+  id: DefenseMonsterAttackEvent
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.#ctor(System.Int64,System.Int64,System.Int32,System.Int32)
+  - MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.Damage
+  - MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.MonsterUid
+  - MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.PlayerHpRemaining
+  langs:
+  - csharp
+  - vb
+  name: DefenseMonsterAttackEvent
+  nameWithType: DefenseMonsterAttackEvent
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+  type: Class
+  namespace: MyProject.DefenseGame.Application
+  summary: 몬스??공격 ?�벤?�입?�다.
+  example: []
+  syntax:
+    content: 'public sealed class DefenseMonsterAttackEvent : DefenseHostEvent'
+    content.vb: Public NotInheritable Class DefenseMonsterAttackEvent Inherits DefenseHostEvent
+  inheritance:
+  - System.Object
+  - MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.MonsterUid
+  commentId: P:MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.MonsterUid
+  id: MonsterUid
+  parent: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+  langs:
+  - csharp
+  - vb
+  name: MonsterUid
+  nameWithType: DefenseMonsterAttackEvent.MonsterUid
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.MonsterUid
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public long MonsterUid { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property MonsterUid As Long
+  overload: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.MonsterUid*
+- uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.Damage
+  commentId: P:MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.Damage
+  id: Damage
+  parent: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+  langs:
+  - csharp
+  - vb
+  name: Damage
+  nameWithType: DefenseMonsterAttackEvent.Damage
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.Damage
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public int Damage { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Damage As Integer
+  overload: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.Damage*
+- uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.PlayerHpRemaining
+  commentId: P:MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.PlayerHpRemaining
+  id: PlayerHpRemaining
+  parent: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+  langs:
+  - csharp
+  - vb
+  name: PlayerHpRemaining
+  nameWithType: DefenseMonsterAttackEvent.PlayerHpRemaining
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.PlayerHpRemaining
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public int PlayerHpRemaining { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property PlayerHpRemaining As Integer
+  overload: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.PlayerHpRemaining*
+- uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.#ctor(System.Int64,System.Int64,System.Int32,System.Int32)
+  commentId: M:MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.#ctor(System.Int64,System.Int64,System.Int32,System.Int32)
+  id: '#ctor(System.Int64,System.Int64,System.Int32,System.Int32)'
+  parent: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+  langs:
+  - csharp
+  - vb
+  name: DefenseMonsterAttackEvent(long, long, int, int)
+  nameWithType: DefenseMonsterAttackEvent.DefenseMonsterAttackEvent(long, long, int, int)
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.DefenseMonsterAttackEvent(long, long, int, int)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public DefenseMonsterAttackEvent(long tick, long monsterUid, int damage, int playerHpRemaining)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: monsterUid
+      type: System.Int64
+    - id: damage
+      type: System.Int32
+    - id: playerHpRemaining
+      type: System.Int32
+    content.vb: Public Sub New(tick As Long, monsterUid As Long, damage As Integer, playerHpRemaining As Integer)
+  overload: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.#ctor*
+  nameWithType.vb: DefenseMonsterAttackEvent.New(Long, Long, Integer, Integer)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.New(Long, Long, Integer, Integer)
+  name.vb: New(Long, Long, Integer, Integer)
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.MonsterUid*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.MonsterUid
+  href: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.html#MyProject_DefenseGame_Application_DefenseMonsterAttackEvent_MonsterUid
+  name: MonsterUid
+  nameWithType: DefenseMonsterAttackEvent.MonsterUid
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.MonsterUid
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.Damage*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.Damage
+  href: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.html#MyProject_DefenseGame_Application_DefenseMonsterAttackEvent_Damage
+  name: Damage
+  nameWithType: DefenseMonsterAttackEvent.Damage
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.Damage
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.PlayerHpRemaining*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.PlayerHpRemaining
+  href: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.html#MyProject_DefenseGame_Application_DefenseMonsterAttackEvent_PlayerHpRemaining
+  name: PlayerHpRemaining
+  nameWithType: DefenseMonsterAttackEvent.PlayerHpRemaining
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.PlayerHpRemaining
+- uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.#ctor
+  href: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.html#MyProject_DefenseGame_Application_DefenseMonsterAttackEvent__ctor_System_Int64_System_Int64_System_Int32_System_Int32_
+  name: DefenseMonsterAttackEvent
+  nameWithType: DefenseMonsterAttackEvent.DefenseMonsterAttackEvent
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.DefenseMonsterAttackEvent
+  nameWithType.vb: DefenseMonsterAttackEvent.New
+  fullName.vb: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.New
+  name.vb: New

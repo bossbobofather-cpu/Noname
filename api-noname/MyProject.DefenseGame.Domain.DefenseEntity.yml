@@ -1,0 +1,878 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Domain.DefenseEntity
+  commentId: T:MyProject.DefenseGame.Domain.DefenseEntity
+  id: DefenseEntity
+  parent: MyProject.DefenseGame.Domain
+  children:
+  - MyProject.DefenseGame.Domain.DefenseEntity.#ctor(System.Int64,Point2D,AbilitySystemComponent)
+  - MyProject.DefenseGame.Domain.DefenseEntity.AI
+  - MyProject.DefenseGame.Domain.DefenseEntity.ASC
+  - MyProject.DefenseGame.Domain.DefenseEntity.GetAttack
+  - MyProject.DefenseGame.Domain.DefenseEntity.GetDefense
+  - MyProject.DefenseGame.Domain.DefenseEntity.GetHp
+  - MyProject.DefenseGame.Domain.DefenseEntity.GetLevel
+  - MyProject.DefenseGame.Domain.DefenseEntity.GetMaxHp
+  - MyProject.DefenseGame.Domain.DefenseEntity.Heal(System.Single)
+  - MyProject.DefenseGame.Domain.DefenseEntity.IsAlive
+  - MyProject.DefenseGame.Domain.DefenseEntity.IsDead
+  - MyProject.DefenseGame.Domain.DefenseEntity.Position
+  - MyProject.DefenseGame.Domain.DefenseEntity.SetPosition(Point2D)
+  - MyProject.DefenseGame.Domain.DefenseEntity.TakeDamage(System.Single)
+  - MyProject.DefenseGame.Domain.DefenseEntity.Tick(System.Single)
+  - MyProject.DefenseGame.Domain.DefenseEntity.Uid
+  langs:
+  - csharp
+  - vb
+  name: DefenseEntity
+  nameWithType: DefenseEntity
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity
+  type: Class
+  namespace: MyProject.DefenseGame.Domain
+  summary: 디펜스 게임 엔티티의 기본 클래스입니다.
+  example: []
+  syntax:
+    content: 'public abstract class DefenseEntity : IAbilitySystemOwner'
+    content.vb: Public MustInherit Class DefenseEntity Implements IAbilitySystemOwner
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - MyProject.DefenseGame.Domain.DefenseMonster
+  - MyProject.DefenseGame.Domain.DefensePlayer
+  implements:
+  - MyProject.DefenseGame.Domain.IAbilitySystemOwner
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.Uid
+  commentId: P:MyProject.DefenseGame.Domain.DefenseEntity.Uid
+  id: Uid
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: Uid
+  nameWithType: DefenseEntity.Uid
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.Uid
+  type: Property
+  namespace: MyProject.DefenseGame.Domain
+  summary: 고유 ID입니다.
+  example: []
+  syntax:
+    content: public long Uid { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property Uid As Long
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.Uid*
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.Position
+  commentId: P:MyProject.DefenseGame.Domain.DefenseEntity.Position
+  id: Position
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: DefenseEntity.Position
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.Position
+  type: Property
+  namespace: MyProject.DefenseGame.Domain
+  summary: 2D 위치입니다.
+  example: []
+  syntax:
+    content: public Point2D Position { get; protected set; }
+    parameters: []
+    return:
+      type: Point2D
+    content.vb: Public Property Position As Point2D
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.Position*
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.ASC
+  commentId: P:MyProject.DefenseGame.Domain.DefenseEntity.ASC
+  id: ASC
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: ASC
+  nameWithType: DefenseEntity.ASC
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.ASC
+  type: Property
+  namespace: MyProject.DefenseGame.Domain
+  summary: AbilitySystemComponent입니다.
+  example: []
+  syntax:
+    content: public AbilitySystemComponent ASC { get; }
+    parameters: []
+    return:
+      type: AbilitySystemComponent
+    content.vb: Public ReadOnly Property ASC As AbilitySystemComponent
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.ASC*
+  implements:
+  - MyProject.DefenseGame.Domain.IAbilitySystemOwner.ASC
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.AI
+  commentId: P:MyProject.DefenseGame.Domain.DefenseEntity.AI
+  id: AI
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: AI
+  nameWithType: DefenseEntity.AI
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.AI
+  type: Property
+  namespace: MyProject.DefenseGame.Domain
+  summary: AI(의사결정) 모듈입니다.
+  example: []
+  syntax:
+    content: public IDefenseAI AI { get; set; }
+    parameters: []
+    return:
+      type: MyProject.DefenseGame.Domain.AI.IDefenseAI
+    content.vb: Public Property AI As IDefenseAI
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.AI*
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.IsAlive
+  commentId: P:MyProject.DefenseGame.Domain.DefenseEntity.IsAlive
+  id: IsAlive
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: IsAlive
+  nameWithType: DefenseEntity.IsAlive
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.IsAlive
+  type: Property
+  namespace: MyProject.DefenseGame.Domain
+  summary: 생존 여부입니다.
+  example: []
+  syntax:
+    content: public bool IsAlive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsAlive As Boolean
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.IsAlive*
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.IsDead
+  commentId: P:MyProject.DefenseGame.Domain.DefenseEntity.IsDead
+  id: IsDead
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: IsDead
+  nameWithType: DefenseEntity.IsDead
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.IsDead
+  type: Property
+  namespace: MyProject.DefenseGame.Domain
+  summary: 사망 여부입니다.
+  example: []
+  syntax:
+    content: public bool IsDead { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDead As Boolean
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.IsDead*
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.#ctor(System.Int64,Point2D,AbilitySystemComponent)
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.#ctor(System.Int64,Point2D,AbilitySystemComponent)
+  id: '#ctor(System.Int64,Point2D,AbilitySystemComponent)'
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: DefenseEntity(long, Point2D, AbilitySystemComponent)
+  nameWithType: DefenseEntity.DefenseEntity(long, Point2D, AbilitySystemComponent)
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.DefenseEntity(long, Point2D, AbilitySystemComponent)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Domain
+  syntax:
+    content: protected DefenseEntity(long uid, Point2D position, AbilitySystemComponent asc)
+    parameters:
+    - id: uid
+      type: System.Int64
+    - id: position
+      type: Point2D
+    - id: asc
+      type: AbilitySystemComponent
+    content.vb: Protected Sub New(uid As Long, position As Point2D, asc As AbilitySystemComponent)
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.#ctor*
+  nameWithType.vb: DefenseEntity.New(Long, Point2D, AbilitySystemComponent)
+  fullName.vb: MyProject.DefenseGame.Domain.DefenseEntity.New(Long, Point2D, AbilitySystemComponent)
+  name.vb: New(Long, Point2D, AbilitySystemComponent)
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.GetHp
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.GetHp
+  id: GetHp
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: GetHp()
+  nameWithType: DefenseEntity.GetHp()
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.GetHp()
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 현재 HP를 반환합니다.
+  example: []
+  syntax:
+    content: public float GetHp()
+    return:
+      type: System.Single
+    content.vb: Public Function GetHp() As Single
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.GetHp*
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.GetMaxHp
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.GetMaxHp
+  id: GetMaxHp
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: GetMaxHp()
+  nameWithType: DefenseEntity.GetMaxHp()
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.GetMaxHp()
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 최대 HP를 반환합니다.
+  example: []
+  syntax:
+    content: public float GetMaxHp()
+    return:
+      type: System.Single
+    content.vb: Public Function GetMaxHp() As Single
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.GetMaxHp*
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.GetAttack
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.GetAttack
+  id: GetAttack
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: GetAttack()
+  nameWithType: DefenseEntity.GetAttack()
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.GetAttack()
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 공격력을 반환합니다.
+  example: []
+  syntax:
+    content: public float GetAttack()
+    return:
+      type: System.Single
+    content.vb: Public Function GetAttack() As Single
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.GetAttack*
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.GetDefense
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.GetDefense
+  id: GetDefense
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: GetDefense()
+  nameWithType: DefenseEntity.GetDefense()
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.GetDefense()
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 방어력을 반환합니다.
+  example: []
+  syntax:
+    content: public float GetDefense()
+    return:
+      type: System.Single
+    content.vb: Public Function GetDefense() As Single
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.GetDefense*
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.GetLevel
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.GetLevel
+  id: GetLevel
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: GetLevel()
+  nameWithType: DefenseEntity.GetLevel()
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.GetLevel()
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 레벨을 반환합니다.
+  example: []
+  syntax:
+    content: public int GetLevel()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetLevel() As Integer
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.GetLevel*
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.TakeDamage(System.Single)
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.TakeDamage(System.Single)
+  id: TakeDamage(System.Single)
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: TakeDamage(float)
+  nameWithType: DefenseEntity.TakeDamage(float)
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.TakeDamage(float)
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 데미지를 받습니다.
+  example: []
+  syntax:
+    content: public virtual void TakeDamage(float damage)
+    parameters:
+    - id: damage
+      type: System.Single
+    content.vb: Public Overridable Sub TakeDamage(damage As Single)
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.TakeDamage*
+  nameWithType.vb: DefenseEntity.TakeDamage(Single)
+  fullName.vb: MyProject.DefenseGame.Domain.DefenseEntity.TakeDamage(Single)
+  name.vb: TakeDamage(Single)
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.Heal(System.Single)
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.Heal(System.Single)
+  id: Heal(System.Single)
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: Heal(float)
+  nameWithType: DefenseEntity.Heal(float)
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.Heal(float)
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 체력을 회복합니다.
+  example: []
+  syntax:
+    content: public virtual void Heal(float amount)
+    parameters:
+    - id: amount
+      type: System.Single
+    content.vb: Public Overridable Sub Heal(amount As Single)
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.Heal*
+  nameWithType.vb: DefenseEntity.Heal(Single)
+  fullName.vb: MyProject.DefenseGame.Domain.DefenseEntity.Heal(Single)
+  name.vb: Heal(Single)
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.SetPosition(Point2D)
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.SetPosition(Point2D)
+  id: SetPosition(Point2D)
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: SetPosition(Point2D)
+  nameWithType: DefenseEntity.SetPosition(Point2D)
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.SetPosition(Point2D)
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 위치를 설정합니다.
+  example: []
+  syntax:
+    content: public void SetPosition(Point2D position)
+    parameters:
+    - id: position
+      type: Point2D
+    content.vb: Public Sub SetPosition(position As Point2D)
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.SetPosition*
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.Tick(System.Single)
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.Tick(System.Single)
+  id: Tick(System.Single)
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  langs:
+  - csharp
+  - vb
+  name: Tick(float)
+  nameWithType: DefenseEntity.Tick(float)
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.Tick(float)
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 기본 속성을 설정합니다.
+  example: []
+  syntax:
+    content: public abstract void Tick(float deltaTime)
+    parameters:
+    - id: deltaTime
+      type: System.Single
+    content.vb: Public MustOverride Sub Tick(deltaTime As Single)
+  overload: MyProject.DefenseGame.Domain.DefenseEntity.Tick*
+  nameWithType.vb: DefenseEntity.Tick(Single)
+  fullName.vb: MyProject.DefenseGame.Domain.DefenseEntity.Tick(Single)
+  name.vb: Tick(Single)
+references:
+- uid: MyProject.DefenseGame.Domain
+  commentId: N:MyProject.DefenseGame.Domain
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain
+  nameWithType: MyProject.DefenseGame.Domain
+  fullName: MyProject.DefenseGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Domain.IAbilitySystemOwner
+  commentId: T:MyProject.DefenseGame.Domain.IAbilitySystemOwner
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.IAbilitySystemOwner.html
+  name: IAbilitySystemOwner
+  nameWithType: IAbilitySystemOwner
+  fullName: MyProject.DefenseGame.Domain.IAbilitySystemOwner
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.Uid*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.Uid
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_Uid
+  name: Uid
+  nameWithType: DefenseEntity.Uid
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.Uid
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.Position*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.Position
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_Position
+  name: Position
+  nameWithType: DefenseEntity.Position
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.Position
+- uid: Point2D
+  isExternal: true
+  name: Point2D
+  nameWithType: Point2D
+  fullName: Point2D
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.ASC*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.ASC
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_ASC
+  name: ASC
+  nameWithType: DefenseEntity.ASC
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.ASC
+- uid: MyProject.DefenseGame.Domain.IAbilitySystemOwner.ASC
+  commentId: P:MyProject.DefenseGame.Domain.IAbilitySystemOwner.ASC
+  parent: MyProject.DefenseGame.Domain.IAbilitySystemOwner
+  href: MyProject.DefenseGame.Domain.IAbilitySystemOwner.html#MyProject_DefenseGame_Domain_IAbilitySystemOwner_ASC
+  name: ASC
+  nameWithType: IAbilitySystemOwner.ASC
+  fullName: MyProject.DefenseGame.Domain.IAbilitySystemOwner.ASC
+- uid: AbilitySystemComponent
+  isExternal: true
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: AbilitySystemComponent
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.AI*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.AI
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_AI
+  name: AI
+  nameWithType: DefenseEntity.AI
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.AI
+- uid: MyProject.DefenseGame.Domain.AI.IDefenseAI
+  commentId: T:MyProject.DefenseGame.Domain.AI.IDefenseAI
+  parent: MyProject.DefenseGame.Domain.AI
+  href: MyProject.DefenseGame.Domain.AI.IDefenseAI.html
+  name: IDefenseAI
+  nameWithType: IDefenseAI
+  fullName: MyProject.DefenseGame.Domain.AI.IDefenseAI
+- uid: MyProject.DefenseGame.Domain.AI
+  commentId: N:MyProject.DefenseGame.Domain.AI
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain.AI
+  nameWithType: MyProject.DefenseGame.Domain.AI
+  fullName: MyProject.DefenseGame.Domain.AI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.AI
+    name: AI
+    href: MyProject.DefenseGame.Domain.AI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.AI
+    name: AI
+    href: MyProject.DefenseGame.Domain.AI.html
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.IsAlive*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.IsAlive
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_IsAlive
+  name: IsAlive
+  nameWithType: DefenseEntity.IsAlive
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.IsAlive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.IsDead*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.IsDead
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_IsDead
+  name: IsDead
+  nameWithType: DefenseEntity.IsDead
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.IsDead
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.#ctor
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity__ctor_System_Int64_Point2D_AbilitySystemComponent_
+  name: DefenseEntity
+  nameWithType: DefenseEntity.DefenseEntity
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.DefenseEntity
+  nameWithType.vb: DefenseEntity.New
+  fullName.vb: MyProject.DefenseGame.Domain.DefenseEntity.New
+  name.vb: New
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.GetHp*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.GetHp
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_GetHp
+  name: GetHp
+  nameWithType: DefenseEntity.GetHp
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.GetHp
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.GetMaxHp*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.GetMaxHp
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_GetMaxHp
+  name: GetMaxHp
+  nameWithType: DefenseEntity.GetMaxHp
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.GetMaxHp
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.GetAttack*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.GetAttack
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_GetAttack
+  name: GetAttack
+  nameWithType: DefenseEntity.GetAttack
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.GetAttack
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.GetDefense*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.GetDefense
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_GetDefense
+  name: GetDefense
+  nameWithType: DefenseEntity.GetDefense
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.GetDefense
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.GetLevel*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.GetLevel
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_GetLevel
+  name: GetLevel
+  nameWithType: DefenseEntity.GetLevel
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.GetLevel
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.TakeDamage*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.TakeDamage
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_TakeDamage_System_Single_
+  name: TakeDamage
+  nameWithType: DefenseEntity.TakeDamage
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.TakeDamage
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.Heal*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.Heal
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_Heal_System_Single_
+  name: Heal
+  nameWithType: DefenseEntity.Heal
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.Heal
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.SetPosition*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.SetPosition
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_SetPosition_Point2D_
+  name: SetPosition
+  nameWithType: DefenseEntity.SetPosition
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.SetPosition
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.Tick*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.Tick
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_Tick_System_Single_
+  name: Tick
+  nameWithType: DefenseEntity.Tick
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.Tick

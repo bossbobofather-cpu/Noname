@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AbilitySystemComponent | Noname Docs </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AbilitySystemComponent | Noname Docs ">
+    
+    <meta name="description" content="AbilitySystemComponent 상태 모델입니다 (순수 C# 모델). Unity에 의존하지 않으며 Host 환경에서 스레드 안전하게 동작합니다.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent">
+
+
+
+  <h1 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent" class="text-break">Class AbilitySystemComponent</h1>
+  <div class="markdown level0 summary"><p>AbilitySystemComponent 상태 모델입니다 (순수 C# 모델).
+Unity에 의존하지 않으며 Host 환경에서 스레드 안전하게 동작합니다.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">AbilitySystemComponent</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Noname.html">Noname</a>.<a class="xref" href="Noname.GameAbilitySystem.html">GameAbilitySystem</a>.<a class="xref" href="Noname.GameAbilitySystem.Domain.html">Domain</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class AbilitySystemComponent</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent__ctor_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.#ctor*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent__ctor" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.#ctor">AbilitySystemComponent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbilitySystemComponent()</code></pre>
+  </div>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent__ctor_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.#ctor*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent__ctor_Noname_GameAbilitySystem_Domain_AttributeSet_System_Collections_Generic_List_Noname_GameAbilitySystem_Domain_GameplayAbility__Noname_GameAbilitySystem_Domain_GameplayTagContainer_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.#ctor(Noname.GameAbilitySystem.Domain.AttributeSet,System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayAbility},Noname.GameAbilitySystem.Domain.GameplayTagContainer)">AbilitySystemComponent(AttributeSet, List&lt;GameplayAbility&gt;, GameplayTagContainer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbilitySystemComponent(AttributeSet attributeSet, List&lt;GameplayAbility&gt; abilities, GameplayTagContainer ownedTags)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.AttributeSet.html">AttributeSet</a></td>
+        <td><span class="parametername">attributeSet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayAbility.html">GameplayAbility</a>&gt;</td>
+        <td><span class="parametername">abilities</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayTagContainer.html">GameplayTagContainer</a></td>
+        <td><span class="parametername">ownedTags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Abilities_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Abilities*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Abilities" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Abilities">Abilities</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;GameplayAbility&gt; Abilities { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayAbility.html">GameplayAbility</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_ActiveEffectCount_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveEffectCount*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_ActiveEffectCount" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveEffectCount">ActiveEffectCount</h4>
+  <div class="markdown level1 summary"><p>활성 효과 개수입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ActiveEffectCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Attributes_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Attributes*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Attributes" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Attributes">Attributes</h4>
+  <div class="markdown level1 summary"><p>속성 컨테이너입니다. (스레드 안전하지 않음 - 직접 수정 금지)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AttributeSet Attributes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.AttributeSet.html">AttributeSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_OwnedTags_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OwnedTags*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_OwnedTags" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OwnedTags">OwnedTags</h4>
+  <div class="markdown level1 summary"><p>소유 태그 컨테이너입니다. (스레드 안전하지 않음 - 직접 수정 금지)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameplayTagContainer OwnedTags { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayTagContainer.html">GameplayTagContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Add_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Add*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Add_Noname_GameAbilitySystem_Domain_AttributeId_System_Single_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Add(Noname.GameAbilitySystem.Domain.AttributeId,System.Single)">Add(AttributeId, float)</h4>
+  <div class="markdown level1 summary"><p>속성 값을 증감합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(AttributeId id, float delta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.AttributeId.html">AttributeId</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">delta</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_AddActiveEffect_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.AddActiveEffect*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_AddActiveEffect_Noname_GameAbilitySystem_Domain_GameplayEffect_System_Single_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.AddActiveEffect(Noname.GameAbilitySystem.Domain.GameplayEffect,System.Single)">AddActiveEffect(GameplayEffect, float)</h4>
+  <div class="markdown level1 summary"><p>활성 효과를 추가하고 생성된 UID를 반환합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long AddActiveEffect(GameplayEffect effect, float remainingDuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayEffect.html">GameplayEffect</a></td>
+        <td><span class="parametername">effect</span></td>
+        <td><p>효과</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">remainingDuration</span></td>
+        <td><p>남은 지속 시간 (초)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_AddEffectTag_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.AddEffectTag*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_AddEffectTag_Noname_GameAbilitySystem_Domain_FGameplayTag_System_Int32__" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.AddEffectTag(Noname.GameAbilitySystem.Domain.FGameplayTag,System.Int32@)">AddEffectTag(FGameplayTag, out int)</h4>
+  <div class="markdown level1 summary"><p>효과 태그를 추가합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddEffectTag(FGameplayTag tag, out int totalCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.FGameplayTag.html">FGameplayTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">totalCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_AddLooseTag_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.AddLooseTag*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_AddLooseTag_Noname_GameAbilitySystem_Domain_FGameplayTag_System_Int32__" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.AddLooseTag(Noname.GameAbilitySystem.Domain.FGameplayTag,System.Int32@)">AddLooseTag(FGameplayTag, out int)</h4>
+  <div class="markdown level1 summary"><p>루즈 태그를 추가합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddLooseTag(FGameplayTag tag, out int totalCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.FGameplayTag.html">FGameplayTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">totalCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_AddPercent_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.AddPercent*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_AddPercent_Noname_GameAbilitySystem_Domain_AttributeId_System_Single_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.AddPercent(Noname.GameAbilitySystem.Domain.AttributeId,System.Single)">AddPercent(AttributeId, float)</h4>
+  <div class="markdown level1 summary"><p>속성 값을 퍼센트로 증감합니다.
+양수 퍼센트는 증가, 음수 퍼센트는 감소를 의미합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPercent(AttributeId id, float percent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.AttributeId.html">AttributeId</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">percent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_BuildSnapshot_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.BuildSnapshot*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_BuildSnapshot" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.BuildSnapshot">BuildSnapshot()</h4>
+  <div class="markdown level1 summary"><p>현재 상태의 불변 스냅샷을 생성합니다. (스레드 안전)
+Host 환경에서 클라이언트로 상태를 전송할 때 사용됩니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbilitySystemSnapshot BuildSnapshot()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot.html">AbilitySystemSnapshot</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_CanActivateAbility_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.CanActivateAbility*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_CanActivateAbility_Noname_GameAbilitySystem_Domain_GameplayAbilitySpec_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.CanActivateAbility(Noname.GameAbilitySystem.Domain.GameplayAbilitySpec)">CanActivateAbility(GameplayAbilitySpec)</h4>
+  <div class="markdown level1 summary"><p>능력 활성화 조건을 검사합니다. (필수 태그, 차단 태그)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanActivateAbility(GameplayAbilitySpec spec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.html">GameplayAbilitySpec</a></td>
+        <td><span class="parametername">spec</span></td>
+        <td><p>검사할 능력 사양</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>활성화 가능하면 true</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_CollectExpiredEffects_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.CollectExpiredEffects*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_CollectExpiredEffects_System_Single_System_Collections_Generic_List_Noname_GameAbilitySystem_Domain_GameplayEffect__" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.CollectExpiredEffects(System.Single,System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayEffect})">CollectExpiredEffects(float, List&lt;GameplayEffect&gt;)</h4>
+  <div class="markdown level1 summary"><p>만료된 효과를 수집하고 제거합니다.
+효과가 부여한 태그도 함께 제거됩니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CollectExpiredEffects(float now, List&lt;GameplayEffect&gt; expired)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">now</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayEffect.html">GameplayEffect</a>&gt;</td>
+        <td><span class="parametername">expired</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_ConsumeTagsChanged_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_ConsumeTagsChanged" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged">ConsumeTagsChanged()</h4>
+  <div class="markdown level1 summary"><p>태그가 변경되었는지 확인하고 플래그를 리셋합니다.
+AI가 능력 활성화 가능 여부를 체크하기 전에 호출합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ConsumeTagsChanged()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>태그가 변경되었으면 true</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Get_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Get*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Get_Noname_GameAbilitySystem_Domain_AttributeId_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Get(Noname.GameAbilitySystem.Domain.AttributeId)">Get(AttributeId)</h4>
+  <div class="markdown level1 summary"><p>속성 값을 조회합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Get(AttributeId id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.AttributeId.html">AttributeId</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_GetAbilitySpecs_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetAbilitySpecs*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_GetAbilitySpecs" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetAbilitySpecs">GetAbilitySpecs()</h4>
+  <div class="markdown level1 summary"><p>능력 사양 목록을 반환합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;GameplayAbilitySpec&gt; GetAbilitySpecs()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.html">GameplayAbilitySpec</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_GetActivatableAbilities_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetActivatableAbilities*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_GetActivatableAbilities_System_Collections_Generic_List_Noname_GameAbilitySystem_Domain_GameplayAbilitySpec__" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetActivatableAbilities(System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayAbilitySpec})">GetActivatableAbilities(List&lt;GameplayAbilitySpec&gt;)</h4>
+  <div class="markdown level1 summary"><p>활성화 가능한 능력 사양 목록을 반환합니다.
+쿨다운은 ActivationBlockedTags의 태그 체크로 처리됩니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetActivatableAbilities(List&lt;GameplayAbilitySpec&gt; results)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.html">GameplayAbilitySpec</a>&gt;</td>
+        <td><span class="parametername">results</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_GetActiveEffects_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetActiveEffects*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_GetActiveEffects" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetActiveEffects">GetActiveEffects()</h4>
+  <div class="markdown level1 summary"><p>활성 효과 목록을 복사하여 반환합니다. (스레드 안전)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;GameplayEffect&gt; GetActiveEffects()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayEffect.html">GameplayEffect</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_GetActiveEffects_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetActiveEffects*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_GetActiveEffects_System_Collections_Generic_List_Noname_GameAbilitySystem_Domain_GameplayEffect__" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetActiveEffects(System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayEffect})">GetActiveEffects(List&lt;GameplayEffect&gt;)</h4>
+  <div class="markdown level1 summary"><p>활성 효과 목록을 제공된 리스트에 추가합니다. (스레드 안전)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetActiveEffects(List&lt;GameplayEffect&gt; results)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayEffect.html">GameplayEffect</a>&gt;</td>
+        <td><span class="parametername">results</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_GetTotalTagCount_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetTotalTagCount*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_GetTotalTagCount_Noname_GameAbilitySystem_Domain_FGameplayTag_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetTotalTagCount(Noname.GameAbilitySystem.Domain.FGameplayTag)">GetTotalTagCount(FGameplayTag)</h4>
+  <div class="markdown level1 summary"><p>태그의 총 개수를 조회합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTotalTagCount(FGameplayTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.FGameplayTag.html">FGameplayTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_GiveAbility_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GiveAbility*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_GiveAbility_Noname_GameAbilitySystem_Domain_GameplayAbility_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GiveAbility(Noname.GameAbilitySystem.Domain.GameplayAbility)">GiveAbility(GameplayAbility)</h4>
+  <div class="markdown level1 summary"><p>능력을 추가합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FGameplayAbilitySpecHandle GiveAbility(GameplayAbility ability)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayAbility.html">GameplayAbility</a></td>
+        <td><span class="parametername">ability</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html">FGameplayAbilitySpecHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_HandleGameplayTagEvent_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.HandleGameplayTagEvent*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_HandleGameplayTagEvent_Noname_GameAbilitySystem_Domain_GameplayTagEventData_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.HandleGameplayTagEvent(Noname.GameAbilitySystem.Domain.GameplayTagEventData)">HandleGameplayTagEvent(GameplayTagEventData)</h4>
+  <div class="markdown level1 summary"><p>게임플레이 이벤트를 처리합니다. 이벤트 태그로 트리거되는 능력을 활성화합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HandleGameplayTagEvent(GameplayTagEventData eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayTagEventData.html">GameplayTagEventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td><p>이벤트 데이터</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>활성화 성공 여부</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveAbility_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveAbility*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveAbility_Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveAbility(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)">RemoveAbility(FGameplayAbilitySpecHandle)</h4>
+  <div class="markdown level1 summary"><p>핸들을 통해 능력을 제거합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveAbility(FGameplayAbilitySpecHandle handle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html">FGameplayAbilitySpecHandle</a></td>
+        <td><span class="parametername">handle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveAbility_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveAbility*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveAbility_Noname_GameAbilitySystem_Domain_GameplayAbility_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveAbility(Noname.GameAbilitySystem.Domain.GameplayAbility)">RemoveAbility(GameplayAbility)</h4>
+  <div class="markdown level1 summary"><p>능력을 제거합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveAbility(GameplayAbility ability)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayAbility.html">GameplayAbility</a></td>
+        <td><span class="parametername">ability</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveActiveEffect_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffect*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveActiveEffect_System_String_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffect(System.String)">RemoveActiveEffect(string)</h4>
+  <div class="markdown level1 summary"><p>EffectId로 활성 효과를 제거합니다. (같은 EffectId의 첫 번째 효과만 제거)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveActiveEffect(string effectId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">effectId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveActiveEffectByUid_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffectByUid*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveActiveEffectByUid_System_Int64_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffectByUid(System.Int64)">RemoveActiveEffectByUid(long)</h4>
+  <div class="markdown level1 summary"><p>UID로 활성 효과를 제거합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveActiveEffectByUid(long effectUid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">effectUid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveEffectTag_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveEffectTag*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveEffectTag_Noname_GameAbilitySystem_Domain_FGameplayTag_System_Int32__" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveEffectTag(Noname.GameAbilitySystem.Domain.FGameplayTag,System.Int32@)">RemoveEffectTag(FGameplayTag, out int)</h4>
+  <div class="markdown level1 summary"><p>효과 태그를 제거합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveEffectTag(FGameplayTag tag, out int totalCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.FGameplayTag.html">FGameplayTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">totalCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveLooseTag_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveLooseTag*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveLooseTag_Noname_GameAbilitySystem_Domain_FGameplayTag_System_Int32__" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveLooseTag(Noname.GameAbilitySystem.Domain.FGameplayTag,System.Int32@)">RemoveLooseTag(FGameplayTag, out int)</h4>
+  <div class="markdown level1 summary"><p>루즈 태그를 제거합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveLooseTag(FGameplayTag tag, out int totalCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.FGameplayTag.html">FGameplayTag</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">totalCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Set_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Set*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Set_Noname_GameAbilitySystem_Domain_AttributeId_System_Single_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Set(Noname.GameAbilitySystem.Domain.AttributeId,System.Single)">Set(AttributeId, float)</h4>
+  <div class="markdown level1 summary"><p>속성 값을 설정합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(AttributeId id, float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.AttributeId.html">AttributeId</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TickActiveEffects_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TickActiveEffects_System_Single_System_Collections_Generic_List_Noname_GameAbilitySystem_Domain_GameplayEffect__" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects(System.Single,System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayEffect})">TickActiveEffects(float, List&lt;GameplayEffect&gt;)</h4>
+  <div class="markdown level1 summary"><p>활성 효과의 남은 시간을 갱신하고 만료된 효과를 처리합니다.
+매 프레임 호출되어야 합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TickActiveEffects(float deltaTime, List&lt;GameplayEffect&gt; expired = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">deltaTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayEffect.html">GameplayEffect</a>&gt;</td>
+        <td><span class="parametername">expired</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TryActivateAbility_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbility*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TryActivateAbility_Noname_GameAbilitySystem_Domain_GameplayAbilitySpec_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbility(Noname.GameAbilitySystem.Domain.GameplayAbilitySpec)">TryActivateAbility(GameplayAbilitySpec)</h4>
+  <div class="markdown level1 summary"><p>능력 사양으로 능력을 활성화 시도합니다.
+TargetContext 없이 호출하면 타겟팅 없이 진행합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryActivateAbility(GameplayAbilitySpec spec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.html">GameplayAbilitySpec</a></td>
+        <td><span class="parametername">spec</span></td>
+        <td><p>능력 사양</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>활성화 성공 여부</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TryActivateAbility_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbility*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TryActivateAbility_Noname_GameAbilitySystem_Domain_GameplayAbilitySpec_Noname_GameAbilitySystem_Domain_TargetContext_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbility(Noname.GameAbilitySystem.Domain.GameplayAbilitySpec,Noname.GameAbilitySystem.Domain.TargetContext)">TryActivateAbility(GameplayAbilitySpec, TargetContext)</h4>
+  <div class="markdown level1 summary"><p>능력 사양으로 능력을 활성화 시도합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryActivateAbility(GameplayAbilitySpec spec, TargetContext targetContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.html">GameplayAbilitySpec</a></td>
+        <td><span class="parametername">spec</span></td>
+        <td><p>능력 사양</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.TargetContext.html">TargetContext</a></td>
+        <td><span class="parametername">targetContext</span></td>
+        <td><p>타겟팅 컨텍스트</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>활성화 성공 여부</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TryActivateAbility_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbility*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TryActivateAbility_Noname_GameAbilitySystem_Domain_GameplayAbilitySpec_Noname_GameAbilitySystem_Domain_TargetContext_Noname_GameAbilitySystem_Domain_TargetData__" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbility(Noname.GameAbilitySystem.Domain.GameplayAbilitySpec,Noname.GameAbilitySystem.Domain.TargetContext,Noname.GameAbilitySystem.Domain.TargetData@)">TryActivateAbility(GameplayAbilitySpec, TargetContext, out TargetData)</h4>
+  <div class="markdown level1 summary"><p>능력 사양으로 능력을 활성화 시도합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryActivateAbility(GameplayAbilitySpec spec, TargetContext targetContext, out TargetData targetData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.html">GameplayAbilitySpec</a></td>
+        <td><span class="parametername">spec</span></td>
+        <td><p>능력 사양</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.TargetContext.html">TargetContext</a></td>
+        <td><span class="parametername">targetContext</span></td>
+        <td><p>타겟팅 컨텍스트</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.TargetData.html">TargetData</a></td>
+        <td><span class="parametername">targetData</span></td>
+        <td><p>타겟팅 결과 (out)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>활성화 성공 여부</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TryActivateAbilityByTag_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbilityByTag*"></a>
+  <h4 id="Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TryActivateAbilityByTag_Noname_GameAbilitySystem_Domain_FGameplayTag_" data-uid="Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbilityByTag(Noname.GameAbilitySystem.Domain.FGameplayTag)">TryActivateAbilityByTag(FGameplayTag)</h4>
+  <div class="markdown level1 summary"><p>특정 태그를 가진 능력을 활성화 시도합니다. 여러 개일 수 있습니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryActivateAbilityByTag(FGameplayTag abilityTag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.FGameplayTag.html">FGameplayTag</a></td>
+        <td><span class="parametername">abilityTag</span></td>
+        <td><p>능력 태그</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>활성화 성공 여부</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

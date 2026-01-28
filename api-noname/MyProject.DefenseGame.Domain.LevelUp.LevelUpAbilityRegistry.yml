@@ -1,0 +1,616 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
+  commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
+  id: LevelUpAbilityRegistry
+  parent: MyProject.DefenseGame.Domain.LevelUp
+  children:
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.#ctor(System.Random)
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  langs:
+  - csharp
+  - vb
+  name: LevelUpAbilityRegistry
+  nameWithType: LevelUpAbilityRegistry
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
+  type: Class
+  namespace: MyProject.DefenseGame.Domain.LevelUp
+  summary: >-
+    레벨업 어빌리티 레지스트리입니다.
+
+    모든 레벨업 어빌리티를 관리하고 랜덤 선택을 제공합니다.
+  example: []
+  syntax:
+    content: public sealed class LevelUpAbilityRegistry
+    content.vb: Public NotInheritable Class LevelUpAbilityRegistry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.#ctor(System.Random)
+  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.#ctor(System.Random)
+  id: '#ctor(System.Random)'
+  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
+  langs:
+  - csharp
+  - vb
+  name: LevelUpAbilityRegistry(Random)
+  nameWithType: LevelUpAbilityRegistry.LevelUpAbilityRegistry(Random)
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.LevelUpAbilityRegistry(System.Random)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Domain.LevelUp
+  syntax:
+    content: public LevelUpAbilityRegistry(Random random = null)
+    parameters:
+    - id: random
+      type: System.Random
+    content.vb: Public Sub New(random As Random = Nothing)
+  overload: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.#ctor*
+  nameWithType.vb: LevelUpAbilityRegistry.New(Random)
+  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.New(System.Random)
+  name.vb: New(Random)
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  id: GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetRandomAvailableAbilities(DefensePlayer, HashSet<LevelUpAbilityId>, int, List<LevelUpAbilityDefinition>)
+  nameWithType: LevelUpAbilityRegistry.GetRandomAvailableAbilities(DefensePlayer, HashSet<LevelUpAbilityId>, int, List<LevelUpAbilityDefinition>)
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId>, int, System.Collections.Generic.List<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>)
+  type: Method
+  namespace: MyProject.DefenseGame.Domain.LevelUp
+  summary: 플레이어가 선택 가능한 어빌리티 목록을 반환합니다.
+  example: []
+  syntax:
+    content: public void GetRandomAvailableAbilities(DefensePlayer player, HashSet<LevelUpAbilityId> grantedAbilities, int count, List<LevelUpAbilityDefinition> results)
+    parameters:
+    - id: player
+      type: MyProject.DefenseGame.Domain.DefensePlayer
+      description: 플레이어
+    - id: grantedAbilities
+      type: System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId}
+      description: 이미 획득한 어빌리티 목록
+    - id: count
+      type: System.Int32
+      description: 선택할 개수
+    - id: results
+      type: System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition}
+      description: 결과 목록 (out)
+    content.vb: Public Sub GetRandomAvailableAbilities(player As DefensePlayer, grantedAbilities As HashSet(Of LevelUpAbilityId), count As Integer, results As List(Of LevelUpAbilityDefinition))
+  overload: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities*
+  nameWithType.vb: LevelUpAbilityRegistry.GetRandomAvailableAbilities(DefensePlayer, HashSet(Of LevelUpAbilityId), Integer, List(Of LevelUpAbilityDefinition))
+  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId), Integer, System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition))
+  name.vb: GetRandomAvailableAbilities(DefensePlayer, HashSet(Of LevelUpAbilityId), Integer, List(Of LevelUpAbilityDefinition))
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  id: GetDefinition(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
+  langs:
+  - csharp
+  - vb
+  name: GetDefinition(LevelUpAbilityId)
+  nameWithType: LevelUpAbilityRegistry.GetDefinition(LevelUpAbilityId)
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  type: Method
+  namespace: MyProject.DefenseGame.Domain.LevelUp
+  summary: ID로 어빌리티 정의를 가져옵니다.
+  example: []
+  syntax:
+    content: public LevelUpAbilityDefinition GetDefinition(LevelUpAbilityId id)
+    parameters:
+    - id: id
+      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+    return:
+      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+    content.vb: Public Function GetDefinition(id As LevelUpAbilityId) As LevelUpAbilityDefinition
+  overload: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition*
+references:
+- uid: MyProject.DefenseGame.Domain.LevelUp
+  commentId: N:MyProject.DefenseGame.Domain.LevelUp
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain.LevelUp
+  nameWithType: MyProject.DefenseGame.Domain.LevelUp
+  fullName: MyProject.DefenseGame.Domain.LevelUp
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.LevelUp
+    name: LevelUp
+    href: MyProject.DefenseGame.Domain.LevelUp.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.LevelUp
+    name: LevelUp
+    href: MyProject.DefenseGame.Domain.LevelUp.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.#ctor
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry__ctor_System_Random_
+  name: LevelUpAbilityRegistry
+  nameWithType: LevelUpAbilityRegistry.LevelUpAbilityRegistry
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.LevelUpAbilityRegistry
+  nameWithType.vb: LevelUpAbilityRegistry.New
+  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.New
+  name.vb: New
+- uid: System.Random
+  commentId: T:System.Random
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.random
+  name: Random
+  nameWithType: Random
+  fullName: System.Random
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities*
+  commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetRandomAvailableAbilities_MyProject_DefenseGame_Domain_DefensePlayer_System_Collections_Generic_HashSet_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId__System_Int32_System_Collections_Generic_List_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__
+  name: GetRandomAvailableAbilities
+  nameWithType: LevelUpAbilityRegistry.GetRandomAvailableAbilities
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities
+- uid: MyProject.DefenseGame.Domain.DefensePlayer
+  commentId: T:MyProject.DefenseGame.Domain.DefensePlayer
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefensePlayer.html
+  name: DefensePlayer
+  nameWithType: DefensePlayer
+  fullName: MyProject.DefenseGame.Domain.DefensePlayer
+- uid: System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId}
+  commentId: T:System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<LevelUpAbilityId>
+  nameWithType: HashSet<LevelUpAbilityId>
+  fullName: System.Collections.Generic.HashSet<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId>
+  nameWithType.vb: HashSet(Of LevelUpAbilityId)
+  fullName.vb: System.Collections.Generic.HashSet(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  name.vb: HashSet(Of LevelUpAbilityId)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+    name: LevelUpAbilityId
+    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+    name: LevelUpAbilityId
+    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition}
+  commentId: T:System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<LevelUpAbilityDefinition>
+  nameWithType: List<LevelUpAbilityDefinition>
+  fullName: System.Collections.Generic.List<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>
+  nameWithType.vb: List(Of LevelUpAbilityDefinition)
+  fullName.vb: System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition)
+  name.vb: List(Of LevelUpAbilityDefinition)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+    name: LevelUpAbilityDefinition
+    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+    name: LevelUpAbilityDefinition
+    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html
+  - name: )
+- uid: MyProject.DefenseGame.Domain
+  commentId: N:MyProject.DefenseGame.Domain
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain
+  nameWithType: MyProject.DefenseGame.Domain
+  fullName: MyProject.DefenseGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition*
+  commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetDefinition_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_
+  name: GetDefinition
+  nameWithType: LevelUpAbilityRegistry.GetDefinition
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  parent: MyProject.DefenseGame.Domain.LevelUp
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
+  name: LevelUpAbilityId
+  nameWithType: LevelUpAbilityId
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+  commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+  parent: MyProject.DefenseGame.Domain.LevelUp
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html
+  name: LevelUpAbilityDefinition
+  nameWithType: LevelUpAbilityDefinition
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition

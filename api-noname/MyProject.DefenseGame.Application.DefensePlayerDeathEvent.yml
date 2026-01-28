@@ -1,0 +1,200 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefensePlayerDeathEvent
+  commentId: T:MyProject.DefenseGame.Application.DefensePlayerDeathEvent
+  id: DefensePlayerDeathEvent
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefensePlayerDeathEvent.#ctor(System.Int64,System.Single,System.Int32)
+  - MyProject.DefenseGame.Application.DefensePlayerDeathEvent.SurvivalTime
+  - MyProject.DefenseGame.Application.DefensePlayerDeathEvent.TotalKills
+  langs:
+  - csharp
+  - vb
+  name: DefensePlayerDeathEvent
+  nameWithType: DefensePlayerDeathEvent
+  fullName: MyProject.DefenseGame.Application.DefensePlayerDeathEvent
+  type: Class
+  namespace: MyProject.DefenseGame.Application
+  summary: ?�레?�어 ?�망 ?�벤?�입?�다.
+  example: []
+  syntax:
+    content: 'public sealed class DefensePlayerDeathEvent : DefenseHostEvent'
+    content.vb: Public NotInheritable Class DefensePlayerDeathEvent Inherits DefenseHostEvent
+  inheritance:
+  - System.Object
+  - MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.SurvivalTime
+  commentId: P:MyProject.DefenseGame.Application.DefensePlayerDeathEvent.SurvivalTime
+  id: SurvivalTime
+  parent: MyProject.DefenseGame.Application.DefensePlayerDeathEvent
+  langs:
+  - csharp
+  - vb
+  name: SurvivalTime
+  nameWithType: DefensePlayerDeathEvent.SurvivalTime
+  fullName: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.SurvivalTime
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public float SurvivalTime { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property SurvivalTime As Single
+  overload: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.SurvivalTime*
+- uid: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.TotalKills
+  commentId: P:MyProject.DefenseGame.Application.DefensePlayerDeathEvent.TotalKills
+  id: TotalKills
+  parent: MyProject.DefenseGame.Application.DefensePlayerDeathEvent
+  langs:
+  - csharp
+  - vb
+  name: TotalKills
+  nameWithType: DefensePlayerDeathEvent.TotalKills
+  fullName: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.TotalKills
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public int TotalKills { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TotalKills As Integer
+  overload: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.TotalKills*
+- uid: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.#ctor(System.Int64,System.Single,System.Int32)
+  commentId: M:MyProject.DefenseGame.Application.DefensePlayerDeathEvent.#ctor(System.Int64,System.Single,System.Int32)
+  id: '#ctor(System.Int64,System.Single,System.Int32)'
+  parent: MyProject.DefenseGame.Application.DefensePlayerDeathEvent
+  langs:
+  - csharp
+  - vb
+  name: DefensePlayerDeathEvent(long, float, int)
+  nameWithType: DefensePlayerDeathEvent.DefensePlayerDeathEvent(long, float, int)
+  fullName: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.DefensePlayerDeathEvent(long, float, int)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public DefensePlayerDeathEvent(long tick, float survivalTime, int totalKills)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: survivalTime
+      type: System.Single
+    - id: totalKills
+      type: System.Int32
+    content.vb: Public Sub New(tick As Long, survivalTime As Single, totalKills As Integer)
+  overload: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.#ctor*
+  nameWithType.vb: DefensePlayerDeathEvent.New(Long, Single, Integer)
+  fullName.vb: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.New(Long, Single, Integer)
+  name.vb: New(Long, Single, Integer)
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.SurvivalTime*
+  commentId: Overload:MyProject.DefenseGame.Application.DefensePlayerDeathEvent.SurvivalTime
+  href: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.html#MyProject_DefenseGame_Application_DefensePlayerDeathEvent_SurvivalTime
+  name: SurvivalTime
+  nameWithType: DefensePlayerDeathEvent.SurvivalTime
+  fullName: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.SurvivalTime
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.TotalKills*
+  commentId: Overload:MyProject.DefenseGame.Application.DefensePlayerDeathEvent.TotalKills
+  href: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.html#MyProject_DefenseGame_Application_DefensePlayerDeathEvent_TotalKills
+  name: TotalKills
+  nameWithType: DefensePlayerDeathEvent.TotalKills
+  fullName: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.TotalKills
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.DefensePlayerDeathEvent.#ctor
+  href: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.html#MyProject_DefenseGame_Application_DefensePlayerDeathEvent__ctor_System_Int64_System_Single_System_Int32_
+  name: DefensePlayerDeathEvent
+  nameWithType: DefensePlayerDeathEvent.DefensePlayerDeathEvent
+  fullName: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.DefensePlayerDeathEvent
+  nameWithType.vb: DefensePlayerDeathEvent.New
+  fullName.vb: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

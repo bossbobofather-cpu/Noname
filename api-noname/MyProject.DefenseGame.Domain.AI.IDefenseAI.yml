@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Domain.AI.IDefenseAI
+  commentId: T:MyProject.DefenseGame.Domain.AI.IDefenseAI
+  id: IDefenseAI
+  parent: MyProject.DefenseGame.Domain.AI
+  children:
+  - MyProject.DefenseGame.Domain.AI.IDefenseAI.Update(MyProject.DefenseGame.Domain.DefenseEntity,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: IDefenseAI
+  nameWithType: IDefenseAI
+  fullName: MyProject.DefenseGame.Domain.AI.IDefenseAI
+  type: Interface
+  namespace: MyProject.DefenseGame.Domain.AI
+  summary: 디펜스 게임 엔티티의 인공지능(의사결정) 인터페이스입니다.
+  example: []
+  syntax:
+    content: public interface IDefenseAI
+    content.vb: Public Interface IDefenseAI
+- uid: MyProject.DefenseGame.Domain.AI.IDefenseAI.Update(MyProject.DefenseGame.Domain.DefenseEntity,System.Single)
+  commentId: M:MyProject.DefenseGame.Domain.AI.IDefenseAI.Update(MyProject.DefenseGame.Domain.DefenseEntity,System.Single)
+  id: Update(MyProject.DefenseGame.Domain.DefenseEntity,System.Single)
+  parent: MyProject.DefenseGame.Domain.AI.IDefenseAI
+  langs:
+  - csharp
+  - vb
+  name: Update(DefenseEntity, float)
+  nameWithType: IDefenseAI.Update(DefenseEntity, float)
+  fullName: MyProject.DefenseGame.Domain.AI.IDefenseAI.Update(MyProject.DefenseGame.Domain.DefenseEntity, float)
+  type: Method
+  namespace: MyProject.DefenseGame.Domain.AI
+  summary: AI 로직을 수행합니다. 매 틱마다 호출됩니다.
+  example: []
+  syntax:
+    content: void Update(DefenseEntity entity, float deltaTime)
+    parameters:
+    - id: entity
+      type: MyProject.DefenseGame.Domain.DefenseEntity
+      description: AI가 제어하는 엔티티
+    - id: deltaTime
+      type: System.Single
+      description: 델타 타임
+    content.vb: Sub Update(entity As DefenseEntity, deltaTime As Single)
+  overload: MyProject.DefenseGame.Domain.AI.IDefenseAI.Update*
+  nameWithType.vb: IDefenseAI.Update(DefenseEntity, Single)
+  fullName.vb: MyProject.DefenseGame.Domain.AI.IDefenseAI.Update(MyProject.DefenseGame.Domain.DefenseEntity, Single)
+  name.vb: Update(DefenseEntity, Single)
+references:
+- uid: MyProject.DefenseGame.Domain.AI
+  commentId: N:MyProject.DefenseGame.Domain.AI
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain.AI
+  nameWithType: MyProject.DefenseGame.Domain.AI
+  fullName: MyProject.DefenseGame.Domain.AI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.AI
+    name: AI
+    href: MyProject.DefenseGame.Domain.AI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.AI
+    name: AI
+    href: MyProject.DefenseGame.Domain.AI.html
+- uid: MyProject.DefenseGame.Domain.AI.IDefenseAI.Update*
+  commentId: Overload:MyProject.DefenseGame.Domain.AI.IDefenseAI.Update
+  href: MyProject.DefenseGame.Domain.AI.IDefenseAI.html#MyProject_DefenseGame_Domain_AI_IDefenseAI_Update_MyProject_DefenseGame_Domain_DefenseEntity_System_Single_
+  name: Update
+  nameWithType: IDefenseAI.Update
+  fullName: MyProject.DefenseGame.Domain.AI.IDefenseAI.Update
+- uid: MyProject.DefenseGame.Domain.DefenseEntity
+  commentId: T:MyProject.DefenseGame.Domain.DefenseEntity
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html
+  name: DefenseEntity
+  nameWithType: DefenseEntity
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MyProject.DefenseGame.Domain
+  commentId: N:MyProject.DefenseGame.Domain
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain
+  nameWithType: MyProject.DefenseGame.Domain
+  fullName: MyProject.DefenseGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

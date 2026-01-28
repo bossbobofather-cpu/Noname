@@ -1,134 +1,140 @@
-using Noname.GameHost;
+﻿using Noname.GameHost;
 
 namespace MyProject.DefenseGame.Application.Commands
 {
     /// <summary>
-    /// ���潺 ���� Command �⺻ Ÿ���Դϴ�.
+    /// DefenseGame용 Command 기본 타입입니다.
     /// </summary>
     public abstract class DefenseCommand : GameCommandBase
     {
-        protected DefenseCommand(long senderUid = 0) : base(senderUid)
+        public DefenseCommand(long senderUid) 
+            : base(senderUid)
         {
         }
+
     }
 
     /// <summary>
-    /// ���� ���� Command�Դϴ�.
+    /// 게임 시작 Command입니다.
     /// </summary>
     public sealed class StartGameCommand : DefenseCommand
     {
-        public StartGameCommand(long senderUid = 0) : base(senderUid)
+        public StartGameCommand(long senderUid)
+            : base(senderUid)
         {
         }
     }
 
     /// <summary>
-    /// ���� ���� Result�Դϴ�.
+    /// 게임 시작 Result입니다.
     /// </summary>
     public sealed class StartGameResult : DefenseCommandResult
     {
-        private StartGameResult(long tick, long senderUid, bool success, string errorMessage)
-            : base(tick, senderUid, success, errorMessage)
+        private StartGameResult(long tick, long senderUid, bool success, string reason)
+            : base(tick, senderUid, success, reason)
         {
         }
 
         public static StartGameResult Ok(long tick, long senderUid)
-            => new(tick, senderUid, true, null);
+        {
+            return new StartGameResult(tick, senderUid, true, null);
+        }
 
-        public static StartGameResult Fail(long tick, long senderUid, string message)
-            => new(tick, senderUid, false, message);
+        public static StartGameResult Fail(long tick, long senderUid, string reason)
+        {
+            return new StartGameResult(tick, senderUid, false, reason);
+        }
     }
 
     /// <summary>
-    /// ������ �ɷ� ���� Command�Դϴ�.
+    /// 레벨업 선택 Command입니다.
     /// </summary>
     public sealed class SelectLevelUpAbilityCommand : DefenseCommand
     {
-        /// <summary>
-        /// ������ �ɷ� �ε����Դϴ�.
-        /// </summary>
-        public int AbilityIndex { get; }
-
-        public SelectLevelUpAbilityCommand(int abilityIndex, long senderUid = 0)
+        public SelectLevelUpAbilityCommand(long senderUid, int abilityIndex)
             : base(senderUid)
         {
             AbilityIndex = abilityIndex;
         }
+
+        /// <summary>
+        /// 레벨업 선택 인덱스입니다.
+        /// </summary>
+        public int AbilityIndex { get; }
     }
 
     /// <summary>
-    /// ������ �ɷ� ���� Result�Դϴ�.
+    /// 레벨업 선택 Result입니다.
     /// </summary>
     public sealed class SelectLevelUpAbilityResult : DefenseCommandResult
     {
-        /// <summary>
-        /// ���õ� �ɷ� ID�Դϴ�.
-        /// </summary>
-        public string SelectedAbilityId { get; }
-
-        /// <summary>
-        /// ���õ� �ɷ� �̸��Դϴ�.
-        /// </summary>
-        public string SelectedAbilityName { get; }
-
-        private SelectLevelUpAbilityResult(
-            long tick,
-            long senderUid,
-            bool success,
-            string errorMessage,
-            string abilityId,
-            string abilityName)
-            : base(tick, senderUid, success, errorMessage)
+        private SelectLevelUpAbilityResult(long tick, long senderUid, bool success, string reason, string abilityId, string abilityName)
+            : base(tick, senderUid, success, reason)
         {
-            SelectedAbilityId = abilityId;
-            SelectedAbilityName = abilityName;
+            AbilityId = abilityId;
+            AbilityName = abilityName;
         }
 
-        public static SelectLevelUpAbilityResult Ok(
-            long tick,
-            long senderUid,
-            string abilityId,
-            string abilityName)
-            => new(tick, senderUid, true, null, abilityId, abilityName);
+        /// <summary>
+        /// 선택한 스킬 ID입니다.
+        /// </summary>
+        public string AbilityId { get; }
 
-        public static SelectLevelUpAbilityResult Fail(long tick, long senderUid, string message)
-            => new(tick, senderUid, false, message, null, null);
+        /// <summary>
+        /// 선택한 스킬 이름입니다.
+        /// </summary>
+        public string AbilityName { get; }
+
+        public static SelectLevelUpAbilityResult Ok(long tick, long senderUid, string abilityId, string abilityName)
+        {
+            return new SelectLevelUpAbilityResult(tick, senderUid, true, null, abilityId, abilityName);
+        }
+
+        public static SelectLevelUpAbilityResult Fail(long tick, long senderUid, string reason)
+        {
+            return new SelectLevelUpAbilityResult(tick, senderUid, false, reason, null, null);
+        }
     }
 
     /// <summary>
-    /// ���� ���� Command�Դϴ�.
+    /// 게임 종료 Command입니다.
     /// </summary>
     public sealed class EndGameCommand : DefenseCommand
     {
-        public EndGameCommand(long senderUid = 0) : base(senderUid)
+        public EndGameCommand(long senderUid)
+            : base(senderUid)
         {
         }
     }
 
     /// <summary>
-    /// ���� ���� Result�Դϴ�.
+    /// 게임 종료 Result입니다.
     /// </summary>
     public sealed class EndGameResult : DefenseCommandResult
     {
-        private EndGameResult(long tick, long senderUid, bool success, string errorMessage)
-            : base(tick, senderUid, success, errorMessage)
+        private EndGameResult(long tick, long senderUid, bool success, string reason)
+            : base(tick, senderUid, success, reason)
         {
         }
 
         public static EndGameResult Ok(long tick, long senderUid)
-            => new(tick, senderUid, true, null);
+        {
+            return new EndGameResult(tick, senderUid, true, null);
+        }
 
-        public static EndGameResult Fail(long tick, long senderUid, string message)
-            => new(tick, senderUid, false, message);
+        public static EndGameResult Fail(long tick, long senderUid, string reason)
+        {
+            return new EndGameResult(tick, senderUid, false, reason);
+        }
     }
 
     /// <summary>
-    /// ���潺 ���� Command ó�� ��� �⺻ Ÿ���Դϴ�.
+    /// DefenseGame용 Command 처리 결과 기본 타입입니다.
     /// </summary>
     public abstract class DefenseCommandResult : GameCommandResultBase
     {
-        protected DefenseCommandResult(long tick, long senderUid, bool success, string errorMessage)
-            : base(tick, senderUid, success, errorMessage)
+        protected DefenseCommandResult(long tick, long senderUid, bool success, string reason)
+            : base(tick, senderUid, success, reason)
         {
         }
     }

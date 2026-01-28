@@ -1,0 +1,427 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy
+  commentId: T:Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy
+  id: NearestNEnemiesTargetingStrategy
+  parent: Noname.GameAbilitySystem.Domain
+  children:
+  - Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.#ctor(System.Int32,System.Single)
+  - Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,Noname.GameAbilitySystem.Domain.TargetContext)
+  langs:
+  - csharp
+  - vb
+  name: NearestNEnemiesTargetingStrategy
+  nameWithType: NearestNEnemiesTargetingStrategy
+  fullName: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy
+  type: Class
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 가장 가까운 N명의 적을 선택합니다.
+  example: []
+  syntax:
+    content: 'public sealed class NearestNEnemiesTargetingStrategy : ITargetingStrategy'
+    content.vb: Public NotInheritable Class NearestNEnemiesTargetingStrategy Implements ITargetingStrategy
+  inheritance:
+  - System.Object
+  implements:
+  - Noname.GameAbilitySystem.Domain.ITargetingStrategy
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.#ctor(System.Int32,System.Single)
+  commentId: M:Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.#ctor(System.Int32,System.Single)
+  id: '#ctor(System.Int32,System.Single)'
+  parent: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy
+  langs:
+  - csharp
+  - vb
+  name: NearestNEnemiesTargetingStrategy(int, float)
+  nameWithType: NearestNEnemiesTargetingStrategy.NearestNEnemiesTargetingStrategy(int, float)
+  fullName: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.NearestNEnemiesTargetingStrategy(int, float)
+  type: Constructor
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public NearestNEnemiesTargetingStrategy(int maxTargets, float maxRange = Infinity)
+    parameters:
+    - id: maxTargets
+      type: System.Int32
+    - id: maxRange
+      type: System.Single
+    content.vb: Public Sub New(maxTargets As Integer, maxRange As Single = Infinity)
+  overload: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.#ctor*
+  nameWithType.vb: NearestNEnemiesTargetingStrategy.New(Integer, Single)
+  fullName.vb: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.New(Integer, Single)
+  name.vb: New(Integer, Single)
+- uid: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,Noname.GameAbilitySystem.Domain.TargetContext)
+  commentId: M:Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,Noname.GameAbilitySystem.Domain.TargetContext)
+  id: FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,Noname.GameAbilitySystem.Domain.TargetContext)
+  parent: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy
+  langs:
+  - csharp
+  - vb
+  name: FindTargets(AbilitySystemComponent, TargetContext)
+  nameWithType: NearestNEnemiesTargetingStrategy.FindTargets(AbilitySystemComponent, TargetContext)
+  fullName: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Noname.GameAbilitySystem.Domain.TargetContext)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Domain
+  example: []
+  syntax:
+    content: public TargetData FindTargets(AbilitySystemComponent owner, TargetContext context)
+    parameters:
+    - id: owner
+      type: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+    - id: context
+      type: Noname.GameAbilitySystem.Domain.TargetContext
+    return:
+      type: Noname.GameAbilitySystem.Domain.TargetData
+    content.vb: Public Function FindTargets(owner As AbilitySystemComponent, context As TargetContext) As TargetData
+  overload: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.FindTargets*
+  implements:
+  - Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,Noname.GameAbilitySystem.Domain.TargetContext)
+references:
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Noname.GameAbilitySystem.Domain.ITargetingStrategy
+  commentId: T:Noname.GameAbilitySystem.Domain.ITargetingStrategy
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.ITargetingStrategy.html
+  name: ITargetingStrategy
+  nameWithType: ITargetingStrategy
+  fullName: Noname.GameAbilitySystem.Domain.ITargetingStrategy
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.#ctor*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.#ctor
+  href: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.html#Noname_GameAbilitySystem_Domain_NearestNEnemiesTargetingStrategy__ctor_System_Int32_System_Single_
+  name: NearestNEnemiesTargetingStrategy
+  nameWithType: NearestNEnemiesTargetingStrategy.NearestNEnemiesTargetingStrategy
+  fullName: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.NearestNEnemiesTargetingStrategy
+  nameWithType.vb: NearestNEnemiesTargetingStrategy.New
+  fullName.vb: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.FindTargets*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.FindTargets
+  href: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.html#Noname_GameAbilitySystem_Domain_NearestNEnemiesTargetingStrategy_FindTargets_Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Noname_GameAbilitySystem_Domain_TargetContext_
+  name: FindTargets
+  nameWithType: NearestNEnemiesTargetingStrategy.FindTargets
+  fullName: Noname.GameAbilitySystem.Domain.NearestNEnemiesTargetingStrategy.FindTargets
+- uid: Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,Noname.GameAbilitySystem.Domain.TargetContext)
+  commentId: M:Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,Noname.GameAbilitySystem.Domain.TargetContext)
+  parent: Noname.GameAbilitySystem.Domain.ITargetingStrategy
+  href: Noname.GameAbilitySystem.Domain.ITargetingStrategy.html#Noname_GameAbilitySystem_Domain_ITargetingStrategy_FindTargets_Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Noname_GameAbilitySystem_Domain_TargetContext_
+  name: FindTargets(AbilitySystemComponent, TargetContext)
+  nameWithType: ITargetingStrategy.FindTargets(AbilitySystemComponent, TargetContext)
+  fullName: Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Noname.GameAbilitySystem.Domain.TargetContext)
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,Noname.GameAbilitySystem.Domain.TargetContext)
+    name: FindTargets
+    href: Noname.GameAbilitySystem.Domain.ITargetingStrategy.html#Noname_GameAbilitySystem_Domain_ITargetingStrategy_FindTargets_Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Noname_GameAbilitySystem_Domain_TargetContext_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+    name: AbilitySystemComponent
+    href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
+  - name: ','
+  - name: " "
+  - uid: Noname.GameAbilitySystem.Domain.TargetContext
+    name: TargetContext
+    href: Noname.GameAbilitySystem.Domain.TargetContext.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,Noname.GameAbilitySystem.Domain.TargetContext)
+    name: FindTargets
+    href: Noname.GameAbilitySystem.Domain.ITargetingStrategy.html#Noname_GameAbilitySystem_Domain_ITargetingStrategy_FindTargets_Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Noname_GameAbilitySystem_Domain_TargetContext_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+    name: AbilitySystemComponent
+    href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
+  - name: ','
+  - name: " "
+  - uid: Noname.GameAbilitySystem.Domain.TargetContext
+    name: TargetContext
+    href: Noname.GameAbilitySystem.Domain.TargetContext.html
+  - name: )
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  commentId: T:Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+- uid: Noname.GameAbilitySystem.Domain.TargetContext
+  commentId: T:Noname.GameAbilitySystem.Domain.TargetContext
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.TargetContext.html
+  name: TargetContext
+  nameWithType: TargetContext
+  fullName: Noname.GameAbilitySystem.Domain.TargetContext
+- uid: Noname.GameAbilitySystem.Domain.TargetData
+  commentId: T:Noname.GameAbilitySystem.Domain.TargetData
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.TargetData.html
+  name: TargetData
+  nameWithType: TargetData
+  fullName: Noname.GameAbilitySystem.Domain.TargetData

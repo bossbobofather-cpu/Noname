@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  id: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
+  - MyProject.DefenseGame.Application.DefenseCombatModule
+  - MyProject.DefenseGame.Application.DefenseEntityFactory
+  - MyProject.DefenseGame.Application.DefenseGameHost
+  - MyProject.DefenseGame.Application.DefenseGameOverEvent
+  - MyProject.DefenseGame.Application.DefenseGameStartedEvent
+  - MyProject.DefenseGame.Application.DefenseHostEvent
+  - MyProject.DefenseGame.Application.DefenseHostSnapshot
+  - MyProject.DefenseGame.Application.DefenseHostState
+  - MyProject.DefenseGame.Application.DefenseLevelUpEvent
+  - MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
+  - MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+  - MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+  - MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent
+  - MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+  - MyProject.DefenseGame.Application.DefensePlayerDeathEvent
+  - MyProject.DefenseGame.Application.DefenseSessionPhase
+  - MyProject.DefenseGame.Application.DefenseSpawnModule
+  - MyProject.DefenseGame.Application.DefenseWaveChangedEvent
+  langs:
+  - csharp
+  - vb
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  type: Namespace
+references:
+- uid: MyProject.DefenseGame.Application.DefenseEntityFactory
+  commentId: T:MyProject.DefenseGame.Application.DefenseEntityFactory
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseEntityFactory.html
+  name: DefenseEntityFactory
+  nameWithType: DefenseEntityFactory
+  fullName: MyProject.DefenseGame.Application.DefenseEntityFactory
+- uid: MyProject.DefenseGame.Application.DefenseGameHost
+  commentId: T:MyProject.DefenseGame.Application.DefenseGameHost
+  href: MyProject.DefenseGame.Application.DefenseGameHost.html
+  name: DefenseGameHost
+  nameWithType: DefenseGameHost
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: MyProject.DefenseGame.Application.DefenseGameStartedEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseGameStartedEvent
+  href: MyProject.DefenseGame.Application.DefenseGameStartedEvent.html
+  name: DefenseGameStartedEvent
+  nameWithType: DefenseGameStartedEvent
+  fullName: MyProject.DefenseGame.Application.DefenseGameStartedEvent
+- uid: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent
+  href: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.html
+  name: DefenseMonsterSpawnedEvent
+  nameWithType: DefenseMonsterSpawnedEvent
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent
+- uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+  href: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.html
+  name: DefenseMonsterKilledEvent
+  nameWithType: DefenseMonsterKilledEvent
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+- uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+  commentId: T:MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+  href: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.html
+  name: DefensePlayerAttackEvent
+  nameWithType: DefensePlayerAttackEvent
+  fullName: MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+- uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+  href: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.html
+  name: DefenseMonsterAttackEvent
+  nameWithType: DefenseMonsterAttackEvent
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+- uid: MyProject.DefenseGame.Application.DefenseLevelUpEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseLevelUpEvent
+  href: MyProject.DefenseGame.Application.DefenseLevelUpEvent.html
+  name: DefenseLevelUpEvent
+  nameWithType: DefenseLevelUpEvent
+  fullName: MyProject.DefenseGame.Application.DefenseLevelUpEvent
+- uid: MyProject.DefenseGame.Application.DefenseWaveChangedEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseWaveChangedEvent
+  href: MyProject.DefenseGame.Application.DefenseWaveChangedEvent.html
+  name: DefenseWaveChangedEvent
+  nameWithType: DefenseWaveChangedEvent
+  fullName: MyProject.DefenseGame.Application.DefenseWaveChangedEvent
+- uid: MyProject.DefenseGame.Application.DefenseGameOverEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseGameOverEvent
+  href: MyProject.DefenseGame.Application.DefenseGameOverEvent.html
+  name: DefenseGameOverEvent
+  nameWithType: DefenseGameOverEvent
+  fullName: MyProject.DefenseGame.Application.DefenseGameOverEvent
+- uid: MyProject.DefenseGame.Application.DefensePlayerDeathEvent
+  commentId: T:MyProject.DefenseGame.Application.DefensePlayerDeathEvent
+  href: MyProject.DefenseGame.Application.DefensePlayerDeathEvent.html
+  name: DefensePlayerDeathEvent
+  nameWithType: DefensePlayerDeathEvent
+  fullName: MyProject.DefenseGame.Application.DefensePlayerDeathEvent
+- uid: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
+  href: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.html
+  name: DefenseLevelUpOptionsEvent
+  nameWithType: DefenseLevelUpOptionsEvent
+  fullName: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
+  href: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html
+  name: DefenseAbilitySelectedEvent
+  nameWithType: DefenseAbilitySelectedEvent
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
+- uid: MyProject.DefenseGame.Application.DefenseHostSnapshot
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostSnapshot
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostSnapshot.html
+  name: DefenseHostSnapshot
+  nameWithType: DefenseHostSnapshot
+  fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot
+- uid: MyProject.DefenseGame.Application.DefenseSessionPhase
+  commentId: T:MyProject.DefenseGame.Application.DefenseSessionPhase
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseSessionPhase.html
+  name: DefenseSessionPhase
+  nameWithType: DefenseSessionPhase
+  fullName: MyProject.DefenseGame.Application.DefenseSessionPhase
+- uid: MyProject.DefenseGame.Application.DefenseHostState
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostState
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostState.html
+  name: DefenseHostState
+  nameWithType: DefenseHostState
+  fullName: MyProject.DefenseGame.Application.DefenseHostState
+- uid: MyProject.DefenseGame.Application.DefenseCombatModule
+  commentId: T:MyProject.DefenseGame.Application.DefenseCombatModule
+  href: MyProject.DefenseGame.Application.DefenseCombatModule.html
+  name: DefenseCombatModule
+  nameWithType: DefenseCombatModule
+  fullName: MyProject.DefenseGame.Application.DefenseCombatModule
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule
+  commentId: T:MyProject.DefenseGame.Application.DefenseSpawnModule
+  href: MyProject.DefenseGame.Application.DefenseSpawnModule.html
+  name: DefenseSpawnModule
+  nameWithType: DefenseSpawnModule
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html

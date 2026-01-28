@@ -1,0 +1,113 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.Commands
+  commentId: N:MyProject.DefenseGame.Application.Commands
+  id: MyProject.DefenseGame.Application.Commands
+  children:
+  - MyProject.DefenseGame.Application.Commands.DefenseCommand
+  - MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+  - MyProject.DefenseGame.Application.Commands.EndGameCommand
+  - MyProject.DefenseGame.Application.Commands.EndGameResult
+  - MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityCommand
+  - MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+  - MyProject.DefenseGame.Application.Commands.StartGameCommand
+  - MyProject.DefenseGame.Application.Commands.StartGameResult
+  langs:
+  - csharp
+  - vb
+  name: MyProject.DefenseGame.Application.Commands
+  nameWithType: MyProject.DefenseGame.Application.Commands
+  fullName: MyProject.DefenseGame.Application.Commands
+  type: Namespace
+references:
+- uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+  commentId: T:MyProject.DefenseGame.Application.Commands.DefenseCommand
+  parent: MyProject.DefenseGame.Application.Commands
+  href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  name: DefenseCommand
+  nameWithType: DefenseCommand
+  fullName: MyProject.DefenseGame.Application.Commands.DefenseCommand
+- uid: MyProject.DefenseGame.Application.Commands.StartGameCommand
+  commentId: T:MyProject.DefenseGame.Application.Commands.StartGameCommand
+  href: MyProject.DefenseGame.Application.Commands.StartGameCommand.html
+  name: StartGameCommand
+  nameWithType: StartGameCommand
+  fullName: MyProject.DefenseGame.Application.Commands.StartGameCommand
+- uid: MyProject.DefenseGame.Application.Commands.StartGameResult
+  commentId: T:MyProject.DefenseGame.Application.Commands.StartGameResult
+  parent: MyProject.DefenseGame.Application.Commands
+  href: MyProject.DefenseGame.Application.Commands.StartGameResult.html
+  name: StartGameResult
+  nameWithType: StartGameResult
+  fullName: MyProject.DefenseGame.Application.Commands.StartGameResult
+- uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityCommand
+  commentId: T:MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityCommand
+  href: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityCommand.html
+  name: SelectLevelUpAbilityCommand
+  nameWithType: SelectLevelUpAbilityCommand
+  fullName: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityCommand
+- uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+  commentId: T:MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+  parent: MyProject.DefenseGame.Application.Commands
+  href: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.html
+  name: SelectLevelUpAbilityResult
+  nameWithType: SelectLevelUpAbilityResult
+  fullName: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+- uid: MyProject.DefenseGame.Application.Commands.EndGameCommand
+  commentId: T:MyProject.DefenseGame.Application.Commands.EndGameCommand
+  href: MyProject.DefenseGame.Application.Commands.EndGameCommand.html
+  name: EndGameCommand
+  nameWithType: EndGameCommand
+  fullName: MyProject.DefenseGame.Application.Commands.EndGameCommand
+- uid: MyProject.DefenseGame.Application.Commands.EndGameResult
+  commentId: T:MyProject.DefenseGame.Application.Commands.EndGameResult
+  parent: MyProject.DefenseGame.Application.Commands
+  href: MyProject.DefenseGame.Application.Commands.EndGameResult.html
+  name: EndGameResult
+  nameWithType: EndGameResult
+  fullName: MyProject.DefenseGame.Application.Commands.EndGameResult
+- uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+  commentId: T:MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+  parent: MyProject.DefenseGame.Application.Commands
+  href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  name: DefenseCommandResult
+  nameWithType: DefenseCommandResult
+  fullName: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+- uid: MyProject.DefenseGame.Application.Commands
+  commentId: N:MyProject.DefenseGame.Application.Commands
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application.Commands
+  nameWithType: MyProject.DefenseGame.Application.Commands
+  fullName: MyProject.DefenseGame.Application.Commands
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application.Commands
+    name: Commands
+    href: MyProject.DefenseGame.Application.Commands.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application.Commands
+    name: Commands
+    href: MyProject.DefenseGame.Application.Commands.html

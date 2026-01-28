@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.Bootstrap.DefenseGameBootstrapper
+  commentId: T:MyProject.Common.Bootstrap.DefenseGameBootstrapper
+  id: DefenseGameBootstrapper
+  parent: MyProject.Common.Bootstrap
+  children:
+  - MyProject.Common.Bootstrap.DefenseGameBootstrapper.OnInit
+  langs:
+  - csharp
+  - vb
+  name: DefenseGameBootstrapper
+  nameWithType: DefenseGameBootstrapper
+  fullName: MyProject.Common.Bootstrap.DefenseGameBootstrapper
+  type: Class
+  namespace: MyProject.Common.Bootstrap
+  summary: 게임 모드를 생성하고 수명주기를 제어하는 부트스트래퍼입니다.
+  example: []
+  syntax:
+    content: 'public class DefenseGameBootstrapper : BootstrapperBase'
+    content.vb: Public Class DefenseGameBootstrapper Inherits BootstrapperBase
+  inheritance:
+  - System.Object
+  - MyProject.Common.Bootstrap.BootstrapperBase
+  inheritedMembers:
+  - MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
+  - MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy
+- uid: MyProject.Common.Bootstrap.DefenseGameBootstrapper.OnInit
+  commentId: M:MyProject.Common.Bootstrap.DefenseGameBootstrapper.OnInit
+  id: OnInit
+  parent: MyProject.Common.Bootstrap.DefenseGameBootstrapper
+  langs:
+  - csharp
+  - vb
+  name: OnInit()
+  nameWithType: DefenseGameBootstrapper.OnInit()
+  fullName: MyProject.Common.Bootstrap.DefenseGameBootstrapper.OnInit()
+  type: Method
+  namespace: MyProject.Common.Bootstrap
+  example: []
+  syntax:
+    content: protected override void OnInit()
+    content.vb: Protected Overrides Sub OnInit()
+  overridden: MyProject.Common.Bootstrap.BootstrapperBase.OnInit
+  overload: MyProject.Common.Bootstrap.DefenseGameBootstrapper.OnInit*
+references:
+- uid: MyProject.Common.Bootstrap
+  commentId: N:MyProject.Common.Bootstrap
+  href: MyProject.html
+  name: MyProject.Common.Bootstrap
+  nameWithType: MyProject.Common.Bootstrap
+  fullName: MyProject.Common.Bootstrap
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Bootstrap
+    name: Bootstrap
+    href: MyProject.Common.Bootstrap.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.Bootstrap
+    name: Bootstrap
+    href: MyProject.Common.Bootstrap.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.Common.Bootstrap.BootstrapperBase
+  commentId: T:MyProject.Common.Bootstrap.BootstrapperBase
+  parent: MyProject.Common.Bootstrap
+  href: MyProject.Common.Bootstrap.BootstrapperBase.html
+  name: BootstrapperBase
+  nameWithType: BootstrapperBase
+  fullName: MyProject.Common.Bootstrap.BootstrapperBase
+- uid: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
+  commentId: M:MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
+  parent: MyProject.Common.Bootstrap.BootstrapperBase
+  isExternal: true
+  href: MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_CreateManager_MonoBehaviour_
+  name: CreateManager(MonoBehaviour)
+  nameWithType: BootstrapperBase.CreateManager(MonoBehaviour)
+  fullName: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
+  spec.csharp:
+  - uid: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
+    name: CreateManager
+    href: MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_CreateManager_MonoBehaviour_
+  - name: (
+  - uid: MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
+    name: CreateManager
+    href: MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_CreateManager_MonoBehaviour_
+  - name: (
+  - uid: MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: )
+- uid: MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy
+  commentId: M:MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy
+  parent: MyProject.Common.Bootstrap.BootstrapperBase
+  href: MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_OnDestroy
+  name: OnDestroy()
+  nameWithType: BootstrapperBase.OnDestroy()
+  fullName: MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy()
+  spec.csharp:
+  - uid: MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy
+    name: OnDestroy
+    href: MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Bootstrap.BootstrapperBase.OnDestroy
+    name: OnDestroy
+    href: MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_OnDestroy
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.Bootstrap.BootstrapperBase.OnInit
+  commentId: M:MyProject.Common.Bootstrap.BootstrapperBase.OnInit
+  parent: MyProject.Common.Bootstrap.BootstrapperBase
+  href: MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_OnInit
+  name: OnInit()
+  nameWithType: BootstrapperBase.OnInit()
+  fullName: MyProject.Common.Bootstrap.BootstrapperBase.OnInit()
+  spec.csharp:
+  - uid: MyProject.Common.Bootstrap.BootstrapperBase.OnInit
+    name: OnInit
+    href: MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_OnInit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.Bootstrap.BootstrapperBase.OnInit
+    name: OnInit
+    href: MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_OnInit
+  - name: (
+  - name: )
+- uid: MyProject.Common.Bootstrap.DefenseGameBootstrapper.OnInit*
+  commentId: Overload:MyProject.Common.Bootstrap.DefenseGameBootstrapper.OnInit
+  href: MyProject.Common.Bootstrap.DefenseGameBootstrapper.html#MyProject_Common_Bootstrap_DefenseGameBootstrapper_OnInit
+  name: OnInit
+  nameWithType: DefenseGameBootstrapper.OnInit
+  fullName: MyProject.Common.Bootstrap.DefenseGameBootstrapper.OnInit

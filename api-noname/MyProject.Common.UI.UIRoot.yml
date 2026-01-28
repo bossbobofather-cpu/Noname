@@ -230,6 +230,7 @@ references:
   nameWithType: UIRoot.UICamera
   fullName: MyProject.Common.UI.UIRoot.UICamera
 - uid: Camera
+  commentId: '!:Camera'
   isExternal: true
   name: Camera
   nameWithType: Camera

@@ -1,0 +1,83 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+  commentId: T:MyProject.DefenseGame.Application.Commands.DefenseCommand
+  id: DefenseCommand
+  parent: MyProject.DefenseGame.Application.Commands
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: DefenseCommand
+  nameWithType: DefenseCommand
+  fullName: MyProject.DefenseGame.Application.Commands.DefenseCommand
+  type: Class
+  namespace: MyProject.DefenseGame.Application.Commands
+  summary: DefenseGame용 Command 기본 타입입니다.
+  example: []
+  syntax:
+    content: 'public abstract class DefenseCommand : GameCommandBase'
+    content.vb: Public MustInherit Class DefenseCommand Inherits GameCommandBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - MyProject.DefenseGame.Application.Commands.EndGameCommand
+  - MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityCommand
+  - MyProject.DefenseGame.Application.Commands.StartGameCommand
+references:
+- uid: MyProject.DefenseGame.Application.Commands
+  commentId: N:MyProject.DefenseGame.Application.Commands
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application.Commands
+  nameWithType: MyProject.DefenseGame.Application.Commands
+  fullName: MyProject.DefenseGame.Application.Commands
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application.Commands
+    name: Commands
+    href: MyProject.DefenseGame.Application.Commands.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application.Commands
+    name: Commands
+    href: MyProject.DefenseGame.Application.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

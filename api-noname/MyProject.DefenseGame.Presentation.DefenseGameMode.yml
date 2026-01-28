@@ -1,0 +1,1226 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Presentation.DefenseGameMode
+  commentId: T:MyProject.DefenseGame.Presentation.DefenseGameMode
+  id: DefenseGameMode
+  parent: MyProject.DefenseGame.Presentation
+  children:
+  - MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  - MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
+  - MyProject.DefenseGame.Presentation.DefenseGameMode.OnInitialize
+  langs:
+  - csharp
+  - vb
+  name: DefenseGameMode
+  nameWithType: DefenseGameMode
+  fullName: MyProject.DefenseGame.Presentation.DefenseGameMode
+  type: Class
+  namespace: MyProject.DefenseGame.Presentation
+  summary: >-
+    디펜스 게임 뷰입니다.
+
+    호스트 이벤트를 수신하여 로그 출력 및 UI 업데이트를 수행합니다.
+  example: []
+  syntax:
+    content: 'public class DefenseGameMode : GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>, IGameMode'
+    content.vb: Public Class DefenseGameMode Inherits GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot) Implements IGameMode
+  inheritance:
+  - System.Object
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  implements:
+  - MyProject.Common.GameMode.IGameMode
+  inheritedMembers:
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Host
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Modules
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SceneBus
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent})
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StartupModule
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.ShutdownModule
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.GetModule``1
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Subscribe``1(System.Action{{TEventContext}})
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Unsubscribe``1(System.Action{{TEventContext}})
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Publish``1({TEventContext})
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnDestroy
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnInitialize
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnStartup
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnShutdown
+- uid: MyProject.DefenseGame.Presentation.DefenseGameMode.OnInitialize
+  commentId: M:MyProject.DefenseGame.Presentation.DefenseGameMode.OnInitialize
+  id: OnInitialize
+  parent: MyProject.DefenseGame.Presentation.DefenseGameMode
+  langs:
+  - csharp
+  - vb
+  name: OnInitialize()
+  nameWithType: DefenseGameMode.OnInitialize()
+  fullName: MyProject.DefenseGame.Presentation.DefenseGameMode.OnInitialize()
+  type: Method
+  namespace: MyProject.DefenseGame.Presentation
+  summary: 모듈 초기화 완료 후 호출됩니다.
+  example: []
+  syntax:
+    content: protected override void OnInitialize()
+    content.vb: Protected Overrides Sub OnInitialize()
+  overridden: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnInitialize
+  overload: MyProject.DefenseGame.Presentation.DefenseGameMode.OnInitialize*
+- uid: MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
+  commentId: M:MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
+  id: OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
+  parent: MyProject.DefenseGame.Presentation.DefenseGameMode
+  langs:
+  - csharp
+  - vb
+  name: OnHostResult(DefenseCommandResult)
+  nameWithType: DefenseGameMode.OnHostResult(DefenseCommandResult)
+  fullName: MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
+  type: Method
+  namespace: MyProject.DefenseGame.Presentation
+  summary: 호스트 결과를 처리합니다.
+  example: []
+  syntax:
+    content: protected override void OnHostResult(DefenseCommandResult result)
+    parameters:
+    - id: result
+      type: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+    content.vb: Protected Overrides Sub OnHostResult(result As DefenseCommandResult)
+  overridden: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
+  overload: MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostResult*
+- uid: MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  commentId: M:MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  id: OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  parent: MyProject.DefenseGame.Presentation.DefenseGameMode
+  langs:
+  - csharp
+  - vb
+  name: OnHostEvent(DefenseHostEvent)
+  nameWithType: DefenseGameMode.OnHostEvent(DefenseHostEvent)
+  fullName: MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  type: Method
+  namespace: MyProject.DefenseGame.Presentation
+  summary: 호스트 이벤트를 처리합니다.
+  example: []
+  syntax:
+    content: protected override void OnHostEvent(DefenseHostEvent evt)
+    parameters:
+    - id: evt
+      type: MyProject.DefenseGame.Application.DefenseHostEvent
+    content.vb: Protected Overrides Sub OnHostEvent(evt As DefenseHostEvent)
+  overridden: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  overload: MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostEvent*
+references:
+- uid: MyProject.DefenseGame.Presentation
+  commentId: N:MyProject.DefenseGame.Presentation
+  href: MyProject.html
+  name: MyProject.DefenseGame.Presentation
+  nameWithType: MyProject.DefenseGame.Presentation
+  fullName: MyProject.DefenseGame.Presentation
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Presentation
+    name: Presentation
+    href: MyProject.DefenseGame.Presentation.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Presentation
+    name: Presentation
+    href: MyProject.DefenseGame.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  commentId: T:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  parent: MyProject.Common.GameMode
+  definition: MyProject.Common.GameMode.GameMode`4
+  href: MyProject.Common.GameMode.GameMode-4.html
+  name: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot)
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot)
+  name.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot)
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4
+    name: GameMode
+    href: MyProject.Common.GameMode.GameMode-4.html
+  - name: <
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+    name: DefenseCommand
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+    name: DefenseCommandResult
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostSnapshot
+    name: DefenseHostSnapshot
+    href: MyProject.DefenseGame.Application.DefenseHostSnapshot.html
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4
+    name: GameMode
+    href: MyProject.Common.GameMode.GameMode-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+    name: DefenseCommand
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+    name: DefenseCommandResult
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostSnapshot
+    name: DefenseHostSnapshot
+    href: MyProject.DefenseGame.Application.DefenseHostSnapshot.html
+  - name: )
+- uid: MyProject.Common.GameMode.IGameMode
+  commentId: T:MyProject.Common.GameMode.IGameMode
+  parent: MyProject.Common.GameMode
+  href: MyProject.Common.GameMode.IGameMode.html
+  name: IGameMode
+  nameWithType: IGameMode
+  fullName: MyProject.Common.GameMode.IGameMode
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Host
+  commentId: P:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Host
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.Host
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Host
+  name: Host
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.Host
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.Host
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).Host
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).Host
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Modules
+  commentId: P:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Modules
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.Modules
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Modules
+  name: Modules
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.Modules
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.Modules
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).Modules
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).Modules
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SceneBus
+  commentId: P:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SceneBus
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.SceneBus
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_SceneBus
+  name: SceneBus
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.SceneBus
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.SceneBus
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).SceneBus
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).SceneBus
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent})
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent})
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
+  name: Initialize(IHostCommandBus<DefenseCommand, DefenseCommandResult, DefenseHostEvent>)
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.Initialize(IHostCommandBus<DefenseCommand, DefenseCommandResult, DefenseHostEvent>)
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.Initialize(IHostCommandBus<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent>)
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).Initialize(IHostCommandBus(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent))
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).Initialize(IHostCommandBus(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent))
+  name.vb: Initialize(IHostCommandBus(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent))
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent})
+    name: Initialize
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
+  - name: (
+  - uid: IHostCommandBus`3
+    name: IHostCommandBus
+    isExternal: true
+  - name: <
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+    name: DefenseCommand
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+    name: DefenseCommandResult
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent})
+    name: Initialize
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
+  - name: (
+  - uid: IHostCommandBus`3
+    name: IHostCommandBus
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+    name: DefenseCommand
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+    name: DefenseCommandResult
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: )
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.OnHostResult(`1)
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnHostResult__1_
+  name: OnHostResult(DefenseCommandResult)
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.OnHostResult(DefenseCommandResult)
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).OnHostResult(DefenseCommandResult)
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
+    name: OnHostResult
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnHostResult__1_
+  - name: (
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+    name: DefenseCommandResult
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
+    name: OnHostResult
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnHostResult__1_
+  - name: (
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+    name: DefenseCommandResult
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.OnHostEvent(`2)
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnHostEvent__2_
+  name: OnHostEvent(DefenseHostEvent)
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.OnHostEvent(DefenseHostEvent)
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).OnHostEvent(DefenseHostEvent)
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+    name: OnHostEvent
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnHostEvent__2_
+  - name: (
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+    name: OnHostEvent
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnHostEvent__2_
+  - name: (
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StartupModule
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StartupModule
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.StartupModule
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_StartupModule
+  name: StartupModule()
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.StartupModule()
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.StartupModule()
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).StartupModule()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).StartupModule()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StartupModule
+    name: StartupModule
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_StartupModule
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StartupModule
+    name: StartupModule
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_StartupModule
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.ShutdownModule
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.ShutdownModule
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.ShutdownModule
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_ShutdownModule
+  name: ShutdownModule()
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.ShutdownModule()
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.ShutdownModule()
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).ShutdownModule()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).ShutdownModule()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.ShutdownModule
+    name: ShutdownModule
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_ShutdownModule
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.ShutdownModule
+    name: ShutdownModule
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_ShutdownModule
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.GetModule``1
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.GetModule``1
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.GetModule``1
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_GetModule__1
+  name: GetModule<T>()
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.GetModule<T>()
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.GetModule<T>()
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).GetModule(Of T)()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).GetModule(Of T)()
+  name.vb: GetModule(Of T)()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.GetModule``1
+    name: GetModule
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_GetModule__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.GetModule``1
+    name: GetModule
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_GetModule__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Subscribe``1(System.Action{{TEventContext}})
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Subscribe``1(System.Action{``0})
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.Subscribe``1(System.Action{``0})
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Subscribe__1_System_Action___0__
+  name: Subscribe<TEventContext>(Action<TEventContext>)
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.Subscribe<TEventContext>(Action<TEventContext>)
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.Subscribe<TEventContext>(System.Action<TEventContext>)
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).Subscribe(Of TEventContext)(Action(Of TEventContext))
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).Subscribe(Of TEventContext)(System.Action(Of TEventContext))
+  name.vb: Subscribe(Of TEventContext)(Action(Of TEventContext))
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Subscribe``1(System.Action{``0})
+    name: Subscribe
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Subscribe__1_System_Action___0__
+  - name: <
+  - name: TEventContext
+  - name: '>'
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TEventContext
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Subscribe``1(System.Action{``0})
+    name: Subscribe
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Subscribe__1_System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventContext
+  - name: )
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventContext
+  - name: )
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Unsubscribe``1(System.Action{{TEventContext}})
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Unsubscribe``1(System.Action{``0})
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.Unsubscribe``1(System.Action{``0})
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Unsubscribe__1_System_Action___0__
+  name: Unsubscribe<TEventContext>(Action<TEventContext>)
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.Unsubscribe<TEventContext>(Action<TEventContext>)
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.Unsubscribe<TEventContext>(System.Action<TEventContext>)
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).Unsubscribe(Of TEventContext)(Action(Of TEventContext))
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).Unsubscribe(Of TEventContext)(System.Action(Of TEventContext))
+  name.vb: Unsubscribe(Of TEventContext)(Action(Of TEventContext))
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Unsubscribe``1(System.Action{``0})
+    name: Unsubscribe
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Unsubscribe__1_System_Action___0__
+  - name: <
+  - name: TEventContext
+  - name: '>'
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TEventContext
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Unsubscribe``1(System.Action{``0})
+    name: Unsubscribe
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Unsubscribe__1_System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventContext
+  - name: )
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventContext
+  - name: )
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Publish``1({TEventContext})
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Publish``1(``0)
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.Publish``1(``0)
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Publish__1___0_
+  name: Publish<TEventContext>(TEventContext)
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.Publish<TEventContext>(TEventContext)
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.Publish<TEventContext>(TEventContext)
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).Publish(Of TEventContext)(TEventContext)
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).Publish(Of TEventContext)(TEventContext)
+  name.vb: Publish(Of TEventContext)(TEventContext)
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Publish``1(``0)
+    name: Publish
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Publish__1___0_
+  - name: <
+  - name: TEventContext
+  - name: '>'
+  - name: (
+  - name: TEventContext
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Publish``1(``0)
+    name: Publish
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Publish__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventContext
+  - name: )
+  - name: (
+  - name: TEventContext
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnDestroy
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnDestroy
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.OnDestroy
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnDestroy
+  name: OnDestroy()
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.OnDestroy()
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.OnDestroy()
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).OnDestroy()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).OnDestroy()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnDestroy
+    name: OnDestroy
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnDestroy
+    name: OnDestroy
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnDestroy
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnInitialize
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnInitialize
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.OnInitialize
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnInitialize
+  name: OnInitialize()
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.OnInitialize()
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.OnInitialize()
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).OnInitialize()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).OnInitialize()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnInitialize
+    name: OnInitialize
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnInitialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnInitialize
+    name: OnInitialize
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnInitialize
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnStartup
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnStartup
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.OnStartup
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnStartup
+  name: OnStartup()
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.OnStartup()
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.OnStartup()
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).OnStartup()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).OnStartup()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnStartup
+    name: OnStartup
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnStartup
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnStartup
+    name: OnStartup
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnStartup
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnShutdown
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnShutdown
+  parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: MyProject.Common.GameMode.GameMode`4.OnShutdown
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnShutdown
+  name: OnShutdown()
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.OnShutdown()
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.OnShutdown()
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).OnShutdown()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).OnShutdown()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnShutdown
+    name: OnShutdown
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnShutdown
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnShutdown
+    name: OnShutdown
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnShutdown
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.GameMode.GameMode`4
+  commentId: T:MyProject.Common.GameMode.GameMode`4
+  href: MyProject.Common.GameMode.GameMode-4.html
+  name: GameMode<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4
+    name: GameMode
+    href: MyProject.Common.GameMode.GameMode-4.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4
+    name: GameMode
+    href: MyProject.Common.GameMode.GameMode-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
+- uid: MyProject.Common.GameMode
+  commentId: N:MyProject.Common.GameMode
+  href: MyProject.html
+  name: MyProject.Common.GameMode
+  nameWithType: MyProject.Common.GameMode
+  fullName: MyProject.Common.GameMode
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.html
+- uid: MyProject.Common.GameMode.GameMode`4.Host
+  commentId: P:MyProject.Common.GameMode.GameMode`4.Host
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Host
+  name: Host
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Host
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Host
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
+- uid: MyProject.Common.GameMode.GameMode`4.Modules
+  commentId: P:MyProject.Common.GameMode.GameMode`4.Modules
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Modules
+  name: Modules
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Modules
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Modules
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Modules
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Modules
+- uid: MyProject.Common.GameMode.GameMode`4.SceneBus
+  commentId: P:MyProject.Common.GameMode.GameMode`4.SceneBus
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_SceneBus
+  name: SceneBus
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.SceneBus
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.SceneBus
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).SceneBus
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).SceneBus
+- uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
+  commentId: M:MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
+  isExternal: true
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
+  name: Initialize(IHostCommandBus<TCommand, TResult, TEvent>)
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent>)
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent>)
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent))
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent))
+  name.vb: Initialize(IHostCommandBus(Of TCommand, TResult, TEvent))
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
+    name: Initialize
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
+  - name: (
+  - uid: IHostCommandBus`3
+    name: IHostCommandBus
+    isExternal: true
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
+    name: Initialize
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
+  - name: (
+  - uid: IHostCommandBus`3
+    name: IHostCommandBus
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: )
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode`4.OnHostResult(`1)
+  commentId: M:MyProject.Common.GameMode.GameMode`4.OnHostResult(`1)
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnHostResult__1_
+  name: OnHostResult(TResult)
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.OnHostResult(TResult)
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.OnHostResult(TResult)
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).OnHostResult(TResult)
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).OnHostResult(TResult)
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4.OnHostResult(`1)
+    name: OnHostResult
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnHostResult__1_
+  - name: (
+  - name: TResult
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4.OnHostResult(`1)
+    name: OnHostResult
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnHostResult__1_
+  - name: (
+  - name: TResult
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode`4.OnHostEvent(`2)
+  commentId: M:MyProject.Common.GameMode.GameMode`4.OnHostEvent(`2)
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnHostEvent__2_
+  name: OnHostEvent(TEvent)
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.OnHostEvent(TEvent)
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.OnHostEvent(TEvent)
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).OnHostEvent(TEvent)
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).OnHostEvent(TEvent)
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4.OnHostEvent(`2)
+    name: OnHostEvent
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnHostEvent__2_
+  - name: (
+  - name: TEvent
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4.OnHostEvent(`2)
+    name: OnHostEvent
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnHostEvent__2_
+  - name: (
+  - name: TEvent
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode`4.StartupModule
+  commentId: M:MyProject.Common.GameMode.GameMode`4.StartupModule
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_StartupModule
+  name: StartupModule()
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.StartupModule()
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.StartupModule()
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).StartupModule()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).StartupModule()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4.StartupModule
+    name: StartupModule
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_StartupModule
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4.StartupModule
+    name: StartupModule
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_StartupModule
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode`4.ShutdownModule
+  commentId: M:MyProject.Common.GameMode.GameMode`4.ShutdownModule
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_ShutdownModule
+  name: ShutdownModule()
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.ShutdownModule()
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.ShutdownModule()
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).ShutdownModule()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).ShutdownModule()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4.ShutdownModule
+    name: ShutdownModule
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_ShutdownModule
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4.ShutdownModule
+    name: ShutdownModule
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_ShutdownModule
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode`4.GetModule``1
+  commentId: M:MyProject.Common.GameMode.GameMode`4.GetModule``1
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_GetModule__1
+  name: GetModule<T>()
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.GetModule<T>()
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.GetModule<T>()
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).GetModule(Of T)()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).GetModule(Of T)()
+  name.vb: GetModule(Of T)()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4.GetModule``1
+    name: GetModule
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_GetModule__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4.GetModule``1
+    name: GetModule
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_GetModule__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode`4.Subscribe``1(System.Action{``0})
+  commentId: M:MyProject.Common.GameMode.GameMode`4.Subscribe``1(System.Action{``0})
+  isExternal: true
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Subscribe__1_System_Action___0__
+  name: Subscribe<TEventContext>(Action<TEventContext>)
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Subscribe<TEventContext>(Action<TEventContext>)
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Subscribe<TEventContext>(System.Action<TEventContext>)
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Subscribe(Of TEventContext)(Action(Of TEventContext))
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Subscribe(Of TEventContext)(System.Action(Of TEventContext))
+  name.vb: Subscribe(Of TEventContext)(Action(Of TEventContext))
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4.Subscribe``1(System.Action{``0})
+    name: Subscribe
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Subscribe__1_System_Action___0__
+  - name: <
+  - name: TEventContext
+  - name: '>'
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TEventContext
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4.Subscribe``1(System.Action{``0})
+    name: Subscribe
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Subscribe__1_System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventContext
+  - name: )
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventContext
+  - name: )
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode`4.Unsubscribe``1(System.Action{``0})
+  commentId: M:MyProject.Common.GameMode.GameMode`4.Unsubscribe``1(System.Action{``0})
+  isExternal: true
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Unsubscribe__1_System_Action___0__
+  name: Unsubscribe<TEventContext>(Action<TEventContext>)
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Unsubscribe<TEventContext>(Action<TEventContext>)
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Unsubscribe<TEventContext>(System.Action<TEventContext>)
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Unsubscribe(Of TEventContext)(Action(Of TEventContext))
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Unsubscribe(Of TEventContext)(System.Action(Of TEventContext))
+  name.vb: Unsubscribe(Of TEventContext)(Action(Of TEventContext))
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4.Unsubscribe``1(System.Action{``0})
+    name: Unsubscribe
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Unsubscribe__1_System_Action___0__
+  - name: <
+  - name: TEventContext
+  - name: '>'
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TEventContext
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4.Unsubscribe``1(System.Action{``0})
+    name: Unsubscribe
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Unsubscribe__1_System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventContext
+  - name: )
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventContext
+  - name: )
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode`4.Publish``1(``0)
+  commentId: M:MyProject.Common.GameMode.GameMode`4.Publish``1(``0)
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Publish__1___0_
+  name: Publish<TEventContext>(TEventContext)
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Publish<TEventContext>(TEventContext)
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Publish<TEventContext>(TEventContext)
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Publish(Of TEventContext)(TEventContext)
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Publish(Of TEventContext)(TEventContext)
+  name.vb: Publish(Of TEventContext)(TEventContext)
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4.Publish``1(``0)
+    name: Publish
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Publish__1___0_
+  - name: <
+  - name: TEventContext
+  - name: '>'
+  - name: (
+  - name: TEventContext
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4.Publish``1(``0)
+    name: Publish
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Publish__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventContext
+  - name: )
+  - name: (
+  - name: TEventContext
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode`4.OnDestroy
+  commentId: M:MyProject.Common.GameMode.GameMode`4.OnDestroy
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnDestroy
+  name: OnDestroy()
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.OnDestroy()
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.OnDestroy()
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).OnDestroy()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).OnDestroy()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4.OnDestroy
+    name: OnDestroy
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4.OnDestroy
+    name: OnDestroy
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnDestroy
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode`4.OnInitialize
+  commentId: M:MyProject.Common.GameMode.GameMode`4.OnInitialize
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnInitialize
+  name: OnInitialize()
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.OnInitialize()
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.OnInitialize()
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).OnInitialize()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).OnInitialize()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4.OnInitialize
+    name: OnInitialize
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnInitialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4.OnInitialize
+    name: OnInitialize
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnInitialize
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode`4.OnStartup
+  commentId: M:MyProject.Common.GameMode.GameMode`4.OnStartup
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnStartup
+  name: OnStartup()
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.OnStartup()
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.OnStartup()
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).OnStartup()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).OnStartup()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4.OnStartup
+    name: OnStartup
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnStartup
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4.OnStartup
+    name: OnStartup
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnStartup
+  - name: (
+  - name: )
+- uid: MyProject.Common.GameMode.GameMode`4.OnShutdown
+  commentId: M:MyProject.Common.GameMode.GameMode`4.OnShutdown
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnShutdown
+  name: OnShutdown()
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.OnShutdown()
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.OnShutdown()
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).OnShutdown()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).OnShutdown()
+  spec.csharp:
+  - uid: MyProject.Common.GameMode.GameMode`4.OnShutdown
+    name: OnShutdown
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnShutdown
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.Common.GameMode.GameMode`4.OnShutdown
+    name: OnShutdown
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnShutdown
+  - name: (
+  - name: )
+- uid: MyProject.DefenseGame.Presentation.DefenseGameMode.OnInitialize*
+  commentId: Overload:MyProject.DefenseGame.Presentation.DefenseGameMode.OnInitialize
+  href: MyProject.DefenseGame.Presentation.DefenseGameMode.html#MyProject_DefenseGame_Presentation_DefenseGameMode_OnInitialize
+  name: OnInitialize
+  nameWithType: DefenseGameMode.OnInitialize
+  fullName: MyProject.DefenseGame.Presentation.DefenseGameMode.OnInitialize
+- uid: MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostResult*
+  commentId: Overload:MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostResult
+  href: MyProject.DefenseGame.Presentation.DefenseGameMode.html#MyProject_DefenseGame_Presentation_DefenseGameMode_OnHostResult_MyProject_DefenseGame_Application_Commands_DefenseCommandResult_
+  name: OnHostResult
+  nameWithType: DefenseGameMode.OnHostResult
+  fullName: MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostResult
+- uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+  commentId: T:MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+  parent: MyProject.DefenseGame.Application.Commands
+  href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  name: DefenseCommandResult
+  nameWithType: DefenseCommandResult
+  fullName: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+- uid: MyProject.DefenseGame.Application.Commands
+  commentId: N:MyProject.DefenseGame.Application.Commands
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application.Commands
+  nameWithType: MyProject.DefenseGame.Application.Commands
+  fullName: MyProject.DefenseGame.Application.Commands
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application.Commands
+    name: Commands
+    href: MyProject.DefenseGame.Application.Commands.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application.Commands
+    name: Commands
+    href: MyProject.DefenseGame.Application.Commands.html
+- uid: MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostEvent*
+  commentId: Overload:MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostEvent
+  href: MyProject.DefenseGame.Presentation.DefenseGameMode.html#MyProject_DefenseGame_Presentation_DefenseGameMode_OnHostEvent_MyProject_DefenseGame_Application_DefenseHostEvent_
+  name: OnHostEvent
+  nameWithType: DefenseGameMode.OnHostEvent
+  fullName: MyProject.DefenseGame.Presentation.DefenseGameMode.OnHostEvent
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html

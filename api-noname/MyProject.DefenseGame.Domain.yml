@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Domain
+  commentId: N:MyProject.DefenseGame.Domain
+  id: MyProject.DefenseGame.Domain
+  children:
+  - MyProject.DefenseGame.Domain.DefenseAbilityUtility
+  - MyProject.DefenseGame.Domain.DefenseAttributeIds
+  - MyProject.DefenseGame.Domain.DefenseCombatState
+  - MyProject.DefenseGame.Domain.DefenseEntity
+  - MyProject.DefenseGame.Domain.DefenseHostConfig
+  - MyProject.DefenseGame.Domain.DefenseMonster
+  - MyProject.DefenseGame.Domain.DefenseMonsterType
+  - MyProject.DefenseGame.Domain.DefensePlayer
+  - MyProject.DefenseGame.Domain.DefenseTags
+  - MyProject.DefenseGame.Domain.IAbilitySystemOwner
+  - MyProject.DefenseGame.Domain.MonsterAttributeIds
+  - MyProject.DefenseGame.Domain.PlayerAttributeIds
+  langs:
+  - csharp
+  - vb
+  name: MyProject.DefenseGame.Domain
+  nameWithType: MyProject.DefenseGame.Domain
+  fullName: MyProject.DefenseGame.Domain
+  type: Namespace
+references:
+- uid: MyProject.DefenseGame.Domain.DefenseAbilityUtility
+  commentId: T:MyProject.DefenseGame.Domain.DefenseAbilityUtility
+  href: MyProject.DefenseGame.Domain.DefenseAbilityUtility.html
+  name: DefenseAbilityUtility
+  nameWithType: DefenseAbilityUtility
+  fullName: MyProject.DefenseGame.Domain.DefenseAbilityUtility
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState
+  commentId: T:MyProject.DefenseGame.Domain.DefenseCombatState
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html
+  name: DefenseCombatState
+  nameWithType: DefenseCombatState
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState
+- uid: MyProject.DefenseGame.Domain.DefenseAttributeIds
+  commentId: T:MyProject.DefenseGame.Domain.DefenseAttributeIds
+  href: MyProject.DefenseGame.Domain.DefenseAttributeIds.html
+  name: DefenseAttributeIds
+  nameWithType: DefenseAttributeIds
+  fullName: MyProject.DefenseGame.Domain.DefenseAttributeIds
+- uid: MyProject.DefenseGame.Domain.PlayerAttributeIds
+  commentId: T:MyProject.DefenseGame.Domain.PlayerAttributeIds
+  href: MyProject.DefenseGame.Domain.PlayerAttributeIds.html
+  name: PlayerAttributeIds
+  nameWithType: PlayerAttributeIds
+  fullName: MyProject.DefenseGame.Domain.PlayerAttributeIds
+- uid: MyProject.DefenseGame.Domain.MonsterAttributeIds
+  commentId: T:MyProject.DefenseGame.Domain.MonsterAttributeIds
+  href: MyProject.DefenseGame.Domain.MonsterAttributeIds.html
+  name: MonsterAttributeIds
+  nameWithType: MonsterAttributeIds
+  fullName: MyProject.DefenseGame.Domain.MonsterAttributeIds
+- uid: MyProject.DefenseGame.Domain.DefenseEntity
+  commentId: T:MyProject.DefenseGame.Domain.DefenseEntity
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html
+  name: DefenseEntity
+  nameWithType: DefenseEntity
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity
+- uid: MyProject.DefenseGame.Domain.DefenseMonsterType
+  commentId: T:MyProject.DefenseGame.Domain.DefenseMonsterType
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefenseMonsterType.html
+  name: DefenseMonsterType
+  nameWithType: DefenseMonsterType
+  fullName: MyProject.DefenseGame.Domain.DefenseMonsterType
+- uid: MyProject.DefenseGame.Domain.DefenseMonster
+  commentId: T:MyProject.DefenseGame.Domain.DefenseMonster
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefenseMonster.html
+  name: DefenseMonster
+  nameWithType: DefenseMonster
+  fullName: MyProject.DefenseGame.Domain.DefenseMonster
+- uid: MyProject.DefenseGame.Domain.DefensePlayer
+  commentId: T:MyProject.DefenseGame.Domain.DefensePlayer
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefensePlayer.html
+  name: DefensePlayer
+  nameWithType: DefensePlayer
+  fullName: MyProject.DefenseGame.Domain.DefensePlayer
+- uid: MyProject.DefenseGame.Domain.DefenseTags
+  commentId: T:MyProject.DefenseGame.Domain.DefenseTags
+  href: MyProject.DefenseGame.Domain.DefenseTags.html
+  name: DefenseTags
+  nameWithType: DefenseTags
+  fullName: MyProject.DefenseGame.Domain.DefenseTags
+- uid: MyProject.DefenseGame.Domain.IAbilitySystemOwner
+  commentId: T:MyProject.DefenseGame.Domain.IAbilitySystemOwner
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.IAbilitySystemOwner.html
+  name: IAbilitySystemOwner
+  nameWithType: IAbilitySystemOwner
+  fullName: MyProject.DefenseGame.Domain.IAbilitySystemOwner
+- uid: MyProject.DefenseGame.Domain.DefenseHostConfig
+  commentId: T:MyProject.DefenseGame.Domain.DefenseHostConfig
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefenseHostConfig.html
+  name: DefenseHostConfig
+  nameWithType: DefenseHostConfig
+  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig
+- uid: MyProject.DefenseGame.Domain
+  commentId: N:MyProject.DefenseGame.Domain
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain
+  nameWithType: MyProject.DefenseGame.Domain
+  fullName: MyProject.DefenseGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html

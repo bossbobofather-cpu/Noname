@@ -1,0 +1,202 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  id: LevelUpAbilityId
+  parent: MyProject.DefenseGame.Domain.LevelUp
+  children:
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttack
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttackTargetUp
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AttackSpeedUp
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.ExpGainUp
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.FullHealthRestore
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealAmountUp
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealOnKill
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.None
+  langs:
+  - csharp
+  - vb
+  name: LevelUpAbilityId
+  nameWithType: LevelUpAbilityId
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  type: Enum
+  namespace: MyProject.DefenseGame.Domain.LevelUp
+  summary: 레벨업 어빌리티 ID입니다.
+  example: []
+  syntax:
+    content: public enum LevelUpAbilityId
+    content.vb: Public Enum LevelUpAbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.None
+  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.None
+  id: None
+  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: LevelUpAbilityId.None
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.None
+  type: Field
+  namespace: MyProject.DefenseGame.Domain.LevelUp
+  syntax:
+    content: None = 0
+    return:
+      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.FullHealthRestore
+  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.FullHealthRestore
+  id: FullHealthRestore
+  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  langs:
+  - csharp
+  - vb
+  name: FullHealthRestore
+  nameWithType: LevelUpAbilityId.FullHealthRestore
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.FullHealthRestore
+  type: Field
+  namespace: MyProject.DefenseGame.Domain.LevelUp
+  syntax:
+    content: FullHealthRestore = 1
+    return:
+      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AttackSpeedUp
+  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AttackSpeedUp
+  id: AttackSpeedUp
+  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  langs:
+  - csharp
+  - vb
+  name: AttackSpeedUp
+  nameWithType: LevelUpAbilityId.AttackSpeedUp
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AttackSpeedUp
+  type: Field
+  namespace: MyProject.DefenseGame.Domain.LevelUp
+  syntax:
+    content: AttackSpeedUp = 2
+    return:
+      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.ExpGainUp
+  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.ExpGainUp
+  id: ExpGainUp
+  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  langs:
+  - csharp
+  - vb
+  name: ExpGainUp
+  nameWithType: LevelUpAbilityId.ExpGainUp
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.ExpGainUp
+  type: Field
+  namespace: MyProject.DefenseGame.Domain.LevelUp
+  syntax:
+    content: ExpGainUp = 3
+    return:
+      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttack
+  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttack
+  id: AreaAttack
+  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  langs:
+  - csharp
+  - vb
+  name: AreaAttack
+  nameWithType: LevelUpAbilityId.AreaAttack
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttack
+  type: Field
+  namespace: MyProject.DefenseGame.Domain.LevelUp
+  syntax:
+    content: AreaAttack = 4
+    return:
+      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealOnKill
+  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealOnKill
+  id: LifeStealOnKill
+  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  langs:
+  - csharp
+  - vb
+  name: LifeStealOnKill
+  nameWithType: LevelUpAbilityId.LifeStealOnKill
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealOnKill
+  type: Field
+  namespace: MyProject.DefenseGame.Domain.LevelUp
+  syntax:
+    content: LifeStealOnKill = 5
+    return:
+      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttackTargetUp
+  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttackTargetUp
+  id: AreaAttackTargetUp
+  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  langs:
+  - csharp
+  - vb
+  name: AreaAttackTargetUp
+  nameWithType: LevelUpAbilityId.AreaAttackTargetUp
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttackTargetUp
+  type: Field
+  namespace: MyProject.DefenseGame.Domain.LevelUp
+  syntax:
+    content: AreaAttackTargetUp = 6
+    return:
+      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealAmountUp
+  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealAmountUp
+  id: LifeStealAmountUp
+  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  langs:
+  - csharp
+  - vb
+  name: LifeStealAmountUp
+  nameWithType: LevelUpAbilityId.LifeStealAmountUp
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealAmountUp
+  type: Field
+  namespace: MyProject.DefenseGame.Domain.LevelUp
+  syntax:
+    content: LifeStealAmountUp = 7
+    return:
+      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+references:
+- uid: MyProject.DefenseGame.Domain.LevelUp
+  commentId: N:MyProject.DefenseGame.Domain.LevelUp
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain.LevelUp
+  nameWithType: MyProject.DefenseGame.Domain.LevelUp
+  fullName: MyProject.DefenseGame.Domain.LevelUp
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.LevelUp
+    name: LevelUp
+    href: MyProject.DefenseGame.Domain.LevelUp.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.LevelUp
+    name: LevelUp
+    href: MyProject.DefenseGame.Domain.LevelUp.html
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  parent: MyProject.DefenseGame.Domain.LevelUp
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
+  name: LevelUpAbilityId
+  nameWithType: LevelUpAbilityId
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId

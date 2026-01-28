@@ -116,13 +116,13 @@
 
 
   <a id="Noname_GameAbilitySystem_AbilityContext__ctor_" data-uid="Noname.GameAbilitySystem.AbilityContext.#ctor*"></a>
-  <h4 id="Noname_GameAbilitySystem_AbilityContext__ctor_Noname_GameAbilitySystem_FGameplayAbilitySpecHandle_Noname_GameAbilitySystem_GameplayEventData_Noname_GameAbilitySystem_AbilityTargetData_" data-uid="Noname.GameAbilitySystem.AbilityContext.#ctor(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.GameplayEventData,Noname.GameAbilitySystem.AbilityTargetData)">AbilityContext(FGameplayAbilitySpecHandle, GameplayEventData, AbilityTargetData)</h4>
+  <h4 id="Noname_GameAbilitySystem_AbilityContext__ctor_Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_Noname_GameAbilitySystem_Domain_GameplayTagEventData_Noname_GameAbilitySystem_Presentation_AbilityTargetData_" data-uid="Noname.GameAbilitySystem.AbilityContext.#ctor(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle,Noname.GameAbilitySystem.Domain.GameplayTagEventData,Noname.GameAbilitySystem.Presentation.AbilityTargetData)">AbilityContext(FGameplayAbilitySpecHandle, GameplayTagEventData, AbilityTargetData)</h4>
   <div class="markdown level1 summary"><p>어빌리티 실행에 필요한 데이터를 묶어 생성합니다.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AbilityContext(FGameplayAbilitySpecHandle handle, GameplayEventData eventData, AbilityTargetData targetData = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public AbilityContext(FGameplayAbilitySpecHandle handle, GameplayTagEventData eventData, AbilityTargetData targetData = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -135,19 +135,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.html">FGameplayAbilitySpecHandle</a></td>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html">FGameplayAbilitySpecHandle</a></td>
         <td><span class="parametername">handle</span></td>
         <td><p>실행 중인 어빌리티 스펙 핸들</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Noname.GameAbilitySystem.GameplayEventData.html">GameplayEventData</a></td>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayTagEventData.html">GameplayTagEventData</a></td>
         <td><span class="parametername">eventData</span></td>
         <td><p>트리거를 일으킨 이벤트 데이터</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Noname.GameAbilitySystem.AbilityTargetData.html">AbilityTargetData</a></td>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Presentation.AbilityTargetData.html">AbilityTargetData</a></td>
         <td><span class="parametername">targetData</span></td>
         <td><p>타겟팅 결과 데이터(없으면 null)</p>
 </td>
@@ -165,7 +165,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GameplayEventData EventData { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public GameplayTagEventData EventData { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -177,7 +177,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Noname.GameAbilitySystem.GameplayEventData.html">GameplayEventData</a></td>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayTagEventData.html">GameplayTagEventData</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -203,7 +203,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.html">FGameplayAbilitySpecHandle</a></td>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html">FGameplayAbilitySpecHandle</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -229,7 +229,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Noname.GameAbilitySystem.AbilityTargetData.html">AbilityTargetData</a></td>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Presentation.AbilityTargetData.html">AbilityTargetData</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -239,7 +239,7 @@
 
 
   <a id="Noname_GameAbilitySystem_AbilityContext_WithTargetData_" data-uid="Noname.GameAbilitySystem.AbilityContext.WithTargetData*"></a>
-  <h4 id="Noname_GameAbilitySystem_AbilityContext_WithTargetData_Noname_GameAbilitySystem_AbilityTargetData_" data-uid="Noname.GameAbilitySystem.AbilityContext.WithTargetData(Noname.GameAbilitySystem.AbilityTargetData)">WithTargetData(AbilityTargetData)</h4>
+  <h4 id="Noname_GameAbilitySystem_AbilityContext_WithTargetData_Noname_GameAbilitySystem_Presentation_AbilityTargetData_" data-uid="Noname.GameAbilitySystem.AbilityContext.WithTargetData(Noname.GameAbilitySystem.Presentation.AbilityTargetData)">WithTargetData(AbilityTargetData)</h4>
   <div class="markdown level1 summary"><p>타겟 데이터만 교체한 새 컨텍스트를 만듭니다.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -258,7 +258,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Noname.GameAbilitySystem.AbilityTargetData.html">AbilityTargetData</a></td>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Presentation.AbilityTargetData.html">AbilityTargetData</a></td>
         <td><span class="parametername">targetData</span></td>
         <td><p>새 타겟 데이터</p>
 </td>

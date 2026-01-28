@@ -1,0 +1,184 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.Commands.StartGameResult
+  commentId: T:MyProject.DefenseGame.Application.Commands.StartGameResult
+  id: StartGameResult
+  parent: MyProject.DefenseGame.Application.Commands
+  children:
+  - MyProject.DefenseGame.Application.Commands.StartGameResult.Fail(System.Int64,System.Int64,System.String)
+  - MyProject.DefenseGame.Application.Commands.StartGameResult.Ok(System.Int64,System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: StartGameResult
+  nameWithType: StartGameResult
+  fullName: MyProject.DefenseGame.Application.Commands.StartGameResult
+  type: Class
+  namespace: MyProject.DefenseGame.Application.Commands
+  summary: 게임 시작 Result입니다.
+  example: []
+  syntax:
+    content: 'public sealed class StartGameResult : DefenseCommandResult'
+    content.vb: Public NotInheritable Class StartGameResult Inherits DefenseCommandResult
+  inheritance:
+  - System.Object
+  - MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+- uid: MyProject.DefenseGame.Application.Commands.StartGameResult.Ok(System.Int64,System.Int64)
+  commentId: M:MyProject.DefenseGame.Application.Commands.StartGameResult.Ok(System.Int64,System.Int64)
+  id: Ok(System.Int64,System.Int64)
+  parent: MyProject.DefenseGame.Application.Commands.StartGameResult
+  langs:
+  - csharp
+  - vb
+  name: Ok(long, long)
+  nameWithType: StartGameResult.Ok(long, long)
+  fullName: MyProject.DefenseGame.Application.Commands.StartGameResult.Ok(long, long)
+  type: Method
+  namespace: MyProject.DefenseGame.Application.Commands
+  syntax:
+    content: public static StartGameResult Ok(long tick, long senderUid)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: senderUid
+      type: System.Int64
+    return:
+      type: MyProject.DefenseGame.Application.Commands.StartGameResult
+    content.vb: Public Shared Function Ok(tick As Long, senderUid As Long) As StartGameResult
+  overload: MyProject.DefenseGame.Application.Commands.StartGameResult.Ok*
+  nameWithType.vb: StartGameResult.Ok(Long, Long)
+  fullName.vb: MyProject.DefenseGame.Application.Commands.StartGameResult.Ok(Long, Long)
+  name.vb: Ok(Long, Long)
+- uid: MyProject.DefenseGame.Application.Commands.StartGameResult.Fail(System.Int64,System.Int64,System.String)
+  commentId: M:MyProject.DefenseGame.Application.Commands.StartGameResult.Fail(System.Int64,System.Int64,System.String)
+  id: Fail(System.Int64,System.Int64,System.String)
+  parent: MyProject.DefenseGame.Application.Commands.StartGameResult
+  langs:
+  - csharp
+  - vb
+  name: Fail(long, long, string)
+  nameWithType: StartGameResult.Fail(long, long, string)
+  fullName: MyProject.DefenseGame.Application.Commands.StartGameResult.Fail(long, long, string)
+  type: Method
+  namespace: MyProject.DefenseGame.Application.Commands
+  syntax:
+    content: public static StartGameResult Fail(long tick, long senderUid, string reason)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: senderUid
+      type: System.Int64
+    - id: reason
+      type: System.String
+    return:
+      type: MyProject.DefenseGame.Application.Commands.StartGameResult
+    content.vb: Public Shared Function Fail(tick As Long, senderUid As Long, reason As String) As StartGameResult
+  overload: MyProject.DefenseGame.Application.Commands.StartGameResult.Fail*
+  nameWithType.vb: StartGameResult.Fail(Long, Long, String)
+  fullName.vb: MyProject.DefenseGame.Application.Commands.StartGameResult.Fail(Long, Long, String)
+  name.vb: Fail(Long, Long, String)
+references:
+- uid: MyProject.DefenseGame.Application.Commands
+  commentId: N:MyProject.DefenseGame.Application.Commands
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application.Commands
+  nameWithType: MyProject.DefenseGame.Application.Commands
+  fullName: MyProject.DefenseGame.Application.Commands
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application.Commands
+    name: Commands
+    href: MyProject.DefenseGame.Application.Commands.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application.Commands
+    name: Commands
+    href: MyProject.DefenseGame.Application.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+  commentId: T:MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+  parent: MyProject.DefenseGame.Application.Commands
+  href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  name: DefenseCommandResult
+  nameWithType: DefenseCommandResult
+  fullName: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.Commands.StartGameResult.Ok*
+  commentId: Overload:MyProject.DefenseGame.Application.Commands.StartGameResult.Ok
+  href: MyProject.DefenseGame.Application.Commands.StartGameResult.html#MyProject_DefenseGame_Application_Commands_StartGameResult_Ok_System_Int64_System_Int64_
+  name: Ok
+  nameWithType: StartGameResult.Ok
+  fullName: MyProject.DefenseGame.Application.Commands.StartGameResult.Ok
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MyProject.DefenseGame.Application.Commands.StartGameResult
+  commentId: T:MyProject.DefenseGame.Application.Commands.StartGameResult
+  parent: MyProject.DefenseGame.Application.Commands
+  href: MyProject.DefenseGame.Application.Commands.StartGameResult.html
+  name: StartGameResult
+  nameWithType: StartGameResult
+  fullName: MyProject.DefenseGame.Application.Commands.StartGameResult
+- uid: MyProject.DefenseGame.Application.Commands.StartGameResult.Fail*
+  commentId: Overload:MyProject.DefenseGame.Application.Commands.StartGameResult.Fail
+  href: MyProject.DefenseGame.Application.Commands.StartGameResult.html#MyProject_DefenseGame_Application_Commands_StartGameResult_Fail_System_Int64_System_Int64_System_String_
+  name: Fail
+  nameWithType: StartGameResult.Fail
+  fullName: MyProject.DefenseGame.Application.Commands.StartGameResult.Fail
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

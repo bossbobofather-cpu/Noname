@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Concurrent;
 using System.Threading;
 using UnityEngine;
@@ -7,41 +7,111 @@ using Diagnostics = System.Diagnostics;
 namespace Noname.GameHost
 {
     /// <summary>
-    /// 게임 ?�스??기본 ?�래?�입?�다.
-    /// ?�버 �?게임 ?��??�이?�을 관리하�? ?�레???�전 커맨??처리, ?�벤???�스?�칭, ?�냅???�성???�공?�니??
+    /// 게임 호스트 기본 클래스입니다.
+    /// 서버/호스트 시뮬레이션을 관리하며 스레드 기반 커맨드 처리,
+    /// 이벤트 디스패치, 스냅샷 생성을 제공합니다.
     /// </summary>
     public abstract class GameHostBase<TCommand, TResult, TEvent, TSnapshot>
-    : IHostCommandBus<TCommand, TResult, TEvent>,
-    IGameHost<TCommand, TResult, TEvent, TSnapshot>,
-    IDisposable
+        : IHostCommandBus<TCommand, TResult, TEvent>,
+          IGameHost<TCommand, TResult, TEvent, TSnapshot>,
+          IDisposable
         where TCommand : GameCommandBase
         where TResult : GameCommandResultBase
         where TEvent : GameEventBase
         where TSnapshot : GameSnapshotBase
     {
+        /// <summary>
+        /// 처리 대기 중인 커맨드 큐입니다.
+        /// </summary>
         private readonly ConcurrentQueue<TCommand> _pendingCommands = new();
+
+        /// <summary>
+        /// 메인 스레드로 전달할 디스패치 큐입니다.
+        /// </summary>
         private readonly ConcurrentQueue<DispatchItem> _dispatchQueue = new();
+
+        /// <summary>
+        /// 스냅샷 큐입니다.
+        /// </summary>
         private readonly ConcurrentQueue<TSnapshot> _snapshotQueue = new();
+
+        /// <summary>
+        /// 라이프사이클 동기화용 락입니다.
+        /// </summary>
         private readonly object _lifecycleLock = new();
 
+        /// <summary>
+        /// 시뮬레이션 루프 스레드입니다.
+        /// </summary>
         private Thread _loopThread;
+
+        /// <summary>
+        /// 실행 여부입니다.
+        /// </summary>
         private bool _isRunning;
+
+        /// <summary>
+        /// Dispose 여부입니다.
+        /// </summary>
         private bool _disposed;
+
+        /// <summary>
+        /// 고정 스텝 시간입니다.
+        /// </summary>
         private float _fixedStep = 1f / 30f;
+
+        /// <summary>
+        /// 틱당 최대 스텝 수입니다.
+        /// </summary>
         private int _maxStepsPerTick = 8;
+
+        /// <summary>
+        /// 루프 대기 시간(ms)입니다.
+        /// </summary>
         private int _sleepMilliseconds = 1;
+
+        /// <summary>
+        /// 종료 대기 제한(ms)입니다.
+        /// </summary>
         private int _stopTimeoutMilliseconds = 5000;
+
+        /// <summary>
+        /// 스냅샷 생성 간격(초)입니다. 0이면 매 틱 생성합니다.
+        /// </summary>
         private float _snapshotInterval = 0f;
+
+        /// <summary>
+        /// 스냅샷 누적 시간입니다.
+        /// </summary>
         private double _snapshotAccumulator;
+
+        /// <summary>
+        /// 마지막으로 생성된 스냅샷입니다.
+        /// </summary>
         private TSnapshot _latestSnapshot;
+
+        /// <summary>
+        /// 루프 예외 캐시입니다.
+        /// </summary>
         private Exception _loopException;
 
+        /// <summary>
+        /// 현재 호스트 틱입니다.
+        /// </summary>
         public long Tick { get; private set; }
+
+        /// <summary>
+        /// 실행 상태입니다.
+        /// </summary>
         public bool IsRunning => _isRunning;
+
+        /// <summary>
+        /// 루프에서 발생한 예외입니다.
+        /// </summary>
         public Exception LoopException => _loopException;
 
         /// <summary>
-        /// 고정 ?��??�이???�?�스??�??�니??
+        /// 고정 스텝 시간입니다.
         /// </summary>
         public float FixedStep
         {
@@ -50,7 +120,7 @@ namespace Noname.GameHost
         }
 
         /// <summary>
-        /// ?�당 최�? ?��??�이???�텝 ?�입?�다. Spiral of Death�?방�??�니??
+        /// 틱당 최대 스텝 수입니다. Spiral of Death 방지를 위한 제한입니다.
         /// </summary>
         public int MaxStepsPerTick
         {
@@ -59,7 +129,7 @@ namespace Noname.GameHost
         }
 
         /// <summary>
-        /// ?��??�이????�??�립 ?�간(밀리초)?�니??
+        /// 루프 대기 시간(ms)입니다.
         /// </summary>
         public int SleepMilliseconds
         {
@@ -68,7 +138,7 @@ namespace Noname.GameHost
         }
 
         /// <summary>
-        /// ?��??�이???�레???��? ???�?�아??밀리초)?�니??
+        /// 종료 대기 제한(ms)입니다.
         /// </summary>
         public int StopTimeoutMilliseconds
         {
@@ -77,7 +147,7 @@ namespace Noname.GameHost
         }
 
         /// <summary>
-        /// ?�냅???�성 간격(�??�니?? 0?�면 �??�마???�성?�니??
+        /// 스냅샷 생성 간격(초)입니다. 0이면 매 틱 생성합니다.
         /// </summary>
         public float SnapshotInterval
         {
@@ -99,7 +169,7 @@ namespace Noname.GameHost
         }
 
         /// <summary>
-        /// 백그?�운???�레?�에???��??�이??루프�??�작?�니??
+        /// 백그라운드 스레드에서 시뮬레이션 루프를 시작합니다.
         /// </summary>
         public void StartSimulation()
         {
@@ -124,7 +194,7 @@ namespace Noname.GameHost
         }
 
         /// <summary>
-        /// ?��??�이??루프�??��??�고 ?�레?��? 종료???�까지 ?�기??�다.
+        /// 시뮬레이션 루프를 중지하고 스레드 종료를 대기합니다.
         /// </summary>
         public void StopSimulation()
         {
@@ -143,11 +213,13 @@ namespace Noname.GameHost
                 var joined = _loopThread.Join(_stopTimeoutMilliseconds);
                 if (!joined)
                 {
-                    Debug.LogWarning($"[{GetType().Name}] ?��??�이???�레?��? ?�?�아???�에 ?��??��? ?�았?�니??({_stopTimeoutMilliseconds}ms)");
+                    Debug.LogWarning(
+                        $"[{GetType().Name}] 시뮬레이션 스레드가 제한 시간 내 종료되지 않았습니다.({_stopTimeoutMilliseconds}ms)");
                 }
                 _loopThread = null;
             }
         }
+
         TSnapshot IGameHost<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshot()
         {
             var latest = default(TSnapshot);
@@ -156,7 +228,7 @@ namespace Noname.GameHost
                 latest = snapshot;
             }
 
-            // ?�용 가?�한 최신 ?�냅?�을 반환?�거?? ?�으�?캐시???�냅?�을 반환?�니??
+            // 최신 스냅샷이 있으면 반환하고, 없으면 캐시를 반환합니다.
             if (latest != null)
             {
                 return latest;
@@ -166,7 +238,7 @@ namespace Noname.GameHost
         }
 
         /// <summary>
-        /// 커맨?��? 처리?�고 결과 �??�벤?��? ?�함??결과�?반환?�니??
+        /// 커맨드를 처리하고 결과/이벤트를 반환합니다.
         /// </summary>
         protected abstract GameCommandOutcome<TResult, TEvent> HandleCommand(TCommand command);
 
@@ -179,7 +251,7 @@ namespace Noname.GameHost
         {
             Tick++;
 
-            // ?��?중인 모든 커맨?��? 처리?�고 결과/?�벤?��? ?�에 추�??�니??
+            // 대기 중인 커맨드를 처리하고 결과/이벤트를 큐에 등록합니다.
             while (_pendingCommands.TryDequeue(out var command))
             {
                 try
@@ -208,7 +280,7 @@ namespace Noname.GameHost
                 }
                 catch (Exception ex)
                 {
-                    Debug.LogError($"[{GetType().Name}] 커맨??처리 �??�류 {command?.GetType().Name}: {ex}");
+                    Debug.LogError($"[{GetType().Name}] 커맨드 처리 오류 {command?.GetType().Name}: {ex}");
                     PublishEvent(CreateErrorEvent(command, ex));
                 }
             }
@@ -219,26 +291,24 @@ namespace Noname.GameHost
             }
             catch (Exception ex)
             {
-                Debug.LogError($"[{GetType().Name}] OnTick ?�류: {ex}");
+                Debug.LogError($"[{GetType().Name}] OnTick 오류: {ex}");
             }
 
             TryBuildSnapshot(deltaSeconds);
         }
 
-
         /// <summary>
-        /// �??��??�이???�마???�출?�어 게임 ?�태�??�데?�트?�니??
+        /// 매 스텝 호출되어 게임 상태를 갱신합니다.
         /// </summary>
         protected abstract void OnTick(float deltaSeconds);
 
         /// <summary>
-        /// ?�재 게임 ?�태???�냅?�을 ?�성?�니??(?��??�이???�레?�에???�출??.
+        /// 현재 게임 상태의 스냅샷을 생성합니다(루프 스레드에서 호출).
         /// </summary>
         protected abstract TSnapshot BuildSnapshotInternal();
 
         /// <summary>
-        /// 커맨??처리 ?�패 ???�러 ?�벤?��? ?�성?�니??
-        /// 커스?�??�러 ?�벤???�성???�해 ?�버?�이?�할 ???�습?�다.
+        /// 커맨드 처리 실패 시 기본 에러 이벤트를 생성합니다.
         /// </summary>
         protected virtual TEvent CreateErrorEvent(TCommand command, Exception exception)
         {
@@ -266,8 +336,8 @@ namespace Noname.GameHost
         }
 
         /// <summary>
-        /// 메인 ?�레?�에???��?중인 모든 결과?�??�벤?��? ?�스?�치?�니??
-        /// Unity??Update 루프?�서 ?�기?�으�??�출?�야 ?�니??
+        /// 메인 스레드에서 결과/이벤트를 디스패치합니다.
+        /// Unity Update에서 호출해야 합니다.
         /// </summary>
         public void FlushEvents()
         {
@@ -286,7 +356,7 @@ namespace Noname.GameHost
                 }
                 catch (Exception ex)
                 {
-                    Debug.LogError($"[{GetType().Name}] ?�벤???�스?�치 ?�류: {ex}");
+                    Debug.LogError($"[{GetType().Name}] 이벤트 디스패치 오류: {ex}");
                 }
             }
         }
@@ -324,7 +394,7 @@ namespace Noname.GameHost
             }
             catch (Exception ex)
             {
-                Debug.LogError($"[{GetType().Name}] ?�냅???�성 ?�류: {ex}");
+                Debug.LogError($"[{GetType().Name}] 스냅샷 생성 오류: {ex}");
             }
         }
 
@@ -368,7 +438,7 @@ namespace Noname.GameHost
                     var deltaSeconds = (now - lastTime).TotalSeconds;
                     lastTime = now;
 
-                    // 과도?�게 ???��???불안?�성??방�??�기 ?�해 ?�한?�니??
+                    // 과도한 지연이 발생하면 안정성을 위해 상한을 둡니다.
                     if (deltaSeconds > 0.25)
                     {
                         deltaSeconds = 0.25;
@@ -387,7 +457,7 @@ namespace Noname.GameHost
 
                     if (steps >= _maxStepsPerTick)
                     {
-                        // 최�? ?�텝???�달?�면 ?�적기�? 리셋?�니?? //?�레??밀?�을???�번??많이 ?�라?��? ?�게?�자
+                        // 최대 스텝에 도달하면 누적 시간을 리셋합니다.
                         accumulator = 0.0;
                     }
 
@@ -404,7 +474,7 @@ namespace Noname.GameHost
             catch (Exception ex)
             {
                 _loopException = ex;
-                Debug.LogError($"[{GetType().Name}] ?��??�이??루프?�서 치명???�류 발생: {ex}");
+                Debug.LogError($"[{GetType().Name}] 시뮬레이션 루프에서 치명적 오류 발생: {ex}");
             }
         }
 

@@ -1,0 +1,413 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.Common.GameMode.IGameMode
+  commentId: T:MyProject.Common.GameMode.IGameMode
+  id: IGameMode
+  parent: MyProject.Common.GameMode
+  children:
+  - MyProject.Common.GameMode.IGameMode.GetModule``1
+  - MyProject.Common.GameMode.IGameMode.Modules
+  - MyProject.Common.GameMode.IGameMode.Publish``1(``0)
+  - MyProject.Common.GameMode.IGameMode.SceneBus
+  - MyProject.Common.GameMode.IGameMode.Subscribe``1(System.Action{``0})
+  - MyProject.Common.GameMode.IGameMode.Unsubscribe``1(System.Action{``0})
+  langs:
+  - csharp
+  - vb
+  name: IGameMode
+  nameWithType: IGameMode
+  fullName: MyProject.Common.GameMode.IGameMode
+  type: Interface
+  namespace: MyProject.Common.GameMode
+  summary: ���� ��尡 �����ϴ� ���� �������̽��Դϴ�.
+  example: []
+  syntax:
+    content: public interface IGameMode
+    content.vb: Public Interface IGameMode
+- uid: MyProject.Common.GameMode.IGameMode.SceneBus
+  commentId: P:MyProject.Common.GameMode.IGameMode.SceneBus
+  id: SceneBus
+  parent: MyProject.Common.GameMode.IGameMode
+  langs:
+  - csharp
+  - vb
+  name: SceneBus
+  nameWithType: IGameMode.SceneBus
+  fullName: MyProject.Common.GameMode.IGameMode.SceneBus
+  type: Property
+  namespace: MyProject.Common.GameMode
+  syntax:
+    content: GameEventBus.Scope SceneBus { get; }
+    parameters: []
+    return:
+      type: GameEventBus.Scope
+    content.vb: ReadOnly Property SceneBus As GameEventBus.Scope
+  overload: MyProject.Common.GameMode.IGameMode.SceneBus*
+- uid: MyProject.Common.GameMode.IGameMode.Modules
+  commentId: P:MyProject.Common.GameMode.IGameMode.Modules
+  id: Modules
+  parent: MyProject.Common.GameMode.IGameMode
+  langs:
+  - csharp
+  - vb
+  name: Modules
+  nameWithType: IGameMode.Modules
+  fullName: MyProject.Common.GameMode.IGameMode.Modules
+  type: Property
+  namespace: MyProject.Common.GameMode
+  syntax:
+    content: IReadOnlyList<IModule> Modules { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{MyProject.Common.GameMode.IModule}
+    content.vb: ReadOnly Property Modules As IReadOnlyList(Of IModule)
+  overload: MyProject.Common.GameMode.IGameMode.Modules*
+- uid: MyProject.Common.GameMode.IGameMode.GetModule``1
+  commentId: M:MyProject.Common.GameMode.IGameMode.GetModule``1
+  id: GetModule``1
+  parent: MyProject.Common.GameMode.IGameMode
+  langs:
+  - csharp
+  - vb
+  name: GetModule<T>()
+  nameWithType: IGameMode.GetModule<T>()
+  fullName: MyProject.Common.GameMode.IGameMode.GetModule<T>()
+  type: Method
+  namespace: MyProject.Common.GameMode
+  syntax:
+    content: 'T GetModule<T>() where T : class, IModule'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Function GetModule(Of T As {Class, IModule})() As T
+  overload: MyProject.Common.GameMode.IGameMode.GetModule*
+  nameWithType.vb: IGameMode.GetModule(Of T)()
+  fullName.vb: MyProject.Common.GameMode.IGameMode.GetModule(Of T)()
+  name.vb: GetModule(Of T)()
+- uid: MyProject.Common.GameMode.IGameMode.Subscribe``1(System.Action{``0})
+  commentId: M:MyProject.Common.GameMode.IGameMode.Subscribe``1(System.Action{``0})
+  id: Subscribe``1(System.Action{``0})
+  parent: MyProject.Common.GameMode.IGameMode
+  langs:
+  - csharp
+  - vb
+  name: Subscribe<TEventContext>(Action<TEventContext>)
+  nameWithType: IGameMode.Subscribe<TEventContext>(Action<TEventContext>)
+  fullName: MyProject.Common.GameMode.IGameMode.Subscribe<TEventContext>(System.Action<TEventContext>)
+  type: Method
+  namespace: MyProject.Common.GameMode
+  syntax:
+    content: 'void Subscribe<TEventContext>(Action<TEventContext> handler) where TEventContext : GameEventContext'
+    parameters:
+    - id: handler
+      type: System.Action{{TEventContext}}
+    typeParameters:
+    - id: TEventContext
+    content.vb: Sub Subscribe(Of TEventContext As GameEventContext)(handler As Action(Of TEventContext))
+  overload: MyProject.Common.GameMode.IGameMode.Subscribe*
+  nameWithType.vb: IGameMode.Subscribe(Of TEventContext)(Action(Of TEventContext))
+  fullName.vb: MyProject.Common.GameMode.IGameMode.Subscribe(Of TEventContext)(System.Action(Of TEventContext))
+  name.vb: Subscribe(Of TEventContext)(Action(Of TEventContext))
+- uid: MyProject.Common.GameMode.IGameMode.Unsubscribe``1(System.Action{``0})
+  commentId: M:MyProject.Common.GameMode.IGameMode.Unsubscribe``1(System.Action{``0})
+  id: Unsubscribe``1(System.Action{``0})
+  parent: MyProject.Common.GameMode.IGameMode
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe<TEventContext>(Action<TEventContext>)
+  nameWithType: IGameMode.Unsubscribe<TEventContext>(Action<TEventContext>)
+  fullName: MyProject.Common.GameMode.IGameMode.Unsubscribe<TEventContext>(System.Action<TEventContext>)
+  type: Method
+  namespace: MyProject.Common.GameMode
+  syntax:
+    content: 'void Unsubscribe<TEventContext>(Action<TEventContext> handler) where TEventContext : GameEventContext'
+    parameters:
+    - id: handler
+      type: System.Action{{TEventContext}}
+    typeParameters:
+    - id: TEventContext
+    content.vb: Sub Unsubscribe(Of TEventContext As GameEventContext)(handler As Action(Of TEventContext))
+  overload: MyProject.Common.GameMode.IGameMode.Unsubscribe*
+  nameWithType.vb: IGameMode.Unsubscribe(Of TEventContext)(Action(Of TEventContext))
+  fullName.vb: MyProject.Common.GameMode.IGameMode.Unsubscribe(Of TEventContext)(System.Action(Of TEventContext))
+  name.vb: Unsubscribe(Of TEventContext)(Action(Of TEventContext))
+- uid: MyProject.Common.GameMode.IGameMode.Publish``1(``0)
+  commentId: M:MyProject.Common.GameMode.IGameMode.Publish``1(``0)
+  id: Publish``1(``0)
+  parent: MyProject.Common.GameMode.IGameMode
+  langs:
+  - csharp
+  - vb
+  name: Publish<TEventContext>(TEventContext)
+  nameWithType: IGameMode.Publish<TEventContext>(TEventContext)
+  fullName: MyProject.Common.GameMode.IGameMode.Publish<TEventContext>(TEventContext)
+  type: Method
+  namespace: MyProject.Common.GameMode
+  syntax:
+    content: 'void Publish<TEventContext>(TEventContext context) where TEventContext : GameEventContext'
+    parameters:
+    - id: context
+      type: '{TEventContext}'
+    typeParameters:
+    - id: TEventContext
+    content.vb: Sub Publish(Of TEventContext As GameEventContext)(context As TEventContext)
+  overload: MyProject.Common.GameMode.IGameMode.Publish*
+  nameWithType.vb: IGameMode.Publish(Of TEventContext)(TEventContext)
+  fullName.vb: MyProject.Common.GameMode.IGameMode.Publish(Of TEventContext)(TEventContext)
+  name.vb: Publish(Of TEventContext)(TEventContext)
+references:
+- uid: MyProject.Common.GameMode
+  commentId: N:MyProject.Common.GameMode
+  href: MyProject.html
+  name: MyProject.Common.GameMode
+  nameWithType: MyProject.Common.GameMode
+  fullName: MyProject.Common.GameMode
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.Common
+    name: Common
+    href: MyProject.Common.html
+  - name: .
+  - uid: MyProject.Common.GameMode
+    name: GameMode
+    href: MyProject.Common.GameMode.html
+- uid: MyProject.Common.GameMode.IGameMode.SceneBus*
+  commentId: Overload:MyProject.Common.GameMode.IGameMode.SceneBus
+  href: MyProject.Common.GameMode.IGameMode.html#MyProject_Common_GameMode_IGameMode_SceneBus
+  name: SceneBus
+  nameWithType: IGameMode.SceneBus
+  fullName: MyProject.Common.GameMode.IGameMode.SceneBus
+- uid: GameEventBus.Scope
+  isExternal: true
+  name: Scope
+  nameWithType: GameEventBus.Scope
+  fullName: GameEventBus.Scope
+- uid: MyProject.Common.GameMode.IGameMode.Modules*
+  commentId: Overload:MyProject.Common.GameMode.IGameMode.Modules
+  href: MyProject.Common.GameMode.IGameMode.html#MyProject_Common_GameMode_IGameMode_Modules
+  name: Modules
+  nameWithType: IGameMode.Modules
+  fullName: MyProject.Common.GameMode.IGameMode.Modules
+- uid: System.Collections.Generic.IReadOnlyList{MyProject.Common.GameMode.IModule}
+  commentId: T:System.Collections.Generic.IReadOnlyList{MyProject.Common.GameMode.IModule}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<IModule>
+  nameWithType: IReadOnlyList<IModule>
+  fullName: System.Collections.Generic.IReadOnlyList<MyProject.Common.GameMode.IModule>
+  nameWithType.vb: IReadOnlyList(Of IModule)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of MyProject.Common.GameMode.IModule)
+  name.vb: IReadOnlyList(Of IModule)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: MyProject.Common.GameMode.IModule
+    name: IModule
+    href: MyProject.Common.GameMode.IModule.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.Common.GameMode.IModule
+    name: IModule
+    href: MyProject.Common.GameMode.IModule.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MyProject.Common.GameMode.IGameMode.GetModule*
+  commentId: Overload:MyProject.Common.GameMode.IGameMode.GetModule
+  href: MyProject.Common.GameMode.IGameMode.html#MyProject_Common_GameMode_IGameMode_GetModule__1
+  name: GetModule
+  nameWithType: IGameMode.GetModule
+  fullName: MyProject.Common.GameMode.IGameMode.GetModule
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: MyProject.Common.GameMode.IGameMode.Subscribe*
+  commentId: Overload:MyProject.Common.GameMode.IGameMode.Subscribe
+  href: MyProject.Common.GameMode.IGameMode.html#MyProject_Common_GameMode_IGameMode_Subscribe__1_System_Action___0__
+  name: Subscribe
+  nameWithType: IGameMode.Subscribe
+  fullName: MyProject.Common.GameMode.IGameMode.Subscribe
+- uid: System.Action{{TEventContext}}
+  commentId: T:System.Action{``0}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<TEventContext>
+  nameWithType: Action<TEventContext>
+  fullName: System.Action<TEventContext>
+  nameWithType.vb: Action(Of TEventContext)
+  fullName.vb: System.Action(Of TEventContext)
+  name.vb: Action(Of TEventContext)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TEventContext
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventContext
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.Common.GameMode.IGameMode.Unsubscribe*
+  commentId: Overload:MyProject.Common.GameMode.IGameMode.Unsubscribe
+  href: MyProject.Common.GameMode.IGameMode.html#MyProject_Common_GameMode_IGameMode_Unsubscribe__1_System_Action___0__
+  name: Unsubscribe
+  nameWithType: IGameMode.Unsubscribe
+  fullName: MyProject.Common.GameMode.IGameMode.Unsubscribe
+- uid: MyProject.Common.GameMode.IGameMode.Publish*
+  commentId: Overload:MyProject.Common.GameMode.IGameMode.Publish
+  href: MyProject.Common.GameMode.IGameMode.html#MyProject_Common_GameMode_IGameMode_Publish__1___0_
+  name: Publish
+  nameWithType: IGameMode.Publish
+  fullName: MyProject.Common.GameMode.IGameMode.Publish
+- uid: '{TEventContext}'
+  commentId: '!:TEventContext'
+  definition: TEventContext
+  name: TEventContext
+  nameWithType: TEventContext
+  fullName: TEventContext
+- uid: TEventContext
+  name: TEventContext
+  nameWithType: TEventContext
+  fullName: TEventContext

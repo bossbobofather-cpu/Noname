@@ -1,0 +1,505 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+  commentId: T:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+  id: GameplayAbilityConfig
+  parent: Noname.GameAbilitySystem.Presentation
+  children:
+  - Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityID
+  - Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityTag
+  - Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationBlockedTags
+  - Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationRequiredTags
+  - Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AppliedEffects
+  - Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.CostEffects
+  - Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.Description
+  - Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.DisplayName
+  langs:
+  - csharp
+  - vb
+  name: GameplayAbilityConfig
+  nameWithType: GameplayAbilityConfig
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+  type: Class
+  namespace: Noname.GameAbilitySystem.Presentation
+  syntax:
+    content: 'public sealed class GameplayAbilityConfig : ScriptableObject'
+    content.vb: Public NotInheritable Class GameplayAbilityConfig Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityTag
+  commentId: P:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityTag
+  id: AbilityTag
+  parent: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+  langs:
+  - csharp
+  - vb
+  name: AbilityTag
+  nameWithType: GameplayAbilityConfig.AbilityTag
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityTag
+  type: Property
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 어빌리티 태그입니다.
+  example: []
+  syntax:
+    content: public FGameplayTag AbilityTag { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
+    content.vb: Public ReadOnly Property AbilityTag As FGameplayTag
+  overload: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityTag*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityID
+  commentId: P:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityID
+  id: AbilityID
+  parent: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+  langs:
+  - csharp
+  - vb
+  name: AbilityID
+  nameWithType: GameplayAbilityConfig.AbilityID
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityID
+  type: Property
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 어빌리티 ID입니다.
+  example: []
+  syntax:
+    content: public string AbilityID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property AbilityID As String
+  overload: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityID*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.DisplayName
+  commentId: P:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.DisplayName
+  id: DisplayName
+  parent: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: GameplayAbilityConfig.DisplayName
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.DisplayName
+  type: Property
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 표시되는 이름입니다.
+  example: []
+  syntax:
+    content: public string DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DisplayName As String
+  overload: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.DisplayName*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.Description
+  commentId: P:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.Description
+  id: Description
+  parent: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: GameplayAbilityConfig.Description
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.Description
+  type: Property
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 표시되는 설명입니다.
+  example: []
+  syntax:
+    content: public string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Description As String
+  overload: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.Description*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.CostEffects
+  commentId: P:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.CostEffects
+  id: CostEffects
+  parent: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+  langs:
+  - csharp
+  - vb
+  name: CostEffects
+  nameWithType: GameplayAbilityConfig.CostEffects
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.CostEffects
+  type: Property
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 비용으로 소모되는 효과 목록입니다.
+  example: []
+  syntax:
+    content: public List<GameplayEffectConfig> CostEffects { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Noname.GameAbilitySystem.Presentation.GameplayEffectConfig}
+    content.vb: Public ReadOnly Property CostEffects As List(Of GameplayEffectConfig)
+  overload: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.CostEffects*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AppliedEffects
+  commentId: P:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AppliedEffects
+  id: AppliedEffects
+  parent: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+  langs:
+  - csharp
+  - vb
+  name: AppliedEffects
+  nameWithType: GameplayAbilityConfig.AppliedEffects
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AppliedEffects
+  type: Property
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 적용되는 효과 목록입니다.
+  example: []
+  syntax:
+    content: public List<GameplayEffectConfig> AppliedEffects { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Noname.GameAbilitySystem.Presentation.GameplayEffectConfig}
+    content.vb: Public ReadOnly Property AppliedEffects As List(Of GameplayEffectConfig)
+  overload: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AppliedEffects*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationRequiredTags
+  commentId: P:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationRequiredTags
+  id: ActivationRequiredTags
+  parent: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+  langs:
+  - csharp
+  - vb
+  name: ActivationRequiredTags
+  nameWithType: GameplayAbilityConfig.ActivationRequiredTags
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationRequiredTags
+  type: Property
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 활성화 필수 태그 목록입니다.
+  example: []
+  syntax:
+    content: public GameplayTagContainerView ActivationRequiredTags { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+    content.vb: Public ReadOnly Property ActivationRequiredTags As GameplayTagContainerView
+  overload: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationRequiredTags*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationBlockedTags
+  commentId: P:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationBlockedTags
+  id: ActivationBlockedTags
+  parent: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+  langs:
+  - csharp
+  - vb
+  name: ActivationBlockedTags
+  nameWithType: GameplayAbilityConfig.ActivationBlockedTags
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationBlockedTags
+  type: Property
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 활성화 차단 태그 목록입니다.
+  example: []
+  syntax:
+    content: public GameplayTagContainerView ActivationBlockedTags { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+    content.vb: Public ReadOnly Property ActivationBlockedTags As GameplayTagContainerView
+  overload: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationBlockedTags*
+references:
+- uid: Noname.GameAbilitySystem.Presentation
+  commentId: N:Noname.GameAbilitySystem.Presentation
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Presentation
+  nameWithType: Noname.GameAbilitySystem.Presentation
+  fullName: Noname.GameAbilitySystem.Presentation
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain
+  commentId: M:Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig)
+  parent: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+  definition: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig)
+  href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_
+  name: ToDomain(GameplayAbilityConfig)
+  nameWithType: DomainConversionExtensions.ToDomain(GameplayAbilityConfig)
+  fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig)
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig)
+    name: ToDomain
+    href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+    name: GameplayAbilityConfig
+    href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig)
+    name: ToDomain
+    href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+    name: GameplayAbilityConfig
+    href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig)
+  commentId: M:Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig)
+  href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_
+  name: ToDomain(GameplayAbilityConfig)
+  nameWithType: DomainConversionExtensions.ToDomain(GameplayAbilityConfig)
+  fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig)
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig)
+    name: ToDomain
+    href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+    name: GameplayAbilityConfig
+    href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig)
+    name: ToDomain
+    href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+    name: GameplayAbilityConfig
+    href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html
+  - name: )
+- uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+  commentId: T:Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+  parent: Noname.GameAbilitySystem.Presentation
+  href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html
+  name: DomainConversionExtensions
+  nameWithType: DomainConversionExtensions
+  fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityTag*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityTag
+  href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html#Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_AbilityTag
+  name: AbilityTag
+  nameWithType: GameplayAbilityConfig.AbilityTag
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityTag
+- uid: Noname.GameAbilitySystem.Domain.FGameplayTag
+  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayTag
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.FGameplayTag.html
+  name: FGameplayTag
+  nameWithType: FGameplayTag
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayTag
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityID*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityID
+  href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html#Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_AbilityID
+  name: AbilityID
+  nameWithType: GameplayAbilityConfig.AbilityID
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AbilityID
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.DisplayName*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.DisplayName
+  href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html#Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_DisplayName
+  name: DisplayName
+  nameWithType: GameplayAbilityConfig.DisplayName
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.DisplayName
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.Description*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.Description
+  href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html#Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_Description
+  name: Description
+  nameWithType: GameplayAbilityConfig.Description
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.Description
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.CostEffects*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.CostEffects
+  href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html#Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_CostEffects
+  name: CostEffects
+  nameWithType: GameplayAbilityConfig.CostEffects
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.CostEffects
+- uid: System.Collections.Generic.List{Noname.GameAbilitySystem.Presentation.GameplayEffectConfig}
+  commentId: T:System.Collections.Generic.List{Noname.GameAbilitySystem.Presentation.GameplayEffectConfig}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GameplayEffectConfig>
+  nameWithType: List<GameplayEffectConfig>
+  fullName: System.Collections.Generic.List<Noname.GameAbilitySystem.Presentation.GameplayEffectConfig>
+  nameWithType.vb: List(Of GameplayEffectConfig)
+  fullName.vb: System.Collections.Generic.List(Of Noname.GameAbilitySystem.Presentation.GameplayEffectConfig)
+  name.vb: List(Of GameplayEffectConfig)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.Presentation.GameplayEffectConfig
+    name: GameplayEffectConfig
+    href: Noname.GameAbilitySystem.Presentation.GameplayEffectConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.Presentation.GameplayEffectConfig
+    name: GameplayEffectConfig
+    href: Noname.GameAbilitySystem.Presentation.GameplayEffectConfig.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AppliedEffects*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AppliedEffects
+  href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html#Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_AppliedEffects
+  name: AppliedEffects
+  nameWithType: GameplayAbilityConfig.AppliedEffects
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.AppliedEffects
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationRequiredTags*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationRequiredTags
+  href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html#Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_ActivationRequiredTags
+  name: ActivationRequiredTags
+  nameWithType: GameplayAbilityConfig.ActivationRequiredTags
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationRequiredTags
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  commentId: T:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  parent: Noname.GameAbilitySystem.Presentation
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html
+  name: GameplayTagContainerView
+  nameWithType: GameplayTagContainerView
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationBlockedTags*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationBlockedTags
+  href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html#Noname_GameAbilitySystem_Presentation_GameplayAbilityConfig_ActivationBlockedTags
+  name: ActivationBlockedTags
+  nameWithType: GameplayAbilityConfig.ActivationBlockedTags
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.ActivationBlockedTags

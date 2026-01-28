@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Noname.GameHost;
 using MyProject.DefenseGame.Application.Commands;
@@ -10,22 +10,55 @@ using Noname.GameAbilitySystem.Domain;
 namespace MyProject.DefenseGame.Application
 {
     /// <summary>
-    /// ���潺 ���� ���� ������ ���� ȣ��Ʈ�Դϴ�.
-    /// CQRS �������� Command�� ó���ϰ� Result/Event�� �����մϴ�.
+    /// DefenseGame 전용 호스트입니다.
+    /// CQRS 방식으로 Command를 처리하고 Result/Event를 발행합니다.
     /// </summary>
     public sealed class DefenseGameHost
         : GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>
     {
+        /// <summary>
+        /// 게임 상태입니다.
+        /// </summary>
         private readonly DefenseHostState _state;
+
+        /// <summary>
+        /// 게임 설정입니다.
+        /// </summary>
         private readonly DefenseHostConfig _config;
 
+        /// <summary>
+        /// 스폰 모듈입니다.
+        /// </summary>
         private readonly DefenseSpawnModule _spawnModule;
+
+        /// <summary>
+        /// 전투 모듈입니다.
+        /// </summary>
         private readonly DefenseCombatModule _combatModule;
+
+        /// <summary>
+        /// 엔티티 팩토리입니다.
+        /// </summary>
         private readonly DefenseEntityFactory _entityFactory;
 
+        /// <summary>
+        /// 타겟 컨텍스트 조회용 임시 리스트입니다.
+        /// </summary>
         private readonly List<AbilitySystemComponent> _tempEnemyList = new();
+
+        /// <summary>
+        /// 레벨업 능력 레지스트리입니다.
+        /// </summary>
         private readonly LevelUpAbilityRegistry _levelUpRegistry;
+
+        /// <summary>
+        /// 레벨업 옵션 버퍼입니다.
+        /// </summary>
         private readonly List<LevelUpAbilityDefinition> _tempLevelUpOptions = new();
+
+        /// <summary>
+        /// 타겟팅 컨텍스트입니다.
+        /// </summary>
         private TargetContext _targetContext;
 
         public DefenseGameHost(DefenseHostConfig config)
@@ -106,7 +139,7 @@ namespace MyProject.DefenseGame.Application
             if (_state.SessionPhase != DefenseSessionPhase.None)
             {
                 return new GameCommandOutcome<DefenseCommandResult, DefenseHostEvent>(
-                    StartGameResult.Fail(Tick, command.SenderUid, "������ �̹� ���� ���Դϴ�."));
+                    StartGameResult.Fail(Tick, command.SenderUid, "이미 게임이 시작되어 있습니다."));
             }
 
             _targetContext = CreateTargetContext();
@@ -149,14 +182,14 @@ namespace MyProject.DefenseGame.Application
             if (_state.SessionPhase != DefenseSessionPhase.LevelUpSelection)
             {
                 return new GameCommandOutcome<DefenseCommandResult, DefenseHostEvent>(
-                    SelectLevelUpAbilityResult.Fail(Tick, command.SenderUid, "������ ���� ���°� �ƴմϴ�."));
+                    SelectLevelUpAbilityResult.Fail(Tick, command.SenderUid, "레벨업 선택 상태가 아닙니다."));
             }
 
             var options = _state.CurrentLevelUpOptions;
             if (command.AbilityIndex < 0 || command.AbilityIndex >= options.Count)
             {
                 return new GameCommandOutcome<DefenseCommandResult, DefenseHostEvent>(
-                    SelectLevelUpAbilityResult.Fail(Tick, command.SenderUid, "��ȿ���� ���� �ɷ� �ε����Դϴ�."));
+                    SelectLevelUpAbilityResult.Fail(Tick, command.SenderUid, "잘못된 선택 인덱스입니다."));
             }
 
             var selected = options[command.AbilityIndex];
@@ -185,7 +218,7 @@ namespace MyProject.DefenseGame.Application
                 _state.SessionPhase == DefenseSessionPhase.GameOver)
             {
                 return new GameCommandOutcome<DefenseCommandResult, DefenseHostEvent>(
-                    EndGameResult.Fail(Tick, command.SenderUid, "������ ���� ���� �ƴմϴ�."));
+                    EndGameResult.Fail(Tick, command.SenderUid, "게임이 시작되지 않았습니다."));
             }
 
             if (_state.Combat != null && !_state.Combat.IsGameOver)

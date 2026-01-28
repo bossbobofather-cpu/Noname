@@ -1,0 +1,248 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
+  id: DefenseLevelUpOptionsEvent
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.#ctor(System.Int64,System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  - MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.Options
+  langs:
+  - csharp
+  - vb
+  name: DefenseLevelUpOptionsEvent
+  nameWithType: DefenseLevelUpOptionsEvent
+  fullName: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
+  type: Class
+  namespace: MyProject.DefenseGame.Application
+  summary: ?�벨???�택지 ?�벤?�입?�다.
+  example: []
+  syntax:
+    content: 'public sealed class DefenseLevelUpOptionsEvent : DefenseHostEvent'
+    content.vb: Public NotInheritable Class DefenseLevelUpOptionsEvent Inherits DefenseHostEvent
+  inheritance:
+  - System.Object
+  - MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.Options
+  commentId: P:MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.Options
+  id: Options
+  parent: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: DefenseLevelUpOptionsEvent.Options
+  fullName: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.Options
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public IReadOnlyList<LevelUpAbilityDefinition> Options { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition}
+    content.vb: Public ReadOnly Property Options As IReadOnlyList(Of LevelUpAbilityDefinition)
+  overload: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.Options*
+- uid: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.#ctor(System.Int64,System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  commentId: M:MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.#ctor(System.Int64,System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  id: '#ctor(System.Int64,System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})'
+  parent: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
+  langs:
+  - csharp
+  - vb
+  name: DefenseLevelUpOptionsEvent(long, IReadOnlyList<LevelUpAbilityDefinition>)
+  nameWithType: DefenseLevelUpOptionsEvent.DefenseLevelUpOptionsEvent(long, IReadOnlyList<LevelUpAbilityDefinition>)
+  fullName: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.DefenseLevelUpOptionsEvent(long, System.Collections.Generic.IReadOnlyList<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public DefenseLevelUpOptionsEvent(long tick, IReadOnlyList<LevelUpAbilityDefinition> options)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: options
+      type: System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition}
+    content.vb: Public Sub New(tick As Long, options As IReadOnlyList(Of LevelUpAbilityDefinition))
+  overload: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.#ctor*
+  nameWithType.vb: DefenseLevelUpOptionsEvent.New(Long, IReadOnlyList(Of LevelUpAbilityDefinition))
+  fullName.vb: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.New(Long, System.Collections.Generic.IReadOnlyList(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition))
+  name.vb: New(Long, IReadOnlyList(Of LevelUpAbilityDefinition))
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.Options*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.Options
+  href: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.html#MyProject_DefenseGame_Application_DefenseLevelUpOptionsEvent_Options
+  name: Options
+  nameWithType: DefenseLevelUpOptionsEvent.Options
+  fullName: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.Options
+- uid: System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition}
+  commentId: T:System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<LevelUpAbilityDefinition>
+  nameWithType: IReadOnlyList<LevelUpAbilityDefinition>
+  fullName: System.Collections.Generic.IReadOnlyList<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>
+  nameWithType.vb: IReadOnlyList(Of LevelUpAbilityDefinition)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition)
+  name.vb: IReadOnlyList(Of LevelUpAbilityDefinition)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+    name: LevelUpAbilityDefinition
+    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+    name: LevelUpAbilityDefinition
+    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.#ctor
+  href: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.html#MyProject_DefenseGame_Application_DefenseLevelUpOptionsEvent__ctor_System_Int64_System_Collections_Generic_IReadOnlyList_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__
+  name: DefenseLevelUpOptionsEvent
+  nameWithType: DefenseLevelUpOptionsEvent.DefenseLevelUpOptionsEvent
+  fullName: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.DefenseLevelUpOptionsEvent
+  nameWithType.vb: DefenseLevelUpOptionsEvent.New
+  fullName.vb: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

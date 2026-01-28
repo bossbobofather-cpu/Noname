@@ -1,20 +1,46 @@
-using System;
+﻿using System;
 using MyProject.DefenseGame.Domain;
 
 namespace MyProject.DefenseGame.Application
 {
     /// <summary>
-    /// 몬스???�폰??처리?�는 모듈?�니??
+    /// 몬스터 스폰을 담당하는 모듈입니다.
     /// </summary>
     public sealed class DefenseSpawnModule
     {
+        /// <summary>
+        /// 호스트 상태입니다.
+        /// </summary>
         private readonly DefenseHostState _state;
+
+        /// <summary>
+        /// 스폰 설정입니다.
+        /// </summary>
         private readonly DefenseHostConfig _config;
+
+        /// <summary>
+        /// 엔티티 생성기입니다.
+        /// </summary>
         private readonly DefenseEntityFactory _factory;
+
+        /// <summary>
+        /// 이벤트 발행 델리게이트입니다.
+        /// </summary>
         private readonly Action<DefenseHostEvent> _publishEvent;
 
+        /// <summary>
+        /// 일반 몬스터 스폰 타이머입니다.
+        /// </summary>
         private float _spawnTimer;
+
+        /// <summary>
+        /// 보스 몬스터 스폰 타이머입니다.
+        /// </summary>
         private float _bossSpawnTimer;
+
+        /// <summary>
+        /// 현재 웨이브 번호입니다.
+        /// </summary>
         private int _currentWave;
 
         public DefenseSpawnModule(
@@ -30,7 +56,7 @@ namespace MyProject.DefenseGame.Application
         }
 
         /// <summary>
-        /// ?�폰 ?�스?�을 초기?�합?�다.
+        /// 스폰 시스템을 초기화합니다.
         /// </summary>
         public void Initialize()
         {
@@ -40,7 +66,7 @@ namespace MyProject.DefenseGame.Application
         }
 
         /// <summary>
-        /// �??�마???�출?�어 ?�폰??처리?�니??
+        /// 매 프레임 호출되어 스폰을 처리합니다.
         /// </summary>
         public void Tick(float deltaTime, long tick)
         {
@@ -55,7 +81,7 @@ namespace MyProject.DefenseGame.Application
                 return;
             }
 
-            // ?�이�??�데?�트 (10초마??
+            // 난이도 업데이트 (시간 경과에 따라 웨이브 증가)
             var newWave = 1 + (int)(combat.ElapsedTime / _config.SpawnRateIncreaseInterval);
             if (newWave != _currentWave)
             {
@@ -63,7 +89,7 @@ namespace MyProject.DefenseGame.Application
                 _publishEvent(new DefenseWaveChangedEvent(tick, _currentWave));
             }
 
-            // ?�반 몬스???�폰
+            // 일반 몬스터 스폰
             _spawnTimer += deltaTime;
             if (_spawnTimer >= _config.BaseSpawnInterval)
             {
@@ -71,7 +97,7 @@ namespace MyProject.DefenseGame.Application
                 SpawnNormalMonsters(tick, _currentWave);
             }
 
-            // 보스 몬스???�폰
+            // 보스 몬스터 스폰
             _bossSpawnTimer += deltaTime;
             if (_bossSpawnTimer >= _config.BossSpawnInterval)
             {
@@ -79,7 +105,7 @@ namespace MyProject.DefenseGame.Application
                 SpawnBossMonster(tick);
             }
 
-            // ?�배 조건 ?�인
+            // 패배 조건 확인
             if (combat.AliveMonsterCount >= _config.MaxMonsterCount)
             {
                 combat.SetGameOver(isDefeat: true);
@@ -89,7 +115,7 @@ namespace MyProject.DefenseGame.Application
         }
 
         /// <summary>
-        /// ?�반 몬스?��? ?�폰?�니??
+        /// 일반 몬스터를 스폰합니다.
         /// </summary>
         private void SpawnNormalMonsters(long tick, int count)
         {
@@ -109,7 +135,7 @@ namespace MyProject.DefenseGame.Application
         }
 
         /// <summary>
-        /// 보스 몬스?��? ?�폰?�니??
+        /// 보스 몬스터를 스폰합니다.
         /// </summary>
         private void SpawnBossMonster(long tick)
         {
@@ -126,22 +152,22 @@ namespace MyProject.DefenseGame.Application
         }
 
         /// <summary>
-        /// ?�반 몬스?��? ?�성?�니??
+        /// 일반 몬스터를 생성합니다.
         /// </summary>
         private DefenseMonster CreateNormalMonster()
         {
             var uid = _state.GenerateMonsterUid();
-            // 팩토리에 위임
+            // 팩토리에서 생성
             return _factory.CreateMonster(uid, _currentWave, isBoss: false);
         }
 
         /// <summary>
-        /// 보스 몬스?��? ?�성?�니??
+        /// 보스 몬스터를 생성합니다.
         /// </summary>
         private DefenseMonster CreateBossMonster()
         {
             var uid = _state.GenerateMonsterUid();
-            // 팩토리에 위임
+            // 팩토리에서 생성
             return _factory.CreateMonster(uid, _currentWave, isBoss: true);
         }
     }

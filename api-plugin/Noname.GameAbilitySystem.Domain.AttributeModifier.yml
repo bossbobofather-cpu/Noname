@@ -1,0 +1,423 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Domain.AttributeModifier
+  commentId: T:Noname.GameAbilitySystem.Domain.AttributeModifier
+  id: AttributeModifier
+  parent: Noname.GameAbilitySystem.Domain
+  children:
+  - Noname.GameAbilitySystem.Domain.AttributeModifier.AttributeId
+  - Noname.GameAbilitySystem.Domain.AttributeModifier.AttributeValue
+  - Noname.GameAbilitySystem.Domain.AttributeModifier.Magnitude
+  - Noname.GameAbilitySystem.Domain.AttributeModifier.Operation
+  - Noname.GameAbilitySystem.Domain.AttributeModifier.ValueMode
+  langs:
+  - csharp
+  - vb
+  name: AttributeModifier
+  nameWithType: AttributeModifier
+  fullName: Noname.GameAbilitySystem.Domain.AttributeModifier
+  type: Struct
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 속성 수정자 정의입니다.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct AttributeModifier
+    content.vb: >-
+      <Serializable>
+
+      Public Structure AttributeModifier
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Noname.GameAbilitySystem.Domain.AttributeModifier.AttributeId
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeModifier.AttributeId
+  id: AttributeId
+  parent: Noname.GameAbilitySystem.Domain.AttributeModifier
+  langs:
+  - csharp
+  - vb
+  name: AttributeId
+  nameWithType: AttributeModifier.AttributeId
+  fullName: Noname.GameAbilitySystem.Domain.AttributeModifier.AttributeId
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 대상 속성 Id입니다.
+  example: []
+  syntax:
+    content: public AttributeId AttributeId
+    return:
+      type: Noname.GameAbilitySystem.Domain.AttributeId
+    content.vb: Public AttributeId As AttributeId
+- uid: Noname.GameAbilitySystem.Domain.AttributeModifier.AttributeValue
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeModifier.AttributeValue
+  id: AttributeValue
+  parent: Noname.GameAbilitySystem.Domain.AttributeModifier
+  langs:
+  - csharp
+  - vb
+  name: AttributeValue
+  nameWithType: AttributeModifier.AttributeValue
+  fullName: Noname.GameAbilitySystem.Domain.AttributeModifier.AttributeValue
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 속성 값입니다.
+  example: []
+  syntax:
+    content: public AttributeValue AttributeValue
+    return:
+      type: Noname.GameAbilitySystem.Domain.AttributeValue
+    content.vb: Public AttributeValue As AttributeValue
+- uid: Noname.GameAbilitySystem.Domain.AttributeModifier.ValueMode
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeModifier.ValueMode
+  id: ValueMode
+  parent: Noname.GameAbilitySystem.Domain.AttributeModifier
+  langs:
+  - csharp
+  - vb
+  name: ValueMode
+  nameWithType: AttributeModifier.ValueMode
+  fullName: Noname.GameAbilitySystem.Domain.AttributeModifier.ValueMode
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 값 계산 방식입니다.
+  example: []
+  syntax:
+    content: public AttributeModifierValueMode ValueMode
+    return:
+      type: AttributeModifierValueMode
+    content.vb: Public ValueMode As AttributeModifierValueMode
+- uid: Noname.GameAbilitySystem.Domain.AttributeModifier.Operation
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeModifier.Operation
+  id: Operation
+  parent: Noname.GameAbilitySystem.Domain.AttributeModifier
+  langs:
+  - csharp
+  - vb
+  name: Operation
+  nameWithType: AttributeModifier.Operation
+  fullName: Noname.GameAbilitySystem.Domain.AttributeModifier.Operation
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 적용 연산입니다.
+  example: []
+  syntax:
+    content: public AttributeModifierOperationType Operation
+    return:
+      type: Noname.GameAbilitySystem.Domain.AttributeModifierOperationType
+    content.vb: Public Operation As AttributeModifierOperationType
+- uid: Noname.GameAbilitySystem.Domain.AttributeModifier.Magnitude
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeModifier.Magnitude
+  id: Magnitude
+  parent: Noname.GameAbilitySystem.Domain.AttributeModifier
+  langs:
+  - csharp
+  - vb
+  name: Magnitude
+  nameWithType: AttributeModifier.Magnitude
+  fullName: Noname.GameAbilitySystem.Domain.AttributeModifier.Magnitude
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 정적 크기 값입니다.
+  example: []
+  syntax:
+    content: public float Magnitude
+    return:
+      type: System.Single
+    content.vb: Public Magnitude As Single
+references:
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.Domain.AttributeId
+  commentId: T:Noname.GameAbilitySystem.Domain.AttributeId
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.AttributeId.html
+  name: AttributeId
+  nameWithType: AttributeId
+  fullName: Noname.GameAbilitySystem.Domain.AttributeId
+- uid: Noname.GameAbilitySystem.Domain.AttributeValue
+  commentId: T:Noname.GameAbilitySystem.Domain.AttributeValue
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.AttributeValue.html
+  name: AttributeValue
+  nameWithType: AttributeValue
+  fullName: Noname.GameAbilitySystem.Domain.AttributeValue
+- uid: AttributeModifierValueMode
+  commentId: T:AttributeModifierValueMode
+  href: AttributeModifierValueMode.html
+  name: AttributeModifierValueMode
+  nameWithType: AttributeModifierValueMode
+  fullName: AttributeModifierValueMode
+- uid: Noname.GameAbilitySystem.Domain.AttributeModifierOperationType
+  commentId: T:Noname.GameAbilitySystem.Domain.AttributeModifierOperationType
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.AttributeModifierOperationType.html
+  name: AttributeModifierOperationType
+  nameWithType: AttributeModifierOperationType
+  fullName: Noname.GameAbilitySystem.Domain.AttributeModifierOperationType
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

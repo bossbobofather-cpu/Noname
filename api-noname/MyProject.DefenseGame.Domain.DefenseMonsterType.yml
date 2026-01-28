@@ -1,0 +1,92 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Domain.DefenseMonsterType
+  commentId: T:MyProject.DefenseGame.Domain.DefenseMonsterType
+  id: DefenseMonsterType
+  parent: MyProject.DefenseGame.Domain
+  children:
+  - MyProject.DefenseGame.Domain.DefenseMonsterType.Boss
+  - MyProject.DefenseGame.Domain.DefenseMonsterType.Normal
+  langs:
+  - csharp
+  - vb
+  name: DefenseMonsterType
+  nameWithType: DefenseMonsterType
+  fullName: MyProject.DefenseGame.Domain.DefenseMonsterType
+  type: Enum
+  namespace: MyProject.DefenseGame.Domain
+  summary: 몬스터 타입입니다.
+  example: []
+  syntax:
+    content: public enum DefenseMonsterType
+    content.vb: Public Enum DefenseMonsterType
+- uid: MyProject.DefenseGame.Domain.DefenseMonsterType.Normal
+  commentId: F:MyProject.DefenseGame.Domain.DefenseMonsterType.Normal
+  id: Normal
+  parent: MyProject.DefenseGame.Domain.DefenseMonsterType
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: DefenseMonsterType.Normal
+  fullName: MyProject.DefenseGame.Domain.DefenseMonsterType.Normal
+  type: Field
+  namespace: MyProject.DefenseGame.Domain
+  syntax:
+    content: Normal = 0
+    return:
+      type: MyProject.DefenseGame.Domain.DefenseMonsterType
+- uid: MyProject.DefenseGame.Domain.DefenseMonsterType.Boss
+  commentId: F:MyProject.DefenseGame.Domain.DefenseMonsterType.Boss
+  id: Boss
+  parent: MyProject.DefenseGame.Domain.DefenseMonsterType
+  langs:
+  - csharp
+  - vb
+  name: Boss
+  nameWithType: DefenseMonsterType.Boss
+  fullName: MyProject.DefenseGame.Domain.DefenseMonsterType.Boss
+  type: Field
+  namespace: MyProject.DefenseGame.Domain
+  syntax:
+    content: Boss = 1
+    return:
+      type: MyProject.DefenseGame.Domain.DefenseMonsterType
+references:
+- uid: MyProject.DefenseGame.Domain
+  commentId: N:MyProject.DefenseGame.Domain
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain
+  nameWithType: MyProject.DefenseGame.Domain
+  fullName: MyProject.DefenseGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+- uid: MyProject.DefenseGame.Domain.DefenseMonsterType
+  commentId: T:MyProject.DefenseGame.Domain.DefenseMonsterType
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefenseMonsterType.html
+  name: DefenseMonsterType
+  nameWithType: DefenseMonsterType
+  fullName: MyProject.DefenseGame.Domain.DefenseMonsterType

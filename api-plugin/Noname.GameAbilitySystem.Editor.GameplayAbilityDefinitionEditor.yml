@@ -14,7 +14,7 @@ items:
   fullName: Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor
   type: Class
   namespace: Noname.GameAbilitySystem.Editor
-  summary: GameplayAbilityDefinition 인스펙터를 사용자 정의로 표시합니다.
+  summary: GameplayAbilityConfig 인스펙터를 사용자 정의로 표시합니다.
   example: []
   syntax:
     content: 'public sealed class GameplayAbilityDefinitionEditor : UnityEditor.Editor'
@@ -33,7 +33,6 @@ items:
   fullName: Noname.GameAbilitySystem.Editor.GameplayAbilityDefinitionEditor.OnInspectorGUI()
   type: Method
   namespace: Noname.GameAbilitySystem.Editor
-  summary: 어빌리티 타입 선택 UI와 구성 목록을 그립니다.
   example: []
   syntax:
     content: public override void OnInspectorGUI()

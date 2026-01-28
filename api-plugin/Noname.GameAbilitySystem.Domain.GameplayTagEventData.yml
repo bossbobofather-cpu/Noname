@@ -1,0 +1,358 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Domain.GameplayTagEventData
+  commentId: T:Noname.GameAbilitySystem.Domain.GameplayTagEventData
+  id: GameplayTagEventData
+  parent: Noname.GameAbilitySystem.Domain
+  children:
+  - Noname.GameAbilitySystem.Domain.GameplayTagEventData.#ctor(Noname.GameAbilitySystem.Domain.FGameplayTag,System.Object)
+  - Noname.GameAbilitySystem.Domain.GameplayTagEventData.EventTag
+  - Noname.GameAbilitySystem.Domain.GameplayTagEventData.Payload
+  langs:
+  - csharp
+  - vb
+  name: GameplayTagEventData
+  nameWithType: GameplayTagEventData
+  fullName: Noname.GameAbilitySystem.Domain.GameplayTagEventData
+  type: Struct
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 게임플레이 이벤트 전달용 데이터입니다.
+  example: []
+  syntax:
+    content: public struct GameplayTagEventData
+    content.vb: Public Structure GameplayTagEventData
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Noname.GameAbilitySystem.Domain.GameplayTagEventData.EventTag
+  commentId: F:Noname.GameAbilitySystem.Domain.GameplayTagEventData.EventTag
+  id: EventTag
+  parent: Noname.GameAbilitySystem.Domain.GameplayTagEventData
+  langs:
+  - csharp
+  - vb
+  name: EventTag
+  nameWithType: GameplayTagEventData.EventTag
+  fullName: Noname.GameAbilitySystem.Domain.GameplayTagEventData.EventTag
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 이벤트 태그입니다.
+  example: []
+  syntax:
+    content: public FGameplayTag EventTag
+    return:
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
+    content.vb: Public EventTag As FGameplayTag
+- uid: Noname.GameAbilitySystem.Domain.GameplayTagEventData.Payload
+  commentId: F:Noname.GameAbilitySystem.Domain.GameplayTagEventData.Payload
+  id: Payload
+  parent: Noname.GameAbilitySystem.Domain.GameplayTagEventData
+  langs:
+  - csharp
+  - vb
+  name: Payload
+  nameWithType: GameplayTagEventData.Payload
+  fullName: Noname.GameAbilitySystem.Domain.GameplayTagEventData.Payload
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 이벤트 데이터입니다.
+  example: []
+  syntax:
+    content: public object Payload
+    return:
+      type: System.Object
+    content.vb: Public Payload As Object
+- uid: Noname.GameAbilitySystem.Domain.GameplayTagEventData.#ctor(Noname.GameAbilitySystem.Domain.FGameplayTag,System.Object)
+  commentId: M:Noname.GameAbilitySystem.Domain.GameplayTagEventData.#ctor(Noname.GameAbilitySystem.Domain.FGameplayTag,System.Object)
+  id: '#ctor(Noname.GameAbilitySystem.Domain.FGameplayTag,System.Object)'
+  parent: Noname.GameAbilitySystem.Domain.GameplayTagEventData
+  langs:
+  - csharp
+  - vb
+  name: GameplayTagEventData(FGameplayTag, object)
+  nameWithType: GameplayTagEventData.GameplayTagEventData(FGameplayTag, object)
+  fullName: Noname.GameAbilitySystem.Domain.GameplayTagEventData.GameplayTagEventData(Noname.GameAbilitySystem.Domain.FGameplayTag, object)
+  type: Constructor
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 이벤트 태그와 데이터로 생성합니다.
+  example: []
+  syntax:
+    content: public GameplayTagEventData(FGameplayTag eventTag, object payload = null)
+    parameters:
+    - id: eventTag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
+    - id: payload
+      type: System.Object
+    content.vb: Public Sub New(eventTag As FGameplayTag, payload As Object = Nothing)
+  overload: Noname.GameAbilitySystem.Domain.GameplayTagEventData.#ctor*
+  nameWithType.vb: GameplayTagEventData.New(FGameplayTag, Object)
+  fullName.vb: Noname.GameAbilitySystem.Domain.GameplayTagEventData.New(Noname.GameAbilitySystem.Domain.FGameplayTag, Object)
+  name.vb: New(FGameplayTag, Object)
+references:
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.Domain.FGameplayTag
+  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayTag
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.FGameplayTag.html
+  name: FGameplayTag
+  nameWithType: FGameplayTag
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayTag
+- uid: Noname.GameAbilitySystem.Domain.GameplayTagEventData.#ctor*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayTagEventData.#ctor
+  href: Noname.GameAbilitySystem.Domain.GameplayTagEventData.html#Noname_GameAbilitySystem_Domain_GameplayTagEventData__ctor_Noname_GameAbilitySystem_Domain_FGameplayTag_System_Object_
+  name: GameplayTagEventData
+  nameWithType: GameplayTagEventData.GameplayTagEventData
+  fullName: Noname.GameAbilitySystem.Domain.GameplayTagEventData.GameplayTagEventData
+  nameWithType.vb: GameplayTagEventData.New
+  fullName.vb: Noname.GameAbilitySystem.Domain.GameplayTagEventData.New
+  name.vb: New

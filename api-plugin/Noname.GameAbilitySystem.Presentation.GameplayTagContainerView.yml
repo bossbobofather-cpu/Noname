@@ -1,0 +1,646 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  commentId: T:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  id: GameplayTagContainerView
+  parent: Noname.GameAbilitySystem.Presentation
+  children:
+  - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.AddTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Clear
+  - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAll(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAllExact(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAny(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAnyExact(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTagExact(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnAfterDeserialize
+  - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnBeforeSerialize
+  - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.RemoveTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Tags
+  langs:
+  - csharp
+  - vb
+  name: GameplayTagContainerView
+  nameWithType: GameplayTagContainerView
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  type: Class
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 게임플레이 태그를 관리하는 컨테이너입니다.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public sealed class GameplayTagContainerView : ISerializationCallbackReceiver
+    content.vb: >-
+      <Serializable>
+
+      Public NotInheritable Class GameplayTagContainerView Inherits ISerializationCallbackReceiver
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Tags
+  commentId: P:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Tags
+  id: Tags
+  parent: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: GameplayTagContainerView.Tags
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Tags
+  type: Property
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 보관 중인 태그 목록입니다.
+  example: []
+  syntax:
+    content: public IReadOnlyList<FGameplayTag> Tags { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.Domain.FGameplayTag}
+    content.vb: Public ReadOnly Property Tags As IReadOnlyList(Of FGameplayTag)
+  overload: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Tags*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  commentId: M:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  id: HasTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  parent: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  langs:
+  - csharp
+  - vb
+  name: HasTag(FGameplayTag)
+  nameWithType: GameplayTagContainerView.HasTag(FGameplayTag)
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 부모 태그까지 포함하여 보유 여부를 확인합니다.
+  example: []
+  syntax:
+    content: public bool HasTag(FGameplayTag tag)
+    parameters:
+    - id: tag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
+      description: 확인할 태그
+    return:
+      type: System.Boolean
+      description: 보유 여부
+    content.vb: Public Function HasTag(tag As FGameplayTag) As Boolean
+  overload: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTag*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTagExact(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  commentId: M:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTagExact(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  id: HasTagExact(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  parent: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  langs:
+  - csharp
+  - vb
+  name: HasTagExact(FGameplayTag)
+  nameWithType: GameplayTagContainerView.HasTagExact(FGameplayTag)
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTagExact(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 정확히 일치하는 태그만 확인합니다.
+  example: []
+  syntax:
+    content: public bool HasTagExact(FGameplayTag tag)
+    parameters:
+    - id: tag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
+      description: 확인할 태그
+    return:
+      type: System.Boolean
+      description: 보유 여부
+    content.vb: Public Function HasTagExact(tag As FGameplayTag) As Boolean
+  overload: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTagExact*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAny(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  commentId: M:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAny(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  id: HasAny(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  parent: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  langs:
+  - csharp
+  - vb
+  name: HasAny(GameplayTagContainerView)
+  nameWithType: GameplayTagContainerView.HasAny(GameplayTagContainerView)
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAny(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 다른 컨테이너의 태그 중 하나라도 포함하는지 확인합니다.
+  example: []
+  syntax:
+    content: public bool HasAny(GameplayTagContainerView other)
+    parameters:
+    - id: other
+      type: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+      description: 비교 대상
+    return:
+      type: System.Boolean
+      description: 포함 여부
+    content.vb: Public Function HasAny(other As GameplayTagContainerView) As Boolean
+  overload: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAny*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAll(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  commentId: M:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAll(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  id: HasAll(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  parent: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  langs:
+  - csharp
+  - vb
+  name: HasAll(GameplayTagContainerView)
+  nameWithType: GameplayTagContainerView.HasAll(GameplayTagContainerView)
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAll(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 다른 컨테이너의 태그를 모두 포함하는지 확인합니다.
+  example: []
+  syntax:
+    content: public bool HasAll(GameplayTagContainerView other)
+    parameters:
+    - id: other
+      type: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+      description: 비교 대상
+    return:
+      type: System.Boolean
+      description: 포함 여부
+    content.vb: Public Function HasAll(other As GameplayTagContainerView) As Boolean
+  overload: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAll*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAnyExact(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  commentId: M:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAnyExact(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  id: HasAnyExact(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  parent: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  langs:
+  - csharp
+  - vb
+  name: HasAnyExact(GameplayTagContainerView)
+  nameWithType: GameplayTagContainerView.HasAnyExact(GameplayTagContainerView)
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAnyExact(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 정확히 일치하는 태그 중 하나라도 포함하는지 확인합니다.
+  example: []
+  syntax:
+    content: public bool HasAnyExact(GameplayTagContainerView other)
+    parameters:
+    - id: other
+      type: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+      description: 비교 대상
+    return:
+      type: System.Boolean
+      description: 포함 여부
+    content.vb: Public Function HasAnyExact(other As GameplayTagContainerView) As Boolean
+  overload: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAnyExact*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAllExact(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  commentId: M:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAllExact(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  id: HasAllExact(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  parent: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  langs:
+  - csharp
+  - vb
+  name: HasAllExact(GameplayTagContainerView)
+  nameWithType: GameplayTagContainerView.HasAllExact(GameplayTagContainerView)
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAllExact(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 정확히 일치하는 태그를 모두 포함하는지 확인합니다.
+  example: []
+  syntax:
+    content: public bool HasAllExact(GameplayTagContainerView other)
+    parameters:
+    - id: other
+      type: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+      description: 비교 대상
+    return:
+      type: System.Boolean
+      description: 포함 여부
+    content.vb: Public Function HasAllExact(other As GameplayTagContainerView) As Boolean
+  overload: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAllExact*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.AddTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  commentId: M:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.AddTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  id: AddTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  parent: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  langs:
+  - csharp
+  - vb
+  name: AddTag(FGameplayTag)
+  nameWithType: GameplayTagContainerView.AddTag(FGameplayTag)
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.AddTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 태그를 추가합니다.
+  example: []
+  syntax:
+    content: public void AddTag(FGameplayTag tag)
+    parameters:
+    - id: tag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
+      description: 추가할 태그
+    content.vb: Public Sub AddTag(tag As FGameplayTag)
+  overload: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.AddTag*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.RemoveTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  commentId: M:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.RemoveTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  id: RemoveTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  parent: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  langs:
+  - csharp
+  - vb
+  name: RemoveTag(FGameplayTag)
+  nameWithType: GameplayTagContainerView.RemoveTag(FGameplayTag)
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.RemoveTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 태그를 제거합니다.
+  example: []
+  syntax:
+    content: public void RemoveTag(FGameplayTag tag)
+    parameters:
+    - id: tag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
+      description: 제거할 태그
+    content.vb: Public Sub RemoveTag(tag As FGameplayTag)
+  overload: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.RemoveTag*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Clear
+  commentId: M:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Clear
+  id: Clear
+  parent: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: GameplayTagContainerView.Clear()
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Clear()
+  type: Method
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 태그를 모두 제거합니다.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Clear*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnBeforeSerialize
+  commentId: M:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnBeforeSerialize
+  id: OnBeforeSerialize
+  parent: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  langs:
+  - csharp
+  - vb
+  name: OnBeforeSerialize()
+  nameWithType: GameplayTagContainerView.OnBeforeSerialize()
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnBeforeSerialize()
+  type: Method
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 직렬화 전 처리입니다.
+  example: []
+  syntax:
+    content: public void OnBeforeSerialize()
+    content.vb: Public Sub OnBeforeSerialize()
+  overload: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnBeforeSerialize*
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnAfterDeserialize
+  commentId: M:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnAfterDeserialize
+  id: OnAfterDeserialize
+  parent: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  langs:
+  - csharp
+  - vb
+  name: OnAfterDeserialize()
+  nameWithType: GameplayTagContainerView.OnAfterDeserialize()
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnAfterDeserialize()
+  type: Method
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 역직렬화 후 처리입니다.
+  example: []
+  syntax:
+    content: public void OnAfterDeserialize()
+    content.vb: Public Sub OnAfterDeserialize()
+  overload: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnAfterDeserialize*
+references:
+- uid: Noname.GameAbilitySystem.Presentation
+  commentId: N:Noname.GameAbilitySystem.Presentation
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Presentation
+  nameWithType: Noname.GameAbilitySystem.Presentation
+  fullName: Noname.GameAbilitySystem.Presentation
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain
+  commentId: M:Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  parent: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+  definition: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_
+  name: ToDomain(GameplayTagContainerView)
+  nameWithType: DomainConversionExtensions.ToDomain(GameplayTagContainerView)
+  fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+    name: ToDomain
+    href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+    name: GameplayTagContainerView
+    href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+    name: ToDomain
+    href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+    name: GameplayTagContainerView
+    href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  commentId: M:Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_
+  name: ToDomain(GameplayTagContainerView)
+  nameWithType: DomainConversionExtensions.ToDomain(GameplayTagContainerView)
+  fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+    name: ToDomain
+    href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+    name: GameplayTagContainerView
+    href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
+    name: ToDomain
+    href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+    name: GameplayTagContainerView
+    href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html
+  - name: )
+- uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+  commentId: T:Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+  parent: Noname.GameAbilitySystem.Presentation
+  href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html
+  name: DomainConversionExtensions
+  nameWithType: DomainConversionExtensions
+  fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Tags*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Tags
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html#Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_Tags
+  name: Tags
+  nameWithType: GameplayTagContainerView.Tags
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Tags
+- uid: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.Domain.FGameplayTag}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.Domain.FGameplayTag}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<FGameplayTag>
+  nameWithType: IReadOnlyList<FGameplayTag>
+  fullName: System.Collections.Generic.IReadOnlyList<Noname.GameAbilitySystem.Domain.FGameplayTag>
+  nameWithType.vb: IReadOnlyList(Of FGameplayTag)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Noname.GameAbilitySystem.Domain.FGameplayTag)
+  name.vb: IReadOnlyList(Of FGameplayTag)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Noname.GameAbilitySystem.Domain.FGameplayTag
+    name: FGameplayTag
+    href: Noname.GameAbilitySystem.Domain.FGameplayTag.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.Domain.FGameplayTag
+    name: FGameplayTag
+    href: Noname.GameAbilitySystem.Domain.FGameplayTag.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTag*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTag
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html#Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_HasTag_Noname_GameAbilitySystem_Domain_FGameplayTag_
+  name: HasTag
+  nameWithType: GameplayTagContainerView.HasTag
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTag
+- uid: Noname.GameAbilitySystem.Domain.FGameplayTag
+  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayTag
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.FGameplayTag.html
+  name: FGameplayTag
+  nameWithType: FGameplayTag
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayTag
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTagExact*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTagExact
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html#Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_HasTagExact_Noname_GameAbilitySystem_Domain_FGameplayTag_
+  name: HasTagExact
+  nameWithType: GameplayTagContainerView.HasTagExact
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasTagExact
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAny*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAny
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html#Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_HasAny_Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_
+  name: HasAny
+  nameWithType: GameplayTagContainerView.HasAny
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAny
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  commentId: T:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  parent: Noname.GameAbilitySystem.Presentation
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html
+  name: GameplayTagContainerView
+  nameWithType: GameplayTagContainerView
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAll*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAll
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html#Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_HasAll_Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_
+  name: HasAll
+  nameWithType: GameplayTagContainerView.HasAll
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAll
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAnyExact*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAnyExact
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html#Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_HasAnyExact_Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_
+  name: HasAnyExact
+  nameWithType: GameplayTagContainerView.HasAnyExact
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAnyExact
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAllExact*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAllExact
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html#Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_HasAllExact_Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_
+  name: HasAllExact
+  nameWithType: GameplayTagContainerView.HasAllExact
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.HasAllExact
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.AddTag*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.AddTag
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html#Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_AddTag_Noname_GameAbilitySystem_Domain_FGameplayTag_
+  name: AddTag
+  nameWithType: GameplayTagContainerView.AddTag
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.AddTag
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.RemoveTag*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.RemoveTag
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html#Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_RemoveTag_Noname_GameAbilitySystem_Domain_FGameplayTag_
+  name: RemoveTag
+  nameWithType: GameplayTagContainerView.RemoveTag
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.RemoveTag
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Clear*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Clear
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html#Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_Clear
+  name: Clear
+  nameWithType: GameplayTagContainerView.Clear
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.Clear
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnBeforeSerialize*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnBeforeSerialize
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html#Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_OnBeforeSerialize
+  name: OnBeforeSerialize
+  nameWithType: GameplayTagContainerView.OnBeforeSerialize
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnBeforeSerialize
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnAfterDeserialize*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnAfterDeserialize
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html#Noname_GameAbilitySystem_Presentation_GameplayTagContainerView_OnAfterDeserialize
+  name: OnAfterDeserialize
+  nameWithType: GameplayTagContainerView.OnAfterDeserialize
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.OnAfterDeserialize

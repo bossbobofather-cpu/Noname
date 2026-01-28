@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+  commentId: T:MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+  id: DefensePlayerAttackEvent
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefensePlayerAttackEvent.#ctor(System.Int64,System.Int64,System.Int32,System.Boolean)
+  - MyProject.DefenseGame.Application.DefensePlayerAttackEvent.Damage
+  - MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetKilled
+  - MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetUid
+  langs:
+  - csharp
+  - vb
+  name: DefensePlayerAttackEvent
+  nameWithType: DefensePlayerAttackEvent
+  fullName: MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+  type: Class
+  namespace: MyProject.DefenseGame.Application
+  summary: ?�레?�어 공격 ?�벤?�입?�다.
+  example: []
+  syntax:
+    content: 'public sealed class DefensePlayerAttackEvent : DefenseHostEvent'
+    content.vb: Public NotInheritable Class DefensePlayerAttackEvent Inherits DefenseHostEvent
+  inheritance:
+  - System.Object
+  - MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetUid
+  commentId: P:MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetUid
+  id: TargetUid
+  parent: MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+  langs:
+  - csharp
+  - vb
+  name: TargetUid
+  nameWithType: DefensePlayerAttackEvent.TargetUid
+  fullName: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetUid
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public long TargetUid { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property TargetUid As Long
+  overload: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetUid*
+- uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.Damage
+  commentId: P:MyProject.DefenseGame.Application.DefensePlayerAttackEvent.Damage
+  id: Damage
+  parent: MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+  langs:
+  - csharp
+  - vb
+  name: Damage
+  nameWithType: DefensePlayerAttackEvent.Damage
+  fullName: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.Damage
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public int Damage { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Damage As Integer
+  overload: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.Damage*
+- uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetKilled
+  commentId: P:MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetKilled
+  id: TargetKilled
+  parent: MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+  langs:
+  - csharp
+  - vb
+  name: TargetKilled
+  nameWithType: DefensePlayerAttackEvent.TargetKilled
+  fullName: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetKilled
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public bool TargetKilled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property TargetKilled As Boolean
+  overload: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetKilled*
+- uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.#ctor(System.Int64,System.Int64,System.Int32,System.Boolean)
+  commentId: M:MyProject.DefenseGame.Application.DefensePlayerAttackEvent.#ctor(System.Int64,System.Int64,System.Int32,System.Boolean)
+  id: '#ctor(System.Int64,System.Int64,System.Int32,System.Boolean)'
+  parent: MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+  langs:
+  - csharp
+  - vb
+  name: DefensePlayerAttackEvent(long, long, int, bool)
+  nameWithType: DefensePlayerAttackEvent.DefensePlayerAttackEvent(long, long, int, bool)
+  fullName: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.DefensePlayerAttackEvent(long, long, int, bool)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public DefensePlayerAttackEvent(long tick, long targetUid, int damage, bool targetKilled)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: targetUid
+      type: System.Int64
+    - id: damage
+      type: System.Int32
+    - id: targetKilled
+      type: System.Boolean
+    content.vb: Public Sub New(tick As Long, targetUid As Long, damage As Integer, targetKilled As Boolean)
+  overload: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.#ctor*
+  nameWithType.vb: DefensePlayerAttackEvent.New(Long, Long, Integer, Boolean)
+  fullName.vb: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.New(Long, Long, Integer, Boolean)
+  name.vb: New(Long, Long, Integer, Boolean)
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetUid*
+  commentId: Overload:MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetUid
+  href: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.html#MyProject_DefenseGame_Application_DefensePlayerAttackEvent_TargetUid
+  name: TargetUid
+  nameWithType: DefensePlayerAttackEvent.TargetUid
+  fullName: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetUid
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.Damage*
+  commentId: Overload:MyProject.DefenseGame.Application.DefensePlayerAttackEvent.Damage
+  href: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.html#MyProject_DefenseGame_Application_DefensePlayerAttackEvent_Damage
+  name: Damage
+  nameWithType: DefensePlayerAttackEvent.Damage
+  fullName: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.Damage
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetKilled*
+  commentId: Overload:MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetKilled
+  href: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.html#MyProject_DefenseGame_Application_DefensePlayerAttackEvent_TargetKilled
+  name: TargetKilled
+  nameWithType: DefensePlayerAttackEvent.TargetKilled
+  fullName: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.TargetKilled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.DefensePlayerAttackEvent.#ctor
+  href: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.html#MyProject_DefenseGame_Application_DefensePlayerAttackEvent__ctor_System_Int64_System_Int64_System_Int32_System_Boolean_
+  name: DefensePlayerAttackEvent
+  nameWithType: DefensePlayerAttackEvent.DefensePlayerAttackEvent
+  fullName: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.DefensePlayerAttackEvent
+  nameWithType.vb: DefensePlayerAttackEvent.New
+  fullName.vb: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.New
+  name.vb: New

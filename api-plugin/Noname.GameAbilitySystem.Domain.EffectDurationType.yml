@@ -1,0 +1,115 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Domain.EffectDurationType
+  commentId: T:Noname.GameAbilitySystem.Domain.EffectDurationType
+  id: EffectDurationType
+  parent: Noname.GameAbilitySystem.Domain
+  children:
+  - Noname.GameAbilitySystem.Domain.EffectDurationType.HasDuration
+  - Noname.GameAbilitySystem.Domain.EffectDurationType.Infinite
+  - Noname.GameAbilitySystem.Domain.EffectDurationType.Instant
+  langs:
+  - csharp
+  - vb
+  name: EffectDurationType
+  nameWithType: EffectDurationType
+  fullName: Noname.GameAbilitySystem.Domain.EffectDurationType
+  type: Enum
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 게임플레이 효과의 지속 타입입니다.
+  example: []
+  syntax:
+    content: public enum EffectDurationType
+    content.vb: Public Enum EffectDurationType
+- uid: Noname.GameAbilitySystem.Domain.EffectDurationType.Instant
+  commentId: F:Noname.GameAbilitySystem.Domain.EffectDurationType.Instant
+  id: Instant
+  parent: Noname.GameAbilitySystem.Domain.EffectDurationType
+  langs:
+  - csharp
+  - vb
+  name: Instant
+  nameWithType: EffectDurationType.Instant
+  fullName: Noname.GameAbilitySystem.Domain.EffectDurationType.Instant
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 즉시 적용
+  example: []
+  syntax:
+    content: Instant = 0
+    return:
+      type: Noname.GameAbilitySystem.Domain.EffectDurationType
+- uid: Noname.GameAbilitySystem.Domain.EffectDurationType.Infinite
+  commentId: F:Noname.GameAbilitySystem.Domain.EffectDurationType.Infinite
+  id: Infinite
+  parent: Noname.GameAbilitySystem.Domain.EffectDurationType
+  langs:
+  - csharp
+  - vb
+  name: Infinite
+  nameWithType: EffectDurationType.Infinite
+  fullName: Noname.GameAbilitySystem.Domain.EffectDurationType.Infinite
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 무한 지속
+  example: []
+  syntax:
+    content: Infinite = 1
+    return:
+      type: Noname.GameAbilitySystem.Domain.EffectDurationType
+- uid: Noname.GameAbilitySystem.Domain.EffectDurationType.HasDuration
+  commentId: F:Noname.GameAbilitySystem.Domain.EffectDurationType.HasDuration
+  id: HasDuration
+  parent: Noname.GameAbilitySystem.Domain.EffectDurationType
+  langs:
+  - csharp
+  - vb
+  name: HasDuration
+  nameWithType: EffectDurationType.HasDuration
+  fullName: Noname.GameAbilitySystem.Domain.EffectDurationType.HasDuration
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 시간 기반 지속
+  example: []
+  syntax:
+    content: HasDuration = 2
+    return:
+      type: Noname.GameAbilitySystem.Domain.EffectDurationType
+references:
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+- uid: Noname.GameAbilitySystem.Domain.EffectDurationType
+  commentId: T:Noname.GameAbilitySystem.Domain.EffectDurationType
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.EffectDurationType.html
+  name: EffectDurationType
+  nameWithType: EffectDurationType
+  fullName: Noname.GameAbilitySystem.Domain.EffectDurationType

@@ -1,0 +1,73 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Presentation.GameplayConfig
+  commentId: T:Noname.GameAbilitySystem.Presentation.GameplayConfig
+  id: GameplayConfig
+  parent: Noname.GameAbilitySystem.Presentation
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: GameplayConfig
+  nameWithType: GameplayConfig
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayConfig
+  type: Class
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 게임플레이 구성 데이터의 기본 클래스입니다.
+  example: []
+  syntax:
+    content: 'public abstract class GameplayConfig : ScriptableObject'
+    content.vb: Public MustInherit Class GameplayConfig Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Noname.GameAbilitySystem.Presentation.GameplayEffectConfig
+references:
+- uid: Noname.GameAbilitySystem.Presentation
+  commentId: N:Noname.GameAbilitySystem.Presentation
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Presentation
+  nameWithType: Noname.GameAbilitySystem.Presentation
+  fullName: Noname.GameAbilitySystem.Presentation
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

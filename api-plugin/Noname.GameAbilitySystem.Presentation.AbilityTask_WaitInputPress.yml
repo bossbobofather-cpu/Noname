@@ -1,0 +1,612 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
+  commentId: T:Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
+  id: AbilityTask_WaitInputPress
+  parent: Noname.GameAbilitySystem.Presentation
+  children:
+  - Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.OnActivate
+  - Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.Pressed
+  - Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.WaitInputPress(Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner,InputAction)
+  langs:
+  - csharp
+  - vb
+  name: AbilityTask_WaitInputPress
+  nameWithType: AbilityTask_WaitInputPress
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
+  type: Class
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 입력 눌림을 기다리는 태스크입니다.
+  example: []
+  syntax:
+    content: 'public sealed class AbilityTask_WaitInputPress : AbilityTask'
+    content.vb: Public NotInheritable Class AbilityTask_WaitInputPress Inherits AbilityTask
+  inheritance:
+  - System.Object
+  - Noname.GameAbilitySystem.Presentation.AbilityTask
+  inheritedMembers:
+  - Noname.GameAbilitySystem.Presentation.AbilityTask.Owner
+  - Noname.GameAbilitySystem.Presentation.AbilityTask.ASC
+  - Noname.GameAbilitySystem.Presentation.AbilityTask.Context
+  - Noname.GameAbilitySystem.Presentation.AbilityTask.Handle
+  - Noname.GameAbilitySystem.Presentation.AbilityTask.IsActive
+  - Noname.GameAbilitySystem.Presentation.AbilityTask.IsEnded
+  - Noname.GameAbilitySystem.Presentation.AbilityTask.Completed
+  - Noname.GameAbilitySystem.Presentation.AbilityTask.Cancelled
+  - Noname.GameAbilitySystem.Presentation.AbilityTask.Initialize(Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner)
+  - Noname.GameAbilitySystem.Presentation.AbilityTask.Activate
+  - Noname.GameAbilitySystem.Presentation.AbilityTask.EndTask
+  - Noname.GameAbilitySystem.Presentation.AbilityTask.Cancel
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.Pressed
+  commentId: E:Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.Pressed
+  id: Pressed
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
+  langs:
+  - csharp
+  - vb
+  name: Pressed
+  nameWithType: AbilityTask_WaitInputPress.Pressed
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.Pressed
+  type: Event
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 입력이 눌리면 호출됩니다.
+  example: []
+  syntax:
+    content: public event Action<InputAction> Pressed
+    return:
+      type: System.Action{InputAction}
+    content.vb: Public Event Pressed As Action(Of InputAction)
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.WaitInputPress(Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner,InputAction)
+  commentId: M:Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.WaitInputPress(Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner,InputAction)
+  id: WaitInputPress(Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner,InputAction)
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
+  langs:
+  - csharp
+  - vb
+  name: WaitInputPress(IAbilityTaskOwner, InputAction)
+  nameWithType: AbilityTask_WaitInputPress.WaitInputPress(IAbilityTaskOwner, InputAction)
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.WaitInputPress(Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner, InputAction)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 입력 대기 태스크를 생성하고 활성화합니다.
+  example: []
+  syntax:
+    content: public static AbilityTask_WaitInputPress WaitInputPress(IAbilityTaskOwner owner, InputAction action)
+    parameters:
+    - id: owner
+      type: Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner
+      description: 태스크 소유자
+    - id: action
+      type: InputAction
+      description: 대기할 입력
+    return:
+      type: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
+      description: 생성된 태스크
+    content.vb: Public Shared Function WaitInputPress(owner As IAbilityTaskOwner, action As InputAction) As AbilityTask_WaitInputPress
+  overload: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.WaitInputPress*
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.OnActivate
+  commentId: M:Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.OnActivate
+  id: OnActivate
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
+  langs:
+  - csharp
+  - vb
+  name: OnActivate()
+  nameWithType: AbilityTask_WaitInputPress.OnActivate()
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.OnActivate()
+  type: Method
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 활성화 시점 훅입니다.
+  example: []
+  syntax:
+    content: protected override void OnActivate()
+    content.vb: Protected Overrides Sub OnActivate()
+  overridden: Noname.GameAbilitySystem.Presentation.AbilityTask.OnActivate
+  overload: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.OnActivate*
+references:
+- uid: Noname.GameAbilitySystem.Presentation
+  commentId: N:Noname.GameAbilitySystem.Presentation
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Presentation
+  nameWithType: Noname.GameAbilitySystem.Presentation
+  fullName: Noname.GameAbilitySystem.Presentation
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask
+  commentId: T:Noname.GameAbilitySystem.Presentation.AbilityTask
+  parent: Noname.GameAbilitySystem.Presentation
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html
+  name: AbilityTask
+  nameWithType: AbilityTask
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Owner
+  commentId: P:Noname.GameAbilitySystem.Presentation.AbilityTask.Owner
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Owner
+  name: Owner
+  nameWithType: AbilityTask.Owner
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask.Owner
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask.ASC
+  commentId: P:Noname.GameAbilitySystem.Presentation.AbilityTask.ASC
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_ASC
+  name: ASC
+  nameWithType: AbilityTask.ASC
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask.ASC
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Context
+  commentId: P:Noname.GameAbilitySystem.Presentation.AbilityTask.Context
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Context
+  name: Context
+  nameWithType: AbilityTask.Context
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask.Context
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Handle
+  commentId: P:Noname.GameAbilitySystem.Presentation.AbilityTask.Handle
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Handle
+  name: Handle
+  nameWithType: AbilityTask.Handle
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask.Handle
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask.IsActive
+  commentId: P:Noname.GameAbilitySystem.Presentation.AbilityTask.IsActive
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_IsActive
+  name: IsActive
+  nameWithType: AbilityTask.IsActive
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask.IsActive
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask.IsEnded
+  commentId: P:Noname.GameAbilitySystem.Presentation.AbilityTask.IsEnded
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_IsEnded
+  name: IsEnded
+  nameWithType: AbilityTask.IsEnded
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask.IsEnded
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Completed
+  commentId: E:Noname.GameAbilitySystem.Presentation.AbilityTask.Completed
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Completed
+  name: Completed
+  nameWithType: AbilityTask.Completed
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask.Completed
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Cancelled
+  commentId: E:Noname.GameAbilitySystem.Presentation.AbilityTask.Cancelled
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Cancelled
+  name: Cancelled
+  nameWithType: AbilityTask.Cancelled
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask.Cancelled
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Initialize(Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner)
+  commentId: M:Noname.GameAbilitySystem.Presentation.AbilityTask.Initialize(Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner)
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Initialize_Noname_GameAbilitySystem_Presentation_IAbilityTaskOwner_
+  name: Initialize(IAbilityTaskOwner)
+  nameWithType: AbilityTask.Initialize(IAbilityTaskOwner)
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask.Initialize(Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner)
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Initialize(Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner)
+    name: Initialize
+    href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Initialize_Noname_GameAbilitySystem_Presentation_IAbilityTaskOwner_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner
+    name: IAbilityTaskOwner
+    href: Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Initialize(Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner)
+    name: Initialize
+    href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Initialize_Noname_GameAbilitySystem_Presentation_IAbilityTaskOwner_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner
+    name: IAbilityTaskOwner
+    href: Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner.html
+  - name: )
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Activate
+  commentId: M:Noname.GameAbilitySystem.Presentation.AbilityTask.Activate
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Activate
+  name: Activate()
+  nameWithType: AbilityTask.Activate()
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask.Activate()
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Activate
+    name: Activate
+    href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Activate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Activate
+    name: Activate
+    href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Activate
+  - name: (
+  - name: )
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask.EndTask
+  commentId: M:Noname.GameAbilitySystem.Presentation.AbilityTask.EndTask
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_EndTask
+  name: EndTask()
+  nameWithType: AbilityTask.EndTask()
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask.EndTask()
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.Presentation.AbilityTask.EndTask
+    name: EndTask
+    href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_EndTask
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.Presentation.AbilityTask.EndTask
+    name: EndTask
+    href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_EndTask
+  - name: (
+  - name: )
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Cancel
+  commentId: M:Noname.GameAbilitySystem.Presentation.AbilityTask.Cancel
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Cancel
+  name: Cancel()
+  nameWithType: AbilityTask.Cancel()
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask.Cancel()
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Cancel
+    name: Cancel
+    href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Cancel
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.Presentation.AbilityTask.Cancel
+    name: Cancel
+    href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_Cancel
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action{InputAction}
+  commentId: T:System.Action{InputAction}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<InputAction>
+  nameWithType: Action<InputAction>
+  fullName: System.Action<InputAction>
+  nameWithType.vb: Action(Of InputAction)
+  fullName.vb: System.Action(Of InputAction)
+  name.vb: Action(Of InputAction)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: InputAction
+    name: InputAction
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: InputAction
+    name: InputAction
+    isExternal: true
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.WaitInputPress*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.WaitInputPress
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.html#Noname_GameAbilitySystem_Presentation_AbilityTask_WaitInputPress_WaitInputPress_Noname_GameAbilitySystem_Presentation_IAbilityTaskOwner_InputAction_
+  name: WaitInputPress
+  nameWithType: AbilityTask_WaitInputPress.WaitInputPress
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.WaitInputPress
+- uid: Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner
+  commentId: T:Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner
+  parent: Noname.GameAbilitySystem.Presentation
+  href: Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner.html
+  name: IAbilityTaskOwner
+  nameWithType: IAbilityTaskOwner
+  fullName: Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner
+- uid: InputAction
+  commentId: '!:InputAction'
+  isExternal: true
+  name: InputAction
+  nameWithType: InputAction
+  fullName: InputAction
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
+  commentId: T:Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
+  parent: Noname.GameAbilitySystem.Presentation
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.html
+  name: AbilityTask_WaitInputPress
+  nameWithType: AbilityTask_WaitInputPress
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask.OnActivate
+  commentId: M:Noname.GameAbilitySystem.Presentation.AbilityTask.OnActivate
+  parent: Noname.GameAbilitySystem.Presentation.AbilityTask
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_OnActivate
+  name: OnActivate()
+  nameWithType: AbilityTask.OnActivate()
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask.OnActivate()
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.Presentation.AbilityTask.OnActivate
+    name: OnActivate
+    href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_OnActivate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.Presentation.AbilityTask.OnActivate
+    name: OnActivate
+    href: Noname.GameAbilitySystem.Presentation.AbilityTask.html#Noname_GameAbilitySystem_Presentation_AbilityTask_OnActivate
+  - name: (
+  - name: )
+- uid: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.OnActivate*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.OnActivate
+  href: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.html#Noname_GameAbilitySystem_Presentation_AbilityTask_WaitInputPress_OnActivate
+  name: OnActivate
+  nameWithType: AbilityTask_WaitInputPress.OnActivate
+  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.OnActivate

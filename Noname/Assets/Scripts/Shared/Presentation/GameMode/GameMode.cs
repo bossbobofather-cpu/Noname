@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Noname.GameHost;
 using Noname.GameHost.GameEvent;
@@ -8,8 +8,8 @@ using UnityEngine.Serialization;
 namespace MyProject.Common.GameMode
 {
     /// <summary>
-    /// ?�네�??�?�을 ?�용?�는 게임 모드?�니??
-    /// 구체?�인 게임 모드?????�래?��? ?�속받아 ?�???�전?�을 ?�보?????�습?�다.
+    /// 게임 모드 베이스 클래스입니다.
+    /// 구체적인 게임 모드는 이 클래스를 상속해서 구현합니다.
     /// </summary>
     public abstract class GameMode<TCommand, TResult, TEvent, TSnapshot> : MonoBehaviour, IGameMode
         where TCommand : GameCommandBase
@@ -17,38 +17,59 @@ namespace MyProject.Common.GameMode
         where TEvent : GameEventBase
         where TSnapshot : GameSnapshotBase
     {
+        /// <summary>
+        /// 모듈 프리팹 목록입니다.
+        /// </summary>
         [SerializeField] private List<MonoBehaviour> _modulePrefabs = new();
 
+        /// <summary>
+        /// 호스트 커맨드 버스입니다.
+        /// </summary>
         private IHostCommandBus<TCommand, TResult, TEvent> _host;
 
         /// <summary>
-        /// ?�???�전???�스???�근???�공?�니??
+        /// 호스트 커맨드 버스에 접근합니다.
         /// </summary>
         protected IHostCommandBus<TCommand, TResult, TEvent> Host => _host;
 
+        /// <summary>
+        /// 생성된 모듈 인스턴스 목록입니다.
+        /// </summary>
         private readonly List<MonoBehaviour> _moduleInstances = new();
+
+        /// <summary>
+        /// 등록된 모듈 목록입니다.
+        /// </summary>
         private readonly List<IModule> _modules = new();
+
+        /// <summary>
+        /// 초기화 완료 여부입니다.
+        /// </summary>
         private bool _initialized;
+
+        /// <summary>
+        /// Startup 완료 여부입니다.
+        /// </summary>
         private bool _started;
 
         /// <summary>
-        /// ?�록??모듈 목록?�니??
+        /// 등록된 모듈 목록입니다.
         /// </summary>
         public IReadOnlyList<IModule> Modules => _modules;
 
         /// <summary>
-        /// ??범위 ?�벤??버스?�니??
+        /// 씬 스코프 이벤트 버스입니다.
         /// </summary>
         public GameEventBus.Scope SceneBus => GameEventBus.Scene;
 
         /// <summary>
-        /// ?�스?��? 주입?�고 초기?�합?�다.
+        /// 호스트를 주입하고 모듈을 초기화합니다.
         /// </summary>
         public void Initialize(IHostCommandBus<TCommand, TResult, TEvent> host)
         {
             if (_host != null)
             {
-                return; // ?��? 초기?�됨
+                return; // 이미 초기화됨
             }
 
             _host = host;
@@ -62,7 +83,7 @@ namespace MyProject.Common.GameMode
 
             _initialized = true;
 
-            // 모듈 목록??빌드?�고 �?모듈??초기?�합?�다.
+            // 모듈 목록을 구성하고 각 모듈을 초기화합니다.
             BuildModuleList();
             for (var i = 0; i < _modules.Count; i++)
             {
@@ -74,18 +95,18 @@ namespace MyProject.Common.GameMode
         }
 
         /// <summary>
-        /// ?�???�전???�스??결과 처리 메서?�입?�다.
+        /// 호스트 결과를 처리합니다.
         /// </summary>
         protected abstract void OnHostResult(TResult result);
 
         /// <summary>
-        /// ?�???�전???�스???�벤??처리 메서?�입?�다.
+        /// 호스트 이벤트를 처리합니다.
         /// </summary>
         protected abstract void OnHostEvent(TEvent evt);
 
 
         /// <summary>
-        /// 모듈 Startup???�출?�니??
+        /// 모듈 Startup을 호출합니다.
         /// </summary>
         protected void StartupModule()
         {
@@ -95,7 +116,7 @@ namespace MyProject.Common.GameMode
             }
 
             _started = true;
-            // �?모듈??Startup???�출?�니??
+            // 각 모듈의 Startup을 호출합니다.
             for (var i = 0; i < _modules.Count; i++)
             {
                 _modules[i].Startup();
@@ -105,7 +126,7 @@ namespace MyProject.Common.GameMode
         }
 
         /// <summary>
-        /// 모듈 Shutdown???�출?�니??
+        /// 모듈 Shutdown을 호출합니다.
         /// </summary>
         protected void ShutdownModule()
         {
@@ -123,7 +144,7 @@ namespace MyProject.Common.GameMode
                 _host = null;
             }
 
-            // �?모듈??Shutdown???�출?�니??
+            // 각 모듈의 Shutdown을 호출합니다.
             for (var i = 0; i < _modules.Count; i++)
             {
                 _modules[i].Shutdown();
@@ -133,7 +154,7 @@ namespace MyProject.Common.GameMode
         }
 
         /// <summary>
-        /// ?�정 ?�?�의 모듈??반환?�니??
+        /// 지정한 타입의 모듈을 반환합니다.
         /// </summary>
         public T GetModule<T>() where T : class, IModule
         {
@@ -170,7 +191,7 @@ namespace MyProject.Common.GameMode
 
             if (_modulePrefabs.Count == 0)
             {
-                // ?�리??목록???�으�??�식 객체?�서 검?�합?�다.
+                // 하위 객체에서 모듈을 찾아 목록을 구성합니다.
                 GetComponentsInChildren(true, _moduleInstances);
             }
             else
@@ -184,7 +205,7 @@ namespace MyProject.Common.GameMode
                         continue;
                     }
 
-                    // 모듈 ?�리?�을 ?�식?�로 ?�성?�니??
+                    // 모듈 프리팹을 인스턴스로 생성합니다.
                     var instance = Instantiate(prefab, parent);
                     _moduleInstances.Add(instance);
                 }
@@ -218,21 +239,21 @@ namespace MyProject.Common.GameMode
         }
 
         /// <summary>
-        /// 모듈 초기???�료 ???�출?�니??
+        /// 모듈 초기화 완료 후 호출됩니다.
         /// </summary>
         protected virtual void OnInitialize()
         {
         }
 
         /// <summary>
-        /// 모듈 Startup 직후 ?�출?�니??
+        /// 모듈 Startup 직후 호출됩니다.
         /// </summary>
         protected virtual void OnStartup()
         {
         }
 
         /// <summary>
-        /// 모듈 Shutdown 직후 ?�출?�니??
+        /// 모듈 Shutdown 직후 호출됩니다.
         /// </summary>
         protected virtual void OnShutdown()
         {

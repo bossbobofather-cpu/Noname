@@ -1,0 +1,87 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Domain.IAbilitySystemOwner
+  commentId: T:MyProject.DefenseGame.Domain.IAbilitySystemOwner
+  id: IAbilitySystemOwner
+  parent: MyProject.DefenseGame.Domain
+  children:
+  - MyProject.DefenseGame.Domain.IAbilitySystemOwner.ASC
+  langs:
+  - csharp
+  - vb
+  name: IAbilitySystemOwner
+  nameWithType: IAbilitySystemOwner
+  fullName: MyProject.DefenseGame.Domain.IAbilitySystemOwner
+  type: Interface
+  namespace: MyProject.DefenseGame.Domain
+  summary: >-
+    ASC(AbilitySystemComponent)에 대한 접근을 제공하는 인터페이스입니다.
+
+    구체적인 클래스에 의존하지 않고 ASC 기능을 사용하기 위해 도입되었습니다.
+  example: []
+  syntax:
+    content: public interface IAbilitySystemOwner
+    content.vb: Public Interface IAbilitySystemOwner
+- uid: MyProject.DefenseGame.Domain.IAbilitySystemOwner.ASC
+  commentId: P:MyProject.DefenseGame.Domain.IAbilitySystemOwner.ASC
+  id: ASC
+  parent: MyProject.DefenseGame.Domain.IAbilitySystemOwner
+  langs:
+  - csharp
+  - vb
+  name: ASC
+  nameWithType: IAbilitySystemOwner.ASC
+  fullName: MyProject.DefenseGame.Domain.IAbilitySystemOwner.ASC
+  type: Property
+  namespace: MyProject.DefenseGame.Domain
+  summary: AbilitySystemComponent 인스턴스를 반환합니다.
+  example: []
+  syntax:
+    content: AbilitySystemComponent ASC { get; }
+    parameters: []
+    return:
+      type: AbilitySystemComponent
+    content.vb: ReadOnly Property ASC As AbilitySystemComponent
+  overload: MyProject.DefenseGame.Domain.IAbilitySystemOwner.ASC*
+references:
+- uid: MyProject.DefenseGame.Domain
+  commentId: N:MyProject.DefenseGame.Domain
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain
+  nameWithType: MyProject.DefenseGame.Domain
+  fullName: MyProject.DefenseGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+- uid: MyProject.DefenseGame.Domain.IAbilitySystemOwner.ASC*
+  commentId: Overload:MyProject.DefenseGame.Domain.IAbilitySystemOwner.ASC
+  href: MyProject.DefenseGame.Domain.IAbilitySystemOwner.html#MyProject_DefenseGame_Domain_IAbilitySystemOwner_ASC
+  name: ASC
+  nameWithType: IAbilitySystemOwner.ASC
+  fullName: MyProject.DefenseGame.Domain.IAbilitySystemOwner.ASC
+- uid: AbilitySystemComponent
+  isExternal: true
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: AbilitySystemComponent

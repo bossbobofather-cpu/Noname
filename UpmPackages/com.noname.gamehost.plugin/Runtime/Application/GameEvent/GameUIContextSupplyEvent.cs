@@ -1,13 +1,12 @@
-
-namespace Noname.GameHost.GameEvent
+﻿namespace Noname.GameHost.GameEvent
 {
     /// <summary>
-    /// UI ���ؽ�Ʈ�� �����ϴ� �̺�Ʈ�Դϴ�.
+    /// UI 컨텍스트를 전달하는 이벤트입니다.
     /// </summary>
     public sealed class GameUIContextSupplyEvent : SceneGameEventContext
     {
         /// <summary>
-        /// ������ UI ���ؽ�Ʈ�Դϴ�.
+        /// 전달된 UI 컨텍스트입니다.
         /// </summary>
         public UIEventContext UIEventCtx { get; }
 

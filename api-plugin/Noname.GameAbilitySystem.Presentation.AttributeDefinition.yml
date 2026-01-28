@@ -1,0 +1,290 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition
+  commentId: T:Noname.GameAbilitySystem.Presentation.AttributeDefinition
+  id: AttributeDefinition
+  parent: Noname.GameAbilitySystem.Presentation
+  children:
+  - Noname.GameAbilitySystem.Presentation.AttributeDefinition.DefaultBaseValue
+  - Noname.GameAbilitySystem.Presentation.AttributeDefinition.Id
+  - Noname.GameAbilitySystem.Presentation.AttributeDefinition.MaxValue
+  - Noname.GameAbilitySystem.Presentation.AttributeDefinition.MinValue
+  langs:
+  - csharp
+  - vb
+  name: AttributeDefinition
+  nameWithType: AttributeDefinition
+  fullName: Noname.GameAbilitySystem.Presentation.AttributeDefinition
+  type: Class
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 속성 정의용 ScriptableObject입니다.
+  example: []
+  syntax:
+    content: 'public sealed class AttributeDefinition : ScriptableObject'
+    content.vb: Public NotInheritable Class AttributeDefinition Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - Noname.GameAbilitySystem.Presentation.AttributeDefinition.Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain
+- uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition.Id
+  commentId: P:Noname.GameAbilitySystem.Presentation.AttributeDefinition.Id
+  id: Id
+  parent: Noname.GameAbilitySystem.Presentation.AttributeDefinition
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: AttributeDefinition.Id
+  fullName: Noname.GameAbilitySystem.Presentation.AttributeDefinition.Id
+  type: Property
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 속성 식별자입니다 (Domain 레이어).
+  example: []
+  syntax:
+    content: public AttributeId Id { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.Domain.AttributeId
+    content.vb: Public ReadOnly Property Id As AttributeId
+  overload: Noname.GameAbilitySystem.Presentation.AttributeDefinition.Id*
+- uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition.DefaultBaseValue
+  commentId: P:Noname.GameAbilitySystem.Presentation.AttributeDefinition.DefaultBaseValue
+  id: DefaultBaseValue
+  parent: Noname.GameAbilitySystem.Presentation.AttributeDefinition
+  langs:
+  - csharp
+  - vb
+  name: DefaultBaseValue
+  nameWithType: AttributeDefinition.DefaultBaseValue
+  fullName: Noname.GameAbilitySystem.Presentation.AttributeDefinition.DefaultBaseValue
+  type: Property
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 기본 베이스 값입니다.
+  example: []
+  syntax:
+    content: public float DefaultBaseValue { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property DefaultBaseValue As Single
+  overload: Noname.GameAbilitySystem.Presentation.AttributeDefinition.DefaultBaseValue*
+- uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition.MinValue
+  commentId: P:Noname.GameAbilitySystem.Presentation.AttributeDefinition.MinValue
+  id: MinValue
+  parent: Noname.GameAbilitySystem.Presentation.AttributeDefinition
+  langs:
+  - csharp
+  - vb
+  name: MinValue
+  nameWithType: AttributeDefinition.MinValue
+  fullName: Noname.GameAbilitySystem.Presentation.AttributeDefinition.MinValue
+  type: Property
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 최소값입니다.
+  example: []
+  syntax:
+    content: public float MinValue { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property MinValue As Single
+  overload: Noname.GameAbilitySystem.Presentation.AttributeDefinition.MinValue*
+- uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition.MaxValue
+  commentId: P:Noname.GameAbilitySystem.Presentation.AttributeDefinition.MaxValue
+  id: MaxValue
+  parent: Noname.GameAbilitySystem.Presentation.AttributeDefinition
+  langs:
+  - csharp
+  - vb
+  name: MaxValue
+  nameWithType: AttributeDefinition.MaxValue
+  fullName: Noname.GameAbilitySystem.Presentation.AttributeDefinition.MaxValue
+  type: Property
+  namespace: Noname.GameAbilitySystem.Presentation
+  summary: 최대값입니다.
+  example: []
+  syntax:
+    content: public float MaxValue { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property MaxValue As Single
+  overload: Noname.GameAbilitySystem.Presentation.AttributeDefinition.MaxValue*
+references:
+- uid: Noname.GameAbilitySystem.Presentation
+  commentId: N:Noname.GameAbilitySystem.Presentation
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Presentation
+  nameWithType: Noname.GameAbilitySystem.Presentation
+  fullName: Noname.GameAbilitySystem.Presentation
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Presentation
+    name: Presentation
+    href: Noname.GameAbilitySystem.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition.Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain
+  commentId: M:Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.AttributeDefinition)
+  parent: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+  definition: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.AttributeDefinition)
+  href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_AttributeDefinition_
+  name: ToDomain(AttributeDefinition)
+  nameWithType: DomainConversionExtensions.ToDomain(AttributeDefinition)
+  fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.AttributeDefinition)
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.AttributeDefinition)
+    name: ToDomain
+    href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_AttributeDefinition_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition
+    name: AttributeDefinition
+    href: Noname.GameAbilitySystem.Presentation.AttributeDefinition.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.AttributeDefinition)
+    name: ToDomain
+    href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_AttributeDefinition_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition
+    name: AttributeDefinition
+    href: Noname.GameAbilitySystem.Presentation.AttributeDefinition.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.AttributeDefinition)
+  commentId: M:Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.AttributeDefinition)
+  href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_AttributeDefinition_
+  name: ToDomain(AttributeDefinition)
+  nameWithType: DomainConversionExtensions.ToDomain(AttributeDefinition)
+  fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.AttributeDefinition)
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.AttributeDefinition)
+    name: ToDomain
+    href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_AttributeDefinition_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition
+    name: AttributeDefinition
+    href: Noname.GameAbilitySystem.Presentation.AttributeDefinition.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.AttributeDefinition)
+    name: ToDomain
+    href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html#Noname_GameAbilitySystem_Presentation_DomainConversionExtensions_ToDomain_Noname_GameAbilitySystem_Presentation_AttributeDefinition_
+  - name: (
+  - uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition
+    name: AttributeDefinition
+    href: Noname.GameAbilitySystem.Presentation.AttributeDefinition.html
+  - name: )
+- uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+  commentId: T:Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+  parent: Noname.GameAbilitySystem.Presentation
+  href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html
+  name: DomainConversionExtensions
+  nameWithType: DomainConversionExtensions
+  fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+- uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition.Id*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.AttributeDefinition.Id
+  href: Noname.GameAbilitySystem.Presentation.AttributeDefinition.html#Noname_GameAbilitySystem_Presentation_AttributeDefinition_Id
+  name: Id
+  nameWithType: AttributeDefinition.Id
+  fullName: Noname.GameAbilitySystem.Presentation.AttributeDefinition.Id
+- uid: Noname.GameAbilitySystem.Domain.AttributeId
+  commentId: T:Noname.GameAbilitySystem.Domain.AttributeId
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.AttributeId.html
+  name: AttributeId
+  nameWithType: AttributeId
+  fullName: Noname.GameAbilitySystem.Domain.AttributeId
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+- uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition.DefaultBaseValue*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.AttributeDefinition.DefaultBaseValue
+  href: Noname.GameAbilitySystem.Presentation.AttributeDefinition.html#Noname_GameAbilitySystem_Presentation_AttributeDefinition_DefaultBaseValue
+  name: DefaultBaseValue
+  nameWithType: AttributeDefinition.DefaultBaseValue
+  fullName: Noname.GameAbilitySystem.Presentation.AttributeDefinition.DefaultBaseValue
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition.MinValue*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.AttributeDefinition.MinValue
+  href: Noname.GameAbilitySystem.Presentation.AttributeDefinition.html#Noname_GameAbilitySystem_Presentation_AttributeDefinition_MinValue
+  name: MinValue
+  nameWithType: AttributeDefinition.MinValue
+  fullName: Noname.GameAbilitySystem.Presentation.AttributeDefinition.MinValue
+- uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition.MaxValue*
+  commentId: Overload:Noname.GameAbilitySystem.Presentation.AttributeDefinition.MaxValue
+  href: Noname.GameAbilitySystem.Presentation.AttributeDefinition.html#Noname_GameAbilitySystem_Presentation_AttributeDefinition_MaxValue
+  name: MaxValue
+  nameWithType: AttributeDefinition.MaxValue
+  fullName: Noname.GameAbilitySystem.Presentation.AttributeDefinition.MaxValue

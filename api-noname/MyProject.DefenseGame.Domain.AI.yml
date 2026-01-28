@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Domain.AI
+  commentId: N:MyProject.DefenseGame.Domain.AI
+  id: MyProject.DefenseGame.Domain.AI
+  children:
+  - MyProject.DefenseGame.Domain.AI.IDefenseAI
+  - MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
+  langs:
+  - csharp
+  - vb
+  name: MyProject.DefenseGame.Domain.AI
+  nameWithType: MyProject.DefenseGame.Domain.AI
+  fullName: MyProject.DefenseGame.Domain.AI
+  type: Namespace
+references:
+- uid: MyProject.DefenseGame.Domain.AI.IDefenseAI
+  commentId: T:MyProject.DefenseGame.Domain.AI.IDefenseAI
+  parent: MyProject.DefenseGame.Domain.AI
+  href: MyProject.DefenseGame.Domain.AI.IDefenseAI.html
+  name: IDefenseAI
+  nameWithType: IDefenseAI
+  fullName: MyProject.DefenseGame.Domain.AI.IDefenseAI
+- uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
+  commentId: T:MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
+  href: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.html
+  name: PlayerAutoBattleAI
+  nameWithType: PlayerAutoBattleAI
+  fullName: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
+- uid: MyProject.DefenseGame.Domain.AI
+  commentId: N:MyProject.DefenseGame.Domain.AI
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain.AI
+  nameWithType: MyProject.DefenseGame.Domain.AI
+  fullName: MyProject.DefenseGame.Domain.AI
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.AI
+    name: AI
+    href: MyProject.DefenseGame.Domain.AI.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.AI
+    name: AI
+    href: MyProject.DefenseGame.Domain.AI.html

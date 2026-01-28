@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+  commentId: T:MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+  id: SelectLevelUpAbilityResult
+  parent: MyProject.DefenseGame.Application.Commands
+  children:
+  - MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityId
+  - MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityName
+  - MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Fail(System.Int64,System.Int64,System.String)
+  - MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Ok(System.Int64,System.Int64,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: SelectLevelUpAbilityResult
+  nameWithType: SelectLevelUpAbilityResult
+  fullName: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+  type: Class
+  namespace: MyProject.DefenseGame.Application.Commands
+  summary: 레벨업 선택 Result입니다.
+  example: []
+  syntax:
+    content: 'public sealed class SelectLevelUpAbilityResult : DefenseCommandResult'
+    content.vb: Public NotInheritable Class SelectLevelUpAbilityResult Inherits DefenseCommandResult
+  inheritance:
+  - System.Object
+  - MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+- uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityId
+  commentId: P:MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityId
+  id: AbilityId
+  parent: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+  langs:
+  - csharp
+  - vb
+  name: AbilityId
+  nameWithType: SelectLevelUpAbilityResult.AbilityId
+  fullName: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityId
+  type: Property
+  namespace: MyProject.DefenseGame.Application.Commands
+  summary: 선택한 스킬 ID입니다.
+  example: []
+  syntax:
+    content: public string AbilityId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property AbilityId As String
+  overload: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityId*
+- uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityName
+  commentId: P:MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityName
+  id: AbilityName
+  parent: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+  langs:
+  - csharp
+  - vb
+  name: AbilityName
+  nameWithType: SelectLevelUpAbilityResult.AbilityName
+  fullName: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityName
+  type: Property
+  namespace: MyProject.DefenseGame.Application.Commands
+  summary: 선택한 스킬 이름입니다.
+  example: []
+  syntax:
+    content: public string AbilityName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property AbilityName As String
+  overload: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityName*
+- uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Ok(System.Int64,System.Int64,System.String,System.String)
+  commentId: M:MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Ok(System.Int64,System.Int64,System.String,System.String)
+  id: Ok(System.Int64,System.Int64,System.String,System.String)
+  parent: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+  langs:
+  - csharp
+  - vb
+  name: Ok(long, long, string, string)
+  nameWithType: SelectLevelUpAbilityResult.Ok(long, long, string, string)
+  fullName: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Ok(long, long, string, string)
+  type: Method
+  namespace: MyProject.DefenseGame.Application.Commands
+  syntax:
+    content: public static SelectLevelUpAbilityResult Ok(long tick, long senderUid, string abilityId, string abilityName)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: senderUid
+      type: System.Int64
+    - id: abilityId
+      type: System.String
+    - id: abilityName
+      type: System.String
+    return:
+      type: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+    content.vb: Public Shared Function Ok(tick As Long, senderUid As Long, abilityId As String, abilityName As String) As SelectLevelUpAbilityResult
+  overload: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Ok*
+  nameWithType.vb: SelectLevelUpAbilityResult.Ok(Long, Long, String, String)
+  fullName.vb: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Ok(Long, Long, String, String)
+  name.vb: Ok(Long, Long, String, String)
+- uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Fail(System.Int64,System.Int64,System.String)
+  commentId: M:MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Fail(System.Int64,System.Int64,System.String)
+  id: Fail(System.Int64,System.Int64,System.String)
+  parent: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+  langs:
+  - csharp
+  - vb
+  name: Fail(long, long, string)
+  nameWithType: SelectLevelUpAbilityResult.Fail(long, long, string)
+  fullName: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Fail(long, long, string)
+  type: Method
+  namespace: MyProject.DefenseGame.Application.Commands
+  syntax:
+    content: public static SelectLevelUpAbilityResult Fail(long tick, long senderUid, string reason)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: senderUid
+      type: System.Int64
+    - id: reason
+      type: System.String
+    return:
+      type: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+    content.vb: Public Shared Function Fail(tick As Long, senderUid As Long, reason As String) As SelectLevelUpAbilityResult
+  overload: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Fail*
+  nameWithType.vb: SelectLevelUpAbilityResult.Fail(Long, Long, String)
+  fullName.vb: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Fail(Long, Long, String)
+  name.vb: Fail(Long, Long, String)
+references:
+- uid: MyProject.DefenseGame.Application.Commands
+  commentId: N:MyProject.DefenseGame.Application.Commands
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application.Commands
+  nameWithType: MyProject.DefenseGame.Application.Commands
+  fullName: MyProject.DefenseGame.Application.Commands
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application.Commands
+    name: Commands
+    href: MyProject.DefenseGame.Application.Commands.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application.Commands
+    name: Commands
+    href: MyProject.DefenseGame.Application.Commands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+  commentId: T:MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+  parent: MyProject.DefenseGame.Application.Commands
+  href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  name: DefenseCommandResult
+  nameWithType: DefenseCommandResult
+  fullName: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityId*
+  commentId: Overload:MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityId
+  href: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.html#MyProject_DefenseGame_Application_Commands_SelectLevelUpAbilityResult_AbilityId
+  name: AbilityId
+  nameWithType: SelectLevelUpAbilityResult.AbilityId
+  fullName: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityName*
+  commentId: Overload:MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityName
+  href: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.html#MyProject_DefenseGame_Application_Commands_SelectLevelUpAbilityResult_AbilityName
+  name: AbilityName
+  nameWithType: SelectLevelUpAbilityResult.AbilityName
+  fullName: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.AbilityName
+- uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Ok*
+  commentId: Overload:MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Ok
+  href: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.html#MyProject_DefenseGame_Application_Commands_SelectLevelUpAbilityResult_Ok_System_Int64_System_Int64_System_String_System_String_
+  name: Ok
+  nameWithType: SelectLevelUpAbilityResult.Ok
+  fullName: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Ok
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+  commentId: T:MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+  parent: MyProject.DefenseGame.Application.Commands
+  href: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.html
+  name: SelectLevelUpAbilityResult
+  nameWithType: SelectLevelUpAbilityResult
+  fullName: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult
+- uid: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Fail*
+  commentId: Overload:MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Fail
+  href: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.html#MyProject_DefenseGame_Application_Commands_SelectLevelUpAbilityResult_Fail_System_Int64_System_Int64_System_String_
+  name: Fail
+  nameWithType: SelectLevelUpAbilityResult.Fail
+  fullName: MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityResult.Fail

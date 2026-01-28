@@ -1,0 +1,267 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+  id: DefenseMonsterKilledEvent
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.#ctor(System.Int64,System.Int64,System.String,System.Boolean,System.Int32)
+  - MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.ExpGained
+  - MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.IsBoss
+  - MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterType
+  - MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterUid
+  langs:
+  - csharp
+  - vb
+  name: DefenseMonsterKilledEvent
+  nameWithType: DefenseMonsterKilledEvent
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+  type: Class
+  namespace: MyProject.DefenseGame.Application
+  summary: 몬스???�망 ?�벤?�입?�다.
+  example: []
+  syntax:
+    content: 'public sealed class DefenseMonsterKilledEvent : DefenseHostEvent'
+    content.vb: Public NotInheritable Class DefenseMonsterKilledEvent Inherits DefenseHostEvent
+  inheritance:
+  - System.Object
+  - MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterUid
+  commentId: P:MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterUid
+  id: MonsterUid
+  parent: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+  langs:
+  - csharp
+  - vb
+  name: MonsterUid
+  nameWithType: DefenseMonsterKilledEvent.MonsterUid
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterUid
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public long MonsterUid { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property MonsterUid As Long
+  overload: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterUid*
+- uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterType
+  commentId: P:MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterType
+  id: MonsterType
+  parent: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+  langs:
+  - csharp
+  - vb
+  name: MonsterType
+  nameWithType: DefenseMonsterKilledEvent.MonsterType
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterType
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public string MonsterType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property MonsterType As String
+  overload: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterType*
+- uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.IsBoss
+  commentId: P:MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.IsBoss
+  id: IsBoss
+  parent: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+  langs:
+  - csharp
+  - vb
+  name: IsBoss
+  nameWithType: DefenseMonsterKilledEvent.IsBoss
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.IsBoss
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public bool IsBoss { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsBoss As Boolean
+  overload: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.IsBoss*
+- uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.ExpGained
+  commentId: P:MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.ExpGained
+  id: ExpGained
+  parent: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+  langs:
+  - csharp
+  - vb
+  name: ExpGained
+  nameWithType: DefenseMonsterKilledEvent.ExpGained
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.ExpGained
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public int ExpGained { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ExpGained As Integer
+  overload: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.ExpGained*
+- uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.#ctor(System.Int64,System.Int64,System.String,System.Boolean,System.Int32)
+  commentId: M:MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.#ctor(System.Int64,System.Int64,System.String,System.Boolean,System.Int32)
+  id: '#ctor(System.Int64,System.Int64,System.String,System.Boolean,System.Int32)'
+  parent: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
+  langs:
+  - csharp
+  - vb
+  name: DefenseMonsterKilledEvent(long, long, string, bool, int)
+  nameWithType: DefenseMonsterKilledEvent.DefenseMonsterKilledEvent(long, long, string, bool, int)
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.DefenseMonsterKilledEvent(long, long, string, bool, int)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public DefenseMonsterKilledEvent(long tick, long monsterUid, string monsterType, bool isBoss, int expGained)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: monsterUid
+      type: System.Int64
+    - id: monsterType
+      type: System.String
+    - id: isBoss
+      type: System.Boolean
+    - id: expGained
+      type: System.Int32
+    content.vb: Public Sub New(tick As Long, monsterUid As Long, monsterType As String, isBoss As Boolean, expGained As Integer)
+  overload: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.#ctor*
+  nameWithType.vb: DefenseMonsterKilledEvent.New(Long, Long, String, Boolean, Integer)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.New(Long, Long, String, Boolean, Integer)
+  name.vb: New(Long, Long, String, Boolean, Integer)
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterUid*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterUid
+  href: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.html#MyProject_DefenseGame_Application_DefenseMonsterKilledEvent_MonsterUid
+  name: MonsterUid
+  nameWithType: DefenseMonsterKilledEvent.MonsterUid
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterUid
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterType*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterType
+  href: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.html#MyProject_DefenseGame_Application_DefenseMonsterKilledEvent_MonsterType
+  name: MonsterType
+  nameWithType: DefenseMonsterKilledEvent.MonsterType
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.MonsterType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.IsBoss*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.IsBoss
+  href: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.html#MyProject_DefenseGame_Application_DefenseMonsterKilledEvent_IsBoss
+  name: IsBoss
+  nameWithType: DefenseMonsterKilledEvent.IsBoss
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.IsBoss
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.ExpGained*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.ExpGained
+  href: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.html#MyProject_DefenseGame_Application_DefenseMonsterKilledEvent_ExpGained
+  name: ExpGained
+  nameWithType: DefenseMonsterKilledEvent.ExpGained
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.ExpGained
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.#ctor
+  href: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.html#MyProject_DefenseGame_Application_DefenseMonsterKilledEvent__ctor_System_Int64_System_Int64_System_String_System_Boolean_System_Int32_
+  name: DefenseMonsterKilledEvent
+  nameWithType: DefenseMonsterKilledEvent.DefenseMonsterKilledEvent
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.DefenseMonsterKilledEvent
+  nameWithType.vb: DefenseMonsterKilledEvent.New
+  fullName.vb: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent.New
+  name.vb: New

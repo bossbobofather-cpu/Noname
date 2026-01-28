@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
+  id: DefenseAbilitySelectedEvent
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String)
+  - MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
+  - MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName
+  langs:
+  - csharp
+  - vb
+  name: DefenseAbilitySelectedEvent
+  nameWithType: DefenseAbilitySelectedEvent
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
+  type: Class
+  namespace: MyProject.DefenseGame.Application
+  summary: ?�빌리티 ?�택 ?�료 ?�벤?�입?�다.
+  example: []
+  syntax:
+    content: 'public sealed class DefenseAbilitySelectedEvent : DefenseHostEvent'
+    content.vb: Public NotInheritable Class DefenseAbilitySelectedEvent Inherits DefenseHostEvent
+  inheritance:
+  - System.Object
+  - MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
+  commentId: P:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
+  id: AbilityId
+  parent: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
+  langs:
+  - csharp
+  - vb
+  name: AbilityId
+  nameWithType: DefenseAbilitySelectedEvent.AbilityId
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public LevelUpAbilityId AbilityId { get; }
+    parameters: []
+    return:
+      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+    content.vb: Public ReadOnly Property AbilityId As LevelUpAbilityId
+  overload: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId*
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName
+  commentId: P:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName
+  id: AbilityName
+  parent: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
+  langs:
+  - csharp
+  - vb
+  name: AbilityName
+  nameWithType: DefenseAbilitySelectedEvent.AbilityName
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public string AbilityName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property AbilityName As String
+  overload: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName*
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String)
+  commentId: M:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String)
+  id: '#ctor(System.Int64,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String)'
+  parent: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
+  langs:
+  - csharp
+  - vb
+  name: DefenseAbilitySelectedEvent(long, LevelUpAbilityId, string)
+  nameWithType: DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent(long, LevelUpAbilityId, string)
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent(long, MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, string)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public DefenseAbilitySelectedEvent(long tick, LevelUpAbilityId abilityId, string abilityName)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: abilityId
+      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+    - id: abilityName
+      type: System.String
+    content.vb: Public Sub New(tick As Long, abilityId As LevelUpAbilityId, abilityName As String)
+  overload: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor*
+  nameWithType.vb: DefenseAbilitySelectedEvent.New(Long, LevelUpAbilityId, String)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.New(Long, MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, String)
+  name.vb: New(Long, LevelUpAbilityId, String)
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
+  href: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityId
+  name: AbilityId
+  nameWithType: DefenseAbilitySelectedEvent.AbilityId
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+  parent: MyProject.DefenseGame.Domain.LevelUp
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
+  name: LevelUpAbilityId
+  nameWithType: LevelUpAbilityId
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp
+  commentId: N:MyProject.DefenseGame.Domain.LevelUp
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain.LevelUp
+  nameWithType: MyProject.DefenseGame.Domain.LevelUp
+  fullName: MyProject.DefenseGame.Domain.LevelUp
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.LevelUp
+    name: LevelUp
+    href: MyProject.DefenseGame.Domain.LevelUp.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain.LevelUp
+    name: LevelUp
+    href: MyProject.DefenseGame.Domain.LevelUp.html
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName
+  href: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityName
+  name: AbilityName
+  nameWithType: DefenseAbilitySelectedEvent.AbilityName
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor
+  href: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent__ctor_System_Int64_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_System_String_
+  name: DefenseAbilitySelectedEvent
+  nameWithType: DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent
+  nameWithType.vb: DefenseAbilitySelectedEvent.New
+  fullName.vb: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

@@ -1,0 +1,816 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState
+  commentId: T:MyProject.DefenseGame.Domain.DefenseCombatState
+  id: DefenseCombatState
+  parent: MyProject.DefenseGame.Domain
+  children:
+  - MyProject.DefenseGame.Domain.DefenseCombatState.AddElapsedTime(System.Single)
+  - MyProject.DefenseGame.Domain.DefenseCombatState.AddMonster(MyProject.DefenseGame.Domain.DefenseMonster)
+  - MyProject.DefenseGame.Domain.DefenseCombatState.AliveMonsterCount
+  - MyProject.DefenseGame.Domain.DefenseCombatState.BossKillCount
+  - MyProject.DefenseGame.Domain.DefenseCombatState.CollectDeadMonsters(System.Collections.Generic.List{MyProject.DefenseGame.Domain.DefenseMonster})
+  - MyProject.DefenseGame.Domain.DefenseCombatState.ElapsedTime
+  - MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters
+  - MyProject.DefenseGame.Domain.DefenseCombatState.IsDefeat
+  - MyProject.DefenseGame.Domain.DefenseCombatState.IsGameOver
+  - MyProject.DefenseGame.Domain.DefenseCombatState.KillCount
+  - MyProject.DefenseGame.Domain.DefenseCombatState.RemoveMonster(MyProject.DefenseGame.Domain.DefenseMonster)
+  - MyProject.DefenseGame.Domain.DefenseCombatState.SetGameOver(System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: DefenseCombatState
+  nameWithType: DefenseCombatState
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState
+  type: Class
+  namespace: MyProject.DefenseGame.Domain
+  summary: 디펜스 게임의 전투 상태입니다.
+  example: []
+  syntax:
+    content: public sealed class DefenseCombatState
+    content.vb: Public NotInheritable Class DefenseCombatState
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.ElapsedTime
+  commentId: P:MyProject.DefenseGame.Domain.DefenseCombatState.ElapsedTime
+  id: ElapsedTime
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: ElapsedTime
+  nameWithType: DefenseCombatState.ElapsedTime
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.ElapsedTime
+  type: Property
+  namespace: MyProject.DefenseGame.Domain
+  summary: 게임 경과 시간입니다 (초).
+  example: []
+  syntax:
+    content: public float ElapsedTime { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ElapsedTime As Single
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.ElapsedTime*
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.KillCount
+  commentId: P:MyProject.DefenseGame.Domain.DefenseCombatState.KillCount
+  id: KillCount
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: KillCount
+  nameWithType: DefenseCombatState.KillCount
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.KillCount
+  type: Property
+  namespace: MyProject.DefenseGame.Domain
+  summary: 처치한 몬스터 수입니다.
+  example: []
+  syntax:
+    content: public int KillCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property KillCount As Integer
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.KillCount*
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.AliveMonsterCount
+  commentId: P:MyProject.DefenseGame.Domain.DefenseCombatState.AliveMonsterCount
+  id: AliveMonsterCount
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: AliveMonsterCount
+  nameWithType: DefenseCombatState.AliveMonsterCount
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.AliveMonsterCount
+  type: Property
+  namespace: MyProject.DefenseGame.Domain
+  summary: 현재 살아있는 몬스터 수입니다.
+  example: []
+  syntax:
+    content: public int AliveMonsterCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property AliveMonsterCount As Integer
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.AliveMonsterCount*
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.BossKillCount
+  commentId: P:MyProject.DefenseGame.Domain.DefenseCombatState.BossKillCount
+  id: BossKillCount
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: BossKillCount
+  nameWithType: DefenseCombatState.BossKillCount
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.BossKillCount
+  type: Property
+  namespace: MyProject.DefenseGame.Domain
+  summary: 보스 처치 수입니다.
+  example: []
+  syntax:
+    content: public int BossKillCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property BossKillCount As Integer
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.BossKillCount*
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.IsGameOver
+  commentId: P:MyProject.DefenseGame.Domain.DefenseCombatState.IsGameOver
+  id: IsGameOver
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: IsGameOver
+  nameWithType: DefenseCombatState.IsGameOver
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.IsGameOver
+  type: Property
+  namespace: MyProject.DefenseGame.Domain
+  summary: 게임 종료 여부입니다.
+  example: []
+  syntax:
+    content: public bool IsGameOver { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsGameOver As Boolean
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.IsGameOver*
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.IsDefeat
+  commentId: P:MyProject.DefenseGame.Domain.DefenseCombatState.IsDefeat
+  id: IsDefeat
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: IsDefeat
+  nameWithType: DefenseCombatState.IsDefeat
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.IsDefeat
+  type: Property
+  namespace: MyProject.DefenseGame.Domain
+  summary: 패배 여부입니다.
+  example: []
+  syntax:
+    content: public bool IsDefeat { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsDefeat As Boolean
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.IsDefeat*
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.AddMonster(MyProject.DefenseGame.Domain.DefenseMonster)
+  commentId: M:MyProject.DefenseGame.Domain.DefenseCombatState.AddMonster(MyProject.DefenseGame.Domain.DefenseMonster)
+  id: AddMonster(MyProject.DefenseGame.Domain.DefenseMonster)
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: AddMonster(DefenseMonster)
+  nameWithType: DefenseCombatState.AddMonster(DefenseMonster)
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.AddMonster(MyProject.DefenseGame.Domain.DefenseMonster)
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 몬스터를 추가합니다.
+  example: []
+  syntax:
+    content: public void AddMonster(DefenseMonster monster)
+    parameters:
+    - id: monster
+      type: MyProject.DefenseGame.Domain.DefenseMonster
+    content.vb: Public Sub AddMonster(monster As DefenseMonster)
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.AddMonster*
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.RemoveMonster(MyProject.DefenseGame.Domain.DefenseMonster)
+  commentId: M:MyProject.DefenseGame.Domain.DefenseCombatState.RemoveMonster(MyProject.DefenseGame.Domain.DefenseMonster)
+  id: RemoveMonster(MyProject.DefenseGame.Domain.DefenseMonster)
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: RemoveMonster(DefenseMonster)
+  nameWithType: DefenseCombatState.RemoveMonster(DefenseMonster)
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.RemoveMonster(MyProject.DefenseGame.Domain.DefenseMonster)
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 몬스터를 제거합니다.
+  example: []
+  syntax:
+    content: public void RemoveMonster(DefenseMonster monster)
+    parameters:
+    - id: monster
+      type: MyProject.DefenseGame.Domain.DefenseMonster
+    content.vb: Public Sub RemoveMonster(monster As DefenseMonster)
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.RemoveMonster*
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters
+  commentId: M:MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters
+  id: GetAliveMonsters
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: GetAliveMonsters()
+  nameWithType: DefenseCombatState.GetAliveMonsters()
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters()
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 살아있는 모든 몬스터를 반환합니다.
+  example: []
+  syntax:
+    content: public IReadOnlyList<DefenseMonster> GetAliveMonsters()
+    return:
+      type: System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.DefenseMonster}
+    content.vb: Public Function GetAliveMonsters() As IReadOnlyList(Of DefenseMonster)
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters*
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.CollectDeadMonsters(System.Collections.Generic.List{MyProject.DefenseGame.Domain.DefenseMonster})
+  commentId: M:MyProject.DefenseGame.Domain.DefenseCombatState.CollectDeadMonsters(System.Collections.Generic.List{MyProject.DefenseGame.Domain.DefenseMonster})
+  id: CollectDeadMonsters(System.Collections.Generic.List{MyProject.DefenseGame.Domain.DefenseMonster})
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: CollectDeadMonsters(List<DefenseMonster>)
+  nameWithType: DefenseCombatState.CollectDeadMonsters(List<DefenseMonster>)
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.CollectDeadMonsters(System.Collections.Generic.List<MyProject.DefenseGame.Domain.DefenseMonster>)
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 죽은 몬스터를 수집합니다.
+  example: []
+  syntax:
+    content: public void CollectDeadMonsters(List<DefenseMonster> output)
+    parameters:
+    - id: output
+      type: System.Collections.Generic.List{MyProject.DefenseGame.Domain.DefenseMonster}
+    content.vb: Public Sub CollectDeadMonsters(output As List(Of DefenseMonster))
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.CollectDeadMonsters*
+  nameWithType.vb: DefenseCombatState.CollectDeadMonsters(List(Of DefenseMonster))
+  fullName.vb: MyProject.DefenseGame.Domain.DefenseCombatState.CollectDeadMonsters(System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.DefenseMonster))
+  name.vb: CollectDeadMonsters(List(Of DefenseMonster))
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.AddElapsedTime(System.Single)
+  commentId: M:MyProject.DefenseGame.Domain.DefenseCombatState.AddElapsedTime(System.Single)
+  id: AddElapsedTime(System.Single)
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: AddElapsedTime(float)
+  nameWithType: DefenseCombatState.AddElapsedTime(float)
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.AddElapsedTime(float)
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 경과 시간을 업데이트합니다.
+  example: []
+  syntax:
+    content: public void AddElapsedTime(float deltaTime)
+    parameters:
+    - id: deltaTime
+      type: System.Single
+    content.vb: Public Sub AddElapsedTime(deltaTime As Single)
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.AddElapsedTime*
+  nameWithType.vb: DefenseCombatState.AddElapsedTime(Single)
+  fullName.vb: MyProject.DefenseGame.Domain.DefenseCombatState.AddElapsedTime(Single)
+  name.vb: AddElapsedTime(Single)
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.SetGameOver(System.Boolean)
+  commentId: M:MyProject.DefenseGame.Domain.DefenseCombatState.SetGameOver(System.Boolean)
+  id: SetGameOver(System.Boolean)
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: SetGameOver(bool)
+  nameWithType: DefenseCombatState.SetGameOver(bool)
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.SetGameOver(bool)
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 게임 오버 처리를 합니다.
+  example: []
+  syntax:
+    content: public void SetGameOver(bool isDefeat)
+    parameters:
+    - id: isDefeat
+      type: System.Boolean
+    content.vb: Public Sub SetGameOver(isDefeat As Boolean)
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.SetGameOver*
+  nameWithType.vb: DefenseCombatState.SetGameOver(Boolean)
+  fullName.vb: MyProject.DefenseGame.Domain.DefenseCombatState.SetGameOver(Boolean)
+  name.vb: SetGameOver(Boolean)
+references:
+- uid: MyProject.DefenseGame.Domain
+  commentId: N:MyProject.DefenseGame.Domain
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain
+  nameWithType: MyProject.DefenseGame.Domain
+  fullName: MyProject.DefenseGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.ElapsedTime*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.ElapsedTime
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_ElapsedTime
+  name: ElapsedTime
+  nameWithType: DefenseCombatState.ElapsedTime
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.ElapsedTime
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.KillCount*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.KillCount
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_KillCount
+  name: KillCount
+  nameWithType: DefenseCombatState.KillCount
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.KillCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.AliveMonsterCount*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.AliveMonsterCount
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_AliveMonsterCount
+  name: AliveMonsterCount
+  nameWithType: DefenseCombatState.AliveMonsterCount
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.AliveMonsterCount
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.BossKillCount*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.BossKillCount
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_BossKillCount
+  name: BossKillCount
+  nameWithType: DefenseCombatState.BossKillCount
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.BossKillCount
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.IsGameOver*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.IsGameOver
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_IsGameOver
+  name: IsGameOver
+  nameWithType: DefenseCombatState.IsGameOver
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.IsGameOver
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.IsDefeat*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.IsDefeat
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_IsDefeat
+  name: IsDefeat
+  nameWithType: DefenseCombatState.IsDefeat
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.IsDefeat
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.AddMonster*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.AddMonster
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_AddMonster_MyProject_DefenseGame_Domain_DefenseMonster_
+  name: AddMonster
+  nameWithType: DefenseCombatState.AddMonster
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.AddMonster
+- uid: MyProject.DefenseGame.Domain.DefenseMonster
+  commentId: T:MyProject.DefenseGame.Domain.DefenseMonster
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefenseMonster.html
+  name: DefenseMonster
+  nameWithType: DefenseMonster
+  fullName: MyProject.DefenseGame.Domain.DefenseMonster
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.RemoveMonster*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.RemoveMonster
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_RemoveMonster_MyProject_DefenseGame_Domain_DefenseMonster_
+  name: RemoveMonster
+  nameWithType: DefenseCombatState.RemoveMonster
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.RemoveMonster
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_GetAliveMonsters
+  name: GetAliveMonsters
+  nameWithType: DefenseCombatState.GetAliveMonsters
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters
+- uid: System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.DefenseMonster}
+  commentId: T:System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.DefenseMonster}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<DefenseMonster>
+  nameWithType: IReadOnlyList<DefenseMonster>
+  fullName: System.Collections.Generic.IReadOnlyList<MyProject.DefenseGame.Domain.DefenseMonster>
+  nameWithType.vb: IReadOnlyList(Of DefenseMonster)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of MyProject.DefenseGame.Domain.DefenseMonster)
+  name.vb: IReadOnlyList(Of DefenseMonster)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: MyProject.DefenseGame.Domain.DefenseMonster
+    name: DefenseMonster
+    href: MyProject.DefenseGame.Domain.DefenseMonster.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.DefenseGame.Domain.DefenseMonster
+    name: DefenseMonster
+    href: MyProject.DefenseGame.Domain.DefenseMonster.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.CollectDeadMonsters*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.CollectDeadMonsters
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_CollectDeadMonsters_System_Collections_Generic_List_MyProject_DefenseGame_Domain_DefenseMonster__
+  name: CollectDeadMonsters
+  nameWithType: DefenseCombatState.CollectDeadMonsters
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.CollectDeadMonsters
+- uid: System.Collections.Generic.List{MyProject.DefenseGame.Domain.DefenseMonster}
+  commentId: T:System.Collections.Generic.List{MyProject.DefenseGame.Domain.DefenseMonster}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DefenseMonster>
+  nameWithType: List<DefenseMonster>
+  fullName: System.Collections.Generic.List<MyProject.DefenseGame.Domain.DefenseMonster>
+  nameWithType.vb: List(Of DefenseMonster)
+  fullName.vb: System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.DefenseMonster)
+  name.vb: List(Of DefenseMonster)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: MyProject.DefenseGame.Domain.DefenseMonster
+    name: DefenseMonster
+    href: MyProject.DefenseGame.Domain.DefenseMonster.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.DefenseGame.Domain.DefenseMonster
+    name: DefenseMonster
+    href: MyProject.DefenseGame.Domain.DefenseMonster.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.AddElapsedTime*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.AddElapsedTime
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_AddElapsedTime_System_Single_
+  name: AddElapsedTime
+  nameWithType: DefenseCombatState.AddElapsedTime
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.AddElapsedTime
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.SetGameOver*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.SetGameOver
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_SetGameOver_System_Boolean_
+  name: SetGameOver
+  nameWithType: DefenseCombatState.SetGameOver
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.SetGameOver

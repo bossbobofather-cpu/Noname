@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Domain.ITargetingStrategy
+  commentId: T:Noname.GameAbilitySystem.Domain.ITargetingStrategy
+  id: ITargetingStrategy
+  parent: Noname.GameAbilitySystem.Domain
+  children:
+  - Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,Noname.GameAbilitySystem.Domain.TargetContext)
+  langs:
+  - csharp
+  - vb
+  name: ITargetingStrategy
+  nameWithType: ITargetingStrategy
+  fullName: Noname.GameAbilitySystem.Domain.ITargetingStrategy
+  type: Interface
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: 타겟 선정 전략 인터페이스입니다.
+  example: []
+  syntax:
+    content: public interface ITargetingStrategy
+    content.vb: Public Interface ITargetingStrategy
+- uid: Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,Noname.GameAbilitySystem.Domain.TargetContext)
+  commentId: M:Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,Noname.GameAbilitySystem.Domain.TargetContext)
+  id: FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,Noname.GameAbilitySystem.Domain.TargetContext)
+  parent: Noname.GameAbilitySystem.Domain.ITargetingStrategy
+  langs:
+  - csharp
+  - vb
+  name: FindTargets(AbilitySystemComponent, TargetContext)
+  nameWithType: ITargetingStrategy.FindTargets(AbilitySystemComponent, TargetContext)
+  fullName: Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Noname.GameAbilitySystem.Domain.TargetContext)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: TargetData FindTargets(AbilitySystemComponent owner, TargetContext context)
+    parameters:
+    - id: owner
+      type: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+    - id: context
+      type: Noname.GameAbilitySystem.Domain.TargetContext
+    return:
+      type: Noname.GameAbilitySystem.Domain.TargetData
+    content.vb: Function FindTargets(owner As AbilitySystemComponent, context As TargetContext) As TargetData
+  overload: Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets*
+references:
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+- uid: Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets
+  href: Noname.GameAbilitySystem.Domain.ITargetingStrategy.html#Noname_GameAbilitySystem_Domain_ITargetingStrategy_FindTargets_Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Noname_GameAbilitySystem_Domain_TargetContext_
+  name: FindTargets
+  nameWithType: ITargetingStrategy.FindTargets
+  fullName: Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  commentId: T:Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+- uid: Noname.GameAbilitySystem.Domain.TargetContext
+  commentId: T:Noname.GameAbilitySystem.Domain.TargetContext
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.TargetContext.html
+  name: TargetContext
+  nameWithType: TargetContext
+  fullName: Noname.GameAbilitySystem.Domain.TargetContext
+- uid: Noname.GameAbilitySystem.Domain.TargetData
+  commentId: T:Noname.GameAbilitySystem.Domain.TargetData
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.TargetData.html
+  name: TargetData
+  nameWithType: TargetData
+  fullName: Noname.GameAbilitySystem.Domain.TargetData

@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefenseSessionPhase
+  commentId: T:MyProject.DefenseGame.Application.DefenseSessionPhase
+  id: DefenseSessionPhase
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefenseSessionPhase.GameOver
+  - MyProject.DefenseGame.Application.DefenseSessionPhase.LevelUpSelection
+  - MyProject.DefenseGame.Application.DefenseSessionPhase.None
+  - MyProject.DefenseGame.Application.DefenseSessionPhase.Playing
+  langs:
+  - csharp
+  - vb
+  name: DefenseSessionPhase
+  nameWithType: DefenseSessionPhase
+  fullName: MyProject.DefenseGame.Application.DefenseSessionPhase
+  type: Enum
+  namespace: MyProject.DefenseGame.Application
+  summary: 디펜스 게임 세션 상태입니다.
+  example: []
+  syntax:
+    content: public enum DefenseSessionPhase
+    content.vb: Public Enum DefenseSessionPhase
+- uid: MyProject.DefenseGame.Application.DefenseSessionPhase.None
+  commentId: F:MyProject.DefenseGame.Application.DefenseSessionPhase.None
+  id: None
+  parent: MyProject.DefenseGame.Application.DefenseSessionPhase
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: DefenseSessionPhase.None
+  fullName: MyProject.DefenseGame.Application.DefenseSessionPhase.None
+  type: Field
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: None = 0
+    return:
+      type: MyProject.DefenseGame.Application.DefenseSessionPhase
+- uid: MyProject.DefenseGame.Application.DefenseSessionPhase.Playing
+  commentId: F:MyProject.DefenseGame.Application.DefenseSessionPhase.Playing
+  id: Playing
+  parent: MyProject.DefenseGame.Application.DefenseSessionPhase
+  langs:
+  - csharp
+  - vb
+  name: Playing
+  nameWithType: DefenseSessionPhase.Playing
+  fullName: MyProject.DefenseGame.Application.DefenseSessionPhase.Playing
+  type: Field
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: Playing = 1
+    return:
+      type: MyProject.DefenseGame.Application.DefenseSessionPhase
+- uid: MyProject.DefenseGame.Application.DefenseSessionPhase.LevelUpSelection
+  commentId: F:MyProject.DefenseGame.Application.DefenseSessionPhase.LevelUpSelection
+  id: LevelUpSelection
+  parent: MyProject.DefenseGame.Application.DefenseSessionPhase
+  langs:
+  - csharp
+  - vb
+  name: LevelUpSelection
+  nameWithType: DefenseSessionPhase.LevelUpSelection
+  fullName: MyProject.DefenseGame.Application.DefenseSessionPhase.LevelUpSelection
+  type: Field
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: LevelUpSelection = 2
+    return:
+      type: MyProject.DefenseGame.Application.DefenseSessionPhase
+- uid: MyProject.DefenseGame.Application.DefenseSessionPhase.GameOver
+  commentId: F:MyProject.DefenseGame.Application.DefenseSessionPhase.GameOver
+  id: GameOver
+  parent: MyProject.DefenseGame.Application.DefenseSessionPhase
+  langs:
+  - csharp
+  - vb
+  name: GameOver
+  nameWithType: DefenseSessionPhase.GameOver
+  fullName: MyProject.DefenseGame.Application.DefenseSessionPhase.GameOver
+  type: Field
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: GameOver = 3
+    return:
+      type: MyProject.DefenseGame.Application.DefenseSessionPhase
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: MyProject.DefenseGame.Application.DefenseSessionPhase
+  commentId: T:MyProject.DefenseGame.Application.DefenseSessionPhase
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseSessionPhase.html
+  name: DefenseSessionPhase
+  nameWithType: DefenseSessionPhase
+  fullName: MyProject.DefenseGame.Application.DefenseSessionPhase
