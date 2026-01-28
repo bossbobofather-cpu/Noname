@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Noname.GameAbilitySystem
+namespace Noname.GameAbilitySystem.Presentation
 {
     /// <summary>
     /// 게임플레이 구성 데이터의 기본 클래스입니다.

@@ -1,0 +1,72 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "Runtime/**/*.cs"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "**/Temp/**"
+          ]
+        }
+      ],
+      "dest": "obj/api",
+      "includePrivateMembers": false,
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "noRestore": false,
+      "namespaceLayout": "nested",
+      "memberLayout": "samePage",
+      "EnumSortOrder": "alphabetic",
+      "allowCompilationErrors": false
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "obj/api/**.yml",
+          "obj/api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "Documentation/*.md",
+          "README.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "Documentation/images/**"
+        ]
+      }
+    ],
+    "output": "docs",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "modern"
+    ],
+    "postProcessors": [],
+    "keepFileLink": false,
+    "disableGitFeatures": false,
+    "globalMetadata": {
+      "_appTitle": "GameAbilitySystem Plugin",
+      "_appName": "GameAbilitySystem",
+      "_appFooter": "GameAbilitySystem Plugin - Clean Architecture for Unity",
+      "_enableSearch": true,
+      "_enableNewTab": true,
+      "_disableContribution": false,
+      "_gitContribute": {
+        "repo": "https://github.com/yourusername/GameAbilitySystem",
+        "branch": "main"
+      }
+    }
+  }
+}

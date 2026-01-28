@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using Noname.GameAbilitySystem.Domain;
 using UnityEngine;
 
-namespace Noname.GameAbilitySystem
+namespace Noname.GameAbilitySystem.Presentation
 {
     [CreateAssetMenu(menuName = "GameAbilitySystem/Config/GameplayEffectConfig")]
     /// <summary>
@@ -10,7 +11,7 @@ namespace Noname.GameAbilitySystem
     public class GameplayEffectConfig : GameplayConfig
     {
         // 지속 타입
-        [SerializeField] private EGameplayEffectDurationType _durationType = EGameplayEffectDurationType.Instant;
+        [SerializeField] private EffectDurationType _durationType = EffectDurationType.Instant;
 
         // 지속 시간
         [SerializeField] private float _duration = 0f;
@@ -19,10 +20,10 @@ namespace Noname.GameAbilitySystem
         [SerializeField] private float _period = 0f;
 
         // 부여되는 태그
-        [SerializeField] private GameplayTagContainer _grantedTags = new GameplayTagContainer();
-        [SerializeField] private GameplayTagContainer _activationRequiredTags = new GameplayTagContainer();
-        [SerializeField] private GameplayTagContainer _activationBlockedTags = new GameplayTagContainer();
-        [SerializeField, HideInInspector] private EGameplayEffectDurationType _lastDurationType;
+        [SerializeField] private GameplayTagContainerView _grantedTags = new GameplayTagContainerView();
+        [SerializeField] private GameplayTagContainerView _activationRequiredTags = new GameplayTagContainerView();
+        [SerializeField] private GameplayTagContainerView _activationBlockedTags = new GameplayTagContainerView();
+        [SerializeField, HideInInspector] private EffectDurationType _lastDurationType;
         [SerializeField, HideInInspector] private bool _durationTypeInitialized;
 
         [SerializeField] private List<AttributeModifier> _modifiers = new List<AttributeModifier>();
@@ -30,7 +31,7 @@ namespace Noname.GameAbilitySystem
         /// <summary>
         /// 지속 타입입니다.
         /// </summary>
-        public EGameplayEffectDurationType DurationType => _durationType;
+        public EffectDurationType DurationType => _durationType;
 
         /// <summary>
         /// 지속 시간입니다. 지속 타입이 고정 시간일 때만 의미가 있습니다.
@@ -45,17 +46,17 @@ namespace Noname.GameAbilitySystem
         /// <summary>
         /// 효과로 부여되는 태그입니다.
         /// </summary>
-        public GameplayTagContainer GrantedTags => _grantedTags;
+        public GameplayTagContainerView GrantedTags => _grantedTags;
 
         /// <summary>
         /// 적용 대상이 반드시 가지고 있어야 하는 태그입니다.
         /// </summary>
-        public GameplayTagContainer ActivationRequiredTags => _activationRequiredTags;
+        public GameplayTagContainerView ActivationRequiredTags => _activationRequiredTags;
 
         /// <summary>
         /// 적용 대상이 가지고 있으면 적용이 막히는 태그입니다.
         /// </summary>
-        public GameplayTagContainer ActivationBlockedTags => _activationBlockedTags;
+        public GameplayTagContainerView ActivationBlockedTags => _activationBlockedTags;
 
         /// <summary>
         /// 부여되는 속성 수정자 목록입니다.

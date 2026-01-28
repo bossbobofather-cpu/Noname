@@ -1,5 +1,6 @@
+using Noname.GameAbilitySystem.Domain;
+using Noname.GameAbilitySystem.Presentation;
 using UnityEditor;
-using UnityEngine;
 
 namespace Noname.GameAbilitySystem.Editor
 {
@@ -43,14 +44,14 @@ namespace Noname.GameAbilitySystem.Editor
             // 지속 타입 먼저 선택
             EditorGUILayout.PropertyField(durationTypeProp);
 
-            var durationType = (EGameplayEffectDurationType)durationTypeProp.enumValueIndex;
-            if (durationType == EGameplayEffectDurationType.HasDuration)
+            var durationType = (EffectDurationType)durationTypeProp.enumValueIndex;
+            if (durationType == EffectDurationType.HasDuration)
             {
                 // 시간 기반 효과만 Duration 노출
                 EditorGUILayout.PropertyField(durationProp);
                 EditorGUILayout.PropertyField(periodProp);
             }
-            else if (durationType == EGameplayEffectDurationType.Infinite)
+            else if (durationType == EffectDurationType.Infinite)
             {
                 // 무한 지속은 Period만 노출
                 EditorGUILayout.PropertyField(periodProp);

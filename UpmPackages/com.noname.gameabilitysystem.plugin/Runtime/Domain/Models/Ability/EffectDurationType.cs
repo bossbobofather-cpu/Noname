@@ -1,4 +1,4 @@
-namespace Noname.GameAbilitySystem
+namespace Noname.GameAbilitySystem.Domain
 {
     /// <summary>
     /// 게임플레이 효과의 지속 타입입니다.

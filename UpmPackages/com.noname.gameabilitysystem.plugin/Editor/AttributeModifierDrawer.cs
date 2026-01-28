@@ -1,3 +1,4 @@
+using Noname.GameAbilitySystem.Domain;
 using UnityEditor;
 using UnityEngine;
 

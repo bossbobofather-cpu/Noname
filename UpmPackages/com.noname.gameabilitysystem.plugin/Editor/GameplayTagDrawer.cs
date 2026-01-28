@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using Noname.GameAbilitySystem.Domain;
+using Noname.GameAbilitySystem.Presentation;
 using UnityEditor;
 using UnityEngine;
 
