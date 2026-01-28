@@ -6,6 +6,12 @@
       "source": "local",
       "dependencies": {}
     },
+    "com.noname.gamehost.plugin": {
+      "version": "file:../../UpmPackages/com.noname.gamehost.plugin",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,

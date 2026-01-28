@@ -1,10 +1,11 @@
-using MyProject.Common.Host;
+using System;
+using Noname.GameHost;
 
 namespace MyProject.DefenseGame.Application
 {
     /// <summary>
-    /// µğÆæ½º °ÔÀÓ »óÅÂ¸¦ ¿ä¾àÇÑ ½º³À¼¦ÀÔ´Ï´Ù.
-    /// View/Å¬¶óÀÌ¾ğÆ®´Â ÀÌ µ¥ÀÌÅÍ¸¦ ÀĞ¾î È­¸éÀ» °»½ÅÇÕ´Ï´Ù.
+    /// ë””íœìŠ¤ ê²Œì„ í˜¸ìŠ¤íŠ¸ ìƒíƒœë¥¼ ì €ì¥í•˜ëŠ” ìŠ¤ëƒ…ìƒ·ì…ë‹ˆë‹¤.
+    /// View/í´ë¼ì´ì–¸íŠ¸ì—ì„œ ì´ ë°ì´í„°ë¥¼ ì½ì–´ í™”ë©´ì„ ê°±ì‹ í•©ë‹ˆë‹¤.
     /// </summary>
     public sealed class DefenseHostSnapshot : GameSnapshotBase
     {

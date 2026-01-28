@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
-using MyProject.Common.Host;
+using Noname.GameHost;
 using MyProject.DefenseGame.Application.Commands;
-using MyProject.DefenseGame.Data;
 using MyProject.DefenseGame.Domain;
 using MyProject.DefenseGame.Domain.AI;
 using MyProject.DefenseGame.Domain.LevelUp;
@@ -11,8 +10,8 @@ using Noname.GameAbilitySystem.Domain;
 namespace MyProject.DefenseGame.Application
 {
     /// <summary>
-    /// µðÆæ½º °ÔÀÓ ¼­¹ö ·ÎÁ÷ÀÇ ¸ÞÀÎ È£½ºÆ®ÀÔ´Ï´Ù.
-    /// CQRS ÆÐÅÏÀ¸·Î Command¸¦ Ã³¸®ÇÏ°í Result/Event¸¦ ¹ßÇàÇÕ´Ï´Ù.
+    /// ï¿½ï¿½ï¿½æ½º ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½Æ®ï¿½Ô´Ï´ï¿½.
+    /// CQRS ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Commandï¿½ï¿½ Ã³ï¿½ï¿½ï¿½Ï°ï¿½ Result/Eventï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
     /// </summary>
     public sealed class DefenseGameHost
         : GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>
@@ -107,7 +106,7 @@ namespace MyProject.DefenseGame.Application
             if (_state.SessionPhase != DefenseSessionPhase.None)
             {
                 return new GameCommandOutcome<DefenseCommandResult, DefenseHostEvent>(
-                    StartGameResult.Fail(Tick, command.SenderUid, "°ÔÀÓÀÌ ÀÌ¹Ì ÁøÇà ÁßÀÔ´Ï´Ù."));
+                    StartGameResult.Fail(Tick, command.SenderUid, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ô´Ï´ï¿½."));
             }
 
             _targetContext = CreateTargetContext();
@@ -150,14 +149,14 @@ namespace MyProject.DefenseGame.Application
             if (_state.SessionPhase != DefenseSessionPhase.LevelUpSelection)
             {
                 return new GameCommandOutcome<DefenseCommandResult, DefenseHostEvent>(
-                    SelectLevelUpAbilityResult.Fail(Tick, command.SenderUid, "·¹º§¾÷ ¼±ÅÃ »óÅÂ°¡ ¾Æ´Õ´Ï´Ù."));
+                    SelectLevelUpAbilityResult.Fail(Tick, command.SenderUid, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â°ï¿½ ï¿½Æ´Õ´Ï´ï¿½."));
             }
 
             var options = _state.CurrentLevelUpOptions;
             if (command.AbilityIndex < 0 || command.AbilityIndex >= options.Count)
             {
                 return new GameCommandOutcome<DefenseCommandResult, DefenseHostEvent>(
-                    SelectLevelUpAbilityResult.Fail(Tick, command.SenderUid, "À¯È¿ÇÏÁö ¾ÊÀº ´É·Â ÀÎµ¦½ºÀÔ´Ï´Ù."));
+                    SelectLevelUpAbilityResult.Fail(Tick, command.SenderUid, "ï¿½ï¿½È¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½É·ï¿½ ï¿½Îµï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½."));
             }
 
             var selected = options[command.AbilityIndex];
@@ -186,7 +185,7 @@ namespace MyProject.DefenseGame.Application
                 _state.SessionPhase == DefenseSessionPhase.GameOver)
             {
                 return new GameCommandOutcome<DefenseCommandResult, DefenseHostEvent>(
-                    EndGameResult.Fail(Tick, command.SenderUid, "°ÔÀÓÀÌ ÁøÇà ÁßÀÌ ¾Æ´Õ´Ï´Ù."));
+                    EndGameResult.Fail(Tick, command.SenderUid, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Õ´Ï´ï¿½."));
             }
 
             if (_state.Combat != null && !_state.Combat.IsGameOver)
@@ -292,7 +291,7 @@ namespace MyProject.DefenseGame.Application
 
             return default;
         }
-
+        
         #endregion
     }
 }

@@ -1,9 +1,9 @@
-using MyProject.Common.Host;
+using Noname.GameHost;
 
 namespace MyProject.DefenseGame.Application.Commands
 {
     /// <summary>
-    /// µðÆæ½º °ÔÀÓ Command ±âº» Å¸ÀÔÀÔ´Ï´Ù.
+    /// ï¿½ï¿½ï¿½æ½º ï¿½ï¿½ï¿½ï¿½ Command ï¿½âº» Å¸ï¿½ï¿½ï¿½Ô´Ï´ï¿½.
     /// </summary>
     public abstract class DefenseCommand : GameCommandBase
     {
@@ -13,7 +13,7 @@ namespace MyProject.DefenseGame.Application.Commands
     }
 
     /// <summary>
-    /// °ÔÀÓ ½ÃÀÛ CommandÀÔ´Ï´Ù.
+    /// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Commandï¿½Ô´Ï´ï¿½.
     /// </summary>
     public sealed class StartGameCommand : DefenseCommand
     {
@@ -23,7 +23,7 @@ namespace MyProject.DefenseGame.Application.Commands
     }
 
     /// <summary>
-    /// °ÔÀÓ ½ÃÀÛ ResultÀÔ´Ï´Ù.
+    /// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Resultï¿½Ô´Ï´ï¿½.
     /// </summary>
     public sealed class StartGameResult : DefenseCommandResult
     {
@@ -40,12 +40,12 @@ namespace MyProject.DefenseGame.Application.Commands
     }
 
     /// <summary>
-    /// ·¹º§¾÷ ´É·Â ¼±ÅÃ CommandÀÔ´Ï´Ù.
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½É·ï¿½ ï¿½ï¿½ï¿½ï¿½ Commandï¿½Ô´Ï´ï¿½.
     /// </summary>
     public sealed class SelectLevelUpAbilityCommand : DefenseCommand
     {
         /// <summary>
-        /// ¼±ÅÃÇÒ ´É·Â ÀÎµ¦½ºÀÔ´Ï´Ù.
+        /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½É·ï¿½ ï¿½Îµï¿½ï¿½ï¿½ï¿½Ô´Ï´ï¿½.
         /// </summary>
         public int AbilityIndex { get; }
 
@@ -57,17 +57,17 @@ namespace MyProject.DefenseGame.Application.Commands
     }
 
     /// <summary>
-    /// ·¹º§¾÷ ´É·Â ¼±ÅÃ ResultÀÔ´Ï´Ù.
+    /// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½É·ï¿½ ï¿½ï¿½ï¿½ï¿½ Resultï¿½Ô´Ï´ï¿½.
     /// </summary>
     public sealed class SelectLevelUpAbilityResult : DefenseCommandResult
     {
         /// <summary>
-        /// ¼±ÅÃµÈ ´É·Â IDÀÔ´Ï´Ù.
+        /// ï¿½ï¿½ï¿½Ãµï¿½ ï¿½É·ï¿½ IDï¿½Ô´Ï´ï¿½.
         /// </summary>
         public string SelectedAbilityId { get; }
 
         /// <summary>
-        /// ¼±ÅÃµÈ ´É·Â ÀÌ¸§ÀÔ´Ï´Ù.
+        /// ï¿½ï¿½ï¿½Ãµï¿½ ï¿½É·ï¿½ ï¿½Ì¸ï¿½ï¿½Ô´Ï´ï¿½.
         /// </summary>
         public string SelectedAbilityName { get; }
 
@@ -96,7 +96,7 @@ namespace MyProject.DefenseGame.Application.Commands
     }
 
     /// <summary>
-    /// °ÔÀÓ Á¾·á CommandÀÔ´Ï´Ù.
+    /// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Commandï¿½Ô´Ï´ï¿½.
     /// </summary>
     public sealed class EndGameCommand : DefenseCommand
     {
@@ -106,7 +106,7 @@ namespace MyProject.DefenseGame.Application.Commands
     }
 
     /// <summary>
-    /// °ÔÀÓ Á¾·á ResultÀÔ´Ï´Ù.
+    /// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Resultï¿½Ô´Ï´ï¿½.
     /// </summary>
     public sealed class EndGameResult : DefenseCommandResult
     {
@@ -123,7 +123,7 @@ namespace MyProject.DefenseGame.Application.Commands
     }
 
     /// <summary>
-    /// µðÆæ½º °ÔÀÓ Command Ã³¸® °á°ú ±âº» Å¸ÀÔÀÔ´Ï´Ù.
+    /// ï¿½ï¿½ï¿½æ½º ï¿½ï¿½ï¿½ï¿½ Command Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½âº» Å¸ï¿½ï¿½ï¿½Ô´Ï´ï¿½.
     /// </summary>
     public abstract class DefenseCommandResult : GameCommandResultBase
     {

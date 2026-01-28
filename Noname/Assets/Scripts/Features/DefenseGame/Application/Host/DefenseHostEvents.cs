@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using MyProject.Common.Host;
+using Noname.GameHost;
 using MyProject.DefenseGame.Domain.LevelUp;
 using Noname.GameAbilitySystem.Domain;
 

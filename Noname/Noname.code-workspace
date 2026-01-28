@@ -9,9 +9,15 @@
             "path": "Library/PackageCache"
         },
         {
+            "name": "com.noname.gameabilitysystem.plugin",
             "path": "../UpmPackages/com.noname.gameabilitysystem.plugin"
         },
         {
+            "name": "com.noname.gamehost.plugin",
+            "path": "../UpmPackages/com.noname.gamehost.plugin"
+        },
+        {
+            "name": "Noname.wiki",
             "path": "../../Noname.wiki"
         }
     ]

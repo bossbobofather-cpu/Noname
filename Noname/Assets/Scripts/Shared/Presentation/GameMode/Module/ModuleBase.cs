@@ -1,37 +1,35 @@
-using MyProject.Common.Host;
 using UnityEngine;
 
 namespace MyProject.Common.GameMode
 {
     /// <summary>
-    /// ê³µí†µ ëª¨ë“ˆ ë² ì´ìŠ¤ í´ë˜ìŠ¤ì…ë‹ˆë‹¤.
+    /// °øÅë ¸ğµâ º£ÀÌ½º Å¬·¡½ºÀÔ´Ï´Ù.
     /// </summary>
-    public abstract class ModuleBase : MonoBehaviour, IModule, IModuleDescriptorReceiver
+    public abstract class ModuleBase : MonoBehaviour, IModule
     {
-        private GameMode _mode;
+        private IGameMode _mode;
 
         /// <summary>
-        /// ì—°ê²°ëœ ê²Œì„ ëª¨ë“œì…ë‹ˆë‹¤.
+        /// ¿¬°áµÈ °ÔÀÓ ¸ğµåÀÔ´Ï´Ù.
         /// </summary>
-        public GameMode Mode => _mode;
+        public IGameMode Mode => _mode;
 
         /// <summary>
-        /// ëª¨ë“ˆ ì‹ë³„ í‚¤ì…ë‹ˆë‹¤.
+        /// ¸ğµâ Å°ÀÔ´Ï´Ù.
         /// </summary>
         public virtual string ModuleKey => GetType().Name;
 
         /// <summary>
-        /// ëª¨ë“œì™€ ì—°ê²°ë˜ëŠ” ì´ˆê¸°í™” ë‹¨ê³„ì…ë‹ˆë‹¤.
+        /// ¸ğµå¿Í ¿¬°áµÇ´Â ÃÊ±âÈ­ ´Ü°èÀÔ´Ï´Ù.
         /// </summary>
-        public void Initialize(GameMode mode)
+        public void Initialize(IGameMode mode)
         {
             _mode = mode;
-
             OnInit();
         }
 
         /// <summary>
-        /// ëª¨ë“œê°€ í™œì„±í™”ë  ë•Œ í˜¸ì¶œë©ë‹ˆë‹¤.
+        /// ¸ğµå°¡ È°¼ºÈ­µÉ ¶§ È£ÃâµË´Ï´Ù.
         /// </summary>
         public void Startup()
         {
@@ -39,7 +37,7 @@ namespace MyProject.Common.GameMode
         }
 
         /// <summary>
-        /// ëª¨ë“œê°€ ë¹„í™œì„±í™”ë  ë•Œ í˜¸ì¶œë©ë‹ˆë‹¤.
+        /// ¸ğµå°¡ ºñÈ°¼ºÈ­µÉ ¶§ È£ÃâµË´Ï´Ù.
         /// </summary>
         public void Shutdown()
         {
@@ -47,14 +45,7 @@ namespace MyProject.Common.GameMode
         }
 
         /// <summary>
-        /// ëª¨ë“ˆ ì„¤ì • ë°ì´í„°ë¥¼ ì ìš©í•©ë‹ˆë‹¤.
-        /// </summary>
-        public virtual void ApplyDescriptor(GameModuleDescriptor descriptor)
-        {
-        }
-
-        /// <summary>
-        /// êµ¬ë… ë“±ë¡ì´ í•„ìš”í•œ ê²½ìš° ì´ ë‹¨ê³„ì—ì„œ ì²˜ë¦¬í•©ë‹ˆë‹¤.
+        /// ±¸µ¶ µî·ÏÀÌ ÇÊ¿äÇÏ¸é ¿©±â¼­ Ã³¸®ÇÕ´Ï´Ù.
         /// </summary>
         protected virtual void OnInit()
         {

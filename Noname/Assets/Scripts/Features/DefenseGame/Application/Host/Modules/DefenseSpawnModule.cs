@@ -1,8 +1,5 @@
 using System;
-using System.Collections.Generic;
-using MyProject.DefenseGame.Data;
 using MyProject.DefenseGame.Domain;
-using Noname.GameAbilitySystem.Domain;
 
 namespace MyProject.DefenseGame.Application
 {

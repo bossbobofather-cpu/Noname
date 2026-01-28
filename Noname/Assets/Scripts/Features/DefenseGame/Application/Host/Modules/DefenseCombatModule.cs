@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using MyProject.DefenseGame.Data;
 using MyProject.DefenseGame.Domain;
 
 namespace MyProject.DefenseGame.Application
