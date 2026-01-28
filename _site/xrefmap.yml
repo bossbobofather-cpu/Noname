@@ -3597,6 +3597,25 @@ references:
   commentId: T:MyProject.DefenseGame.Application.Commands.DefenseCommand
   fullName: MyProject.DefenseGame.Application.Commands.DefenseCommand
   nameWithType: DefenseCommand
+- uid: MyProject.DefenseGame.Application.Commands.DefenseCommand.#ctor(System.Int64)
+  name: DefenseCommand(long)
+  href: api-noname/MyProject.DefenseGame.Application.Commands.DefenseCommand.html#MyProject_DefenseGame_Application_Commands_DefenseCommand__ctor_System_Int64_
+  commentId: M:MyProject.DefenseGame.Application.Commands.DefenseCommand.#ctor(System.Int64)
+  name.vb: New(Long)
+  fullName: MyProject.DefenseGame.Application.Commands.DefenseCommand.DefenseCommand(long)
+  fullName.vb: MyProject.DefenseGame.Application.Commands.DefenseCommand.New(Long)
+  nameWithType: DefenseCommand.DefenseCommand(long)
+  nameWithType.vb: DefenseCommand.New(Long)
+- uid: MyProject.DefenseGame.Application.Commands.DefenseCommand.#ctor*
+  name: DefenseCommand
+  href: api-noname/MyProject.DefenseGame.Application.Commands.DefenseCommand.html#MyProject_DefenseGame_Application_Commands_DefenseCommand__ctor_
+  commentId: Overload:MyProject.DefenseGame.Application.Commands.DefenseCommand.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyProject.DefenseGame.Application.Commands.DefenseCommand.DefenseCommand
+  fullName.vb: MyProject.DefenseGame.Application.Commands.DefenseCommand.New
+  nameWithType: DefenseCommand.DefenseCommand
+  nameWithType.vb: DefenseCommand.New
 - uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
   name: DefenseCommandResult
   href: api-noname/MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html

@@ -4,7 +4,8 @@ items:
   commentId: T:MyProject.DefenseGame.Application.Commands.DefenseCommand
   id: DefenseCommand
   parent: MyProject.DefenseGame.Application.Commands
-  children: []
+  children:
+  - MyProject.DefenseGame.Application.Commands.DefenseCommand.#ctor(System.Int64)
   langs:
   - csharp
   - vb
@@ -24,6 +25,28 @@ items:
   - MyProject.DefenseGame.Application.Commands.EndGameCommand
   - MyProject.DefenseGame.Application.Commands.SelectLevelUpAbilityCommand
   - MyProject.DefenseGame.Application.Commands.StartGameCommand
+- uid: MyProject.DefenseGame.Application.Commands.DefenseCommand.#ctor(System.Int64)
+  commentId: M:MyProject.DefenseGame.Application.Commands.DefenseCommand.#ctor(System.Int64)
+  id: '#ctor(System.Int64)'
+  parent: MyProject.DefenseGame.Application.Commands.DefenseCommand
+  langs:
+  - csharp
+  - vb
+  name: DefenseCommand(long)
+  nameWithType: DefenseCommand.DefenseCommand(long)
+  fullName: MyProject.DefenseGame.Application.Commands.DefenseCommand.DefenseCommand(long)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application.Commands
+  syntax:
+    content: public DefenseCommand(long senderUid)
+    parameters:
+    - id: senderUid
+      type: System.Int64
+    content.vb: Public Sub New(senderUid As Long)
+  overload: MyProject.DefenseGame.Application.Commands.DefenseCommand.#ctor*
+  nameWithType.vb: DefenseCommand.New(Long)
+  fullName.vb: MyProject.DefenseGame.Application.Commands.DefenseCommand.New(Long)
+  name.vb: New(Long)
 references:
 - uid: MyProject.DefenseGame.Application.Commands
   commentId: N:MyProject.DefenseGame.Application.Commands
@@ -81,3 +104,23 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: MyProject.DefenseGame.Application.Commands.DefenseCommand.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.Commands.DefenseCommand.#ctor
+  href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html#MyProject_DefenseGame_Application_Commands_DefenseCommand__ctor_System_Int64_
+  name: DefenseCommand
+  nameWithType: DefenseCommand.DefenseCommand
+  fullName: MyProject.DefenseGame.Application.Commands.DefenseCommand.DefenseCommand
+  nameWithType.vb: DefenseCommand.New
+  fullName.vb: MyProject.DefenseGame.Application.Commands.DefenseCommand.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

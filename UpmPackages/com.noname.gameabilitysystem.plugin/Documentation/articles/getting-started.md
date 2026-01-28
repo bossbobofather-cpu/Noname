@@ -1,26 +1,26 @@
-# Getting Started
+﻿# 시작하기
 
-## Installation
+## 설치
 
-### Unity Package Manager (Local)
+### Unity 패키지 매니저(로컬)
 
-1. Open your Unity project
-2. Open Package Manager (Window > Package Manager)
-3. Click the **+** button and select **Add package from disk...**
-4. Navigate to `UpmPackages/com.noname.gameabilitysystem.plugin/package.json`
-5. Click **Open**
+1. Unity 프로젝트를 엽니다.
+2. Package Manager를 엽니다. (Window > Package Manager)
+3. **+** 버튼을 누르고 **Add package from disk...**를 선택합니다.
+4. `UpmPackages/com.noname.gameabilitysystem.plugin/package.json` 경로로 이동합니다.
+5. **Open**을 클릭합니다.
 
-### Manual Installation
+### 수동 설치
 
-Copy the entire `com.noname.gameabilitysystem.plugin` folder to your project's `Packages/` directory.
+`com.noname.gameabilitysystem.plugin` 폴더를 프로젝트의 `Packages/` 디렉터리에 복사합니다.
 
 ---
 
-## Your First Ability
+## 첫 번째 Ability 만들기
 
-### Step 1: Create Ability Class
+### 단계 1: Ability 클래스 만들기
 
-Create a new C# script that inherits from `GameplayAbility`:
+`GameplayAbility`를 상속받는 C# 스크립트를 생성합니다.
 
 ```csharp
 using Noname.GameAbilitySystem.Presentation;
@@ -32,52 +32,49 @@ public class BasicAttackAbility : GameplayAbility
     {
         Debug.Log("Basic Attack activated!");
 
-        // Apply damage effect (configured in ScriptableObject)
-        // Effect is automatically applied based on GameplayEffectConfig
+        // 데미지 효과는 ScriptableObject 설정을 기반으로 자동 적용
 
         EndAbility(context.Handle);
     }
 
     public override bool CanActivateAbility()
     {
-        // Check if we can attack
+        // 공격 가능 여부 체크
         return !ASC.OwnedTags.HasTag(new FGameplayTag("Status.Stunned"));
     }
 }
 ```
 
-### Step 2: Create ScriptableObject Configs
+### 단계 2: ScriptableObject 설정 만들기
 
-#### 2.1 Create Gameplay Tag Config
+#### 2.1 Gameplay Tag Config 생성
 
-1. Right-click in Project window
+1. Project 창에서 우클릭
 2. **Create > GameAbilitySystem > Config > Gameplay Tag Config**
-3. Name it `TagConfig_BasicAttack`
-4. Add Ability Tags: `Ability.Attack.Basic`
+3. 이름을 `TagConfig_BasicAttack`으로 지정
+4. Ability Tags에 `Ability.Attack.Basic` 추가
 
-#### 2.2 Create Gameplay Effect Config
+#### 2.2 Gameplay Effect Config 생성
 
 1. **Create > GameAbilitySystem > Config > Gameplay Effect Config**
-2. Name it `Effect_BasicAttackDamage`
-3. Configure:
+2. 이름을 `Effect_BasicAttackDamage`로 지정
+3. 설정값 입력:
    - **Duration Type**: Instant
-   - **Modifiers**: Add one modifier
+   - **Modifiers**: 1개 추가
      - Attribute: Health
      - Operation: Add
      - Magnitude: -10
 
-#### 2.3 Create Ability Definition
+#### 2.3 Ability Definition 생성
 
 1. **Create > GameAbilitySystem > Ability Definition**
-2. Name it `AbilityDef_BasicAttack`
-3. Set **Ability Type Name**: `BasicAttackAbility`
-4. Add configs to **Configs** array:
+2. 이름을 `AbilityDef_BasicAttack`으로 지정
+3. **Ability Type Name**: `BasicAttackAbility`
+4. **Configs** 배열에 다음을 추가:
    - TagConfig_BasicAttack
    - Effect_BasicAttackDamage
 
-### Step 3: Setup GameObject
-
-Add the ability to your character:
+### 단계 3: GameObject에 연결
 
 ```csharp
 using Noname.GameAbilitySystem.Presentation;
@@ -90,7 +87,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        // Initialize attributes
+        // 속성 초기화
         _abilitySystem.Attributes.SetAttribute(
             AttributeDefinition.Health,
             baseValue: 100f,
@@ -98,7 +95,7 @@ public class PlayerController : MonoBehaviour
             maxValue: 100f
         );
 
-        // Grant ability
+        // 능력 부여
         _abilitySystem.GiveAbility(_basicAttackAbility);
     }
 
@@ -112,21 +109,21 @@ public class PlayerController : MonoBehaviour
 }
 ```
 
-### Step 4: Assign Components
+### 단계 4: 컴포넌트 연결
 
-1. Add `AbilitySystemComponent` to your player GameObject
-2. Add `PlayerController` script
-3. Assign references in Inspector:
+1. Player GameObject에 `AbilitySystemComponent` 추가
+2. `PlayerController` 스크립트 추가
+3. 인스펙터에서 참조 연결
    - Ability System → AbilitySystemComponent
    - Basic Attack Ability → AbilityDef_BasicAttack
 
-### Step 5: Test
+### 단계 5: 테스트
 
-Press Play and press **Space** to activate the ability!
+Play 후 **Space**를 눌러 능력이 실행되는지 확인합니다.
 
 ---
 
-## Advanced Example: Fireball with Target Acquisition
+## 고급 예시: 타겟 선택 기반 Fireball
 
 ```csharp
 using Noname.GameAbilitySystem.Presentation;
@@ -138,7 +135,7 @@ public class FireballAbility : GameplayAbility
 
     protected override void ActivateAbility(AbilityContext context)
     {
-        // Wait for target selection
+        // 타겟 선택 대기
         var targetTask = AbilityTask_WaitTargetData.Create(this, _targetConfig);
         targetTask.ValidData += OnTargetAcquired;
         targetTask.Cancelled += () => CancelAbility(context.Handle);
@@ -147,15 +144,15 @@ public class FireballAbility : GameplayAbility
 
     private void OnTargetAcquired(AbilityTargetData targetData)
     {
-        // Get target's ability system
+        // 타겟 AbilitySystemComponent 가져오기
         var target = targetData.TargetActor.GetComponent<AbilitySystemComponent>();
 
         if (target != null)
         {
-            // Apply damage effect
+            // 데미지 효과 적용
             target.ApplyGameplayEffect(damageEffect);
 
-            // Apply burning DoT
+            // 지속 피해 효과 적용
             target.ApplyGameplayEffect(burningEffect);
         }
 
@@ -164,7 +161,6 @@ public class FireballAbility : GameplayAbility
 
     public override bool CanActivateAbility()
     {
-        // Check mana cost
         if (!ASC.Attributes.TryGet(AttributeId.Mana, out var mana))
             return false;
 
@@ -175,101 +171,100 @@ public class FireballAbility : GameplayAbility
 
 ---
 
-## Key Concepts
+## 핵심 개념
 
-### Attributes
+### 속성(Attributes)
 
-Attributes are numeric values like Health, Mana, Attack Power, etc.
+체력/마나/공격력 같은 수치입니다.
 
 ```csharp
-// Set attribute
+// 설정
 ASC.Attributes.SetAttribute(AttributeId.Health, 100f, 0f, 100f);
 
-// Get attribute
+// 조회
 if (ASC.Attributes.TryGet(AttributeId.Health, out var health))
 {
     Debug.Log($"Health: {health.CurrentValue}/{health.MaxValue}");
 }
 
-// Modify attribute
+// 수정
 ASC.Attributes.Modify(AttributeId.Health, -10f, ModifierOperationType.Add);
 ```
 
-### Gameplay Tags
+### 태그(Gameplay Tags)
 
-Hierarchical tags for activation conditions and state tracking.
+조건 체크와 상태 표현을 위한 계층형 태그입니다.
 
 ```csharp
-// Add tag
+// 태그 추가
 ASC.OwnedTags.AddTag(new FGameplayTag("Status.Poisoned"));
 
-// Check tag
+// 태그 체크
 if (ASC.OwnedTags.HasTag(new FGameplayTag("Status.Poisoned")))
 {
     Debug.Log("Character is poisoned!");
 }
 
-// Check parent tag (hierarchical)
-// This checks for ANY tag starting with "Status."
+// 상위 태그 체크
 if (ASC.OwnedTags.HasTag(new FGameplayTag("Status")))
 {
     Debug.Log("Character has some status effect!");
 }
 ```
 
-### Gameplay Effects
+### 효과(Gameplay Effects)
 
-Effects modify attributes over time with various duration types.
+속성 변화/버프/디버프를 표현합니다.
 
 ```csharp
-// Instant effect (damage)
+// 즉시 효과 (데미지)
 var damageEffect = ScriptableObject.CreateInstance<GameplayEffectConfig>();
 damageEffect.DurationType = EGameplayEffectDurationType.Instant;
 ASC.ApplyGameplayEffect(damageEffect);
 
-// Duration effect (temporary buff)
+// 지속 효과 (버프)
 var buffEffect = ScriptableObject.CreateInstance<GameplayEffectConfig>();
 buffEffect.DurationType = EGameplayEffectDurationType.HasDuration;
-buffEffect.Duration = 10f; // 10 seconds
+buffEffect.Duration = 10f;
 ASC.ApplyGameplayEffect(buffEffect);
 
-// Infinite effect (permanent until removed)
+// 무한 효과
 var permBuffEffect = ScriptableObject.CreateInstance<GameplayEffectConfig>();
 permBuffEffect.DurationType = EGameplayEffectDurationType.Infinite;
 var handle = ASC.ApplyGameplayEffect(permBuffEffect);
 
-// Remove effect manually
+// 제거
 ASC.RemoveActiveEffect(handle);
 ```
 
 ---
 
-## Next Steps
+## 다음 단계
 
-- [Architecture Guide](architecture.md) - Understand the Clean Architecture design
-- [Performance Guide](performance.md) - Optimization techniques and best practices
-- [API Reference](../obj/api/index.md) - Complete API documentation
+- 아키텍처 가이드(architecture.md)
+- 성능 가이드(performance.md)
+- API 레퍼런스(../obj/api/index.md)
 
 ---
 
-## Common Issues
+## 자주 발생하는 문제
 
-### Ability Not Activating
+### Ability가 실행되지 않을 때
 
-1. Check `CanActivateAbility()` returns true
-2. Verify Required Tags are owned
-3. Ensure Blocked Tags are NOT owned
-4. Check console for activation failure logs
+1. `CanActivateAbility()`가 true인지 확인
+2. Required Tags가 있는지 확인
+3. Blocked Tags가 없는지 확인
+4. 콘솔 로그 확인
 
-### Effect Not Applying
+### Effect가 적용되지 않을 때
 
-1. Verify target has `AbilitySystemComponent`
-2. Check effect's Application Tag Requirements
-3. Ensure Immunity Tags don't block the effect
-4. Check attribute exists on target
+1. 대상에 `AbilitySystemComponent`가 있는지 확인
+2. Effect의 Application Tag 조건 확인
+3. Immunity 태그가 차단하는지 확인
+4. 대상에 해당 Attribute가 있는지 확인
 
-### Missing References
+### 레퍼런스 누락
 
-1. Ensure all ScriptableObject configs are assigned
-2. Check Ability Definition has correct Type Name
-3. Verify AbilitySystemComponent is initialized
+1. ScriptableObject 연결 확인
+2. Ability Definition의 Type Name 확인
+3. AbilitySystemComponent 초기화 여부 확인

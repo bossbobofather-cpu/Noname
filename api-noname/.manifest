@@ -88,6 +88,7 @@
   "MyProject.DefenseGame.Application": "MyProject.DefenseGame.Application.yml",
   "MyProject.DefenseGame.Application.Commands": "MyProject.DefenseGame.Application.Commands.yml",
   "MyProject.DefenseGame.Application.Commands.DefenseCommand": "MyProject.DefenseGame.Application.Commands.DefenseCommand.yml",
+  "MyProject.DefenseGame.Application.Commands.DefenseCommand.#ctor(System.Int64)": "MyProject.DefenseGame.Application.Commands.DefenseCommand.yml",
   "MyProject.DefenseGame.Application.Commands.DefenseCommandResult": "MyProject.DefenseGame.Application.Commands.DefenseCommandResult.yml",
   "MyProject.DefenseGame.Application.Commands.DefenseCommandResult.#ctor(System.Int64,System.Int64,System.Boolean,System.String)": "MyProject.DefenseGame.Application.Commands.DefenseCommandResult.yml",
   "MyProject.DefenseGame.Application.Commands.EndGameCommand": "MyProject.DefenseGame.Application.Commands.EndGameCommand.yml",
