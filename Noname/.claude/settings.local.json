@@ -1,5 +1,14 @@
 {
   "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(dir /B /S \"c:\\\\Users\\\\user\\\\OneDrive\\\\바탕 화면\\\\Noname\\\\UpmPackages\\\\com.noname.gameabilitysystem.plugin\\\\Runtime\\\\Presentation\\\\Task\")",
+      "Bash(dir /B /S \"c:\\\\Users\\\\user\\\\OneDrive\\\\바탕 화면\\\\Noname\\\\UpmPackages\\\\com.noname.gameabilitysystem.plugin\\\\Runtime\\\\Presentation\\\\Target\")",
+      "Bash(dir:*)",
+      "Bash(del:*)",
+      "Bash(xargs rm -f)"
+    ],
     "additionalDirectories": [
       "c:\\Users\\user\\OneDrive\\바탕 화면\\Noname\\UpmPackages\\com.noname.gameabilitysystem.plugin\\Runtime\\Domain\\Snapshots"
     ]
