@@ -109,6 +109,11 @@
     "title": "Namespace Noname.GameHost | Noname Docs",
     "summary": "Namespace Noname.GameHost Classes GameCommandBase 커맨드 요청의 기본 타입입니다. GameCommandResultBase 커맨드 처리 결과의 기본 타입입니다. GameEventBase 게임 이벤트의 기본 타입입니다. GameHostBase<TCommand, TResult, TEvent, TSnapshot> 게임 호스트 기본 클래스입니다. 서버/호스트 시뮬레이션을 관리하며 스레드 기반 커맨드 처리, 이벤트 디스패치, 스냅샷 생성을 제공합니다. GameSnapshotBase 게임 스냅샷의 기본 타입입니다. Structs GameCommandOutcome<TResult, TEvent> 커맨드 처리 결과와 전/후 이벤트를 묶어 전달하는 구조체입니다. Interfaces IGameHost<TCommand, TResult, TEvent, TSnapshot> 외부에서 사용할 커맨드 전송 버스입니다. //View에 제공할 내용만 IRandomSource 호스트에서 사용할 랜덤 소스 인터페이스입니다."
   },
+  "api-host/index.html": {
+    "href": "api-host/index.html",
+    "title": "API - GameHost 플러그인 | Noname Docs",
+    "summary": "API - GameHost 플러그인 이 섹션은 GameHost 플러그인의 API 레퍼런스를 제공합니다."
+  },
   "api-noname/Common.Interface.IAnimEventReceiver.html": {
     "href": "api-noname/Common.Interface.IAnimEventReceiver.html",
     "title": "Interface IAnimEventReceiver | Noname Docs",
