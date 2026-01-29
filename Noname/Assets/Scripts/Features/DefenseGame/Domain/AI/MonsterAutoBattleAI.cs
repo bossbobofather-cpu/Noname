@@ -1,0 +1,61 @@
+using System.Collections.Generic;
+using Noname.GameAbilitySystem.Domain;
+
+namespace MyProject.DefenseGame.Domain.AI
+{
+    /// <summary>
+    /// 몬스터 자동 전투 AI입니다.
+    /// Dirty Flag 패턴을 사용하여 태그가 변경되었을 때만 능력 활성화를 체크합니다.
+    /// </summary>
+    public class MonsterAutoBattleAI : IDefenseAI
+    {
+        private readonly List<GameplayAbilitySpec> _activatableAbilities = new();
+
+        /// <summary>
+        /// 타겟팅 컨텍스트입니다. Host에서 주입합니다.
+        /// </summary>
+        public TargetContext TargetContext { get; set; }
+
+        public IAIFlagChecker Checker { get; set; }
+        public void Update(DefenseEntity entity, float deltaTime)
+        {
+            if (entity == null) return;
+            if (entity.IsDead) return;
+
+            var asc = entity.ASC;
+
+            // 1. Dirty Flag 체크
+            var dirty = entity.ConsumeASCRecheck();
+
+            if (!dirty)
+            {
+                return;
+            }
+
+            // 2. 활성화 가능한 능력 조회
+            _activatableAbilities.Clear();
+            asc.GetActivatableAbilities(_activatableAbilities);
+
+            if (_activatableAbilities.Count == 0)
+            {
+                return;
+            }
+
+            // 3. 타겟 컨텍스트가 없으면 스킵
+            if (TargetContext == null)
+            {
+                return;
+            }
+
+            // 4. 능력 활성화 시도
+            foreach (var spec in _activatableAbilities)
+            {
+                if (asc.TryActivateAbility(spec, TargetContext))
+                {
+                    // 능력 발동 성공 - 첫 번째 성공한 능력만 실행
+                    break;
+                }
+            }
+        }
+    }
+}

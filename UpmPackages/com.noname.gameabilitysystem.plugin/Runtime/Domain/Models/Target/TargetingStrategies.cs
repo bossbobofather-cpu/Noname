@@ -186,8 +186,10 @@ namespace Noname.GameAbilitySystem.Domain
                 }
             }
 
+            var addExtraTargetCount = Math.Min(10, _maxTargets + owner.Get(AttributeId.ExtraTargetCount));
+            
             // 거리순 정렬 (간단한 선택 정렬)
-            for (var i = 0; i < Math.Min(_maxTargets, validCount); i++)
+            for (var i = 0; i < Math.Min(addExtraTargetCount, validCount); i++)
             {
                 var minIdx = i;
                 for (var j = i + 1; j < validCount; j++)

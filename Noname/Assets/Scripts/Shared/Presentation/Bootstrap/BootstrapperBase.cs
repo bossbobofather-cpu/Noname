@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+ï»¿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,17 +7,21 @@ using Noname.GameHost.GameEvent;
 namespace MyProject.Common.Bootstrap
 {
     /// <summary>
-    /// °øÅë ºÎÆ®½ºÆ®·¡ÆÛ º£ÀÌ½ºÀÔ´Ï´Ù.
+    /// ê³µí†µ ë¶€íŠ¸ìŠ¤íŠ¸ë˜í¼ì˜ ê¸°ë³¸ ë™ì‘ì„ ì œê³µí•˜ëŠ” ë² ì´ìŠ¤ì…ë‹ˆë‹¤.
+    /// ëŸ°íƒ€ì„ ì´ë²¤íŠ¸ ë°”ì¸ë”©ê³¼ ë§¤ë‹ˆì € ìƒì„± íë¦„ì„ ë‹´ë‹¹í•©ë‹ˆë‹¤.
     /// </summary>
     public abstract class BootstrapperBase : MonoBehaviour
     {
+        /// <summary>
+        /// ì´ˆê¸°í™” ì‹œ ìƒì„±í•  ë§¤ë‹ˆì € í”„ë¦¬íŒ¹ ëª©ë¡ì…ë‹ˆë‹¤.
+        /// </summary>
         [SerializeField] private List<MonoBehaviour> _managerPrefabs = new();
 
         private static bool _initialized;
         private bool _didInit;
 
         /// <summary>
-        /// Á¤Àû »óÅÂ¸¦ ÃÊ±âÈ­ÇÕ´Ï´Ù.
+        /// ì •ì  ìƒíƒœì™€ ì´ë²¤íŠ¸ ë°”ì¸ë”©ì„ ì´ˆê¸°í™”í•©ë‹ˆë‹¤.
         /// </summary>
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
         private static void ResetStatics()
@@ -30,7 +34,7 @@ namespace MyProject.Common.Bootstrap
         }
 
         /// <summary>
-        /// ·±Å¸ÀÓ ½ÃÀÛ ½Ã °ø¿ë ÀÌº¥Æ®¸¦ ¹ÙÀÎµùÇÕ´Ï´Ù.
+        /// ëŸ°íƒ€ì„ ì‹œì‘ ì‹œ ê³µìš© ì´ë²¤íŠ¸ë¥¼ ì—°ê²°í•©ë‹ˆë‹¤.
         /// </summary>
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void Initialize()
@@ -56,16 +60,19 @@ namespace MyProject.Common.Bootstrap
                 return;
             }
 
-            // ¾À ·Îµå ÀÌÈÄ ÇÑ ¹ø¸¸ ÃÊ±âÈ­¸¦ ¼öÇàÇÕ´Ï´Ù.
+            // ì”¬ ë¡œë“œ ì´í›„ í•œ ë²ˆë§Œ ì´ˆê¸°í™”ë¥¼ ìˆ˜í–‰í•©ë‹ˆë‹¤.
             _didInit = true;
             OnInit();
         }
 
+        /// <summary>
+        /// ìì‹ í´ë˜ìŠ¤ ì´ˆê¸°í™” í›…ì…ë‹ˆë‹¤.
+        /// </summary>
         protected virtual void OnInit()
         {
             for (var i = 0; i < _managerPrefabs.Count; i++)
             {
-                // µî·ÏµÈ ¸Å´ÏÀú ÇÁ¸®ÆÕÀ» ¼ø¼­´ë·Î »ı¼ºÇÕ´Ï´Ù.
+                // ë“±ë¡ëœ ë§¤ë‹ˆì € í”„ë¦¬íŒ¹ì„ ìˆœì„œëŒ€ë¡œ ìƒì„±í•©ë‹ˆë‹¤.
                 CreateManager(_managerPrefabs[i]);
             }
         }
@@ -95,7 +102,7 @@ namespace MyProject.Common.Bootstrap
         }
 
         /// <summary>
-        /// ¸Å´ÏÀú ÇÁ¸®ÆÕÀ» »ı¼ºÇÕ´Ï´Ù.
+        /// ë§¤ë‹ˆì € í”„ë¦¬íŒ¹ì„ ìƒì„±í•˜ê±°ë‚˜ ê¸°ì¡´ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ì¬ì‚¬ìš©í•©ë‹ˆë‹¤.
         /// </summary>
         protected IManager CreateManager(MonoBehaviour prefab)
         {
@@ -106,7 +113,7 @@ namespace MyProject.Common.Bootstrap
 
             if (prefab is not IManager)
             {
-                Debug.LogWarning($"IManager¸¦ ±¸ÇöÇÏÁö ¾ÊÀº ¸Å´ÏÀú ÇÁ¸®ÆÕÀÔ´Ï´Ù: {prefab.name}");
+                Debug.LogWarning($"IManagerë¥¼ êµ¬í˜„í•˜ì§€ ì•Šì€ ë§¤ë‹ˆì € í”„ë¦¬íŒ¹ì…ë‹ˆë‹¤: {prefab.name}");
                 return null;
             }
 
@@ -114,7 +121,7 @@ namespace MyProject.Common.Bootstrap
             var existing = Object.FindFirstObjectByType(managerType);
             if (existing != null)
             {
-                // ÀÌ¹Ì Á¸ÀçÇÏ¸é Àç»ç¿ëÇÏ°í ÃÊ±âÈ­¸¸ º¸ÀåÇÕ´Ï´Ù.
+                // ì´ë¯¸ ì¡´ì¬í•˜ë©´ ì¬ì‚¬ìš©í•˜ê³  ì´ˆê¸°í™”ë§Œ ë³´ì¥í•©ë‹ˆë‹¤.
                 var manager = existing as IManager;
                 manager?.Initialize();
                 return manager;
@@ -126,7 +133,7 @@ namespace MyProject.Common.Bootstrap
                 return null;
             }
 
-            // »ı¼ºµÈ ¸Å´ÏÀú´Â ¾À ÀüÈ¯¿¡¼­µµ À¯ÁöÇÕ´Ï´Ù.
+            // ìƒì„±ëœ ë§¤ë‹ˆì €ëŠ” ì”¬ ì „í™˜ì—ì„œë„ ìœ ì§€í•©ë‹ˆë‹¤.
             DontDestroyOnLoad(instance.gameObject);
             var createdManager = instance as IManager;
             createdManager?.Initialize();
@@ -135,7 +142,7 @@ namespace MyProject.Common.Bootstrap
 
         protected virtual void OnDestroy()
         {
-            
+            // í•„ìš” ì‹œ ìì‹ í´ë˜ìŠ¤ì—ì„œ ì •ë¦¬ ë¡œì§ì„ ì¶”ê°€í•©ë‹ˆë‹¤.
         }
     }
 }

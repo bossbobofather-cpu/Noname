@@ -6,6 +6,8 @@ using MyProject.DefenseGame.Domain;
 using MyProject.DefenseGame.Domain.AI;
 using MyProject.DefenseGame.Domain.LevelUp;
 using Noname.GameAbilitySystem.Domain;
+using System.Transactions;
+using Unity.VisualScripting;
 
 namespace MyProject.DefenseGame.Application
 {
@@ -14,7 +16,7 @@ namespace MyProject.DefenseGame.Application
     /// Command를 처리하고 Result/Event를 발행합니다.
     /// </summary>
     public sealed class DefenseGameHost
-        : GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>
+        : GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>, IAIFlagChecker
     {
         /// <summary>
         /// 게임 상태입니다.
@@ -61,13 +63,18 @@ namespace MyProject.DefenseGame.Application
         /// </summary>
         private TargetContext _targetContext;
 
+        /// <summary>
+        /// AI에서 체크하는 플래그. /AI에서 능력을 활성화 할 수 있는 상태인지 확인용으로 쓰입니다.
+        /// </summary>
+        private bool _needPlayerAIRecheck = false;
+
         public DefenseGameHost(DefenseHostConfig config)
         {
             _config = config ?? throw new ArgumentNullException(nameof(config));
             _state = new DefenseHostState();
 
             _entityFactory = new DefenseEntityFactory(_config);
-            _spawnModule = new DefenseSpawnModule(_state, _config, _entityFactory, PublishEvent);
+            _spawnModule = new DefenseSpawnModule(_state, _config, _entityFactory, PublishEvent, this);
             _combatModule = new DefenseCombatModule(_state, _config, PublishEvent);
             _levelUpRegistry = new LevelUpAbilityRegistry();
         }
@@ -100,6 +107,7 @@ namespace MyProject.DefenseGame.Application
                 return;
             }
 
+            //레벨업 페이즈일때 멈춘다. 다음 진행 커맨드를 전달 받고 진행 되도록
             if (_state.SessionPhase == DefenseSessionPhase.LevelUpSelection)
             {
                 return;
@@ -113,6 +121,19 @@ namespace MyProject.DefenseGame.Application
 
             _spawnModule.Tick(deltaTime, Tick);
             _combatModule.Tick(deltaTime, Tick);
+        }
+
+        protected override void HandleInternalEvent(DefenseHostEvent eventData)
+        {
+            //이벤트 중 내부에서 처리하고 싶은 경우도 있을 수 있어서
+            switch (eventData)
+            {
+                case DefenseMonsterSpawnedEvent spawnedEvent:
+                    _needPlayerAIRecheck = true;
+
+                    break;
+            }
+            ;
         }
 
         protected override DefenseHostSnapshot BuildSnapshotInternal()
@@ -157,19 +178,20 @@ namespace MyProject.DefenseGame.Application
 
             var playerAI = new PlayerAutoBattleAI
             {
-                TargetContext = _targetContext
+                TargetContext = _targetContext,
+                Checker = this
             };
-            player.AI = playerAI;
 
-            player.OnAttack += HandlePlayerAttack;
+            player.AI = playerAI;
             player.OnLevelUp += HandlePlayerLevelUp;
+            player.OnActivateAbility += HandleActivateAbility;
 
             _state.SetPlayer(player);
 
             var combat = new DefenseCombatState();
             _state.SetCombat(combat);
 
-            _spawnModule.Initialize();
+            _spawnModule.Initialize(_targetContext);
             _state.SetSessionPhase(DefenseSessionPhase.Playing);
 
             var events = new List<DefenseHostEvent>
@@ -201,19 +223,19 @@ namespace MyProject.DefenseGame.Application
             var selected = options[command.AbilityIndex];
 
             selected.ApplyAction?.Invoke(_state.Player);
-            _state.AddGrantedAbility(selected.Id);
+            _state.AddGrantedAbility(selected.AbilityTag);
             _state.SetSessionPhase(DefenseSessionPhase.Playing);
 
             var events = new List<DefenseHostEvent>
             {
-                new DefenseAbilitySelectedEvent(Tick, selected.Id, selected.DisplayName)
+                new DefenseAbilitySelectedEvent(Tick, selected.AbilityTag, selected.DisplayName)
             };
 
             return new GameCommandOutcome<DefenseCommandResult, DefenseHostEvent>(
                 SelectLevelUpAbilityResult.Ok(
                     Tick,
                     command.SenderUid,
-                    selected.Id.ToString(),
+                    selected.AbilityTag.ToString(),
                     selected.DisplayName),
                 events);
         }
@@ -242,16 +264,6 @@ namespace MyProject.DefenseGame.Application
 
         #region Internal Event Handlers
 
-        private void HandlePlayerAttack(DefensePlayer player, DefenseMonster target, int damage)
-        {
-            PublishEvent(new DefensePlayerAttackEvent(
-                Tick,
-                target.Uid,
-                damage,
-                target.IsDead
-            ));
-        }
-
         private void HandlePlayerLevelUp(DefensePlayer player, int newLevel)
         {
             _state.SetSessionPhase(DefenseSessionPhase.LevelUpSelection);
@@ -266,6 +278,33 @@ namespace MyProject.DefenseGame.Application
             _state.SetLevelUpOptions(_tempLevelUpOptions);
 
             PublishEvent(new DefenseLevelUpOptionsEvent(Tick, _state.CurrentLevelUpOptions));
+        }
+
+        private void HandleActivateAbility(GameplayAbility ability, TargetData targetData)
+        {
+            if (targetData == null) return;
+            if (targetData.Targets.Count == 0) return;
+
+            List<long> targetUids = null;
+
+            foreach (var target in targetData.Targets)
+            {
+                var targetOwner = target.Owner as DefenseEntity;
+                if (targetOwner == null)
+                {
+                    continue;
+                }
+
+                targetUids ??= new List<long>();
+                targetUids.Add(targetOwner.Uid);
+            }
+
+            if (targetUids == null || targetUids.Count == 0)
+            {
+                return;
+            }
+
+            PublishEvent(new DefensePlayerActivateAbilityEvent(Tick, targetUids, ability));
         }
 
         #endregion
@@ -330,7 +369,21 @@ namespace MyProject.DefenseGame.Application
 
             return default;
         }
-        
+
         #endregion
+
+        public bool ConsumePlayerAIRecheck()
+        {
+            var changed = _needPlayerAIRecheck;
+            _needPlayerAIRecheck = false;
+            return changed;
+        }
+
+        public override void Dispose()
+        {
+            base.Dispose();
+
+            _state?.Dispose();
+        }
     }
 }

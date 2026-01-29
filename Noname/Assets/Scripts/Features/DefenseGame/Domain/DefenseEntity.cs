@@ -1,42 +1,14 @@
 using System;
 using Noname.GameAbilitySystem.Domain;
 using MyProject.DefenseGame.Domain.AI;
+using UnityEditor;
 
 namespace MyProject.DefenseGame.Domain
 {
     /// <summary>
-    /// 디펜스 게임 공통 속성 ID입니다.
-    /// </summary>
-    public static class DefenseAttributeIds
-    {
-        // 공통
-        public static readonly AttributeId Hp = new("Hp");
-        public static readonly AttributeId MaxHp = new("MaxHp");
-        public static readonly AttributeId Attack = new("Attack");
-        public static readonly AttributeId Defense = new("Defense");
-        public static readonly AttributeId Level = new("Level");
-    }
-
-    /// <summary>
-    /// 플레이어 전용 속성 ID입니다.
-    /// </summary>
-    public static class PlayerAttributeIds
-    {
-        public static readonly AttributeId Experience = new("Experience");
-    }
-
-    /// <summary>
-    /// 몬스터 전용 속성 ID입니다.
-    /// </summary>
-    public static class MonsterAttributeIds
-    {
-        public static readonly AttributeId ExpReward = new("ExpReward");
-    }
-
-    /// <summary>
     /// 디펜스 게임 엔티티의 기본 클래스입니다.
     /// </summary>
-    public abstract class DefenseEntity : IAbilitySystemOwner
+    public abstract class DefenseEntity : IAbilitySystemOwner, IDisposable
     {
         /// <summary>
         /// 고유 ID입니다.
@@ -68,37 +40,53 @@ namespace MyProject.DefenseGame.Domain
         /// </summary>
         public bool IsDead => GetHp() <= 0;
 
+        /// <summary>
+        /// 능력 활성화 이벤트 입니다.
+        /// </summary>
+        public event Action<GameplayAbility, TargetData> OnActivateAbility;
+
+        /// <summary>
+        /// ASC에 변경 사항(태그 추가,제거, 능력 추가)이 생기면 true가 되며 해당 정보 소비시 false로 변경됩니다.
+        /// 최초에도 체크해야하기때문에 true입니다.
+        /// </summary>
+        private bool _ascRecheckFlag = true;
+
         protected DefenseEntity(long uid, Point2D position, AbilitySystemComponent asc)
         {
             Uid = uid;
             Position = position;
             ASC = asc ?? throw new ArgumentNullException(nameof(asc));
+
+            ASC.SetOwner(this);
+            ASC.OnAddedAbility += HandleAddedAbility;
+            ASC.OnChangedTags += HandleChangedTags;
+            ASC.OnActivateAbility += HandleActivateAbility;
         }
 
         /// <summary>
         /// 현재 HP를 반환합니다.
         /// </summary>
-        public float GetHp() => ASC.Get(DefenseAttributeIds.Hp);
+        public float GetHp() => ASC.Get(AttributeId.Health);
 
         /// <summary>
         /// 최대 HP를 반환합니다.
         /// </summary>
-        public float GetMaxHp() => ASC.Get(DefenseAttributeIds.MaxHp);
+        public float GetMaxHp() => ASC.Get(AttributeId.MaxHealth);
 
         /// <summary>
         /// 공격력을 반환합니다.
         /// </summary>
-        public float GetAttack() => ASC.Get(DefenseAttributeIds.Attack);
+        public float GetAttack() => ASC.Get(AttributeId.AttackDamage);
 
         /// <summary>
         /// 방어력을 반환합니다.
         /// </summary>
-        public float GetDefense() => ASC.Get(DefenseAttributeIds.Defense);
+        public float GetDefense() => ASC.Get(AttributeId.Defense);
 
         /// <summary>
         /// 레벨을 반환합니다.
         /// </summary>
-        public int GetLevel() => (int)ASC.Get(DefenseAttributeIds.Level);
+        public int GetLevel() => (int)ASC.Get(AttributeId.Level);
 
         /// <summary>
         /// 데미지를 받습니다.
@@ -109,7 +97,7 @@ namespace MyProject.DefenseGame.Domain
 
             var currentHp = GetHp();
             var newHp = Math.Max(0, currentHp - damage);
-            ASC.Set(DefenseAttributeIds.Hp, newHp);
+            ASC.Set(AttributeId.Health, newHp);
         }
 
         /// <summary>
@@ -122,7 +110,7 @@ namespace MyProject.DefenseGame.Domain
             var currentHp = GetHp();
             var maxHp = GetMaxHp();
             var newHp = Math.Min(maxHp, currentHp + amount);
-            ASC.Set(DefenseAttributeIds.Hp, newHp);
+            ASC.Set(AttributeId.Health, newHp);
         }
 
         /// <summary>
@@ -140,5 +128,37 @@ namespace MyProject.DefenseGame.Domain
         /// 매 틱마다 호출됩니다.
         /// </summary>
         public abstract void Tick(float deltaTime);
+
+        private void HandleAddedAbility()
+        {
+            _ascRecheckFlag |= true;
+        }
+
+        private void HandleChangedTags()
+        {
+            _ascRecheckFlag |= true;
+        }
+
+        private void HandleActivateAbility(GameplayAbility ability, TargetData targetData)
+        {
+            OnActivateAbility?.Invoke(ability, targetData);
+        }
+
+        public bool ConsumeASCRecheck()
+        {
+            var changed = _ascRecheckFlag;
+            _ascRecheckFlag = false;
+            return changed;
+        }
+
+        public void Dispose()
+        {
+            if (ASC != null)
+            {
+                ASC.Dispose();
+            }
+
+            OnActivateAbility = null;
+        }
     }
 }

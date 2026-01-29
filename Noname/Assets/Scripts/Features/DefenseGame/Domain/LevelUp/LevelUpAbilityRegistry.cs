@@ -10,7 +10,7 @@ namespace MyProject.DefenseGame.Domain.LevelUp
     /// </summary>
     public sealed class LevelUpAbilityRegistry
     {
-        private readonly Dictionary<LevelUpAbilityId, LevelUpAbilityDefinition> _definitions = new();
+        private readonly Dictionary<FGameplayTag, LevelUpAbilityDefinition> _definitions = new();
         private readonly List<LevelUpAbilityDefinition> _tempAvailable = new();
         private readonly Random _random;
 
@@ -27,48 +27,37 @@ namespace MyProject.DefenseGame.Domain.LevelUp
         {
             // 기본 어빌리티 (선행조건 없음)
             Register(new LevelUpAbilityDefinition(
-                id: LevelUpAbilityId.FullHealthRestore,
+                abilityTag: DefenseTags.Ability_FullHealthRestore,
                 displayName: "완전 회복",
                 description: "체력을 완전히 회복합니다.",
-                prerequisiteId: LevelUpAbilityId.None,
                 isStackable: true,
                 applyAction: player =>
                 {
                     var maxHp = player.GetMaxHp();
-                    player.ASC.Set(DefenseAttributeIds.Hp, maxHp);
+                    player.ASC.Set(AttributeId.Health, maxHp);
                 }
             ));
 
             Register(new LevelUpAbilityDefinition(
-                id: LevelUpAbilityId.AttackSpeedUp,
-                displayName: "공격속도 증가",
-                description: "공격 쿨다운이 10% 감소합니다.",
-                prerequisiteId: LevelUpAbilityId.None,
+                abilityTag: DefenseTags.Ability_AttackSpeedUp,
+                displayName: "기본 공격 속도 증가",
+                description: "현재 기본 공격 쿨다운이 10% 감소합니다.",
                 isStackable: true,
                 applyAction: player =>
                 {
-                    // 쿨다운 감소 태그 부여 (AI에서 처리)
-                    player.ASC.AddLooseTag(DefenseTags.Buff_AttackSpeedUp, out _);
+                    var atkSpd = player.ASC.Get(AttributeId.AttackSpeed);
+                    atkSpd += atkSpd * 0.1f;
+
+                    //최고 공격속도 제한이 있어야 할 듯 5보다 크면 5로 고정
+                    atkSpd = Math.Min(5f, atkSpd);
+                    player.ASC.Set(AttributeId.AttackSpeed, atkSpd);
                 }
             ));
 
             Register(new LevelUpAbilityDefinition(
-                id: LevelUpAbilityId.ExpGainUp,
-                displayName: "경험치 증가",
-                description: "경험치 획득량이 20% 증가합니다.",
-                prerequisiteId: LevelUpAbilityId.None,
-                isStackable: true,
-                applyAction: player =>
-                {
-                    player.ASC.AddLooseTag(DefenseTags.Buff_ExpGainUp, out _);
-                }
-            ));
-
-            Register(new LevelUpAbilityDefinition(
-                id: LevelUpAbilityId.AreaAttack,
+                abilityTag: DefenseTags.Ability_AreaAttack,
                 displayName: "범위 공격",
                 description: "가장 가까운 적 3기를 동시에 공격합니다.",
-                prerequisiteId: LevelUpAbilityId.None,
                 isStackable: false,
                 applyAction: player =>
                 {
@@ -79,44 +68,22 @@ namespace MyProject.DefenseGame.Domain.LevelUp
                         maxTargets: 3
                     );
                     player.ASC.GiveAbility(areaAttack);
-                    player.ASC.AddLooseTag(DefenseTags.Ability_AreaAttack, out _);
                 }
             ));
 
-            Register(new LevelUpAbilityDefinition(
-                id: LevelUpAbilityId.LifeStealOnKill,
-                displayName: "흡혈",
-                description: "몬스터 처치 시 체력을 5 회복합니다.",
-                prerequisiteId: LevelUpAbilityId.None,
-                isStackable: false,
-                applyAction: player =>
-                {
-                    player.ASC.AddLooseTag(DefenseTags.Ability_LifeStealOnKill, out _);
-                }
-            ));
 
             // 종속 어빌리티
             Register(new LevelUpAbilityDefinition(
-                id: LevelUpAbilityId.AreaAttackTargetUp,
+                abilityTag: DefenseTags.Ability_AreaAttackTargetUp,
                 displayName: "범위 공격 강화",
-                description: "범위 공격 대상이 2기 증가합니다.",
-                prerequisiteId: LevelUpAbilityId.AreaAttack,
+                description: "범위 공격 대상이 2 증가합니다.",
+                prerequisiteTag: DefenseTags.Ability_AreaAttack,
                 isStackable: true,
                 applyAction: player =>
                 {
-                    player.ASC.AddLooseTag(DefenseTags.Buff_AreaAttackTargetUp, out _);
-                }
-            ));
-
-            Register(new LevelUpAbilityDefinition(
-                id: LevelUpAbilityId.LifeStealAmountUp,
-                displayName: "흡혈 강화",
-                description: "몬스터 처치 시 회복량이 3 증가합니다.",
-                prerequisiteId: LevelUpAbilityId.LifeStealOnKill,
-                isStackable: true,
-                applyAction: player =>
-                {
-                    player.ASC.AddLooseTag(DefenseTags.Buff_LifeStealAmountUp, out _);
+                    var extraTargetCount = player.ASC.Get(AttributeId.ExtraTargetCount);
+                    extraTargetCount += 2;
+                    player.ASC.Set(AttributeId.ExtraTargetCount, extraTargetCount);
                 }
             ));
         }
@@ -126,7 +93,7 @@ namespace MyProject.DefenseGame.Domain.LevelUp
         /// </summary>
         private void Register(LevelUpAbilityDefinition definition)
         {
-            _definitions[definition.Id] = definition;
+            _definitions[definition.AbilityTag] = definition;
         }
 
         /// <summary>
@@ -138,7 +105,7 @@ namespace MyProject.DefenseGame.Domain.LevelUp
         /// <param name="results">결과 목록 (out)</param>
         public void GetRandomAvailableAbilities(
             DefensePlayer player,
-            HashSet<LevelUpAbilityId> grantedAbilities,
+            HashSet<FGameplayTag> grantedAbilities,
             int count,
             List<LevelUpAbilityDefinition> results)
         {
@@ -151,16 +118,16 @@ namespace MyProject.DefenseGame.Domain.LevelUp
                 var def = kvp.Value;
 
                 // 선행조건 체크
-                if (def.PrerequisiteId != LevelUpAbilityId.None)
+                if (def.PrerequisiteTag.IsValid)
                 {
-                    if (!grantedAbilities.Contains(def.PrerequisiteId))
+                    if (!grantedAbilities.Contains(def.PrerequisiteTag))
                     {
                         continue;
                     }
                 }
 
                 // 중복 획득 불가능한 경우 이미 획득했는지 체크
-                if (!def.IsStackable && grantedAbilities.Contains(def.Id))
+                if (!def.IsStackable && grantedAbilities.Contains(def.AbilityTag))
                 {
                     continue;
                 }
@@ -181,9 +148,9 @@ namespace MyProject.DefenseGame.Domain.LevelUp
         /// <summary>
         /// ID로 어빌리티 정의를 가져옵니다.
         /// </summary>
-        public LevelUpAbilityDefinition GetDefinition(LevelUpAbilityId id)
+        public LevelUpAbilityDefinition GetDefinition(FGameplayTag abilityTag)
         {
-            return _definitions.TryGetValue(id, out var def) ? def : null;
+            return _definitions.TryGetValue(abilityTag, out var def) ? def : null;
         }
 
         /// <summary>

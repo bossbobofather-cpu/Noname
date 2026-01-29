@@ -36,7 +36,7 @@ namespace MyProject.DefenseGame.Domain
         /// <summary>
         /// 경험치 보상입니다.
         /// </summary>
-        public int ExpReward => (int)ASC.Get(MonsterAttributeIds.ExpReward);
+        public int ExpReward => (int)ASC.Get(AttributeId.ExpReward);
 
         public DefenseMonster(
             long uid,

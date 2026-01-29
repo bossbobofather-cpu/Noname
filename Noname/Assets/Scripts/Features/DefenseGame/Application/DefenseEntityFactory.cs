@@ -22,7 +22,6 @@ namespace MyProject.DefenseGame.Application
         public DefensePlayer CreatePlayer(long uid)
         {
             var asc = BuildPlayerASC();
-
             return new DefensePlayer(
                 uid: uid,
                 name: "Player",
@@ -35,6 +34,7 @@ namespace MyProject.DefenseGame.Application
         {
             var level = waveLevel;
             int maxHp, attack, defense, expReward;
+            float attackSpeed = 0f;
             string typeName;
             DefenseMonsterType type;
 
@@ -44,6 +44,7 @@ namespace MyProject.DefenseGame.Application
                 type = DefenseMonsterType.Boss;
                 maxHp = (int)(_config.NormalMonsterHp * _config.BossHpMultiplier) + level * 20;
                 attack = (int)(_config.NormalMonsterAttack * _config.BossAttackMultiplier) + level * 2;
+                attackSpeed = _config.NormalMonsterAttackSpeed;
                 defense = _config.NormalMonsterDefense * 2 + level;
                 expReward = (int)(_config.NormalMonsterExp * _config.BossExpMultiplier) + level * 10;
             }
@@ -53,12 +54,13 @@ namespace MyProject.DefenseGame.Application
                 type = DefenseMonsterType.Normal;
                 maxHp = _config.NormalMonsterHp + level * 5;
                 attack = _config.NormalMonsterAttack + level;
+                attackSpeed = _config.NormalMonsterAttackSpeed;
                 defense = _config.NormalMonsterDefense + level / 2;
                 expReward = _config.NormalMonsterExp + level * 2;
             }
 
             var abilityIds = isBoss ? _config.BossMonsterAbilityIds : _config.NormalMonsterAbilityIds;
-            var asc = BuildMonsterASC(level, maxHp, attack, defense, expReward, abilityIds);
+            var asc = BuildMonsterASC(level, maxHp, attack, attackSpeed, defense, expReward, abilityIds);
 
             return new DefenseMonster(
                 uid,
@@ -72,15 +74,25 @@ namespace MyProject.DefenseGame.Application
         private AbilitySystemComponent BuildPlayerASC()
         {
             var attributes = new AttributeSet();
-            attributes.SetAttribute(DefenseAttributeIds.Level, 1, 1, 999);
-            attributes.SetAttribute(DefenseAttributeIds.MaxHp, _config.PlayerMaxHp, 0, 999999);
-            attributes.SetAttribute(DefenseAttributeIds.Hp, _config.PlayerMaxHp, 0, 999999);
-            attributes.SetAttribute(DefenseAttributeIds.Attack, _config.PlayerAttackPower, 0, 999999);
-            attributes.SetAttribute(DefenseAttributeIds.Defense, _config.PlayerDefense, 0, 999999);
-            attributes.SetAttribute(PlayerAttributeIds.Experience, 0, 0, 999999);
+            attributes.SetAttribute(AttributeId.Level, 1, 1, 999);
+            attributes.SetAttribute(AttributeId.MaxHealth, _config.PlayerMaxHp, 0, 999999);
+            attributes.SetAttribute(AttributeId.Health, _config.PlayerMaxHp, 0, 999999);
+            attributes.SetAttribute(AttributeId.AttackDamage, _config.PlayerAttackPower, 0, 999999);
+            attributes.SetAttribute(AttributeId.AttackSpeed, _config.PlayerAttackSpeed, 1, 5);
+            attributes.SetAttribute(AttributeId.Defense, _config.PlayerDefense, 0, 999999);
+            attributes.SetAttribute(AttributeId.Experience, 0, 0, 999999);
 
             var abilities = DefenseAbilityUtility.CreateAbilities(_config.PlayerAbilityIds);
             var tags = new GameplayTagContainer();
+
+            foreach (var tag in _config.PlayerTags)
+            {
+                tags.AddTag(new FGameplayTag(tag));
+            }
+
+            if(_config.InvincibleMode)
+                tags.AddTag(DefenseTags.State_Invincible);
+
             return new AbilitySystemComponent(attributes, abilities, tags);
         }
 
@@ -88,17 +100,19 @@ namespace MyProject.DefenseGame.Application
             int level,
             int maxHp,
             int attack,
+            float attackSpeed,
             int defense,
             int expReward,
             IEnumerable<int> abilityIds)
         {
             var attributes = new AttributeSet();
-            attributes.SetAttribute(DefenseAttributeIds.Level, level, 1, 999);
-            attributes.SetAttribute(DefenseAttributeIds.MaxHp, maxHp, 0, 999999);
-            attributes.SetAttribute(DefenseAttributeIds.Hp, maxHp, 0, 999999);
-            attributes.SetAttribute(DefenseAttributeIds.Attack, attack, 0, 999999);
-            attributes.SetAttribute(DefenseAttributeIds.Defense, defense, 0, 999999);
-            attributes.SetAttribute(MonsterAttributeIds.ExpReward, expReward, 0, 999999);
+            attributes.SetAttribute(AttributeId.Level, level, 1, 999);
+            attributes.SetAttribute(AttributeId.MaxHealth, maxHp, 0, 999999);
+            attributes.SetAttribute(AttributeId.Health, maxHp, 0, 999999);
+            attributes.SetAttribute(AttributeId.AttackDamage, attack, 0, 999999);
+            attributes.SetAttribute(AttributeId.AttackSpeed, attackSpeed, 1, 5);
+            attributes.SetAttribute(AttributeId.Defense, defense, 0, 999999);
+            attributes.SetAttribute(AttributeId.ExpReward, expReward, 0, 999999);
 
             var abilities = DefenseAbilityUtility.CreateAbilities(abilityIds);
             var tags = new GameplayTagContainer();

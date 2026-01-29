@@ -16,15 +16,23 @@ namespace MyProject.DefenseGame.Domain.AI
         /// </summary>
         public TargetContext TargetContext { get; set; }
 
+        public IAIFlagChecker Checker { get; set; }
         public void Update(DefenseEntity entity, float deltaTime)
         {
-            if (entity is not DefensePlayer player) return;
-            if (player.IsDead) return;
+            if (entity == null) return;
 
-            var asc = player.ASC;
+            if (entity.IsDead) return;
 
-            // 1. Dirty Flag 체크 - 태그가 변경되지 않았으면 스킵
-            if (!asc.ConsumeTagsChanged())
+            var asc = entity.ASC;
+
+            // 1. Dirty Flag 체크
+            var dirty = entity.ConsumeASCRecheck();
+            if (Checker != null)
+            {
+                dirty |= Checker.ConsumePlayerAIRecheck();
+            }
+
+            if (!dirty)
             {
                 return;
             }

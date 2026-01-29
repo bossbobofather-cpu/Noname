@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using MyProject.DefenseGame.Domain;
 using MyProject.DefenseGame.Domain.LevelUp;
+using Noname.GameAbilitySystem.Domain;
 
 namespace MyProject.DefenseGame.Application
 {
@@ -18,16 +20,16 @@ namespace MyProject.DefenseGame.Application
     /// <summary>
     /// 디펜스 게임 호스트 상태입니다.
     /// </summary>
-    public sealed class DefenseHostState
+    public sealed class DefenseHostState : IDisposable
     {
         private long _nextMonsterUid = 1;
-        private readonly HashSet<LevelUpAbilityId> _grantedAbilities = new();
+        private readonly HashSet<FGameplayTag> _grantedAbilities = new();
         private readonly List<LevelUpAbilityDefinition> _currentLevelUpOptions = new();
 
         /// <summary>
         /// 획득한 레벨업 어빌리티 ID 목록입니다.
         /// </summary>
-        public HashSet<LevelUpAbilityId> GrantedAbilities => _grantedAbilities;
+        public HashSet<FGameplayTag> GrantedAbilities => _grantedAbilities;
 
         /// <summary>
         /// 현재 레벨업 선택지 목록입니다.
@@ -49,9 +51,9 @@ namespace MyProject.DefenseGame.Application
         /// <summary>
         /// 레벨업 어빌리티를 획득 목록에 추가합니다.
         /// </summary>
-        public void AddGrantedAbility(LevelUpAbilityId id)
+        public void AddGrantedAbility(FGameplayTag abilityTag)
         {
-            _grantedAbilities.Add(id);
+            _grantedAbilities.Add(abilityTag);
         }
 
         /// <summary>
@@ -99,6 +101,15 @@ namespace MyProject.DefenseGame.Application
         public long GenerateMonsterUid()
         {
             return _nextMonsterUid++;
+        }
+
+        public void Dispose()
+        {
+            Player?.Dispose();
+            Player = null;
+
+            Combat?.Dispose();
+            Combat = null;
         }
     }
 }

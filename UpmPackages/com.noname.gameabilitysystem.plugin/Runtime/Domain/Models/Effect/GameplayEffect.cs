@@ -7,7 +7,7 @@ namespace Noname.GameAbilitySystem.Domain
     /// 게임플레이 효과 설정입니다 (순수 C# 모델).
     /// </summary>
     [Serializable]
-    public sealed class GameplayEffect
+    public class GameplayEffect
     {
         /// <summary>
         /// 효과 ID입니다.
@@ -63,6 +63,8 @@ namespace Noname.GameAbilitySystem.Domain
         /// 적용 차단 태그 목록입니다.
         /// </summary>
         public GameplayTagContainer BlockedTags { get; set; }
+
+        public IEffectDurationPolicy DurationPolicy { get; set; }
 
         public GameplayEffect()
         {

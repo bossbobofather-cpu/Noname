@@ -14,12 +14,11 @@ namespace MyProject.DefenseGame.Domain
         // 어빌리티 태그 (어빌리티 보유 여부)
         public static readonly FGameplayTag Ability_BasicAttack = new("Ability.BasicAttack");
         public static readonly FGameplayTag Ability_AreaAttack = new("Ability.AreaAttack");
-        public static readonly FGameplayTag Ability_LifeStealOnKill = new("Ability.LifeStealOnKill");
+        public static readonly FGameplayTag Ability_AttackSpeedUp = new("Ability.AttackSpeedUp");
+        public static readonly FGameplayTag Ability_FullHealthRestore = new ("Ability.FullHealthRestore");
+        public static readonly FGameplayTag Ability_AreaAttackTargetUp = new("Ability.AreaAttackTargetUp");
 
-        // 버프 태그 (스택 가능)
-        public static readonly FGameplayTag Buff_AttackSpeedUp = new("Buff.AttackSpeedUp");
-        public static readonly FGameplayTag Buff_ExpGainUp = new("Buff.ExpGainUp");
-        public static readonly FGameplayTag Buff_AreaAttackTargetUp = new("Buff.AreaAttackTargetUp");
-        public static readonly FGameplayTag Buff_LifeStealAmountUp = new("Buff.LifeStealAmountUp");
+        // 상태 태그
+        public static readonly FGameplayTag State_Invincible = new("State.Invincible");
     }
 }

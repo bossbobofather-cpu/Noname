@@ -1,6 +1,6 @@
 ﻿# Noname - Unity 게임 프로젝트
 
-Noname는 Host-Client 아키텍처를 기반으로 한 Unity 게임 프로젝트입니다.  
+Noname는 Host-Client 아키텍처를 기반으로 한 Unity 게임 프로젝트입니다.
 게임 로직은 Host 스레드에서 시뮬레이션하고, Unity 메인 스레드는 결과를 표시하는 역할을 합니다.
 
 ## 주요 목표
@@ -9,7 +9,6 @@ Noname는 Host-Client 아키텍처를 기반으로 한 Unity 게임 프로젝트
 - **플러그인 기반 공유 인프라** (GameHost, GameAbilitySystem)
 
 ## 프로젝트 구조
-
 ```
 Assets/Scripts/
 ├── Features/

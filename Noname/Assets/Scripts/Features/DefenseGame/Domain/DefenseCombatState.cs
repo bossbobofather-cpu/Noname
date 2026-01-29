@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace MyProject.DefenseGame.Domain
@@ -5,7 +6,7 @@ namespace MyProject.DefenseGame.Domain
     /// <summary>
     /// 디펜스 게임의 전투 상태입니다.
     /// </summary>
-    public sealed class DefenseCombatState
+    public sealed class DefenseCombatState : IDisposable
     {
         private readonly List<DefenseMonster> _monsters = new();
 
@@ -67,6 +68,24 @@ namespace MyProject.DefenseGame.Domain
         }
 
         /// <summary>
+        /// 몬스터 uid 기반으로 몬스터를 반환합니다.
+        /// </summary>
+        /// <param name="monsterUid"></param>
+        /// <returns></returns>
+        public DefenseMonster GetMonster(long monsterUid)
+        {
+            foreach (var monster in _monsters)
+            {
+                if (monster.Uid == monsterUid)
+                {
+                    return monster;
+                }
+            }
+
+            return null;
+        }
+
+        /// <summary>
         /// 살아있는 모든 몬스터를 반환합니다.
         /// </summary>
         public IReadOnlyList<DefenseMonster> GetAliveMonsters() => _monsters;
@@ -102,6 +121,18 @@ namespace MyProject.DefenseGame.Domain
         {
             IsGameOver = true;
             IsDefeat = isDefeat;
+        }
+
+        public void Dispose()
+        {
+            foreach (var monster in _monsters)
+            {
+                if(monster == null) continue;
+
+                monster.Dispose();
+            }
+
+            _monsters?.Clear();
         }
     }
 }

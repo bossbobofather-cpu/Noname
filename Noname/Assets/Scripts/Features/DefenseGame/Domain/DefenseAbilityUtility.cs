@@ -32,8 +32,12 @@ namespace MyProject.DefenseGame.Domain
                 DisplayName = "기본 공격 쿨다운",
                 DurationType = EffectDurationType.HasDuration,
                 Duration = cooldown,
-                GrantedTags = cooldownGrantedTags
+                GrantedTags = cooldownGrantedTags,
+                DurationPolicy = new BaseAttackCooldownDrationPlicy(),
             };
+
+            var effectBlockedTags = new GameplayTagContainer();
+            effectBlockedTags.AddTag(DefenseTags.State_Invincible);
 
             // 데미지 효과 (적에게 적용)
             var damageEffect = new GameplayEffect
@@ -45,11 +49,13 @@ namespace MyProject.DefenseGame.Domain
                 {
                     new AttributeModifier
                     {
-                        AttributeId = DefenseAttributeIds.Hp,
+                        AttributeId = AttributeId.Health,
                         Operation = AttributeModifierOperationType.Add,
                         Magnitude = -damageAmount
                     }
-                }
+                },
+
+                BlockedTags = effectBlockedTags,
             };
 
             // 차단 태그 (쿨다운 중이면 발동 불가)
@@ -91,6 +97,9 @@ namespace MyProject.DefenseGame.Domain
                 GrantedTags = cooldownGrantedTags
             };
 
+
+            var effectBlockedTags = new GameplayTagContainer();
+            effectBlockedTags.AddTag(DefenseTags.State_Invincible);
             // 데미지 효과 (적에게 적용)
             var damageEffect = new GameplayEffect
             {
@@ -101,11 +110,13 @@ namespace MyProject.DefenseGame.Domain
                 {
                     new AttributeModifier
                     {
-                        AttributeId = DefenseAttributeIds.Hp,
+                        AttributeId = AttributeId.Health,
                         Operation = AttributeModifierOperationType.Add,
                         Magnitude = -damageAmount
                     }
-                }
+                },
+                
+                BlockedTags = effectBlockedTags,
             };
 
             // 차단 태그 (쿨다운 중이면 발동 불가)

@@ -12,8 +12,8 @@ namespace Noname.GameHost
     /// 이벤트 디스패치, 스냅샷 생성을 제공합니다.
     /// </summary>
     public abstract class GameHostBase<TCommand, TResult, TEvent, TSnapshot>
-        : IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>,
-          IGameHost<TCommand, TResult, TEvent, TSnapshot>,
+        : IGameHost<TCommand, TResult, TEvent, TSnapshot>,
+          IGameHostInternal<TCommand, TResult, TEvent, TSnapshot>,
           IDisposable
         where TCommand : GameCommandBase
         where TResult : GameCommandResultBase
@@ -220,7 +220,7 @@ namespace Noname.GameHost
             }
         }
 
-        TSnapshot IGameHost<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshot()
+        TSnapshot IGameHostInternal<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshot()
         {
             var latest = default(TSnapshot);
             while (_snapshotQueue.TryDequeue(out var snapshot))
@@ -242,12 +242,12 @@ namespace Noname.GameHost
         /// </summary>
         protected abstract GameCommandOutcome<TResult, TEvent> HandleCommand(TCommand command);
 
-        void IGameHost<TCommand, TResult, TEvent, TSnapshot>.Submit(TCommand command)
+        void IGameHostInternal<TCommand, TResult, TEvent, TSnapshot>.Submit(TCommand command)
         {
             SendCommand(command);
         }
 
-        void IGameHost<TCommand, TResult, TEvent, TSnapshot>.Advance(float deltaSeconds)
+        void IGameHostInternal<TCommand, TResult, TEvent, TSnapshot>.Advance(float deltaSeconds)
         {
             Tick++;
 
@@ -325,6 +325,10 @@ namespace Noname.GameHost
             _dispatchQueue.Enqueue(DispatchItem.ForResult(result));
         }
 
+        protected virtual void HandleInternalEvent(TEvent eventData)
+        {
+        }
+        
         protected void PublishEvent(TEvent eventData)
         {
             if (eventData == null)
@@ -332,6 +336,8 @@ namespace Noname.GameHost
                 return;
             }
 
+            //내부에 쓸일있을수있으니 먼저 쏴주자.
+            HandleInternalEvent(eventData);
             _dispatchQueue.Enqueue(DispatchItem.ForEvent(eventData));
         }
 
@@ -430,7 +436,7 @@ namespace Noname.GameHost
                 var lastTime = stopwatch.Elapsed;
                 var accumulator = 0.0;
 
-                var host = (IGameHost<TCommand, TResult, TEvent, TSnapshot>)this;
+                var host = (IGameHostInternal<TCommand, TResult, TEvent, TSnapshot>)this;
 
                 while (_isRunning)
                 {
@@ -486,15 +492,18 @@ namespace Noname.GameHost
             }
         }
 
-        public void Dispose()
+        public virtual void Dispose()
         {
             if (_disposed)
             {
                 return;
             }
 
-            StopSimulation();
             _disposed = true;
+
+            _pendingCommands.Clear();
+            _dispatchQueue.Clear();
+            _snapshotQueue.Clear();
         }
     }
 }

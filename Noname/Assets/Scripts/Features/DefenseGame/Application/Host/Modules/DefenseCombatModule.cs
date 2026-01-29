@@ -82,9 +82,6 @@ namespace MyProject.DefenseGame.Application
             {
                 var monster = _deadMonsters[i];
 
-                // 경험치 지급
-                var leveledUp = player.AddExperience(monster.ExpReward);
-
                 // 몬스터 제거
                 combat.RemoveMonster(monster);
 
@@ -96,12 +93,16 @@ namespace MyProject.DefenseGame.Application
                     monster.ExpReward
                 ));
 
-                // 레벨업 처리
-                if (leveledUp)
-                {
-                    _state.SetSessionPhase(DefenseSessionPhase.LevelUpSelection);
-                    _publishEvent(new DefenseLevelUpEvent(tick, player.GetLevel()));
-                }
+                // 경험치 지급
+                player.AddExperience(monster.ExpReward);
+                //var leveledUp = player.AddExperience(monster.ExpReward);
+
+                // // 레벨업 처리
+                // if (leveledUp)
+                // {
+                //     _state.SetSessionPhase(DefenseSessionPhase.LevelUpSelection);
+                //     _publishEvent(new DefenseLevelUpEvent(tick, player.GetLevel()));
+                // }
             }
         }
     }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Noname.GameHost;
 using Noname.GameHost.GameEvent;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace MyProject.Common.GameMode
 {
@@ -25,12 +24,12 @@ namespace MyProject.Common.GameMode
         /// <summary>
         /// 호스트 커맨드 버스입니다.
         /// </summary>
-        private IHostCommandBus<TCommand, TResult, TEvent, TSnapshot> _host;
+        private IGameHost<TCommand, TResult, TEvent, TSnapshot> _host;
 
         /// <summary>
         /// 호스트 커맨드 버스에 접근합니다.
         /// </summary>
-        protected IHostCommandBus<TCommand, TResult, TEvent, TSnapshot> Host => _host;
+        protected IGameHost<TCommand, TResult, TEvent, TSnapshot> Host => _host;
 
         /// <summary>
         /// 생성된 모듈 인스턴스 목록입니다.
@@ -65,7 +64,7 @@ namespace MyProject.Common.GameMode
         /// <summary>
         /// 호스트를 주입하고 모듈을 초기화합니다.
         /// </summary>
-        public void Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot> host)
+        public void Initialize(IGameHost<TCommand, TResult, TEvent, TSnapshot> host)
         {
             if (_host != null)
             {
@@ -136,13 +135,6 @@ namespace MyProject.Common.GameMode
             }
 
             _started = false;
-
-            if (_host != null)
-            {
-                _host.ResultProduced -= OnHostResult;
-                _host.EventRaised -= OnHostEvent;
-                _host = null;
-            }
 
             // 각 모듈의 Shutdown을 호출합니다.
             for (var i = 0; i < _modules.Count; i++)
@@ -233,8 +225,33 @@ namespace MyProject.Common.GameMode
             }
         }
 
+        protected virtual void Update()
+        {
+            _host?.FlushEvents();
+        }
+
         protected virtual void OnDestroy()
         {
+            if (_host != null)
+            {
+                _host?.StopSimulation();
+
+                _host.ResultProduced -= OnHostResult;
+                _host.EventRaised -= OnHostEvent;
+
+                var discope = (IDisposable)_host;
+                if(discope != null)
+                {
+                    discope.Dispose();
+                }
+                else
+                {
+                    Debug.LogError("Host가 Disposable 인터페이스를 구현하지 않았습니다.");
+                }
+
+                _host = null;
+            }
+
             ShutdownModule();
         }
 
@@ -243,6 +260,7 @@ namespace MyProject.Common.GameMode
         /// </summary>
         protected virtual void OnInitialize()
         {
+            _host?.StartSimulation();
         }
 
         /// <summary>
@@ -257,6 +275,7 @@ namespace MyProject.Common.GameMode
         /// </summary>
         protected virtual void OnShutdown()
         {
+            
         }
     }
 }

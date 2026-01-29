@@ -28,14 +28,19 @@ namespace Noname.GameAbilitySystem.Domain
         }
 
         // 기본 속성 상수
-        public static AttributeId MoveSpeed => new AttributeId("MoveSpeed");
-        public static AttributeId JumpSpeed => new AttributeId("JumpSpeed");
-        public static AttributeId Health => new AttributeId("Health");
-        public static AttributeId AttackRange => new AttributeId("AttackRange");
-        public static AttributeId AttackSpeed => new AttributeId("AttackSpeed");
-        public static AttributeId AttackDamage => new AttributeId("AttackDamage");
-        public static AttributeId MaxHealth => new AttributeId("MaxHealth");
-        public static AttributeId Exp => new AttributeId("Exp");
-        public static AttributeId Gold => new AttributeId("Gold");
+        public static readonly AttributeId Level = new("Level");
+        public static readonly AttributeId MoveSpeed = new AttributeId("MoveSpeed");
+        public static readonly AttributeId JumpSpeed = new AttributeId("JumpSpeed");
+        public static readonly AttributeId Health = new AttributeId("Health");
+        public static readonly AttributeId AttackRange = new AttributeId("AttackRange");
+        public static readonly AttributeId AttackSpeed = new AttributeId("AttackSpeed");
+        public static readonly AttributeId AttackDamage = new AttributeId("AttackDamage");
+        public static readonly AttributeId Defense = new("Defense");
+        public static readonly AttributeId MaxHealth = new AttributeId("MaxHealth");
+        public static readonly AttributeId ExtraTargetCount = new("ExtraTargetCount");
+        public static readonly AttributeId Exp = new AttributeId("Exp");
+        public static readonly AttributeId Gold = new AttributeId("Gold");
+        public static readonly AttributeId Experience = new("Experience");
+        public static readonly AttributeId ExpReward = new("ExpReward");
     }
 }

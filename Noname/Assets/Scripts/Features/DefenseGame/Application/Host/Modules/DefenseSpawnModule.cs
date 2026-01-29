@@ -1,5 +1,7 @@
 ﻿using System;
 using MyProject.DefenseGame.Domain;
+using MyProject.DefenseGame.Domain.AI;
+using Noname.GameAbilitySystem.Domain;
 
 namespace MyProject.DefenseGame.Application
 {
@@ -27,6 +29,10 @@ namespace MyProject.DefenseGame.Application
         /// 이벤트 발행 델리게이트입니다.
         /// </summary>
         private readonly Action<DefenseHostEvent> _publishEvent;
+        private readonly IAIFlagChecker _aIFlagChecker;
+
+        private TargetContext _targetContext;
+
 
         /// <summary>
         /// 일반 몬스터 스폰 타이머입니다.
@@ -47,19 +53,22 @@ namespace MyProject.DefenseGame.Application
             DefenseHostState state,
             DefenseHostConfig config,
             DefenseEntityFactory factory,
-            Action<DefenseHostEvent> publishEvent)
+            Action<DefenseHostEvent> publishEvent,
+            IAIFlagChecker aIFlagChecker)
         {
             _state = state ?? throw new ArgumentNullException(nameof(state));
             _config = config ?? throw new ArgumentNullException(nameof(config));
             _factory = factory ?? throw new ArgumentNullException(nameof(factory));
             _publishEvent = publishEvent ?? throw new ArgumentNullException(nameof(publishEvent));
+            _aIFlagChecker = aIFlagChecker ?? throw new ArgumentNullException(nameof(aIFlagChecker));
         }
 
         /// <summary>
         /// 스폰 시스템을 초기화합니다.
         /// </summary>
-        public void Initialize()
+        public void Initialize(TargetContext targetContext)
         {
+            _targetContext = targetContext;
             _spawnTimer = 0f;
             _bossSpawnTimer = 0f;
             _currentWave = 1;
@@ -121,7 +130,14 @@ namespace MyProject.DefenseGame.Application
         {
             for (var i = 0; i < count; i++)
             {
-                var monster = CreateNormalMonster();
+                var monster = CreateNormalMonster(tick);
+
+                monster.AI = new MonsterAutoBattleAI
+                {
+                    TargetContext = _targetContext,
+                    Checker = _aIFlagChecker,
+                };
+
                 _state.Combat.AddMonster(monster);
 
                 _publishEvent(new DefenseMonsterSpawnedEvent(
@@ -139,7 +155,15 @@ namespace MyProject.DefenseGame.Application
         /// </summary>
         private void SpawnBossMonster(long tick)
         {
-            var boss = CreateBossMonster();
+            var boss = CreateBossMonster(tick);
+
+            //boss도 똑같은 AI 쓰자일단
+            boss.AI = new MonsterAutoBattleAI
+            {
+                TargetContext = _targetContext,
+                Checker = _aIFlagChecker,
+            };
+
             _state.Combat.AddMonster(boss);
 
             _publishEvent(new DefenseMonsterSpawnedEvent(
@@ -154,21 +178,33 @@ namespace MyProject.DefenseGame.Application
         /// <summary>
         /// 일반 몬스터를 생성합니다.
         /// </summary>
-        private DefenseMonster CreateNormalMonster()
+        private DefenseMonster CreateNormalMonster(long tick)
         {
             var uid = _state.GenerateMonsterUid();
             // 팩토리에서 생성
-            return _factory.CreateMonster(uid, _currentWave, isBoss: false);
+            var monster = _factory.CreateMonster(uid, _currentWave, isBoss: false);
+            monster.OnActivateAbility += (GameplayAbility ability, TargetData targetData) =>
+            {
+                _publishEvent(new DefenseMonsterActivateAbilityEvent(tick, monster.Uid, ability));
+            };
+
+            return monster;
         }
 
         /// <summary>
         /// 보스 몬스터를 생성합니다.
         /// </summary>
-        private DefenseMonster CreateBossMonster()
+        private DefenseMonster CreateBossMonster(long tick)
         {
             var uid = _state.GenerateMonsterUid();
             // 팩토리에서 생성
-            return _factory.CreateMonster(uid, _currentWave, isBoss: true);
+            var monster = _factory.CreateMonster(uid, _currentWave, isBoss: true);
+            monster.OnActivateAbility += (GameplayAbility ability, TargetData targetData) =>
+            {
+                _publishEvent(new DefenseMonsterActivateAbilityEvent(tick, monster.Uid, ability));
+            };
+
+            return monster;
         }
     }
 }

@@ -10,8 +10,6 @@ namespace MyProject.DefenseGame.Domain
     /// </summary>
     public sealed class DefensePlayer : DefenseEntity
     {
-        private readonly List<DefenseMonster> _targets = new();
-
         /// <summary>
         /// 플레이어 이름입니다.
         /// </summary>
@@ -20,7 +18,7 @@ namespace MyProject.DefenseGame.Domain
         /// <summary>
         /// 현재 경험치입니다.
         /// </summary>
-        public int Experience => (int)ASC.Get(PlayerAttributeIds.Experience);
+        public int Experience => (int)ASC.Get(AttributeId.Experience);
 
         /// <summary>
         /// 레벨업에 필요한 경험치입니다.
@@ -31,11 +29,6 @@ namespace MyProject.DefenseGame.Domain
         /// 공격 대상을 찾는 함수입니다.
         /// </summary>
         public Func<Point2D, IReadOnlyList<DefenseMonster>> FindTargets { get; set; }
-
-        /// <summary>
-        /// 공격 이벤트입니다.
-        /// </summary>
-        public event Action<DefensePlayer, DefenseMonster, int> OnAttack;
 
         /// <summary>
         /// 레벨업 이벤트입니다.
@@ -71,13 +64,13 @@ namespace MyProject.DefenseGame.Domain
 
             var currentExp = Experience;
             var newExp = currentExp + amount;
-            ASC.Set(PlayerAttributeIds.Experience, newExp);
+            ASC.Set(AttributeId.Experience, newExp);
 
             // 레벨업 체크
             if (newExp >= RequiredExperience)
             {
                 var remaining = newExp - RequiredExperience;
-                ASC.Set(PlayerAttributeIds.Experience, remaining);
+                ASC.Set(AttributeId.Experience, remaining);
                 LevelUp();
                 return true;
             }
@@ -93,16 +86,16 @@ namespace MyProject.DefenseGame.Domain
             var currentLevel = GetLevel();
             var newLevel = currentLevel + 1;
 
-            ASC.Set(DefenseAttributeIds.Level, newLevel);
+            ASC.Set(AttributeId.Level, newLevel);
 
             // 스탯 증가
             var hpIncrease = 10 + newLevel * 2;
             var newMaxHp = GetMaxHp() + hpIncrease;
-            ASC.Set(DefenseAttributeIds.MaxHp, newMaxHp);
-            ASC.Set(DefenseAttributeIds.Hp, newMaxHp); // 레벨업 시 풀피
+            ASC.Set(AttributeId.MaxHealth, newMaxHp);
+            ASC.Set(AttributeId.Health, newMaxHp); // 레벨업 시 풀피
 
-            ASC.Add(DefenseAttributeIds.Attack, 2 + newLevel / 2);
-            ASC.Add(DefenseAttributeIds.Defense, 1 + newLevel / 3);
+            ASC.Add(AttributeId.AttackDamage, 2 + newLevel / 2);
+            ASC.Add(AttributeId.Defense, 1 + newLevel / 3);
 
             OnLevelUp?.Invoke(this, newLevel);
         }

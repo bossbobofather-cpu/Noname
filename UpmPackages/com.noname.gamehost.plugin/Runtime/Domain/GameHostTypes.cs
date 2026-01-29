@@ -102,7 +102,7 @@ namespace Noname.GameHost
     /// <summary>
     /// 외부에서 사용할 커맨드 전송 버스입니다. //View에 제공할 내용만
     /// </summary>
-    public interface IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>
+    public interface IGameHost<TCommand, TResult, TEvent, TSnapshot>
         where TCommand : GameCommandBase
         where TResult : GameCommandResultBase
         where TEvent : GameEventBase
@@ -110,13 +110,17 @@ namespace Noname.GameHost
     {
         event Action<TResult> ResultProduced;
         event Action<TEvent> EventRaised;
+
+        void StartSimulation();
+        void StopSimulation();
         void SendCommand(TCommand command);
+        void FlushEvents();
     }
 
     /// <summary>
     /// 호스트 내부 동작용 인터페이스입니다.
     /// </summary>
-    internal interface IGameHost<TCommand, TResult, TEvent, TSnapshot>
+    internal interface IGameHostInternal<TCommand, TResult, TEvent, TSnapshot>
         where TCommand : GameCommandBase
         where TResult : GameCommandResultBase
         where TEvent : GameEventBase

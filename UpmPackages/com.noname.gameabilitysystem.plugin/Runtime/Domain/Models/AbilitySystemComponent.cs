@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Noname.GameAbilitySystem.Domain
@@ -6,7 +7,7 @@ namespace Noname.GameAbilitySystem.Domain
     /// AbilitySystemComponent 상태 모델입니다 (순수 C# 모델).
     /// Unity에 의존하지 않으며 Host 환경에서 스레드 안전하게 동작합니다.
     /// </summary>
-    public sealed class AbilitySystemComponent
+    public sealed class AbilitySystemComponent : IDisposable
     {
         public struct ActiveGameplayEffect
         {
@@ -14,6 +15,8 @@ namespace Noname.GameAbilitySystem.Domain
             public GameplayEffect Effect;
             public float EndTime;
         }
+
+        private IAbilitySystemOwner _onwer;
 
         private readonly object _modelLock = new();
         private readonly AttributeSet _attributes;
@@ -25,7 +28,6 @@ namespace Noname.GameAbilitySystem.Domain
         private readonly List<ActiveGameplayEffect> _activeEffects = new();
         private long _nextEffectUid = 1;
         private int _nextAbilityHandleId = 1;
-        private bool _tagsChanged = true;
 
         /// <summary>
         /// 속성 컨테이너입니다. (스레드 안전하지 않음 - 직접 수정 금지)
@@ -43,6 +45,12 @@ namespace Noname.GameAbilitySystem.Domain
         /// </summary>
         public IReadOnlyList<GameplayAbility> Abilities => _abilities;
 
+        public event Action OnChangedTags;
+        public event Action OnAddedAbility;
+        public event Action<GameplayAbility, TargetData> OnActivateAbility;
+
+        public IAbilitySystemOwner Owner => _onwer;
+
         public AbilitySystemComponent()
         {
             _attributes = new AttributeSet();
@@ -52,25 +60,15 @@ namespace Noname.GameAbilitySystem.Domain
         public AbilitySystemComponent(AttributeSet attributeSet, List<GameplayAbility> abilities, GameplayTagContainer ownedTags) : this()
         {
             _attributes = attributeSet;
-            _ownedTags = ownedTags;
             _abilities = abilities;
 
             ApplyStartupAbilities();
+            ApplyStartupTags(ownedTags);
         }
 
-        /// <summary>
-        /// 태그가 변경되었는지 확인하고 플래그를 리셋합니다.
-        /// AI가 능력 활성화 가능 여부를 체크하기 전에 호출합니다.
-        /// </summary>
-        /// <returns>태그가 변경되었으면 true</returns>
-        public bool ConsumeTagsChanged()
+        public void SetOwner(IAbilitySystemOwner owner)
         {
-            lock (_modelLock)
-            {
-                var changed = _tagsChanged;
-                _tagsChanged = false;
-                return changed;
-            }
+            _onwer = owner;
         }
 
         /// <summary>
@@ -96,6 +94,14 @@ namespace Noname.GameAbilitySystem.Domain
             {
                 if (ability == null) continue;
                 GiveAbility(ability);
+            }
+        }
+
+        private void ApplyStartupTags(GameplayTagContainer tagContainer)
+        {
+            foreach (var tag in tagContainer.Tags)
+            {
+                AddLooseTag(tag, out _);
             }
         }
 
@@ -178,6 +184,8 @@ namespace Noname.GameAbilitySystem.Domain
                 var spec = new GameplayAbilitySpec(ability, _nextAbilityHandleId++);
                 _abilitySpecs.Add(spec);
 
+                OnChangedTags?.Invoke();
+
                 return spec.Handle;
             }
         }
@@ -203,6 +211,7 @@ namespace Noname.GameAbilitySystem.Domain
                     }
 
                     _abilitySpecs.RemoveAt(lastIndex);
+
                     return true;
                 }
 
@@ -343,6 +352,7 @@ namespace Noname.GameAbilitySystem.Domain
 
             spec.IncrementActiveCount();
 
+            OnActivateAbility?.Invoke(ability, targetData);
             return true;
         }
 
@@ -375,6 +385,20 @@ namespace Noname.GameAbilitySystem.Domain
         private void ApplyEffectToTarget(GameplayEffect effect, AbilitySystemComponent target)
         {
             if (effect == null || target == null) return;
+
+            //효과도 태그 체크를 합니다.
+
+            // 필수 태그 체크
+            if (effect.RequiredTags != null && !target.OwnedTags.HasAll(effect.RequiredTags))
+            {
+                return;
+            }
+
+            // 차단 태그 체크
+            if (effect.BlockedTags != null && target.OwnedTags.HasAny(effect.BlockedTags))
+            {
+                return;
+            }
 
             // 속성 수정 적용 (ModifierGroups 순회)
             foreach (var modifier in effect.Modifiers)
@@ -555,11 +579,20 @@ namespace Noname.GameAbilitySystem.Domain
             lock (_modelLock)
             {
                 var uid = _nextEffectUid++;
+
+                var CalculateDuration = remainingDuration;
+
+                //지속 시간 계산 정책이 있다면 계산한다.
+                if (effect.DurationPolicy != null)
+                {
+                    effect.DurationPolicy.CalculateDuration(this, ref CalculateDuration);
+                }
+
                 _activeEffects.Add(new ActiveGameplayEffect
                 {
                     EffectUid = uid,
                     Effect = effect,
-                    EndTime = remainingDuration  // 카운트다운 방식으로 사용
+                    EndTime = CalculateDuration  // 카운트다운 방식으로 사용
                 });
                 return uid;
             }
@@ -790,9 +823,11 @@ namespace Noname.GameAbilitySystem.Domain
             totalCount = GetTotalTagCount(hash);
             if (beforeTotal == 0)
             {
-                _ownedTags.AddTag(tag);
-                _tagsChanged = true;
-                return true;
+                if (_ownedTags.AddTag(tag))
+                {
+                    OnChangedTags?.Invoke();
+                    return true;
+                }
             }
 
             return false;
@@ -829,7 +864,8 @@ namespace Noname.GameAbilitySystem.Domain
             if (totalCount == 0)
             {
                 _ownedTags.RemoveTag(tag);
-                _tagsChanged = true;
+                OnChangedTags?.Invoke();
+
                 return true;
             }
 
@@ -939,5 +975,14 @@ namespace Noname.GameAbilitySystem.Domain
                 return new AbilitySystemSnapshot(attributeDict, tagList, abilities, effectList);
             }
         }
+
+        public void Dispose()
+        {
+            OnAddedAbility = null;
+            OnChangedTags = null;
+            OnActivateAbility = null;
+            _onwer = null;
+        }
+
     }
 }

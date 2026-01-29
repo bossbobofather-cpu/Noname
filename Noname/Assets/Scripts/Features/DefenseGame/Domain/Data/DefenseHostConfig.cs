@@ -10,9 +10,9 @@ namespace MyProject.DefenseGame.Domain
     public sealed class DefenseHostConfig
     {
         /// <summary>
-        /// 유저 인터렉션없이 자동으로 진행됩니다.
+        /// State.Invincible Tag를 부여하여 기본 공격을 무시합니다.
         /// </summary>
-        public bool AutoMode = true;
+        public bool InvincibleMode = false;
 
         /// <summary>
         /// 플레이어 스폰 위치입니다.
@@ -52,20 +52,26 @@ namespace MyProject.DefenseGame.Domain
         /// <summary>
         /// 플레이어 초기 공격력입니다.
         /// </summary>
-        public int PlayerAttackPower = 10;
+        public float PlayerAttackPower = 10;
+
+        /// <summary>
+        /// 플레이어 초기 공격속도 입니다. (초당 공격 횟수)
+        /// </summary>
+        public float PlayerAttackSpeed = 1;
 
         /// <summary>
         /// 플레이어 초기 방어력입니다.
         /// </summary>
-        public int PlayerDefense = 5;
+        public float PlayerDefense = 5;
 
         /// <summary>
         /// 플레이어 공격 쿨다운입니다 (초).
         /// </summary>
         public float PlayerAttackCooldown = 1.0f;
 
+        public List<string> PlayerTags = new();
         /// <summary>
-        /// ?뚮젅?댁뼱 ?대퉴由ы떚 ID 紐⑸줉?낅땲?? (媛쒕컻?⑥슜)
+        /// 플레이어 스타트업 능력 ID 입니다.
         /// </summary>
         public List<int> PlayerAbilityIds = new();
 
@@ -80,6 +86,11 @@ namespace MyProject.DefenseGame.Domain
         public int NormalMonsterAttack = 5;
 
         /// <summary>
+        /// 일반 몬스터 공격력입니다.
+        /// </summary>
+        public float NormalMonsterAttackSpeed = 1;
+
+        /// <summary>
         /// 일반 몬스터 방어력입니다.
         /// </summary>
         public int NormalMonsterDefense = 2;
@@ -90,7 +101,7 @@ namespace MyProject.DefenseGame.Domain
         public int NormalMonsterExp = 10;
 
         /// <summary>
-        /// ?쇰컲 紐ъ뒪?? ?대퉴由ы떚 ID 紐⑸줉?낅땲?? (媛쒕컻?⑥슜)
+        /// 일반 몬스터 스타트업 능력 ID 입니다.
         /// </summary>
         public List<int> NormalMonsterAbilityIds = new();
 
@@ -110,7 +121,7 @@ namespace MyProject.DefenseGame.Domain
         public float BossExpMultiplier = 10f;
 
         /// <summary>
-        /// 蹂댁뒪 紐ъ뒪?? ?대퉴由ы떚 ID 紐⑸줉?낅땲?? (媛쒕컻?⑥슜)
+        /// 보스 몬스터 스타트업 능력 ID 입니다.
         /// </summary>
         public List<int> BossMonsterAbilityIds = new();
     }

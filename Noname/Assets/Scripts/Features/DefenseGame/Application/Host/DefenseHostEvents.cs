@@ -55,7 +55,7 @@ namespace MyProject.DefenseGame.Application
         public long MonsterUid { get; }
         public string MonsterType { get; }
         public bool IsBoss { get; }
-        public int ExpGained { get; }
+        public int ExpGained { get; }        
 
         public DefenseMonsterKilledEvent(
             long tick,
@@ -72,44 +72,39 @@ namespace MyProject.DefenseGame.Application
     }
 
     /// <summary>
-    /// 플레이어 공격 이벤트입니다.
+    /// 플레이어 능력 발동 이벤트 입니다.
     /// </summary>
-    public sealed class DefensePlayerAttackEvent : DefenseHostEvent
+    public sealed class DefensePlayerActivateAbilityEvent : DefenseHostEvent
     {
-        public long TargetUid { get; }
-        public int Damage { get; }
-        public bool TargetKilled { get; }
+        public List<long> TargetUids { get;}
+        public GameplayAbility Ability { get;}
 
-        public DefensePlayerAttackEvent(
+        public DefensePlayerActivateAbilityEvent(
             long tick,
-            long targetUid,
-            int damage,
-            bool targetKilled) : base(tick)
+            List<long> targetUids,
+            GameplayAbility ability
+        ) : base(tick)
         {
-            TargetUid = targetUid;
-            Damage = damage;
-            TargetKilled = targetKilled;
+            TargetUids = targetUids;
+            Ability = ability;
         }
     }
 
     /// <summary>
-    /// 몬스터 공격 이벤트입니다.
+    /// 몬스터 능력 발동 이벤트 입니다.
     /// </summary>
-    public sealed class DefenseMonsterAttackEvent : DefenseHostEvent
+    public sealed class DefenseMonsterActivateAbilityEvent : DefenseHostEvent
     {
         public long MonsterUid { get; }
-        public int Damage { get; }
-        public int PlayerHpRemaining { get; }
-
-        public DefenseMonsterAttackEvent(
+        public GameplayAbility Ability { get; }
+        public DefenseMonsterActivateAbilityEvent(
             long tick,
             long monsterUid,
-            int damage,
-            int playerHpRemaining) : base(tick)
+            GameplayAbility ability
+        ) : base(tick)
         {
             MonsterUid = monsterUid;
-            Damage = damage;
-            PlayerHpRemaining = playerHpRemaining;
+            Ability = ability;
         }
     }
 
@@ -198,15 +193,15 @@ namespace MyProject.DefenseGame.Application
     /// </summary>
     public sealed class DefenseAbilitySelectedEvent : DefenseHostEvent
     {
-        public LevelUpAbilityId AbilityId { get; }
+        public FGameplayTag AbilityTag { get; }
         public string AbilityName { get; }
 
         public DefenseAbilitySelectedEvent(
             long tick,
-            LevelUpAbilityId abilityId,
+            FGameplayTag abilityTag,
             string abilityName) : base(tick)
         {
-            AbilityId = abilityId;
+            AbilityTag = abilityTag;
             AbilityName = abilityName;
         }
     }
