@@ -47,7 +47,7 @@ namespace Noname.GameAbilitySystem.Domain
         /// <summary>
         /// 수정자 그룹 목록입니다.
         /// </summary>
-        public List<AttributeModifierGroup> ModifierGroups { get; set; }
+        public List<AttributeModifier> Modifiers { get; set; }
 
         /// <summary>
         /// 부여되는 태그 목록입니다.
@@ -66,7 +66,7 @@ namespace Noname.GameAbilitySystem.Domain
 
         public GameplayEffect()
         {
-            ModifierGroups = new List<AttributeModifierGroup>();
+            Modifiers = new List<AttributeModifier>();
             GrantedTags = new GameplayTagContainer();
             RequiredTags = new GameplayTagContainer();
             BlockedTags = new GameplayTagContainer();

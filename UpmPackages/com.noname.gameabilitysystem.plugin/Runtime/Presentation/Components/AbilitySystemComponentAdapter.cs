@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Noname.GameAbilitySystem.Domain;
 using UnityEngine;
@@ -303,16 +303,11 @@ namespace Noname.GameAbilitySystem.Presentation
 
         private void ApplyModifiers(GameplayEffect effect)
         {
-            if (effect?.ModifierGroups == null) return;
+            if (effect == null) return;
 
-            foreach (var group in effect.ModifierGroups)
+            foreach (var modifier in effect.Modifiers)
             {
-                if (group?.Modifiers == null) continue;
-
-                foreach (var modifier in group.Modifiers)
-                {
-                    ApplyModifier(modifier);
-                }
+                ApplyModifier(modifier);
             }
         }
 

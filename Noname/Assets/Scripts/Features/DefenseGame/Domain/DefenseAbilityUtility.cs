@@ -41,19 +41,13 @@ namespace MyProject.DefenseGame.Domain
                 EffectId = "Effect.Damage.BasicAttack",
                 DisplayName = "기본 공격 데미지",
                 DurationType = EffectDurationType.Instant,
-                ModifierGroups = new List<AttributeModifierGroup>
+                Modifiers = new List<AttributeModifier>
                 {
-                    new AttributeModifierGroup
+                    new AttributeModifier
                     {
-                        Modifiers = new List<AttributeModifier>
-                        {
-                            new AttributeModifier
-                            {
-                                AttributeId = DefenseAttributeIds.Hp,
-                                Operation = AttributeModifierOperationType.Add,
-                                Magnitude = -damageAmount
-                            }
-                        }
+                        AttributeId = DefenseAttributeIds.Hp,
+                        Operation = AttributeModifierOperationType.Add,
+                        Magnitude = -damageAmount
                     }
                 }
             };
@@ -103,19 +97,13 @@ namespace MyProject.DefenseGame.Domain
                 EffectId = "Effect.Damage.AreaAttack",
                 DisplayName = "범위 공격 데미지",
                 DurationType = EffectDurationType.Instant,
-                ModifierGroups = new List<AttributeModifierGroup>
+                Modifiers = new List<AttributeModifier>
                 {
-                    new AttributeModifierGroup
+                    new AttributeModifier
                     {
-                        Modifiers = new List<AttributeModifier>
-                        {
-                            new AttributeModifier
-                            {
-                                AttributeId = DefenseAttributeIds.Hp,
-                                Operation = AttributeModifierOperationType.Add,
-                                Magnitude = -damageAmount
-                            }
-                        }
+                        AttributeId = DefenseAttributeIds.Hp,
+                        Operation = AttributeModifierOperationType.Add,
+                        Magnitude = -damageAmount
                     }
                 }
             };

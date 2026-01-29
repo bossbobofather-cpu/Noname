@@ -87,7 +87,6 @@ namespace Noname.GameAbilitySystem.Domain
             }
         }
 
-
         /// <summary>
         /// 처음부터 보유 한 능력을 적용합니다.
         /// </summary>
@@ -98,6 +97,11 @@ namespace Noname.GameAbilitySystem.Domain
                 if (ability == null) continue;
                 GiveAbility(ability);
             }
+        }
+
+        public void Tick(float deltaSeconds)
+        {
+            TickActiveEffectsInternal(deltaSeconds);
         }
 
         /// <summary>
@@ -294,6 +298,7 @@ namespace Noname.GameAbilitySystem.Domain
                 return false;
             }
 
+            //ASC 에서 판단하는 능력 활성화 가능 여부
             if (!CanActivateAbility(spec))
             {
                 return false;
@@ -304,6 +309,9 @@ namespace Noname.GameAbilitySystem.Domain
             {
                 return false;
             }
+
+            //능력 개별적으로도 능력 활성화 가능 여부를 판단해야 한다면 여기서
+            //ability.CanActivateAbility()
 
             // 타겟팅
             if (ability.TargetingStrategy != null && targetContext != null)
@@ -369,16 +377,9 @@ namespace Noname.GameAbilitySystem.Domain
             if (effect == null || target == null) return;
 
             // 속성 수정 적용 (ModifierGroups 순회)
-            if (effect.ModifierGroups != null)
+            foreach (var modifier in effect.Modifiers)
             {
-                foreach (var group in effect.ModifierGroups)
-                {
-                    if (group?.Modifiers == null) continue;
-                    foreach (var modifier in group.Modifiers)
-                    {
-                        ApplyModifier(target, modifier);
-                    }
-                }
+                ApplyModifier(target, modifier);
             }
 
             // 태그 부여
@@ -568,7 +569,7 @@ namespace Noname.GameAbilitySystem.Domain
         /// 활성 효과의 남은 시간을 갱신하고 만료된 효과를 처리합니다.
         /// 매 프레임 호출되어야 합니다.
         /// </summary>
-        public void TickActiveEffects(float deltaTime, List<GameplayEffect> expired = null)
+        private void TickActiveEffectsInternal(float deltaTime, List<GameplayEffect> expired = null)
         {
             lock (_modelLock)
             {

@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Noname.GameHost;
 using MyProject.DefenseGame.Domain.LevelUp;
 using Noname.GameAbilitySystem.Domain;
@@ -6,7 +6,7 @@ using Noname.GameAbilitySystem.Domain;
 namespace MyProject.DefenseGame.Application
 {
     /// <summary>
-    /// ���潺 ���� �̺�Ʈ�� �⺻ Ÿ���Դϴ�.
+    /// 디펜스 게임 이벤트의 기본 타입입니다.
     /// </summary>
     public abstract class DefenseHostEvent : GameEventBase
     {
@@ -14,13 +14,17 @@ namespace MyProject.DefenseGame.Application
         {
         }
     }
-public sealed class DefenseGameStartedEvent : DefenseHostEvent
+
+    /// <summary>
+    /// 게임 시작 이벤트입니다.
+    /// </summary>
+    public sealed class DefenseGameStartedEvent : DefenseHostEvent
     {
         public DefenseGameStartedEvent(long tick) : base(tick) { }
     }
 
     /// <summary>
-    /// 몬스???�폰 ?�벤?�입?�다.
+    /// 몬스터 스폰 이벤트입니다.
     /// </summary>
     public sealed class DefenseMonsterSpawnedEvent : DefenseHostEvent
     {
@@ -44,7 +48,7 @@ public sealed class DefenseGameStartedEvent : DefenseHostEvent
     }
 
     /// <summary>
-    /// 몬스???�망 ?�벤?�입?�다.
+    /// 몬스터 처치 이벤트입니다.
     /// </summary>
     public sealed class DefenseMonsterKilledEvent : DefenseHostEvent
     {
@@ -68,7 +72,7 @@ public sealed class DefenseGameStartedEvent : DefenseHostEvent
     }
 
     /// <summary>
-    /// ?�레?�어 공격 ?�벤?�입?�다.
+    /// 플레이어 공격 이벤트입니다.
     /// </summary>
     public sealed class DefensePlayerAttackEvent : DefenseHostEvent
     {
@@ -89,7 +93,7 @@ public sealed class DefenseGameStartedEvent : DefenseHostEvent
     }
 
     /// <summary>
-    /// 몬스??공격 ?�벤?�입?�다.
+    /// 몬스터 공격 이벤트입니다.
     /// </summary>
     public sealed class DefenseMonsterAttackEvent : DefenseHostEvent
     {
@@ -110,7 +114,7 @@ public sealed class DefenseGameStartedEvent : DefenseHostEvent
     }
 
     /// <summary>
-    /// ?�벨???�벤?�입?�다.
+    /// 레벨 업 이벤트입니다.
     /// </summary>
     public sealed class DefenseLevelUpEvent : DefenseHostEvent
     {
@@ -123,7 +127,7 @@ public sealed class DefenseGameStartedEvent : DefenseHostEvent
     }
 
     /// <summary>
-    /// ?�이�?변�??�벤?�입?�다.
+    /// 웨이브 변경 이벤트입니다.
     /// </summary>
     public sealed class DefenseWaveChangedEvent : DefenseHostEvent
     {
@@ -136,7 +140,7 @@ public sealed class DefenseGameStartedEvent : DefenseHostEvent
     }
 
     /// <summary>
-    /// 게임 ?�버 ?�벤?�입?�다.
+    /// 게임 종료 이벤트입니다.
     /// </summary>
     public sealed class DefenseGameOverEvent : DefenseHostEvent
     {
@@ -157,7 +161,7 @@ public sealed class DefenseGameStartedEvent : DefenseHostEvent
     }
 
     /// <summary>
-    /// ?�레?�어 ?�망 ?�벤?�입?�다.
+    /// 플레이어 사망 이벤트입니다.
     /// </summary>
     public sealed class DefensePlayerDeathEvent : DefenseHostEvent
     {
@@ -175,7 +179,7 @@ public sealed class DefenseGameStartedEvent : DefenseHostEvent
     }
 
     /// <summary>
-    /// ?�벨???�택지 ?�벤?�입?�다.
+    /// 레벨업 선택지 이벤트입니다.
     /// </summary>
     public sealed class DefenseLevelUpOptionsEvent : DefenseHostEvent
     {
@@ -190,7 +194,7 @@ public sealed class DefenseGameStartedEvent : DefenseHostEvent
     }
 
     /// <summary>
-    /// ?�빌리티 ?�택 ?�료 ?�벤?�입?�다.
+    /// 어빌리티 선택 완료 이벤트입니다.
     /// </summary>
     public sealed class DefenseAbilitySelectedEvent : DefenseHostEvent
     {
@@ -207,6 +211,3 @@ public sealed class DefenseGameStartedEvent : DefenseHostEvent
         }
     }
 }
-
-
-

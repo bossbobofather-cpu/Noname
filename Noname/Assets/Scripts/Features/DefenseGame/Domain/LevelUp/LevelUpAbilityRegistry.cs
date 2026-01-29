@@ -21,7 +21,7 @@ namespace MyProject.DefenseGame.Domain.LevelUp
         }
 
         /// <summary>
-        /// 모든 어빌리티를 등록합니다.
+        /// 모든 어빌리티를 등록합니다. (하드코딩)
         /// </summary>
         private void RegisterAllAbilities()
         {
@@ -187,7 +187,7 @@ namespace MyProject.DefenseGame.Domain.LevelUp
         }
 
         /// <summary>
-        /// 리스트를 셔플합니다.
+        /// 리스트를 셔플합니다. 현재는 등급이 없기때문에 균등 확률 부여(피셔-예이츠 셔플)
         /// </summary>
         private void ShuffleList<T>(List<T> list)
         {

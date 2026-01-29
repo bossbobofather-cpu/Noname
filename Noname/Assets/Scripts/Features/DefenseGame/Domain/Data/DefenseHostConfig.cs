@@ -12,7 +12,7 @@ namespace MyProject.DefenseGame.Domain
         /// <summary>
         /// 유저 인터렉션없이 자동으로 진행됩니다.
         /// </summary>
-        public bool AutoMode = false;
+        public bool AutoMode = true;
 
         /// <summary>
         /// 플레이어 스폰 위치입니다.

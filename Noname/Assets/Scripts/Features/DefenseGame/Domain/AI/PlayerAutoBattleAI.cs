@@ -23,16 +23,13 @@ namespace MyProject.DefenseGame.Domain.AI
 
             var asc = player.ASC;
 
-            // 1. ASC 활성 효과 업데이트 (쿨다운 태그 만료 처리)
-            asc.TickActiveEffects(deltaTime);
-
-            // 2. Dirty Flag 체크 - 태그가 변경되지 않았으면 스킵
+            // 1. Dirty Flag 체크 - 태그가 변경되지 않았으면 스킵
             if (!asc.ConsumeTagsChanged())
             {
                 return;
             }
 
-            // 3. 활성화 가능한 능력 조회
+            // 2. 활성화 가능한 능력 조회
             _activatableAbilities.Clear();
             asc.GetActivatableAbilities(_activatableAbilities);
 
@@ -41,13 +38,13 @@ namespace MyProject.DefenseGame.Domain.AI
                 return;
             }
 
-            // 4. 타겟 컨텍스트가 없으면 스킵
+            // 3. 타겟 컨텍스트가 없으면 스킵
             if (TargetContext == null)
             {
                 return;
             }
 
-            // 5. 능력 활성화 시도
+            // 4. 능력 활성화 시도
             foreach (var spec in _activatableAbilities)
             {
                 if (asc.TryActivateAbility(spec, TargetContext))

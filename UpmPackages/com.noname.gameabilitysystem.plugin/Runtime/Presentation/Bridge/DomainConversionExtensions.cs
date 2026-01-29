@@ -112,7 +112,7 @@ namespace Noname.GameAbilitySystem.Presentation
                 Duration = config.Duration,
                 Period = 0f,
                 MaxStack = 1,
-                ModifierGroups = new List<AttributeModifierGroup>(),
+                Modifiers = new List<AttributeModifier>(),
                 GrantedTags = config.GrantedTags.ToDomain(),
                 RequiredTags = config.ActivationRequiredTags.ToDomain(),
                 BlockedTags = config.ActivationBlockedTags.ToDomain(),
@@ -121,15 +121,9 @@ namespace Noname.GameAbilitySystem.Presentation
             // 수정자 변환
             if (config.Modifiers != null)
             {
-                var modifiers = new List<AttributeModifier>();
                 foreach (var modifier in config.Modifiers)
                 {
-                    modifiers.Add(modifier);
-                }
-
-                if (modifiers.Count > 0)
-                {
-                    effect.ModifierGroups.Add(new AttributeModifierGroup { Modifiers = modifiers });
+                    effect.Modifiers.Add(modifier);
                 }
             }
 

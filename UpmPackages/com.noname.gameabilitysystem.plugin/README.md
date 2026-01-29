@@ -1,28 +1,24 @@
 ﻿# GameAbilitySystem Plugin
 
-Unity용 Gameplay Ability System(GAS) 스타일 플러그인입니다.  
-Domain(순수 C#)과 Presentation(Unity) 레이어를 분리하여 Host 환경에서도 사용할 수 있도록 설계했습니다.
+Unity용 Gameplay Ability System(GAS) 스타일 플러그인입니다.
+Domain(순수 C#)과 Presentation(Unity)을 분리해 Host 환경에서도 재사용할 수 있도록 설계했습니다.
 
 ## 구성 요약
-- **Domain**: AbilitySystemModel, Attribute/Tag/Effect 모델 (Unity 의존 없음)
-- **Presentation**: AbilitySystemComponent, ScriptableObject 기반 설정
-- **Bridge**: Domain <-> Presentation 변환 및 동기화
+- **Domain**: AbilitySystemComponent(모델), Attribute/Tag/Effect/Ability 등 순수 로직
+- **Presentation**: Unity 컴포넌트/ScriptableObject/디버그 UI
+- **Adapter**: Domain 모델을 Unity 표현으로 동기화하는 뷰/어댑터 계층
 
-## 특징
-- Thread-Safe 모델 (lock 기반)
-- Tag 기반 활성/차단 조건
-- Effect/Modifier 구조
-- Host 시뮬레이션 지원
+## 핵심 특징
+- **스레드 안전 모델**: 락 기반 동기화
+- **태그 기반 조건**: 활성/차단 태그로 능력 제어
+- **효과/수정자 구조**: 지속/주기/즉시 효과 지원
+- **타게팅 분리**: Target/Strategy 구조로 확장 가능
 
-## 폴더 구조
-```
-Runtime/
-├── Domain/          # 순수 C# 모델
-├── Presentation/    # Unity 컴포넌트 및 SO
-└── Editor/          # 에디터 유틸
-```
+## 기본 사용 흐름
+1. 태그/속성/효과/능력 정의를 ScriptableObject로 구성
+2. AbilitySystemComponent(또는 Adapter)로 모델 생성/연결
+3. 이벤트/입력으로 능력 활성화
 
-## 간단 사용 예시
 ```csharp
 // Ability 부여
 var handle = abilitySystem.GiveAbility(abilityDefinition);
@@ -31,4 +27,19 @@ var handle = abilitySystem.GiveAbility(abilityDefinition);
 abilitySystem.TryActivateAbility(handle);
 ```
 
-자세한 내용은 하위 README를 참고하세요.
+## 폴더 구조
+```
+Runtime/
+├── Domain/        # 순수 C# 모델/로직
+├── Presentation/  # Unity 컴포넌트 및 SO/디버그
+├── Tag/           # 태그 유틸/레지스트리
+├── Target/        # 타게팅 데이터/전략
+├── Task/          # AbilityTask 구현
+└── Util/          # 공용 유틸
+```
+
+## 참고
+- 도메인 레이어는 Unity 의존이 없어 Host/서버 환경에서도 사용 가능합니다.
+- Presentation 레이어는 Unity 오브젝트와 에디터 기능을 포함합니다.
+
+자세한 사용 방법과 설계는 문서 사이트를 참고하세요.

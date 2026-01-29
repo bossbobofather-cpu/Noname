@@ -1,26 +1,26 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace MyProject.Common.GameMode
 {
     /// <summary>
-    /// °øÅë ¸ğµâ º£ÀÌ½º Å¬·¡½ºÀÔ´Ï´Ù.
+    /// ê³µí†µ ëª¨ë“ˆ ë² ì´ìŠ¤ í´ë˜ìŠ¤ì…ë‹ˆë‹¤.
     /// </summary>
     public abstract class ModuleBase : MonoBehaviour, IModule
     {
         private IGameMode _mode;
 
         /// <summary>
-        /// ¿¬°áµÈ °ÔÀÓ ¸ğµåÀÔ´Ï´Ù.
+        /// ì—°ê²°ëœ ê²Œì„ ëª¨ë“œì…ë‹ˆë‹¤.
         /// </summary>
         public IGameMode Mode => _mode;
 
         /// <summary>
-        /// ¸ğµâ Å°ÀÔ´Ï´Ù.
+        /// ëª¨ë“ˆ ì‹ë³„ í‚¤ì…ë‹ˆë‹¤.
         /// </summary>
         public virtual string ModuleKey => GetType().Name;
 
         /// <summary>
-        /// ¸ğµå¿Í ¿¬°áµÇ´Â ÃÊ±âÈ­ ´Ü°èÀÔ´Ï´Ù.
+        /// ëª¨ë“œì™€ ì—°ê²°ë˜ëŠ” ì´ˆê¸°í™” ë‹¨ê³„ì…ë‹ˆë‹¤.
         /// </summary>
         public void Initialize(IGameMode mode)
         {
@@ -29,7 +29,7 @@ namespace MyProject.Common.GameMode
         }
 
         /// <summary>
-        /// ¸ğµå°¡ È°¼ºÈ­µÉ ¶§ È£ÃâµË´Ï´Ù.
+        /// ëª¨ë“œê°€ í™œì„±í™”ë  ë•Œ í˜¸ì¶œë©ë‹ˆë‹¤.
         /// </summary>
         public void Startup()
         {
@@ -37,7 +37,7 @@ namespace MyProject.Common.GameMode
         }
 
         /// <summary>
-        /// ¸ğµå°¡ ºñÈ°¼ºÈ­µÉ ¶§ È£ÃâµË´Ï´Ù.
+        /// ëª¨ë“œê°€ ë¹„í™œì„±í™”ë  ë•Œ í˜¸ì¶œë©ë‹ˆë‹¤.
         /// </summary>
         public void Shutdown()
         {
@@ -45,16 +45,22 @@ namespace MyProject.Common.GameMode
         }
 
         /// <summary>
-        /// ±¸µ¶ µî·ÏÀÌ ÇÊ¿äÇÏ¸é ¿©±â¼­ Ã³¸®ÇÕ´Ï´Ù.
+        /// ì´ˆê¸° êµ¬ë… ë“±ë¡ ë“± ì¤€ë¹„ ì²˜ë¦¬ë¥¼ ìˆ˜í–‰í•©ë‹ˆë‹¤.
         /// </summary>
         protected virtual void OnInit()
         {
         }
 
+        /// <summary>
+        /// ëª¨ë“ˆ ì‹œì‘ ì‹œì  ë¡œì§ì„ ìˆ˜í–‰í•©ë‹ˆë‹¤.
+        /// </summary>
         protected virtual void OnStartup()
         {
         }
 
+        /// <summary>
+        /// ëª¨ë“ˆ ì¢…ë£Œ ì‹œì  ì •ë¦¬ ë¡œì§ì„ ìˆ˜í–‰í•©ë‹ˆë‹¤.
+        /// </summary>
         protected virtual void OnShutdown()
         {
         }

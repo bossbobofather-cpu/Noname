@@ -12,7 +12,7 @@ namespace Noname.GameHost
     /// 이벤트 디스패치, 스냅샷 생성을 제공합니다.
     /// </summary>
     public abstract class GameHostBase<TCommand, TResult, TEvent, TSnapshot>
-        : IHostCommandBus<TCommand, TResult, TEvent>,
+        : IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>,
           IGameHost<TCommand, TResult, TEvent, TSnapshot>,
           IDisposable
         where TCommand : GameCommandBase

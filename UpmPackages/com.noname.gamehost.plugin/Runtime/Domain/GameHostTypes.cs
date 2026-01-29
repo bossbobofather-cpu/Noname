@@ -100,16 +100,16 @@ namespace Noname.GameHost
     }
 
     /// <summary>
-    /// 외부에서 사용할 커맨드 전송 버스입니다.
+    /// 외부에서 사용할 커맨드 전송 버스입니다. //View에 제공할 내용만
     /// </summary>
-    public interface IHostCommandBus<TCommand, TResult, TEvent>
+    public interface IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>
         where TCommand : GameCommandBase
         where TResult : GameCommandResultBase
         where TEvent : GameEventBase
+        where TSnapshot : GameSnapshotBase
     {
         event Action<TResult> ResultProduced;
         event Action<TEvent> EventRaised;
-
         void SendCommand(TCommand command);
     }
 

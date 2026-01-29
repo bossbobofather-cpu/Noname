@@ -11,7 +11,7 @@ namespace MyProject.DefenseGame.Application
 {
     /// <summary>
     /// DefenseGame 전용 호스트입니다.
-    /// CQRS 방식으로 Command를 처리하고 Result/Event를 발행합니다.
+    /// Command를 처리하고 Result/Event를 발행합니다.
     /// </summary>
     public sealed class DefenseGameHost
         : GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>
@@ -52,7 +52,7 @@ namespace MyProject.DefenseGame.Application
         private readonly LevelUpAbilityRegistry _levelUpRegistry;
 
         /// <summary>
-        /// 레벨업 옵션 버퍼입니다.
+        /// 레벨업 옵션입니다.
         /// </summary>
         private readonly List<LevelUpAbilityDefinition> _tempLevelUpOptions = new();
 
@@ -103,6 +103,12 @@ namespace MyProject.DefenseGame.Application
             if (_state.SessionPhase == DefenseSessionPhase.LevelUpSelection)
             {
                 return;
+            }
+
+            _state.Player?.ASC?.Tick(deltaTime);
+            foreach (var monster in _state.Combat?.GetAliveMonsters())
+            {
+                monster?.ASC?.Tick(deltaTime);
             }
 
             _spawnModule.Tick(deltaTime, Tick);

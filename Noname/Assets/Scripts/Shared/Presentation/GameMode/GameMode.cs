@@ -25,12 +25,12 @@ namespace MyProject.Common.GameMode
         /// <summary>
         /// 호스트 커맨드 버스입니다.
         /// </summary>
-        private IHostCommandBus<TCommand, TResult, TEvent> _host;
+        private IHostCommandBus<TCommand, TResult, TEvent, TSnapshot> _host;
 
         /// <summary>
         /// 호스트 커맨드 버스에 접근합니다.
         /// </summary>
-        protected IHostCommandBus<TCommand, TResult, TEvent> Host => _host;
+        protected IHostCommandBus<TCommand, TResult, TEvent, TSnapshot> Host => _host;
 
         /// <summary>
         /// 생성된 모듈 인스턴스 목록입니다.
@@ -65,7 +65,7 @@ namespace MyProject.Common.GameMode
         /// <summary>
         /// 호스트를 주입하고 모듈을 초기화합니다.
         /// </summary>
-        public void Initialize(IHostCommandBus<TCommand, TResult, TEvent> host)
+        public void Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot> host)
         {
             if (_host != null)
             {
