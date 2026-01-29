@@ -42,84 +42,9 @@ items:
   nameWithType: Noname.GameAbilitySystem.Domain
   fullName: Noname.GameAbilitySystem.Domain
   type: Namespace
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
 references:
-- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
-  commentId: T:Noname.GameAbilitySystem.Domain.AbilitySystemComponent
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
-  name: AbilitySystemComponent
-  nameWithType: AbilitySystemComponent
-  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
-- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect
-  commentId: T:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect
-  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
-  name: AbilitySystemComponent.ActiveGameplayEffect
-  nameWithType: AbilitySystemComponent.ActiveGameplayEffect
-  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect
-  spec.csharp:
-  - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
-    name: AbilitySystemComponent
-    href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
-  - name: .
-  - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect
-    name: ActiveGameplayEffect
-    href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect.html
-  spec.vb:
-  - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
-    name: AbilitySystemComponent
-    href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
-  - name: .
-  - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect
-    name: ActiveGameplayEffect
-    href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect.html
-- uid: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
-  commentId: T:Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.html
-  name: IAbilitySystemOwner
-  nameWithType: IAbilitySystemOwner
-  fullName: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
-- uid: Noname.GameAbilitySystem.Domain.EffectDurationType
-  commentId: T:Noname.GameAbilitySystem.Domain.EffectDurationType
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.EffectDurationType.html
-  name: EffectDurationType
-  nameWithType: EffectDurationType
-  fullName: Noname.GameAbilitySystem.Domain.EffectDurationType
-- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
-  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html
-  name: FGameplayAbilitySpecHandle
-  nameWithType: FGameplayAbilitySpecHandle
-  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
-- uid: Noname.GameAbilitySystem.Domain.GameplayAbility
-  commentId: T:Noname.GameAbilitySystem.Domain.GameplayAbility
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.GameplayAbility.html
-  name: GameplayAbility
-  nameWithType: GameplayAbility
-  fullName: Noname.GameAbilitySystem.Domain.GameplayAbility
-- uid: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec
-  commentId: T:Noname.GameAbilitySystem.Domain.GameplayAbilitySpec
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.html
-  name: GameplayAbilitySpec
-  nameWithType: GameplayAbilitySpec
-  fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec
-- uid: Noname.GameAbilitySystem.Domain.AttributeId
-  commentId: T:Noname.GameAbilitySystem.Domain.AttributeId
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.AttributeId.html
-  name: AttributeId
-  nameWithType: AttributeId
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId
-- uid: Noname.GameAbilitySystem.Domain.AttributeModifier
-  commentId: T:Noname.GameAbilitySystem.Domain.AttributeModifier
-  href: Noname.GameAbilitySystem.Domain.AttributeModifier.html
-  name: AttributeModifier
-  nameWithType: AttributeModifier
-  fullName: Noname.GameAbilitySystem.Domain.AttributeModifier
 - uid: Noname.GameAbilitySystem.Domain.AttributeModifierOperationType
   commentId: T:Noname.GameAbilitySystem.Domain.AttributeModifierOperationType
   parent: Noname.GameAbilitySystem.Domain
@@ -127,54 +52,6 @@ references:
   name: AttributeModifierOperationType
   nameWithType: AttributeModifierOperationType
   fullName: Noname.GameAbilitySystem.Domain.AttributeModifierOperationType
-- uid: Noname.GameAbilitySystem.Domain.AttributeSet
-  commentId: T:Noname.GameAbilitySystem.Domain.AttributeSet
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.AttributeSet.html
-  name: AttributeSet
-  nameWithType: AttributeSet
-  fullName: Noname.GameAbilitySystem.Domain.AttributeSet
-- uid: Noname.GameAbilitySystem.Domain.AttributeValue
-  commentId: T:Noname.GameAbilitySystem.Domain.AttributeValue
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.AttributeValue.html
-  name: AttributeValue
-  nameWithType: AttributeValue
-  fullName: Noname.GameAbilitySystem.Domain.AttributeValue
-- uid: Noname.GameAbilitySystem.Domain.GameplayEffect
-  commentId: T:Noname.GameAbilitySystem.Domain.GameplayEffect
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html
-  name: GameplayEffect
-  nameWithType: GameplayEffect
-  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect
-- uid: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy
-  commentId: T:Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy
-  href: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.html
-  name: BaseAttackCooldownDrationPlicy
-  nameWithType: BaseAttackCooldownDrationPlicy
-  fullName: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy
-- uid: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
-  commentId: T:Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.html
-  name: IEffectDurationPolicy
-  nameWithType: IEffectDurationPolicy
-  fullName: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
-- uid: Noname.GameAbilitySystem.Domain.FGameplayTag
-  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayTag
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.FGameplayTag.html
-  name: FGameplayTag
-  nameWithType: FGameplayTag
-  fullName: Noname.GameAbilitySystem.Domain.FGameplayTag
-- uid: Noname.GameAbilitySystem.Domain.GameplayTagContainer
-  commentId: T:Noname.GameAbilitySystem.Domain.GameplayTagContainer
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.GameplayTagContainer.html
-  name: GameplayTagContainer
-  nameWithType: GameplayTagContainer
-  fullName: Noname.GameAbilitySystem.Domain.GameplayTagContainer
 - uid: Noname.GameAbilitySystem.Domain.GameplayTagEventData
   commentId: T:Noname.GameAbilitySystem.Domain.GameplayTagEventData
   parent: Noname.GameAbilitySystem.Domain
@@ -182,27 +59,13 @@ references:
   name: GameplayTagEventData
   nameWithType: GameplayTagEventData
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagEventData
-- uid: Noname.GameAbilitySystem.Domain.ITargetingStrategy
-  commentId: T:Noname.GameAbilitySystem.Domain.ITargetingStrategy
+- uid: Noname.GameAbilitySystem.Domain.AttributeValue
+  commentId: T:Noname.GameAbilitySystem.Domain.AttributeValue
   parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.ITargetingStrategy.html
-  name: ITargetingStrategy
-  nameWithType: ITargetingStrategy
-  fullName: Noname.GameAbilitySystem.Domain.ITargetingStrategy
-- uid: Noname.GameAbilitySystem.Domain.TargetContext
-  commentId: T:Noname.GameAbilitySystem.Domain.TargetContext
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.TargetContext.html
-  name: TargetContext
-  nameWithType: TargetContext
-  fullName: Noname.GameAbilitySystem.Domain.TargetContext
-- uid: Noname.GameAbilitySystem.Domain.TargetData
-  commentId: T:Noname.GameAbilitySystem.Domain.TargetData
-  parent: Noname.GameAbilitySystem.Domain
-  href: Noname.GameAbilitySystem.Domain.TargetData.html
-  name: TargetData
-  nameWithType: TargetData
-  fullName: Noname.GameAbilitySystem.Domain.TargetData
+  href: Noname.GameAbilitySystem.Domain.AttributeValue.html
+  name: AttributeValue
+  nameWithType: AttributeValue
+  fullName: Noname.GameAbilitySystem.Domain.AttributeValue
 - uid: Noname.GameAbilitySystem.Domain.SelfTargetingStrategy
   commentId: T:Noname.GameAbilitySystem.Domain.SelfTargetingStrategy
   href: Noname.GameAbilitySystem.Domain.SelfTargetingStrategy.html
@@ -239,6 +102,34 @@ references:
   name: AreaTargetingStrategy
   nameWithType: AreaTargetingStrategy
   fullName: Noname.GameAbilitySystem.Domain.AreaTargetingStrategy
+- uid: Noname.GameAbilitySystem.Domain.TargetData
+  commentId: T:Noname.GameAbilitySystem.Domain.TargetData
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.TargetData.html
+  name: TargetData
+  nameWithType: TargetData
+  fullName: Noname.GameAbilitySystem.Domain.TargetData
+- uid: Noname.GameAbilitySystem.Domain.AttributeSet
+  commentId: T:Noname.GameAbilitySystem.Domain.AttributeSet
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.AttributeSet.html
+  name: AttributeSet
+  nameWithType: AttributeSet
+  fullName: Noname.GameAbilitySystem.Domain.AttributeSet
+- uid: Noname.GameAbilitySystem.Domain.GameplayAbility
+  commentId: T:Noname.GameAbilitySystem.Domain.GameplayAbility
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.GameplayAbility.html
+  name: GameplayAbility
+  nameWithType: GameplayAbility
+  fullName: Noname.GameAbilitySystem.Domain.GameplayAbility
+- uid: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
+  commentId: T:Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.html
+  name: IEffectDurationPolicy
+  nameWithType: IEffectDurationPolicy
+  fullName: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
 - uid: Noname.GameAbilitySystem.Domain.Point2D
   commentId: T:Noname.GameAbilitySystem.Domain.Point2D
   parent: Noname.GameAbilitySystem.Domain
@@ -246,6 +137,118 @@ references:
   name: Point2D
   nameWithType: Point2D
   fullName: Noname.GameAbilitySystem.Domain.Point2D
+- uid: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+  commentId: T:Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.html
+  name: IAbilitySystemOwner
+  nameWithType: IAbilitySystemOwner
+  fullName: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect
+  commentId: T:Noname.GameAbilitySystem.Domain.GameplayEffect
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html
+  name: GameplayEffect
+  nameWithType: GameplayEffect
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect
+- uid: Noname.GameAbilitySystem.Domain.AttributeId
+  commentId: T:Noname.GameAbilitySystem.Domain.AttributeId
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.AttributeId.html
+  name: AttributeId
+  nameWithType: AttributeId
+  fullName: Noname.GameAbilitySystem.Domain.AttributeId
+- uid: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle.html
+  name: FGameplayAbilitySpecHandle
+  nameWithType: FGameplayAbilitySpecHandle
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle
+- uid: Noname.GameAbilitySystem.Domain.FGameplayTag
+  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayTag
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.FGameplayTag.html
+  name: FGameplayTag
+  nameWithType: FGameplayTag
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayTag
+- uid: Noname.GameAbilitySystem.Domain.EffectDurationType
+  commentId: T:Noname.GameAbilitySystem.Domain.EffectDurationType
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.EffectDurationType.html
+  name: EffectDurationType
+  nameWithType: EffectDurationType
+  fullName: Noname.GameAbilitySystem.Domain.EffectDurationType
+- uid: Noname.GameAbilitySystem.Domain.TargetContext
+  commentId: T:Noname.GameAbilitySystem.Domain.TargetContext
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.TargetContext.html
+  name: TargetContext
+  nameWithType: TargetContext
+  fullName: Noname.GameAbilitySystem.Domain.TargetContext
+- uid: Noname.GameAbilitySystem.Domain.GameplayTagContainer
+  commentId: T:Noname.GameAbilitySystem.Domain.GameplayTagContainer
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.GameplayTagContainer.html
+  name: GameplayTagContainer
+  nameWithType: GameplayTagContainer
+  fullName: Noname.GameAbilitySystem.Domain.GameplayTagContainer
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  commentId: T:Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect
+  commentId: T:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect
+  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
+  name: AbilitySystemComponent.ActiveGameplayEffect
+  nameWithType: AbilitySystemComponent.ActiveGameplayEffect
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect
+  spec.csharp:
+  - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+    name: AbilitySystemComponent
+    href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect
+    name: ActiveGameplayEffect
+    href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect.html
+  spec.vb:
+  - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+    name: AbilitySystemComponent
+    href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect
+    name: ActiveGameplayEffect
+    href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect.html
+- uid: Noname.GameAbilitySystem.Domain.ITargetingStrategy
+  commentId: T:Noname.GameAbilitySystem.Domain.ITargetingStrategy
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.ITargetingStrategy.html
+  name: ITargetingStrategy
+  nameWithType: ITargetingStrategy
+  fullName: Noname.GameAbilitySystem.Domain.ITargetingStrategy
+- uid: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec
+  commentId: T:Noname.GameAbilitySystem.Domain.GameplayAbilitySpec
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.html
+  name: GameplayAbilitySpec
+  nameWithType: GameplayAbilitySpec
+  fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec
+- uid: Noname.GameAbilitySystem.Domain.AttributeModifier
+  commentId: T:Noname.GameAbilitySystem.Domain.AttributeModifier
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.AttributeModifier.html
+  name: AttributeModifier
+  nameWithType: AttributeModifier
+  fullName: Noname.GameAbilitySystem.Domain.AttributeModifier
+- uid: Noname.GameAbilitySystem.Domain.GameplayTagUtility
+  commentId: T:Noname.GameAbilitySystem.Domain.GameplayTagUtility
+  href: Noname.GameAbilitySystem.Domain.GameplayTagUtility.html
+  name: GameplayTagUtility
+  nameWithType: GameplayTagUtility
+  fullName: Noname.GameAbilitySystem.Domain.GameplayTagUtility
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot
   commentId: T:Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot
   parent: Noname.GameAbilitySystem.Domain
@@ -259,12 +262,12 @@ references:
   name: ActiveGameplayEffectSnapshot
   nameWithType: ActiveGameplayEffectSnapshot
   fullName: Noname.GameAbilitySystem.Domain.ActiveGameplayEffectSnapshot
-- uid: Noname.GameAbilitySystem.Domain.GameplayTagUtility
-  commentId: T:Noname.GameAbilitySystem.Domain.GameplayTagUtility
-  href: Noname.GameAbilitySystem.Domain.GameplayTagUtility.html
-  name: GameplayTagUtility
-  nameWithType: GameplayTagUtility
-  fullName: Noname.GameAbilitySystem.Domain.GameplayTagUtility
+- uid: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy
+  commentId: T:Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy
+  href: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.html
+  name: BaseAttackCooldownDrationPlicy
+  nameWithType: BaseAttackCooldownDrationPlicy
+  fullName: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy
 - uid: Noname.GameAbilitySystem.Domain
   commentId: N:Noname.GameAbilitySystem.Domain
   href: Noname.html

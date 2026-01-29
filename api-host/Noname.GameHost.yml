@@ -1,0 +1,195 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameHost
+  commentId: N:Noname.GameHost
+  id: Noname.GameHost
+  children:
+  - Noname.GameHost.GameCommandBase
+  - Noname.GameHost.GameCommandOutcome`2
+  - Noname.GameHost.GameCommandResultBase
+  - Noname.GameHost.GameEventBase
+  - Noname.GameHost.GameHostBase`4
+  - Noname.GameHost.GameSnapshotBase
+  - Noname.GameHost.IGameHost`4
+  - Noname.GameHost.IRandomSource
+  langs:
+  - csharp
+  - vb
+  name: Noname.GameHost
+  nameWithType: Noname.GameHost
+  fullName: Noname.GameHost
+  type: Namespace
+  assemblies:
+  - Noname.GameHost.Plugin
+references:
+- uid: Noname.GameHost.GameHostBase`4
+  commentId: T:Noname.GameHost.GameHostBase`4
+  href: Noname.GameHost.GameHostBase-4.html
+  name: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase`4
+    name: GameHostBase
+    href: Noname.GameHost.GameHostBase-4.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase`4
+    name: GameHostBase
+    href: Noname.GameHost.GameHostBase-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
+- uid: Noname.GameHost.GameCommandBase
+  commentId: T:Noname.GameHost.GameCommandBase
+  href: Noname.GameHost.GameCommandBase.html
+  name: GameCommandBase
+  nameWithType: GameCommandBase
+  fullName: Noname.GameHost.GameCommandBase
+- uid: Noname.GameHost.GameCommandResultBase
+  commentId: T:Noname.GameHost.GameCommandResultBase
+  parent: Noname.GameHost
+  href: Noname.GameHost.GameCommandResultBase.html
+  name: GameCommandResultBase
+  nameWithType: GameCommandResultBase
+  fullName: Noname.GameHost.GameCommandResultBase
+- uid: Noname.GameHost.GameEventBase
+  commentId: T:Noname.GameHost.GameEventBase
+  parent: Noname.GameHost
+  href: Noname.GameHost.GameEventBase.html
+  name: GameEventBase
+  nameWithType: GameEventBase
+  fullName: Noname.GameHost.GameEventBase
+- uid: Noname.GameHost.GameSnapshotBase
+  commentId: T:Noname.GameHost.GameSnapshotBase
+  href: Noname.GameHost.GameSnapshotBase.html
+  name: GameSnapshotBase
+  nameWithType: GameSnapshotBase
+  fullName: Noname.GameHost.GameSnapshotBase
+- uid: Noname.GameHost.IRandomSource
+  commentId: T:Noname.GameHost.IRandomSource
+  href: Noname.GameHost.IRandomSource.html
+  name: IRandomSource
+  nameWithType: IRandomSource
+  fullName: Noname.GameHost.IRandomSource
+- uid: Noname.GameHost.IGameHost`4
+  commentId: T:Noname.GameHost.IGameHost`4
+  href: Noname.GameHost.IGameHost-4.html
+  name: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: Noname.GameHost.IGameHost`4
+    name: IGameHost
+    href: Noname.GameHost.IGameHost-4.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: Noname.GameHost.IGameHost`4
+    name: IGameHost
+    href: Noname.GameHost.IGameHost-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
+- uid: Noname.GameHost.GameCommandOutcome`2
+  commentId: T:Noname.GameHost.GameCommandOutcome`2
+  href: Noname.GameHost.GameCommandOutcome-2.html
+  name: GameCommandOutcome<TResult, TEvent>
+  nameWithType: GameCommandOutcome<TResult, TEvent>
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent)
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent)
+  name.vb: GameCommandOutcome(Of TResult, TEvent)
+  spec.csharp:
+  - uid: Noname.GameHost.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: Noname.GameHost.GameCommandOutcome-2.html
+  - name: <
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: Noname.GameHost.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: Noname.GameHost.GameCommandOutcome-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: Noname.GameHost
+  commentId: N:Noname.GameHost
+  href: Noname.html
+  name: Noname.GameHost
+  nameWithType: Noname.GameHost
+  fullName: Noname.GameHost
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+    href: Noname.GameHost.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+    href: Noname.GameHost.html

@@ -18,6 +18,8 @@ items:
   nameWithType: AttributeValue
   fullName: Noname.GameAbilitySystem.Domain.AttributeValue
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: >-
     런타임 속성 값 컨테이너입니다 (순수 C# 모델).
@@ -47,6 +49,8 @@ items:
   nameWithType: AttributeValue.AttributeValue(AttributeId, float, float, float)
   fullName: Noname.GameAbilitySystem.Domain.AttributeValue.AttributeValue(Noname.GameAbilitySystem.Domain.AttributeId, float, float, float)
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public AttributeValue(AttributeId attributeId, float baseValue = 0, float minValue = 0, float maxValue = 0)
@@ -75,6 +79,8 @@ items:
   nameWithType: AttributeValue.AttributeId
   fullName: Noname.GameAbilitySystem.Domain.AttributeValue.AttributeId
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 속성 식별자입니다.
   example: []
@@ -96,6 +102,8 @@ items:
   nameWithType: AttributeValue.BaseValue
   fullName: Noname.GameAbilitySystem.Domain.AttributeValue.BaseValue
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 베이스 값입니다.
   example: []
@@ -117,6 +125,8 @@ items:
   nameWithType: AttributeValue.CurrentValue
   fullName: Noname.GameAbilitySystem.Domain.AttributeValue.CurrentValue
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 현재 값입니다.
   example: []
@@ -138,6 +148,8 @@ items:
   nameWithType: AttributeValue.MinValue
   fullName: Noname.GameAbilitySystem.Domain.AttributeValue.MinValue
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 최소값입니다.
   example: []
@@ -159,6 +171,8 @@ items:
   nameWithType: AttributeValue.MaxValue
   fullName: Noname.GameAbilitySystem.Domain.AttributeValue.MaxValue
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 최대값입니다.
   example: []

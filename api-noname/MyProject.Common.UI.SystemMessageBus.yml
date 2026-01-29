@@ -7,7 +7,7 @@ items:
   children:
   - MyProject.Common.UI.SystemMessageBus.MessagePublished
   - MyProject.Common.UI.SystemMessageBus.Publish(System.String)
-  - MyProject.Common.UI.SystemMessageBus.Publish(System.String,Color)
+  - MyProject.Common.UI.SystemMessageBus.Publish(System.String,UnityEngine.Color)
   langs:
   - csharp
   - vb
@@ -15,6 +15,8 @@ items:
   nameWithType: SystemMessageBus
   fullName: MyProject.Common.UI.SystemMessageBus
   type: Class
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.UI
   summary: 시스템 메시지 전달을 위한 정적 이벤트 버스입니다.
   example: []
@@ -42,6 +44,8 @@ items:
   nameWithType: SystemMessageBus.MessagePublished
   fullName: MyProject.Common.UI.SystemMessageBus.MessagePublished
   type: Event
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.UI
   summary: 메시지가 발행되었을 때 발생하는 이벤트입니다.
   example: []
@@ -61,6 +65,8 @@ items:
   nameWithType: SystemMessageBus.Publish(string)
   fullName: MyProject.Common.UI.SystemMessageBus.Publish(string)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.UI
   summary: 메시지를 발행합니다 (기본 색상).
   example: []
@@ -74,17 +80,19 @@ items:
   nameWithType.vb: SystemMessageBus.Publish(String)
   fullName.vb: MyProject.Common.UI.SystemMessageBus.Publish(String)
   name.vb: Publish(String)
-- uid: MyProject.Common.UI.SystemMessageBus.Publish(System.String,Color)
-  commentId: M:MyProject.Common.UI.SystemMessageBus.Publish(System.String,Color)
-  id: Publish(System.String,Color)
+- uid: MyProject.Common.UI.SystemMessageBus.Publish(System.String,UnityEngine.Color)
+  commentId: M:MyProject.Common.UI.SystemMessageBus.Publish(System.String,UnityEngine.Color)
+  id: Publish(System.String,UnityEngine.Color)
   parent: MyProject.Common.UI.SystemMessageBus
   langs:
   - csharp
   - vb
   name: Publish(string, Color)
   nameWithType: SystemMessageBus.Publish(string, Color)
-  fullName: MyProject.Common.UI.SystemMessageBus.Publish(string, Color)
+  fullName: MyProject.Common.UI.SystemMessageBus.Publish(string, UnityEngine.Color)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.UI
   summary: 메시지를 발행합니다 (색상 지정).
   example: []
@@ -94,11 +102,11 @@ items:
     - id: message
       type: System.String
     - id: backgroundColor
-      type: Color
+      type: UnityEngine.Color
     content.vb: Public Shared Sub Publish(message As String, backgroundColor As Color)
   overload: MyProject.Common.UI.SystemMessageBus.Publish*
   nameWithType.vb: SystemMessageBus.Publish(String, Color)
-  fullName.vb: MyProject.Common.UI.SystemMessageBus.Publish(String, Color)
+  fullName.vb: MyProject.Common.UI.SystemMessageBus.Publish(String, UnityEngine.Color)
   name.vb: Publish(String, Color)
 references:
 - uid: MyProject.Common.UI
@@ -446,8 +454,16 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Color
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
   isExternal: true
   name: Color
   nameWithType: Color
-  fullName: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

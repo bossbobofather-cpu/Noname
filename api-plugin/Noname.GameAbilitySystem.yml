@@ -14,13 +14,9 @@ items:
   nameWithType: Noname.GameAbilitySystem
   fullName: Noname.GameAbilitySystem
   type: Namespace
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
 references:
-- uid: Noname.GameAbilitySystem.ReadOnlyAttribute
-  commentId: T:Noname.GameAbilitySystem.ReadOnlyAttribute
-  href: Noname.GameAbilitySystem.ReadOnlyAttribute.html
-  name: ReadOnlyAttribute
-  nameWithType: ReadOnlyAttribute
-  fullName: Noname.GameAbilitySystem.ReadOnlyAttribute
 - uid: Noname.GameAbilitySystem.GameplayAbilitySpec
   commentId: T:Noname.GameAbilitySystem.GameplayAbilitySpec
   href: Noname.GameAbilitySystem.GameplayAbilitySpec.html
@@ -34,6 +30,13 @@ references:
   name: FGameplayAbilitySpecHandle
   nameWithType: FGameplayAbilitySpecHandle
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
+- uid: Noname.GameAbilitySystem.ReadOnlyAttribute
+  commentId: T:Noname.GameAbilitySystem.ReadOnlyAttribute
+  parent: Noname.GameAbilitySystem
+  href: Noname.GameAbilitySystem.ReadOnlyAttribute.html
+  name: ReadOnlyAttribute
+  nameWithType: ReadOnlyAttribute
+  fullName: Noname.GameAbilitySystem.ReadOnlyAttribute
 - uid: Noname.GameAbilitySystem
   commentId: N:Noname.GameAbilitySystem
   href: Noname.html

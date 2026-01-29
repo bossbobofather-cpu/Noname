@@ -13,6 +13,8 @@ items:
   nameWithType: BaseAttackCooldownDrationPlicy
   fullName: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 기본 공격 쿨다운 이펙트 지속 시간 정책
   example: []
@@ -51,6 +53,8 @@ items:
   nameWithType: BaseAttackCooldownDrationPlicy.CalculateDuration(AbilitySystemComponent, ref float)
   fullName: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, ref float)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   example: []
   syntax:

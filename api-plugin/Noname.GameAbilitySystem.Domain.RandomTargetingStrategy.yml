@@ -13,6 +13,8 @@ items:
   nameWithType: RandomTargetingStrategy
   fullName: Noname.GameAbilitySystem.Domain.RandomTargetingStrategy
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 랜덤 적을 선택합니다.
   example: []
@@ -41,6 +43,8 @@ items:
   nameWithType: RandomTargetingStrategy.FindTargets(AbilitySystemComponent, TargetContext)
   fullName: Noname.GameAbilitySystem.Domain.RandomTargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Noname.GameAbilitySystem.Domain.TargetContext)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   example: []
   syntax:

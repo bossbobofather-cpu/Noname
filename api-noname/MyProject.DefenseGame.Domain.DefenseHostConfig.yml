@@ -36,6 +36,8 @@ items:
   nameWithType: DefenseHostConfig
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig
   type: Class
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 디펜스 게임 호스트 설정입니다.
   example: []
@@ -72,6 +74,8 @@ items:
   nameWithType: DefenseHostConfig.InvincibleMode
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.InvincibleMode
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: State.Invincible Tag를 부여하여 기본 공격을 무시합니다.
   example: []
@@ -91,13 +95,15 @@ items:
   nameWithType: DefenseHostConfig.PlayerSpawnPosition
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerSpawnPosition
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 플레이어 스폰 위치입니다.
   example: []
   syntax:
     content: public Point2D PlayerSpawnPosition
     return:
-      type: Point2D
+      type: Noname.GameAbilitySystem.Domain.Point2D
     content.vb: Public PlayerSpawnPosition As Point2D
 - uid: MyProject.DefenseGame.Domain.DefenseHostConfig.MonsterSpawnPosition
   commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.MonsterSpawnPosition
@@ -110,13 +116,15 @@ items:
   nameWithType: DefenseHostConfig.MonsterSpawnPosition
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.MonsterSpawnPosition
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 몬스터 스폰 위치입니다.
   example: []
   syntax:
     content: public Point2D MonsterSpawnPosition
     return:
-      type: Point2D
+      type: Noname.GameAbilitySystem.Domain.Point2D
     content.vb: Public MonsterSpawnPosition As Point2D
 - uid: MyProject.DefenseGame.Domain.DefenseHostConfig.BaseSpawnInterval
   commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.BaseSpawnInterval
@@ -129,6 +137,8 @@ items:
   nameWithType: DefenseHostConfig.BaseSpawnInterval
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.BaseSpawnInterval
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 기본 몬스터 스폰 간격입니다 (초).
   example: []
@@ -148,6 +158,8 @@ items:
   nameWithType: DefenseHostConfig.SpawnRateIncreaseInterval
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.SpawnRateIncreaseInterval
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 스폰 수량이 증가하는 간격입니다 (초).
   example: []
@@ -167,6 +179,8 @@ items:
   nameWithType: DefenseHostConfig.BossSpawnInterval
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.BossSpawnInterval
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 보스 스폰 간격입니다 (초).
   example: []
@@ -186,6 +200,8 @@ items:
   nameWithType: DefenseHostConfig.MaxMonsterCount
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.MaxMonsterCount
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: '패배 조건: 최대 몬스터 수입니다.'
   example: []
@@ -205,6 +221,8 @@ items:
   nameWithType: DefenseHostConfig.PlayerMaxHp
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerMaxHp
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 플레이어 초기 체력입니다.
   example: []
@@ -224,6 +242,8 @@ items:
   nameWithType: DefenseHostConfig.PlayerAttackPower
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackPower
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 플레이어 초기 공격력입니다.
   example: []
@@ -243,6 +263,8 @@ items:
   nameWithType: DefenseHostConfig.PlayerAttackSpeed
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackSpeed
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 플레이어 초기 공격속도 입니다. (초당 공격 횟수)
   example: []
@@ -262,6 +284,8 @@ items:
   nameWithType: DefenseHostConfig.PlayerDefense
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerDefense
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 플레이어 초기 방어력입니다.
   example: []
@@ -281,6 +305,8 @@ items:
   nameWithType: DefenseHostConfig.PlayerAttackCooldown
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackCooldown
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 플레이어 공격 쿨다운입니다 (초).
   example: []
@@ -300,6 +326,8 @@ items:
   nameWithType: DefenseHostConfig.PlayerTags
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerTags
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public List<string> PlayerTags
@@ -317,6 +345,8 @@ items:
   nameWithType: DefenseHostConfig.PlayerAbilityIds
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAbilityIds
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 플레이어 스타트업 능력 ID 입니다.
   example: []
@@ -336,6 +366,8 @@ items:
   nameWithType: DefenseHostConfig.NormalMonsterHp
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterHp
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 일반 몬스터 체력입니다.
   example: []
@@ -355,6 +387,8 @@ items:
   nameWithType: DefenseHostConfig.NormalMonsterAttack
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAttack
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 일반 몬스터 공격력입니다.
   example: []
@@ -374,6 +408,8 @@ items:
   nameWithType: DefenseHostConfig.NormalMonsterAttackSpeed
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAttackSpeed
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 일반 몬스터 공격력입니다.
   example: []
@@ -393,6 +429,8 @@ items:
   nameWithType: DefenseHostConfig.NormalMonsterDefense
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterDefense
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 일반 몬스터 방어력입니다.
   example: []
@@ -412,6 +450,8 @@ items:
   nameWithType: DefenseHostConfig.NormalMonsterExp
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterExp
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 일반 몬스터 경험치 보상입니다.
   example: []
@@ -431,6 +471,8 @@ items:
   nameWithType: DefenseHostConfig.NormalMonsterAbilityIds
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAbilityIds
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 일반 몬스터 스타트업 능력 ID 입니다.
   example: []
@@ -450,6 +492,8 @@ items:
   nameWithType: DefenseHostConfig.BossHpMultiplier
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.BossHpMultiplier
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 보스 몬스터 체력 배수입니다.
   example: []
@@ -469,6 +513,8 @@ items:
   nameWithType: DefenseHostConfig.BossAttackMultiplier
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.BossAttackMultiplier
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 보스 몬스터 공격력 배수입니다.
   example: []
@@ -488,6 +534,8 @@ items:
   nameWithType: DefenseHostConfig.BossExpMultiplier
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.BossExpMultiplier
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 보스 몬스터 경험치 보상 배수입니다.
   example: []
@@ -507,6 +555,8 @@ items:
   nameWithType: DefenseHostConfig.BossMonsterAbilityIds
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.BossMonsterAbilityIds
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 보스 몬스터 스타트업 능력 ID 입니다.
   example: []
@@ -770,11 +820,35 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: Point2D
-  isExternal: true
+- uid: Noname.GameAbilitySystem.Domain.Point2D
+  commentId: T:Noname.GameAbilitySystem.Domain.Point2D
+  parent: Noname.GameAbilitySystem.Domain
   name: Point2D
   nameWithType: Point2D
-  fullName: Point2D
+  fullName: Noname.GameAbilitySystem.Domain.Point2D
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+  spec.vb:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
 - uid: System.Single
   commentId: T:System.Single
   parent: System

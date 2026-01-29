@@ -1,0 +1,372 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameHost.GameEvent.GameUIContextSupplyEvent
+  commentId: T:Noname.GameHost.GameEvent.GameUIContextSupplyEvent
+  id: GameUIContextSupplyEvent
+  parent: Noname.GameHost.GameEvent
+  children:
+  - Noname.GameHost.GameEvent.GameUIContextSupplyEvent.#ctor(Noname.GameHost.GameEvent.UIEventContext,System.Object)
+  - Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx
+  langs:
+  - csharp
+  - vb
+  name: GameUIContextSupplyEvent
+  nameWithType: GameUIContextSupplyEvent
+  fullName: Noname.GameHost.GameEvent.GameUIContextSupplyEvent
+  type: Class
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost.GameEvent
+  summary: UI 컨텍스트를 전달하는 이벤트입니다.
+  example: []
+  syntax:
+    content: 'public sealed class GameUIContextSupplyEvent : SceneGameEventContext'
+    content.vb: Public NotInheritable Class GameUIContextSupplyEvent Inherits SceneGameEventContext
+  inheritance:
+  - System.Object
+  - Noname.GameHost.GameEvent.GameEventContext
+  - Noname.GameHost.GameEvent.SceneGameEventContext
+  inheritedMembers:
+  - Noname.GameHost.GameEvent.GameEventContext.Source
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx
+  commentId: P:Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx
+  id: UIEventCtx
+  parent: Noname.GameHost.GameEvent.GameUIContextSupplyEvent
+  langs:
+  - csharp
+  - vb
+  name: UIEventCtx
+  nameWithType: GameUIContextSupplyEvent.UIEventCtx
+  fullName: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx
+  type: Property
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost.GameEvent
+  summary: 전달된 UI 컨텍스트입니다.
+  example: []
+  syntax:
+    content: public UIEventContext UIEventCtx { get; }
+    parameters: []
+    return:
+      type: Noname.GameHost.GameEvent.UIEventContext
+    content.vb: Public ReadOnly Property UIEventCtx As UIEventContext
+  overload: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx*
+- uid: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.#ctor(Noname.GameHost.GameEvent.UIEventContext,System.Object)
+  commentId: M:Noname.GameHost.GameEvent.GameUIContextSupplyEvent.#ctor(Noname.GameHost.GameEvent.UIEventContext,System.Object)
+  id: '#ctor(Noname.GameHost.GameEvent.UIEventContext,System.Object)'
+  parent: Noname.GameHost.GameEvent.GameUIContextSupplyEvent
+  langs:
+  - csharp
+  - vb
+  name: GameUIContextSupplyEvent(UIEventContext, object)
+  nameWithType: GameUIContextSupplyEvent.GameUIContextSupplyEvent(UIEventContext, object)
+  fullName: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.GameUIContextSupplyEvent(Noname.GameHost.GameEvent.UIEventContext, object)
+  type: Constructor
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost.GameEvent
+  syntax:
+    content: public GameUIContextSupplyEvent(UIEventContext eventContext, object source)
+    parameters:
+    - id: eventContext
+      type: Noname.GameHost.GameEvent.UIEventContext
+    - id: source
+      type: System.Object
+    content.vb: Public Sub New(eventContext As UIEventContext, source As Object)
+  overload: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.#ctor*
+  nameWithType.vb: GameUIContextSupplyEvent.New(UIEventContext, Object)
+  fullName.vb: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.New(Noname.GameHost.GameEvent.UIEventContext, Object)
+  name.vb: New(UIEventContext, Object)
+references:
+- uid: Noname.GameHost.GameEvent
+  commentId: N:Noname.GameHost.GameEvent
+  href: Noname.html
+  name: Noname.GameHost.GameEvent
+  nameWithType: Noname.GameHost.GameEvent
+  fullName: Noname.GameHost.GameEvent
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+    href: Noname.GameHost.html
+  - name: .
+  - uid: Noname.GameHost.GameEvent
+    name: GameEvent
+    href: Noname.GameHost.GameEvent.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+    href: Noname.GameHost.html
+  - name: .
+  - uid: Noname.GameHost.GameEvent
+    name: GameEvent
+    href: Noname.GameHost.GameEvent.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Noname.GameHost.GameEvent.GameEventContext
+  commentId: T:Noname.GameHost.GameEvent.GameEventContext
+  parent: Noname.GameHost.GameEvent
+  href: Noname.GameHost.GameEvent.GameEventContext.html
+  name: GameEventContext
+  nameWithType: GameEventContext
+  fullName: Noname.GameHost.GameEvent.GameEventContext
+- uid: Noname.GameHost.GameEvent.SceneGameEventContext
+  commentId: T:Noname.GameHost.GameEvent.SceneGameEventContext
+  parent: Noname.GameHost.GameEvent
+  href: Noname.GameHost.GameEvent.SceneGameEventContext.html
+  name: SceneGameEventContext
+  nameWithType: SceneGameEventContext
+  fullName: Noname.GameHost.GameEvent.SceneGameEventContext
+- uid: Noname.GameHost.GameEvent.GameEventContext.Source
+  commentId: P:Noname.GameHost.GameEvent.GameEventContext.Source
+  parent: Noname.GameHost.GameEvent.GameEventContext
+  href: Noname.GameHost.GameEvent.GameEventContext.html#Noname_GameHost_GameEvent_GameEventContext_Source
+  name: Source
+  nameWithType: GameEventContext.Source
+  fullName: Noname.GameHost.GameEvent.GameEventContext.Source
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx*
+  commentId: Overload:Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx
+  href: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.html#Noname_GameHost_GameEvent_GameUIContextSupplyEvent_UIEventCtx
+  name: UIEventCtx
+  nameWithType: GameUIContextSupplyEvent.UIEventCtx
+  fullName: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx
+- uid: Noname.GameHost.GameEvent.UIEventContext
+  commentId: T:Noname.GameHost.GameEvent.UIEventContext
+  parent: Noname.GameHost.GameEvent
+  href: Noname.GameHost.GameEvent.UIEventContext.html
+  name: UIEventContext
+  nameWithType: UIEventContext
+  fullName: Noname.GameHost.GameEvent.UIEventContext
+- uid: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.#ctor*
+  commentId: Overload:Noname.GameHost.GameEvent.GameUIContextSupplyEvent.#ctor
+  href: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.html#Noname_GameHost_GameEvent_GameUIContextSupplyEvent__ctor_Noname_GameHost_GameEvent_UIEventContext_System_Object_
+  name: GameUIContextSupplyEvent
+  nameWithType: GameUIContextSupplyEvent.GameUIContextSupplyEvent
+  fullName: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.GameUIContextSupplyEvent
+  nameWithType.vb: GameUIContextSupplyEvent.New
+  fullName.vb: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.New
+  name.vb: New

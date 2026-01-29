@@ -18,6 +18,8 @@ items:
   nameWithType: DefenseAbilityUtility
   fullName: MyProject.DefenseGame.Domain.DefenseAbilityUtility
   type: Class
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 디펜스 게임의 어빌리티 생성 유틸리티입니다.
   example: []
@@ -45,11 +47,13 @@ items:
   nameWithType: DefenseAbilityUtility.CooldownBasicAttack
   fullName: MyProject.DefenseGame.Domain.DefenseAbilityUtility.CooldownBasicAttack
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public static readonly FGameplayTag CooldownBasicAttack
     return:
-      type: FGameplayTag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
     content.vb: Public Shared ReadOnly CooldownBasicAttack As FGameplayTag
 - uid: MyProject.DefenseGame.Domain.DefenseAbilityUtility.AbilityBasicAttack
   commentId: F:MyProject.DefenseGame.Domain.DefenseAbilityUtility.AbilityBasicAttack
@@ -62,11 +66,13 @@ items:
   nameWithType: DefenseAbilityUtility.AbilityBasicAttack
   fullName: MyProject.DefenseGame.Domain.DefenseAbilityUtility.AbilityBasicAttack
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public static readonly FGameplayTag AbilityBasicAttack
     return:
-      type: FGameplayTag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
     content.vb: Public Shared ReadOnly AbilityBasicAttack As FGameplayTag
 - uid: MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateBasicAttack(System.Single,System.Single)
   commentId: M:MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateBasicAttack(System.Single,System.Single)
@@ -79,6 +85,8 @@ items:
   nameWithType: DefenseAbilityUtility.CreateBasicAttack(float, float)
   fullName: MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateBasicAttack(float, float)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 기본 공격 어빌리티를 생성합니다.
   example: []
@@ -92,7 +100,7 @@ items:
       type: System.Single
       description: 데미지 양
     return:
-      type: GameplayAbility
+      type: Noname.GameAbilitySystem.Domain.GameplayAbility
     content.vb: Public Shared Function CreateBasicAttack(cooldown As Single = 1, damageAmount As Single = 10) As GameplayAbility
   overload: MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateBasicAttack*
   nameWithType.vb: DefenseAbilityUtility.CreateBasicAttack(Single, Single)
@@ -109,6 +117,8 @@ items:
   nameWithType: DefenseAbilityUtility.CreateAreaAttack(float, float, int)
   fullName: MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateAreaAttack(float, float, int)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 범위 공격 어빌리티를 생성합니다.
   example: []
@@ -125,7 +135,7 @@ items:
       type: System.Int32
       description: 최대 타겟 수
     return:
-      type: GameplayAbility
+      type: Noname.GameAbilitySystem.Domain.GameplayAbility
     content.vb: Public Shared Function CreateAreaAttack(cooldown As Single = 2, damageAmount As Single = 8, maxTargets As Integer = 3) As GameplayAbility
   overload: MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateAreaAttack*
   nameWithType.vb: DefenseAbilityUtility.CreateAreaAttack(Single, Single, Integer)
@@ -142,6 +152,8 @@ items:
   nameWithType: DefenseAbilityUtility.CreateAbility(int)
   fullName: MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateAbility(int)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public static GameplayAbility CreateAbility(int abilityId)
@@ -149,7 +161,7 @@ items:
     - id: abilityId
       type: System.Int32
     return:
-      type: GameplayAbility
+      type: Noname.GameAbilitySystem.Domain.GameplayAbility
     content.vb: Public Shared Function CreateAbility(abilityId As Integer) As GameplayAbility
   overload: MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateAbility*
   nameWithType.vb: DefenseAbilityUtility.CreateAbility(Integer)
@@ -166,6 +178,8 @@ items:
   nameWithType: DefenseAbilityUtility.CreateAbilities(IEnumerable<int>)
   fullName: MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateAbilities(System.Collections.Generic.IEnumerable<int>)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public static List<GameplayAbility> CreateAbilities(IEnumerable<int> abilityIds)
@@ -173,7 +187,7 @@ items:
     - id: abilityIds
       type: System.Collections.Generic.IEnumerable{System.Int32}
     return:
-      type: System.Collections.Generic.List{GameplayAbility}
+      type: System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayAbility}
     content.vb: Public Shared Function CreateAbilities(abilityIds As IEnumerable(Of Integer)) As List(Of GameplayAbility)
   overload: MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateAbilities*
   nameWithType.vb: DefenseAbilityUtility.CreateAbilities(IEnumerable(Of Integer))
@@ -447,11 +461,35 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: FGameplayTag
-  isExternal: true
+- uid: Noname.GameAbilitySystem.Domain.FGameplayTag
+  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayTag
+  parent: Noname.GameAbilitySystem.Domain
   name: FGameplayTag
   nameWithType: FGameplayTag
-  fullName: FGameplayTag
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayTag
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+  spec.vb:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
 - uid: MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateBasicAttack*
   commentId: Overload:MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateBasicAttack
   href: MyProject.DefenseGame.Domain.DefenseAbilityUtility.html#MyProject_DefenseGame_Domain_DefenseAbilityUtility_CreateBasicAttack_System_Single_System_Single_
@@ -469,11 +507,12 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
-- uid: GameplayAbility
-  isExternal: true
+- uid: Noname.GameAbilitySystem.Domain.GameplayAbility
+  commentId: T:Noname.GameAbilitySystem.Domain.GameplayAbility
+  parent: Noname.GameAbilitySystem.Domain
   name: GameplayAbility
   nameWithType: GameplayAbility
-  fullName: GameplayAbility
+  fullName: Noname.GameAbilitySystem.Domain.GameplayAbility
 - uid: MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateAreaAttack*
   commentId: Overload:MyProject.DefenseGame.Domain.DefenseAbilityUtility.CreateAreaAttack
   href: MyProject.DefenseGame.Domain.DefenseAbilityUtility.html#MyProject_DefenseGame_Domain_DefenseAbilityUtility_CreateAreaAttack_System_Single_System_Single_System_Int32_
@@ -538,16 +577,16 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
-- uid: System.Collections.Generic.List{GameplayAbility}
-  commentId: T:System.Collections.Generic.List{GameplayAbility}
+- uid: System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayAbility}
+  commentId: T:System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayAbility}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   name: List<GameplayAbility>
   nameWithType: List<GameplayAbility>
-  fullName: System.Collections.Generic.List<GameplayAbility>
+  fullName: System.Collections.Generic.List<Noname.GameAbilitySystem.Domain.GameplayAbility>
   nameWithType.vb: List(Of GameplayAbility)
-  fullName.vb: System.Collections.Generic.List(Of GameplayAbility)
+  fullName.vb: System.Collections.Generic.List(Of Noname.GameAbilitySystem.Domain.GameplayAbility)
   name.vb: List(Of GameplayAbility)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
@@ -555,9 +594,8 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-  - uid: GameplayAbility
+  - uid: Noname.GameAbilitySystem.Domain.GameplayAbility
     name: GameplayAbility
-    isExternal: true
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -567,9 +605,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: GameplayAbility
+  - uid: Noname.GameAbilitySystem.Domain.GameplayAbility
     name: GameplayAbility
-    isExternal: true
   - name: )
 - uid: System.Collections.Generic.IEnumerable`1
   commentId: T:System.Collections.Generic.IEnumerable`1

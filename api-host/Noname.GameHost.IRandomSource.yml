@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameHost.IRandomSource
+  commentId: T:Noname.GameHost.IRandomSource
+  id: IRandomSource
+  parent: Noname.GameHost
+  children:
+  - Noname.GameHost.IRandomSource.NextFloat
+  - Noname.GameHost.IRandomSource.NextInt(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IRandomSource
+  nameWithType: IRandomSource
+  fullName: Noname.GameHost.IRandomSource
+  type: Interface
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 호스트에서 사용할 랜덤 소스 인터페이스입니다.
+  example: []
+  syntax:
+    content: public interface IRandomSource
+    content.vb: Public Interface IRandomSource
+- uid: Noname.GameHost.IRandomSource.NextInt(System.Int32,System.Int32)
+  commentId: M:Noname.GameHost.IRandomSource.NextInt(System.Int32,System.Int32)
+  id: NextInt(System.Int32,System.Int32)
+  parent: Noname.GameHost.IRandomSource
+  langs:
+  - csharp
+  - vb
+  name: NextInt(int, int)
+  nameWithType: IRandomSource.NextInt(int, int)
+  fullName: Noname.GameHost.IRandomSource.NextInt(int, int)
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  syntax:
+    content: int NextInt(int minInclusive, int maxExclusive)
+    parameters:
+    - id: minInclusive
+      type: System.Int32
+    - id: maxExclusive
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function NextInt(minInclusive As Integer, maxExclusive As Integer) As Integer
+  overload: Noname.GameHost.IRandomSource.NextInt*
+  nameWithType.vb: IRandomSource.NextInt(Integer, Integer)
+  fullName.vb: Noname.GameHost.IRandomSource.NextInt(Integer, Integer)
+  name.vb: NextInt(Integer, Integer)
+- uid: Noname.GameHost.IRandomSource.NextFloat
+  commentId: M:Noname.GameHost.IRandomSource.NextFloat
+  id: NextFloat
+  parent: Noname.GameHost.IRandomSource
+  langs:
+  - csharp
+  - vb
+  name: NextFloat()
+  nameWithType: IRandomSource.NextFloat()
+  fullName: Noname.GameHost.IRandomSource.NextFloat()
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  syntax:
+    content: float NextFloat()
+    return:
+      type: System.Single
+    content.vb: Function NextFloat() As Single
+  overload: Noname.GameHost.IRandomSource.NextFloat*
+references:
+- uid: Noname.GameHost
+  commentId: N:Noname.GameHost
+  href: Noname.html
+  name: Noname.GameHost
+  nameWithType: Noname.GameHost
+  fullName: Noname.GameHost
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+    href: Noname.GameHost.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+    href: Noname.GameHost.html
+- uid: Noname.GameHost.IRandomSource.NextInt*
+  commentId: Overload:Noname.GameHost.IRandomSource.NextInt
+  href: Noname.GameHost.IRandomSource.html#Noname_GameHost_IRandomSource_NextInt_System_Int32_System_Int32_
+  name: NextInt
+  nameWithType: IRandomSource.NextInt
+  fullName: Noname.GameHost.IRandomSource.NextInt
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameHost.IRandomSource.NextFloat*
+  commentId: Overload:Noname.GameHost.IRandomSource.NextFloat
+  href: Noname.GameHost.IRandomSource.html#Noname_GameHost_IRandomSource_NextFloat
+  name: NextFloat
+  nameWithType: IRandomSource.NextFloat
+  fullName: Noname.GameHost.IRandomSource.NextFloat
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

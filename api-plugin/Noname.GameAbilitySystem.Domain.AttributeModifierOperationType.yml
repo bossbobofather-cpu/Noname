@@ -16,6 +16,8 @@ items:
   nameWithType: AttributeModifierOperationType
   fullName: Noname.GameAbilitySystem.Domain.AttributeModifierOperationType
   type: Enum
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 속성 수정자의 연산 타입입니다.
   example: []
@@ -33,6 +35,8 @@ items:
   nameWithType: AttributeModifierOperationType.Add
   fullName: Noname.GameAbilitySystem.Domain.AttributeModifierOperationType.Add
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 더하기
   example: []
@@ -51,6 +55,8 @@ items:
   nameWithType: AttributeModifierOperationType.AddPercent
   fullName: Noname.GameAbilitySystem.Domain.AttributeModifierOperationType.AddPercent
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 퍼센트 더하기 (100 = +100%)
   example: []
@@ -69,6 +75,8 @@ items:
   nameWithType: AttributeModifierOperationType.Multiply
   fullName: Noname.GameAbilitySystem.Domain.AttributeModifierOperationType.Multiply
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 곱하기
   example: []
@@ -87,6 +95,8 @@ items:
   nameWithType: AttributeModifierOperationType.Override
   fullName: Noname.GameAbilitySystem.Domain.AttributeModifierOperationType.Override
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 덮어쓰기
   example: []

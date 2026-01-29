@@ -15,6 +15,8 @@ items:
   nameWithType: EffectDurationType
   fullName: Noname.GameAbilitySystem.Domain.EffectDurationType
   type: Enum
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 게임플레이 효과의 지속 타입입니다.
   example: []
@@ -32,6 +34,8 @@ items:
   nameWithType: EffectDurationType.Instant
   fullName: Noname.GameAbilitySystem.Domain.EffectDurationType.Instant
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 즉시 적용
   example: []
@@ -50,6 +54,8 @@ items:
   nameWithType: EffectDurationType.Infinite
   fullName: Noname.GameAbilitySystem.Domain.EffectDurationType.Infinite
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 무한 지속
   example: []
@@ -68,6 +74,8 @@ items:
   nameWithType: EffectDurationType.HasDuration
   fullName: Noname.GameAbilitySystem.Domain.EffectDurationType.HasDuration
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 시간 기반 지속
   example: []

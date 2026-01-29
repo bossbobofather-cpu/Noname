@@ -6,8 +6,8 @@ items:
   parent: MyProject.DefenseGame.Domain.LevelUp
   children:
   - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.#ctor(System.Random)
-  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(FGameplayTag)
-  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{Noname.GameAbilitySystem.Domain.FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
   langs:
   - csharp
   - vb
@@ -15,6 +15,8 @@ items:
   nameWithType: LevelUpAbilityRegistry
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
   type: Class
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.LevelUp
   summary: >-
     레벨업 어빌리티 레지스트리입니다.
@@ -44,6 +46,8 @@ items:
   nameWithType: LevelUpAbilityRegistry.LevelUpAbilityRegistry(Random)
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.LevelUpAbilityRegistry(System.Random)
   type: Constructor
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.LevelUp
   syntax:
     content: public LevelUpAbilityRegistry(Random random = null)
@@ -55,17 +59,19 @@ items:
   nameWithType.vb: LevelUpAbilityRegistry.New(Random)
   fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.New(System.Random)
   name.vb: New(Random)
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
-  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
-  id: GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{Noname.GameAbilitySystem.Domain.FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{Noname.GameAbilitySystem.Domain.FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  id: GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{Noname.GameAbilitySystem.Domain.FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
   parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
   langs:
   - csharp
   - vb
   name: GetRandomAvailableAbilities(DefensePlayer, HashSet<FGameplayTag>, int, List<LevelUpAbilityDefinition>)
   nameWithType: LevelUpAbilityRegistry.GetRandomAvailableAbilities(DefensePlayer, HashSet<FGameplayTag>, int, List<LevelUpAbilityDefinition>)
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet<FGameplayTag>, int, System.Collections.Generic.List<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>)
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet<Noname.GameAbilitySystem.Domain.FGameplayTag>, int, System.Collections.Generic.List<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.LevelUp
   summary: 플레이어가 선택 가능한 어빌리티 목록을 반환합니다.
   example: []
@@ -76,7 +82,7 @@ items:
       type: MyProject.DefenseGame.Domain.DefensePlayer
       description: 플레이어
     - id: grantedAbilities
-      type: System.Collections.Generic.HashSet{FGameplayTag}
+      type: System.Collections.Generic.HashSet{Noname.GameAbilitySystem.Domain.FGameplayTag}
       description: 이미 획득한 어빌리티 목록
     - id: count
       type: System.Int32
@@ -87,19 +93,21 @@ items:
     content.vb: Public Sub GetRandomAvailableAbilities(player As DefensePlayer, grantedAbilities As HashSet(Of FGameplayTag), count As Integer, results As List(Of LevelUpAbilityDefinition))
   overload: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities*
   nameWithType.vb: LevelUpAbilityRegistry.GetRandomAvailableAbilities(DefensePlayer, HashSet(Of FGameplayTag), Integer, List(Of LevelUpAbilityDefinition))
-  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet(Of FGameplayTag), Integer, System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition))
+  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet(Of Noname.GameAbilitySystem.Domain.FGameplayTag), Integer, System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition))
   name.vb: GetRandomAvailableAbilities(DefensePlayer, HashSet(Of FGameplayTag), Integer, List(Of LevelUpAbilityDefinition))
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(FGameplayTag)
-  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(FGameplayTag)
-  id: GetDefinition(FGameplayTag)
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  id: GetDefinition(Noname.GameAbilitySystem.Domain.FGameplayTag)
   parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry
   langs:
   - csharp
   - vb
   name: GetDefinition(FGameplayTag)
   nameWithType: LevelUpAbilityRegistry.GetDefinition(FGameplayTag)
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(FGameplayTag)
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(Noname.GameAbilitySystem.Domain.FGameplayTag)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.LevelUp
   summary: ID로 어빌리티 정의를 가져옵니다.
   example: []
@@ -107,7 +115,7 @@ items:
     content: public LevelUpAbilityDefinition GetDefinition(FGameplayTag abilityTag)
     parameters:
     - id: abilityTag
-      type: FGameplayTag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
     return:
       type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
     content.vb: Public Function GetDefinition(abilityTag As FGameplayTag) As LevelUpAbilityDefinition
@@ -383,7 +391,7 @@ references:
   fullName: System.Random
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities*
   commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities
-  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetRandomAvailableAbilities_MyProject_DefenseGame_Domain_DefensePlayer_System_Collections_Generic_HashSet_FGameplayTag__System_Int32_System_Collections_Generic_List_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetRandomAvailableAbilities_MyProject_DefenseGame_Domain_DefensePlayer_System_Collections_Generic_HashSet_Noname_GameAbilitySystem_Domain_FGameplayTag__System_Int32_System_Collections_Generic_List_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__
   name: GetRandomAvailableAbilities
   nameWithType: LevelUpAbilityRegistry.GetRandomAvailableAbilities
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities
@@ -394,16 +402,16 @@ references:
   name: DefensePlayer
   nameWithType: DefensePlayer
   fullName: MyProject.DefenseGame.Domain.DefensePlayer
-- uid: System.Collections.Generic.HashSet{FGameplayTag}
-  commentId: T:System.Collections.Generic.HashSet{FGameplayTag}
+- uid: System.Collections.Generic.HashSet{Noname.GameAbilitySystem.Domain.FGameplayTag}
+  commentId: T:System.Collections.Generic.HashSet{Noname.GameAbilitySystem.Domain.FGameplayTag}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.HashSet`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
   name: HashSet<FGameplayTag>
   nameWithType: HashSet<FGameplayTag>
-  fullName: System.Collections.Generic.HashSet<FGameplayTag>
+  fullName: System.Collections.Generic.HashSet<Noname.GameAbilitySystem.Domain.FGameplayTag>
   nameWithType.vb: HashSet(Of FGameplayTag)
-  fullName.vb: System.Collections.Generic.HashSet(Of FGameplayTag)
+  fullName.vb: System.Collections.Generic.HashSet(Of Noname.GameAbilitySystem.Domain.FGameplayTag)
   name.vb: HashSet(Of FGameplayTag)
   spec.csharp:
   - uid: System.Collections.Generic.HashSet`1
@@ -411,9 +419,8 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
   - name: <
-  - uid: FGameplayTag
+  - uid: Noname.GameAbilitySystem.Domain.FGameplayTag
     name: FGameplayTag
-    isExternal: true
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.HashSet`1
@@ -423,9 +430,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: FGameplayTag
+  - uid: Noname.GameAbilitySystem.Domain.FGameplayTag
     name: FGameplayTag
-    isExternal: true
   - name: )
 - uid: System.Int32
   commentId: T:System.Int32
@@ -596,15 +602,16 @@ references:
   - name: )
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition*
   commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition
-  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetDefinition_FGameplayTag_
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetDefinition_Noname_GameAbilitySystem_Domain_FGameplayTag_
   name: GetDefinition
   nameWithType: LevelUpAbilityRegistry.GetDefinition
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition
-- uid: FGameplayTag
-  isExternal: true
+- uid: Noname.GameAbilitySystem.Domain.FGameplayTag
+  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayTag
+  parent: Noname.GameAbilitySystem.Domain
   name: FGameplayTag
   nameWithType: FGameplayTag
-  fullName: FGameplayTag
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayTag
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
   commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
   parent: MyProject.DefenseGame.Domain.LevelUp
@@ -612,3 +619,26 @@ references:
   name: LevelUpAbilityDefinition
   nameWithType: LevelUpAbilityDefinition
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+  spec.vb:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain

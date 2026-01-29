@@ -14,6 +14,8 @@ items:
   nameWithType: NearestEnemyTargetingStrategy
   fullName: Noname.GameAbilitySystem.Domain.NearestEnemyTargetingStrategy
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 가장 가까운 적을 선택합니다.
   example: []
@@ -42,6 +44,8 @@ items:
   nameWithType: NearestEnemyTargetingStrategy.NearestEnemyTargetingStrategy(float)
   fullName: Noname.GameAbilitySystem.Domain.NearestEnemyTargetingStrategy.NearestEnemyTargetingStrategy(float)
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public NearestEnemyTargetingStrategy(float maxRange = Infinity)
@@ -64,6 +68,8 @@ items:
   nameWithType: NearestEnemyTargetingStrategy.FindTargets(AbilitySystemComponent, TargetContext)
   fullName: Noname.GameAbilitySystem.Domain.NearestEnemyTargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Noname.GameAbilitySystem.Domain.TargetContext)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   example: []
   syntax:

@@ -19,6 +19,8 @@ items:
   nameWithType: MyProject.DefenseGame.Application.Commands
   fullName: MyProject.DefenseGame.Application.Commands
   type: Namespace
+  assemblies:
+  - Assembly-CSharp
 references:
 - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
   commentId: T:MyProject.DefenseGame.Application.Commands.DefenseCommand

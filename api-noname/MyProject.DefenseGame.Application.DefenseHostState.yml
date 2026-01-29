@@ -5,7 +5,7 @@ items:
   id: DefenseHostState
   parent: MyProject.DefenseGame.Application
   children:
-  - MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
+  - MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(Noname.GameAbilitySystem.Domain.FGameplayTag)
   - MyProject.DefenseGame.Application.DefenseHostState.Combat
   - MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions
   - MyProject.DefenseGame.Application.DefenseHostState.Dispose
@@ -24,6 +24,8 @@ items:
   nameWithType: DefenseHostState
   fullName: MyProject.DefenseGame.Application.DefenseHostState
   type: Class
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 디펜스 게임 호스트 상태입니다.
   example: []
@@ -52,6 +54,8 @@ items:
   nameWithType: DefenseHostState.GrantedAbilities
   fullName: MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 획득한 레벨업 어빌리티 ID 목록입니다.
   example: []
@@ -59,7 +63,7 @@ items:
     content: public HashSet<FGameplayTag> GrantedAbilities { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.HashSet{FGameplayTag}
+      type: System.Collections.Generic.HashSet{Noname.GameAbilitySystem.Domain.FGameplayTag}
     content.vb: Public ReadOnly Property GrantedAbilities As HashSet(Of FGameplayTag)
   overload: MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities*
 - uid: MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions
@@ -73,6 +77,8 @@ items:
   nameWithType: DefenseHostState.CurrentLevelUpOptions
   fullName: MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 현재 레벨업 선택지 목록입니다.
   example: []
@@ -94,6 +100,8 @@ items:
   nameWithType: DefenseHostState.SetLevelUpOptions(List<LevelUpAbilityDefinition>)
   fullName: MyProject.DefenseGame.Application.DefenseHostState.SetLevelUpOptions(System.Collections.Generic.List<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 레벨업 선택지를 설정합니다.
   example: []
@@ -107,17 +115,19 @@ items:
   nameWithType.vb: DefenseHostState.SetLevelUpOptions(List(Of LevelUpAbilityDefinition))
   fullName.vb: MyProject.DefenseGame.Application.DefenseHostState.SetLevelUpOptions(System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition))
   name.vb: SetLevelUpOptions(List(Of LevelUpAbilityDefinition))
-- uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
-  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
-  id: AddGrantedAbility(FGameplayTag)
+- uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  id: AddGrantedAbility(Noname.GameAbilitySystem.Domain.FGameplayTag)
   parent: MyProject.DefenseGame.Application.DefenseHostState
   langs:
   - csharp
   - vb
   name: AddGrantedAbility(FGameplayTag)
   nameWithType: DefenseHostState.AddGrantedAbility(FGameplayTag)
-  fullName: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(Noname.GameAbilitySystem.Domain.FGameplayTag)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 레벨업 어빌리티를 획득 목록에 추가합니다.
   example: []
@@ -125,7 +135,7 @@ items:
     content: public void AddGrantedAbility(FGameplayTag abilityTag)
     parameters:
     - id: abilityTag
-      type: FGameplayTag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
     content.vb: Public Sub AddGrantedAbility(abilityTag As FGameplayTag)
   overload: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility*
 - uid: MyProject.DefenseGame.Application.DefenseHostState.SessionPhase
@@ -139,6 +149,8 @@ items:
   nameWithType: DefenseHostState.SessionPhase
   fullName: MyProject.DefenseGame.Application.DefenseHostState.SessionPhase
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 현재 세션 상태입니다.
   example: []
@@ -160,6 +172,8 @@ items:
   nameWithType: DefenseHostState.Player
   fullName: MyProject.DefenseGame.Application.DefenseHostState.Player
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 플레이어입니다.
   example: []
@@ -181,6 +195,8 @@ items:
   nameWithType: DefenseHostState.Combat
   fullName: MyProject.DefenseGame.Application.DefenseHostState.Combat
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 전투 상태입니다.
   example: []
@@ -202,6 +218,8 @@ items:
   nameWithType: DefenseHostState.SetSessionPhase(DefenseSessionPhase)
   fullName: MyProject.DefenseGame.Application.DefenseHostState.SetSessionPhase(MyProject.DefenseGame.Application.DefenseSessionPhase)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 세션 상태를 설정합니다.
   example: []
@@ -223,6 +241,8 @@ items:
   nameWithType: DefenseHostState.SetPlayer(DefensePlayer)
   fullName: MyProject.DefenseGame.Application.DefenseHostState.SetPlayer(MyProject.DefenseGame.Domain.DefensePlayer)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 플레이어를 설정합니다.
   example: []
@@ -244,6 +264,8 @@ items:
   nameWithType: DefenseHostState.SetCombat(DefenseCombatState)
   fullName: MyProject.DefenseGame.Application.DefenseHostState.SetCombat(MyProject.DefenseGame.Domain.DefenseCombatState)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 전투 상태를 설정합니다.
   example: []
@@ -265,6 +287,8 @@ items:
   nameWithType: DefenseHostState.GenerateMonsterUid()
   fullName: MyProject.DefenseGame.Application.DefenseHostState.GenerateMonsterUid()
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 몬스터 UID를 생성합니다.
   example: []
@@ -285,8 +309,9 @@ items:
   nameWithType: DefenseHostState.Dispose()
   fullName: MyProject.DefenseGame.Application.DefenseHostState.Dispose()
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
-  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
   example: []
   syntax:
     content: public void Dispose()
@@ -552,16 +577,16 @@ references:
   name: GrantedAbilities
   nameWithType: DefenseHostState.GrantedAbilities
   fullName: MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities
-- uid: System.Collections.Generic.HashSet{FGameplayTag}
-  commentId: T:System.Collections.Generic.HashSet{FGameplayTag}
+- uid: System.Collections.Generic.HashSet{Noname.GameAbilitySystem.Domain.FGameplayTag}
+  commentId: T:System.Collections.Generic.HashSet{Noname.GameAbilitySystem.Domain.FGameplayTag}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.HashSet`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
   name: HashSet<FGameplayTag>
   nameWithType: HashSet<FGameplayTag>
-  fullName: System.Collections.Generic.HashSet<FGameplayTag>
+  fullName: System.Collections.Generic.HashSet<Noname.GameAbilitySystem.Domain.FGameplayTag>
   nameWithType.vb: HashSet(Of FGameplayTag)
-  fullName.vb: System.Collections.Generic.HashSet(Of FGameplayTag)
+  fullName.vb: System.Collections.Generic.HashSet(Of Noname.GameAbilitySystem.Domain.FGameplayTag)
   name.vb: HashSet(Of FGameplayTag)
   spec.csharp:
   - uid: System.Collections.Generic.HashSet`1
@@ -569,9 +594,8 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
   - name: <
-  - uid: FGameplayTag
+  - uid: Noname.GameAbilitySystem.Domain.FGameplayTag
     name: FGameplayTag
-    isExternal: true
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.HashSet`1
@@ -581,9 +605,8 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: FGameplayTag
+  - uid: Noname.GameAbilitySystem.Domain.FGameplayTag
     name: FGameplayTag
-    isExternal: true
   - name: )
 - uid: System.Collections.Generic.HashSet`1
   commentId: T:System.Collections.Generic.HashSet`1
@@ -786,15 +809,39 @@ references:
   - name: )
 - uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility
-  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_AddGrantedAbility_FGameplayTag_
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_AddGrantedAbility_Noname_GameAbilitySystem_Domain_FGameplayTag_
   name: AddGrantedAbility
   nameWithType: DefenseHostState.AddGrantedAbility
   fullName: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility
-- uid: FGameplayTag
-  isExternal: true
+- uid: Noname.GameAbilitySystem.Domain.FGameplayTag
+  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayTag
+  parent: Noname.GameAbilitySystem.Domain
   name: FGameplayTag
   nameWithType: FGameplayTag
-  fullName: FGameplayTag
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayTag
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+  spec.vb:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
 - uid: MyProject.DefenseGame.Application.DefenseHostState.SessionPhase*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.SessionPhase
   href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_SessionPhase

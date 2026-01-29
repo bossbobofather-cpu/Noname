@@ -4,34 +4,38 @@
       "src": [
         {
           "files": [
-            "Noname/Assets/Scripts/**/*.cs"
+            "Noname/Assembly-CSharp.csproj"
           ]
         }
       ],
       "dest": "api-noname",
       "disableGitFeatures": true,
-      "allowCompilationErrors": true,
-      "properties": {
-        "TargetFramework": "netstandard2.1",
-        "LangVersion": "latest"
-      }
+      "allowCompilationErrors": true
     },
     {
       "src": [
         {
           "files": [
-            "UpmPackages/com.noname.gameabilitysystem.plugin/Runtime/**/*.cs",
-            "UpmPackages/com.noname.gameabilitysystem.plugin/Editor/**/*.cs"
+            "Noname/Noname.GameAbilitySystem.Plugin.csproj",
+            "Noname/Noname.GameAbilitySystem.Plugin.Editor.csproj"
           ]
         }
       ],
       "dest": "api-plugin",
       "disableGitFeatures": true,
-      "allowCompilationErrors": true,
-      "properties": {
-        "TargetFramework": "netstandard2.1",
-        "LangVersion": "latest"
-      }
+      "allowCompilationErrors": true
+    },
+    {
+      "src": [
+        {
+          "files": [
+            "Noname/Noname.GameHost.Plugin.csproj"
+          ]
+        }
+      ],
+      "dest": "api-host",
+      "disableGitFeatures": true,
+      "allowCompilationErrors": true
     }
   ],
   "build": {
@@ -53,6 +57,12 @@
         "files": [
           "api-plugin/**.yml",
           "api-plugin/index.md"
+        ]
+      },
+      {
+        "files": [
+          "api-host/**.yml",
+          "api-host/index.md"
         ]
       }
     ],

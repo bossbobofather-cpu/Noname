@@ -21,6 +21,8 @@ items:
   nameWithType: GameplayTagContainer
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagContainer
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: >-
     게임플레이 태그를 관리하는 컨테이너입니다 (순수 C# 모델).
@@ -50,6 +52,8 @@ items:
   nameWithType: GameplayTagContainer.Tags
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagContainer.Tags
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 보관 중인 태그 목록입니다.
   example: []
@@ -71,6 +75,8 @@ items:
   nameWithType: GameplayTagContainer.GameplayTagContainer()
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagContainer.GameplayTagContainer()
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public GameplayTagContainer()
@@ -90,6 +96,8 @@ items:
   nameWithType: GameplayTagContainer.HasTag(FGameplayTag)
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagContainer.HasTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 부모 태그까지 포함하여 보유 여부를 확인합니다.
   example: []
@@ -113,6 +121,8 @@ items:
   nameWithType: GameplayTagContainer.HasTagExact(FGameplayTag)
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagContainer.HasTagExact(Noname.GameAbilitySystem.Domain.FGameplayTag)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 정확히 일치하는 태그만 확인합니다.
   example: []
@@ -136,6 +146,8 @@ items:
   nameWithType: GameplayTagContainer.HasAny(GameplayTagContainer)
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagContainer.HasAny(Noname.GameAbilitySystem.Domain.GameplayTagContainer)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 다른 컨테이너의 태그 중 하나라도 포함하는지 확인합니다.
   example: []
@@ -159,6 +171,8 @@ items:
   nameWithType: GameplayTagContainer.HasAll(GameplayTagContainer)
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagContainer.HasAll(Noname.GameAbilitySystem.Domain.GameplayTagContainer)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 다른 컨테이너의 태그를 모두 포함하는지 확인합니다.
   example: []
@@ -182,6 +196,8 @@ items:
   nameWithType: GameplayTagContainer.AddTag(FGameplayTag)
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagContainer.AddTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 태그를 추가합니다.
   example: []
@@ -205,6 +221,8 @@ items:
   nameWithType: GameplayTagContainer.RemoveTag(FGameplayTag)
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagContainer.RemoveTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 태그를 제거합니다.
   example: []
@@ -226,6 +244,8 @@ items:
   nameWithType: GameplayTagContainer.Clear()
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagContainer.Clear()
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 태그를 모두 제거합니다.
   example: []

@@ -17,6 +17,8 @@ items:
   nameWithType: TargetData
   fullName: Noname.GameAbilitySystem.Domain.TargetData
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 타겟팅 결과를 담는 데이터입니다.
   example: []
@@ -43,6 +45,8 @@ items:
   nameWithType: TargetData.TargetData(AbilitySystemComponent, Point2D?)
   fullName: Noname.GameAbilitySystem.Domain.TargetData.TargetData(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Noname.GameAbilitySystem.Domain.Point2D?)
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public TargetData(AbilitySystemComponent source, Point2D? hitLocation = null)
@@ -67,6 +71,8 @@ items:
   nameWithType: TargetData.Source
   fullName: Noname.GameAbilitySystem.Domain.TargetData.Source
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 타겟팅을 수행한 주체입니다.
   example: []
@@ -88,6 +94,8 @@ items:
   nameWithType: TargetData.Targets
   fullName: Noname.GameAbilitySystem.Domain.TargetData.Targets
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 타겟 목록입니다.
   example: []
@@ -109,6 +117,8 @@ items:
   nameWithType: TargetData.HitLocation
   fullName: Noname.GameAbilitySystem.Domain.TargetData.HitLocation
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 범위 공격 등에서 사용할 기준 위치입니다.
   example: []
@@ -130,6 +140,8 @@ items:
   nameWithType: TargetData.AddTarget(AbilitySystemComponent)
   fullName: Noname.GameAbilitySystem.Domain.TargetData.AddTarget(Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 타겟을 추가합니다.
   example: []

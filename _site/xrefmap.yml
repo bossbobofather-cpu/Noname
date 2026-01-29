@@ -166,11 +166,11 @@ references:
   commentId: T:MyProject.Common.Bootstrap.BootstrapperBase
   fullName: MyProject.Common.Bootstrap.BootstrapperBase
   nameWithType: BootstrapperBase
-- uid: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
+- uid: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(UnityEngine.MonoBehaviour)
   name: CreateManager(MonoBehaviour)
-  href: api-noname/MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_CreateManager_MonoBehaviour_
-  commentId: M:MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
-  fullName: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
+  href: api-noname/MyProject.Common.Bootstrap.BootstrapperBase.html#MyProject_Common_Bootstrap_BootstrapperBase_CreateManager_UnityEngine_MonoBehaviour_
+  commentId: M:MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(UnityEngine.MonoBehaviour)
+  fullName: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(UnityEngine.MonoBehaviour)
   nameWithType: BootstrapperBase.CreateManager(MonoBehaviour)
 - uid: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager*
   name: CreateManager
@@ -1174,13 +1174,13 @@ references:
   fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
   nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Host
   nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
-- uid: MyProject.Common.GameMode.GameMode`4.Initialize(IGameHost{`0,`1,`2,`3})
+- uid: MyProject.Common.GameMode.GameMode`4.Initialize(Noname.GameHost.IGameHost{`0,`1,`2,`3})
   name: Initialize(IGameHost<TCommand, TResult, TEvent, TSnapshot>)
-  href: api-noname/MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IGameHost__0__1__2__3__
-  commentId: M:MyProject.Common.GameMode.GameMode`4.Initialize(IGameHost{`0,`1,`2,`3})
+  href: api-noname/MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_Noname_GameHost_IGameHost__0__1__2__3__
+  commentId: M:MyProject.Common.GameMode.GameMode`4.Initialize(Noname.GameHost.IGameHost{`0,`1,`2,`3})
   name.vb: Initialize(IGameHost(Of TCommand, TResult, TEvent, TSnapshot))
-  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IGameHost<TCommand, TResult, TEvent, TSnapshot>)
-  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IGameHost(Of TCommand, TResult, TEvent, TSnapshot))
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>)
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot))
   nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IGameHost<TCommand, TResult, TEvent, TSnapshot>)
   nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IGameHost(Of TCommand, TResult, TEvent, TSnapshot))
 - uid: MyProject.Common.GameMode.GameMode`4.Initialize*
@@ -2848,13 +2848,13 @@ references:
   fullName.vb: MyProject.Common.UI.SystemMessageBus.Publish(String)
   nameWithType: SystemMessageBus.Publish(string)
   nameWithType.vb: SystemMessageBus.Publish(String)
-- uid: MyProject.Common.UI.SystemMessageBus.Publish(System.String,Color)
+- uid: MyProject.Common.UI.SystemMessageBus.Publish(System.String,UnityEngine.Color)
   name: Publish(string, Color)
-  href: api-noname/MyProject.Common.UI.SystemMessageBus.html#MyProject_Common_UI_SystemMessageBus_Publish_System_String_Color_
-  commentId: M:MyProject.Common.UI.SystemMessageBus.Publish(System.String,Color)
+  href: api-noname/MyProject.Common.UI.SystemMessageBus.html#MyProject_Common_UI_SystemMessageBus_Publish_System_String_UnityEngine_Color_
+  commentId: M:MyProject.Common.UI.SystemMessageBus.Publish(System.String,UnityEngine.Color)
   name.vb: Publish(String, Color)
-  fullName: MyProject.Common.UI.SystemMessageBus.Publish(string, Color)
-  fullName.vb: MyProject.Common.UI.SystemMessageBus.Publish(String, Color)
+  fullName: MyProject.Common.UI.SystemMessageBus.Publish(string, UnityEngine.Color)
+  fullName.vb: MyProject.Common.UI.SystemMessageBus.Publish(String, UnityEngine.Color)
   nameWithType: SystemMessageBus.Publish(string, Color)
   nameWithType.vb: SystemMessageBus.Publish(String, Color)
 - uid: MyProject.Common.UI.SystemMessageBus.Publish*
@@ -3892,13 +3892,13 @@ references:
   commentId: T:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
   fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
   nameWithType: DefenseAbilitySelectedEvent
-- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,FGameplayTag,System.String)
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,Noname.GameAbilitySystem.Domain.FGameplayTag,System.String)
   name: DefenseAbilitySelectedEvent(long, FGameplayTag, string)
-  href: api-noname/MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent__ctor_System_Int64_FGameplayTag_System_String_
-  commentId: M:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,FGameplayTag,System.String)
+  href: api-noname/MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent__ctor_System_Int64_Noname_GameAbilitySystem_Domain_FGameplayTag_System_String_
+  commentId: M:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,Noname.GameAbilitySystem.Domain.FGameplayTag,System.String)
   name.vb: New(Long, FGameplayTag, String)
-  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent(long, FGameplayTag, string)
-  fullName.vb: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.New(Long, FGameplayTag, String)
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent(long, Noname.GameAbilitySystem.Domain.FGameplayTag, string)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.New(Long, Noname.GameAbilitySystem.Domain.FGameplayTag, String)
   nameWithType: DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent(long, FGameplayTag, string)
   nameWithType.vb: DefenseAbilitySelectedEvent.New(Long, FGameplayTag, String)
 - uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor*
@@ -4429,11 +4429,11 @@ references:
   commentId: T:MyProject.DefenseGame.Application.DefenseHostState
   fullName: MyProject.DefenseGame.Application.DefenseHostState
   nameWithType: DefenseHostState
-- uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
+- uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(Noname.GameAbilitySystem.Domain.FGameplayTag)
   name: AddGrantedAbility(FGameplayTag)
-  href: api-noname/MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_AddGrantedAbility_FGameplayTag_
-  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
-  fullName: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
+  href: api-noname/MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_AddGrantedAbility_Noname_GameAbilitySystem_Domain_FGameplayTag_
+  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(Noname.GameAbilitySystem.Domain.FGameplayTag)
   nameWithType: DefenseHostState.AddGrantedAbility(FGameplayTag)
 - uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility*
   name: AddGrantedAbility
@@ -4670,13 +4670,13 @@ references:
   commentId: T:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
   fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
   nameWithType: DefenseMonsterActivateAbilityEvent
-- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor(System.Int64,System.Int64,GameplayAbility)
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor(System.Int64,System.Int64,Noname.GameAbilitySystem.Domain.GameplayAbility)
   name: DefenseMonsterActivateAbilityEvent(long, long, GameplayAbility)
-  href: api-noname/MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefenseMonsterActivateAbilityEvent__ctor_System_Int64_System_Int64_GameplayAbility_
-  commentId: M:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor(System.Int64,System.Int64,GameplayAbility)
+  href: api-noname/MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefenseMonsterActivateAbilityEvent__ctor_System_Int64_System_Int64_Noname_GameAbilitySystem_Domain_GameplayAbility_
+  commentId: M:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor(System.Int64,System.Int64,Noname.GameAbilitySystem.Domain.GameplayAbility)
   name.vb: New(Long, Long, GameplayAbility)
-  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.DefenseMonsterActivateAbilityEvent(long, long, GameplayAbility)
-  fullName.vb: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.New(Long, Long, GameplayAbility)
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.DefenseMonsterActivateAbilityEvent(long, long, Noname.GameAbilitySystem.Domain.GameplayAbility)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.New(Long, Long, Noname.GameAbilitySystem.Domain.GameplayAbility)
   nameWithType: DefenseMonsterActivateAbilityEvent.DefenseMonsterActivateAbilityEvent(long, long, GameplayAbility)
   nameWithType.vb: DefenseMonsterActivateAbilityEvent.New(Long, Long, GameplayAbility)
 - uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor*
@@ -4862,13 +4862,13 @@ references:
   commentId: T:MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent
   fullName: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent
   nameWithType: DefenseMonsterSpawnedEvent
-- uid: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.#ctor(System.Int64,System.Int64,System.String,System.Boolean,Point2D)
+- uid: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.#ctor(System.Int64,System.Int64,System.String,System.Boolean,Noname.GameAbilitySystem.Domain.Point2D)
   name: DefenseMonsterSpawnedEvent(long, long, string, bool, Point2D)
-  href: api-noname/MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.html#MyProject_DefenseGame_Application_DefenseMonsterSpawnedEvent__ctor_System_Int64_System_Int64_System_String_System_Boolean_Point2D_
-  commentId: M:MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.#ctor(System.Int64,System.Int64,System.String,System.Boolean,Point2D)
+  href: api-noname/MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.html#MyProject_DefenseGame_Application_DefenseMonsterSpawnedEvent__ctor_System_Int64_System_Int64_System_String_System_Boolean_Noname_GameAbilitySystem_Domain_Point2D_
+  commentId: M:MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.#ctor(System.Int64,System.Int64,System.String,System.Boolean,Noname.GameAbilitySystem.Domain.Point2D)
   name.vb: New(Long, Long, String, Boolean, Point2D)
-  fullName: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.DefenseMonsterSpawnedEvent(long, long, string, bool, Point2D)
-  fullName.vb: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.New(Long, Long, String, Boolean, Point2D)
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.DefenseMonsterSpawnedEvent(long, long, string, bool, Noname.GameAbilitySystem.Domain.Point2D)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.New(Long, Long, String, Boolean, Noname.GameAbilitySystem.Domain.Point2D)
   nameWithType: DefenseMonsterSpawnedEvent.DefenseMonsterSpawnedEvent(long, long, string, bool, Point2D)
   nameWithType.vb: DefenseMonsterSpawnedEvent.New(Long, Long, String, Boolean, Point2D)
 - uid: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.#ctor*
@@ -4939,13 +4939,13 @@ references:
   commentId: T:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
   fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
   nameWithType: DefensePlayerActivateAbilityEvent
-- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor(System.Int64,System.Collections.Generic.List{System.Int64},GameplayAbility)
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor(System.Int64,System.Collections.Generic.List{System.Int64},Noname.GameAbilitySystem.Domain.GameplayAbility)
   name: DefensePlayerActivateAbilityEvent(long, List<long>, GameplayAbility)
-  href: api-noname/MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefensePlayerActivateAbilityEvent__ctor_System_Int64_System_Collections_Generic_List_System_Int64__GameplayAbility_
-  commentId: M:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor(System.Int64,System.Collections.Generic.List{System.Int64},GameplayAbility)
+  href: api-noname/MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefensePlayerActivateAbilityEvent__ctor_System_Int64_System_Collections_Generic_List_System_Int64__Noname_GameAbilitySystem_Domain_GameplayAbility_
+  commentId: M:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor(System.Int64,System.Collections.Generic.List{System.Int64},Noname.GameAbilitySystem.Domain.GameplayAbility)
   name.vb: New(Long, List(Of Long), GameplayAbility)
-  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.DefensePlayerActivateAbilityEvent(long, System.Collections.Generic.List<long>, GameplayAbility)
-  fullName.vb: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.New(Long, System.Collections.Generic.List(Of Long), GameplayAbility)
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.DefensePlayerActivateAbilityEvent(long, System.Collections.Generic.List<long>, Noname.GameAbilitySystem.Domain.GameplayAbility)
+  fullName.vb: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.New(Long, System.Collections.Generic.List(Of Long), Noname.GameAbilitySystem.Domain.GameplayAbility)
   nameWithType: DefensePlayerActivateAbilityEvent.DefensePlayerActivateAbilityEvent(long, List<long>, GameplayAbility)
   nameWithType.vb: DefensePlayerActivateAbilityEvent.New(Long, List(Of Long), GameplayAbility)
 - uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor*
@@ -5154,11 +5154,11 @@ references:
   fullName.vb: MyProject.DefenseGame.Application.DefenseSpawnModule.New
   nameWithType: DefenseSpawnModule.DefenseSpawnModule
   nameWithType.vb: DefenseSpawnModule.New
-- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(Noname.GameAbilitySystem.Domain.TargetContext)
   name: Initialize(TargetContext)
-  href: api-noname/MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule_Initialize_TargetContext_
-  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
-  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
+  href: api-noname/MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule_Initialize_Noname_GameAbilitySystem_Domain_TargetContext_
+  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(Noname.GameAbilitySystem.Domain.TargetContext)
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(Noname.GameAbilitySystem.Domain.TargetContext)
   nameWithType: DefenseSpawnModule.Initialize(TargetContext)
 - uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize*
   name: Initialize
@@ -5675,13 +5675,13 @@ references:
   commentId: T:MyProject.DefenseGame.Domain.DefenseEntity
   fullName: MyProject.DefenseGame.Domain.DefenseEntity
   nameWithType: DefenseEntity
-- uid: MyProject.DefenseGame.Domain.DefenseEntity.#ctor(System.Int64,Point2D,AbilitySystemComponent)
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.#ctor(System.Int64,Noname.GameAbilitySystem.Domain.Point2D,Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
   name: DefenseEntity(long, Point2D, AbilitySystemComponent)
-  href: api-noname/MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity__ctor_System_Int64_Point2D_AbilitySystemComponent_
-  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.#ctor(System.Int64,Point2D,AbilitySystemComponent)
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity__ctor_System_Int64_Noname_GameAbilitySystem_Domain_Point2D_Noname_GameAbilitySystem_Domain_AbilitySystemComponent_
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.#ctor(System.Int64,Noname.GameAbilitySystem.Domain.Point2D,Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
   name.vb: New(Long, Point2D, AbilitySystemComponent)
-  fullName: MyProject.DefenseGame.Domain.DefenseEntity.DefenseEntity(long, Point2D, AbilitySystemComponent)
-  fullName.vb: MyProject.DefenseGame.Domain.DefenseEntity.New(Long, Point2D, AbilitySystemComponent)
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.DefenseEntity(long, Noname.GameAbilitySystem.Domain.Point2D, Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
+  fullName.vb: MyProject.DefenseGame.Domain.DefenseEntity.New(Long, Noname.GameAbilitySystem.Domain.Point2D, Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
   nameWithType: DefenseEntity.DefenseEntity(long, Point2D, AbilitySystemComponent)
   nameWithType.vb: DefenseEntity.New(Long, Point2D, AbilitySystemComponent)
 - uid: MyProject.DefenseGame.Domain.DefenseEntity.#ctor*
@@ -5872,11 +5872,11 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Domain.DefenseEntity.Position
   nameWithType: DefenseEntity.Position
-- uid: MyProject.DefenseGame.Domain.DefenseEntity.SetPosition(Point2D)
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.SetPosition(Noname.GameAbilitySystem.Domain.Point2D)
   name: SetPosition(Point2D)
-  href: api-noname/MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_SetPosition_Point2D_
-  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.SetPosition(Point2D)
-  fullName: MyProject.DefenseGame.Domain.DefenseEntity.SetPosition(Point2D)
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_SetPosition_Noname_GameAbilitySystem_Domain_Point2D_
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.SetPosition(Noname.GameAbilitySystem.Domain.Point2D)
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.SetPosition(Noname.GameAbilitySystem.Domain.Point2D)
   nameWithType: DefenseEntity.SetPosition(Point2D)
 - uid: MyProject.DefenseGame.Domain.DefenseEntity.SetPosition*
   name: SetPosition
@@ -6086,13 +6086,13 @@ references:
   commentId: T:MyProject.DefenseGame.Domain.DefenseMonster
   fullName: MyProject.DefenseGame.Domain.DefenseMonster
   nameWithType: DefenseMonster
-- uid: MyProject.DefenseGame.Domain.DefenseMonster.#ctor(System.Int64,System.String,MyProject.DefenseGame.Domain.DefenseMonsterType,Point2D,AbilitySystemComponent)
+- uid: MyProject.DefenseGame.Domain.DefenseMonster.#ctor(System.Int64,System.String,MyProject.DefenseGame.Domain.DefenseMonsterType,Noname.GameAbilitySystem.Domain.Point2D,Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
   name: DefenseMonster(long, string, DefenseMonsterType, Point2D, AbilitySystemComponent)
-  href: api-noname/MyProject.DefenseGame.Domain.DefenseMonster.html#MyProject_DefenseGame_Domain_DefenseMonster__ctor_System_Int64_System_String_MyProject_DefenseGame_Domain_DefenseMonsterType_Point2D_AbilitySystemComponent_
-  commentId: M:MyProject.DefenseGame.Domain.DefenseMonster.#ctor(System.Int64,System.String,MyProject.DefenseGame.Domain.DefenseMonsterType,Point2D,AbilitySystemComponent)
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseMonster.html#MyProject_DefenseGame_Domain_DefenseMonster__ctor_System_Int64_System_String_MyProject_DefenseGame_Domain_DefenseMonsterType_Noname_GameAbilitySystem_Domain_Point2D_Noname_GameAbilitySystem_Domain_AbilitySystemComponent_
+  commentId: M:MyProject.DefenseGame.Domain.DefenseMonster.#ctor(System.Int64,System.String,MyProject.DefenseGame.Domain.DefenseMonsterType,Noname.GameAbilitySystem.Domain.Point2D,Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
   name.vb: New(Long, String, DefenseMonsterType, Point2D, AbilitySystemComponent)
-  fullName: MyProject.DefenseGame.Domain.DefenseMonster.DefenseMonster(long, string, MyProject.DefenseGame.Domain.DefenseMonsterType, Point2D, AbilitySystemComponent)
-  fullName.vb: MyProject.DefenseGame.Domain.DefenseMonster.New(Long, String, MyProject.DefenseGame.Domain.DefenseMonsterType, Point2D, AbilitySystemComponent)
+  fullName: MyProject.DefenseGame.Domain.DefenseMonster.DefenseMonster(long, string, MyProject.DefenseGame.Domain.DefenseMonsterType, Noname.GameAbilitySystem.Domain.Point2D, Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
+  fullName.vb: MyProject.DefenseGame.Domain.DefenseMonster.New(Long, String, MyProject.DefenseGame.Domain.DefenseMonsterType, Noname.GameAbilitySystem.Domain.Point2D, Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
   nameWithType: DefenseMonster.DefenseMonster(long, string, DefenseMonsterType, Point2D, AbilitySystemComponent)
   nameWithType.vb: DefenseMonster.New(Long, String, DefenseMonsterType, Point2D, AbilitySystemComponent)
 - uid: MyProject.DefenseGame.Domain.DefenseMonster.#ctor*
@@ -6197,13 +6197,13 @@ references:
   commentId: T:MyProject.DefenseGame.Domain.DefensePlayer
   fullName: MyProject.DefenseGame.Domain.DefensePlayer
   nameWithType: DefensePlayer
-- uid: MyProject.DefenseGame.Domain.DefensePlayer.#ctor(System.Int64,System.String,Point2D,AbilitySystemComponent)
+- uid: MyProject.DefenseGame.Domain.DefensePlayer.#ctor(System.Int64,System.String,Noname.GameAbilitySystem.Domain.Point2D,Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
   name: DefensePlayer(long, string, Point2D, AbilitySystemComponent)
-  href: api-noname/MyProject.DefenseGame.Domain.DefensePlayer.html#MyProject_DefenseGame_Domain_DefensePlayer__ctor_System_Int64_System_String_Point2D_AbilitySystemComponent_
-  commentId: M:MyProject.DefenseGame.Domain.DefensePlayer.#ctor(System.Int64,System.String,Point2D,AbilitySystemComponent)
+  href: api-noname/MyProject.DefenseGame.Domain.DefensePlayer.html#MyProject_DefenseGame_Domain_DefensePlayer__ctor_System_Int64_System_String_Noname_GameAbilitySystem_Domain_Point2D_Noname_GameAbilitySystem_Domain_AbilitySystemComponent_
+  commentId: M:MyProject.DefenseGame.Domain.DefensePlayer.#ctor(System.Int64,System.String,Noname.GameAbilitySystem.Domain.Point2D,Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
   name.vb: New(Long, String, Point2D, AbilitySystemComponent)
-  fullName: MyProject.DefenseGame.Domain.DefensePlayer.DefensePlayer(long, string, Point2D, AbilitySystemComponent)
-  fullName.vb: MyProject.DefenseGame.Domain.DefensePlayer.New(Long, String, Point2D, AbilitySystemComponent)
+  fullName: MyProject.DefenseGame.Domain.DefensePlayer.DefensePlayer(long, string, Noname.GameAbilitySystem.Domain.Point2D, Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
+  fullName.vb: MyProject.DefenseGame.Domain.DefensePlayer.New(Long, String, Noname.GameAbilitySystem.Domain.Point2D, Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
   nameWithType: DefensePlayer.DefensePlayer(long, string, Point2D, AbilitySystemComponent)
   nameWithType.vb: DefensePlayer.New(Long, String, Point2D, AbilitySystemComponent)
 - uid: MyProject.DefenseGame.Domain.DefensePlayer.#ctor*
@@ -6410,13 +6410,13 @@ references:
   commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
   nameWithType: LevelUpAbilityDefinition
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(FGameplayTag,System.String,System.String,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer},FGameplayTag)
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(Noname.GameAbilitySystem.Domain.FGameplayTag,System.String,System.String,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer},Noname.GameAbilitySystem.Domain.FGameplayTag)
   name: LevelUpAbilityDefinition(FGameplayTag, string, string, bool, Action<DefensePlayer>, FGameplayTag)
-  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__ctor_FGameplayTag_System_String_System_String_System_Boolean_System_Action_MyProject_DefenseGame_Domain_DefensePlayer__FGameplayTag_
-  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(FGameplayTag,System.String,System.String,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer},FGameplayTag)
+  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__ctor_Noname_GameAbilitySystem_Domain_FGameplayTag_System_String_System_String_System_Boolean_System_Action_MyProject_DefenseGame_Domain_DefensePlayer__Noname_GameAbilitySystem_Domain_FGameplayTag_
+  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(Noname.GameAbilitySystem.Domain.FGameplayTag,System.String,System.String,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer},Noname.GameAbilitySystem.Domain.FGameplayTag)
   name.vb: New(FGameplayTag, String, String, Boolean, Action(Of DefensePlayer), FGameplayTag)
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.LevelUpAbilityDefinition(FGameplayTag, string, string, bool, System.Action<MyProject.DefenseGame.Domain.DefensePlayer>, FGameplayTag)
-  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.New(FGameplayTag, String, String, Boolean, System.Action(Of MyProject.DefenseGame.Domain.DefensePlayer), FGameplayTag)
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.LevelUpAbilityDefinition(Noname.GameAbilitySystem.Domain.FGameplayTag, string, string, bool, System.Action<MyProject.DefenseGame.Domain.DefensePlayer>, Noname.GameAbilitySystem.Domain.FGameplayTag)
+  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.New(Noname.GameAbilitySystem.Domain.FGameplayTag, String, String, Boolean, System.Action(Of MyProject.DefenseGame.Domain.DefensePlayer), Noname.GameAbilitySystem.Domain.FGameplayTag)
   nameWithType: LevelUpAbilityDefinition.LevelUpAbilityDefinition(FGameplayTag, string, string, bool, Action<DefensePlayer>, FGameplayTag)
   nameWithType.vb: LevelUpAbilityDefinition.New(FGameplayTag, String, String, Boolean, Action(Of DefensePlayer), FGameplayTag)
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor*
@@ -6568,11 +6568,11 @@ references:
   fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.New
   nameWithType: LevelUpAbilityRegistry.LevelUpAbilityRegistry
   nameWithType.vb: LevelUpAbilityRegistry.New
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(FGameplayTag)
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(Noname.GameAbilitySystem.Domain.FGameplayTag)
   name: GetDefinition(FGameplayTag)
-  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetDefinition_FGameplayTag_
-  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(FGameplayTag)
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(FGameplayTag)
+  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetDefinition_Noname_GameAbilitySystem_Domain_FGameplayTag_
+  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(Noname.GameAbilitySystem.Domain.FGameplayTag)
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(Noname.GameAbilitySystem.Domain.FGameplayTag)
   nameWithType: LevelUpAbilityRegistry.GetDefinition(FGameplayTag)
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition*
   name: GetDefinition
@@ -6581,13 +6581,13 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition
   nameWithType: LevelUpAbilityRegistry.GetDefinition
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{Noname.GameAbilitySystem.Domain.FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
   name: GetRandomAvailableAbilities(DefensePlayer, HashSet<FGameplayTag>, int, List<LevelUpAbilityDefinition>)
-  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetRandomAvailableAbilities_MyProject_DefenseGame_Domain_DefensePlayer_System_Collections_Generic_HashSet_FGameplayTag__System_Int32_System_Collections_Generic_List_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__
-  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetRandomAvailableAbilities_MyProject_DefenseGame_Domain_DefensePlayer_System_Collections_Generic_HashSet_Noname_GameAbilitySystem_Domain_FGameplayTag__System_Int32_System_Collections_Generic_List_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__
+  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{Noname.GameAbilitySystem.Domain.FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
   name.vb: GetRandomAvailableAbilities(DefensePlayer, HashSet(Of FGameplayTag), Integer, List(Of LevelUpAbilityDefinition))
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet<FGameplayTag>, int, System.Collections.Generic.List<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>)
-  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet(Of FGameplayTag), Integer, System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition))
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet<Noname.GameAbilitySystem.Domain.FGameplayTag>, int, System.Collections.Generic.List<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>)
+  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet(Of Noname.GameAbilitySystem.Domain.FGameplayTag), Integer, System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition))
   nameWithType: LevelUpAbilityRegistry.GetRandomAvailableAbilities(DefensePlayer, HashSet<FGameplayTag>, int, List<LevelUpAbilityDefinition>)
   nameWithType.vb: LevelUpAbilityRegistry.GetRandomAvailableAbilities(DefensePlayer, HashSet(Of FGameplayTag), Integer, List(Of LevelUpAbilityDefinition))
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities*
@@ -15163,11 +15163,11 @@ references:
   commentId: T:Noname.GameAbilitySystem.Editor.AttributeModifierDrawer
   fullName: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer
   nameWithType: AttributeModifierDrawer
-- uid: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+- uid: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
   name: GetPropertyHeight(SerializedProperty, GUIContent)
-  href: api-plugin/Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.html#Noname_GameAbilitySystem_Editor_AttributeModifierDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
-  commentId: M:Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
-  fullName: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api-plugin/Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.html#Noname_GameAbilitySystem_Editor_AttributeModifierDrawer_GetPropertyHeight_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  commentId: M:Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  fullName: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight(UnityEditor.SerializedProperty, UnityEngine.GUIContent)
   nameWithType: AttributeModifierDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
 - uid: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight*
   name: GetPropertyHeight
@@ -15176,11 +15176,11 @@ references:
   isSpec: "True"
   fullName: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.GetPropertyHeight
   nameWithType: AttributeModifierDrawer.GetPropertyHeight
-- uid: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+- uid: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
   name: OnGUI(Rect, SerializedProperty, GUIContent)
-  href: api-plugin/Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.html#Noname_GameAbilitySystem_Editor_AttributeModifierDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
-  commentId: M:Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
-  fullName: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api-plugin/Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.html#Noname_GameAbilitySystem_Editor_AttributeModifierDrawer_OnGUI_UnityEngine_Rect_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  commentId: M:Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  fullName: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI(UnityEngine.Rect, UnityEditor.SerializedProperty, UnityEngine.GUIContent)
   nameWithType: AttributeModifierDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
 - uid: Noname.GameAbilitySystem.Editor.AttributeModifierDrawer.OnGUI*
   name: OnGUI
@@ -15239,11 +15239,11 @@ references:
   commentId: T:Noname.GameAbilitySystem.Editor.GameplayTagDrawer
   fullName: Noname.GameAbilitySystem.Editor.GameplayTagDrawer
   nameWithType: GameplayTagDrawer
-- uid: Noname.GameAbilitySystem.Editor.GameplayTagDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+- uid: Noname.GameAbilitySystem.Editor.GameplayTagDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
   name: GetPropertyHeight(SerializedProperty, GUIContent)
-  href: api-plugin/Noname.GameAbilitySystem.Editor.GameplayTagDrawer.html#Noname_GameAbilitySystem_Editor_GameplayTagDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
-  commentId: M:Noname.GameAbilitySystem.Editor.GameplayTagDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
-  fullName: Noname.GameAbilitySystem.Editor.GameplayTagDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api-plugin/Noname.GameAbilitySystem.Editor.GameplayTagDrawer.html#Noname_GameAbilitySystem_Editor_GameplayTagDrawer_GetPropertyHeight_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  commentId: M:Noname.GameAbilitySystem.Editor.GameplayTagDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  fullName: Noname.GameAbilitySystem.Editor.GameplayTagDrawer.GetPropertyHeight(UnityEditor.SerializedProperty, UnityEngine.GUIContent)
   nameWithType: GameplayTagDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
 - uid: Noname.GameAbilitySystem.Editor.GameplayTagDrawer.GetPropertyHeight*
   name: GetPropertyHeight
@@ -15252,11 +15252,11 @@ references:
   isSpec: "True"
   fullName: Noname.GameAbilitySystem.Editor.GameplayTagDrawer.GetPropertyHeight
   nameWithType: GameplayTagDrawer.GetPropertyHeight
-- uid: Noname.GameAbilitySystem.Editor.GameplayTagDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+- uid: Noname.GameAbilitySystem.Editor.GameplayTagDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
   name: OnGUI(Rect, SerializedProperty, GUIContent)
-  href: api-plugin/Noname.GameAbilitySystem.Editor.GameplayTagDrawer.html#Noname_GameAbilitySystem_Editor_GameplayTagDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
-  commentId: M:Noname.GameAbilitySystem.Editor.GameplayTagDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
-  fullName: Noname.GameAbilitySystem.Editor.GameplayTagDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api-plugin/Noname.GameAbilitySystem.Editor.GameplayTagDrawer.html#Noname_GameAbilitySystem_Editor_GameplayTagDrawer_OnGUI_UnityEngine_Rect_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  commentId: M:Noname.GameAbilitySystem.Editor.GameplayTagDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  fullName: Noname.GameAbilitySystem.Editor.GameplayTagDrawer.OnGUI(UnityEngine.Rect, UnityEditor.SerializedProperty, UnityEngine.GUIContent)
   nameWithType: GameplayTagDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
 - uid: Noname.GameAbilitySystem.Editor.GameplayTagDrawer.OnGUI*
   name: OnGUI
@@ -15271,11 +15271,11 @@ references:
   commentId: T:Noname.GameAbilitySystem.Editor.ReadOnlyDrawer
   fullName: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer
   nameWithType: ReadOnlyDrawer
-- uid: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+- uid: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
   name: GetPropertyHeight(SerializedProperty, GUIContent)
-  href: api-plugin/Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.html#Noname_GameAbilitySystem_Editor_ReadOnlyDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
-  commentId: M:Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
-  fullName: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api-plugin/Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.html#Noname_GameAbilitySystem_Editor_ReadOnlyDrawer_GetPropertyHeight_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  commentId: M:Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  fullName: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.GetPropertyHeight(UnityEditor.SerializedProperty, UnityEngine.GUIContent)
   nameWithType: ReadOnlyDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
 - uid: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.GetPropertyHeight*
   name: GetPropertyHeight
@@ -15284,11 +15284,11 @@ references:
   isSpec: "True"
   fullName: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.GetPropertyHeight
   nameWithType: ReadOnlyDrawer.GetPropertyHeight
-- uid: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+- uid: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
   name: OnGUI(Rect, SerializedProperty, GUIContent)
-  href: api-plugin/Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.html#Noname_GameAbilitySystem_Editor_ReadOnlyDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
-  commentId: M:Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
-  fullName: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api-plugin/Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.html#Noname_GameAbilitySystem_Editor_ReadOnlyDrawer_OnGUI_UnityEngine_Rect_UnityEditor_SerializedProperty_UnityEngine_GUIContent_
+  commentId: M:Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)
+  fullName: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.OnGUI(UnityEngine.Rect, UnityEditor.SerializedProperty, UnityEngine.GUIContent)
   nameWithType: ReadOnlyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
 - uid: Noname.GameAbilitySystem.Editor.ReadOnlyDrawer.OnGUI*
   name: OnGUI
@@ -18465,6 +18465,1489 @@ references:
   commentId: F:Noname.GameAbilitySystem.TargetConfirmationMode.UserConfirmed
   fullName: Noname.GameAbilitySystem.TargetConfirmationMode.UserConfirmed
   nameWithType: TargetConfirmationMode.UserConfirmed
+- uid: Noname.GameHost
+  name: Noname.GameHost
+  href: api-host/Noname.GameHost.html
+  commentId: N:Noname.GameHost
+  fullName: Noname.GameHost
+  nameWithType: Noname.GameHost
+- uid: Noname.GameHost.GameCommandBase
+  name: GameCommandBase
+  href: api-host/Noname.GameHost.GameCommandBase.html
+  commentId: T:Noname.GameHost.GameCommandBase
+  fullName: Noname.GameHost.GameCommandBase
+  nameWithType: GameCommandBase
+- uid: Noname.GameHost.GameCommandBase.#ctor(System.Int64)
+  name: GameCommandBase(long)
+  href: api-host/Noname.GameHost.GameCommandBase.html#Noname_GameHost_GameCommandBase__ctor_System_Int64_
+  commentId: M:Noname.GameHost.GameCommandBase.#ctor(System.Int64)
+  name.vb: New(Long)
+  fullName: Noname.GameHost.GameCommandBase.GameCommandBase(long)
+  fullName.vb: Noname.GameHost.GameCommandBase.New(Long)
+  nameWithType: GameCommandBase.GameCommandBase(long)
+  nameWithType.vb: GameCommandBase.New(Long)
+- uid: Noname.GameHost.GameCommandBase.#ctor*
+  name: GameCommandBase
+  href: api-host/Noname.GameHost.GameCommandBase.html#Noname_GameHost_GameCommandBase__ctor_
+  commentId: Overload:Noname.GameHost.GameCommandBase.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Noname.GameHost.GameCommandBase.GameCommandBase
+  fullName.vb: Noname.GameHost.GameCommandBase.New
+  nameWithType: GameCommandBase.GameCommandBase
+  nameWithType.vb: GameCommandBase.New
+- uid: Noname.GameHost.GameCommandBase.CommandId
+  name: CommandId
+  href: api-host/Noname.GameHost.GameCommandBase.html#Noname_GameHost_GameCommandBase_CommandId
+  commentId: P:Noname.GameHost.GameCommandBase.CommandId
+  fullName: Noname.GameHost.GameCommandBase.CommandId
+  nameWithType: GameCommandBase.CommandId
+- uid: Noname.GameHost.GameCommandBase.CommandId*
+  name: CommandId
+  href: api-host/Noname.GameHost.GameCommandBase.html#Noname_GameHost_GameCommandBase_CommandId_
+  commentId: Overload:Noname.GameHost.GameCommandBase.CommandId
+  isSpec: "True"
+  fullName: Noname.GameHost.GameCommandBase.CommandId
+  nameWithType: GameCommandBase.CommandId
+- uid: Noname.GameHost.GameCommandBase.SenderUid
+  name: SenderUid
+  href: api-host/Noname.GameHost.GameCommandBase.html#Noname_GameHost_GameCommandBase_SenderUid
+  commentId: P:Noname.GameHost.GameCommandBase.SenderUid
+  fullName: Noname.GameHost.GameCommandBase.SenderUid
+  nameWithType: GameCommandBase.SenderUid
+- uid: Noname.GameHost.GameCommandBase.SenderUid*
+  name: SenderUid
+  href: api-host/Noname.GameHost.GameCommandBase.html#Noname_GameHost_GameCommandBase_SenderUid_
+  commentId: Overload:Noname.GameHost.GameCommandBase.SenderUid
+  isSpec: "True"
+  fullName: Noname.GameHost.GameCommandBase.SenderUid
+  nameWithType: GameCommandBase.SenderUid
+- uid: Noname.GameHost.GameCommandOutcome`2
+  name: GameCommandOutcome<TResult, TEvent>
+  href: api-host/Noname.GameHost.GameCommandOutcome-2.html
+  commentId: T:Noname.GameHost.GameCommandOutcome`2
+  name.vb: GameCommandOutcome(Of TResult, TEvent)
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent)
+  nameWithType: GameCommandOutcome<TResult, TEvent>
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent)
+- uid: Noname.GameHost.GameCommandOutcome`2.#ctor(System.Collections.Generic.IReadOnlyList{`1},`0,System.Collections.Generic.IReadOnlyList{`1})
+  name: GameCommandOutcome(IReadOnlyList<TEvent>, TResult, IReadOnlyList<TEvent>)
+  href: api-host/Noname.GameHost.GameCommandOutcome-2.html#Noname_GameHost_GameCommandOutcome_2__ctor_System_Collections_Generic_IReadOnlyList__1___0_System_Collections_Generic_IReadOnlyList__1__
+  commentId: M:Noname.GameHost.GameCommandOutcome`2.#ctor(System.Collections.Generic.IReadOnlyList{`1},`0,System.Collections.Generic.IReadOnlyList{`1})
+  name.vb: New(IReadOnlyList(Of TEvent), TResult, IReadOnlyList(Of TEvent))
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>.GameCommandOutcome(System.Collections.Generic.IReadOnlyList<TEvent>, TResult, System.Collections.Generic.IReadOnlyList<TEvent>)
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent).New(System.Collections.Generic.IReadOnlyList(Of TEvent), TResult, System.Collections.Generic.IReadOnlyList(Of TEvent))
+  nameWithType: GameCommandOutcome<TResult, TEvent>.GameCommandOutcome(IReadOnlyList<TEvent>, TResult, IReadOnlyList<TEvent>)
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).New(IReadOnlyList(Of TEvent), TResult, IReadOnlyList(Of TEvent))
+- uid: Noname.GameHost.GameCommandOutcome`2.#ctor(`0,System.Collections.Generic.IReadOnlyList{`1})
+  name: GameCommandOutcome(TResult, IReadOnlyList<TEvent>)
+  href: api-host/Noname.GameHost.GameCommandOutcome-2.html#Noname_GameHost_GameCommandOutcome_2__ctor__0_System_Collections_Generic_IReadOnlyList__1__
+  commentId: M:Noname.GameHost.GameCommandOutcome`2.#ctor(`0,System.Collections.Generic.IReadOnlyList{`1})
+  name.vb: New(TResult, IReadOnlyList(Of TEvent))
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>.GameCommandOutcome(TResult, System.Collections.Generic.IReadOnlyList<TEvent>)
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent).New(TResult, System.Collections.Generic.IReadOnlyList(Of TEvent))
+  nameWithType: GameCommandOutcome<TResult, TEvent>.GameCommandOutcome(TResult, IReadOnlyList<TEvent>)
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).New(TResult, IReadOnlyList(Of TEvent))
+- uid: Noname.GameHost.GameCommandOutcome`2.#ctor*
+  name: GameCommandOutcome
+  href: api-host/Noname.GameHost.GameCommandOutcome-2.html#Noname_GameHost_GameCommandOutcome_2__ctor_
+  commentId: Overload:Noname.GameHost.GameCommandOutcome`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>.GameCommandOutcome
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent).New
+  nameWithType: GameCommandOutcome<TResult, TEvent>.GameCommandOutcome
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).New
+- uid: Noname.GameHost.GameCommandOutcome`2.PostEvents
+  name: PostEvents
+  href: api-host/Noname.GameHost.GameCommandOutcome-2.html#Noname_GameHost_GameCommandOutcome_2_PostEvents
+  commentId: P:Noname.GameHost.GameCommandOutcome`2.PostEvents
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>.PostEvents
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent).PostEvents
+  nameWithType: GameCommandOutcome<TResult, TEvent>.PostEvents
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).PostEvents
+- uid: Noname.GameHost.GameCommandOutcome`2.PostEvents*
+  name: PostEvents
+  href: api-host/Noname.GameHost.GameCommandOutcome-2.html#Noname_GameHost_GameCommandOutcome_2_PostEvents_
+  commentId: Overload:Noname.GameHost.GameCommandOutcome`2.PostEvents
+  isSpec: "True"
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>.PostEvents
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent).PostEvents
+  nameWithType: GameCommandOutcome<TResult, TEvent>.PostEvents
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).PostEvents
+- uid: Noname.GameHost.GameCommandOutcome`2.PreEvents
+  name: PreEvents
+  href: api-host/Noname.GameHost.GameCommandOutcome-2.html#Noname_GameHost_GameCommandOutcome_2_PreEvents
+  commentId: P:Noname.GameHost.GameCommandOutcome`2.PreEvents
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>.PreEvents
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent).PreEvents
+  nameWithType: GameCommandOutcome<TResult, TEvent>.PreEvents
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).PreEvents
+- uid: Noname.GameHost.GameCommandOutcome`2.PreEvents*
+  name: PreEvents
+  href: api-host/Noname.GameHost.GameCommandOutcome-2.html#Noname_GameHost_GameCommandOutcome_2_PreEvents_
+  commentId: Overload:Noname.GameHost.GameCommandOutcome`2.PreEvents
+  isSpec: "True"
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>.PreEvents
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent).PreEvents
+  nameWithType: GameCommandOutcome<TResult, TEvent>.PreEvents
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).PreEvents
+- uid: Noname.GameHost.GameCommandOutcome`2.Result
+  name: Result
+  href: api-host/Noname.GameHost.GameCommandOutcome-2.html#Noname_GameHost_GameCommandOutcome_2_Result
+  commentId: P:Noname.GameHost.GameCommandOutcome`2.Result
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>.Result
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent).Result
+  nameWithType: GameCommandOutcome<TResult, TEvent>.Result
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).Result
+- uid: Noname.GameHost.GameCommandOutcome`2.Result*
+  name: Result
+  href: api-host/Noname.GameHost.GameCommandOutcome-2.html#Noname_GameHost_GameCommandOutcome_2_Result_
+  commentId: Overload:Noname.GameHost.GameCommandOutcome`2.Result
+  isSpec: "True"
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>.Result
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent).Result
+  nameWithType: GameCommandOutcome<TResult, TEvent>.Result
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent).Result
+- uid: Noname.GameHost.GameCommandResultBase
+  name: GameCommandResultBase
+  href: api-host/Noname.GameHost.GameCommandResultBase.html
+  commentId: T:Noname.GameHost.GameCommandResultBase
+  fullName: Noname.GameHost.GameCommandResultBase
+  nameWithType: GameCommandResultBase
+- uid: Noname.GameHost.GameCommandResultBase.#ctor(System.Int64,System.Int64,System.Boolean,System.String)
+  name: GameCommandResultBase(long, long, bool, string)
+  href: api-host/Noname.GameHost.GameCommandResultBase.html#Noname_GameHost_GameCommandResultBase__ctor_System_Int64_System_Int64_System_Boolean_System_String_
+  commentId: M:Noname.GameHost.GameCommandResultBase.#ctor(System.Int64,System.Int64,System.Boolean,System.String)
+  name.vb: New(Long, Long, Boolean, String)
+  fullName: Noname.GameHost.GameCommandResultBase.GameCommandResultBase(long, long, bool, string)
+  fullName.vb: Noname.GameHost.GameCommandResultBase.New(Long, Long, Boolean, String)
+  nameWithType: GameCommandResultBase.GameCommandResultBase(long, long, bool, string)
+  nameWithType.vb: GameCommandResultBase.New(Long, Long, Boolean, String)
+- uid: Noname.GameHost.GameCommandResultBase.#ctor*
+  name: GameCommandResultBase
+  href: api-host/Noname.GameHost.GameCommandResultBase.html#Noname_GameHost_GameCommandResultBase__ctor_
+  commentId: Overload:Noname.GameHost.GameCommandResultBase.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Noname.GameHost.GameCommandResultBase.GameCommandResultBase
+  fullName.vb: Noname.GameHost.GameCommandResultBase.New
+  nameWithType: GameCommandResultBase.GameCommandResultBase
+  nameWithType.vb: GameCommandResultBase.New
+- uid: Noname.GameHost.GameCommandResultBase.ErrorMessage
+  name: ErrorMessage
+  href: api-host/Noname.GameHost.GameCommandResultBase.html#Noname_GameHost_GameCommandResultBase_ErrorMessage
+  commentId: P:Noname.GameHost.GameCommandResultBase.ErrorMessage
+  fullName: Noname.GameHost.GameCommandResultBase.ErrorMessage
+  nameWithType: GameCommandResultBase.ErrorMessage
+- uid: Noname.GameHost.GameCommandResultBase.ErrorMessage*
+  name: ErrorMessage
+  href: api-host/Noname.GameHost.GameCommandResultBase.html#Noname_GameHost_GameCommandResultBase_ErrorMessage_
+  commentId: Overload:Noname.GameHost.GameCommandResultBase.ErrorMessage
+  isSpec: "True"
+  fullName: Noname.GameHost.GameCommandResultBase.ErrorMessage
+  nameWithType: GameCommandResultBase.ErrorMessage
+- uid: Noname.GameHost.GameCommandResultBase.SenderUid
+  name: SenderUid
+  href: api-host/Noname.GameHost.GameCommandResultBase.html#Noname_GameHost_GameCommandResultBase_SenderUid
+  commentId: P:Noname.GameHost.GameCommandResultBase.SenderUid
+  fullName: Noname.GameHost.GameCommandResultBase.SenderUid
+  nameWithType: GameCommandResultBase.SenderUid
+- uid: Noname.GameHost.GameCommandResultBase.SenderUid*
+  name: SenderUid
+  href: api-host/Noname.GameHost.GameCommandResultBase.html#Noname_GameHost_GameCommandResultBase_SenderUid_
+  commentId: Overload:Noname.GameHost.GameCommandResultBase.SenderUid
+  isSpec: "True"
+  fullName: Noname.GameHost.GameCommandResultBase.SenderUid
+  nameWithType: GameCommandResultBase.SenderUid
+- uid: Noname.GameHost.GameCommandResultBase.Success
+  name: Success
+  href: api-host/Noname.GameHost.GameCommandResultBase.html#Noname_GameHost_GameCommandResultBase_Success
+  commentId: P:Noname.GameHost.GameCommandResultBase.Success
+  fullName: Noname.GameHost.GameCommandResultBase.Success
+  nameWithType: GameCommandResultBase.Success
+- uid: Noname.GameHost.GameCommandResultBase.Success*
+  name: Success
+  href: api-host/Noname.GameHost.GameCommandResultBase.html#Noname_GameHost_GameCommandResultBase_Success_
+  commentId: Overload:Noname.GameHost.GameCommandResultBase.Success
+  isSpec: "True"
+  fullName: Noname.GameHost.GameCommandResultBase.Success
+  nameWithType: GameCommandResultBase.Success
+- uid: Noname.GameHost.GameCommandResultBase.Tick
+  name: Tick
+  href: api-host/Noname.GameHost.GameCommandResultBase.html#Noname_GameHost_GameCommandResultBase_Tick
+  commentId: P:Noname.GameHost.GameCommandResultBase.Tick
+  fullName: Noname.GameHost.GameCommandResultBase.Tick
+  nameWithType: GameCommandResultBase.Tick
+- uid: Noname.GameHost.GameCommandResultBase.Tick*
+  name: Tick
+  href: api-host/Noname.GameHost.GameCommandResultBase.html#Noname_GameHost_GameCommandResultBase_Tick_
+  commentId: Overload:Noname.GameHost.GameCommandResultBase.Tick
+  isSpec: "True"
+  fullName: Noname.GameHost.GameCommandResultBase.Tick
+  nameWithType: GameCommandResultBase.Tick
+- uid: Noname.GameHost.GameEvent
+  name: Noname.GameHost.GameEvent
+  href: api-host/Noname.GameHost.GameEvent.html
+  commentId: N:Noname.GameHost.GameEvent
+  fullName: Noname.GameHost.GameEvent
+  nameWithType: Noname.GameHost.GameEvent
+- uid: Noname.GameHost.GameEvent.GameEventBus
+  name: GameEventBus
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html
+  commentId: T:Noname.GameHost.GameEvent.GameEventBus
+  fullName: Noname.GameHost.GameEvent.GameEventBus
+  nameWithType: GameEventBus
+- uid: Noname.GameHost.GameEvent.GameEventBus.ClearGlobal
+  name: ClearGlobal()
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_ClearGlobal
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.ClearGlobal
+  fullName: Noname.GameHost.GameEvent.GameEventBus.ClearGlobal()
+  nameWithType: GameEventBus.ClearGlobal()
+- uid: Noname.GameHost.GameEvent.GameEventBus.ClearGlobal*
+  name: ClearGlobal
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_ClearGlobal_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.ClearGlobal
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.ClearGlobal
+  nameWithType: GameEventBus.ClearGlobal
+- uid: Noname.GameHost.GameEvent.GameEventBus.ClearScene(System.Int32)
+  name: ClearScene(int)
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_ClearScene_System_Int32_
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.ClearScene(System.Int32)
+  name.vb: ClearScene(Integer)
+  fullName: Noname.GameHost.GameEvent.GameEventBus.ClearScene(int)
+  fullName.vb: Noname.GameHost.GameEvent.GameEventBus.ClearScene(Integer)
+  nameWithType: GameEventBus.ClearScene(int)
+  nameWithType.vb: GameEventBus.ClearScene(Integer)
+- uid: Noname.GameHost.GameEvent.GameEventBus.ClearScene(UnityEngine.SceneManagement.Scene)
+  name: ClearScene(Scene)
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_ClearScene_UnityEngine_SceneManagement_Scene_
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.ClearScene(UnityEngine.SceneManagement.Scene)
+  fullName: Noname.GameHost.GameEvent.GameEventBus.ClearScene(UnityEngine.SceneManagement.Scene)
+  nameWithType: GameEventBus.ClearScene(Scene)
+- uid: Noname.GameHost.GameEvent.GameEventBus.ClearScene*
+  name: ClearScene
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_ClearScene_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.ClearScene
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.ClearScene
+  nameWithType: GameEventBus.ClearScene
+- uid: Noname.GameHost.GameEvent.GameEventBus.ForScene(System.Int32)
+  name: ForScene(int)
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_ForScene_System_Int32_
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.ForScene(System.Int32)
+  name.vb: ForScene(Integer)
+  fullName: Noname.GameHost.GameEvent.GameEventBus.ForScene(int)
+  fullName.vb: Noname.GameHost.GameEvent.GameEventBus.ForScene(Integer)
+  nameWithType: GameEventBus.ForScene(int)
+  nameWithType.vb: GameEventBus.ForScene(Integer)
+- uid: Noname.GameHost.GameEvent.GameEventBus.ForScene(UnityEngine.SceneManagement.Scene)
+  name: ForScene(Scene)
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_ForScene_UnityEngine_SceneManagement_Scene_
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.ForScene(UnityEngine.SceneManagement.Scene)
+  fullName: Noname.GameHost.GameEvent.GameEventBus.ForScene(UnityEngine.SceneManagement.Scene)
+  nameWithType: GameEventBus.ForScene(Scene)
+- uid: Noname.GameHost.GameEvent.GameEventBus.ForScene*
+  name: ForScene
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_ForScene_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.ForScene
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.ForScene
+  nameWithType: GameEventBus.ForScene
+- uid: Noname.GameHost.GameEvent.GameEventBus.Global
+  name: Global
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_Global
+  commentId: P:Noname.GameHost.GameEvent.GameEventBus.Global
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Global
+  nameWithType: GameEventBus.Global
+- uid: Noname.GameHost.GameEvent.GameEventBus.Global*
+  name: Global
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_Global_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.Global
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Global
+  nameWithType: GameEventBus.Global
+- uid: Noname.GameHost.GameEvent.GameEventBus.Publish*
+  name: Publish
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_Publish_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.Publish
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Publish
+  nameWithType: GameEventBus.Publish
+- uid: Noname.GameHost.GameEvent.GameEventBus.Publish``1(``0)
+  name: Publish<TEvent>(TEvent)
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_Publish__1___0_
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.Publish``1(``0)
+  name.vb: Publish(Of TEvent)(TEvent)
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Publish<TEvent>(TEvent)
+  fullName.vb: Noname.GameHost.GameEvent.GameEventBus.Publish(Of TEvent)(TEvent)
+  nameWithType: GameEventBus.Publish<TEvent>(TEvent)
+  nameWithType.vb: GameEventBus.Publish(Of TEvent)(TEvent)
+- uid: Noname.GameHost.GameEvent.GameEventBus.ResetAll
+  name: ResetAll()
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_ResetAll
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.ResetAll
+  fullName: Noname.GameHost.GameEvent.GameEventBus.ResetAll()
+  nameWithType: GameEventBus.ResetAll()
+- uid: Noname.GameHost.GameEvent.GameEventBus.ResetAll*
+  name: ResetAll
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_ResetAll_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.ResetAll
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.ResetAll
+  nameWithType: GameEventBus.ResetAll
+- uid: Noname.GameHost.GameEvent.GameEventBus.Scene
+  name: Scene
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_Scene
+  commentId: P:Noname.GameHost.GameEvent.GameEventBus.Scene
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Scene
+  nameWithType: GameEventBus.Scene
+- uid: Noname.GameHost.GameEvent.GameEventBus.Scene*
+  name: Scene
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_Scene_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.Scene
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Scene
+  nameWithType: GameEventBus.Scene
+- uid: Noname.GameHost.GameEvent.GameEventBus.Scope
+  name: GameEventBus.Scope
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.Scope.html
+  commentId: T:Noname.GameHost.GameEvent.GameEventBus.Scope
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Scope
+  nameWithType: GameEventBus.Scope
+- uid: Noname.GameHost.GameEvent.GameEventBus.Scope.Clear
+  name: Clear()
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.Scope.html#Noname_GameHost_GameEvent_GameEventBus_Scope_Clear
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.Scope.Clear
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Scope.Clear()
+  nameWithType: GameEventBus.Scope.Clear()
+- uid: Noname.GameHost.GameEvent.GameEventBus.Scope.Clear*
+  name: Clear
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.Scope.html#Noname_GameHost_GameEvent_GameEventBus_Scope_Clear_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.Scope.Clear
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Scope.Clear
+  nameWithType: GameEventBus.Scope.Clear
+- uid: Noname.GameHost.GameEvent.GameEventBus.Scope.Publish*
+  name: Publish
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.Scope.html#Noname_GameHost_GameEvent_GameEventBus_Scope_Publish_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.Scope.Publish
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Scope.Publish
+  nameWithType: GameEventBus.Scope.Publish
+- uid: Noname.GameHost.GameEvent.GameEventBus.Scope.Publish``1(``0)
+  name: Publish<TEvent>(TEvent)
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.Scope.html#Noname_GameHost_GameEvent_GameEventBus_Scope_Publish__1___0_
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.Scope.Publish``1(``0)
+  name.vb: Publish(Of TEvent)(TEvent)
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Scope.Publish<TEvent>(TEvent)
+  fullName.vb: Noname.GameHost.GameEvent.GameEventBus.Scope.Publish(Of TEvent)(TEvent)
+  nameWithType: GameEventBus.Scope.Publish<TEvent>(TEvent)
+  nameWithType.vb: GameEventBus.Scope.Publish(Of TEvent)(TEvent)
+- uid: Noname.GameHost.GameEvent.GameEventBus.Scope.Subscribe*
+  name: Subscribe
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.Scope.html#Noname_GameHost_GameEvent_GameEventBus_Scope_Subscribe_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.Scope.Subscribe
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Scope.Subscribe
+  nameWithType: GameEventBus.Scope.Subscribe
+- uid: Noname.GameHost.GameEvent.GameEventBus.Scope.Subscribe``1(System.Action{``0})
+  name: Subscribe<TEvent>(Action<TEvent>)
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.Scope.html#Noname_GameHost_GameEvent_GameEventBus_Scope_Subscribe__1_System_Action___0__
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.Scope.Subscribe``1(System.Action{``0})
+  name.vb: Subscribe(Of TEvent)(Action(Of TEvent))
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Scope.Subscribe<TEvent>(System.Action<TEvent>)
+  fullName.vb: Noname.GameHost.GameEvent.GameEventBus.Scope.Subscribe(Of TEvent)(System.Action(Of TEvent))
+  nameWithType: GameEventBus.Scope.Subscribe<TEvent>(Action<TEvent>)
+  nameWithType.vb: GameEventBus.Scope.Subscribe(Of TEvent)(Action(Of TEvent))
+- uid: Noname.GameHost.GameEvent.GameEventBus.Scope.Unsubscribe*
+  name: Unsubscribe
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.Scope.html#Noname_GameHost_GameEvent_GameEventBus_Scope_Unsubscribe_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.Scope.Unsubscribe
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Scope.Unsubscribe
+  nameWithType: GameEventBus.Scope.Unsubscribe
+- uid: Noname.GameHost.GameEvent.GameEventBus.Scope.Unsubscribe``1(System.Action{``0})
+  name: Unsubscribe<TEvent>(Action<TEvent>)
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.Scope.html#Noname_GameHost_GameEvent_GameEventBus_Scope_Unsubscribe__1_System_Action___0__
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.Scope.Unsubscribe``1(System.Action{``0})
+  name.vb: Unsubscribe(Of TEvent)(Action(Of TEvent))
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Scope.Unsubscribe<TEvent>(System.Action<TEvent>)
+  fullName.vb: Noname.GameHost.GameEvent.GameEventBus.Scope.Unsubscribe(Of TEvent)(System.Action(Of TEvent))
+  nameWithType: GameEventBus.Scope.Unsubscribe<TEvent>(Action<TEvent>)
+  nameWithType.vb: GameEventBus.Scope.Unsubscribe(Of TEvent)(Action(Of TEvent))
+- uid: Noname.GameHost.GameEvent.GameEventBus.SetActiveScene(UnityEngine.SceneManagement.Scene)
+  name: SetActiveScene(Scene)
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_SetActiveScene_UnityEngine_SceneManagement_Scene_
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.SetActiveScene(UnityEngine.SceneManagement.Scene)
+  fullName: Noname.GameHost.GameEvent.GameEventBus.SetActiveScene(UnityEngine.SceneManagement.Scene)
+  nameWithType: GameEventBus.SetActiveScene(Scene)
+- uid: Noname.GameHost.GameEvent.GameEventBus.SetActiveScene*
+  name: SetActiveScene
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_SetActiveScene_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.SetActiveScene
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.SetActiveScene
+  nameWithType: GameEventBus.SetActiveScene
+- uid: Noname.GameHost.GameEvent.GameEventBus.Subscribe*
+  name: Subscribe
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_Subscribe_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.Subscribe
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Subscribe
+  nameWithType: GameEventBus.Subscribe
+- uid: Noname.GameHost.GameEvent.GameEventBus.Subscribe``1(System.Action{``0})
+  name: Subscribe<TEvent>(Action<TEvent>)
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_Subscribe__1_System_Action___0__
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.Subscribe``1(System.Action{``0})
+  name.vb: Subscribe(Of TEvent)(Action(Of TEvent))
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Subscribe<TEvent>(System.Action<TEvent>)
+  fullName.vb: Noname.GameHost.GameEvent.GameEventBus.Subscribe(Of TEvent)(System.Action(Of TEvent))
+  nameWithType: GameEventBus.Subscribe<TEvent>(Action<TEvent>)
+  nameWithType.vb: GameEventBus.Subscribe(Of TEvent)(Action(Of TEvent))
+- uid: Noname.GameHost.GameEvent.GameEventBus.TrySetActiveScene(UnityEngine.SceneManagement.Scene)
+  name: TrySetActiveScene(Scene)
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_TrySetActiveScene_UnityEngine_SceneManagement_Scene_
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.TrySetActiveScene(UnityEngine.SceneManagement.Scene)
+  fullName: Noname.GameHost.GameEvent.GameEventBus.TrySetActiveScene(UnityEngine.SceneManagement.Scene)
+  nameWithType: GameEventBus.TrySetActiveScene(Scene)
+- uid: Noname.GameHost.GameEvent.GameEventBus.TrySetActiveScene*
+  name: TrySetActiveScene
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_TrySetActiveScene_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.TrySetActiveScene
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.TrySetActiveScene
+  nameWithType: GameEventBus.TrySetActiveScene
+- uid: Noname.GameHost.GameEvent.GameEventBus.Unsubscribe*
+  name: Unsubscribe
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_Unsubscribe_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventBus.Unsubscribe
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Unsubscribe
+  nameWithType: GameEventBus.Unsubscribe
+- uid: Noname.GameHost.GameEvent.GameEventBus.Unsubscribe``1(System.Action{``0})
+  name: Unsubscribe<TEvent>(Action<TEvent>)
+  href: api-host/Noname.GameHost.GameEvent.GameEventBus.html#Noname_GameHost_GameEvent_GameEventBus_Unsubscribe__1_System_Action___0__
+  commentId: M:Noname.GameHost.GameEvent.GameEventBus.Unsubscribe``1(System.Action{``0})
+  name.vb: Unsubscribe(Of TEvent)(Action(Of TEvent))
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Unsubscribe<TEvent>(System.Action<TEvent>)
+  fullName.vb: Noname.GameHost.GameEvent.GameEventBus.Unsubscribe(Of TEvent)(System.Action(Of TEvent))
+  nameWithType: GameEventBus.Unsubscribe<TEvent>(Action<TEvent>)
+  nameWithType.vb: GameEventBus.Unsubscribe(Of TEvent)(Action(Of TEvent))
+- uid: Noname.GameHost.GameEvent.GameEventContext
+  name: GameEventContext
+  href: api-host/Noname.GameHost.GameEvent.GameEventContext.html
+  commentId: T:Noname.GameHost.GameEvent.GameEventContext
+  fullName: Noname.GameHost.GameEvent.GameEventContext
+  nameWithType: GameEventContext
+- uid: Noname.GameHost.GameEvent.GameEventContext.#ctor(System.Object)
+  name: GameEventContext(object)
+  href: api-host/Noname.GameHost.GameEvent.GameEventContext.html#Noname_GameHost_GameEvent_GameEventContext__ctor_System_Object_
+  commentId: M:Noname.GameHost.GameEvent.GameEventContext.#ctor(System.Object)
+  name.vb: New(Object)
+  fullName: Noname.GameHost.GameEvent.GameEventContext.GameEventContext(object)
+  fullName.vb: Noname.GameHost.GameEvent.GameEventContext.New(Object)
+  nameWithType: GameEventContext.GameEventContext(object)
+  nameWithType.vb: GameEventContext.New(Object)
+- uid: Noname.GameHost.GameEvent.GameEventContext.#ctor*
+  name: GameEventContext
+  href: api-host/Noname.GameHost.GameEvent.GameEventContext.html#Noname_GameHost_GameEvent_GameEventContext__ctor_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventContext.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Noname.GameHost.GameEvent.GameEventContext.GameEventContext
+  fullName.vb: Noname.GameHost.GameEvent.GameEventContext.New
+  nameWithType: GameEventContext.GameEventContext
+  nameWithType.vb: GameEventContext.New
+- uid: Noname.GameHost.GameEvent.GameEventContext.Source
+  name: Source
+  href: api-host/Noname.GameHost.GameEvent.GameEventContext.html#Noname_GameHost_GameEvent_GameEventContext_Source
+  commentId: P:Noname.GameHost.GameEvent.GameEventContext.Source
+  fullName: Noname.GameHost.GameEvent.GameEventContext.Source
+  nameWithType: GameEventContext.Source
+- uid: Noname.GameHost.GameEvent.GameEventContext.Source*
+  name: Source
+  href: api-host/Noname.GameHost.GameEvent.GameEventContext.html#Noname_GameHost_GameEvent_GameEventContext_Source_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventContext.Source
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventContext.Source
+  nameWithType: GameEventContext.Source
+- uid: Noname.GameHost.GameEvent.GameEventHub
+  name: GameEventHub
+  href: api-host/Noname.GameHost.GameEvent.GameEventHub.html
+  commentId: T:Noname.GameHost.GameEvent.GameEventHub
+  fullName: Noname.GameHost.GameEvent.GameEventHub
+  nameWithType: GameEventHub
+- uid: Noname.GameHost.GameEvent.GameEventHub.Global
+  name: Global
+  href: api-host/Noname.GameHost.GameEvent.GameEventHub.html#Noname_GameHost_GameEvent_GameEventHub_Global
+  commentId: P:Noname.GameHost.GameEvent.GameEventHub.Global
+  fullName: Noname.GameHost.GameEvent.GameEventHub.Global
+  nameWithType: GameEventHub.Global
+- uid: Noname.GameHost.GameEvent.GameEventHub.Global*
+  name: Global
+  href: api-host/Noname.GameHost.GameEvent.GameEventHub.html#Noname_GameHost_GameEvent_GameEventHub_Global_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventHub.Global
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventHub.Global
+  nameWithType: GameEventHub.Global
+- uid: Noname.GameHost.GameEvent.GameEventHub.Publish*
+  name: Publish
+  href: api-host/Noname.GameHost.GameEvent.GameEventHub.html#Noname_GameHost_GameEvent_GameEventHub_Publish_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventHub.Publish
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventHub.Publish
+  nameWithType: GameEventHub.Publish
+- uid: Noname.GameHost.GameEvent.GameEventHub.Publish``1(``0)
+  name: Publish<TEvent>(TEvent)
+  href: api-host/Noname.GameHost.GameEvent.GameEventHub.html#Noname_GameHost_GameEvent_GameEventHub_Publish__1___0_
+  commentId: M:Noname.GameHost.GameEvent.GameEventHub.Publish``1(``0)
+  name.vb: Publish(Of TEvent)(TEvent)
+  fullName: Noname.GameHost.GameEvent.GameEventHub.Publish<TEvent>(TEvent)
+  fullName.vb: Noname.GameHost.GameEvent.GameEventHub.Publish(Of TEvent)(TEvent)
+  nameWithType: GameEventHub.Publish<TEvent>(TEvent)
+  nameWithType.vb: GameEventHub.Publish(Of TEvent)(TEvent)
+- uid: Noname.GameHost.GameEvent.GameEventHub.Scene
+  name: Scene
+  href: api-host/Noname.GameHost.GameEvent.GameEventHub.html#Noname_GameHost_GameEvent_GameEventHub_Scene
+  commentId: P:Noname.GameHost.GameEvent.GameEventHub.Scene
+  fullName: Noname.GameHost.GameEvent.GameEventHub.Scene
+  nameWithType: GameEventHub.Scene
+- uid: Noname.GameHost.GameEvent.GameEventHub.Scene*
+  name: Scene
+  href: api-host/Noname.GameHost.GameEvent.GameEventHub.html#Noname_GameHost_GameEvent_GameEventHub_Scene_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventHub.Scene
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventHub.Scene
+  nameWithType: GameEventHub.Scene
+- uid: Noname.GameHost.GameEvent.GameEventHub.Subscribe*
+  name: Subscribe
+  href: api-host/Noname.GameHost.GameEvent.GameEventHub.html#Noname_GameHost_GameEvent_GameEventHub_Subscribe_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventHub.Subscribe
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventHub.Subscribe
+  nameWithType: GameEventHub.Subscribe
+- uid: Noname.GameHost.GameEvent.GameEventHub.Subscribe``1(System.Action{``0})
+  name: Subscribe<TEvent>(Action<TEvent>)
+  href: api-host/Noname.GameHost.GameEvent.GameEventHub.html#Noname_GameHost_GameEvent_GameEventHub_Subscribe__1_System_Action___0__
+  commentId: M:Noname.GameHost.GameEvent.GameEventHub.Subscribe``1(System.Action{``0})
+  name.vb: Subscribe(Of TEvent)(Action(Of TEvent))
+  fullName: Noname.GameHost.GameEvent.GameEventHub.Subscribe<TEvent>(System.Action<TEvent>)
+  fullName.vb: Noname.GameHost.GameEvent.GameEventHub.Subscribe(Of TEvent)(System.Action(Of TEvent))
+  nameWithType: GameEventHub.Subscribe<TEvent>(Action<TEvent>)
+  nameWithType.vb: GameEventHub.Subscribe(Of TEvent)(Action(Of TEvent))
+- uid: Noname.GameHost.GameEvent.GameEventHub.Unsubscribe*
+  name: Unsubscribe
+  href: api-host/Noname.GameHost.GameEvent.GameEventHub.html#Noname_GameHost_GameEvent_GameEventHub_Unsubscribe_
+  commentId: Overload:Noname.GameHost.GameEvent.GameEventHub.Unsubscribe
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameEventHub.Unsubscribe
+  nameWithType: GameEventHub.Unsubscribe
+- uid: Noname.GameHost.GameEvent.GameEventHub.Unsubscribe``1(System.Action{``0})
+  name: Unsubscribe<TEvent>(Action<TEvent>)
+  href: api-host/Noname.GameHost.GameEvent.GameEventHub.html#Noname_GameHost_GameEvent_GameEventHub_Unsubscribe__1_System_Action___0__
+  commentId: M:Noname.GameHost.GameEvent.GameEventHub.Unsubscribe``1(System.Action{``0})
+  name.vb: Unsubscribe(Of TEvent)(Action(Of TEvent))
+  fullName: Noname.GameHost.GameEvent.GameEventHub.Unsubscribe<TEvent>(System.Action<TEvent>)
+  fullName.vb: Noname.GameHost.GameEvent.GameEventHub.Unsubscribe(Of TEvent)(System.Action(Of TEvent))
+  nameWithType: GameEventHub.Unsubscribe<TEvent>(Action<TEvent>)
+  nameWithType.vb: GameEventHub.Unsubscribe(Of TEvent)(Action(Of TEvent))
+- uid: Noname.GameHost.GameEvent.GameHostCommandResultEvent
+  name: GameHostCommandResultEvent
+  href: api-host/Noname.GameHost.GameEvent.GameHostCommandResultEvent.html
+  commentId: T:Noname.GameHost.GameEvent.GameHostCommandResultEvent
+  fullName: Noname.GameHost.GameEvent.GameHostCommandResultEvent
+  nameWithType: GameHostCommandResultEvent
+- uid: Noname.GameHost.GameEvent.GameHostCommandResultEvent.#ctor(System.Object,Noname.GameHost.GameCommandResultBase)
+  name: GameHostCommandResultEvent(object, GameCommandResultBase)
+  href: api-host/Noname.GameHost.GameEvent.GameHostCommandResultEvent.html#Noname_GameHost_GameEvent_GameHostCommandResultEvent__ctor_System_Object_Noname_GameHost_GameCommandResultBase_
+  commentId: M:Noname.GameHost.GameEvent.GameHostCommandResultEvent.#ctor(System.Object,Noname.GameHost.GameCommandResultBase)
+  name.vb: New(Object, GameCommandResultBase)
+  fullName: Noname.GameHost.GameEvent.GameHostCommandResultEvent.GameHostCommandResultEvent(object, Noname.GameHost.GameCommandResultBase)
+  fullName.vb: Noname.GameHost.GameEvent.GameHostCommandResultEvent.New(Object, Noname.GameHost.GameCommandResultBase)
+  nameWithType: GameHostCommandResultEvent.GameHostCommandResultEvent(object, GameCommandResultBase)
+  nameWithType.vb: GameHostCommandResultEvent.New(Object, GameCommandResultBase)
+- uid: Noname.GameHost.GameEvent.GameHostCommandResultEvent.#ctor*
+  name: GameHostCommandResultEvent
+  href: api-host/Noname.GameHost.GameEvent.GameHostCommandResultEvent.html#Noname_GameHost_GameEvent_GameHostCommandResultEvent__ctor_
+  commentId: Overload:Noname.GameHost.GameEvent.GameHostCommandResultEvent.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Noname.GameHost.GameEvent.GameHostCommandResultEvent.GameHostCommandResultEvent
+  fullName.vb: Noname.GameHost.GameEvent.GameHostCommandResultEvent.New
+  nameWithType: GameHostCommandResultEvent.GameHostCommandResultEvent
+  nameWithType.vb: GameHostCommandResultEvent.New
+- uid: Noname.GameHost.GameEvent.GameHostCommandResultEvent.Result
+  name: Result
+  href: api-host/Noname.GameHost.GameEvent.GameHostCommandResultEvent.html#Noname_GameHost_GameEvent_GameHostCommandResultEvent_Result
+  commentId: P:Noname.GameHost.GameEvent.GameHostCommandResultEvent.Result
+  fullName: Noname.GameHost.GameEvent.GameHostCommandResultEvent.Result
+  nameWithType: GameHostCommandResultEvent.Result
+- uid: Noname.GameHost.GameEvent.GameHostCommandResultEvent.Result*
+  name: Result
+  href: api-host/Noname.GameHost.GameEvent.GameHostCommandResultEvent.html#Noname_GameHost_GameEvent_GameHostCommandResultEvent_Result_
+  commentId: Overload:Noname.GameHost.GameEvent.GameHostCommandResultEvent.Result
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameHostCommandResultEvent.Result
+  nameWithType: GameHostCommandResultEvent.Result
+- uid: Noname.GameHost.GameEvent.GameHostEventRaisedEvent
+  name: GameHostEventRaisedEvent
+  href: api-host/Noname.GameHost.GameEvent.GameHostEventRaisedEvent.html
+  commentId: T:Noname.GameHost.GameEvent.GameHostEventRaisedEvent
+  fullName: Noname.GameHost.GameEvent.GameHostEventRaisedEvent
+  nameWithType: GameHostEventRaisedEvent
+- uid: Noname.GameHost.GameEvent.GameHostEventRaisedEvent.#ctor(System.Object,Noname.GameHost.GameEventBase)
+  name: GameHostEventRaisedEvent(object, GameEventBase)
+  href: api-host/Noname.GameHost.GameEvent.GameHostEventRaisedEvent.html#Noname_GameHost_GameEvent_GameHostEventRaisedEvent__ctor_System_Object_Noname_GameHost_GameEventBase_
+  commentId: M:Noname.GameHost.GameEvent.GameHostEventRaisedEvent.#ctor(System.Object,Noname.GameHost.GameEventBase)
+  name.vb: New(Object, GameEventBase)
+  fullName: Noname.GameHost.GameEvent.GameHostEventRaisedEvent.GameHostEventRaisedEvent(object, Noname.GameHost.GameEventBase)
+  fullName.vb: Noname.GameHost.GameEvent.GameHostEventRaisedEvent.New(Object, Noname.GameHost.GameEventBase)
+  nameWithType: GameHostEventRaisedEvent.GameHostEventRaisedEvent(object, GameEventBase)
+  nameWithType.vb: GameHostEventRaisedEvent.New(Object, GameEventBase)
+- uid: Noname.GameHost.GameEvent.GameHostEventRaisedEvent.#ctor*
+  name: GameHostEventRaisedEvent
+  href: api-host/Noname.GameHost.GameEvent.GameHostEventRaisedEvent.html#Noname_GameHost_GameEvent_GameHostEventRaisedEvent__ctor_
+  commentId: Overload:Noname.GameHost.GameEvent.GameHostEventRaisedEvent.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Noname.GameHost.GameEvent.GameHostEventRaisedEvent.GameHostEventRaisedEvent
+  fullName.vb: Noname.GameHost.GameEvent.GameHostEventRaisedEvent.New
+  nameWithType: GameHostEventRaisedEvent.GameHostEventRaisedEvent
+  nameWithType.vb: GameHostEventRaisedEvent.New
+- uid: Noname.GameHost.GameEvent.GameHostEventRaisedEvent.EventData
+  name: EventData
+  href: api-host/Noname.GameHost.GameEvent.GameHostEventRaisedEvent.html#Noname_GameHost_GameEvent_GameHostEventRaisedEvent_EventData
+  commentId: P:Noname.GameHost.GameEvent.GameHostEventRaisedEvent.EventData
+  fullName: Noname.GameHost.GameEvent.GameHostEventRaisedEvent.EventData
+  nameWithType: GameHostEventRaisedEvent.EventData
+- uid: Noname.GameHost.GameEvent.GameHostEventRaisedEvent.EventData*
+  name: EventData
+  href: api-host/Noname.GameHost.GameEvent.GameHostEventRaisedEvent.html#Noname_GameHost_GameEvent_GameHostEventRaisedEvent_EventData_
+  commentId: Overload:Noname.GameHost.GameEvent.GameHostEventRaisedEvent.EventData
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameHostEventRaisedEvent.EventData
+  nameWithType: GameHostEventRaisedEvent.EventData
+- uid: Noname.GameHost.GameEvent.GameUIContextSupplyEvent
+  name: GameUIContextSupplyEvent
+  href: api-host/Noname.GameHost.GameEvent.GameUIContextSupplyEvent.html
+  commentId: T:Noname.GameHost.GameEvent.GameUIContextSupplyEvent
+  fullName: Noname.GameHost.GameEvent.GameUIContextSupplyEvent
+  nameWithType: GameUIContextSupplyEvent
+- uid: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.#ctor(Noname.GameHost.GameEvent.UIEventContext,System.Object)
+  name: GameUIContextSupplyEvent(UIEventContext, object)
+  href: api-host/Noname.GameHost.GameEvent.GameUIContextSupplyEvent.html#Noname_GameHost_GameEvent_GameUIContextSupplyEvent__ctor_Noname_GameHost_GameEvent_UIEventContext_System_Object_
+  commentId: M:Noname.GameHost.GameEvent.GameUIContextSupplyEvent.#ctor(Noname.GameHost.GameEvent.UIEventContext,System.Object)
+  name.vb: New(UIEventContext, Object)
+  fullName: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.GameUIContextSupplyEvent(Noname.GameHost.GameEvent.UIEventContext, object)
+  fullName.vb: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.New(Noname.GameHost.GameEvent.UIEventContext, Object)
+  nameWithType: GameUIContextSupplyEvent.GameUIContextSupplyEvent(UIEventContext, object)
+  nameWithType.vb: GameUIContextSupplyEvent.New(UIEventContext, Object)
+- uid: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.#ctor*
+  name: GameUIContextSupplyEvent
+  href: api-host/Noname.GameHost.GameEvent.GameUIContextSupplyEvent.html#Noname_GameHost_GameEvent_GameUIContextSupplyEvent__ctor_
+  commentId: Overload:Noname.GameHost.GameEvent.GameUIContextSupplyEvent.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.GameUIContextSupplyEvent
+  fullName.vb: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.New
+  nameWithType: GameUIContextSupplyEvent.GameUIContextSupplyEvent
+  nameWithType.vb: GameUIContextSupplyEvent.New
+- uid: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx
+  name: UIEventCtx
+  href: api-host/Noname.GameHost.GameEvent.GameUIContextSupplyEvent.html#Noname_GameHost_GameEvent_GameUIContextSupplyEvent_UIEventCtx
+  commentId: P:Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx
+  fullName: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx
+  nameWithType: GameUIContextSupplyEvent.UIEventCtx
+- uid: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx*
+  name: UIEventCtx
+  href: api-host/Noname.GameHost.GameEvent.GameUIContextSupplyEvent.html#Noname_GameHost_GameEvent_GameUIContextSupplyEvent_UIEventCtx_
+  commentId: Overload:Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.UIEventCtx
+  nameWithType: GameUIContextSupplyEvent.UIEventCtx
+- uid: Noname.GameHost.GameEvent.GlobalGameEventContext
+  name: GlobalGameEventContext
+  href: api-host/Noname.GameHost.GameEvent.GlobalGameEventContext.html
+  commentId: T:Noname.GameHost.GameEvent.GlobalGameEventContext
+  fullName: Noname.GameHost.GameEvent.GlobalGameEventContext
+  nameWithType: GlobalGameEventContext
+- uid: Noname.GameHost.GameEvent.GlobalGameEventContext.#ctor(System.Object)
+  name: GlobalGameEventContext(object)
+  href: api-host/Noname.GameHost.GameEvent.GlobalGameEventContext.html#Noname_GameHost_GameEvent_GlobalGameEventContext__ctor_System_Object_
+  commentId: M:Noname.GameHost.GameEvent.GlobalGameEventContext.#ctor(System.Object)
+  name.vb: New(Object)
+  fullName: Noname.GameHost.GameEvent.GlobalGameEventContext.GlobalGameEventContext(object)
+  fullName.vb: Noname.GameHost.GameEvent.GlobalGameEventContext.New(Object)
+  nameWithType: GlobalGameEventContext.GlobalGameEventContext(object)
+  nameWithType.vb: GlobalGameEventContext.New(Object)
+- uid: Noname.GameHost.GameEvent.GlobalGameEventContext.#ctor*
+  name: GlobalGameEventContext
+  href: api-host/Noname.GameHost.GameEvent.GlobalGameEventContext.html#Noname_GameHost_GameEvent_GlobalGameEventContext__ctor_
+  commentId: Overload:Noname.GameHost.GameEvent.GlobalGameEventContext.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Noname.GameHost.GameEvent.GlobalGameEventContext.GlobalGameEventContext
+  fullName.vb: Noname.GameHost.GameEvent.GlobalGameEventContext.New
+  nameWithType: GlobalGameEventContext.GlobalGameEventContext
+  nameWithType.vb: GlobalGameEventContext.New
+- uid: Noname.GameHost.GameEvent.IEventBus`1
+  name: IEventBus<TEventBase>
+  href: api-host/Noname.GameHost.GameEvent.IEventBus-1.html
+  commentId: T:Noname.GameHost.GameEvent.IEventBus`1
+  name.vb: IEventBus(Of TEventBase)
+  fullName: Noname.GameHost.GameEvent.IEventBus<TEventBase>
+  fullName.vb: Noname.GameHost.GameEvent.IEventBus(Of TEventBase)
+  nameWithType: IEventBus<TEventBase>
+  nameWithType.vb: IEventBus(Of TEventBase)
+- uid: Noname.GameHost.GameEvent.IEventBus`1.Clear
+  name: Clear()
+  href: api-host/Noname.GameHost.GameEvent.IEventBus-1.html#Noname_GameHost_GameEvent_IEventBus_1_Clear
+  commentId: M:Noname.GameHost.GameEvent.IEventBus`1.Clear
+  fullName: Noname.GameHost.GameEvent.IEventBus<TEventBase>.Clear()
+  fullName.vb: Noname.GameHost.GameEvent.IEventBus(Of TEventBase).Clear()
+  nameWithType: IEventBus<TEventBase>.Clear()
+  nameWithType.vb: IEventBus(Of TEventBase).Clear()
+- uid: Noname.GameHost.GameEvent.IEventBus`1.Clear*
+  name: Clear
+  href: api-host/Noname.GameHost.GameEvent.IEventBus-1.html#Noname_GameHost_GameEvent_IEventBus_1_Clear_
+  commentId: Overload:Noname.GameHost.GameEvent.IEventBus`1.Clear
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.IEventBus<TEventBase>.Clear
+  fullName.vb: Noname.GameHost.GameEvent.IEventBus(Of TEventBase).Clear
+  nameWithType: IEventBus<TEventBase>.Clear
+  nameWithType.vb: IEventBus(Of TEventBase).Clear
+- uid: Noname.GameHost.GameEvent.IEventBus`1.Publish*
+  name: Publish
+  href: api-host/Noname.GameHost.GameEvent.IEventBus-1.html#Noname_GameHost_GameEvent_IEventBus_1_Publish_
+  commentId: Overload:Noname.GameHost.GameEvent.IEventBus`1.Publish
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.IEventBus<TEventBase>.Publish
+  fullName.vb: Noname.GameHost.GameEvent.IEventBus(Of TEventBase).Publish
+  nameWithType: IEventBus<TEventBase>.Publish
+  nameWithType.vb: IEventBus(Of TEventBase).Publish
+- uid: Noname.GameHost.GameEvent.IEventBus`1.Publish``1(``0)
+  name: Publish<TEvent>(TEvent)
+  href: api-host/Noname.GameHost.GameEvent.IEventBus-1.html#Noname_GameHost_GameEvent_IEventBus_1_Publish__1___0_
+  commentId: M:Noname.GameHost.GameEvent.IEventBus`1.Publish``1(``0)
+  name.vb: Publish(Of TEvent)(TEvent)
+  fullName: Noname.GameHost.GameEvent.IEventBus<TEventBase>.Publish<TEvent>(TEvent)
+  fullName.vb: Noname.GameHost.GameEvent.IEventBus(Of TEventBase).Publish(Of TEvent)(TEvent)
+  nameWithType: IEventBus<TEventBase>.Publish<TEvent>(TEvent)
+  nameWithType.vb: IEventBus(Of TEventBase).Publish(Of TEvent)(TEvent)
+- uid: Noname.GameHost.GameEvent.IEventBus`1.Subscribe*
+  name: Subscribe
+  href: api-host/Noname.GameHost.GameEvent.IEventBus-1.html#Noname_GameHost_GameEvent_IEventBus_1_Subscribe_
+  commentId: Overload:Noname.GameHost.GameEvent.IEventBus`1.Subscribe
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.IEventBus<TEventBase>.Subscribe
+  fullName.vb: Noname.GameHost.GameEvent.IEventBus(Of TEventBase).Subscribe
+  nameWithType: IEventBus<TEventBase>.Subscribe
+  nameWithType.vb: IEventBus(Of TEventBase).Subscribe
+- uid: Noname.GameHost.GameEvent.IEventBus`1.Subscribe``1(System.Action{``0})
+  name: Subscribe<TEvent>(Action<TEvent>)
+  href: api-host/Noname.GameHost.GameEvent.IEventBus-1.html#Noname_GameHost_GameEvent_IEventBus_1_Subscribe__1_System_Action___0__
+  commentId: M:Noname.GameHost.GameEvent.IEventBus`1.Subscribe``1(System.Action{``0})
+  name.vb: Subscribe(Of TEvent)(Action(Of TEvent))
+  fullName: Noname.GameHost.GameEvent.IEventBus<TEventBase>.Subscribe<TEvent>(System.Action<TEvent>)
+  fullName.vb: Noname.GameHost.GameEvent.IEventBus(Of TEventBase).Subscribe(Of TEvent)(System.Action(Of TEvent))
+  nameWithType: IEventBus<TEventBase>.Subscribe<TEvent>(Action<TEvent>)
+  nameWithType.vb: IEventBus(Of TEventBase).Subscribe(Of TEvent)(Action(Of TEvent))
+- uid: Noname.GameHost.GameEvent.IEventBus`1.Unsubscribe*
+  name: Unsubscribe
+  href: api-host/Noname.GameHost.GameEvent.IEventBus-1.html#Noname_GameHost_GameEvent_IEventBus_1_Unsubscribe_
+  commentId: Overload:Noname.GameHost.GameEvent.IEventBus`1.Unsubscribe
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.IEventBus<TEventBase>.Unsubscribe
+  fullName.vb: Noname.GameHost.GameEvent.IEventBus(Of TEventBase).Unsubscribe
+  nameWithType: IEventBus<TEventBase>.Unsubscribe
+  nameWithType.vb: IEventBus(Of TEventBase).Unsubscribe
+- uid: Noname.GameHost.GameEvent.IEventBus`1.Unsubscribe``1(System.Action{``0})
+  name: Unsubscribe<TEvent>(Action<TEvent>)
+  href: api-host/Noname.GameHost.GameEvent.IEventBus-1.html#Noname_GameHost_GameEvent_IEventBus_1_Unsubscribe__1_System_Action___0__
+  commentId: M:Noname.GameHost.GameEvent.IEventBus`1.Unsubscribe``1(System.Action{``0})
+  name.vb: Unsubscribe(Of TEvent)(Action(Of TEvent))
+  fullName: Noname.GameHost.GameEvent.IEventBus<TEventBase>.Unsubscribe<TEvent>(System.Action<TEvent>)
+  fullName.vb: Noname.GameHost.GameEvent.IEventBus(Of TEventBase).Unsubscribe(Of TEvent)(System.Action(Of TEvent))
+  nameWithType: IEventBus<TEventBase>.Unsubscribe<TEvent>(Action<TEvent>)
+  nameWithType.vb: IEventBus(Of TEventBase).Unsubscribe(Of TEvent)(Action(Of TEvent))
+- uid: Noname.GameHost.GameEvent.SceneGameEventContext
+  name: SceneGameEventContext
+  href: api-host/Noname.GameHost.GameEvent.SceneGameEventContext.html
+  commentId: T:Noname.GameHost.GameEvent.SceneGameEventContext
+  fullName: Noname.GameHost.GameEvent.SceneGameEventContext
+  nameWithType: SceneGameEventContext
+- uid: Noname.GameHost.GameEvent.SceneGameEventContext.#ctor(System.Object)
+  name: SceneGameEventContext(object)
+  href: api-host/Noname.GameHost.GameEvent.SceneGameEventContext.html#Noname_GameHost_GameEvent_SceneGameEventContext__ctor_System_Object_
+  commentId: M:Noname.GameHost.GameEvent.SceneGameEventContext.#ctor(System.Object)
+  name.vb: New(Object)
+  fullName: Noname.GameHost.GameEvent.SceneGameEventContext.SceneGameEventContext(object)
+  fullName.vb: Noname.GameHost.GameEvent.SceneGameEventContext.New(Object)
+  nameWithType: SceneGameEventContext.SceneGameEventContext(object)
+  nameWithType.vb: SceneGameEventContext.New(Object)
+- uid: Noname.GameHost.GameEvent.SceneGameEventContext.#ctor*
+  name: SceneGameEventContext
+  href: api-host/Noname.GameHost.GameEvent.SceneGameEventContext.html#Noname_GameHost_GameEvent_SceneGameEventContext__ctor_
+  commentId: Overload:Noname.GameHost.GameEvent.SceneGameEventContext.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Noname.GameHost.GameEvent.SceneGameEventContext.SceneGameEventContext
+  fullName.vb: Noname.GameHost.GameEvent.SceneGameEventContext.New
+  nameWithType: SceneGameEventContext.SceneGameEventContext
+  nameWithType.vb: SceneGameEventContext.New
+- uid: Noname.GameHost.GameEvent.UIEventContext
+  name: UIEventContext
+  href: api-host/Noname.GameHost.GameEvent.UIEventContext.html
+  commentId: T:Noname.GameHost.GameEvent.UIEventContext
+  fullName: Noname.GameHost.GameEvent.UIEventContext
+  nameWithType: UIEventContext
+- uid: Noname.GameHost.GameEvent.UIEventContext.#ctor(Noname.GameHost.GameEvent.UIEventType,System.Object)
+  name: UIEventContext(UIEventType, object)
+  href: api-host/Noname.GameHost.GameEvent.UIEventContext.html#Noname_GameHost_GameEvent_UIEventContext__ctor_Noname_GameHost_GameEvent_UIEventType_System_Object_
+  commentId: M:Noname.GameHost.GameEvent.UIEventContext.#ctor(Noname.GameHost.GameEvent.UIEventType,System.Object)
+  name.vb: New(UIEventType, Object)
+  fullName: Noname.GameHost.GameEvent.UIEventContext.UIEventContext(Noname.GameHost.GameEvent.UIEventType, object)
+  fullName.vb: Noname.GameHost.GameEvent.UIEventContext.New(Noname.GameHost.GameEvent.UIEventType, Object)
+  nameWithType: UIEventContext.UIEventContext(UIEventType, object)
+  nameWithType.vb: UIEventContext.New(UIEventType, Object)
+- uid: Noname.GameHost.GameEvent.UIEventContext.#ctor*
+  name: UIEventContext
+  href: api-host/Noname.GameHost.GameEvent.UIEventContext.html#Noname_GameHost_GameEvent_UIEventContext__ctor_
+  commentId: Overload:Noname.GameHost.GameEvent.UIEventContext.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Noname.GameHost.GameEvent.UIEventContext.UIEventContext
+  fullName.vb: Noname.GameHost.GameEvent.UIEventContext.New
+  nameWithType: UIEventContext.UIEventContext
+  nameWithType.vb: UIEventContext.New
+- uid: Noname.GameHost.GameEvent.UIEventContext.EventType
+  name: EventType
+  href: api-host/Noname.GameHost.GameEvent.UIEventContext.html#Noname_GameHost_GameEvent_UIEventContext_EventType
+  commentId: P:Noname.GameHost.GameEvent.UIEventContext.EventType
+  fullName: Noname.GameHost.GameEvent.UIEventContext.EventType
+  nameWithType: UIEventContext.EventType
+- uid: Noname.GameHost.GameEvent.UIEventContext.EventType*
+  name: EventType
+  href: api-host/Noname.GameHost.GameEvent.UIEventContext.html#Noname_GameHost_GameEvent_UIEventContext_EventType_
+  commentId: Overload:Noname.GameHost.GameEvent.UIEventContext.EventType
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.UIEventContext.EventType
+  nameWithType: UIEventContext.EventType
+- uid: Noname.GameHost.GameEvent.UIEventContext.Source
+  name: Source
+  href: api-host/Noname.GameHost.GameEvent.UIEventContext.html#Noname_GameHost_GameEvent_UIEventContext_Source
+  commentId: P:Noname.GameHost.GameEvent.UIEventContext.Source
+  fullName: Noname.GameHost.GameEvent.UIEventContext.Source
+  nameWithType: UIEventContext.Source
+- uid: Noname.GameHost.GameEvent.UIEventContext.Source*
+  name: Source
+  href: api-host/Noname.GameHost.GameEvent.UIEventContext.html#Noname_GameHost_GameEvent_UIEventContext_Source_
+  commentId: Overload:Noname.GameHost.GameEvent.UIEventContext.Source
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEvent.UIEventContext.Source
+  nameWithType: UIEventContext.Source
+- uid: Noname.GameHost.GameEvent.UIEventType
+  name: UIEventType
+  href: api-host/Noname.GameHost.GameEvent.UIEventType.html
+  commentId: T:Noname.GameHost.GameEvent.UIEventType
+  fullName: Noname.GameHost.GameEvent.UIEventType
+  nameWithType: UIEventType
+- uid: Noname.GameHost.GameEvent.UIEventType.Button_Click
+  name: Button_Click
+  href: api-host/Noname.GameHost.GameEvent.UIEventType.html#Noname_GameHost_GameEvent_UIEventType_Button_Click
+  commentId: F:Noname.GameHost.GameEvent.UIEventType.Button_Click
+  fullName: Noname.GameHost.GameEvent.UIEventType.Button_Click
+  nameWithType: UIEventType.Button_Click
+- uid: Noname.GameHost.GameEventBase
+  name: GameEventBase
+  href: api-host/Noname.GameHost.GameEventBase.html
+  commentId: T:Noname.GameHost.GameEventBase
+  fullName: Noname.GameHost.GameEventBase
+  nameWithType: GameEventBase
+- uid: Noname.GameHost.GameEventBase.#ctor(System.Int64)
+  name: GameEventBase(long)
+  href: api-host/Noname.GameHost.GameEventBase.html#Noname_GameHost_GameEventBase__ctor_System_Int64_
+  commentId: M:Noname.GameHost.GameEventBase.#ctor(System.Int64)
+  name.vb: New(Long)
+  fullName: Noname.GameHost.GameEventBase.GameEventBase(long)
+  fullName.vb: Noname.GameHost.GameEventBase.New(Long)
+  nameWithType: GameEventBase.GameEventBase(long)
+  nameWithType.vb: GameEventBase.New(Long)
+- uid: Noname.GameHost.GameEventBase.#ctor*
+  name: GameEventBase
+  href: api-host/Noname.GameHost.GameEventBase.html#Noname_GameHost_GameEventBase__ctor_
+  commentId: Overload:Noname.GameHost.GameEventBase.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Noname.GameHost.GameEventBase.GameEventBase
+  fullName.vb: Noname.GameHost.GameEventBase.New
+  nameWithType: GameEventBase.GameEventBase
+  nameWithType.vb: GameEventBase.New
+- uid: Noname.GameHost.GameEventBase.Tick
+  name: Tick
+  href: api-host/Noname.GameHost.GameEventBase.html#Noname_GameHost_GameEventBase_Tick
+  commentId: P:Noname.GameHost.GameEventBase.Tick
+  fullName: Noname.GameHost.GameEventBase.Tick
+  nameWithType: GameEventBase.Tick
+- uid: Noname.GameHost.GameEventBase.Tick*
+  name: Tick
+  href: api-host/Noname.GameHost.GameEventBase.html#Noname_GameHost_GameEventBase_Tick_
+  commentId: Overload:Noname.GameHost.GameEventBase.Tick
+  isSpec: "True"
+  fullName: Noname.GameHost.GameEventBase.Tick
+  nameWithType: GameEventBase.Tick
+- uid: Noname.GameHost.GameHostBase`4
+  name: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  href: api-host/Noname.GameHost.GameHostBase-4.html
+  commentId: T:Noname.GameHost.GameHostBase`4
+  name.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+- uid: Noname.GameHost.GameHostBase`4.BuildSnapshotInternal
+  name: BuildSnapshotInternal()
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_BuildSnapshotInternal
+  commentId: M:Noname.GameHost.GameHostBase`4.BuildSnapshotInternal
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal()
+- uid: Noname.GameHost.GameHostBase`4.BuildSnapshotInternal*
+  name: BuildSnapshotInternal
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_BuildSnapshotInternal_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.BuildSnapshotInternal
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal
+- uid: Noname.GameHost.GameHostBase`4.CreateErrorEvent(`0,System.Exception)
+  name: CreateErrorEvent(TCommand, Exception)
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_CreateErrorEvent__0_System_Exception_
+  commentId: M:Noname.GameHost.GameHostBase`4.CreateErrorEvent(`0,System.Exception)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.CreateErrorEvent(TCommand, System.Exception)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).CreateErrorEvent(TCommand, System.Exception)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.CreateErrorEvent(TCommand, Exception)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).CreateErrorEvent(TCommand, Exception)
+- uid: Noname.GameHost.GameHostBase`4.CreateErrorEvent*
+  name: CreateErrorEvent
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_CreateErrorEvent_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.CreateErrorEvent
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.CreateErrorEvent
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).CreateErrorEvent
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.CreateErrorEvent
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).CreateErrorEvent
+- uid: Noname.GameHost.GameHostBase`4.Dispose
+  name: Dispose()
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_Dispose
+  commentId: M:Noname.GameHost.GameHostBase`4.Dispose
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose()
+- uid: Noname.GameHost.GameHostBase`4.Dispose*
+  name: Dispose
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_Dispose_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.Dispose
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose
+- uid: Noname.GameHost.GameHostBase`4.EventRaised
+  name: EventRaised
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_EventRaised
+  commentId: E:Noname.GameHost.GameHostBase`4.EventRaised
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+- uid: Noname.GameHost.GameHostBase`4.FixedStep
+  name: FixedStep
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_FixedStep
+  commentId: P:Noname.GameHost.GameHostBase`4.FixedStep
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+- uid: Noname.GameHost.GameHostBase`4.FixedStep*
+  name: FixedStep
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_FixedStep_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.FixedStep
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+- uid: Noname.GameHost.GameHostBase`4.FlushEvents
+  name: FlushEvents()
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_FlushEvents
+  commentId: M:Noname.GameHost.GameHostBase`4.FlushEvents
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+- uid: Noname.GameHost.GameHostBase`4.FlushEvents*
+  name: FlushEvents
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_FlushEvents_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.FlushEvents
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents
+- uid: Noname.GameHost.GameHostBase`4.HandleCommand(`0)
+  name: HandleCommand(TCommand)
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_HandleCommand__0_
+  commentId: M:Noname.GameHost.GameHostBase`4.HandleCommand(`0)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand(TCommand)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand(TCommand)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand(TCommand)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand(TCommand)
+- uid: Noname.GameHost.GameHostBase`4.HandleCommand*
+  name: HandleCommand
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_HandleCommand_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.HandleCommand
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand
+- uid: Noname.GameHost.GameHostBase`4.HandleInternalEvent(`2)
+  name: HandleInternalEvent(TEvent)
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_HandleInternalEvent__2_
+  commentId: M:Noname.GameHost.GameHostBase`4.HandleInternalEvent(`2)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleInternalEvent(TEvent)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleInternalEvent(TEvent)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleInternalEvent(TEvent)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleInternalEvent(TEvent)
+- uid: Noname.GameHost.GameHostBase`4.HandleInternalEvent*
+  name: HandleInternalEvent
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_HandleInternalEvent_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.HandleInternalEvent
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleInternalEvent
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleInternalEvent
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleInternalEvent
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleInternalEvent
+- uid: Noname.GameHost.GameHostBase`4.IsRunning
+  name: IsRunning
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_IsRunning
+  commentId: P:Noname.GameHost.GameHostBase`4.IsRunning
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+- uid: Noname.GameHost.GameHostBase`4.IsRunning*
+  name: IsRunning
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_IsRunning_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.IsRunning
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+- uid: Noname.GameHost.GameHostBase`4.LoopException
+  name: LoopException
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_LoopException
+  commentId: P:Noname.GameHost.GameHostBase`4.LoopException
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+- uid: Noname.GameHost.GameHostBase`4.LoopException*
+  name: LoopException
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_LoopException_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.LoopException
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+- uid: Noname.GameHost.GameHostBase`4.MaxStepsPerTick
+  name: MaxStepsPerTick
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_MaxStepsPerTick
+  commentId: P:Noname.GameHost.GameHostBase`4.MaxStepsPerTick
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+- uid: Noname.GameHost.GameHostBase`4.MaxStepsPerTick*
+  name: MaxStepsPerTick
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_MaxStepsPerTick_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.MaxStepsPerTick
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+- uid: Noname.GameHost.GameHostBase`4.OnTick(System.Single)
+  name: OnTick(float)
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_OnTick_System_Single_
+  commentId: M:Noname.GameHost.GameHostBase`4.OnTick(System.Single)
+  name.vb: OnTick(Single)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick(float)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick(Single)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick(float)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick(Single)
+- uid: Noname.GameHost.GameHostBase`4.OnTick*
+  name: OnTick
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_OnTick_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.OnTick
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick
+- uid: Noname.GameHost.GameHostBase`4.PublishEvent(`2)
+  name: PublishEvent(TEvent)
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_PublishEvent__2_
+  commentId: M:Noname.GameHost.GameHostBase`4.PublishEvent(`2)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishEvent(TEvent)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishEvent(TEvent)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishEvent(TEvent)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishEvent(TEvent)
+- uid: Noname.GameHost.GameHostBase`4.PublishEvent*
+  name: PublishEvent
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_PublishEvent_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.PublishEvent
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishEvent
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishEvent
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishEvent
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishEvent
+- uid: Noname.GameHost.GameHostBase`4.PublishResult(`1)
+  name: PublishResult(TResult)
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_PublishResult__1_
+  commentId: M:Noname.GameHost.GameHostBase`4.PublishResult(`1)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishResult(TResult)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishResult(TResult)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishResult(TResult)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishResult(TResult)
+- uid: Noname.GameHost.GameHostBase`4.PublishResult*
+  name: PublishResult
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_PublishResult_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.PublishResult
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishResult
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishResult
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishResult
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishResult
+- uid: Noname.GameHost.GameHostBase`4.ResultProduced
+  name: ResultProduced
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_ResultProduced
+  commentId: E:Noname.GameHost.GameHostBase`4.ResultProduced
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+- uid: Noname.GameHost.GameHostBase`4.SendCommand(`0)
+  name: SendCommand(TCommand)
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_SendCommand__0_
+  commentId: M:Noname.GameHost.GameHostBase`4.SendCommand(`0)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SendCommand(TCommand)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SendCommand(TCommand)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SendCommand(TCommand)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SendCommand(TCommand)
+- uid: Noname.GameHost.GameHostBase`4.SendCommand*
+  name: SendCommand
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_SendCommand_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.SendCommand
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SendCommand
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SendCommand
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SendCommand
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SendCommand
+- uid: Noname.GameHost.GameHostBase`4.SleepMilliseconds
+  name: SleepMilliseconds
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_SleepMilliseconds
+  commentId: P:Noname.GameHost.GameHostBase`4.SleepMilliseconds
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+- uid: Noname.GameHost.GameHostBase`4.SleepMilliseconds*
+  name: SleepMilliseconds
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_SleepMilliseconds_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.SleepMilliseconds
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+- uid: Noname.GameHost.GameHostBase`4.SnapshotInterval
+  name: SnapshotInterval
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_SnapshotInterval
+  commentId: P:Noname.GameHost.GameHostBase`4.SnapshotInterval
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+- uid: Noname.GameHost.GameHostBase`4.SnapshotInterval*
+  name: SnapshotInterval
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_SnapshotInterval_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.SnapshotInterval
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+- uid: Noname.GameHost.GameHostBase`4.StartSimulation
+  name: StartSimulation()
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_StartSimulation
+  commentId: M:Noname.GameHost.GameHostBase`4.StartSimulation
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+- uid: Noname.GameHost.GameHostBase`4.StartSimulation*
+  name: StartSimulation
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_StartSimulation_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.StartSimulation
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation
+- uid: Noname.GameHost.GameHostBase`4.StopSimulation
+  name: StopSimulation()
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_StopSimulation
+  commentId: M:Noname.GameHost.GameHostBase`4.StopSimulation
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+- uid: Noname.GameHost.GameHostBase`4.StopSimulation*
+  name: StopSimulation
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_StopSimulation_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.StopSimulation
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation
+- uid: Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds
+  name: StopTimeoutMilliseconds
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_StopTimeoutMilliseconds
+  commentId: P:Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+- uid: Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds*
+  name: StopTimeoutMilliseconds
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_StopTimeoutMilliseconds_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+- uid: Noname.GameHost.GameHostBase`4.ThrowIfDisposed
+  name: ThrowIfDisposed()
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_ThrowIfDisposed
+  commentId: M:Noname.GameHost.GameHostBase`4.ThrowIfDisposed
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ThrowIfDisposed()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ThrowIfDisposed()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ThrowIfDisposed()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ThrowIfDisposed()
+- uid: Noname.GameHost.GameHostBase`4.ThrowIfDisposed*
+  name: ThrowIfDisposed
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_ThrowIfDisposed_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.ThrowIfDisposed
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ThrowIfDisposed
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ThrowIfDisposed
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ThrowIfDisposed
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ThrowIfDisposed
+- uid: Noname.GameHost.GameHostBase`4.Tick
+  name: Tick
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_Tick
+  commentId: P:Noname.GameHost.GameHostBase`4.Tick
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+- uid: Noname.GameHost.GameHostBase`4.Tick*
+  name: Tick
+  href: api-host/Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_Tick_
+  commentId: Overload:Noname.GameHost.GameHostBase`4.Tick
+  isSpec: "True"
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+- uid: Noname.GameHost.GameSnapshotBase
+  name: GameSnapshotBase
+  href: api-host/Noname.GameHost.GameSnapshotBase.html
+  commentId: T:Noname.GameHost.GameSnapshotBase
+  fullName: Noname.GameHost.GameSnapshotBase
+  nameWithType: GameSnapshotBase
+- uid: Noname.GameHost.GameSnapshotBase.#ctor(System.Int64)
+  name: GameSnapshotBase(long)
+  href: api-host/Noname.GameHost.GameSnapshotBase.html#Noname_GameHost_GameSnapshotBase__ctor_System_Int64_
+  commentId: M:Noname.GameHost.GameSnapshotBase.#ctor(System.Int64)
+  name.vb: New(Long)
+  fullName: Noname.GameHost.GameSnapshotBase.GameSnapshotBase(long)
+  fullName.vb: Noname.GameHost.GameSnapshotBase.New(Long)
+  nameWithType: GameSnapshotBase.GameSnapshotBase(long)
+  nameWithType.vb: GameSnapshotBase.New(Long)
+- uid: Noname.GameHost.GameSnapshotBase.#ctor*
+  name: GameSnapshotBase
+  href: api-host/Noname.GameHost.GameSnapshotBase.html#Noname_GameHost_GameSnapshotBase__ctor_
+  commentId: Overload:Noname.GameHost.GameSnapshotBase.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Noname.GameHost.GameSnapshotBase.GameSnapshotBase
+  fullName.vb: Noname.GameHost.GameSnapshotBase.New
+  nameWithType: GameSnapshotBase.GameSnapshotBase
+  nameWithType.vb: GameSnapshotBase.New
+- uid: Noname.GameHost.GameSnapshotBase.Tick
+  name: Tick
+  href: api-host/Noname.GameHost.GameSnapshotBase.html#Noname_GameHost_GameSnapshotBase_Tick
+  commentId: P:Noname.GameHost.GameSnapshotBase.Tick
+  fullName: Noname.GameHost.GameSnapshotBase.Tick
+  nameWithType: GameSnapshotBase.Tick
+- uid: Noname.GameHost.GameSnapshotBase.Tick*
+  name: Tick
+  href: api-host/Noname.GameHost.GameSnapshotBase.html#Noname_GameHost_GameSnapshotBase_Tick_
+  commentId: Overload:Noname.GameHost.GameSnapshotBase.Tick
+  isSpec: "True"
+  fullName: Noname.GameHost.GameSnapshotBase.Tick
+  nameWithType: GameSnapshotBase.Tick
+- uid: Noname.GameHost.IGameHost`4
+  name: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  href: api-host/Noname.GameHost.IGameHost-4.html
+  commentId: T:Noname.GameHost.IGameHost`4
+  name.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+- uid: Noname.GameHost.IGameHost`4.EventRaised
+  name: EventRaised
+  href: api-host/Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_EventRaised
+  commentId: E:Noname.GameHost.IGameHost`4.EventRaised
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+- uid: Noname.GameHost.IGameHost`4.FlushEvents
+  name: FlushEvents()
+  href: api-host/Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_FlushEvents
+  commentId: M:Noname.GameHost.IGameHost`4.FlushEvents
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+- uid: Noname.GameHost.IGameHost`4.FlushEvents*
+  name: FlushEvents
+  href: api-host/Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_FlushEvents_
+  commentId: Overload:Noname.GameHost.IGameHost`4.FlushEvents
+  isSpec: "True"
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.FlushEvents
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.FlushEvents
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents
+- uid: Noname.GameHost.IGameHost`4.ResultProduced
+  name: ResultProduced
+  href: api-host/Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_ResultProduced
+  commentId: E:Noname.GameHost.IGameHost`4.ResultProduced
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+- uid: Noname.GameHost.IGameHost`4.SendCommand(`0)
+  name: SendCommand(TCommand)
+  href: api-host/Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_SendCommand__0_
+  commentId: M:Noname.GameHost.IGameHost`4.SendCommand(`0)
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.SendCommand(TCommand)
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).SendCommand(TCommand)
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.SendCommand(TCommand)
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).SendCommand(TCommand)
+- uid: Noname.GameHost.IGameHost`4.SendCommand*
+  name: SendCommand
+  href: api-host/Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_SendCommand_
+  commentId: Overload:Noname.GameHost.IGameHost`4.SendCommand
+  isSpec: "True"
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.SendCommand
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).SendCommand
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.SendCommand
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).SendCommand
+- uid: Noname.GameHost.IGameHost`4.StartSimulation
+  name: StartSimulation()
+  href: api-host/Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StartSimulation
+  commentId: M:Noname.GameHost.IGameHost`4.StartSimulation
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+- uid: Noname.GameHost.IGameHost`4.StartSimulation*
+  name: StartSimulation
+  href: api-host/Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StartSimulation_
+  commentId: Overload:Noname.GameHost.IGameHost`4.StartSimulation
+  isSpec: "True"
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.StartSimulation
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.StartSimulation
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation
+- uid: Noname.GameHost.IGameHost`4.StopSimulation
+  name: StopSimulation()
+  href: api-host/Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StopSimulation
+  commentId: M:Noname.GameHost.IGameHost`4.StopSimulation
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+- uid: Noname.GameHost.IGameHost`4.StopSimulation*
+  name: StopSimulation
+  href: api-host/Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StopSimulation_
+  commentId: Overload:Noname.GameHost.IGameHost`4.StopSimulation
+  isSpec: "True"
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.StopSimulation
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.StopSimulation
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation
+- uid: Noname.GameHost.IRandomSource
+  name: IRandomSource
+  href: api-host/Noname.GameHost.IRandomSource.html
+  commentId: T:Noname.GameHost.IRandomSource
+  fullName: Noname.GameHost.IRandomSource
+  nameWithType: IRandomSource
+- uid: Noname.GameHost.IRandomSource.NextFloat
+  name: NextFloat()
+  href: api-host/Noname.GameHost.IRandomSource.html#Noname_GameHost_IRandomSource_NextFloat
+  commentId: M:Noname.GameHost.IRandomSource.NextFloat
+  fullName: Noname.GameHost.IRandomSource.NextFloat()
+  nameWithType: IRandomSource.NextFloat()
+- uid: Noname.GameHost.IRandomSource.NextFloat*
+  name: NextFloat
+  href: api-host/Noname.GameHost.IRandomSource.html#Noname_GameHost_IRandomSource_NextFloat_
+  commentId: Overload:Noname.GameHost.IRandomSource.NextFloat
+  isSpec: "True"
+  fullName: Noname.GameHost.IRandomSource.NextFloat
+  nameWithType: IRandomSource.NextFloat
+- uid: Noname.GameHost.IRandomSource.NextInt(System.Int32,System.Int32)
+  name: NextInt(int, int)
+  href: api-host/Noname.GameHost.IRandomSource.html#Noname_GameHost_IRandomSource_NextInt_System_Int32_System_Int32_
+  commentId: M:Noname.GameHost.IRandomSource.NextInt(System.Int32,System.Int32)
+  name.vb: NextInt(Integer, Integer)
+  fullName: Noname.GameHost.IRandomSource.NextInt(int, int)
+  fullName.vb: Noname.GameHost.IRandomSource.NextInt(Integer, Integer)
+  nameWithType: IRandomSource.NextInt(int, int)
+  nameWithType.vb: IRandomSource.NextInt(Integer, Integer)
+- uid: Noname.GameHost.IRandomSource.NextInt*
+  name: NextInt
+  href: api-host/Noname.GameHost.IRandomSource.html#Noname_GameHost_IRandomSource_NextInt_
+  commentId: Overload:Noname.GameHost.IRandomSource.NextInt
+  isSpec: "True"
+  fullName: Noname.GameHost.IRandomSource.NextInt
+  nameWithType: IRandomSource.NextInt
 - uid: Platformer.GameAbilitySystem
   name: Platformer.GameAbilitySystem
   href: api-plugin/Platformer.GameAbilitySystem.html

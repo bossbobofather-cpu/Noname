@@ -17,6 +17,8 @@ items:
   nameWithType: GameplayTagUtility
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagUtility
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: >-
     게임플레이 태그 문자열 유틸리티입니다 (순수 C#).
@@ -47,6 +49,8 @@ items:
   nameWithType: GameplayTagUtility.IsValidTagString(string)
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagUtility.IsValidTagString(string)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static bool IsValidTagString(string value)
@@ -71,6 +75,8 @@ items:
   nameWithType: GameplayTagUtility.EnumerateParents(string)
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagUtility.EnumerateParents(string)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static IEnumerable<string> EnumerateParents(string value)
@@ -95,6 +101,8 @@ items:
   nameWithType: GameplayTagUtility.EnumerateTagAndParents(string)
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagUtility.EnumerateTagAndParents(string)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static IEnumerable<string> EnumerateTagAndParents(string value)
@@ -119,6 +127,8 @@ items:
   nameWithType: GameplayTagUtility.IsDescendant(string, string)
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagUtility.IsDescendant(string, string)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static bool IsDescendant(string child, string parent)
@@ -145,6 +155,8 @@ items:
   nameWithType: GameplayTagUtility.Fnv1a32(string)
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagUtility.Fnv1a32(string)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static int Fnv1a32(string value)

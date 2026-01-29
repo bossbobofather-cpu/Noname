@@ -21,6 +21,8 @@ items:
   nameWithType: Noname.GameAbilitySystem.Presentation
   fullName: Noname.GameAbilitySystem.Presentation
   type: Namespace
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
 references:
 - uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition
   commentId: T:Noname.GameAbilitySystem.Presentation.AttributeDefinition
@@ -29,26 +31,12 @@ references:
   name: AttributeDefinition
   nameWithType: AttributeDefinition
   fullName: Noname.GameAbilitySystem.Presentation.AttributeDefinition
-- uid: Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin
-  commentId: T:Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin
-  href: Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin.html
-  name: GameAbilitySystemPlugin
-  nameWithType: GameAbilitySystemPlugin
-  fullName: Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin
-- uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
-  commentId: T:Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
-  parent: Noname.GameAbilitySystem.Presentation
-  href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html
-  name: DomainConversionExtensions
-  nameWithType: DomainConversionExtensions
-  fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
-- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
-  commentId: T:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
-  parent: Noname.GameAbilitySystem.Presentation
-  href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html
-  name: GameplayAbilityConfig
-  nameWithType: GameplayAbilityConfig
-  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+- uid: Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute
+  commentId: T:Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute
+  href: Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute.html
+  name: ReadOnlyAttribute
+  nameWithType: ReadOnlyAttribute
+  fullName: Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute
 - uid: Noname.GameAbilitySystem.Presentation.GameplayConfig
   commentId: T:Noname.GameAbilitySystem.Presentation.GameplayConfig
   parent: Noname.GameAbilitySystem.Presentation
@@ -63,13 +51,6 @@ references:
   name: GameplayEffectConfig
   nameWithType: GameplayEffectConfig
   fullName: Noname.GameAbilitySystem.Presentation.GameplayEffectConfig
-- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
-  commentId: T:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
-  parent: Noname.GameAbilitySystem.Presentation
-  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html
-  name: GameplayTagContainerView
-  nameWithType: GameplayTagContainerView
-  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
 - uid: Noname.GameAbilitySystem.Presentation.GameplayTagRegistry
   commentId: T:Noname.GameAbilitySystem.Presentation.GameplayTagRegistry
   parent: Noname.GameAbilitySystem.Presentation
@@ -77,18 +58,39 @@ references:
   name: GameplayTagRegistry
   nameWithType: GameplayTagRegistry
   fullName: Noname.GameAbilitySystem.Presentation.GameplayTagRegistry
+- uid: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+  commentId: T:Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+  parent: Noname.GameAbilitySystem.Presentation
+  href: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.html
+  name: DomainConversionExtensions
+  nameWithType: DomainConversionExtensions
+  fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
+- uid: Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin
+  commentId: T:Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin
+  href: Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin.html
+  name: GameAbilitySystemPlugin
+  nameWithType: GameAbilitySystemPlugin
+  fullName: Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin
+- uid: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  commentId: T:Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+  parent: Noname.GameAbilitySystem.Presentation
+  href: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView.html
+  name: GameplayTagContainerView
+  nameWithType: GameplayTagContainerView
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
+- uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+  commentId: T:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
+  parent: Noname.GameAbilitySystem.Presentation
+  href: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig.html
+  name: GameplayAbilityConfig
+  nameWithType: GameplayAbilityConfig
+  fullName: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
 - uid: Noname.GameAbilitySystem.Presentation.SystemMessageBus
   commentId: T:Noname.GameAbilitySystem.Presentation.SystemMessageBus
   href: Noname.GameAbilitySystem.Presentation.SystemMessageBus.html
   name: SystemMessageBus
   nameWithType: SystemMessageBus
   fullName: Noname.GameAbilitySystem.Presentation.SystemMessageBus
-- uid: Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute
-  commentId: T:Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute
-  href: Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute.html
-  name: ReadOnlyAttribute
-  nameWithType: ReadOnlyAttribute
-  fullName: Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute
 - uid: Noname.GameAbilitySystem.Presentation
   commentId: N:Noname.GameAbilitySystem.Presentation
   href: Noname.html

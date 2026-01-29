@@ -18,6 +18,8 @@ items:
   nameWithType: AttributeSet
   fullName: Noname.GameAbilitySystem.Domain.AttributeSet
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: >-
     속성 집합을 관리합니다 (순수 C# 모델).
@@ -47,6 +49,8 @@ items:
   nameWithType: AttributeSet.Values
   fullName: Noname.GameAbilitySystem.Domain.AttributeSet.Values
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 모든 속성 값을 반환합니다.
   example: []
@@ -68,6 +72,8 @@ items:
   nameWithType: AttributeSet.SetAttribute(AttributeId, float, float, float)
   fullName: Noname.GameAbilitySystem.Domain.AttributeSet.SetAttribute(Noname.GameAbilitySystem.Domain.AttributeId, float, float, float)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 속성을 추가하거나 업데이트합니다.
   example: []
@@ -98,6 +104,8 @@ items:
   nameWithType: AttributeSet.TryGet(AttributeId, out AttributeValue)
   fullName: Noname.GameAbilitySystem.Domain.AttributeSet.TryGet(Noname.GameAbilitySystem.Domain.AttributeId, out Noname.GameAbilitySystem.Domain.AttributeValue)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 식별자로 값을 조회합니다.
   example: []
@@ -126,6 +134,8 @@ items:
   nameWithType: AttributeSet.Set(AttributeId, float)
   fullName: Noname.GameAbilitySystem.Domain.AttributeSet.Set(Noname.GameAbilitySystem.Domain.AttributeId, float)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 속성 값을 설정합니다.
   example: []
@@ -152,6 +162,8 @@ items:
   nameWithType: AttributeSet.Get(AttributeId)
   fullName: Noname.GameAbilitySystem.Domain.AttributeSet.Get(Noname.GameAbilitySystem.Domain.AttributeId)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 속성 값을 가져옵니다. 없으면 0을 반환합니다.
   example: []
@@ -175,6 +187,8 @@ items:
   nameWithType: AttributeSet.Clear()
   fullName: Noname.GameAbilitySystem.Domain.AttributeSet.Clear()
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 모든 속성을 제거합니다.
   example: []

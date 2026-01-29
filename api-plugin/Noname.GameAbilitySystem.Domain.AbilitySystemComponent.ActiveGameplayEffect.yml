@@ -15,6 +15,8 @@ items:
   nameWithType: AbilitySystemComponent.ActiveGameplayEffect
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect
   type: Struct
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public struct AbilitySystemComponent.ActiveGameplayEffect
@@ -37,6 +39,8 @@ items:
   nameWithType: AbilitySystemComponent.ActiveGameplayEffect.EffectUid
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect.EffectUid
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public long EffectUid
@@ -54,6 +58,8 @@ items:
   nameWithType: AbilitySystemComponent.ActiveGameplayEffect.Effect
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect.Effect
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public GameplayEffect Effect
@@ -71,6 +77,8 @@ items:
   nameWithType: AbilitySystemComponent.ActiveGameplayEffect.EndTime
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveGameplayEffect.EndTime
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public float EndTime

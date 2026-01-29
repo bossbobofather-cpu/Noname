@@ -16,6 +16,8 @@ items:
   nameWithType: GameplayAbilitySpec
   fullName: Noname.GameAbilitySystem.GameplayAbilitySpec
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem
   example: []
   syntax:
@@ -41,6 +43,8 @@ items:
   nameWithType: GameplayAbilitySpec.Ability
   fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.Ability
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem
   syntax:
     content: public GameplayAbility Ability
@@ -58,6 +62,8 @@ items:
   nameWithType: GameplayAbilitySpec.Level
   fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.Level
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem
   syntax:
     content: public int Level
@@ -75,6 +81,8 @@ items:
   nameWithType: GameplayAbilitySpec.ActiveCount
   fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.ActiveCount
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem
   syntax:
     content: public int ActiveCount
@@ -92,6 +100,8 @@ items:
   nameWithType: GameplayAbilitySpec.Handle
   fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.Handle
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem
   syntax:
     content: public FGameplayAbilitySpecHandle Handle

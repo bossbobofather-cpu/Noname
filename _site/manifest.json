@@ -12,6 +12,327 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameCommandBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameCommandBase",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameCommandBase.yml\" sourcestartlinenumber=\"1\">커맨드 요청의 기본 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameCommandOutcome-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameCommandOutcome-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameCommandOutcome<TResult, TEvent>",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameCommandOutcome-2.yml\" sourcestartlinenumber=\"1\">커맨드 처리 결과와 전/후 이벤트를 묶어 전달하는 구조체입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameCommandResultBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameCommandResultBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameCommandResultBase",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameCommandResultBase.yml\" sourcestartlinenumber=\"1\">커맨드 처리 결과의 기본 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEvent.GameEventBus.Scope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEvent.GameEventBus.Scope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEvent.GameEventBus.Scope",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEvent.GameEventBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEvent.GameEventBus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEvent.GameEventBus",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameEvent.GameEventBus.yml\" sourcestartlinenumber=\"1\">전역/씬 스코프를 함께 제공하는 게임 이벤트 버스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEvent.GameEventContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEvent.GameEventContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEvent.GameEventContext",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameEvent.GameEventContext.yml\" sourcestartlinenumber=\"1\">게임 이벤트의 기본 컨텍스트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEvent.GameEventHub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEvent.GameEventHub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEvent.GameEventHub",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameEvent.GameEventHub.yml\" sourcestartlinenumber=\"1\">전역/씬 이벤트 버스에 대한 간단 접근자입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEvent.GameHostCommandResultEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEvent.GameHostCommandResultEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEvent.GameHostCommandResultEvent",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameEvent.GameHostCommandResultEvent.yml\" sourcestartlinenumber=\"1\">호스트 커맨드 처리 결과를 전달하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEvent.GameHostEventRaisedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEvent.GameHostEventRaisedEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEvent.GameHostEventRaisedEvent",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameEvent.GameHostEventRaisedEvent.yml\" sourcestartlinenumber=\"1\">호스트에서 발생한 이벤트를 전달하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEvent.GameUIContextSupplyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEvent.GameUIContextSupplyEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEvent.GameUIContextSupplyEvent",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameEvent.GameUIContextSupplyEvent.yml\" sourcestartlinenumber=\"1\">UI 컨텍스트를 전달하는 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEvent.GlobalGameEventContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEvent.GlobalGameEventContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEvent.GlobalGameEventContext",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameEvent.GlobalGameEventContext.yml\" sourcestartlinenumber=\"1\">전역 스코프에서 처리되는 이벤트 컨텍스트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEvent.IEventBus-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEvent.IEventBus-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEvent.IEventBus<TEventBase>",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameEvent.IEventBus-1.yml\" sourcestartlinenumber=\"1\">이벤트 버스 공용 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEvent.SceneGameEventContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEvent.SceneGameEventContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEvent.SceneGameEventContext",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameEvent.SceneGameEventContext.yml\" sourcestartlinenumber=\"1\">씬 스코프에서 처리되는 이벤트 컨텍스트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEvent.UIEventContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEvent.UIEventContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEvent.UIEventContext",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameEvent.UIEventContext.yml\" sourcestartlinenumber=\"1\">UI 이벤트 컨텍스트 베이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEvent.UIEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEvent.UIEventType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEvent.UIEventType",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameEvent.UIEventType.yml\" sourcestartlinenumber=\"1\">UI 이벤트 종류입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEvent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameEventBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameEventBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameEventBase",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameEventBase.yml\" sourcestartlinenumber=\"1\">게임 이벤트의 기본 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameHostBase-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameHostBase-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameHostBase-4.yml\" sourcestartlinenumber=\"1\">게임 호스트 기본 클래스입니다.\n서버/호스트 시뮬레이션을 관리하며 스레드 기반 커맨드 처리,\n이벤트 디스패치, 스냅샷 생성을 제공합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.GameSnapshotBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.GameSnapshotBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.GameSnapshotBase",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.GameSnapshotBase.yml\" sourcestartlinenumber=\"1\">게임 스냅샷의 기본 타입입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.IGameHost-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.IGameHost-4.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.IGameHost-4.yml\" sourcestartlinenumber=\"1\">외부에서 사용할 커맨드 전송 버스입니다. //View에 제공할 내용만</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.IRandomSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.IRandomSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost.IRandomSource",
+      "Summary": "<p sourcefile=\"api-host/Noname.GameHost.IRandomSource.yml\" sourcestartlinenumber=\"1\">호스트에서 사용할 랜덤 소스 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-host/Noname.GameHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/Noname.GameHost.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameHost",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api-host/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-host/toc.html"
+        },
+        ".json": {
+          "relative_path": "api-host/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api-noname/Common.Interface.IAnimEventReceiver.yml",
       "output": {
         ".html": {

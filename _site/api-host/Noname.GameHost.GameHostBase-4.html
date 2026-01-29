@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GameHostBase&lt;TCommand, TResult, TEvent, TSnapshot&gt; | Noname Docs </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class GameHostBase&lt;TCommand, TResult, TEvent, TSnapshot&gt; | Noname Docs ">
+    
+    <meta name="description" content="게임 호스트 기본 클래스입니다. 서버/호스트 시뮬레이션을 관리하며 스레드 기반 커맨드 처리, 이벤트 디스패치, 스냅샷 생성을 제공합니다.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Noname.GameHost.GameHostBase`4">
+
+
+
+  <h1 id="Noname_GameHost_GameHostBase_4" data-uid="Noname.GameHost.GameHostBase`4" class="text-break">Class GameHostBase&lt;TCommand, TResult, TEvent, TSnapshot&gt;</h1>
+  <div class="markdown level0 summary"><p>게임 호스트 기본 클래스입니다.
+서버/호스트 시뮬레이션을 관리하며 스레드 기반 커맨드 처리,
+이벤트 디스패치, 스냅샷 생성을 제공합니다.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">GameHostBase&lt;TCommand, TResult, TEvent, TSnapshot&gt;</span></div>
+      <div class="level2"><a class="xref" href="../api-noname/MyProject.DefenseGame.Application.DefenseGameHost.html">DefenseGameHost</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Noname.GameHost.IGameHost-4.html">IGameHost</a>&lt;TCommand, TResult, TEvent, TSnapshot&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Noname.html">Noname</a>.<a class="xref" href="Noname.GameHost.html">GameHost</a></h6>
+  <h6><strong>Assembly</strong>: Noname.GameHost.Plugin.dll</h6>
+  <h5 id="Noname_GameHost_GameHostBase_4_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class GameHostBase&lt;TCommand, TResult, TEvent, TSnapshot&gt; : IGameHost&lt;TCommand, TResult, TEvent, TSnapshot&gt;, IDisposable where TCommand : GameCommandBase where TResult : GameCommandResultBase where TEvent : GameEventBase where TSnapshot : GameSnapshotBase</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TCommand</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TEvent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSnapshot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_FixedStep_" data-uid="Noname.GameHost.GameHostBase`4.FixedStep*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_FixedStep" data-uid="Noname.GameHost.GameHostBase`4.FixedStep">FixedStep</h4>
+  <div class="markdown level1 summary"><p>고정 스텝 시간입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FixedStep { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_IsRunning_" data-uid="Noname.GameHost.GameHostBase`4.IsRunning*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_IsRunning" data-uid="Noname.GameHost.GameHostBase`4.IsRunning">IsRunning</h4>
+  <div class="markdown level1 summary"><p>실행 상태입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRunning { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_LoopException_" data-uid="Noname.GameHost.GameHostBase`4.LoopException*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_LoopException" data-uid="Noname.GameHost.GameHostBase`4.LoopException">LoopException</h4>
+  <div class="markdown level1 summary"><p>루프에서 발생한 예외입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Exception LoopException { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_MaxStepsPerTick_" data-uid="Noname.GameHost.GameHostBase`4.MaxStepsPerTick*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_MaxStepsPerTick" data-uid="Noname.GameHost.GameHostBase`4.MaxStepsPerTick">MaxStepsPerTick</h4>
+  <div class="markdown level1 summary"><p>틱당 최대 스텝 수입니다. Spiral of Death 방지를 위한 제한입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxStepsPerTick { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_SleepMilliseconds_" data-uid="Noname.GameHost.GameHostBase`4.SleepMilliseconds*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_SleepMilliseconds" data-uid="Noname.GameHost.GameHostBase`4.SleepMilliseconds">SleepMilliseconds</h4>
+  <div class="markdown level1 summary"><p>루프 대기 시간(ms)입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SleepMilliseconds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_SnapshotInterval_" data-uid="Noname.GameHost.GameHostBase`4.SnapshotInterval*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_SnapshotInterval" data-uid="Noname.GameHost.GameHostBase`4.SnapshotInterval">SnapshotInterval</h4>
+  <div class="markdown level1 summary"><p>스냅샷 생성 간격(초)입니다. 0이면 매 틱 생성합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SnapshotInterval { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_StopTimeoutMilliseconds_" data-uid="Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_StopTimeoutMilliseconds" data-uid="Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds">StopTimeoutMilliseconds</h4>
+  <div class="markdown level1 summary"><p>종료 대기 제한(ms)입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int StopTimeoutMilliseconds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_Tick_" data-uid="Noname.GameHost.GameHostBase`4.Tick*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_Tick" data-uid="Noname.GameHost.GameHostBase`4.Tick">Tick</h4>
+  <div class="markdown level1 summary"><p>현재 호스트 틱입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Tick { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_BuildSnapshotInternal_" data-uid="Noname.GameHost.GameHostBase`4.BuildSnapshotInternal*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_BuildSnapshotInternal" data-uid="Noname.GameHost.GameHostBase`4.BuildSnapshotInternal">BuildSnapshotInternal()</h4>
+  <div class="markdown level1 summary"><p>현재 게임 상태의 스냅샷을 생성합니다(루프 스레드에서 호출).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TSnapshot BuildSnapshotInternal()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TSnapshot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_CreateErrorEvent_" data-uid="Noname.GameHost.GameHostBase`4.CreateErrorEvent*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_CreateErrorEvent__0_System_Exception_" data-uid="Noname.GameHost.GameHostBase`4.CreateErrorEvent(`0,System.Exception)">CreateErrorEvent(TCommand, Exception)</h4>
+  <div class="markdown level1 summary"><p>커맨드 처리 실패 시 기본 에러 이벤트를 생성합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual TEvent CreateErrorEvent(TCommand command, Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TCommand</span></td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_Dispose_" data-uid="Noname.GameHost.GameHostBase`4.Dispose*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_Dispose" data-uid="Noname.GameHost.GameHostBase`4.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
+  </div>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_FlushEvents_" data-uid="Noname.GameHost.GameHostBase`4.FlushEvents*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_FlushEvents" data-uid="Noname.GameHost.GameHostBase`4.FlushEvents">FlushEvents()</h4>
+  <div class="markdown level1 summary"><p>메인 스레드에서 결과/이벤트를 디스패치합니다.
+Unity Update에서 호출해야 합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FlushEvents()</code></pre>
+  </div>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_HandleCommand_" data-uid="Noname.GameHost.GameHostBase`4.HandleCommand*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_HandleCommand__0_" data-uid="Noname.GameHost.GameHostBase`4.HandleCommand(`0)">HandleCommand(TCommand)</h4>
+  <div class="markdown level1 summary"><p>커맨드를 처리하고 결과/이벤트를 반환합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract GameCommandOutcome&lt;TResult, TEvent&gt; HandleCommand(TCommand command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TCommand</span></td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Noname.GameHost.GameCommandOutcome-2.html">GameCommandOutcome</a>&lt;TResult, TEvent&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_HandleInternalEvent_" data-uid="Noname.GameHost.GameHostBase`4.HandleInternalEvent*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_HandleInternalEvent__2_" data-uid="Noname.GameHost.GameHostBase`4.HandleInternalEvent(`2)">HandleInternalEvent(TEvent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void HandleInternalEvent(TEvent eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEvent</span></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_OnTick_" data-uid="Noname.GameHost.GameHostBase`4.OnTick*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_OnTick_System_Single_" data-uid="Noname.GameHost.GameHostBase`4.OnTick(System.Single)">OnTick(float)</h4>
+  <div class="markdown level1 summary"><p>매 스텝 호출되어 게임 상태를 갱신합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void OnTick(float deltaSeconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">deltaSeconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_PublishEvent_" data-uid="Noname.GameHost.GameHostBase`4.PublishEvent*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_PublishEvent__2_" data-uid="Noname.GameHost.GameHostBase`4.PublishEvent(`2)">PublishEvent(TEvent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void PublishEvent(TEvent eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEvent</span></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_PublishResult_" data-uid="Noname.GameHost.GameHostBase`4.PublishResult*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_PublishResult__1_" data-uid="Noname.GameHost.GameHostBase`4.PublishResult(`1)">PublishResult(TResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void PublishResult(TResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TResult</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_SendCommand_" data-uid="Noname.GameHost.GameHostBase`4.SendCommand*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_SendCommand__0_" data-uid="Noname.GameHost.GameHostBase`4.SendCommand(`0)">SendCommand(TCommand)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendCommand(TCommand command)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TCommand</span></td>
+        <td><span class="parametername">command</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_StartSimulation_" data-uid="Noname.GameHost.GameHostBase`4.StartSimulation*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_StartSimulation" data-uid="Noname.GameHost.GameHostBase`4.StartSimulation">StartSimulation()</h4>
+  <div class="markdown level1 summary"><p>백그라운드 스레드에서 시뮬레이션 루프를 시작합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartSimulation()</code></pre>
+  </div>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_StopSimulation_" data-uid="Noname.GameHost.GameHostBase`4.StopSimulation*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_StopSimulation" data-uid="Noname.GameHost.GameHostBase`4.StopSimulation">StopSimulation()</h4>
+  <div class="markdown level1 summary"><p>시뮬레이션 루프를 중지하고 스레드 종료를 대기합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopSimulation()</code></pre>
+  </div>
+
+
+  <a id="Noname_GameHost_GameHostBase_4_ThrowIfDisposed_" data-uid="Noname.GameHost.GameHostBase`4.ThrowIfDisposed*"></a>
+  <h4 id="Noname_GameHost_GameHostBase_4_ThrowIfDisposed" data-uid="Noname.GameHost.GameHostBase`4.ThrowIfDisposed">ThrowIfDisposed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ThrowIfDisposed()</code></pre>
+  </div>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="Noname_GameHost_GameHostBase_4_EventRaised" data-uid="Noname.GameHost.GameHostBase`4.EventRaised">EventRaised</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;TEvent&gt; EventRaised</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;TEvent&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Noname_GameHost_GameHostBase_4_ResultProduced" data-uid="Noname.GameHost.GameHostBase`4.ResultProduced">ResultProduced</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;TResult&gt; ResultProduced</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;TResult&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Noname.GameHost.IGameHost-4.html">IGameHost&lt;TCommand, TResult, TEvent, TSnapshot&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

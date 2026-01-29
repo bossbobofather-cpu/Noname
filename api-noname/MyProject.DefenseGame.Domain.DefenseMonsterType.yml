@@ -14,6 +14,8 @@ items:
   nameWithType: DefenseMonsterType
   fullName: MyProject.DefenseGame.Domain.DefenseMonsterType
   type: Enum
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 몬스터 타입입니다.
   example: []
@@ -31,6 +33,8 @@ items:
   nameWithType: DefenseMonsterType.Normal
   fullName: MyProject.DefenseGame.Domain.DefenseMonsterType.Normal
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: Normal = 0
@@ -47,6 +51,8 @@ items:
   nameWithType: DefenseMonsterType.Boss
   fullName: MyProject.DefenseGame.Domain.DefenseMonsterType.Boss
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: Boss = 1

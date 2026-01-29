@@ -16,6 +16,8 @@ items:
   nameWithType: DefenseSessionPhase
   fullName: MyProject.DefenseGame.Application.DefenseSessionPhase
   type: Enum
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 디펜스 게임 세션 상태입니다.
   example: []
@@ -33,6 +35,8 @@ items:
   nameWithType: DefenseSessionPhase.None
   fullName: MyProject.DefenseGame.Application.DefenseSessionPhase.None
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: None = 0
@@ -49,6 +53,8 @@ items:
   nameWithType: DefenseSessionPhase.Playing
   fullName: MyProject.DefenseGame.Application.DefenseSessionPhase.Playing
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: Playing = 1
@@ -65,6 +71,8 @@ items:
   nameWithType: DefenseSessionPhase.LevelUpSelection
   fullName: MyProject.DefenseGame.Application.DefenseSessionPhase.LevelUpSelection
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: LevelUpSelection = 2
@@ -81,6 +89,8 @@ items:
   nameWithType: DefenseSessionPhase.GameOver
   fullName: MyProject.DefenseGame.Application.DefenseSessionPhase.GameOver
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: GameOver = 3

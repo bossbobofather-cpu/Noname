@@ -13,6 +13,8 @@ items:
   nameWithType: GameAbilitySystemPlugin
   fullName: Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Presentation
   summary: 플러그인 버전 정보를 제공합니다.
   example: []
@@ -40,6 +42,8 @@ items:
   nameWithType: GameAbilitySystemPlugin.Version
   fullName: Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin.Version
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Presentation
   summary: 플러그인 버전 문자열입니다.
   example: []

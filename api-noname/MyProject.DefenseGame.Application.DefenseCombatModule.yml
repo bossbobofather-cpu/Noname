@@ -14,6 +14,8 @@ items:
   nameWithType: DefenseCombatModule
   fullName: MyProject.DefenseGame.Application.DefenseCombatModule
   type: Class
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 전투를 처리하는 모듈입니다.
   example: []
@@ -40,6 +42,8 @@ items:
   nameWithType: DefenseCombatModule.DefenseCombatModule(DefenseHostState, DefenseHostConfig, Action<DefenseHostEvent>)
   fullName: MyProject.DefenseGame.Application.DefenseCombatModule.DefenseCombatModule(MyProject.DefenseGame.Application.DefenseHostState, MyProject.DefenseGame.Domain.DefenseHostConfig, System.Action<MyProject.DefenseGame.Application.DefenseHostEvent>)
   type: Constructor
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public DefenseCombatModule(DefenseHostState state, DefenseHostConfig config, Action<DefenseHostEvent> publishEvent)
@@ -66,6 +70,8 @@ items:
   nameWithType: DefenseCombatModule.Tick(float, long)
   fullName: MyProject.DefenseGame.Application.DefenseCombatModule.Tick(float, long)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 매 틱마다 호출되어 전투를 처리합니다.
   example: []

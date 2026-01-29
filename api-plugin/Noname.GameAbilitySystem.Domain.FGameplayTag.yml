@@ -20,6 +20,8 @@ items:
   nameWithType: FGameplayTag
   fullName: Noname.GameAbilitySystem.Domain.FGameplayTag
   type: Struct
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: >-
     게임플레이 태그 구조체입니다 (순수 C# 모델).
@@ -56,6 +58,8 @@ items:
   nameWithType: FGameplayTag.FGameplayTag(string)
   fullName: Noname.GameAbilitySystem.Domain.FGameplayTag.FGameplayTag(string)
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 문자열 값을 기반으로 태그를 생성합니다.
   example: []
@@ -81,6 +85,8 @@ items:
   nameWithType: FGameplayTag.Value
   fullName: Noname.GameAbilitySystem.Domain.FGameplayTag.Value
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 태그 문자열입니다.
   example: []
@@ -102,6 +108,8 @@ items:
   nameWithType: FGameplayTag.Hash
   fullName: Noname.GameAbilitySystem.Domain.FGameplayTag.Hash
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 태그 해시 값입니다.
   example: []
@@ -123,6 +131,8 @@ items:
   nameWithType: FGameplayTag.IsValid
   fullName: Noname.GameAbilitySystem.Domain.FGameplayTag.IsValid
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 태그 문자열이 유효한지 여부입니다.
   example: []
@@ -144,6 +154,8 @@ items:
   nameWithType: FGameplayTag.Equals(FGameplayTag)
   fullName: Noname.GameAbilitySystem.Domain.FGameplayTag.Equals(Noname.GameAbilitySystem.Domain.FGameplayTag)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 다른 태그와 동일한지 비교합니다.
   example: []
@@ -171,6 +183,8 @@ items:
   nameWithType: FGameplayTag.Equals(object)
   fullName: Noname.GameAbilitySystem.Domain.FGameplayTag.Equals(object)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 객체 동일 여부를 비교합니다.
   example: []
@@ -200,6 +214,8 @@ items:
   nameWithType: FGameplayTag.GetHashCode()
   fullName: Noname.GameAbilitySystem.Domain.FGameplayTag.GetHashCode()
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 해시 코드를 반환합니다.
   example: []
@@ -222,6 +238,8 @@ items:
   nameWithType: FGameplayTag.ToString()
   fullName: Noname.GameAbilitySystem.Domain.FGameplayTag.ToString()
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 문자열 표현을 반환합니다.
   example: []

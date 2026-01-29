@@ -14,6 +14,8 @@ items:
   nameWithType: MyProject.DefenseGame.Domain.AI
   fullName: MyProject.DefenseGame.Domain.AI
   type: Namespace
+  assemblies:
+  - Assembly-CSharp
 references:
 - uid: MyProject.DefenseGame.Domain.AI.IDefenseAI
   commentId: T:MyProject.DefenseGame.Domain.AI.IDefenseAI
@@ -22,18 +24,18 @@ references:
   name: IDefenseAI
   nameWithType: IDefenseAI
   fullName: MyProject.DefenseGame.Domain.AI.IDefenseAI
-- uid: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
-  commentId: T:MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
-  href: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.html
-  name: MonsterAutoBattleAI
-  nameWithType: MonsterAutoBattleAI
-  fullName: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
 - uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
   commentId: T:MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
   href: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.html
   name: PlayerAutoBattleAI
   nameWithType: PlayerAutoBattleAI
   fullName: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
+- uid: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
+  commentId: T:MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
+  href: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.html
+  name: MonsterAutoBattleAI
+  nameWithType: MonsterAutoBattleAI
+  fullName: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
 - uid: MyProject.DefenseGame.Domain.AI
   commentId: N:MyProject.DefenseGame.Domain.AI
   href: MyProject.html

@@ -19,6 +19,8 @@ items:
   nameWithType: FGameplayAbilitySpecHandle
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
   type: Struct
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem
   summary: 게임 플레이 능력 사양 핸들
   example: []
@@ -43,6 +45,8 @@ items:
   nameWithType: FGameplayAbilitySpecHandle.Invalid
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.Invalid
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem
   syntax:
     content: public static readonly FGameplayAbilitySpecHandle Invalid
@@ -60,6 +64,8 @@ items:
   nameWithType: FGameplayAbilitySpecHandle.Id
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.Id
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem
   syntax:
     content: public int Id
@@ -77,18 +83,17 @@ items:
   nameWithType: FGameplayAbilitySpecHandle.Equals(FGameplayAbilitySpecHandle)
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.Equals(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem
-  summary: Indicates whether the current object is equal to another object of the same type.
   example: []
   syntax:
     content: public bool Equals(FGameplayAbilitySpecHandle other)
     parameters:
     - id: other
       type: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
-      description: An object to compare with this object.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function Equals(other As FGameplayAbilitySpecHandle) As Boolean
   overload: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.Equals*
   implements:
@@ -104,18 +109,17 @@ items:
   nameWithType: FGameplayAbilitySpecHandle.Equals(object)
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.Equals(object)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem
-  summary: Indicates whether this instance and a specified object are equal.
   example: []
   syntax:
     content: public override bool Equals(object obj)
     parameters:
     - id: obj
       type: System.Object
-      description: The object to compare with the current instance.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Overrides Function Equals(obj As Object) As Boolean
   overridden: System.ValueType.Equals(System.Object)
   overload: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.Equals*
@@ -133,14 +137,14 @@ items:
   nameWithType: FGameplayAbilitySpecHandle.GetHashCode()
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.GetHashCode()
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem
-  summary: Returns the hash code for this instance.
   example: []
   syntax:
     content: public override int GetHashCode()
     return:
       type: System.Int32
-      description: A 32-bit signed integer that is the hash code for this instance.
     content.vb: Public Overrides Function GetHashCode() As Integer
   overridden: System.ValueType.GetHashCode
   overload: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.GetHashCode*
@@ -155,6 +159,8 @@ items:
   nameWithType: FGameplayAbilitySpecHandle.operator ==(FGameplayAbilitySpecHandle, FGameplayAbilitySpecHandle)
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.operator ==(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle, Noname.GameAbilitySystem.FGameplayAbilitySpecHandle)
   type: Operator
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem
   syntax:
     content: public static bool operator ==(FGameplayAbilitySpecHandle a, FGameplayAbilitySpecHandle b)
@@ -181,6 +187,8 @@ items:
   nameWithType: FGameplayAbilitySpecHandle.operator !=(FGameplayAbilitySpecHandle, FGameplayAbilitySpecHandle)
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.operator !=(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle, Noname.GameAbilitySystem.FGameplayAbilitySpecHandle)
   type: Operator
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem
   syntax:
     content: public static bool operator !=(FGameplayAbilitySpecHandle a, FGameplayAbilitySpecHandle b)

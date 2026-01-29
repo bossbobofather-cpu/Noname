@@ -13,6 +13,8 @@ items:
   nameWithType: IEffectDurationPolicy
   fullName: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
   type: Interface
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public interface IEffectDurationPolicy
@@ -28,6 +30,8 @@ items:
   nameWithType: IEffectDurationPolicy.CalculateDuration(AbilitySystemComponent, ref float)
   fullName: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, ref float)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: float CalculateDuration(AbilitySystemComponent asc, ref float baseDuration)

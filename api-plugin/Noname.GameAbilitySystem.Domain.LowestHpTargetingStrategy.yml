@@ -15,6 +15,8 @@ items:
   nameWithType: LowestHpTargetingStrategy
   fullName: Noname.GameAbilitySystem.Domain.LowestHpTargetingStrategy
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 체력이 가장 낮은 적을 선택합니다.
   example: []
@@ -43,6 +45,8 @@ items:
   nameWithType: LowestHpTargetingStrategy.LowestHpTargetingStrategy(AttributeId)
   fullName: Noname.GameAbilitySystem.Domain.LowestHpTargetingStrategy.LowestHpTargetingStrategy(Noname.GameAbilitySystem.Domain.AttributeId)
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public LowestHpTargetingStrategy(AttributeId healthId)
@@ -65,6 +69,8 @@ items:
   nameWithType: LowestHpTargetingStrategy.LowestHpTargetingStrategy()
   fullName: Noname.GameAbilitySystem.Domain.LowestHpTargetingStrategy.LowestHpTargetingStrategy()
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public LowestHpTargetingStrategy()
@@ -84,6 +90,8 @@ items:
   nameWithType: LowestHpTargetingStrategy.FindTargets(AbilitySystemComponent, TargetContext)
   fullName: Noname.GameAbilitySystem.Domain.LowestHpTargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Noname.GameAbilitySystem.Domain.TargetContext)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   example: []
   syntax:

@@ -12,6 +12,8 @@ items:
   nameWithType: MyProject.DefenseGame.Presentation
   fullName: MyProject.DefenseGame.Presentation
   type: Namespace
+  assemblies:
+  - Assembly-CSharp
 references:
 - uid: MyProject.DefenseGame.Presentation.DefenseGameMode
   commentId: T:MyProject.DefenseGame.Presentation.DefenseGameMode

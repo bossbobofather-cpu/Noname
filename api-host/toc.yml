@@ -1,0 +1,71 @@
+### YamlMime:TableOfContent
+items:
+- uid: Noname.GameHost
+  name: Noname.GameHost
+  type: Namespace
+  items:
+  - uid: Noname.GameHost.GameCommandBase
+    name: GameCommandBase
+    type: Class
+  - uid: Noname.GameHost.GameCommandOutcome`2
+    name: GameCommandOutcome<TResult, TEvent>
+    type: Struct
+  - uid: Noname.GameHost.GameCommandResultBase
+    name: GameCommandResultBase
+    type: Class
+  - uid: Noname.GameHost.GameEventBase
+    name: GameEventBase
+    type: Class
+  - uid: Noname.GameHost.GameHostBase`4
+    name: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+    type: Class
+  - uid: Noname.GameHost.GameSnapshotBase
+    name: GameSnapshotBase
+    type: Class
+  - uid: Noname.GameHost.IGameHost`4
+    name: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+    type: Interface
+  - uid: Noname.GameHost.IRandomSource
+    name: IRandomSource
+    type: Interface
+- uid: Noname.GameHost.GameEvent
+  name: Noname.GameHost.GameEvent
+  type: Namespace
+  items:
+  - uid: Noname.GameHost.GameEvent.GameEventBus
+    name: GameEventBus
+    type: Class
+  - uid: Noname.GameHost.GameEvent.GameEventBus.Scope
+    name: GameEventBus.Scope
+    type: Class
+  - uid: Noname.GameHost.GameEvent.GameEventContext
+    name: GameEventContext
+    type: Class
+  - uid: Noname.GameHost.GameEvent.GameEventHub
+    name: GameEventHub
+    type: Class
+  - uid: Noname.GameHost.GameEvent.GameHostCommandResultEvent
+    name: GameHostCommandResultEvent
+    type: Class
+  - uid: Noname.GameHost.GameEvent.GameHostEventRaisedEvent
+    name: GameHostEventRaisedEvent
+    type: Class
+  - uid: Noname.GameHost.GameEvent.GameUIContextSupplyEvent
+    name: GameUIContextSupplyEvent
+    type: Class
+  - uid: Noname.GameHost.GameEvent.GlobalGameEventContext
+    name: GlobalGameEventContext
+    type: Class
+  - uid: Noname.GameHost.GameEvent.IEventBus`1
+    name: IEventBus<TEventBase>
+    type: Interface
+  - uid: Noname.GameHost.GameEvent.SceneGameEventContext
+    name: SceneGameEventContext
+    type: Class
+  - uid: Noname.GameHost.GameEvent.UIEventContext
+    name: UIEventContext
+    type: Class
+  - uid: Noname.GameHost.GameEvent.UIEventType
+    name: UIEventType
+    type: Enum
+memberLayout: SamePage

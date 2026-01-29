@@ -24,6 +24,8 @@ items:
   nameWithType: DefenseHostSnapshot
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot
   type: Class
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: >-
     디펜스 게임 호스트 상태를 저장하는 스냅샷입니다.
@@ -35,6 +37,15 @@ items:
     content.vb: Public NotInheritable Class DefenseHostSnapshot Inherits GameSnapshotBase
   inheritance:
   - System.Object
+  - Noname.GameHost.GameSnapshotBase
+  inheritedMembers:
+  - Noname.GameHost.GameSnapshotBase.Tick
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
 - uid: MyProject.DefenseGame.Application.DefenseHostSnapshot.SessionPhase
   commentId: P:MyProject.DefenseGame.Application.DefenseHostSnapshot.SessionPhase
   id: SessionPhase
@@ -46,6 +57,8 @@ items:
   nameWithType: DefenseHostSnapshot.SessionPhase
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot.SessionPhase
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public DefenseSessionPhase SessionPhase { get; }
@@ -65,6 +78,8 @@ items:
   nameWithType: DefenseHostSnapshot.PlayerUid
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot.PlayerUid
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public long PlayerUid { get; }
@@ -84,6 +99,8 @@ items:
   nameWithType: DefenseHostSnapshot.PlayerLevel
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot.PlayerLevel
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public int PlayerLevel { get; }
@@ -103,6 +120,8 @@ items:
   nameWithType: DefenseHostSnapshot.PlayerHp
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot.PlayerHp
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public int PlayerHp { get; }
@@ -122,6 +141,8 @@ items:
   nameWithType: DefenseHostSnapshot.PlayerMaxHp
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot.PlayerMaxHp
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public int PlayerMaxHp { get; }
@@ -141,6 +162,8 @@ items:
   nameWithType: DefenseHostSnapshot.KillCount
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot.KillCount
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public int KillCount { get; }
@@ -160,6 +183,8 @@ items:
   nameWithType: DefenseHostSnapshot.BossKillCount
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot.BossKillCount
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public int BossKillCount { get; }
@@ -179,6 +204,8 @@ items:
   nameWithType: DefenseHostSnapshot.AliveMonsterCount
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot.AliveMonsterCount
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public int AliveMonsterCount { get; }
@@ -198,6 +225,8 @@ items:
   nameWithType: DefenseHostSnapshot.ElapsedTime
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot.ElapsedTime
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public float ElapsedTime { get; }
@@ -217,6 +246,8 @@ items:
   nameWithType: DefenseHostSnapshot.IsGameOver
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot.IsGameOver
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public bool IsGameOver { get; }
@@ -236,6 +267,8 @@ items:
   nameWithType: DefenseHostSnapshot.IsDefeat
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot.IsDefeat
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public bool IsDefeat { get; }
@@ -255,6 +288,8 @@ items:
   nameWithType: DefenseHostSnapshot.DefenseHostSnapshot(long, DefenseSessionPhase, long, int, int, int, int, int, int, float, bool, bool)
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot.DefenseHostSnapshot(long, MyProject.DefenseGame.Application.DefenseSessionPhase, long, int, int, int, int, int, int, float, bool, bool)
   type: Constructor
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public DefenseHostSnapshot(long tick, DefenseSessionPhase sessionPhase, long playerUid, int playerLevel, int playerHp, int playerMaxHp, int killCount, int bossKillCount, int aliveMonsterCount, float elapsedTime, bool isGameOver, bool isDefeat)
@@ -330,6 +365,213 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: Noname.GameHost.GameSnapshotBase
+  commentId: T:Noname.GameHost.GameSnapshotBase
+  parent: Noname.GameHost
+  name: GameSnapshotBase
+  nameWithType: GameSnapshotBase
+  fullName: Noname.GameHost.GameSnapshotBase
+- uid: Noname.GameHost.GameSnapshotBase.Tick
+  commentId: P:Noname.GameHost.GameSnapshotBase.Tick
+  parent: Noname.GameHost.GameSnapshotBase
+  name: Tick
+  nameWithType: GameSnapshotBase.Tick
+  fullName: Noname.GameHost.GameSnapshotBase.Tick
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -337,6 +579,23 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Noname.GameHost
+  commentId: N:Noname.GameHost
+  name: Noname.GameHost
+  nameWithType: Noname.GameHost
+  fullName: Noname.GameHost
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+  spec.vb:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
 - uid: MyProject.DefenseGame.Application.DefenseHostSnapshot.SessionPhase*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseHostSnapshot.SessionPhase
   href: MyProject.DefenseGame.Application.DefenseHostSnapshot.html#MyProject_DefenseGame_Application_DefenseHostSnapshot_SessionPhase

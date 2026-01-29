@@ -13,6 +13,8 @@ items:
   nameWithType: ITargetingStrategy
   fullName: Noname.GameAbilitySystem.Domain.ITargetingStrategy
   type: Interface
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 타겟 선정 전략 인터페이스입니다.
   example: []
@@ -30,6 +32,8 @@ items:
   nameWithType: ITargetingStrategy.FindTargets(AbilitySystemComponent, TargetContext)
   fullName: Noname.GameAbilitySystem.Domain.ITargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Noname.GameAbilitySystem.Domain.TargetContext)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: TargetData FindTargets(AbilitySystemComponent owner, TargetContext context)

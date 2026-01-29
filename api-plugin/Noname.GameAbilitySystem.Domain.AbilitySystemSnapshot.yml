@@ -17,6 +17,8 @@ items:
   nameWithType: AbilitySystemSnapshot
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: >-
     AbilitySystem의 불변 스냅샷입니다 (순수 C# 모델).
@@ -48,6 +50,8 @@ items:
   nameWithType: AbilitySystemSnapshot.Attributes
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot.Attributes
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 속성 값 스냅샷입니다.
   example: []
@@ -69,6 +73,8 @@ items:
   nameWithType: AbilitySystemSnapshot.OwnedTags
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot.OwnedTags
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 소유한 태그 스냅샷입니다.
   example: []
@@ -90,6 +96,8 @@ items:
   nameWithType: AbilitySystemSnapshot.Abilities
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot.Abilities
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 스킬 목록 스냅샷입니다.
   example: []
@@ -111,6 +119,8 @@ items:
   nameWithType: AbilitySystemSnapshot.ActiveEffects
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot.ActiveEffects
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 활성 효과 스냅샷입니다.
   example: []
@@ -132,6 +142,8 @@ items:
   nameWithType: AbilitySystemSnapshot.AbilitySystemSnapshot(Dictionary<AttributeId, float>, List<FGameplayTag>, List<GameplayAbility>, List<ActiveGameplayEffectSnapshot>)
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot.AbilitySystemSnapshot(System.Collections.Generic.Dictionary<Noname.GameAbilitySystem.Domain.AttributeId, float>, System.Collections.Generic.List<Noname.GameAbilitySystem.Domain.FGameplayTag>, System.Collections.Generic.List<Noname.GameAbilitySystem.Domain.GameplayAbility>, System.Collections.Generic.List<Noname.GameAbilitySystem.Domain.ActiveGameplayEffectSnapshot>)
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public AbilitySystemSnapshot(Dictionary<AttributeId, float> attributes, List<FGameplayTag> ownedTags, List<GameplayAbility> abilites, List<ActiveGameplayEffectSnapshot> activeEffects)

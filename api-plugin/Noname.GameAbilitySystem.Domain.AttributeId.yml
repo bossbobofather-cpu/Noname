@@ -31,6 +31,8 @@ items:
   nameWithType: AttributeId
   fullName: Noname.GameAbilitySystem.Domain.AttributeId
   type: Struct
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 속성 식별자입니다 (순수 C# 구조체).
   example: []
@@ -52,6 +54,8 @@ items:
   nameWithType: AttributeId.Name
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Name
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public string Name { readonly get; set; }
@@ -71,6 +75,8 @@ items:
   nameWithType: AttributeId.AttributeId(string)
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttributeId(string)
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public AttributeId(string name)
@@ -93,18 +99,17 @@ items:
   nameWithType: AttributeId.Equals(object)
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Equals(object)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
-  summary: Indicates whether this instance and a specified object are equal.
   example: []
   syntax:
     content: public override bool Equals(object obj)
     parameters:
     - id: obj
       type: System.Object
-      description: The object to compare with the current instance.
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Overrides Function Equals(obj As Object) As Boolean
   overridden: System.ValueType.Equals(System.Object)
   overload: Noname.GameAbilitySystem.Domain.AttributeId.Equals*
@@ -122,14 +127,14 @@ items:
   nameWithType: AttributeId.GetHashCode()
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.GetHashCode()
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
-  summary: Returns the hash code for this instance.
   example: []
   syntax:
     content: public override int GetHashCode()
     return:
       type: System.Int32
-      description: A 32-bit signed integer that is the hash code for this instance.
     content.vb: Public Overrides Function GetHashCode() As Integer
   overridden: System.ValueType.GetHashCode
   overload: Noname.GameAbilitySystem.Domain.AttributeId.GetHashCode*
@@ -144,14 +149,14 @@ items:
   nameWithType: AttributeId.ToString()
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.ToString()
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
-  summary: Returns the fully qualified type name of this instance.
   example: []
   syntax:
     content: public override string ToString()
     return:
       type: System.String
-      description: The fully qualified type name.
     content.vb: Public Overrides Function ToString() As String
   overridden: System.ValueType.ToString
   overload: Noname.GameAbilitySystem.Domain.AttributeId.ToString*
@@ -166,6 +171,8 @@ items:
   nameWithType: AttributeId.Level
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Level
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId Level
@@ -183,6 +190,8 @@ items:
   nameWithType: AttributeId.MoveSpeed
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId MoveSpeed
@@ -200,6 +209,8 @@ items:
   nameWithType: AttributeId.JumpSpeed
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId JumpSpeed
@@ -217,6 +228,8 @@ items:
   nameWithType: AttributeId.Health
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Health
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId Health
@@ -234,6 +247,8 @@ items:
   nameWithType: AttributeId.AttackRange
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId AttackRange
@@ -251,6 +266,8 @@ items:
   nameWithType: AttributeId.AttackSpeed
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId AttackSpeed
@@ -268,6 +285,8 @@ items:
   nameWithType: AttributeId.AttackDamage
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId AttackDamage
@@ -285,6 +304,8 @@ items:
   nameWithType: AttributeId.Defense
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Defense
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId Defense
@@ -302,6 +323,8 @@ items:
   nameWithType: AttributeId.MaxHealth
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId MaxHealth
@@ -319,6 +342,8 @@ items:
   nameWithType: AttributeId.ExtraTargetCount
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.ExtraTargetCount
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId ExtraTargetCount
@@ -336,6 +361,8 @@ items:
   nameWithType: AttributeId.Exp
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Exp
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId Exp
@@ -353,6 +380,8 @@ items:
   nameWithType: AttributeId.Gold
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Gold
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId Gold
@@ -370,6 +399,8 @@ items:
   nameWithType: AttributeId.Experience
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Experience
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId Experience
@@ -387,6 +418,8 @@ items:
   nameWithType: AttributeId.ExpReward
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.ExpReward
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static readonly AttributeId ExpReward

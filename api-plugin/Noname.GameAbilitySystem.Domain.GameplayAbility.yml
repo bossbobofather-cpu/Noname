@@ -23,6 +23,8 @@ items:
   nameWithType: GameplayAbility
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbility
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 게임플레이 어빌리티 설정입니다 (순수 C# 모델).
   example: []
@@ -59,6 +61,8 @@ items:
   nameWithType: GameplayAbility.AbilityTag
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbility.AbilityTag
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 어빌리티 태그입니다.
   example: []
@@ -80,6 +84,8 @@ items:
   nameWithType: GameplayAbility.AbilityId
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbility.AbilityId
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 어빌리티 ID입니다.
   example: []
@@ -101,6 +107,8 @@ items:
   nameWithType: GameplayAbility.DisplayName
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbility.DisplayName
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 표시 이름입니다.
   example: []
@@ -122,6 +130,8 @@ items:
   nameWithType: GameplayAbility.Description
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbility.Description
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 설명입니다.
   example: []
@@ -143,6 +153,8 @@ items:
   nameWithType: GameplayAbility.CooldownEffect
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbility.CooldownEffect
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: >-
     쿨다운 효과입니다.
@@ -167,6 +179,8 @@ items:
   nameWithType: GameplayAbility.CostEffects
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbility.CostEffects
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 비용으로 소모되는 효과 목록입니다.
   example: []
@@ -188,6 +202,8 @@ items:
   nameWithType: GameplayAbility.AppliedEffects
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbility.AppliedEffects
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 적용되는 효과 목록입니다.
   example: []
@@ -209,6 +225,8 @@ items:
   nameWithType: GameplayAbility.ActivationRequiredTags
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbility.ActivationRequiredTags
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 활성화 필수 태그 목록입니다.
   example: []
@@ -230,6 +248,8 @@ items:
   nameWithType: GameplayAbility.ActivationBlockedTags
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbility.ActivationBlockedTags
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 활성화 차단 태그 목록입니다.
   example: []
@@ -251,6 +271,8 @@ items:
   nameWithType: GameplayAbility.TargetingStrategy
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbility.TargetingStrategy
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 타겟 선정 전략입니다.
   example: []
@@ -272,6 +294,8 @@ items:
   nameWithType: GameplayAbility.GameplayAbility()
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbility.GameplayAbility()
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public GameplayAbility()

@@ -30,14 +30,22 @@ items:
   nameWithType: MyProject.DefenseGame.Application
   fullName: MyProject.DefenseGame.Application
   type: Namespace
+  assemblies:
+  - Assembly-CSharp
 references:
-- uid: MyProject.DefenseGame.Application.DefenseEntityFactory
-  commentId: T:MyProject.DefenseGame.Application.DefenseEntityFactory
+- uid: MyProject.DefenseGame.Application.DefenseHostSnapshot
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostSnapshot
   parent: MyProject.DefenseGame.Application
-  href: MyProject.DefenseGame.Application.DefenseEntityFactory.html
-  name: DefenseEntityFactory
-  nameWithType: DefenseEntityFactory
-  fullName: MyProject.DefenseGame.Application.DefenseEntityFactory
+  href: MyProject.DefenseGame.Application.DefenseHostSnapshot.html
+  name: DefenseHostSnapshot
+  nameWithType: DefenseHostSnapshot
+  fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule
+  commentId: T:MyProject.DefenseGame.Application.DefenseSpawnModule
+  href: MyProject.DefenseGame.Application.DefenseSpawnModule.html
+  name: DefenseSpawnModule
+  nameWithType: DefenseSpawnModule
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule
 - uid: MyProject.DefenseGame.Application.DefenseGameHost
   commentId: T:MyProject.DefenseGame.Application.DefenseGameHost
   href: MyProject.DefenseGame.Application.DefenseGameHost.html
@@ -117,13 +125,12 @@ references:
   name: DefenseAbilitySelectedEvent
   nameWithType: DefenseAbilitySelectedEvent
   fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
-- uid: MyProject.DefenseGame.Application.DefenseHostSnapshot
-  commentId: T:MyProject.DefenseGame.Application.DefenseHostSnapshot
-  parent: MyProject.DefenseGame.Application
-  href: MyProject.DefenseGame.Application.DefenseHostSnapshot.html
-  name: DefenseHostSnapshot
-  nameWithType: DefenseHostSnapshot
-  fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot
+- uid: MyProject.DefenseGame.Application.DefenseCombatModule
+  commentId: T:MyProject.DefenseGame.Application.DefenseCombatModule
+  href: MyProject.DefenseGame.Application.DefenseCombatModule.html
+  name: DefenseCombatModule
+  nameWithType: DefenseCombatModule
+  fullName: MyProject.DefenseGame.Application.DefenseCombatModule
 - uid: MyProject.DefenseGame.Application.DefenseSessionPhase
   commentId: T:MyProject.DefenseGame.Application.DefenseSessionPhase
   parent: MyProject.DefenseGame.Application
@@ -138,18 +145,13 @@ references:
   name: DefenseHostState
   nameWithType: DefenseHostState
   fullName: MyProject.DefenseGame.Application.DefenseHostState
-- uid: MyProject.DefenseGame.Application.DefenseCombatModule
-  commentId: T:MyProject.DefenseGame.Application.DefenseCombatModule
-  href: MyProject.DefenseGame.Application.DefenseCombatModule.html
-  name: DefenseCombatModule
-  nameWithType: DefenseCombatModule
-  fullName: MyProject.DefenseGame.Application.DefenseCombatModule
-- uid: MyProject.DefenseGame.Application.DefenseSpawnModule
-  commentId: T:MyProject.DefenseGame.Application.DefenseSpawnModule
-  href: MyProject.DefenseGame.Application.DefenseSpawnModule.html
-  name: DefenseSpawnModule
-  nameWithType: DefenseSpawnModule
-  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule
+- uid: MyProject.DefenseGame.Application.DefenseEntityFactory
+  commentId: T:MyProject.DefenseGame.Application.DefenseEntityFactory
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseEntityFactory.html
+  name: DefenseEntityFactory
+  nameWithType: DefenseEntityFactory
+  fullName: MyProject.DefenseGame.Application.DefenseEntityFactory
 - uid: MyProject.DefenseGame.Application
   commentId: N:MyProject.DefenseGame.Application
   href: MyProject.html

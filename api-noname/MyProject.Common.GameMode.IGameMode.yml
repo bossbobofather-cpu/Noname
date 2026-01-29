@@ -18,6 +18,8 @@ items:
   nameWithType: IGameMode
   fullName: MyProject.Common.GameMode.IGameMode
   type: Interface
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.GameMode
   summary: 게임 모드가 제공하는 공용 인터페이스입니다.
   example: []
@@ -35,6 +37,8 @@ items:
   nameWithType: IGameMode.SceneBus
   fullName: MyProject.Common.GameMode.IGameMode.SceneBus
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.GameMode
   summary: 현재 씬 스코프 이벤트 버스입니다.
   example: []
@@ -42,7 +46,7 @@ items:
     content: GameEventBus.Scope SceneBus { get; }
     parameters: []
     return:
-      type: GameEventBus.Scope
+      type: Noname.GameHost.GameEvent.GameEventBus.Scope
     content.vb: ReadOnly Property SceneBus As GameEventBus.Scope
   overload: MyProject.Common.GameMode.IGameMode.SceneBus*
 - uid: MyProject.Common.GameMode.IGameMode.Modules
@@ -56,6 +60,8 @@ items:
   nameWithType: IGameMode.Modules
   fullName: MyProject.Common.GameMode.IGameMode.Modules
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.GameMode
   summary: 등록된 모듈 목록입니다.
   example: []
@@ -77,6 +83,8 @@ items:
   nameWithType: IGameMode.GetModule<T>()
   fullName: MyProject.Common.GameMode.IGameMode.GetModule<T>()
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.GameMode
   summary: 지정한 타입의 모듈을 조회합니다.
   example: []
@@ -102,6 +110,8 @@ items:
   nameWithType: IGameMode.Subscribe<TEventContext>(Action<TEventContext>)
   fullName: MyProject.Common.GameMode.IGameMode.Subscribe<TEventContext>(System.Action<TEventContext>)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.GameMode
   summary: 이벤트 구독을 등록합니다.
   example: []
@@ -128,6 +138,8 @@ items:
   nameWithType: IGameMode.Unsubscribe<TEventContext>(Action<TEventContext>)
   fullName: MyProject.Common.GameMode.IGameMode.Unsubscribe<TEventContext>(System.Action<TEventContext>)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.GameMode
   summary: 이벤트 구독을 해제합니다.
   example: []
@@ -154,6 +166,8 @@ items:
   nameWithType: IGameMode.Publish<TEventContext>(TEventContext)
   fullName: MyProject.Common.GameMode.IGameMode.Publish<TEventContext>(TEventContext)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.GameMode
   summary: 이벤트를 발행합니다.
   example: []
@@ -206,11 +220,47 @@ references:
   name: SceneBus
   nameWithType: IGameMode.SceneBus
   fullName: MyProject.Common.GameMode.IGameMode.SceneBus
-- uid: GameEventBus.Scope
-  isExternal: true
-  name: Scope
+- uid: Noname.GameHost.GameEvent.GameEventBus.Scope
+  commentId: T:Noname.GameHost.GameEvent.GameEventBus.Scope
+  parent: Noname.GameHost.GameEvent
+  name: GameEventBus.Scope
   nameWithType: GameEventBus.Scope
-  fullName: GameEventBus.Scope
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Scope
+  spec.csharp:
+  - uid: Noname.GameHost.GameEvent.GameEventBus
+    name: GameEventBus
+  - name: .
+  - uid: Noname.GameHost.GameEvent.GameEventBus.Scope
+    name: Scope
+  spec.vb:
+  - uid: Noname.GameHost.GameEvent.GameEventBus
+    name: GameEventBus
+  - name: .
+  - uid: Noname.GameHost.GameEvent.GameEventBus.Scope
+    name: Scope
+- uid: Noname.GameHost.GameEvent
+  commentId: N:Noname.GameHost.GameEvent
+  name: Noname.GameHost.GameEvent
+  nameWithType: Noname.GameHost.GameEvent
+  fullName: Noname.GameHost.GameEvent
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+  - name: .
+  - uid: Noname.GameHost.GameEvent
+    name: GameEvent
+  spec.vb:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+  - name: .
+  - uid: Noname.GameHost.GameEvent
+    name: GameEvent
 - uid: MyProject.Common.GameMode.IGameMode.Modules*
   commentId: Overload:MyProject.Common.GameMode.IGameMode.Modules
   href: MyProject.Common.GameMode.IGameMode.html#MyProject_Common_GameMode_IGameMode_Modules

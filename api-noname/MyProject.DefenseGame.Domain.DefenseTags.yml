@@ -20,6 +20,8 @@ items:
   nameWithType: DefenseTags
   fullName: MyProject.DefenseGame.Domain.DefenseTags
   type: Class
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 디펜스 게임에서 사용하는 태그 정의입니다.
   example: []
@@ -47,11 +49,13 @@ items:
   nameWithType: DefenseTags.Cooldown_BasicAttack
   fullName: MyProject.DefenseGame.Domain.DefenseTags.Cooldown_BasicAttack
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public static readonly FGameplayTag Cooldown_BasicAttack
     return:
-      type: FGameplayTag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
     content.vb: Public Shared ReadOnly Cooldown_BasicAttack As FGameplayTag
 - uid: MyProject.DefenseGame.Domain.DefenseTags.Cooldown_AreaAttack
   commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Cooldown_AreaAttack
@@ -64,11 +68,13 @@ items:
   nameWithType: DefenseTags.Cooldown_AreaAttack
   fullName: MyProject.DefenseGame.Domain.DefenseTags.Cooldown_AreaAttack
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public static readonly FGameplayTag Cooldown_AreaAttack
     return:
-      type: FGameplayTag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
     content.vb: Public Shared ReadOnly Cooldown_AreaAttack As FGameplayTag
 - uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_BasicAttack
   commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_BasicAttack
@@ -81,11 +87,13 @@ items:
   nameWithType: DefenseTags.Ability_BasicAttack
   fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_BasicAttack
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public static readonly FGameplayTag Ability_BasicAttack
     return:
-      type: FGameplayTag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
     content.vb: Public Shared ReadOnly Ability_BasicAttack As FGameplayTag
 - uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttack
   commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttack
@@ -98,11 +106,13 @@ items:
   nameWithType: DefenseTags.Ability_AreaAttack
   fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttack
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public static readonly FGameplayTag Ability_AreaAttack
     return:
-      type: FGameplayTag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
     content.vb: Public Shared ReadOnly Ability_AreaAttack As FGameplayTag
 - uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_AttackSpeedUp
   commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_AttackSpeedUp
@@ -115,11 +125,13 @@ items:
   nameWithType: DefenseTags.Ability_AttackSpeedUp
   fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_AttackSpeedUp
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public static readonly FGameplayTag Ability_AttackSpeedUp
     return:
-      type: FGameplayTag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
     content.vb: Public Shared ReadOnly Ability_AttackSpeedUp As FGameplayTag
 - uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_FullHealthRestore
   commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_FullHealthRestore
@@ -132,11 +144,13 @@ items:
   nameWithType: DefenseTags.Ability_FullHealthRestore
   fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_FullHealthRestore
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public static readonly FGameplayTag Ability_FullHealthRestore
     return:
-      type: FGameplayTag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
     content.vb: Public Shared ReadOnly Ability_FullHealthRestore As FGameplayTag
 - uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttackTargetUp
   commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttackTargetUp
@@ -149,11 +163,13 @@ items:
   nameWithType: DefenseTags.Ability_AreaAttackTargetUp
   fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttackTargetUp
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public static readonly FGameplayTag Ability_AreaAttackTargetUp
     return:
-      type: FGameplayTag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
     content.vb: Public Shared ReadOnly Ability_AreaAttackTargetUp As FGameplayTag
 - uid: MyProject.DefenseGame.Domain.DefenseTags.State_Invincible
   commentId: F:MyProject.DefenseGame.Domain.DefenseTags.State_Invincible
@@ -166,11 +182,13 @@ items:
   nameWithType: DefenseTags.State_Invincible
   fullName: MyProject.DefenseGame.Domain.DefenseTags.State_Invincible
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public static readonly FGameplayTag State_Invincible
     return:
-      type: FGameplayTag
+      type: Noname.GameAbilitySystem.Domain.FGameplayTag
     content.vb: Public Shared ReadOnly State_Invincible As FGameplayTag
 references:
 - uid: MyProject.DefenseGame.Domain
@@ -440,8 +458,32 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: FGameplayTag
-  isExternal: true
+- uid: Noname.GameAbilitySystem.Domain.FGameplayTag
+  commentId: T:Noname.GameAbilitySystem.Domain.FGameplayTag
+  parent: Noname.GameAbilitySystem.Domain
   name: FGameplayTag
   nameWithType: FGameplayTag
-  fullName: FGameplayTag
+  fullName: Noname.GameAbilitySystem.Domain.FGameplayTag
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+  spec.vb:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain

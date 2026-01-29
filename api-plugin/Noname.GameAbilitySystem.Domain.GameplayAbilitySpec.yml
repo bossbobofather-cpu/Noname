@@ -25,6 +25,8 @@ items:
   nameWithType: GameplayAbilitySpec
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: >-
     능력 사양 정보를 담는 구조입니다.
@@ -54,6 +56,8 @@ items:
   nameWithType: GameplayAbilitySpec.GameplayAbilitySpec(GameplayAbility, FGameplayAbilitySpecHandle, int)
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.GameplayAbilitySpec(Noname.GameAbilitySystem.Domain.GameplayAbility, Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle, int)
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public GameplayAbilitySpec(GameplayAbility ability, FGameplayAbilitySpecHandle handle, int level = 1)
@@ -80,6 +84,8 @@ items:
   nameWithType: GameplayAbilitySpec.GameplayAbilitySpec(GameplayAbility, int)
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.GameplayAbilitySpec(Noname.GameAbilitySystem.Domain.GameplayAbility, int)
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public GameplayAbilitySpec(GameplayAbility ability, int handleId)
@@ -104,6 +110,8 @@ items:
   nameWithType: GameplayAbilitySpec.Ability
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.Ability
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 능력 정의입니다.
   example: []
@@ -125,6 +133,8 @@ items:
   nameWithType: GameplayAbilitySpec.Handle
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.Handle
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 능력 핸들입니다.
   example: []
@@ -146,6 +156,8 @@ items:
   nameWithType: GameplayAbilitySpec.AbilityTag
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.AbilityTag
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 능력 태그입니다.
   example: []
@@ -167,6 +179,8 @@ items:
   nameWithType: GameplayAbilitySpec.ActivationRequiredTags
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.ActivationRequiredTags
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 활성화에 필수로 필요한 태그 목록입니다.
   example: []
@@ -188,6 +202,8 @@ items:
   nameWithType: GameplayAbilitySpec.ActivationBlockedTags
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.ActivationBlockedTags
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 활성화를 차단하는 태그 목록입니다.
   example: []
@@ -209,6 +225,8 @@ items:
   nameWithType: GameplayAbilitySpec.AbilityId
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.AbilityId
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 능력 ID입니다.
   example: []
@@ -230,6 +248,8 @@ items:
   nameWithType: GameplayAbilitySpec.DisplayName
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.DisplayName
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 표시 이름입니다.
   example: []
@@ -251,6 +271,8 @@ items:
   nameWithType: GameplayAbilitySpec.Level
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.Level
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 능력 레벨입니다.
   example: []
@@ -272,6 +294,8 @@ items:
   nameWithType: GameplayAbilitySpec.ActiveCount
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.ActiveCount
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 활성화 중인 횟수입니다.
   example: []
@@ -293,6 +317,8 @@ items:
   nameWithType: GameplayAbilitySpec.IncrementActiveCount()
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.IncrementActiveCount()
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 활성화 카운트를 증가시킵니다.
   example: []
@@ -311,6 +337,8 @@ items:
   nameWithType: GameplayAbilitySpec.DecrementActiveCount()
   fullName: Noname.GameAbilitySystem.Domain.GameplayAbilitySpec.DecrementActiveCount()
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 활성화 카운트를 감소시킵니다.
   example: []

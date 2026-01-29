@@ -25,6 +25,8 @@ items:
   nameWithType: GameplayEffect
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 게임플레이 효과 설정입니다 (순수 C# 모델).
   example: []
@@ -62,6 +64,8 @@ items:
   nameWithType: GameplayEffect.EffectId
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.EffectId
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 효과 ID입니다.
   example: []
@@ -83,6 +87,8 @@ items:
   nameWithType: GameplayEffect.DisplayName
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.DisplayName
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 표시 이름입니다.
   example: []
@@ -104,6 +110,8 @@ items:
   nameWithType: GameplayEffect.Description
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Description
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 설명입니다.
   example: []
@@ -125,6 +133,8 @@ items:
   nameWithType: GameplayEffect.DurationType
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationType
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 지속 타입입니다.
   example: []
@@ -146,6 +156,8 @@ items:
   nameWithType: GameplayEffect.Duration
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Duration
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 지속 시간입니다 (초).
   example: []
@@ -167,6 +179,8 @@ items:
   nameWithType: GameplayEffect.Period
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Period
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 주기 시간입니다 (초).
   example: []
@@ -188,6 +202,8 @@ items:
   nameWithType: GameplayEffect.MaxStack
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.MaxStack
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 최대 스택 수입니다.
   example: []
@@ -209,6 +225,8 @@ items:
   nameWithType: GameplayEffect.Modifiers
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 수정자 그룹 목록입니다.
   example: []
@@ -230,6 +248,8 @@ items:
   nameWithType: GameplayEffect.GrantedTags
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.GrantedTags
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 부여되는 태그 목록입니다.
   example: []
@@ -251,6 +271,8 @@ items:
   nameWithType: GameplayEffect.RequiredTags
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.RequiredTags
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 적용 필수 태그 목록입니다.
   example: []
@@ -272,6 +294,8 @@ items:
   nameWithType: GameplayEffect.BlockedTags
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.BlockedTags
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 적용 차단 태그 목록입니다.
   example: []
@@ -293,6 +317,8 @@ items:
   nameWithType: GameplayEffect.DurationPolicy
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public IEffectDurationPolicy DurationPolicy { get; set; }
@@ -312,6 +338,8 @@ items:
   nameWithType: GameplayEffect.GameplayEffect()
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.GameplayEffect()
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public GameplayEffect()

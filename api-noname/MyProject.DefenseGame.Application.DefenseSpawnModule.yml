@@ -6,7 +6,7 @@ items:
   parent: MyProject.DefenseGame.Application
   children:
   - MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent},MyProject.DefenseGame.Domain.IAIFlagChecker)
-  - MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
+  - MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(Noname.GameAbilitySystem.Domain.TargetContext)
   - MyProject.DefenseGame.Application.DefenseSpawnModule.Tick(System.Single,System.Int64)
   langs:
   - csharp
@@ -15,6 +15,8 @@ items:
   nameWithType: DefenseSpawnModule
   fullName: MyProject.DefenseGame.Application.DefenseSpawnModule
   type: Class
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 몬스터 스폰을 담당하는 모듈입니다.
   example: []
@@ -41,6 +43,8 @@ items:
   nameWithType: DefenseSpawnModule.DefenseSpawnModule(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action<DefenseHostEvent>, IAIFlagChecker)
   fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.DefenseSpawnModule(MyProject.DefenseGame.Application.DefenseHostState, MyProject.DefenseGame.Domain.DefenseHostConfig, MyProject.DefenseGame.Application.DefenseEntityFactory, System.Action<MyProject.DefenseGame.Application.DefenseHostEvent>, MyProject.DefenseGame.Domain.IAIFlagChecker)
   type: Constructor
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public DefenseSpawnModule(DefenseHostState state, DefenseHostConfig config, DefenseEntityFactory factory, Action<DefenseHostEvent> publishEvent, IAIFlagChecker aIFlagChecker)
@@ -60,17 +64,19 @@ items:
   nameWithType.vb: DefenseSpawnModule.New(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action(Of DefenseHostEvent), IAIFlagChecker)
   fullName.vb: MyProject.DefenseGame.Application.DefenseSpawnModule.New(MyProject.DefenseGame.Application.DefenseHostState, MyProject.DefenseGame.Domain.DefenseHostConfig, MyProject.DefenseGame.Application.DefenseEntityFactory, System.Action(Of MyProject.DefenseGame.Application.DefenseHostEvent), MyProject.DefenseGame.Domain.IAIFlagChecker)
   name.vb: New(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action(Of DefenseHostEvent), IAIFlagChecker)
-- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
-  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
-  id: Initialize(TargetContext)
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(Noname.GameAbilitySystem.Domain.TargetContext)
+  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(Noname.GameAbilitySystem.Domain.TargetContext)
+  id: Initialize(Noname.GameAbilitySystem.Domain.TargetContext)
   parent: MyProject.DefenseGame.Application.DefenseSpawnModule
   langs:
   - csharp
   - vb
   name: Initialize(TargetContext)
   nameWithType: DefenseSpawnModule.Initialize(TargetContext)
-  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(Noname.GameAbilitySystem.Domain.TargetContext)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 스폰 시스템을 초기화합니다.
   example: []
@@ -78,7 +84,7 @@ items:
     content: public void Initialize(TargetContext targetContext)
     parameters:
     - id: targetContext
-      type: TargetContext
+      type: Noname.GameAbilitySystem.Domain.TargetContext
     content.vb: Public Sub Initialize(targetContext As TargetContext)
   overload: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize*
 - uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Tick(System.Single,System.Int64)
@@ -92,6 +98,8 @@ items:
   nameWithType: DefenseSpawnModule.Tick(float, long)
   fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Tick(float, long)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: 매 프레임 호출되어 스폰을 처리합니다.
   example: []
@@ -481,15 +489,39 @@ references:
   - name: )
 - uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
-  href: MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule_Initialize_TargetContext_
+  href: MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule_Initialize_Noname_GameAbilitySystem_Domain_TargetContext_
   name: Initialize
   nameWithType: DefenseSpawnModule.Initialize
   fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
-- uid: TargetContext
-  isExternal: true
+- uid: Noname.GameAbilitySystem.Domain.TargetContext
+  commentId: T:Noname.GameAbilitySystem.Domain.TargetContext
+  parent: Noname.GameAbilitySystem.Domain
   name: TargetContext
   nameWithType: TargetContext
-  fullName: TargetContext
+  fullName: Noname.GameAbilitySystem.Domain.TargetContext
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+  spec.vb:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
 - uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Tick*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseSpawnModule.Tick
   href: MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule_Tick_System_Single_System_Int64_

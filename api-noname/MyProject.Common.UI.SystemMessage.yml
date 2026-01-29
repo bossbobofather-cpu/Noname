@@ -14,6 +14,8 @@ items:
   nameWithType: SystemMessage
   fullName: MyProject.Common.UI.SystemMessage
   type: Struct
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.UI
   summary: 시스템 메시지 데이터입니다.
   example: []
@@ -38,6 +40,8 @@ items:
   nameWithType: SystemMessage.Text
   fullName: MyProject.Common.UI.SystemMessage.Text
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.UI
   summary: 메시지 텍스트입니다.
   example: []
@@ -57,13 +61,15 @@ items:
   nameWithType: SystemMessage.BackgroundColor
   fullName: MyProject.Common.UI.SystemMessage.BackgroundColor
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.Common.UI
   summary: 배경 색상입니다.
   example: []
   syntax:
     content: public Color BackgroundColor
     return:
-      type: Color
+      type: UnityEngine.Color
     content.vb: Public BackgroundColor As Color
 references:
 - uid: MyProject.Common.UI
@@ -324,8 +330,16 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Color
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
   isExternal: true
   name: Color
   nameWithType: Color
-  fullName: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

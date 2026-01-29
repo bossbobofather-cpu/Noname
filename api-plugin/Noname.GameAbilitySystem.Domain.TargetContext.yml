@@ -20,6 +20,8 @@ items:
   nameWithType: TargetContext
   fullName: Noname.GameAbilitySystem.Domain.TargetContext
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: >-
     타겟팅에 필요한 월드 조회 함수를 제공하는 컨텍스트입니다.
@@ -49,6 +51,8 @@ items:
   nameWithType: TargetContext.TargetContext(Func<AbilitySystemComponent, IReadOnlyList<AbilitySystemComponent>>, Func<AbilitySystemComponent, IReadOnlyList<AbilitySystemComponent>>, Func<AbilitySystemComponent, Point2D>, Random)
   fullName: Noname.GameAbilitySystem.Domain.TargetContext.TargetContext(System.Func<Noname.GameAbilitySystem.Domain.AbilitySystemComponent, System.Collections.Generic.IReadOnlyList<Noname.GameAbilitySystem.Domain.AbilitySystemComponent>>, System.Func<Noname.GameAbilitySystem.Domain.AbilitySystemComponent, System.Collections.Generic.IReadOnlyList<Noname.GameAbilitySystem.Domain.AbilitySystemComponent>>, System.Func<Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Noname.GameAbilitySystem.Domain.Point2D>, System.Random)
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public TargetContext(Func<AbilitySystemComponent, IReadOnlyList<AbilitySystemComponent>> getEnemies, Func<AbilitySystemComponent, IReadOnlyList<AbilitySystemComponent>> getAllies, Func<AbilitySystemComponent, Point2D> getPosition, Random random = null)
@@ -77,6 +81,8 @@ items:
   nameWithType: TargetContext.GetEnemies
   fullName: Noname.GameAbilitySystem.Domain.TargetContext.GetEnemies
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 특정 주체 기준으로 적 목록을 반환합니다.
   example: []
@@ -98,6 +104,8 @@ items:
   nameWithType: TargetContext.GetAllies
   fullName: Noname.GameAbilitySystem.Domain.TargetContext.GetAllies
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 특정 주체 기준으로 아군 목록을 반환합니다.
   example: []
@@ -119,6 +127,8 @@ items:
   nameWithType: TargetContext.GetPosition
   fullName: Noname.GameAbilitySystem.Domain.TargetContext.GetPosition
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 주체의 위치 정보를 반환합니다.
   example: []
@@ -140,6 +150,8 @@ items:
   nameWithType: TargetContext.Random
   fullName: Noname.GameAbilitySystem.Domain.TargetContext.Random
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 랜덤 선택을 위한 RNG입니다.
   example: []
@@ -161,6 +173,8 @@ items:
   nameWithType: TargetContext.ResolveEnemies(AbilitySystemComponent)
   fullName: Noname.GameAbilitySystem.Domain.TargetContext.ResolveEnemies(Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public IReadOnlyList<AbilitySystemComponent> ResolveEnemies(AbilitySystemComponent owner)
@@ -182,6 +196,8 @@ items:
   nameWithType: TargetContext.ResolveAllies(AbilitySystemComponent)
   fullName: Noname.GameAbilitySystem.Domain.TargetContext.ResolveAllies(Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public IReadOnlyList<AbilitySystemComponent> ResolveAllies(AbilitySystemComponent owner)
@@ -203,6 +219,8 @@ items:
   nameWithType: TargetContext.ResolvePosition(AbilitySystemComponent)
   fullName: Noname.GameAbilitySystem.Domain.TargetContext.ResolvePosition(Noname.GameAbilitySystem.Domain.AbilitySystemComponent)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public Point2D ResolvePosition(AbilitySystemComponent owner)

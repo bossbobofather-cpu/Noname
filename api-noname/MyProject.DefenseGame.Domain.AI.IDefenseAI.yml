@@ -13,6 +13,8 @@ items:
   nameWithType: IDefenseAI
   fullName: MyProject.DefenseGame.Domain.AI.IDefenseAI
   type: Interface
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.AI
   summary: 디펜스 게임 엔티티의 인공지능(의사결정) 인터페이스입니다.
   example: []
@@ -30,6 +32,8 @@ items:
   nameWithType: IDefenseAI.Update(DefenseEntity, float)
   fullName: MyProject.DefenseGame.Domain.AI.IDefenseAI.Update(MyProject.DefenseGame.Domain.DefenseEntity, float)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.AI
   summary: AI 로직을 수행합니다. 매 틱마다 호출됩니다.
   example: []

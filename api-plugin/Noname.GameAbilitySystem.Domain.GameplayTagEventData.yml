@@ -15,6 +15,8 @@ items:
   nameWithType: GameplayTagEventData
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagEventData
   type: Struct
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 게임플레이 이벤트 전달용 데이터입니다.
   example: []
@@ -39,6 +41,8 @@ items:
   nameWithType: GameplayTagEventData.EventTag
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagEventData.EventTag
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 이벤트 태그입니다.
   example: []
@@ -58,6 +62,8 @@ items:
   nameWithType: GameplayTagEventData.Payload
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagEventData.Payload
   type: Field
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 이벤트 데이터입니다.
   example: []
@@ -77,6 +83,8 @@ items:
   nameWithType: GameplayTagEventData.GameplayTagEventData(FGameplayTag, object)
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagEventData.GameplayTagEventData(Noname.GameAbilitySystem.Domain.FGameplayTag, object)
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 이벤트 태그와 데이터로 생성합니다.
   example: []

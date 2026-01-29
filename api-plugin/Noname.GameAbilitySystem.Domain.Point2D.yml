@@ -17,6 +17,8 @@ items:
   nameWithType: Point2D
   fullName: Noname.GameAbilitySystem.Domain.Point2D
   type: Struct
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: >-
     도메인에서 사용하는 좌표 데이터입니다.
@@ -44,6 +46,8 @@ items:
   nameWithType: Point2D.X
   fullName: Noname.GameAbilitySystem.Domain.Point2D.X
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public float X { get; }
@@ -63,6 +67,8 @@ items:
   nameWithType: Point2D.Y
   fullName: Noname.GameAbilitySystem.Domain.Point2D.Y
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public float Y { get; }
@@ -82,6 +88,8 @@ items:
   nameWithType: Point2D.Point2D(float, float)
   fullName: Noname.GameAbilitySystem.Domain.Point2D.Point2D(float, float)
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public Point2D(float x, float y)
@@ -106,6 +114,8 @@ items:
   nameWithType: Point2D.DistanceSquared(in Point2D, in Point2D)
   fullName: Noname.GameAbilitySystem.Domain.Point2D.DistanceSquared(in Noname.GameAbilitySystem.Domain.Point2D, in Noname.GameAbilitySystem.Domain.Point2D)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static float DistanceSquared(in Point2D a, in Point2D b)
@@ -132,6 +142,8 @@ items:
   nameWithType: Point2D.zero
   fullName: Noname.GameAbilitySystem.Domain.Point2D.zero
   type: Property
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public static Point2D zero { get; }

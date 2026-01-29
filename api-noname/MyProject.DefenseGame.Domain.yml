@@ -20,20 +20,23 @@ items:
   nameWithType: MyProject.DefenseGame.Domain
   fullName: MyProject.DefenseGame.Domain
   type: Namespace
+  assemblies:
+  - Assembly-CSharp
 references:
-- uid: MyProject.DefenseGame.Domain.DefenseAbilityUtility
-  commentId: T:MyProject.DefenseGame.Domain.DefenseAbilityUtility
-  href: MyProject.DefenseGame.Domain.DefenseAbilityUtility.html
-  name: DefenseAbilityUtility
-  nameWithType: DefenseAbilityUtility
-  fullName: MyProject.DefenseGame.Domain.DefenseAbilityUtility
-- uid: MyProject.DefenseGame.Domain.DefenseCombatState
-  commentId: T:MyProject.DefenseGame.Domain.DefenseCombatState
+- uid: MyProject.DefenseGame.Domain.DefensePlayer
+  commentId: T:MyProject.DefenseGame.Domain.DefensePlayer
   parent: MyProject.DefenseGame.Domain
-  href: MyProject.DefenseGame.Domain.DefenseCombatState.html
-  name: DefenseCombatState
-  nameWithType: DefenseCombatState
-  fullName: MyProject.DefenseGame.Domain.DefenseCombatState
+  href: MyProject.DefenseGame.Domain.DefensePlayer.html
+  name: DefensePlayer
+  nameWithType: DefensePlayer
+  fullName: MyProject.DefenseGame.Domain.DefensePlayer
+- uid: MyProject.DefenseGame.Domain.DefenseHostConfig
+  commentId: T:MyProject.DefenseGame.Domain.DefenseHostConfig
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefenseHostConfig.html
+  name: DefenseHostConfig
+  nameWithType: DefenseHostConfig
+  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig
 - uid: MyProject.DefenseGame.Domain.DefenseEntity
   commentId: T:MyProject.DefenseGame.Domain.DefenseEntity
   parent: MyProject.DefenseGame.Domain
@@ -41,6 +44,26 @@ references:
   name: DefenseEntity
   nameWithType: DefenseEntity
   fullName: MyProject.DefenseGame.Domain.DefenseEntity
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState
+  commentId: T:MyProject.DefenseGame.Domain.DefenseCombatState
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html
+  name: DefenseCombatState
+  nameWithType: DefenseCombatState
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState
+- uid: MyProject.DefenseGame.Domain.DefenseTags
+  commentId: T:MyProject.DefenseGame.Domain.DefenseTags
+  href: MyProject.DefenseGame.Domain.DefenseTags.html
+  name: DefenseTags
+  nameWithType: DefenseTags
+  fullName: MyProject.DefenseGame.Domain.DefenseTags
+- uid: MyProject.DefenseGame.Domain.IAIFlagChecker
+  commentId: T:MyProject.DefenseGame.Domain.IAIFlagChecker
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.IAIFlagChecker.html
+  name: IAIFlagChecker
+  nameWithType: IAIFlagChecker
+  fullName: MyProject.DefenseGame.Domain.IAIFlagChecker
 - uid: MyProject.DefenseGame.Domain.DefenseMonsterType
   commentId: T:MyProject.DefenseGame.Domain.DefenseMonsterType
   parent: MyProject.DefenseGame.Domain
@@ -55,33 +78,12 @@ references:
   name: DefenseMonster
   nameWithType: DefenseMonster
   fullName: MyProject.DefenseGame.Domain.DefenseMonster
-- uid: MyProject.DefenseGame.Domain.DefensePlayer
-  commentId: T:MyProject.DefenseGame.Domain.DefensePlayer
-  parent: MyProject.DefenseGame.Domain
-  href: MyProject.DefenseGame.Domain.DefensePlayer.html
-  name: DefensePlayer
-  nameWithType: DefensePlayer
-  fullName: MyProject.DefenseGame.Domain.DefensePlayer
-- uid: MyProject.DefenseGame.Domain.DefenseTags
-  commentId: T:MyProject.DefenseGame.Domain.DefenseTags
-  href: MyProject.DefenseGame.Domain.DefenseTags.html
-  name: DefenseTags
-  nameWithType: DefenseTags
-  fullName: MyProject.DefenseGame.Domain.DefenseTags
-- uid: MyProject.DefenseGame.Domain.IAIFlagChecker
-  commentId: T:MyProject.DefenseGame.Domain.IAIFlagChecker
-  parent: MyProject.DefenseGame.Domain
-  href: MyProject.DefenseGame.Domain.IAIFlagChecker.html
-  name: IAIFlagChecker
-  nameWithType: IAIFlagChecker
-  fullName: MyProject.DefenseGame.Domain.IAIFlagChecker
-- uid: MyProject.DefenseGame.Domain.DefenseHostConfig
-  commentId: T:MyProject.DefenseGame.Domain.DefenseHostConfig
-  parent: MyProject.DefenseGame.Domain
-  href: MyProject.DefenseGame.Domain.DefenseHostConfig.html
-  name: DefenseHostConfig
-  nameWithType: DefenseHostConfig
-  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig
+- uid: MyProject.DefenseGame.Domain.DefenseAbilityUtility
+  commentId: T:MyProject.DefenseGame.Domain.DefenseAbilityUtility
+  href: MyProject.DefenseGame.Domain.DefenseAbilityUtility.html
+  name: DefenseAbilityUtility
+  nameWithType: DefenseAbilityUtility
+  fullName: MyProject.DefenseGame.Domain.DefenseAbilityUtility
 - uid: MyProject.DefenseGame.Domain
   commentId: N:MyProject.DefenseGame.Domain
   href: MyProject.html

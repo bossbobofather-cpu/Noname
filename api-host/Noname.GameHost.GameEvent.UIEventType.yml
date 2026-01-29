@@ -1,0 +1,79 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameHost.GameEvent.UIEventType
+  commentId: T:Noname.GameHost.GameEvent.UIEventType
+  id: UIEventType
+  parent: Noname.GameHost.GameEvent
+  children:
+  - Noname.GameHost.GameEvent.UIEventType.Button_Click
+  langs:
+  - csharp
+  - vb
+  name: UIEventType
+  nameWithType: UIEventType
+  fullName: Noname.GameHost.GameEvent.UIEventType
+  type: Enum
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost.GameEvent
+  summary: UI 이벤트 종류입니다.
+  example: []
+  syntax:
+    content: public enum UIEventType
+    content.vb: Public Enum UIEventType
+- uid: Noname.GameHost.GameEvent.UIEventType.Button_Click
+  commentId: F:Noname.GameHost.GameEvent.UIEventType.Button_Click
+  id: Button_Click
+  parent: Noname.GameHost.GameEvent.UIEventType
+  langs:
+  - csharp
+  - vb
+  name: Button_Click
+  nameWithType: UIEventType.Button_Click
+  fullName: Noname.GameHost.GameEvent.UIEventType.Button_Click
+  type: Field
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost.GameEvent
+  syntax:
+    content: Button_Click = 0
+    return:
+      type: Noname.GameHost.GameEvent.UIEventType
+references:
+- uid: Noname.GameHost.GameEvent
+  commentId: N:Noname.GameHost.GameEvent
+  href: Noname.html
+  name: Noname.GameHost.GameEvent
+  nameWithType: Noname.GameHost.GameEvent
+  fullName: Noname.GameHost.GameEvent
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+    href: Noname.GameHost.html
+  - name: .
+  - uid: Noname.GameHost.GameEvent
+    name: GameEvent
+    href: Noname.GameHost.GameEvent.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+    href: Noname.GameHost.html
+  - name: .
+  - uid: Noname.GameHost.GameEvent
+    name: GameEvent
+    href: Noname.GameHost.GameEvent.html
+- uid: Noname.GameHost.GameEvent.UIEventType
+  commentId: T:Noname.GameHost.GameEvent.UIEventType
+  parent: Noname.GameHost.GameEvent
+  href: Noname.GameHost.GameEvent.UIEventType.html
+  name: UIEventType
+  nameWithType: UIEventType
+  fullName: Noname.GameHost.GameEvent.UIEventType

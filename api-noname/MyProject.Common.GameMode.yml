@@ -15,7 +15,15 @@ items:
   nameWithType: MyProject.Common.GameMode
   fullName: MyProject.Common.GameMode
   type: Namespace
+  assemblies:
+  - Assembly-CSharp
 references:
+- uid: MyProject.Common.GameMode.ModuleBase
+  commentId: T:MyProject.Common.GameMode.ModuleBase
+  href: MyProject.Common.GameMode.ModuleBase.html
+  name: ModuleBase
+  nameWithType: ModuleBase
+  fullName: MyProject.Common.GameMode.ModuleBase
 - uid: MyProject.Common.GameMode.GameMode`4
   commentId: T:MyProject.Common.GameMode.GameMode`4
   href: MyProject.Common.GameMode.GameMode-4.html
@@ -73,12 +81,6 @@ references:
   name: IModule
   nameWithType: IModule
   fullName: MyProject.Common.GameMode.IModule
-- uid: MyProject.Common.GameMode.ModuleBase
-  commentId: T:MyProject.Common.GameMode.ModuleBase
-  href: MyProject.Common.GameMode.ModuleBase.html
-  name: ModuleBase
-  nameWithType: ModuleBase
-  fullName: MyProject.Common.GameMode.ModuleBase
 - uid: MyProject.Common.GameMode
   commentId: N:MyProject.Common.GameMode
   href: MyProject.html

@@ -13,6 +13,8 @@ items:
   nameWithType: IAIFlagChecker
   fullName: MyProject.DefenseGame.Domain.IAIFlagChecker
   type: Interface
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: public interface IAIFlagChecker
@@ -28,6 +30,8 @@ items:
   nameWithType: IAIFlagChecker.ConsumePlayerAIRecheck()
   fullName: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck()
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   syntax:
     content: bool ConsumePlayerAIRecheck()

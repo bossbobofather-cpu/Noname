@@ -19,6 +19,8 @@ items:
   nameWithType: DomainConversionExtensions
   fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Presentation
   summary: Domain 레이어와 Presentation 레이어 간 변환을 위한 확장 메서드입니다.
   example: []
@@ -47,6 +49,8 @@ items:
   nameWithType: DomainConversionExtensions.ToDomain(GameplayTagContainerView)
   fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayTagContainerView)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Presentation
   summary: Unity GameplayTagContainer를 Domain GameplayTagContainerModel로 변환합니다.
   example: []
@@ -71,6 +75,8 @@ items:
   nameWithType: DomainConversionExtensions.ToDomain(AttributeDefinition)
   fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.AttributeDefinition)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Presentation
   syntax:
     content: public static AttributeSet ToDomain(this AttributeDefinition definition)
@@ -93,6 +99,8 @@ items:
   nameWithType: DomainConversionExtensions.ToDomain(List<AttributeDefinition>)
   fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(System.Collections.Generic.List<Noname.GameAbilitySystem.Presentation.AttributeDefinition>)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Presentation
   syntax:
     content: public static AttributeSet ToDomain(this List<AttributeDefinition> definitions)
@@ -118,6 +126,8 @@ items:
   nameWithType: DomainConversionExtensions.ToDomain(GameplayAbilityConfig)
   fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Presentation
   syntax:
     content: public static GameplayAbility ToDomain(this GameplayAbilityConfig config)
@@ -140,6 +150,8 @@ items:
   nameWithType: DomainConversionExtensions.ToDomain(List<GameplayAbilityConfig>)
   fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(System.Collections.Generic.List<Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig>)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Presentation
   syntax:
     content: public static List<GameplayAbility> ToDomain(this List<GameplayAbilityConfig> config)
@@ -165,6 +177,8 @@ items:
   nameWithType: DomainConversionExtensions.ToDomain(GameplayEffectConfig)
   fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(Noname.GameAbilitySystem.Presentation.GameplayEffectConfig)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Presentation
   summary: GameplayEffectConfig를 Domain GameplayEffect 변환합니다.
   example: []
@@ -189,6 +203,8 @@ items:
   nameWithType: DomainConversionExtensions.ToDomain(List<GameplayEffectConfig>)
   fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions.ToDomain(System.Collections.Generic.List<Noname.GameAbilitySystem.Presentation.GameplayEffectConfig>)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Presentation
   summary: GameplayEffectConfig를 Domain GameplayEffect 변환합니다.
   example: []

@@ -1,0 +1,170 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameHost.GameEvent
+  commentId: N:Noname.GameHost.GameEvent
+  id: Noname.GameHost.GameEvent
+  children:
+  - Noname.GameHost.GameEvent.GameEventBus
+  - Noname.GameHost.GameEvent.GameEventBus.Scope
+  - Noname.GameHost.GameEvent.GameEventContext
+  - Noname.GameHost.GameEvent.GameEventHub
+  - Noname.GameHost.GameEvent.GameHostCommandResultEvent
+  - Noname.GameHost.GameEvent.GameHostEventRaisedEvent
+  - Noname.GameHost.GameEvent.GameUIContextSupplyEvent
+  - Noname.GameHost.GameEvent.GlobalGameEventContext
+  - Noname.GameHost.GameEvent.IEventBus`1
+  - Noname.GameHost.GameEvent.SceneGameEventContext
+  - Noname.GameHost.GameEvent.UIEventContext
+  - Noname.GameHost.GameEvent.UIEventType
+  langs:
+  - csharp
+  - vb
+  name: Noname.GameHost.GameEvent
+  nameWithType: Noname.GameHost.GameEvent
+  fullName: Noname.GameHost.GameEvent
+  type: Namespace
+  assemblies:
+  - Noname.GameHost.Plugin
+references:
+- uid: Noname.GameHost.GameEvent.IEventBus`1
+  commentId: T:Noname.GameHost.GameEvent.IEventBus`1
+  href: Noname.GameHost.GameEvent.IEventBus-1.html
+  name: IEventBus<TEventBase>
+  nameWithType: IEventBus<TEventBase>
+  fullName: Noname.GameHost.GameEvent.IEventBus<TEventBase>
+  nameWithType.vb: IEventBus(Of TEventBase)
+  fullName.vb: Noname.GameHost.GameEvent.IEventBus(Of TEventBase)
+  name.vb: IEventBus(Of TEventBase)
+  spec.csharp:
+  - uid: Noname.GameHost.GameEvent.IEventBus`1
+    name: IEventBus
+    href: Noname.GameHost.GameEvent.IEventBus-1.html
+  - name: <
+  - name: TEventBase
+  - name: '>'
+  spec.vb:
+  - uid: Noname.GameHost.GameEvent.IEventBus`1
+    name: IEventBus
+    href: Noname.GameHost.GameEvent.IEventBus-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventBase
+  - name: )
+- uid: Noname.GameHost.GameEvent.GameEventContext
+  commentId: T:Noname.GameHost.GameEvent.GameEventContext
+  parent: Noname.GameHost.GameEvent
+  href: Noname.GameHost.GameEvent.GameEventContext.html
+  name: GameEventContext
+  nameWithType: GameEventContext
+  fullName: Noname.GameHost.GameEvent.GameEventContext
+- uid: Noname.GameHost.GameEvent.SceneGameEventContext
+  commentId: T:Noname.GameHost.GameEvent.SceneGameEventContext
+  parent: Noname.GameHost.GameEvent
+  href: Noname.GameHost.GameEvent.SceneGameEventContext.html
+  name: SceneGameEventContext
+  nameWithType: SceneGameEventContext
+  fullName: Noname.GameHost.GameEvent.SceneGameEventContext
+- uid: Noname.GameHost.GameEvent.GlobalGameEventContext
+  commentId: T:Noname.GameHost.GameEvent.GlobalGameEventContext
+  href: Noname.GameHost.GameEvent.GlobalGameEventContext.html
+  name: GlobalGameEventContext
+  nameWithType: GlobalGameEventContext
+  fullName: Noname.GameHost.GameEvent.GlobalGameEventContext
+- uid: Noname.GameHost.GameEvent.UIEventType
+  commentId: T:Noname.GameHost.GameEvent.UIEventType
+  parent: Noname.GameHost.GameEvent
+  href: Noname.GameHost.GameEvent.UIEventType.html
+  name: UIEventType
+  nameWithType: UIEventType
+  fullName: Noname.GameHost.GameEvent.UIEventType
+- uid: Noname.GameHost.GameEvent.UIEventContext
+  commentId: T:Noname.GameHost.GameEvent.UIEventContext
+  parent: Noname.GameHost.GameEvent
+  href: Noname.GameHost.GameEvent.UIEventContext.html
+  name: UIEventContext
+  nameWithType: UIEventContext
+  fullName: Noname.GameHost.GameEvent.UIEventContext
+- uid: Noname.GameHost.GameEvent.GameHostEventRaisedEvent
+  commentId: T:Noname.GameHost.GameEvent.GameHostEventRaisedEvent
+  href: Noname.GameHost.GameEvent.GameHostEventRaisedEvent.html
+  name: GameHostEventRaisedEvent
+  nameWithType: GameHostEventRaisedEvent
+  fullName: Noname.GameHost.GameEvent.GameHostEventRaisedEvent
+- uid: Noname.GameHost.GameEvent.GameEventHub
+  commentId: T:Noname.GameHost.GameEvent.GameEventHub
+  href: Noname.GameHost.GameEvent.GameEventHub.html
+  name: GameEventHub
+  nameWithType: GameEventHub
+  fullName: Noname.GameHost.GameEvent.GameEventHub
+- uid: Noname.GameHost.GameEvent.GameHostCommandResultEvent
+  commentId: T:Noname.GameHost.GameEvent.GameHostCommandResultEvent
+  href: Noname.GameHost.GameEvent.GameHostCommandResultEvent.html
+  name: GameHostCommandResultEvent
+  nameWithType: GameHostCommandResultEvent
+  fullName: Noname.GameHost.GameEvent.GameHostCommandResultEvent
+- uid: Noname.GameHost.GameEvent.GameEventBus
+  commentId: T:Noname.GameHost.GameEvent.GameEventBus
+  href: Noname.GameHost.GameEvent.GameEventBus.html
+  name: GameEventBus
+  nameWithType: GameEventBus
+  fullName: Noname.GameHost.GameEvent.GameEventBus
+- uid: Noname.GameHost.GameEvent.GameEventBus.Scope
+  commentId: T:Noname.GameHost.GameEvent.GameEventBus.Scope
+  parent: Noname.GameHost.GameEvent
+  href: Noname.GameHost.GameEvent.GameEventBus.html
+  name: GameEventBus.Scope
+  nameWithType: GameEventBus.Scope
+  fullName: Noname.GameHost.GameEvent.GameEventBus.Scope
+  spec.csharp:
+  - uid: Noname.GameHost.GameEvent.GameEventBus
+    name: GameEventBus
+    href: Noname.GameHost.GameEvent.GameEventBus.html
+  - name: .
+  - uid: Noname.GameHost.GameEvent.GameEventBus.Scope
+    name: Scope
+    href: Noname.GameHost.GameEvent.GameEventBus.Scope.html
+  spec.vb:
+  - uid: Noname.GameHost.GameEvent.GameEventBus
+    name: GameEventBus
+    href: Noname.GameHost.GameEvent.GameEventBus.html
+  - name: .
+  - uid: Noname.GameHost.GameEvent.GameEventBus.Scope
+    name: Scope
+    href: Noname.GameHost.GameEvent.GameEventBus.Scope.html
+- uid: Noname.GameHost.GameEvent.GameUIContextSupplyEvent
+  commentId: T:Noname.GameHost.GameEvent.GameUIContextSupplyEvent
+  href: Noname.GameHost.GameEvent.GameUIContextSupplyEvent.html
+  name: GameUIContextSupplyEvent
+  nameWithType: GameUIContextSupplyEvent
+  fullName: Noname.GameHost.GameEvent.GameUIContextSupplyEvent
+- uid: Noname.GameHost.GameEvent
+  commentId: N:Noname.GameHost.GameEvent
+  href: Noname.html
+  name: Noname.GameHost.GameEvent
+  nameWithType: Noname.GameHost.GameEvent
+  fullName: Noname.GameHost.GameEvent
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+    href: Noname.GameHost.html
+  - name: .
+  - uid: Noname.GameHost.GameEvent
+    name: GameEvent
+    href: Noname.GameHost.GameEvent.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+    href: Noname.GameHost.html
+  - name: .
+  - uid: Noname.GameHost.GameEvent
+    name: GameEvent
+    href: Noname.GameHost.GameEvent.html

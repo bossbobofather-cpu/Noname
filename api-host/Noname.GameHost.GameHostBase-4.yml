@@ -1,0 +1,1637 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameHost.GameHostBase`4
+  commentId: T:Noname.GameHost.GameHostBase`4
+  id: GameHostBase`4
+  parent: Noname.GameHost
+  children:
+  - Noname.GameHost.GameHostBase`4.BuildSnapshotInternal
+  - Noname.GameHost.GameHostBase`4.CreateErrorEvent(`0,System.Exception)
+  - Noname.GameHost.GameHostBase`4.Dispose
+  - Noname.GameHost.GameHostBase`4.EventRaised
+  - Noname.GameHost.GameHostBase`4.FixedStep
+  - Noname.GameHost.GameHostBase`4.FlushEvents
+  - Noname.GameHost.GameHostBase`4.HandleCommand(`0)
+  - Noname.GameHost.GameHostBase`4.HandleInternalEvent(`2)
+  - Noname.GameHost.GameHostBase`4.IsRunning
+  - Noname.GameHost.GameHostBase`4.LoopException
+  - Noname.GameHost.GameHostBase`4.MaxStepsPerTick
+  - Noname.GameHost.GameHostBase`4.OnTick(System.Single)
+  - Noname.GameHost.GameHostBase`4.PublishEvent(`2)
+  - Noname.GameHost.GameHostBase`4.PublishResult(`1)
+  - Noname.GameHost.GameHostBase`4.ResultProduced
+  - Noname.GameHost.GameHostBase`4.SendCommand(`0)
+  - Noname.GameHost.GameHostBase`4.SleepMilliseconds
+  - Noname.GameHost.GameHostBase`4.SnapshotInterval
+  - Noname.GameHost.GameHostBase`4.StartSimulation
+  - Noname.GameHost.GameHostBase`4.StopSimulation
+  - Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds
+  - Noname.GameHost.GameHostBase`4.ThrowIfDisposed
+  - Noname.GameHost.GameHostBase`4.Tick
+  langs:
+  - csharp
+  - vb
+  name: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  type: Class
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: >-
+    게임 호스트 기본 클래스입니다.
+
+    서버/호스트 시뮬레이션을 관리하며 스레드 기반 커맨드 처리,
+
+    이벤트 디스패치, 스냅샷 생성을 제공합니다.
+  example: []
+  syntax:
+    content: 'public abstract class GameHostBase<TCommand, TResult, TEvent, TSnapshot> : IGameHost<TCommand, TResult, TEvent, TSnapshot>, IDisposable where TCommand : GameCommandBase where TResult : GameCommandResultBase where TEvent : GameEventBase where TSnapshot : GameSnapshotBase'
+    typeParameters:
+    - id: TCommand
+    - id: TResult
+    - id: TEvent
+    - id: TSnapshot
+    content.vb: Public MustInherit Class GameHostBase(Of TCommand As GameCommandBase, TResult As GameCommandResultBase, TEvent As GameEventBase, TSnapshot As GameSnapshotBase) Implements IGameHost(Of TCommand, TResult, TEvent, TSnapshot), IDisposable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - MyProject.DefenseGame.Application.DefenseGameHost
+  implements:
+  - Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+- uid: Noname.GameHost.GameHostBase`4.Tick
+  commentId: P:Noname.GameHost.GameHostBase`4.Tick
+  id: Tick
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: Tick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  type: Property
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 현재 호스트 틱입니다.
+  example: []
+  syntax:
+    content: public long Tick { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public Property Tick As Long
+  overload: Noname.GameHost.GameHostBase`4.Tick*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+- uid: Noname.GameHost.GameHostBase`4.IsRunning
+  commentId: P:Noname.GameHost.GameHostBase`4.IsRunning
+  id: IsRunning
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: IsRunning
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  type: Property
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 실행 상태입니다.
+  example: []
+  syntax:
+    content: public bool IsRunning { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsRunning As Boolean
+  overload: Noname.GameHost.GameHostBase`4.IsRunning*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+- uid: Noname.GameHost.GameHostBase`4.LoopException
+  commentId: P:Noname.GameHost.GameHostBase`4.LoopException
+  id: LoopException
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: LoopException
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  type: Property
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 루프에서 발생한 예외입니다.
+  example: []
+  syntax:
+    content: public Exception LoopException { get; }
+    parameters: []
+    return:
+      type: System.Exception
+    content.vb: Public ReadOnly Property LoopException As Exception
+  overload: Noname.GameHost.GameHostBase`4.LoopException*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+- uid: Noname.GameHost.GameHostBase`4.FixedStep
+  commentId: P:Noname.GameHost.GameHostBase`4.FixedStep
+  id: FixedStep
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: FixedStep
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  type: Property
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 고정 스텝 시간입니다.
+  example: []
+  syntax:
+    content: public float FixedStep { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property FixedStep As Single
+  overload: Noname.GameHost.GameHostBase`4.FixedStep*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+- uid: Noname.GameHost.GameHostBase`4.MaxStepsPerTick
+  commentId: P:Noname.GameHost.GameHostBase`4.MaxStepsPerTick
+  id: MaxStepsPerTick
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: MaxStepsPerTick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  type: Property
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 틱당 최대 스텝 수입니다. Spiral of Death 방지를 위한 제한입니다.
+  example: []
+  syntax:
+    content: public int MaxStepsPerTick { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxStepsPerTick As Integer
+  overload: Noname.GameHost.GameHostBase`4.MaxStepsPerTick*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+- uid: Noname.GameHost.GameHostBase`4.SleepMilliseconds
+  commentId: P:Noname.GameHost.GameHostBase`4.SleepMilliseconds
+  id: SleepMilliseconds
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: SleepMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  type: Property
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 루프 대기 시간(ms)입니다.
+  example: []
+  syntax:
+    content: public int SleepMilliseconds { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SleepMilliseconds As Integer
+  overload: Noname.GameHost.GameHostBase`4.SleepMilliseconds*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+- uid: Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds
+  commentId: P:Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds
+  id: StopTimeoutMilliseconds
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: StopTimeoutMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  type: Property
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 종료 대기 제한(ms)입니다.
+  example: []
+  syntax:
+    content: public int StopTimeoutMilliseconds { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property StopTimeoutMilliseconds As Integer
+  overload: Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+- uid: Noname.GameHost.GameHostBase`4.SnapshotInterval
+  commentId: P:Noname.GameHost.GameHostBase`4.SnapshotInterval
+  id: SnapshotInterval
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: SnapshotInterval
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  type: Property
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 스냅샷 생성 간격(초)입니다. 0이면 매 틱 생성합니다.
+  example: []
+  syntax:
+    content: public float SnapshotInterval { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property SnapshotInterval As Single
+  overload: Noname.GameHost.GameHostBase`4.SnapshotInterval*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+- uid: Noname.GameHost.GameHostBase`4.ResultProduced
+  commentId: E:Noname.GameHost.GameHostBase`4.ResultProduced
+  id: ResultProduced
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: ResultProduced
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  type: Event
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  example: []
+  syntax:
+    content: public event Action<TResult> ResultProduced
+    return:
+      type: System.Action{{TResult}}
+    content.vb: Public Event ResultProduced As Action(Of TResult)
+  implements:
+  - Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.ResultProduced
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+- uid: Noname.GameHost.GameHostBase`4.EventRaised
+  commentId: E:Noname.GameHost.GameHostBase`4.EventRaised
+  id: EventRaised
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: EventRaised
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  type: Event
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  example: []
+  syntax:
+    content: public event Action<TEvent> EventRaised
+    return:
+      type: System.Action{{TEvent}}
+    content.vb: Public Event EventRaised As Action(Of TEvent)
+  implements:
+  - Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.EventRaised
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+- uid: Noname.GameHost.GameHostBase`4.SendCommand(`0)
+  commentId: M:Noname.GameHost.GameHostBase`4.SendCommand(`0)
+  id: SendCommand(`0)
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: SendCommand(TCommand)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SendCommand(TCommand)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SendCommand(TCommand)
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  example: []
+  syntax:
+    content: public void SendCommand(TCommand command)
+    parameters:
+    - id: command
+      type: '{TCommand}'
+    content.vb: Public Sub SendCommand(command As TCommand)
+  overload: Noname.GameHost.GameHostBase`4.SendCommand*
+  implements:
+  - Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.SendCommand({TCommand})
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SendCommand(TCommand)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SendCommand(TCommand)
+- uid: Noname.GameHost.GameHostBase`4.StartSimulation
+  commentId: M:Noname.GameHost.GameHostBase`4.StartSimulation
+  id: StartSimulation
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: StartSimulation()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 백그라운드 스레드에서 시뮬레이션 루프를 시작합니다.
+  example: []
+  syntax:
+    content: public void StartSimulation()
+    content.vb: Public Sub StartSimulation()
+  overload: Noname.GameHost.GameHostBase`4.StartSimulation*
+  implements:
+  - Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.StartSimulation
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+- uid: Noname.GameHost.GameHostBase`4.StopSimulation
+  commentId: M:Noname.GameHost.GameHostBase`4.StopSimulation
+  id: StopSimulation
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: StopSimulation()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 시뮬레이션 루프를 중지하고 스레드 종료를 대기합니다.
+  example: []
+  syntax:
+    content: public void StopSimulation()
+    content.vb: Public Sub StopSimulation()
+  overload: Noname.GameHost.GameHostBase`4.StopSimulation*
+  implements:
+  - Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.StopSimulation
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+- uid: Noname.GameHost.GameHostBase`4.HandleCommand(`0)
+  commentId: M:Noname.GameHost.GameHostBase`4.HandleCommand(`0)
+  id: HandleCommand(`0)
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: HandleCommand(TCommand)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand(TCommand)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand(TCommand)
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 커맨드를 처리하고 결과/이벤트를 반환합니다.
+  example: []
+  syntax:
+    content: protected abstract GameCommandOutcome<TResult, TEvent> HandleCommand(TCommand command)
+    parameters:
+    - id: command
+      type: '{TCommand}'
+    return:
+      type: Noname.GameHost.GameCommandOutcome{{TResult},{TEvent}}
+    content.vb: Protected MustOverride Function HandleCommand(command As TCommand) As GameCommandOutcome(Of TResult, TEvent)
+  overload: Noname.GameHost.GameHostBase`4.HandleCommand*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand(TCommand)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand(TCommand)
+- uid: Noname.GameHost.GameHostBase`4.OnTick(System.Single)
+  commentId: M:Noname.GameHost.GameHostBase`4.OnTick(System.Single)
+  id: OnTick(System.Single)
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: OnTick(float)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick(float)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick(float)
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 매 스텝 호출되어 게임 상태를 갱신합니다.
+  example: []
+  syntax:
+    content: protected abstract void OnTick(float deltaSeconds)
+    parameters:
+    - id: deltaSeconds
+      type: System.Single
+    content.vb: Protected MustOverride Sub OnTick(deltaSeconds As Single)
+  overload: Noname.GameHost.GameHostBase`4.OnTick*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick(Single)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick(Single)
+  name.vb: OnTick(Single)
+- uid: Noname.GameHost.GameHostBase`4.BuildSnapshotInternal
+  commentId: M:Noname.GameHost.GameHostBase`4.BuildSnapshotInternal
+  id: BuildSnapshotInternal
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: BuildSnapshotInternal()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal()
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal()
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 현재 게임 상태의 스냅샷을 생성합니다(루프 스레드에서 호출).
+  example: []
+  syntax:
+    content: protected abstract TSnapshot BuildSnapshotInternal()
+    return:
+      type: '{TSnapshot}'
+    content.vb: Protected MustOverride Function BuildSnapshotInternal() As TSnapshot
+  overload: Noname.GameHost.GameHostBase`4.BuildSnapshotInternal*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal()
+- uid: Noname.GameHost.GameHostBase`4.CreateErrorEvent(`0,System.Exception)
+  commentId: M:Noname.GameHost.GameHostBase`4.CreateErrorEvent(`0,System.Exception)
+  id: CreateErrorEvent(`0,System.Exception)
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: CreateErrorEvent(TCommand, Exception)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.CreateErrorEvent(TCommand, Exception)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.CreateErrorEvent(TCommand, System.Exception)
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: 커맨드 처리 실패 시 기본 에러 이벤트를 생성합니다.
+  example: []
+  syntax:
+    content: protected virtual TEvent CreateErrorEvent(TCommand command, Exception exception)
+    parameters:
+    - id: command
+      type: '{TCommand}'
+    - id: exception
+      type: System.Exception
+    return:
+      type: '{TEvent}'
+    content.vb: Protected Overridable Function CreateErrorEvent(command As TCommand, exception As Exception) As TEvent
+  overload: Noname.GameHost.GameHostBase`4.CreateErrorEvent*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).CreateErrorEvent(TCommand, Exception)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).CreateErrorEvent(TCommand, System.Exception)
+- uid: Noname.GameHost.GameHostBase`4.PublishResult(`1)
+  commentId: M:Noname.GameHost.GameHostBase`4.PublishResult(`1)
+  id: PublishResult(`1)
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: PublishResult(TResult)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishResult(TResult)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishResult(TResult)
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  syntax:
+    content: protected void PublishResult(TResult result)
+    parameters:
+    - id: result
+      type: '{TResult}'
+    content.vb: Protected Sub PublishResult(result As TResult)
+  overload: Noname.GameHost.GameHostBase`4.PublishResult*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishResult(TResult)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishResult(TResult)
+- uid: Noname.GameHost.GameHostBase`4.HandleInternalEvent(`2)
+  commentId: M:Noname.GameHost.GameHostBase`4.HandleInternalEvent(`2)
+  id: HandleInternalEvent(`2)
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: HandleInternalEvent(TEvent)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleInternalEvent(TEvent)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleInternalEvent(TEvent)
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  syntax:
+    content: protected virtual void HandleInternalEvent(TEvent eventData)
+    parameters:
+    - id: eventData
+      type: '{TEvent}'
+    content.vb: Protected Overridable Sub HandleInternalEvent(eventData As TEvent)
+  overload: Noname.GameHost.GameHostBase`4.HandleInternalEvent*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleInternalEvent(TEvent)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleInternalEvent(TEvent)
+- uid: Noname.GameHost.GameHostBase`4.PublishEvent(`2)
+  commentId: M:Noname.GameHost.GameHostBase`4.PublishEvent(`2)
+  id: PublishEvent(`2)
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: PublishEvent(TEvent)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishEvent(TEvent)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishEvent(TEvent)
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  syntax:
+    content: protected void PublishEvent(TEvent eventData)
+    parameters:
+    - id: eventData
+      type: '{TEvent}'
+    content.vb: Protected Sub PublishEvent(eventData As TEvent)
+  overload: Noname.GameHost.GameHostBase`4.PublishEvent*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishEvent(TEvent)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishEvent(TEvent)
+- uid: Noname.GameHost.GameHostBase`4.FlushEvents
+  commentId: M:Noname.GameHost.GameHostBase`4.FlushEvents
+  id: FlushEvents
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: FlushEvents()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  summary: >-
+    메인 스레드에서 결과/이벤트를 디스패치합니다.
+
+    Unity Update에서 호출해야 합니다.
+  example: []
+  syntax:
+    content: public void FlushEvents()
+    content.vb: Public Sub FlushEvents()
+  overload: Noname.GameHost.GameHostBase`4.FlushEvents*
+  implements:
+  - Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.FlushEvents
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+- uid: Noname.GameHost.GameHostBase`4.ThrowIfDisposed
+  commentId: M:Noname.GameHost.GameHostBase`4.ThrowIfDisposed
+  id: ThrowIfDisposed
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfDisposed()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ThrowIfDisposed()
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ThrowIfDisposed()
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  syntax:
+    content: protected void ThrowIfDisposed()
+    content.vb: Protected Sub ThrowIfDisposed()
+  overload: Noname.GameHost.GameHostBase`4.ThrowIfDisposed*
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ThrowIfDisposed()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ThrowIfDisposed()
+- uid: Noname.GameHost.GameHostBase`4.Dispose
+  commentId: M:Noname.GameHost.GameHostBase`4.Dispose
+  id: Dispose
+  parent: Noname.GameHost.GameHostBase`4
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose()
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose()
+  type: Method
+  assemblies:
+  - Noname.GameHost.Plugin
+  namespace: Noname.GameHost
+  example: []
+  syntax:
+    content: public virtual void Dispose()
+    content.vb: Public Overridable Sub Dispose()
+  overload: Noname.GameHost.GameHostBase`4.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose()
+references:
+- uid: Noname.GameHost
+  commentId: N:Noname.GameHost
+  href: Noname.html
+  name: Noname.GameHost
+  nameWithType: Noname.GameHost
+  fullName: Noname.GameHost
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+    href: Noname.GameHost.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+    href: Noname.GameHost.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  commentId: T:Noname.GameHost.IGameHost{`0,`1,`2,`3}
+  parent: Noname.GameHost
+  definition: Noname.GameHost.IGameHost`4
+  href: Noname.GameHost.IGameHost-4.html
+  name: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: Noname.GameHost.IGameHost`4
+    name: IGameHost
+    href: Noname.GameHost.IGameHost-4.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: Noname.GameHost.IGameHost`4
+    name: IGameHost
+    href: Noname.GameHost.IGameHost-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Noname.GameHost.IGameHost`4
+  commentId: T:Noname.GameHost.IGameHost`4
+  href: Noname.GameHost.IGameHost-4.html
+  name: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: Noname.GameHost.IGameHost`4
+    name: IGameHost
+    href: Noname.GameHost.IGameHost-4.html
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: Noname.GameHost.IGameHost`4
+    name: IGameHost
+    href: Noname.GameHost.IGameHost-4.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
+- uid: Noname.GameHost.GameHostBase`4.Tick*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.Tick
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_Tick
+  name: Tick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Noname.GameHost.GameHostBase`4.IsRunning*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.IsRunning
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_IsRunning
+  name: IsRunning
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Noname.GameHost.GameHostBase`4.LoopException*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.LoopException
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_LoopException
+  name: LoopException
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Noname.GameHost.GameHostBase`4.FixedStep*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.FixedStep
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_FixedStep
+  name: FixedStep
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Noname.GameHost.GameHostBase`4.MaxStepsPerTick*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.MaxStepsPerTick
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_MaxStepsPerTick
+  name: MaxStepsPerTick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Noname.GameHost.GameHostBase`4.SleepMilliseconds*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.SleepMilliseconds
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_SleepMilliseconds
+  name: SleepMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+- uid: Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_StopTimeoutMilliseconds
+  name: StopTimeoutMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+- uid: Noname.GameHost.GameHostBase`4.SnapshotInterval*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.SnapshotInterval
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_SnapshotInterval
+  name: SnapshotInterval
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+- uid: Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.ResultProduced
+  commentId: E:Noname.GameHost.IGameHost{`0,`1,`2,`3}.ResultProduced
+  parent: Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  definition: Noname.GameHost.IGameHost`4.ResultProduced
+  href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_ResultProduced
+  name: ResultProduced
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+- uid: System.Action{{TResult}}
+  commentId: T:System.Action{`1}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<TResult>
+  nameWithType: Action<TResult>
+  fullName: System.Action<TResult>
+  nameWithType.vb: Action(Of TResult)
+  fullName.vb: System.Action(Of TResult)
+  name.vb: Action(Of TResult)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Noname.GameHost.IGameHost`4.ResultProduced
+  commentId: E:Noname.GameHost.IGameHost`4.ResultProduced
+  href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_ResultProduced
+  name: ResultProduced
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.EventRaised
+  commentId: E:Noname.GameHost.IGameHost{`0,`1,`2,`3}.EventRaised
+  parent: Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  definition: Noname.GameHost.IGameHost`4.EventRaised
+  href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_EventRaised
+  name: EventRaised
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+- uid: System.Action{{TEvent}}
+  commentId: T:System.Action{`2}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<TEvent>
+  nameWithType: Action<TEvent>
+  fullName: System.Action<TEvent>
+  nameWithType.vb: Action(Of TEvent)
+  fullName.vb: System.Action(Of TEvent)
+  name.vb: Action(Of TEvent)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: Noname.GameHost.IGameHost`4.EventRaised
+  commentId: E:Noname.GameHost.IGameHost`4.EventRaised
+  href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_EventRaised
+  name: EventRaised
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+- uid: Noname.GameHost.GameHostBase`4.SendCommand*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.SendCommand
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_SendCommand__0_
+  name: SendCommand
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SendCommand
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SendCommand
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SendCommand
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SendCommand
+- uid: Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.SendCommand({TCommand})
+  commentId: M:Noname.GameHost.IGameHost{`0,`1,`2,`3}.SendCommand(`0)
+  parent: Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  definition: Noname.GameHost.IGameHost`4.SendCommand(`0)
+  href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_SendCommand__0_
+  name: SendCommand(TCommand)
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.SendCommand(TCommand)
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.SendCommand(TCommand)
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).SendCommand(TCommand)
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).SendCommand(TCommand)
+  spec.csharp:
+  - uid: Noname.GameHost.IGameHost{`0,`1,`2,`3}.SendCommand(`0)
+    name: SendCommand
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_SendCommand__0_
+  - name: (
+  - name: TCommand
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.IGameHost{`0,`1,`2,`3}.SendCommand(`0)
+    name: SendCommand
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_SendCommand__0_
+  - name: (
+  - name: TCommand
+  - name: )
+- uid: '{TCommand}'
+  commentId: '!:TCommand'
+  definition: TCommand
+  name: TCommand
+  nameWithType: TCommand
+  fullName: TCommand
+- uid: Noname.GameHost.IGameHost`4.SendCommand(`0)
+  commentId: M:Noname.GameHost.IGameHost`4.SendCommand(`0)
+  href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_SendCommand__0_
+  name: SendCommand(TCommand)
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.SendCommand(TCommand)
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.SendCommand(TCommand)
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).SendCommand(TCommand)
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).SendCommand(TCommand)
+  spec.csharp:
+  - uid: Noname.GameHost.IGameHost`4.SendCommand(`0)
+    name: SendCommand
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_SendCommand__0_
+  - name: (
+  - name: TCommand
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.IGameHost`4.SendCommand(`0)
+    name: SendCommand
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_SendCommand__0_
+  - name: (
+  - name: TCommand
+  - name: )
+- uid: TCommand
+  name: TCommand
+  nameWithType: TCommand
+  fullName: TCommand
+- uid: Noname.GameHost.GameHostBase`4.StartSimulation*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.StartSimulation
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_StartSimulation
+  name: StartSimulation
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation
+- uid: Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.StartSimulation
+  commentId: M:Noname.GameHost.IGameHost{`0,`1,`2,`3}.StartSimulation
+  parent: Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  definition: Noname.GameHost.IGameHost`4.StartSimulation
+  href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StartSimulation
+  name: StartSimulation()
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+  spec.csharp:
+  - uid: Noname.GameHost.IGameHost{`0,`1,`2,`3}.StartSimulation
+    name: StartSimulation
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StartSimulation
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.IGameHost{`0,`1,`2,`3}.StartSimulation
+    name: StartSimulation
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StartSimulation
+  - name: (
+  - name: )
+- uid: Noname.GameHost.IGameHost`4.StartSimulation
+  commentId: M:Noname.GameHost.IGameHost`4.StartSimulation
+  href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StartSimulation
+  name: StartSimulation()
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+  spec.csharp:
+  - uid: Noname.GameHost.IGameHost`4.StartSimulation
+    name: StartSimulation
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StartSimulation
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.IGameHost`4.StartSimulation
+    name: StartSimulation
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StartSimulation
+  - name: (
+  - name: )
+- uid: Noname.GameHost.GameHostBase`4.StopSimulation*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.StopSimulation
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_StopSimulation
+  name: StopSimulation
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation
+- uid: Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.StopSimulation
+  commentId: M:Noname.GameHost.IGameHost{`0,`1,`2,`3}.StopSimulation
+  parent: Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  definition: Noname.GameHost.IGameHost`4.StopSimulation
+  href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StopSimulation
+  name: StopSimulation()
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+  spec.csharp:
+  - uid: Noname.GameHost.IGameHost{`0,`1,`2,`3}.StopSimulation
+    name: StopSimulation
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StopSimulation
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.IGameHost{`0,`1,`2,`3}.StopSimulation
+    name: StopSimulation
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StopSimulation
+  - name: (
+  - name: )
+- uid: Noname.GameHost.IGameHost`4.StopSimulation
+  commentId: M:Noname.GameHost.IGameHost`4.StopSimulation
+  href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StopSimulation
+  name: StopSimulation()
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+  spec.csharp:
+  - uid: Noname.GameHost.IGameHost`4.StopSimulation
+    name: StopSimulation
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StopSimulation
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.IGameHost`4.StopSimulation
+    name: StopSimulation
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_StopSimulation
+  - name: (
+  - name: )
+- uid: Noname.GameHost.GameHostBase`4.HandleCommand*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.HandleCommand
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_HandleCommand__0_
+  name: HandleCommand
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand
+- uid: Noname.GameHost.GameCommandOutcome{{TResult},{TEvent}}
+  commentId: T:Noname.GameHost.GameCommandOutcome{`1,`2}
+  parent: Noname.GameHost
+  definition: Noname.GameHost.GameCommandOutcome`2
+  href: Noname.GameHost.GameCommandOutcome-2.html
+  name: GameCommandOutcome<TResult, TEvent>
+  nameWithType: GameCommandOutcome<TResult, TEvent>
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent)
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent)
+  name.vb: GameCommandOutcome(Of TResult, TEvent)
+  spec.csharp:
+  - uid: Noname.GameHost.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: Noname.GameHost.GameCommandOutcome-2.html
+  - name: <
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: Noname.GameHost.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: Noname.GameHost.GameCommandOutcome-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: Noname.GameHost.GameCommandOutcome`2
+  commentId: T:Noname.GameHost.GameCommandOutcome`2
+  href: Noname.GameHost.GameCommandOutcome-2.html
+  name: GameCommandOutcome<TResult, TEvent>
+  nameWithType: GameCommandOutcome<TResult, TEvent>
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent)
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent)
+  name.vb: GameCommandOutcome(Of TResult, TEvent)
+  spec.csharp:
+  - uid: Noname.GameHost.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: Noname.GameHost.GameCommandOutcome-2.html
+  - name: <
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: '>'
+  spec.vb:
+  - uid: Noname.GameHost.GameCommandOutcome`2
+    name: GameCommandOutcome
+    href: Noname.GameHost.GameCommandOutcome-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: )
+- uid: Noname.GameHost.GameHostBase`4.OnTick*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.OnTick
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_OnTick_System_Single_
+  name: OnTick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick
+- uid: Noname.GameHost.GameHostBase`4.BuildSnapshotInternal*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.BuildSnapshotInternal
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_BuildSnapshotInternal
+  name: BuildSnapshotInternal
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal
+- uid: '{TSnapshot}'
+  commentId: '!:TSnapshot'
+  definition: TSnapshot
+  name: TSnapshot
+  nameWithType: TSnapshot
+  fullName: TSnapshot
+- uid: TSnapshot
+  commentId: '!:TSnapshot'
+  name: TSnapshot
+  nameWithType: TSnapshot
+  fullName: TSnapshot
+- uid: Noname.GameHost.GameHostBase`4.CreateErrorEvent*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.CreateErrorEvent
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_CreateErrorEvent__0_System_Exception_
+  name: CreateErrorEvent
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.CreateErrorEvent
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.CreateErrorEvent
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).CreateErrorEvent
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).CreateErrorEvent
+- uid: '{TEvent}'
+  commentId: '!:TEvent'
+  definition: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: TEvent
+  name: TEvent
+  nameWithType: TEvent
+  fullName: TEvent
+- uid: Noname.GameHost.GameHostBase`4.PublishResult*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.PublishResult
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_PublishResult__1_
+  name: PublishResult
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishResult
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishResult
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishResult
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishResult
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: Noname.GameHost.GameHostBase`4.HandleInternalEvent*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.HandleInternalEvent
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_HandleInternalEvent__2_
+  name: HandleInternalEvent
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleInternalEvent
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleInternalEvent
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleInternalEvent
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleInternalEvent
+- uid: Noname.GameHost.GameHostBase`4.PublishEvent*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.PublishEvent
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_PublishEvent__2_
+  name: PublishEvent
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishEvent
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.PublishEvent
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishEvent
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).PublishEvent
+- uid: Noname.GameHost.GameHostBase`4.FlushEvents*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.FlushEvents
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_FlushEvents
+  name: FlushEvents
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents
+- uid: Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}.FlushEvents
+  commentId: M:Noname.GameHost.IGameHost{`0,`1,`2,`3}.FlushEvents
+  parent: Noname.GameHost.IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  definition: Noname.GameHost.IGameHost`4.FlushEvents
+  href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_FlushEvents
+  name: FlushEvents()
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+  spec.csharp:
+  - uid: Noname.GameHost.IGameHost{`0,`1,`2,`3}.FlushEvents
+    name: FlushEvents
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_FlushEvents
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.IGameHost{`0,`1,`2,`3}.FlushEvents
+    name: FlushEvents
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_FlushEvents
+  - name: (
+  - name: )
+- uid: Noname.GameHost.IGameHost`4.FlushEvents
+  commentId: M:Noname.GameHost.IGameHost`4.FlushEvents
+  href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_FlushEvents
+  name: FlushEvents()
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+  spec.csharp:
+  - uid: Noname.GameHost.IGameHost`4.FlushEvents
+    name: FlushEvents
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_FlushEvents
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.IGameHost`4.FlushEvents
+    name: FlushEvents
+    href: Noname.GameHost.IGameHost-4.html#Noname_GameHost_IGameHost_4_FlushEvents
+  - name: (
+  - name: )
+- uid: Noname.GameHost.GameHostBase`4.ThrowIfDisposed*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.ThrowIfDisposed
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_ThrowIfDisposed
+  name: ThrowIfDisposed
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ThrowIfDisposed
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ThrowIfDisposed
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ThrowIfDisposed
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ThrowIfDisposed
+- uid: Noname.GameHost.GameHostBase`4.Dispose*
+  commentId: Overload:Noname.GameHost.GameHostBase`4.Dispose
+  href: Noname.GameHost.GameHostBase-4.html#Noname_GameHost_GameHostBase_4_Dispose
+  name: Dispose
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

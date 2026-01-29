@@ -13,6 +13,8 @@ items:
   nameWithType: SelfTargetingStrategy
   fullName: Noname.GameAbilitySystem.Domain.SelfTargetingStrategy
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 자기 자신을 타겟으로 선택합니다.
   example: []
@@ -41,6 +43,8 @@ items:
   nameWithType: SelfTargetingStrategy.FindTargets(AbilitySystemComponent, TargetContext)
   fullName: Noname.GameAbilitySystem.Domain.SelfTargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Noname.GameAbilitySystem.Domain.TargetContext)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   example: []
   syntax:

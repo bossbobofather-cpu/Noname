@@ -14,6 +14,8 @@ items:
   nameWithType: AreaTargetingStrategy
   fullName: Noname.GameAbilitySystem.Domain.AreaTargetingStrategy
   type: Class
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   summary: 특정 반경 내의 모든 적을 선택합니다.
   example: []
@@ -42,6 +44,8 @@ items:
   nameWithType: AreaTargetingStrategy.AreaTargetingStrategy(float)
   fullName: Noname.GameAbilitySystem.Domain.AreaTargetingStrategy.AreaTargetingStrategy(float)
   type: Constructor
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
     content: public AreaTargetingStrategy(float radius)
@@ -64,6 +68,8 @@ items:
   nameWithType: AreaTargetingStrategy.FindTargets(AbilitySystemComponent, TargetContext)
   fullName: Noname.GameAbilitySystem.Domain.AreaTargetingStrategy.FindTargets(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Noname.GameAbilitySystem.Domain.TargetContext)
   type: Method
+  assemblies:
+  - Noname.GameAbilitySystem.Plugin
   namespace: Noname.GameAbilitySystem.Domain
   example: []
   syntax:

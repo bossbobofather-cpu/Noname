@@ -17,6 +17,8 @@ items:
   nameWithType: LevelUpAbilityId
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
   type: Enum
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.LevelUp
   summary: 레벨업 어빌리티 ID입니다.
   example: []
@@ -34,6 +36,8 @@ items:
   nameWithType: LevelUpAbilityId.None
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.None
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.LevelUp
   syntax:
     content: None = 0
@@ -50,6 +54,8 @@ items:
   nameWithType: LevelUpAbilityId.FullHealthRestore
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.FullHealthRestore
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.LevelUp
   syntax:
     content: FullHealthRestore = 1
@@ -66,6 +72,8 @@ items:
   nameWithType: LevelUpAbilityId.AttackSpeedUp
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AttackSpeedUp
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.LevelUp
   syntax:
     content: AttackSpeedUp = 2
@@ -82,6 +90,8 @@ items:
   nameWithType: LevelUpAbilityId.AreaAttack
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttack
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.LevelUp
   syntax:
     content: AreaAttack = 3
@@ -98,6 +108,8 @@ items:
   nameWithType: LevelUpAbilityId.AreaAttackTargetUp
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttackTargetUp
   type: Field
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.LevelUp
   syntax:
     content: AreaAttackTargetUp = 4

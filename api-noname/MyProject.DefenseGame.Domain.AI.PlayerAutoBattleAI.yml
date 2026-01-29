@@ -15,6 +15,8 @@ items:
   nameWithType: PlayerAutoBattleAI
   fullName: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
   type: Class
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.AI
   summary: >-
     플레이어 자동 전투 AI입니다.
@@ -47,6 +49,8 @@ items:
   nameWithType: PlayerAutoBattleAI.TargetContext
   fullName: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.TargetContext
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.AI
   summary: 타겟팅 컨텍스트입니다. Host에서 주입합니다.
   example: []
@@ -54,7 +58,7 @@ items:
     content: public TargetContext TargetContext { get; set; }
     parameters: []
     return:
-      type: TargetContext
+      type: Noname.GameAbilitySystem.Domain.TargetContext
     content.vb: Public Property TargetContext As TargetContext
   overload: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.TargetContext*
 - uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
@@ -68,6 +72,8 @@ items:
   nameWithType: PlayerAutoBattleAI.Checker
   fullName: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.AI
   syntax:
     content: public IAIFlagChecker Checker { get; set; }
@@ -87,6 +93,8 @@ items:
   nameWithType: PlayerAutoBattleAI.Update(DefenseEntity, float)
   fullName: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Update(MyProject.DefenseGame.Domain.DefenseEntity, float)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain.AI
   summary: AI 로직을 수행합니다. 매 틱마다 호출됩니다.
   example: []
@@ -395,11 +403,35 @@ references:
   name: TargetContext
   nameWithType: PlayerAutoBattleAI.TargetContext
   fullName: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.TargetContext
-- uid: TargetContext
-  isExternal: true
+- uid: Noname.GameAbilitySystem.Domain.TargetContext
+  commentId: T:Noname.GameAbilitySystem.Domain.TargetContext
+  parent: Noname.GameAbilitySystem.Domain
   name: TargetContext
   nameWithType: TargetContext
-  fullName: TargetContext
+  fullName: Noname.GameAbilitySystem.Domain.TargetContext
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+  spec.vb:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
 - uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker*
   commentId: Overload:MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
   href: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.html#MyProject_DefenseGame_Domain_AI_PlayerAutoBattleAI_Checker

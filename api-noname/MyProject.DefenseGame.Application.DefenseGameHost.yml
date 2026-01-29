@@ -19,6 +19,8 @@ items:
   nameWithType: DefenseGameHost
   fullName: MyProject.DefenseGame.Application.DefenseGameHost
   type: Class
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   summary: >-
     DefenseGame 전용 호스트입니다.
@@ -26,12 +28,37 @@ items:
     Command를 처리하고 Result/Event를 발행합니다.
   example: []
   syntax:
-    content: 'public sealed class DefenseGameHost : GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>, IAIFlagChecker'
-    content.vb: Public NotInheritable Class DefenseGameHost Inherits GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot) Implements IAIFlagChecker
+    content: 'public sealed class DefenseGameHost : GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>, IGameHost<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>, IDisposable, IAIFlagChecker'
+    content.vb: Public NotInheritable Class DefenseGameHost Inherits GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot) Implements IGameHost(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot), IDisposable, IAIFlagChecker
   inheritance:
   - System.Object
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
   implements:
+  - Noname.GameHost.IGameHost{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  - System.IDisposable
   - MyProject.DefenseGame.Domain.IAIFlagChecker
+  inheritedMembers:
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Tick
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.IsRunning
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.LoopException
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.FixedStep
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.MaxStepsPerTick
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SleepMilliseconds
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StopTimeoutMilliseconds
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SnapshotInterval
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.ResultProduced
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.EventRaised
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SendCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StartSimulation
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StopSimulation
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.FlushEvents
+  - Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Dispose
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.#ctor(MyProject.DefenseGame.Domain.DefenseHostConfig)
   commentId: M:MyProject.DefenseGame.Application.DefenseGameHost.#ctor(MyProject.DefenseGame.Domain.DefenseHostConfig)
   id: '#ctor(MyProject.DefenseGame.Domain.DefenseHostConfig)'
@@ -43,6 +70,8 @@ items:
   nameWithType: DefenseGameHost.DefenseGameHost(DefenseHostConfig)
   fullName: MyProject.DefenseGame.Application.DefenseGameHost.DefenseGameHost(MyProject.DefenseGame.Domain.DefenseHostConfig)
   type: Constructor
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   syntax:
     content: public DefenseGameHost(DefenseHostConfig config)
@@ -65,7 +94,10 @@ items:
   nameWithType: DefenseGameHost.HandleCommand(DefenseCommand)
   fullName: MyProject.DefenseGame.Application.DefenseGameHost.HandleCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
+  summary: 커맨드를 처리하고 결과/이벤트를 반환합니다.
   example: []
   syntax:
     content: protected override GameCommandOutcome<DefenseCommandResult, DefenseHostEvent> HandleCommand(DefenseCommand command)
@@ -73,8 +105,9 @@ items:
     - id: command
       type: MyProject.DefenseGame.Application.Commands.DefenseCommand
     return:
-      type: GameCommandOutcome{MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent}
+      type: Noname.GameHost.GameCommandOutcome{MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent}
     content.vb: Protected Overrides Function HandleCommand(command As DefenseCommand) As GameCommandOutcome(Of DefenseCommandResult, DefenseHostEvent)
+  overridden: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.HandleCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
   overload: MyProject.DefenseGame.Application.DefenseGameHost.HandleCommand*
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.OnTick(System.Single)
   commentId: M:MyProject.DefenseGame.Application.DefenseGameHost.OnTick(System.Single)
@@ -87,7 +120,10 @@ items:
   nameWithType: DefenseGameHost.OnTick(float)
   fullName: MyProject.DefenseGame.Application.DefenseGameHost.OnTick(float)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
+  summary: 매 스텝 호출되어 게임 상태를 갱신합니다.
   example: []
   syntax:
     content: protected override void OnTick(float deltaTime)
@@ -95,6 +131,7 @@ items:
     - id: deltaTime
       type: System.Single
     content.vb: Protected Overrides Sub OnTick(deltaTime As Single)
+  overridden: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnTick(System.Single)
   overload: MyProject.DefenseGame.Application.DefenseGameHost.OnTick*
   nameWithType.vb: DefenseGameHost.OnTick(Single)
   fullName.vb: MyProject.DefenseGame.Application.DefenseGameHost.OnTick(Single)
@@ -110,6 +147,8 @@ items:
   nameWithType: DefenseGameHost.HandleInternalEvent(DefenseHostEvent)
   fullName: MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   example: []
   syntax:
@@ -118,6 +157,7 @@ items:
     - id: eventData
       type: MyProject.DefenseGame.Application.DefenseHostEvent
     content.vb: Protected Overrides Sub HandleInternalEvent(eventData As DefenseHostEvent)
+  overridden: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
   overload: MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent*
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.BuildSnapshotInternal
   commentId: M:MyProject.DefenseGame.Application.DefenseGameHost.BuildSnapshotInternal
@@ -130,13 +170,17 @@ items:
   nameWithType: DefenseGameHost.BuildSnapshotInternal()
   fullName: MyProject.DefenseGame.Application.DefenseGameHost.BuildSnapshotInternal()
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
+  summary: 현재 게임 상태의 스냅샷을 생성합니다(루프 스레드에서 호출).
   example: []
   syntax:
     content: protected override DefenseHostSnapshot BuildSnapshotInternal()
     return:
       type: MyProject.DefenseGame.Application.DefenseHostSnapshot
     content.vb: Protected Overrides Function BuildSnapshotInternal() As DefenseHostSnapshot
+  overridden: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.BuildSnapshotInternal
   overload: MyProject.DefenseGame.Application.DefenseGameHost.BuildSnapshotInternal*
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck
   commentId: M:MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck
@@ -149,6 +193,8 @@ items:
   nameWithType: DefenseGameHost.ConsumePlayerAIRecheck()
   fullName: MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck()
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   example: []
   syntax:
@@ -170,11 +216,14 @@ items:
   nameWithType: DefenseGameHost.Dispose()
   fullName: MyProject.DefenseGame.Application.DefenseGameHost.Dispose()
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Application
   example: []
   syntax:
     content: public override void Dispose()
     content.vb: Public Overrides Sub Dispose()
+  overridden: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Dispose
   overload: MyProject.DefenseGame.Application.DefenseGameHost.Dispose*
 references:
 - uid: MyProject.DefenseGame.Application
@@ -218,6 +267,132 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  commentId: T:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  parent: Noname.GameHost
+  definition: Noname.GameHost.GameHostBase`4
+  href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  name: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot)
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot)
+  name.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot)
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase`4
+    name: GameHostBase
+  - name: <
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+    name: DefenseCommand
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+    name: DefenseCommandResult
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostSnapshot
+    name: DefenseHostSnapshot
+    href: MyProject.DefenseGame.Application.DefenseHostSnapshot.html
+  - name: '>'
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase`4
+    name: GameHostBase
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+    name: DefenseCommand
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+    name: DefenseCommandResult
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostSnapshot
+    name: DefenseHostSnapshot
+    href: MyProject.DefenseGame.Application.DefenseHostSnapshot.html
+  - name: )
+- uid: Noname.GameHost.IGameHost{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  commentId: T:Noname.GameHost.IGameHost{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  parent: Noname.GameHost
+  definition: Noname.GameHost.IGameHost`4
+  href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  name: IGameHost<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>
+  nameWithType: IGameHost<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>
+  fullName: Noname.GameHost.IGameHost<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>
+  nameWithType.vb: IGameHost(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot)
+  fullName.vb: Noname.GameHost.IGameHost(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot)
+  name.vb: IGameHost(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot)
+  spec.csharp:
+  - uid: Noname.GameHost.IGameHost`4
+    name: IGameHost
+  - name: <
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+    name: DefenseCommand
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+    name: DefenseCommandResult
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostSnapshot
+    name: DefenseHostSnapshot
+    href: MyProject.DefenseGame.Application.DefenseHostSnapshot.html
+  - name: '>'
+  spec.vb:
+  - uid: Noname.GameHost.IGameHost`4
+    name: IGameHost
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+    name: DefenseCommand
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
+    name: DefenseCommandResult
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostSnapshot
+    name: DefenseHostSnapshot
+    href: MyProject.DefenseGame.Application.DefenseHostSnapshot.html
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
 - uid: MyProject.DefenseGame.Domain.IAIFlagChecker
   commentId: T:MyProject.DefenseGame.Domain.IAIFlagChecker
   parent: MyProject.DefenseGame.Domain
@@ -225,6 +400,393 @@ references:
   name: IAIFlagChecker
   nameWithType: IAIFlagChecker
   fullName: MyProject.DefenseGame.Domain.IAIFlagChecker
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Tick
+  commentId: P:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Tick
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.Tick
+  name: Tick
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.Tick
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.Tick
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).Tick
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).Tick
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.IsRunning
+  commentId: P:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.IsRunning
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.IsRunning
+  name: IsRunning
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.IsRunning
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.IsRunning
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).IsRunning
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).IsRunning
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.LoopException
+  commentId: P:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.LoopException
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.LoopException
+  name: LoopException
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.LoopException
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.LoopException
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).LoopException
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).LoopException
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.FixedStep
+  commentId: P:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.FixedStep
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.FixedStep
+  name: FixedStep
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.FixedStep
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.FixedStep
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).FixedStep
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).FixedStep
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.MaxStepsPerTick
+  commentId: P:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.MaxStepsPerTick
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.MaxStepsPerTick
+  name: MaxStepsPerTick
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.MaxStepsPerTick
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.MaxStepsPerTick
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).MaxStepsPerTick
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).MaxStepsPerTick
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SleepMilliseconds
+  commentId: P:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SleepMilliseconds
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.SleepMilliseconds
+  name: SleepMilliseconds
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.SleepMilliseconds
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.SleepMilliseconds
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).SleepMilliseconds
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).SleepMilliseconds
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StopTimeoutMilliseconds
+  commentId: P:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StopTimeoutMilliseconds
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds
+  name: StopTimeoutMilliseconds
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.StopTimeoutMilliseconds
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.StopTimeoutMilliseconds
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).StopTimeoutMilliseconds
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).StopTimeoutMilliseconds
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SnapshotInterval
+  commentId: P:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SnapshotInterval
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.SnapshotInterval
+  name: SnapshotInterval
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.SnapshotInterval
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.SnapshotInterval
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).SnapshotInterval
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).SnapshotInterval
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.ResultProduced
+  commentId: E:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.ResultProduced
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.ResultProduced
+  name: ResultProduced
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.ResultProduced
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.ResultProduced
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).ResultProduced
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).ResultProduced
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.EventRaised
+  commentId: E:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.EventRaised
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.EventRaised
+  name: EventRaised
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.EventRaised
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.EventRaised
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).EventRaised
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).EventRaised
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SendCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+  commentId: M:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SendCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.SendCommand(`0)
+  href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  name: SendCommand(DefenseCommand)
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.SendCommand(DefenseCommand)
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.SendCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).SendCommand(DefenseCommand)
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).SendCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SendCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+    name: SendCommand
+  - name: (
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+    name: DefenseCommand
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SendCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+    name: SendCommand
+  - name: (
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+    name: DefenseCommand
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  - name: )
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StartSimulation
+  commentId: M:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StartSimulation
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.StartSimulation
+  name: StartSimulation()
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.StartSimulation()
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.StartSimulation()
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).StartSimulation()
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).StartSimulation()
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StartSimulation
+    name: StartSimulation
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StartSimulation
+    name: StartSimulation
+  - name: (
+  - name: )
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StopSimulation
+  commentId: M:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StopSimulation
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.StopSimulation
+  name: StopSimulation()
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.StopSimulation()
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.StopSimulation()
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).StopSimulation()
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).StopSimulation()
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StopSimulation
+    name: StopSimulation
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StopSimulation
+    name: StopSimulation
+  - name: (
+  - name: )
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.FlushEvents
+  commentId: M:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.FlushEvents
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.FlushEvents
+  name: FlushEvents()
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.FlushEvents()
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.FlushEvents()
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).FlushEvents()
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).FlushEvents()
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.FlushEvents
+    name: FlushEvents
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.FlushEvents
+    name: FlushEvents
+  - name: (
+  - name: )
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Dispose
+  commentId: M:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Dispose
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.Dispose
+  name: Dispose()
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.Dispose()
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.Dispose()
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).Dispose()
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).Dispose()
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Dispose
+    name: Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Dispose
+    name: Dispose
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -232,6 +794,103 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Noname.GameHost.GameHostBase`4
+  commentId: T:Noname.GameHost.GameHostBase`4
+  name: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase`4
+    name: GameHostBase
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase`4
+    name: GameHostBase
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
+- uid: Noname.GameHost
+  commentId: N:Noname.GameHost
+  name: Noname.GameHost
+  nameWithType: Noname.GameHost
+  fullName: Noname.GameHost
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+  spec.vb:
+  - uid: Noname
+    name: Noname
+  - name: .
+  - uid: Noname.GameHost
+    name: GameHost
+- uid: Noname.GameHost.IGameHost`4
+  commentId: T:Noname.GameHost.IGameHost`4
+  name: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  fullName: Noname.GameHost.IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: Noname.GameHost.IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  spec.csharp:
+  - uid: Noname.GameHost.IGameHost`4
+    name: IGameHost
+  - name: <
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: '>'
+  spec.vb:
+  - uid: Noname.GameHost.IGameHost`4
+    name: IGameHost
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCommand
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: ','
+  - name: " "
+  - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
+  - name: )
 - uid: MyProject.DefenseGame.Domain
   commentId: N:MyProject.DefenseGame.Domain
   href: MyProject.html
@@ -262,6 +921,163 @@ references:
   - uid: MyProject.DefenseGame.Domain
     name: Domain
     href: MyProject.DefenseGame.Domain.html
+- uid: Noname.GameHost.GameHostBase`4.Tick
+  commentId: P:Noname.GameHost.GameHostBase`4.Tick
+  name: Tick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Tick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Tick
+- uid: Noname.GameHost.GameHostBase`4.IsRunning
+  commentId: P:Noname.GameHost.GameHostBase`4.IsRunning
+  name: IsRunning
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.IsRunning
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).IsRunning
+- uid: Noname.GameHost.GameHostBase`4.LoopException
+  commentId: P:Noname.GameHost.GameHostBase`4.LoopException
+  name: LoopException
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.LoopException
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).LoopException
+- uid: Noname.GameHost.GameHostBase`4.FixedStep
+  commentId: P:Noname.GameHost.GameHostBase`4.FixedStep
+  name: FixedStep
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FixedStep
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FixedStep
+- uid: Noname.GameHost.GameHostBase`4.MaxStepsPerTick
+  commentId: P:Noname.GameHost.GameHostBase`4.MaxStepsPerTick
+  name: MaxStepsPerTick
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.MaxStepsPerTick
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).MaxStepsPerTick
+- uid: Noname.GameHost.GameHostBase`4.SleepMilliseconds
+  commentId: P:Noname.GameHost.GameHostBase`4.SleepMilliseconds
+  name: SleepMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SleepMilliseconds
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SleepMilliseconds
+- uid: Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds
+  commentId: P:Noname.GameHost.GameHostBase`4.StopTimeoutMilliseconds
+  name: StopTimeoutMilliseconds
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopTimeoutMilliseconds
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopTimeoutMilliseconds
+- uid: Noname.GameHost.GameHostBase`4.SnapshotInterval
+  commentId: P:Noname.GameHost.GameHostBase`4.SnapshotInterval
+  name: SnapshotInterval
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SnapshotInterval
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SnapshotInterval
+- uid: Noname.GameHost.GameHostBase`4.ResultProduced
+  commentId: E:Noname.GameHost.GameHostBase`4.ResultProduced
+  name: ResultProduced
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.ResultProduced
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).ResultProduced
+- uid: Noname.GameHost.GameHostBase`4.EventRaised
+  commentId: E:Noname.GameHost.GameHostBase`4.EventRaised
+  name: EventRaised
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.EventRaised
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).EventRaised
+- uid: Noname.GameHost.GameHostBase`4.SendCommand(`0)
+  commentId: M:Noname.GameHost.GameHostBase`4.SendCommand(`0)
+  name: SendCommand(TCommand)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SendCommand(TCommand)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.SendCommand(TCommand)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SendCommand(TCommand)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).SendCommand(TCommand)
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase`4.SendCommand(`0)
+    name: SendCommand
+  - name: (
+  - name: TCommand
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase`4.SendCommand(`0)
+    name: SendCommand
+  - name: (
+  - name: TCommand
+  - name: )
+- uid: Noname.GameHost.GameHostBase`4.StartSimulation
+  commentId: M:Noname.GameHost.GameHostBase`4.StartSimulation
+  name: StartSimulation()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StartSimulation()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StartSimulation()
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase`4.StartSimulation
+    name: StartSimulation
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase`4.StartSimulation
+    name: StartSimulation
+  - name: (
+  - name: )
+- uid: Noname.GameHost.GameHostBase`4.StopSimulation
+  commentId: M:Noname.GameHost.GameHostBase`4.StopSimulation
+  name: StopSimulation()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.StopSimulation()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).StopSimulation()
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase`4.StopSimulation
+    name: StopSimulation
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase`4.StopSimulation
+    name: StopSimulation
+  - name: (
+  - name: )
+- uid: Noname.GameHost.GameHostBase`4.FlushEvents
+  commentId: M:Noname.GameHost.GameHostBase`4.FlushEvents
+  name: FlushEvents()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.FlushEvents()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).FlushEvents()
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase`4.FlushEvents
+    name: FlushEvents
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase`4.FlushEvents
+    name: FlushEvents
+  - name: (
+  - name: )
+- uid: Noname.GameHost.GameHostBase`4.Dispose
+  commentId: M:Noname.GameHost.GameHostBase`4.Dispose
+  name: Dispose()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose()
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.Dispose()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).Dispose()
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase`4.Dispose
+    name: Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase`4.Dispose
+    name: Dispose
+  - name: (
+  - name: )
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.#ctor*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.#ctor
   href: MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost__ctor_MyProject_DefenseGame_Domain_DefenseHostConfig_
@@ -278,6 +1094,32 @@ references:
   name: DefenseHostConfig
   nameWithType: DefenseHostConfig
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.HandleCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+  commentId: M:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.HandleCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.HandleCommand(`0)
+  href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  name: HandleCommand(DefenseCommand)
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.HandleCommand(DefenseCommand)
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.HandleCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).HandleCommand(DefenseCommand)
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).HandleCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.HandleCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+    name: HandleCommand
+  - name: (
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+    name: DefenseCommand
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.HandleCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+    name: HandleCommand
+  - name: (
+  - uid: MyProject.DefenseGame.Application.Commands.DefenseCommand
+    name: DefenseCommand
+    href: MyProject.DefenseGame.Application.Commands.DefenseCommand.html
+  - name: )
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.HandleCommand*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.HandleCommand
   href: MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_HandleCommand_MyProject_DefenseGame_Application_Commands_DefenseCommand_
@@ -291,20 +1133,20 @@ references:
   name: DefenseCommand
   nameWithType: DefenseCommand
   fullName: MyProject.DefenseGame.Application.Commands.DefenseCommand
-- uid: GameCommandOutcome{MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent}
-  commentId: '!:GameCommandOutcome{MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent}'
-  definition: GameCommandOutcome`2
+- uid: Noname.GameHost.GameCommandOutcome{MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent}
+  commentId: T:Noname.GameHost.GameCommandOutcome{MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent}
+  parent: Noname.GameHost
+  definition: Noname.GameHost.GameCommandOutcome`2
   href: MyProject.DefenseGame.Application.Commands.DefenseCommandResult.html
   name: GameCommandOutcome<DefenseCommandResult, DefenseHostEvent>
   nameWithType: GameCommandOutcome<DefenseCommandResult, DefenseHostEvent>
-  fullName: GameCommandOutcome<MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent>
+  fullName: Noname.GameHost.GameCommandOutcome<MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent>
   nameWithType.vb: GameCommandOutcome(Of DefenseCommandResult, DefenseHostEvent)
-  fullName.vb: GameCommandOutcome(Of MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent)
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent)
   name.vb: GameCommandOutcome(Of DefenseCommandResult, DefenseHostEvent)
   spec.csharp:
-  - uid: GameCommandOutcome`2
+  - uid: Noname.GameHost.GameCommandOutcome`2
     name: GameCommandOutcome
-    isExternal: true
   - name: <
   - uid: MyProject.DefenseGame.Application.Commands.DefenseCommandResult
     name: DefenseCommandResult
@@ -316,9 +1158,8 @@ references:
     href: MyProject.DefenseGame.Application.DefenseHostEvent.html
   - name: '>'
   spec.vb:
-  - uid: GameCommandOutcome`2
+  - uid: Noname.GameHost.GameCommandOutcome`2
     name: GameCommandOutcome
-    isExternal: true
   - name: (
   - name: Of
   - name: " "
@@ -330,6 +1171,25 @@ references:
   - uid: MyProject.DefenseGame.Application.DefenseHostEvent
     name: DefenseHostEvent
     href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: )
+- uid: Noname.GameHost.GameHostBase`4.HandleCommand(`0)
+  commentId: M:Noname.GameHost.GameHostBase`4.HandleCommand(`0)
+  name: HandleCommand(TCommand)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand(TCommand)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleCommand(TCommand)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand(TCommand)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleCommand(TCommand)
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase`4.HandleCommand(`0)
+    name: HandleCommand
+  - name: (
+  - name: TCommand
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase`4.HandleCommand(`0)
+    name: HandleCommand
+  - name: (
+  - name: TCommand
   - name: )
 - uid: MyProject.DefenseGame.Application.Commands
   commentId: N:MyProject.DefenseGame.Application.Commands
@@ -369,36 +1229,62 @@ references:
   - uid: MyProject.DefenseGame.Application.Commands
     name: Commands
     href: MyProject.DefenseGame.Application.Commands.html
-- uid: GameCommandOutcome`2
-  commentId: '!:GameCommandOutcome`2'
-  isExternal: true
-  name: GameCommandOutcome<, >
-  nameWithType: GameCommandOutcome<, >
-  fullName: GameCommandOutcome<, >
-  nameWithType.vb: GameCommandOutcome(Of , )
-  fullName.vb: GameCommandOutcome(Of , )
-  name.vb: GameCommandOutcome(Of , )
+- uid: Noname.GameHost.GameCommandOutcome`2
+  commentId: T:Noname.GameHost.GameCommandOutcome`2
+  name: GameCommandOutcome<TResult, TEvent>
+  nameWithType: GameCommandOutcome<TResult, TEvent>
+  fullName: Noname.GameHost.GameCommandOutcome<TResult, TEvent>
+  nameWithType.vb: GameCommandOutcome(Of TResult, TEvent)
+  fullName.vb: Noname.GameHost.GameCommandOutcome(Of TResult, TEvent)
+  name.vb: GameCommandOutcome(Of TResult, TEvent)
   spec.csharp:
-  - uid: GameCommandOutcome`2
+  - uid: Noname.GameHost.GameCommandOutcome`2
     name: GameCommandOutcome
-    isExternal: true
   - name: <
-  - name: ''
+  - name: TResult
   - name: ','
   - name: " "
-  - name: ''
+  - name: TEvent
   - name: '>'
   spec.vb:
-  - uid: GameCommandOutcome`2
+  - uid: Noname.GameHost.GameCommandOutcome`2
     name: GameCommandOutcome
-    isExternal: true
   - name: (
   - name: Of
   - name: " "
-  - name: ''
+  - name: TResult
   - name: ','
   - name: " "
-  - name: ''
+  - name: TEvent
+  - name: )
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnTick(System.Single)
+  commentId: M:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnTick(System.Single)
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.OnTick(System.Single)
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: OnTick(float)
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.OnTick(float)
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.OnTick(float)
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).OnTick(Single)
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).OnTick(Single)
+  name.vb: OnTick(Single)
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnTick(System.Single)
+    name: OnTick
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnTick(System.Single)
+    name: OnTick
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
   - name: )
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.OnTick*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.OnTick
@@ -417,6 +1303,60 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
+- uid: Noname.GameHost.GameHostBase`4.OnTick(System.Single)
+  commentId: M:Noname.GameHost.GameHostBase`4.OnTick(System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: OnTick(float)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick(float)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.OnTick(float)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick(Single)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).OnTick(Single)
+  name.vb: OnTick(Single)
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase`4.OnTick(System.Single)
+    name: OnTick
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase`4.OnTick(System.Single)
+    name: OnTick
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  commentId: M:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.HandleInternalEvent(`2)
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: HandleInternalEvent(DefenseHostEvent)
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.HandleInternalEvent(DefenseHostEvent)
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).HandleInternalEvent(DefenseHostEvent)
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+    name: HandleInternalEvent
+  - name: (
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+    name: HandleInternalEvent
+  - name: (
+  - uid: MyProject.DefenseGame.Application.DefenseHostEvent
+    name: DefenseHostEvent
+    href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: )
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent
   href: MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_HandleInternalEvent_MyProject_DefenseGame_Application_DefenseHostEvent_
@@ -430,6 +1370,44 @@ references:
   name: DefenseHostEvent
   nameWithType: DefenseHostEvent
   fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: Noname.GameHost.GameHostBase`4.HandleInternalEvent(`2)
+  commentId: M:Noname.GameHost.GameHostBase`4.HandleInternalEvent(`2)
+  name: HandleInternalEvent(TEvent)
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleInternalEvent(TEvent)
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.HandleInternalEvent(TEvent)
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleInternalEvent(TEvent)
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).HandleInternalEvent(TEvent)
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase`4.HandleInternalEvent(`2)
+    name: HandleInternalEvent
+  - name: (
+  - name: TEvent
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase`4.HandleInternalEvent(`2)
+    name: HandleInternalEvent
+  - name: (
+  - name: TEvent
+  - name: )
+- uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.BuildSnapshotInternal
+  commentId: M:Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.BuildSnapshotInternal
+  parent: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
+  definition: Noname.GameHost.GameHostBase`4.BuildSnapshotInternal
+  name: BuildSnapshotInternal()
+  nameWithType: GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.BuildSnapshotInternal()
+  fullName: Noname.GameHost.GameHostBase<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.BuildSnapshotInternal()
+  nameWithType.vb: GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).BuildSnapshotInternal()
+  fullName.vb: Noname.GameHost.GameHostBase(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).BuildSnapshotInternal()
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.BuildSnapshotInternal
+    name: BuildSnapshotInternal
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.BuildSnapshotInternal
+    name: BuildSnapshotInternal
+  - name: (
+  - name: )
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.BuildSnapshotInternal*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.BuildSnapshotInternal
   href: MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_BuildSnapshotInternal
@@ -443,6 +1421,23 @@ references:
   name: DefenseHostSnapshot
   nameWithType: DefenseHostSnapshot
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot
+- uid: Noname.GameHost.GameHostBase`4.BuildSnapshotInternal
+  commentId: M:Noname.GameHost.GameHostBase`4.BuildSnapshotInternal
+  name: BuildSnapshotInternal()
+  nameWithType: GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal()
+  fullName: Noname.GameHost.GameHostBase<TCommand, TResult, TEvent, TSnapshot>.BuildSnapshotInternal()
+  nameWithType.vb: GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal()
+  fullName.vb: Noname.GameHost.GameHostBase(Of TCommand, TResult, TEvent, TSnapshot).BuildSnapshotInternal()
+  spec.csharp:
+  - uid: Noname.GameHost.GameHostBase`4.BuildSnapshotInternal
+    name: BuildSnapshotInternal
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Noname.GameHost.GameHostBase`4.BuildSnapshotInternal
+    name: BuildSnapshotInternal
+  - name: (
+  - name: )
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck
   href: MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_ConsumePlayerAIRecheck

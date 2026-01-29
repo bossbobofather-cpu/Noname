@@ -26,6 +26,8 @@ items:
   nameWithType: DefenseCombatState
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState
   type: Class
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 디펜스 게임의 전투 상태입니다.
   example: []
@@ -54,6 +56,8 @@ items:
   nameWithType: DefenseCombatState.ElapsedTime
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.ElapsedTime
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 게임 경과 시간입니다 (초).
   example: []
@@ -75,6 +79,8 @@ items:
   nameWithType: DefenseCombatState.KillCount
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.KillCount
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 처치한 몬스터 수입니다.
   example: []
@@ -96,6 +102,8 @@ items:
   nameWithType: DefenseCombatState.AliveMonsterCount
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.AliveMonsterCount
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 현재 살아있는 몬스터 수입니다.
   example: []
@@ -117,6 +125,8 @@ items:
   nameWithType: DefenseCombatState.BossKillCount
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.BossKillCount
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 보스 처치 수입니다.
   example: []
@@ -138,6 +148,8 @@ items:
   nameWithType: DefenseCombatState.IsGameOver
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.IsGameOver
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 게임 종료 여부입니다.
   example: []
@@ -159,6 +171,8 @@ items:
   nameWithType: DefenseCombatState.IsDefeat
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.IsDefeat
   type: Property
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 패배 여부입니다.
   example: []
@@ -180,6 +194,8 @@ items:
   nameWithType: DefenseCombatState.AddMonster(DefenseMonster)
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.AddMonster(MyProject.DefenseGame.Domain.DefenseMonster)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 몬스터를 추가합니다.
   example: []
@@ -201,6 +217,8 @@ items:
   nameWithType: DefenseCombatState.RemoveMonster(DefenseMonster)
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.RemoveMonster(MyProject.DefenseGame.Domain.DefenseMonster)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 몬스터를 제거합니다.
   example: []
@@ -222,6 +240,8 @@ items:
   nameWithType: DefenseCombatState.GetMonster(long)
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster(long)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 몬스터 uid 기반으로 몬스터를 반환합니다.
   example: []
@@ -250,6 +270,8 @@ items:
   nameWithType: DefenseCombatState.GetAliveMonsters()
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters()
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 살아있는 모든 몬스터를 반환합니다.
   example: []
@@ -270,6 +292,8 @@ items:
   nameWithType: DefenseCombatState.CollectDeadMonsters(List<DefenseMonster>)
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.CollectDeadMonsters(System.Collections.Generic.List<MyProject.DefenseGame.Domain.DefenseMonster>)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 죽은 몬스터를 수집합니다.
   example: []
@@ -294,6 +318,8 @@ items:
   nameWithType: DefenseCombatState.AddElapsedTime(float)
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.AddElapsedTime(float)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 경과 시간을 업데이트합니다.
   example: []
@@ -318,6 +344,8 @@ items:
   nameWithType: DefenseCombatState.SetGameOver(bool)
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.SetGameOver(bool)
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
   summary: 게임 오버 처리를 합니다.
   example: []
@@ -342,8 +370,9 @@ items:
   nameWithType: DefenseCombatState.Dispose()
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.Dispose()
   type: Method
+  assemblies:
+  - Assembly-CSharp
   namespace: MyProject.DefenseGame.Domain
-  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
   example: []
   syntax:
     content: public void Dispose()
