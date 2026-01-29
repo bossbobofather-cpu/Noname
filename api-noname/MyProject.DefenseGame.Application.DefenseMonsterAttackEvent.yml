@@ -17,7 +17,7 @@ items:
   fullName: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
   type: Class
   namespace: MyProject.DefenseGame.Application
-  summary: 몬스??공격 ?�벤?�입?�다.
+  summary: 몬스터 공격 이벤트입니다.
   example: []
   syntax:
     content: 'public sealed class DefenseMonsterAttackEvent : DefenseHostEvent'

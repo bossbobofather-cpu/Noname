@@ -16,7 +16,7 @@ items:
   fullName: MyProject.DefenseGame.Application.DefensePlayerDeathEvent
   type: Class
   namespace: MyProject.DefenseGame.Application
-  summary: ?�레?�어 ?�망 ?�벤?�입?�다.
+  summary: 플레이어 사망 이벤트입니다.
   example: []
   syntax:
     content: 'public sealed class DefensePlayerDeathEvent : DefenseHostEvent'

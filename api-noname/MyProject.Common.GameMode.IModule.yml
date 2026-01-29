@@ -16,7 +16,7 @@ items:
   fullName: MyProject.Common.GameMode.IModule
   type: Interface
   namespace: MyProject.Common.GameMode
-  summary: ���� ��� �������̽��Դϴ�.
+  summary: 게임 모듈의 공통 동작을 정의하는 인터페이스입니다.
   example: []
   syntax:
     content: public interface IModule
@@ -33,7 +33,7 @@ items:
   fullName: MyProject.Common.GameMode.IModule.Initialize(MyProject.Common.GameMode.IGameMode)
   type: Method
   namespace: MyProject.Common.GameMode
-  summary: ���� ����Ǵ� �ʱ�ȭ �ܰ��Դϴ�.
+  summary: 모드와 연결되는 초기화 단계입니다.
   example: []
   syntax:
     content: void Initialize(IGameMode mode)
@@ -54,7 +54,7 @@ items:
   fullName: MyProject.Common.GameMode.IModule.Startup()
   type: Method
   namespace: MyProject.Common.GameMode
-  summary: ��尡 Ȱ��ȭ�� �� ȣ��˴ϴ�.
+  summary: 모드가 활성화될 때 호출됩니다.
   example: []
   syntax:
     content: void Startup()
@@ -72,7 +72,7 @@ items:
   fullName: MyProject.Common.GameMode.IModule.Shutdown()
   type: Method
   namespace: MyProject.Common.GameMode
-  summary: ��尡 ��Ȱ��ȭ�� �� ȣ��˴ϴ�.
+  summary: 모드가 비활성화될 때 호출됩니다.
   example: []
   syntax:
     content: void Shutdown()

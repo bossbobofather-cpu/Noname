@@ -35,9 +35,6 @@ items:
   - uid: Noname.GameAbilitySystem.Domain.AttributeModifier
     name: AttributeModifier
     type: Struct
-  - uid: Noname.GameAbilitySystem.Domain.AttributeModifierGroup
-    name: AttributeModifierGroup
-    type: Class
   - uid: Noname.GameAbilitySystem.Domain.AttributeModifierOperationType
     name: AttributeModifierOperationType
     type: Enum

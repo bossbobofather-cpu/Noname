@@ -15,7 +15,7 @@ items:
   fullName: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
   type: Class
   namespace: MyProject.DefenseGame.Application
-  summary: ?�벨???�택지 ?�벤?�입?�다.
+  summary: 레벨업 선택지 이벤트입니다.
   example: []
   syntax:
     content: 'public sealed class DefenseLevelUpOptionsEvent : DefenseHostEvent'

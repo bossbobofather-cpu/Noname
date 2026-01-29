@@ -7,7 +7,7 @@ items:
   children:
   - MyProject.Common.GameMode.GameMode`4.GetModule``1
   - MyProject.Common.GameMode.GameMode`4.Host
-  - MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
+  - MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
   - MyProject.Common.GameMode.GameMode`4.Modules
   - MyProject.Common.GameMode.GameMode`4.OnDestroy
   - MyProject.Common.GameMode.GameMode`4.OnHostEvent(`2)
@@ -66,11 +66,11 @@ items:
   summary: 호스트 커맨드 버스에 접근합니다.
   example: []
   syntax:
-    content: protected IHostCommandBus<TCommand, TResult, TEvent> Host { get; }
+    content: protected IHostCommandBus<TCommand, TResult, TEvent, TSnapshot> Host { get; }
     parameters: []
     return:
-      type: IHostCommandBus{{TCommand},{TResult},{TEvent}}
-    content.vb: Protected ReadOnly Property Host As IHostCommandBus(Of TCommand, TResult, TEvent)
+      type: IHostCommandBus{{TCommand},{TResult},{TEvent},{TSnapshot}}
+    content.vb: Protected ReadOnly Property Host As IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot)
   overload: MyProject.Common.GameMode.GameMode`4.Host*
   nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
   fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
@@ -124,30 +124,30 @@ items:
   - MyProject.Common.GameMode.IGameMode.SceneBus
   nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).SceneBus
   fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).SceneBus
-- uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
-  commentId: M:MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
-  id: Initialize(IHostCommandBus{`0,`1,`2})
+- uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
+  commentId: M:MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
+  id: Initialize(IHostCommandBus{`0,`1,`2,`3})
   parent: MyProject.Common.GameMode.GameMode`4
   langs:
   - csharp
   - vb
-  name: Initialize(IHostCommandBus<TCommand, TResult, TEvent>)
-  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent>)
-  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent>)
+  name: Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
   type: Method
   namespace: MyProject.Common.GameMode
   summary: 호스트를 주입하고 모듈을 초기화합니다.
   example: []
   syntax:
-    content: public void Initialize(IHostCommandBus<TCommand, TResult, TEvent> host)
+    content: public void Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot> host)
     parameters:
     - id: host
-      type: IHostCommandBus{{TCommand},{TResult},{TEvent}}
-    content.vb: Public Sub Initialize(host As IHostCommandBus(Of TCommand, TResult, TEvent))
+      type: IHostCommandBus{{TCommand},{TResult},{TEvent},{TSnapshot}}
+    content.vb: Public Sub Initialize(host As IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
   overload: MyProject.Common.GameMode.GameMode`4.Initialize*
-  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent))
-  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent))
-  name.vb: Initialize(IHostCommandBus(Of TCommand, TResult, TEvent))
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
+  name.vb: Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
 - uid: MyProject.Common.GameMode.GameMode`4.OnHostResult(`1)
   commentId: M:MyProject.Common.GameMode.GameMode`4.OnHostResult(`1)
   id: OnHostResult(`1)
@@ -273,6 +273,7 @@ items:
   fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Subscribe<TEventContext>(System.Action<TEventContext>)
   type: Method
   namespace: MyProject.Common.GameMode
+  summary: 이벤트 구독을 등록합니다.
   example: []
   syntax:
     content: 'public void Subscribe<TEventContext>(Action<TEventContext> handler) where TEventContext : GameEventContext'
@@ -300,6 +301,7 @@ items:
   fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Unsubscribe<TEventContext>(System.Action<TEventContext>)
   type: Method
   namespace: MyProject.Common.GameMode
+  summary: 이벤트 구독을 해제합니다.
   example: []
   syntax:
     content: 'public void Unsubscribe<TEventContext>(Action<TEventContext> handler) where TEventContext : GameEventContext'
@@ -327,6 +329,7 @@ items:
   fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Publish<TEventContext>(TEventContext)
   type: Method
   namespace: MyProject.Common.GameMode
+  summary: 이벤트를 발행합니다.
   example: []
   syntax:
     content: 'public void Publish<TEventContext>(TEventContext context) where TEventContext : GameEventContext'
@@ -484,17 +487,17 @@ references:
   fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Host
   nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
   fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
-- uid: IHostCommandBus{{TCommand},{TResult},{TEvent}}
-  commentId: '!:IHostCommandBus{`0,`1,`2}'
-  definition: IHostCommandBus`3
-  name: IHostCommandBus<TCommand, TResult, TEvent>
-  nameWithType: IHostCommandBus<TCommand, TResult, TEvent>
-  fullName: IHostCommandBus<TCommand, TResult, TEvent>
-  nameWithType.vb: IHostCommandBus(Of TCommand, TResult, TEvent)
-  fullName.vb: IHostCommandBus(Of TCommand, TResult, TEvent)
-  name.vb: IHostCommandBus(Of TCommand, TResult, TEvent)
+- uid: IHostCommandBus{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  commentId: '!:IHostCommandBus{`0,`1,`2,`3}'
+  definition: IHostCommandBus`4
+  name: IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>
+  fullName: IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot)
   spec.csharp:
-  - uid: IHostCommandBus`3
+  - uid: IHostCommandBus`4
     name: IHostCommandBus
     isExternal: true
   - name: <
@@ -505,9 +508,12 @@ references:
   - name: ','
   - name: " "
   - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
   - name: '>'
   spec.vb:
-  - uid: IHostCommandBus`3
+  - uid: IHostCommandBus`4
     name: IHostCommandBus
     isExternal: true
   - name: (
@@ -520,17 +526,20 @@ references:
   - name: ','
   - name: " "
   - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
   - name: )
-- uid: IHostCommandBus`3
+- uid: IHostCommandBus`4
   isExternal: true
-  name: IHostCommandBus<, , >
-  nameWithType: IHostCommandBus<, , >
-  fullName: IHostCommandBus<, , >
-  nameWithType.vb: IHostCommandBus(Of , , )
-  fullName.vb: IHostCommandBus(Of , , )
-  name.vb: IHostCommandBus(Of , , )
+  name: IHostCommandBus<, , , >
+  nameWithType: IHostCommandBus<, , , >
+  fullName: IHostCommandBus<, , , >
+  nameWithType.vb: IHostCommandBus(Of , , , )
+  fullName.vb: IHostCommandBus(Of , , , )
+  name.vb: IHostCommandBus(Of , , , )
   spec.csharp:
-  - uid: IHostCommandBus`3
+  - uid: IHostCommandBus`4
     name: IHostCommandBus
     isExternal: true
   - name: <
@@ -541,13 +550,19 @@ references:
   - name: ','
   - name: " "
   - name: ''
+  - name: ','
+  - name: " "
+  - name: ''
   - name: '>'
   spec.vb:
-  - uid: IHostCommandBus`3
+  - uid: IHostCommandBus`4
     name: IHostCommandBus
     isExternal: true
   - name: (
   - name: Of
+  - name: " "
+  - name: ''
+  - name: ','
   - name: " "
   - name: ''
   - name: ','
@@ -692,7 +707,7 @@ references:
   fullName: GameEventBus.Scope
 - uid: MyProject.Common.GameMode.GameMode`4.Initialize*
   commentId: Overload:MyProject.Common.GameMode.GameMode`4.Initialize
-  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__3__
   name: Initialize
   nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize
   fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize

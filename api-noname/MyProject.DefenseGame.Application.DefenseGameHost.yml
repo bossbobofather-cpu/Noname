@@ -20,7 +20,7 @@ items:
   summary: >-
     DefenseGame 전용 호스트입니다.
 
-    CQRS 방식으로 Command를 처리하고 Result/Event를 발행합니다.
+    Command를 처리하고 Result/Event를 발행합니다.
   example: []
   syntax:
     content: 'public sealed class DefenseGameHost : GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>'

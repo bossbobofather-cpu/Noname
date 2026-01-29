@@ -14,7 +14,7 @@ items:
   fullName: MyProject.DefenseGame.Application.DefenseHostEvent
   type: Class
   namespace: MyProject.DefenseGame.Application
-  summary: ���潺 ���� �̺�Ʈ�� �⺻ Ÿ���Դϴ�.
+  summary: 디펜스 게임 이벤트의 기본 타입입니다.
   example: []
   syntax:
     content: 'public abstract class DefenseHostEvent : GameEventBase'

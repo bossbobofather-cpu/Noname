@@ -14,6 +14,8 @@ items:
   fullName: MyProject.DefenseGame.Application.DefenseGameStartedEvent
   type: Class
   namespace: MyProject.DefenseGame.Application
+  summary: 게임 시작 이벤트입니다.
+  example: []
   syntax:
     content: 'public sealed class DefenseGameStartedEvent : DefenseHostEvent'
     content.vb: Public NotInheritable Class DefenseGameStartedEvent Inherits DefenseHostEvent

@@ -15,7 +15,7 @@ items:
   fullName: MyProject.DefenseGame.Application.DefenseWaveChangedEvent
   type: Class
   namespace: MyProject.DefenseGame.Application
-  summary: ?�이�?변�??�벤?�입?�다.
+  summary: 웨이브 변경 이벤트입니다.
   example: []
   syntax:
     content: 'public sealed class DefenseWaveChangedEvent : DefenseHostEvent'

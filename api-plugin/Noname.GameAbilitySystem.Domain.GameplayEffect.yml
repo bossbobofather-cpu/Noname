@@ -14,7 +14,7 @@ items:
   - Noname.GameAbilitySystem.Domain.GameplayEffect.EffectId
   - Noname.GameAbilitySystem.Domain.GameplayEffect.GrantedTags
   - Noname.GameAbilitySystem.Domain.GameplayEffect.MaxStack
-  - Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers
   - Noname.GameAbilitySystem.Domain.GameplayEffect.Period
   - Noname.GameAbilitySystem.Domain.GameplayEffect.RequiredTags
   langs:
@@ -196,27 +196,27 @@ items:
       type: System.Int32
     content.vb: Public Property MaxStack As Integer
   overload: Noname.GameAbilitySystem.Domain.GameplayEffect.MaxStack*
-- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
-  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
-  id: ModifierGroups
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers
+  id: Modifiers
   parent: Noname.GameAbilitySystem.Domain.GameplayEffect
   langs:
   - csharp
   - vb
-  name: ModifierGroups
-  nameWithType: GameplayEffect.ModifierGroups
-  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
+  name: Modifiers
+  nameWithType: GameplayEffect.Modifiers
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers
   type: Property
   namespace: Noname.GameAbilitySystem.Domain
   summary: 수정자 그룹 목록입니다.
   example: []
   syntax:
-    content: public List<AttributeModifierGroup> ModifierGroups { get; set; }
+    content: public List<AttributeModifier> Modifiers { get; set; }
     parameters: []
     return:
-      type: System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.AttributeModifierGroup}
-    content.vb: Public Property ModifierGroups As List(Of AttributeModifierGroup)
-  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups*
+      type: System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.AttributeModifier}
+    content.vb: Public Property Modifiers As List(Of AttributeModifier)
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers*
 - uid: Noname.GameAbilitySystem.Domain.GameplayEffect.GrantedTags
   commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.GrantedTags
   id: GrantedTags
@@ -625,32 +625,32 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
-  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_ModifierGroups
-  name: ModifierGroups
-  nameWithType: GameplayEffect.ModifierGroups
-  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
-- uid: System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.AttributeModifierGroup}
-  commentId: T:System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.AttributeModifierGroup}
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_Modifiers
+  name: Modifiers
+  nameWithType: GameplayEffect.Modifiers
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers
+- uid: System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.AttributeModifier}
+  commentId: T:System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.AttributeModifier}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<AttributeModifierGroup>
-  nameWithType: List<AttributeModifierGroup>
-  fullName: System.Collections.Generic.List<Noname.GameAbilitySystem.Domain.AttributeModifierGroup>
-  nameWithType.vb: List(Of AttributeModifierGroup)
-  fullName.vb: System.Collections.Generic.List(Of Noname.GameAbilitySystem.Domain.AttributeModifierGroup)
-  name.vb: List(Of AttributeModifierGroup)
+  name: List<AttributeModifier>
+  nameWithType: List<AttributeModifier>
+  fullName: System.Collections.Generic.List<Noname.GameAbilitySystem.Domain.AttributeModifier>
+  nameWithType.vb: List(Of AttributeModifier)
+  fullName.vb: System.Collections.Generic.List(Of Noname.GameAbilitySystem.Domain.AttributeModifier)
+  name.vb: List(Of AttributeModifier)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-  - uid: Noname.GameAbilitySystem.Domain.AttributeModifierGroup
-    name: AttributeModifierGroup
-    href: Noname.GameAbilitySystem.Domain.AttributeModifierGroup.html
+  - uid: Noname.GameAbilitySystem.Domain.AttributeModifier
+    name: AttributeModifier
+    href: Noname.GameAbilitySystem.Domain.AttributeModifier.html
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -660,9 +660,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: Noname.GameAbilitySystem.Domain.AttributeModifierGroup
-    name: AttributeModifierGroup
-    href: Noname.GameAbilitySystem.Domain.AttributeModifierGroup.html
+  - uid: Noname.GameAbilitySystem.Domain.AttributeModifier
+    name: AttributeModifier
+    href: Noname.GameAbilitySystem.Domain.AttributeModifier.html
   - name: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1

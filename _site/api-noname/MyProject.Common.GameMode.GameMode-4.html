@@ -139,7 +139,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IHostCommandBus&lt;TCommand, TResult, TEvent&gt; Host { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected IHostCommandBus&lt;TCommand, TResult, TEvent, TSnapshot&gt; Host { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -151,7 +151,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IHostCommandBus</span>&lt;TCommand, TResult, TEvent&gt;</td>
+        <td><span class="xref">IHostCommandBus</span>&lt;TCommand, TResult, TEvent, TSnapshot&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -254,13 +254,13 @@
 
 
   <a id="MyProject_Common_GameMode_GameMode_4_Initialize_" data-uid="MyProject.Common.GameMode.GameMode`4.Initialize*"></a>
-  <h4 id="MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__" data-uid="MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})">Initialize(IHostCommandBus&lt;TCommand, TResult, TEvent&gt;)</h4>
+  <h4 id="MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__3__" data-uid="MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})">Initialize(IHostCommandBus&lt;TCommand, TResult, TEvent, TSnapshot&gt;)</h4>
   <div class="markdown level1 summary"><p>호스트를 주입하고 모듈을 초기화합니다.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Initialize(IHostCommandBus&lt;TCommand, TResult, TEvent&gt; host)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Initialize(IHostCommandBus&lt;TCommand, TResult, TEvent, TSnapshot&gt; host)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -273,7 +273,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IHostCommandBus</span>&lt;TCommand, TResult, TEvent&gt;</td>
+        <td><span class="xref">IHostCommandBus</span>&lt;TCommand, TResult, TEvent, TSnapshot&gt;</td>
         <td><span class="parametername">host</span></td>
         <td></td>
       </tr>
@@ -382,7 +382,8 @@
 
   <a id="MyProject_Common_GameMode_GameMode_4_Publish_" data-uid="MyProject.Common.GameMode.GameMode`4.Publish*"></a>
   <h4 id="MyProject_Common_GameMode_GameMode_4_Publish__1___0_" data-uid="MyProject.Common.GameMode.GameMode`4.Publish``1(``0)">Publish&lt;TEventContext&gt;(TEventContext)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>이벤트를 발행합니다.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -446,7 +447,8 @@
 
   <a id="MyProject_Common_GameMode_GameMode_4_Subscribe_" data-uid="MyProject.Common.GameMode.GameMode`4.Subscribe*"></a>
   <h4 id="MyProject_Common_GameMode_GameMode_4_Subscribe__1_System_Action___0__" data-uid="MyProject.Common.GameMode.GameMode`4.Subscribe``1(System.Action{``0})">Subscribe&lt;TEventContext&gt;(Action&lt;TEventContext&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>이벤트 구독을 등록합니다.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -488,7 +490,8 @@
 
   <a id="MyProject_Common_GameMode_GameMode_4_Unsubscribe_" data-uid="MyProject.Common.GameMode.GameMode`4.Unsubscribe*"></a>
   <h4 id="MyProject_Common_GameMode_GameMode_4_Unsubscribe__1_System_Action___0__" data-uid="MyProject.Common.GameMode.GameMode`4.Unsubscribe``1(System.Action{``0})">Unsubscribe&lt;TEventContext&gt;(Action&lt;TEventContext&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>이벤트 구독을 해제합니다.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">

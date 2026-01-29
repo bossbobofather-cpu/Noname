@@ -11,7 +11,6 @@ items:
   - Noname.GameAbilitySystem.Domain.AreaTargetingStrategy
   - Noname.GameAbilitySystem.Domain.AttributeId
   - Noname.GameAbilitySystem.Domain.AttributeModifier
-  - Noname.GameAbilitySystem.Domain.AttributeModifierGroup
   - Noname.GameAbilitySystem.Domain.AttributeModifierOperationType
   - Noname.GameAbilitySystem.Domain.AttributeSet
   - Noname.GameAbilitySystem.Domain.AttributeValue
@@ -111,12 +110,6 @@ references:
   name: AttributeModifier
   nameWithType: AttributeModifier
   fullName: Noname.GameAbilitySystem.Domain.AttributeModifier
-- uid: Noname.GameAbilitySystem.Domain.AttributeModifierGroup
-  commentId: T:Noname.GameAbilitySystem.Domain.AttributeModifierGroup
-  href: Noname.GameAbilitySystem.Domain.AttributeModifierGroup.html
-  name: AttributeModifierGroup
-  nameWithType: AttributeModifierGroup
-  fullName: Noname.GameAbilitySystem.Domain.AttributeModifierGroup
 - uid: Noname.GameAbilitySystem.Domain.AttributeModifierOperationType
   commentId: T:Noname.GameAbilitySystem.Domain.AttributeModifierOperationType
   parent: Noname.GameAbilitySystem.Domain

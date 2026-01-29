@@ -33,7 +33,7 @@ items:
   - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Host
   - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Modules
   - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.SceneBus
-  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent})
+  - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot})
   - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
   - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
   - MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.StartupModule
@@ -249,23 +249,23 @@ references:
   fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.SceneBus
   nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).SceneBus
   fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).SceneBus
-- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent})
-  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent})
+- uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot})
+  commentId: M:MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot})
   parent: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}
-  definition: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
-  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
-  name: Initialize(IHostCommandBus<DefenseCommand, DefenseCommandResult, DefenseHostEvent>)
-  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.Initialize(IHostCommandBus<DefenseCommand, DefenseCommandResult, DefenseHostEvent>)
-  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.Initialize(IHostCommandBus<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent>)
-  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).Initialize(IHostCommandBus(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent))
-  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).Initialize(IHostCommandBus(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent))
-  name.vb: Initialize(IHostCommandBus(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent))
+  definition: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__3__
+  name: Initialize(IHostCommandBus<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>)
+  nameWithType: GameMode<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>.Initialize(IHostCommandBus<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>)
+  fullName: MyProject.Common.GameMode.GameMode<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>.Initialize(IHostCommandBus<MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot>)
+  nameWithType.vb: GameMode(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot).Initialize(IHostCommandBus(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot))
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot).Initialize(IHostCommandBus(Of MyProject.DefenseGame.Application.Commands.DefenseCommand, MyProject.DefenseGame.Application.Commands.DefenseCommandResult, MyProject.DefenseGame.Application.DefenseHostEvent, MyProject.DefenseGame.Application.DefenseHostSnapshot))
+  name.vb: Initialize(IHostCommandBus(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot))
   spec.csharp:
-  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent})
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot})
     name: Initialize
-    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__3__
   - name: (
-  - uid: IHostCommandBus`3
+  - uid: IHostCommandBus`4
     name: IHostCommandBus
     isExternal: true
   - name: <
@@ -282,14 +282,19 @@ references:
   - uid: MyProject.DefenseGame.Application.DefenseHostEvent
     name: DefenseHostEvent
     href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostSnapshot
+    name: DefenseHostSnapshot
+    href: MyProject.DefenseGame.Application.DefenseHostSnapshot.html
   - name: '>'
   - name: )
   spec.vb:
-  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent})
+  - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.Initialize(IHostCommandBus{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot})
     name: Initialize
-    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__3__
   - name: (
-  - uid: IHostCommandBus`3
+  - uid: IHostCommandBus`4
     name: IHostCommandBus
     isExternal: true
   - name: (
@@ -308,6 +313,11 @@ references:
   - uid: MyProject.DefenseGame.Application.DefenseHostEvent
     name: DefenseHostEvent
     href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  - name: ','
+  - name: " "
+  - uid: MyProject.DefenseGame.Application.DefenseHostSnapshot
+    name: DefenseHostSnapshot
+    href: MyProject.DefenseGame.Application.DefenseHostSnapshot.html
   - name: )
   - name: )
 - uid: MyProject.Common.GameMode.GameMode{MyProject.DefenseGame.Application.Commands.DefenseCommand,MyProject.DefenseGame.Application.Commands.DefenseCommandResult,MyProject.DefenseGame.Application.DefenseHostEvent,MyProject.DefenseGame.Application.DefenseHostSnapshot}.OnHostResult(MyProject.DefenseGame.Application.Commands.DefenseCommandResult)
@@ -760,22 +770,22 @@ references:
   fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.SceneBus
   nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).SceneBus
   fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).SceneBus
-- uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
-  commentId: M:MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
+- uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
+  commentId: M:MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
   isExternal: true
-  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
-  name: Initialize(IHostCommandBus<TCommand, TResult, TEvent>)
-  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent>)
-  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent>)
-  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent))
-  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent))
-  name.vb: Initialize(IHostCommandBus(Of TCommand, TResult, TEvent))
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__3__
+  name: Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
+  name.vb: Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
   spec.csharp:
-  - uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
+  - uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
     name: Initialize
-    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__3__
   - name: (
-  - uid: IHostCommandBus`3
+  - uid: IHostCommandBus`4
     name: IHostCommandBus
     isExternal: true
   - name: <
@@ -786,14 +796,17 @@ references:
   - name: ','
   - name: " "
   - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
   - name: '>'
   - name: )
   spec.vb:
-  - uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
+  - uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
     name: Initialize
-    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
+    href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__3__
   - name: (
-  - uid: IHostCommandBus`3
+  - uid: IHostCommandBus`4
     name: IHostCommandBus
     isExternal: true
   - name: (
@@ -806,6 +819,9 @@ references:
   - name: ','
   - name: " "
   - name: TEvent
+  - name: ','
+  - name: " "
+  - name: TSnapshot
   - name: )
   - name: )
 - uid: MyProject.Common.GameMode.GameMode`4.OnHostResult(`1)

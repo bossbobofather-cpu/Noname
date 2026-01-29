@@ -1174,15 +1174,15 @@ references:
   fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
   nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Host
   nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
-- uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
-  name: Initialize(IHostCommandBus<TCommand, TResult, TEvent>)
-  href: api-noname/MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__
-  commentId: M:MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})
-  name.vb: Initialize(IHostCommandBus(Of TCommand, TResult, TEvent))
-  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent>)
-  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent))
-  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent>)
-  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent))
+- uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
+  name: Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
+  href: api-noname/MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__3__
+  commentId: M:MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
+  name.vb: Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
 - uid: MyProject.Common.GameMode.GameMode`4.Initialize*
   name: Initialize
   href: api-noname/MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_
@@ -12575,22 +12575,22 @@ references:
   isSpec: "True"
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Set
   nameWithType: AbilitySystemComponent.Set
-- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects(System.Single,System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayEffect})
-  name: TickActiveEffects(float, List<GameplayEffect>)
-  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TickActiveEffects_System_Single_System_Collections_Generic_List_Noname_GameAbilitySystem_Domain_GameplayEffect__
-  commentId: M:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects(System.Single,System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayEffect})
-  name.vb: TickActiveEffects(Single, List(Of GameplayEffect))
-  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects(float, System.Collections.Generic.List<Noname.GameAbilitySystem.Domain.GameplayEffect>)
-  fullName.vb: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects(Single, System.Collections.Generic.List(Of Noname.GameAbilitySystem.Domain.GameplayEffect))
-  nameWithType: AbilitySystemComponent.TickActiveEffects(float, List<GameplayEffect>)
-  nameWithType.vb: AbilitySystemComponent.TickActiveEffects(Single, List(Of GameplayEffect))
-- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects*
-  name: TickActiveEffects
-  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TickActiveEffects_
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick(System.Single)
+  name: Tick(float)
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Tick_System_Single_
+  commentId: M:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick(System.Single)
+  name.vb: Tick(Single)
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick(float)
+  fullName.vb: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick(Single)
+  nameWithType: AbilitySystemComponent.Tick(float)
+  nameWithType.vb: AbilitySystemComponent.Tick(Single)
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick*
+  name: Tick
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Tick_
+  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick
   isSpec: "True"
-  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects
-  nameWithType: AbilitySystemComponent.TickActiveEffects
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick
+  nameWithType: AbilitySystemComponent.Tick
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbility(Noname.GameAbilitySystem.Domain.GameplayAbilitySpec)
   name: TryActivateAbility(GameplayAbilitySpec)
   href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TryActivateAbility_Noname_GameAbilitySystem_Domain_GameplayAbilitySpec_
@@ -13983,19 +13983,19 @@ references:
   isSpec: "True"
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.MaxStack
   nameWithType: GameplayEffect.MaxStack
-- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
-  name: ModifierGroups
-  href: api-plugin/Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_ModifierGroups
-  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
-  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
-  nameWithType: GameplayEffect.ModifierGroups
-- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups*
-  name: ModifierGroups
-  href: api-plugin/Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_ModifierGroups_
-  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers
+  name: Modifiers
+  href: api-plugin/Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_Modifiers
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers
+  nameWithType: GameplayEffect.Modifiers
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers*
+  name: Modifiers
+  href: api-plugin/Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_Modifiers_
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers
   isSpec: "True"
-  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.ModifierGroups
-  nameWithType: GameplayEffect.ModifierGroups
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Modifiers
+  nameWithType: GameplayEffect.Modifiers
 - uid: Noname.GameAbilitySystem.Domain.GameplayEffect.Period
   name: Period
   href: api-plugin/Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_Period

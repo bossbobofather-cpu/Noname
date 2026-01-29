@@ -21,7 +21,7 @@ items:
   fullName: MyProject.Common.GameMode.ModuleBase
   type: Class
   namespace: MyProject.Common.GameMode
-  summary: ���� ��� ���̽� Ŭ�����Դϴ�.
+  summary: 공통 모듈 베이스 클래스입니다.
   example: []
   syntax:
     content: 'public abstract class ModuleBase : MonoBehaviour, IModule'
@@ -42,7 +42,7 @@ items:
   fullName: MyProject.Common.GameMode.ModuleBase.Mode
   type: Property
   namespace: MyProject.Common.GameMode
-  summary: ����� ���� ����Դϴ�.
+  summary: 연결된 게임 모드입니다.
   example: []
   syntax:
     content: public IGameMode Mode { get; }
@@ -63,7 +63,7 @@ items:
   fullName: MyProject.Common.GameMode.ModuleBase.ModuleKey
   type: Property
   namespace: MyProject.Common.GameMode
-  summary: ��� Ű�Դϴ�.
+  summary: 모듈 식별 키입니다.
   example: []
   syntax:
     content: public virtual string ModuleKey { get; }
@@ -84,7 +84,7 @@ items:
   fullName: MyProject.Common.GameMode.ModuleBase.Initialize(MyProject.Common.GameMode.IGameMode)
   type: Method
   namespace: MyProject.Common.GameMode
-  summary: ���� ����Ǵ� �ʱ�ȭ �ܰ��Դϴ�.
+  summary: 모드와 연결되는 초기화 단계입니다.
   example: []
   syntax:
     content: public void Initialize(IGameMode mode)
@@ -107,7 +107,7 @@ items:
   fullName: MyProject.Common.GameMode.ModuleBase.Startup()
   type: Method
   namespace: MyProject.Common.GameMode
-  summary: ��尡 Ȱ��ȭ�� �� ȣ��˴ϴ�.
+  summary: 모드가 활성화될 때 호출됩니다.
   example: []
   syntax:
     content: public void Startup()
@@ -127,7 +127,7 @@ items:
   fullName: MyProject.Common.GameMode.ModuleBase.Shutdown()
   type: Method
   namespace: MyProject.Common.GameMode
-  summary: ��尡 ��Ȱ��ȭ�� �� ȣ��˴ϴ�.
+  summary: 모드가 비활성화될 때 호출됩니다.
   example: []
   syntax:
     content: public void Shutdown()
@@ -147,7 +147,7 @@ items:
   fullName: MyProject.Common.GameMode.ModuleBase.OnInit()
   type: Method
   namespace: MyProject.Common.GameMode
-  summary: ���� ����� �ʿ��ϸ� ���⼭ ó���մϴ�.
+  summary: 초기 구독 등록 등 준비 처리를 수행합니다.
   example: []
   syntax:
     content: protected virtual void OnInit()
@@ -165,6 +165,8 @@ items:
   fullName: MyProject.Common.GameMode.ModuleBase.OnStartup()
   type: Method
   namespace: MyProject.Common.GameMode
+  summary: 모듈 시작 시점 로직을 수행합니다.
+  example: []
   syntax:
     content: protected virtual void OnStartup()
     content.vb: Protected Overridable Sub OnStartup()
@@ -181,6 +183,8 @@ items:
   fullName: MyProject.Common.GameMode.ModuleBase.OnShutdown()
   type: Method
   namespace: MyProject.Common.GameMode
+  summary: 모듈 종료 시점 정리 로직을 수행합니다.
+  example: []
   syntax:
     content: protected virtual void OnShutdown()
     content.vb: Protected Overridable Sub OnShutdown()

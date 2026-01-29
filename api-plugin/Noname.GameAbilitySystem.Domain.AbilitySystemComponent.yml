@@ -35,7 +35,7 @@ items:
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveEffectTag(Noname.GameAbilitySystem.Domain.FGameplayTag,System.Int32@)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveLooseTag(Noname.GameAbilitySystem.Domain.FGameplayTag,System.Int32@)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Set(Noname.GameAbilitySystem.Domain.AttributeId,System.Single)
-  - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects(System.Single,System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayEffect})
+  - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick(System.Single)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbility(Noname.GameAbilitySystem.Domain.GameplayAbilitySpec)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbility(Noname.GameAbilitySystem.Domain.GameplayAbilitySpec,Noname.GameAbilitySystem.Domain.TargetContext)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbility(Noname.GameAbilitySystem.Domain.GameplayAbilitySpec,Noname.GameAbilitySystem.Domain.TargetContext,Noname.GameAbilitySystem.Domain.TargetData@)
@@ -216,6 +216,28 @@ items:
       type: System.Int32
     content.vb: Public ReadOnly Property ActiveEffectCount As Integer
   overload: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveEffectCount*
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick(System.Single)
+  commentId: M:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick(System.Single)
+  id: Tick(System.Single)
+  parent: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  langs:
+  - csharp
+  - vb
+  name: Tick(float)
+  nameWithType: AbilitySystemComponent.Tick(float)
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick(float)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public void Tick(float deltaSeconds)
+    parameters:
+    - id: deltaSeconds
+      type: System.Single
+    content.vb: Public Sub Tick(deltaSeconds As Single)
+  overload: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick*
+  nameWithType.vb: AbilitySystemComponent.Tick(Single)
+  fullName.vb: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick(Single)
+  name.vb: Tick(Single)
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Get(Noname.GameAbilitySystem.Domain.AttributeId)
   commentId: M:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Get(Noname.GameAbilitySystem.Domain.AttributeId)
   id: Get(Noname.GameAbilitySystem.Domain.AttributeId)
@@ -744,35 +766,6 @@ items:
   nameWithType.vb: AbilitySystemComponent.AddActiveEffect(GameplayEffect, Single)
   fullName.vb: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.AddActiveEffect(Noname.GameAbilitySystem.Domain.GameplayEffect, Single)
   name.vb: AddActiveEffect(GameplayEffect, Single)
-- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects(System.Single,System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayEffect})
-  commentId: M:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects(System.Single,System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayEffect})
-  id: TickActiveEffects(System.Single,System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayEffect})
-  parent: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
-  langs:
-  - csharp
-  - vb
-  name: TickActiveEffects(float, List<GameplayEffect>)
-  nameWithType: AbilitySystemComponent.TickActiveEffects(float, List<GameplayEffect>)
-  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects(float, System.Collections.Generic.List<Noname.GameAbilitySystem.Domain.GameplayEffect>)
-  type: Method
-  namespace: Noname.GameAbilitySystem.Domain
-  summary: >-
-    활성 효과의 남은 시간을 갱신하고 만료된 효과를 처리합니다.
-
-    매 프레임 호출되어야 합니다.
-  example: []
-  syntax:
-    content: public void TickActiveEffects(float deltaTime, List<GameplayEffect> expired = null)
-    parameters:
-    - id: deltaTime
-      type: System.Single
-    - id: expired
-      type: System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayEffect}
-    content.vb: Public Sub TickActiveEffects(deltaTime As Single, expired As List(Of GameplayEffect) = Nothing)
-  overload: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects*
-  nameWithType.vb: AbilitySystemComponent.TickActiveEffects(Single, List(Of GameplayEffect))
-  fullName.vb: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects(Single, System.Collections.Generic.List(Of Noname.GameAbilitySystem.Domain.GameplayEffect))
-  name.vb: TickActiveEffects(Single, List(Of GameplayEffect))
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffectByUid(System.Int64)
   commentId: M:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffectByUid(System.Int64)
   id: RemoveActiveEffectByUid(System.Int64)
@@ -1424,6 +1417,23 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick
+  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Tick_System_Single_
+  name: Tick
+  nameWithType: AbilitySystemComponent.Tick
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Get*
   commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Get
   href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Get_Noname_GameAbilitySystem_Domain_AttributeId_
@@ -1437,17 +1447,6 @@ references:
   name: AttributeId
   nameWithType: AttributeId
   fullName: Noname.GameAbilitySystem.Domain.AttributeId
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Set*
   commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Set
   href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Set_Noname_GameAbilitySystem_Domain_AttributeId_System_Single_
@@ -1670,12 +1669,35 @@ references:
   nameWithType.vb: Long
   fullName.vb: Long
   name.vb: Long
-- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects
-  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TickActiveEffects_System_Single_System_Collections_Generic_List_Noname_GameAbilitySystem_Domain_GameplayEffect__
-  name: TickActiveEffects
-  nameWithType: AbilitySystemComponent.TickActiveEffects
-  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TickActiveEffects
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffectByUid*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffectByUid
+  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveActiveEffectByUid_System_Int64_
+  name: RemoveActiveEffectByUid
+  nameWithType: AbilitySystemComponent.RemoveActiveEffectByUid
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffectByUid
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffect*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffect
+  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveActiveEffect_System_String_
+  name: RemoveActiveEffect
+  nameWithType: AbilitySystemComponent.RemoveActiveEffect
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffect
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.CollectExpiredEffects*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.CollectExpiredEffects
+  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_CollectExpiredEffects_System_Single_System_Collections_Generic_List_Noname_GameAbilitySystem_Domain_GameplayEffect__
+  name: CollectExpiredEffects
+  nameWithType: AbilitySystemComponent.CollectExpiredEffects
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.CollectExpiredEffects
 - uid: System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayEffect}
   commentId: T:System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayEffect}
   parent: System.Collections.Generic
@@ -1709,35 +1731,6 @@ references:
     name: GameplayEffect
     href: Noname.GameAbilitySystem.Domain.GameplayEffect.html
   - name: )
-- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffectByUid*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffectByUid
-  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveActiveEffectByUid_System_Int64_
-  name: RemoveActiveEffectByUid
-  nameWithType: AbilitySystemComponent.RemoveActiveEffectByUid
-  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffectByUid
-- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffect*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffect
-  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveActiveEffect_System_String_
-  name: RemoveActiveEffect
-  nameWithType: AbilitySystemComponent.RemoveActiveEffect
-  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffect
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.CollectExpiredEffects*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.CollectExpiredEffects
-  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_CollectExpiredEffects_System_Single_System_Collections_Generic_List_Noname_GameAbilitySystem_Domain_GameplayEffect__
-  name: CollectExpiredEffects
-  nameWithType: AbilitySystemComponent.CollectExpiredEffects
-  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.CollectExpiredEffects
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetActiveEffects*
   commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetActiveEffects
   href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_GetActiveEffects

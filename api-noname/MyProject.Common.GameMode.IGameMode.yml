@@ -19,7 +19,7 @@ items:
   fullName: MyProject.Common.GameMode.IGameMode
   type: Interface
   namespace: MyProject.Common.GameMode
-  summary: ���� ��尡 �����ϴ� ���� �������̽��Դϴ�.
+  summary: 게임 모드가 제공하는 공용 인터페이스입니다.
   example: []
   syntax:
     content: public interface IGameMode
@@ -36,6 +36,8 @@ items:
   fullName: MyProject.Common.GameMode.IGameMode.SceneBus
   type: Property
   namespace: MyProject.Common.GameMode
+  summary: 현재 씬 스코프 이벤트 버스입니다.
+  example: []
   syntax:
     content: GameEventBus.Scope SceneBus { get; }
     parameters: []
@@ -55,6 +57,8 @@ items:
   fullName: MyProject.Common.GameMode.IGameMode.Modules
   type: Property
   namespace: MyProject.Common.GameMode
+  summary: 등록된 모듈 목록입니다.
+  example: []
   syntax:
     content: IReadOnlyList<IModule> Modules { get; }
     parameters: []
@@ -74,6 +78,8 @@ items:
   fullName: MyProject.Common.GameMode.IGameMode.GetModule<T>()
   type: Method
   namespace: MyProject.Common.GameMode
+  summary: 지정한 타입의 모듈을 조회합니다.
+  example: []
   syntax:
     content: 'T GetModule<T>() where T : class, IModule'
     typeParameters:
@@ -97,6 +103,8 @@ items:
   fullName: MyProject.Common.GameMode.IGameMode.Subscribe<TEventContext>(System.Action<TEventContext>)
   type: Method
   namespace: MyProject.Common.GameMode
+  summary: 이벤트 구독을 등록합니다.
+  example: []
   syntax:
     content: 'void Subscribe<TEventContext>(Action<TEventContext> handler) where TEventContext : GameEventContext'
     parameters:
@@ -121,6 +129,8 @@ items:
   fullName: MyProject.Common.GameMode.IGameMode.Unsubscribe<TEventContext>(System.Action<TEventContext>)
   type: Method
   namespace: MyProject.Common.GameMode
+  summary: 이벤트 구독을 해제합니다.
+  example: []
   syntax:
     content: 'void Unsubscribe<TEventContext>(Action<TEventContext> handler) where TEventContext : GameEventContext'
     parameters:
@@ -145,6 +155,8 @@ items:
   fullName: MyProject.Common.GameMode.IGameMode.Publish<TEventContext>(TEventContext)
   type: Method
   namespace: MyProject.Common.GameMode
+  summary: 이벤트를 발행합니다.
+  example: []
   syntax:
     content: 'void Publish<TEventContext>(TEventContext context) where TEventContext : GameEventContext'
     parameters:

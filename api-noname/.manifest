@@ -12,7 +12,7 @@
   "MyProject.Common.GameMode.GameMode`4": "MyProject.Common.GameMode.GameMode-4.yml",
   "MyProject.Common.GameMode.GameMode`4.GetModule``1": "MyProject.Common.GameMode.GameMode-4.yml",
   "MyProject.Common.GameMode.GameMode`4.Host": "MyProject.Common.GameMode.GameMode-4.yml",
-  "MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2})": "MyProject.Common.GameMode.GameMode-4.yml",
+  "MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})": "MyProject.Common.GameMode.GameMode-4.yml",
   "MyProject.Common.GameMode.GameMode`4.Modules": "MyProject.Common.GameMode.GameMode-4.yml",
   "MyProject.Common.GameMode.GameMode`4.OnDestroy": "MyProject.Common.GameMode.GameMode-4.yml",
   "MyProject.Common.GameMode.GameMode`4.OnHostEvent(`2)": "MyProject.Common.GameMode.GameMode-4.yml",
