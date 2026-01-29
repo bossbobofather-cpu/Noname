@@ -5,26 +5,29 @@ items:
   id: DefenseHostConfig
   parent: MyProject.DefenseGame.Domain
   children:
-  - MyProject.DefenseGame.Domain.DefenseHostConfig.AutoMode
   - MyProject.DefenseGame.Domain.DefenseHostConfig.BaseSpawnInterval
   - MyProject.DefenseGame.Domain.DefenseHostConfig.BossAttackMultiplier
   - MyProject.DefenseGame.Domain.DefenseHostConfig.BossExpMultiplier
   - MyProject.DefenseGame.Domain.DefenseHostConfig.BossHpMultiplier
   - MyProject.DefenseGame.Domain.DefenseHostConfig.BossMonsterAbilityIds
   - MyProject.DefenseGame.Domain.DefenseHostConfig.BossSpawnInterval
+  - MyProject.DefenseGame.Domain.DefenseHostConfig.InvincibleMode
   - MyProject.DefenseGame.Domain.DefenseHostConfig.MaxMonsterCount
   - MyProject.DefenseGame.Domain.DefenseHostConfig.MonsterSpawnPosition
   - MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAbilityIds
   - MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAttack
+  - MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAttackSpeed
   - MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterDefense
   - MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterExp
   - MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterHp
   - MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAbilityIds
   - MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackCooldown
   - MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackPower
+  - MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackSpeed
   - MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerDefense
   - MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerMaxHp
   - MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerSpawnPosition
+  - MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerTags
   - MyProject.DefenseGame.Domain.DefenseHostConfig.SpawnRateIncreaseInterval
   langs:
   - csharp
@@ -58,25 +61,25 @@ items:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
     arguments: []
-- uid: MyProject.DefenseGame.Domain.DefenseHostConfig.AutoMode
-  commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.AutoMode
-  id: AutoMode
+- uid: MyProject.DefenseGame.Domain.DefenseHostConfig.InvincibleMode
+  commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.InvincibleMode
+  id: InvincibleMode
   parent: MyProject.DefenseGame.Domain.DefenseHostConfig
   langs:
   - csharp
   - vb
-  name: AutoMode
-  nameWithType: DefenseHostConfig.AutoMode
-  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.AutoMode
+  name: InvincibleMode
+  nameWithType: DefenseHostConfig.InvincibleMode
+  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.InvincibleMode
   type: Field
   namespace: MyProject.DefenseGame.Domain
-  summary: 유저 인터렉션없이 자동으로 진행됩니다.
+  summary: State.Invincible Tag를 부여하여 기본 공격을 무시합니다.
   example: []
   syntax:
-    content: public bool AutoMode
+    content: public bool InvincibleMode
     return:
       type: System.Boolean
-    content.vb: Public AutoMode As Boolean
+    content.vb: Public InvincibleMode As Boolean
 - uid: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerSpawnPosition
   commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerSpawnPosition
   id: PlayerSpawnPosition
@@ -225,10 +228,29 @@ items:
   summary: 플레이어 초기 공격력입니다.
   example: []
   syntax:
-    content: public int PlayerAttackPower
+    content: public float PlayerAttackPower
     return:
-      type: System.Int32
-    content.vb: Public PlayerAttackPower As Integer
+      type: System.Single
+    content.vb: Public PlayerAttackPower As Single
+- uid: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackSpeed
+  commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackSpeed
+  id: PlayerAttackSpeed
+  parent: MyProject.DefenseGame.Domain.DefenseHostConfig
+  langs:
+  - csharp
+  - vb
+  name: PlayerAttackSpeed
+  nameWithType: DefenseHostConfig.PlayerAttackSpeed
+  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackSpeed
+  type: Field
+  namespace: MyProject.DefenseGame.Domain
+  summary: 플레이어 초기 공격속도 입니다. (초당 공격 횟수)
+  example: []
+  syntax:
+    content: public float PlayerAttackSpeed
+    return:
+      type: System.Single
+    content.vb: Public PlayerAttackSpeed As Single
 - uid: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerDefense
   commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerDefense
   id: PlayerDefense
@@ -244,10 +266,10 @@ items:
   summary: 플레이어 초기 방어력입니다.
   example: []
   syntax:
-    content: public int PlayerDefense
+    content: public float PlayerDefense
     return:
-      type: System.Int32
-    content.vb: Public PlayerDefense As Integer
+      type: System.Single
+    content.vb: Public PlayerDefense As Single
 - uid: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackCooldown
   commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackCooldown
   id: PlayerAttackCooldown
@@ -267,6 +289,23 @@ items:
     return:
       type: System.Single
     content.vb: Public PlayerAttackCooldown As Single
+- uid: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerTags
+  commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerTags
+  id: PlayerTags
+  parent: MyProject.DefenseGame.Domain.DefenseHostConfig
+  langs:
+  - csharp
+  - vb
+  name: PlayerTags
+  nameWithType: DefenseHostConfig.PlayerTags
+  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerTags
+  type: Field
+  namespace: MyProject.DefenseGame.Domain
+  syntax:
+    content: public List<string> PlayerTags
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public PlayerTags As List(Of String)
 - uid: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAbilityIds
   commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAbilityIds
   id: PlayerAbilityIds
@@ -279,7 +318,7 @@ items:
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAbilityIds
   type: Field
   namespace: MyProject.DefenseGame.Domain
-  summary: ?뚮젅?댁뼱 ?대퉴由ы떚 ID 紐⑸줉?낅땲?? (媛쒕컻?⑥슜)
+  summary: 플레이어 스타트업 능력 ID 입니다.
   example: []
   syntax:
     content: public List<int> PlayerAbilityIds
@@ -324,6 +363,25 @@ items:
     return:
       type: System.Int32
     content.vb: Public NormalMonsterAttack As Integer
+- uid: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAttackSpeed
+  commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAttackSpeed
+  id: NormalMonsterAttackSpeed
+  parent: MyProject.DefenseGame.Domain.DefenseHostConfig
+  langs:
+  - csharp
+  - vb
+  name: NormalMonsterAttackSpeed
+  nameWithType: DefenseHostConfig.NormalMonsterAttackSpeed
+  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAttackSpeed
+  type: Field
+  namespace: MyProject.DefenseGame.Domain
+  summary: 일반 몬스터 공격력입니다.
+  example: []
+  syntax:
+    content: public float NormalMonsterAttackSpeed
+    return:
+      type: System.Single
+    content.vb: Public NormalMonsterAttackSpeed As Single
 - uid: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterDefense
   commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterDefense
   id: NormalMonsterDefense
@@ -374,7 +432,7 @@ items:
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAbilityIds
   type: Field
   namespace: MyProject.DefenseGame.Domain
-  summary: ?쇰컲 紐ъ뒪?? ?대퉴由ы떚 ID 紐⑸줉?낅땲?? (媛쒕컻?⑥슜)
+  summary: 일반 몬스터 스타트업 능력 ID 입니다.
   example: []
   syntax:
     content: public List<int> NormalMonsterAbilityIds
@@ -450,7 +508,7 @@ items:
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.BossMonsterAbilityIds
   type: Field
   namespace: MyProject.DefenseGame.Domain
-  summary: 蹂댁뒪 紐ъ뒪?? ?대퉴由ы떚 ID 紐⑸줉?낅땲?? (媛쒕컻?⑥슜)
+  summary: 보스 몬스터 스타트업 능력 ID 입니다.
   example: []
   syntax:
     content: public List<int> BossMonsterAbilityIds
@@ -739,27 +797,27 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: System.Collections.Generic.List{System.Int32}
-  commentId: T:System.Collections.Generic.List{System.Int32}
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<int>
-  nameWithType: List<int>
-  fullName: System.Collections.Generic.List<int>
-  nameWithType.vb: List(Of Integer)
-  fullName.vb: System.Collections.Generic.List(Of Integer)
-  name.vb: List(Of Integer)
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-  - uid: System.Int32
-    name: int
+  - uid: System.String
+    name: string
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -769,10 +827,10 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: System.Int32
-    name: Integer
+  - uid: System.String
+    name: String
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
+    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
@@ -839,3 +897,38 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{System.Int32}
+  commentId: T:System.Collections.Generic.List{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<int>
+  nameWithType: List<int>
+  fullName: System.Collections.Generic.List<int>
+  nameWithType.vb: List(Of Integer)
+  fullName.vb: System.Collections.Generic.List(Of Integer)
+  name.vb: List(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )

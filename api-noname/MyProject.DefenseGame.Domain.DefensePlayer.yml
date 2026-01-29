@@ -10,7 +10,6 @@ items:
   - MyProject.DefenseGame.Domain.DefensePlayer.Experience
   - MyProject.DefenseGame.Domain.DefensePlayer.FindTargets
   - MyProject.DefenseGame.Domain.DefensePlayer.Name
-  - MyProject.DefenseGame.Domain.DefensePlayer.OnAttack
   - MyProject.DefenseGame.Domain.DefensePlayer.OnLevelUp
   - MyProject.DefenseGame.Domain.DefensePlayer.RequiredExperience
   - MyProject.DefenseGame.Domain.DefensePlayer.Tick(System.Single)
@@ -25,13 +24,13 @@ items:
   summary: 디펜스 게임 플레이어입니다.
   example: []
   syntax:
-    content: 'public sealed class DefensePlayer : DefenseEntity, IAbilitySystemOwner'
-    content.vb: Public NotInheritable Class DefensePlayer Inherits DefenseEntity Implements IAbilitySystemOwner
+    content: 'public sealed class DefensePlayer : DefenseEntity, IDisposable'
+    content.vb: Public NotInheritable Class DefensePlayer Inherits DefenseEntity Implements IDisposable
   inheritance:
   - System.Object
   - MyProject.DefenseGame.Domain.DefenseEntity
   implements:
-  - MyProject.DefenseGame.Domain.IAbilitySystemOwner
+  - System.IDisposable
   inheritedMembers:
   - MyProject.DefenseGame.Domain.DefenseEntity.Uid
   - MyProject.DefenseGame.Domain.DefenseEntity.Position
@@ -39,6 +38,7 @@ items:
   - MyProject.DefenseGame.Domain.DefenseEntity.AI
   - MyProject.DefenseGame.Domain.DefenseEntity.IsAlive
   - MyProject.DefenseGame.Domain.DefenseEntity.IsDead
+  - MyProject.DefenseGame.Domain.DefenseEntity.OnActivateAbility
   - MyProject.DefenseGame.Domain.DefenseEntity.GetHp
   - MyProject.DefenseGame.Domain.DefenseEntity.GetMaxHp
   - MyProject.DefenseGame.Domain.DefenseEntity.GetAttack
@@ -47,12 +47,8 @@ items:
   - MyProject.DefenseGame.Domain.DefenseEntity.TakeDamage(System.Single)
   - MyProject.DefenseGame.Domain.DefenseEntity.Heal(System.Single)
   - MyProject.DefenseGame.Domain.DefenseEntity.SetPosition(Point2D)
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
+  - MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck
+  - MyProject.DefenseGame.Domain.DefenseEntity.Dispose
 - uid: MyProject.DefenseGame.Domain.DefensePlayer.Name
   commentId: P:MyProject.DefenseGame.Domain.DefensePlayer.Name
   id: Name
@@ -137,25 +133,6 @@ items:
       type: System.Func{Point2D,System.Collections.Generic.IReadOnlyList{MyProject.DefenseGame.Domain.DefenseMonster}}
     content.vb: Public Property FindTargets As Func(Of Point2D, IReadOnlyList(Of DefenseMonster))
   overload: MyProject.DefenseGame.Domain.DefensePlayer.FindTargets*
-- uid: MyProject.DefenseGame.Domain.DefensePlayer.OnAttack
-  commentId: E:MyProject.DefenseGame.Domain.DefensePlayer.OnAttack
-  id: OnAttack
-  parent: MyProject.DefenseGame.Domain.DefensePlayer
-  langs:
-  - csharp
-  - vb
-  name: OnAttack
-  nameWithType: DefensePlayer.OnAttack
-  fullName: MyProject.DefenseGame.Domain.DefensePlayer.OnAttack
-  type: Event
-  namespace: MyProject.DefenseGame.Domain
-  summary: 공격 이벤트입니다.
-  example: []
-  syntax:
-    content: public event Action<DefensePlayer, DefenseMonster, int> OnAttack
-    return:
-      type: System.Action{MyProject.DefenseGame.Domain.DefensePlayer,MyProject.DefenseGame.Domain.DefenseMonster,System.Int32}
-    content.vb: Public Event OnAttack As Action(Of DefensePlayer, DefenseMonster, Integer)
 - uid: MyProject.DefenseGame.Domain.DefensePlayer.OnLevelUp
   commentId: E:MyProject.DefenseGame.Domain.DefensePlayer.OnLevelUp
   id: OnLevelUp
@@ -303,13 +280,14 @@ references:
   name: DefenseEntity
   nameWithType: DefenseEntity
   fullName: MyProject.DefenseGame.Domain.DefenseEntity
-- uid: MyProject.DefenseGame.Domain.IAbilitySystemOwner
-  commentId: T:MyProject.DefenseGame.Domain.IAbilitySystemOwner
-  parent: MyProject.DefenseGame.Domain
-  href: MyProject.DefenseGame.Domain.IAbilitySystemOwner.html
-  name: IAbilitySystemOwner
-  nameWithType: IAbilitySystemOwner
-  fullName: MyProject.DefenseGame.Domain.IAbilitySystemOwner
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
 - uid: MyProject.DefenseGame.Domain.DefenseEntity.Uid
   commentId: P:MyProject.DefenseGame.Domain.DefenseEntity.Uid
   parent: MyProject.DefenseGame.Domain.DefenseEntity
@@ -352,6 +330,13 @@ references:
   name: IsDead
   nameWithType: DefenseEntity.IsDead
   fullName: MyProject.DefenseGame.Domain.DefenseEntity.IsDead
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.OnActivateAbility
+  commentId: E:MyProject.DefenseGame.Domain.DefenseEntity.OnActivateAbility
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_OnActivateAbility
+  name: OnActivateAbility
+  nameWithType: DefenseEntity.OnActivateAbility
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.OnActivateAbility
 - uid: MyProject.DefenseGame.Domain.DefenseEntity.GetHp
   commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.GetHp
   parent: MyProject.DefenseGame.Domain.DefenseEntity
@@ -535,199 +520,42 @@ references:
     name: Point2D
     isExternal: true
   - name: )
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  name: Equals(object)
-  nameWithType: object.Equals(object)
-  fullName: object.Equals(object)
-  nameWithType.vb: Object.Equals(Object)
-  fullName.vb: Object.Equals(Object)
-  name.vb: Equals(Object)
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_ConsumeASCRecheck
+  name: ConsumeASCRecheck()
+  nameWithType: DefenseEntity.ConsumeASCRecheck()
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck()
   spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  name: Equals(object, object)
-  nameWithType: object.Equals(object, object)
-  fullName: object.Equals(object, object)
-  nameWithType.vb: Object.Equals(Object, Object)
-  fullName.vb: Object.Equals(Object, Object)
-  name.vb: Equals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
-  name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - uid: MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck
+    name: ConsumeASCRecheck
+    href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_ConsumeASCRecheck
   - name: (
   - name: )
   spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - uid: MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck
+    name: ConsumeASCRecheck
+    href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_ConsumeASCRecheck
   - name: (
   - name: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.Dispose
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.Dispose
+  parent: MyProject.DefenseGame.Domain.DefenseEntity
+  href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_Dispose
+  name: Dispose()
+  nameWithType: DefenseEntity.Dispose()
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.Dispose()
   spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - uid: MyProject.DefenseGame.Domain.DefenseEntity.Dispose
+    name: Dispose
+    href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_Dispose
   - name: (
   - name: )
   spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
-  - name: (
-  - name: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - uid: MyProject.DefenseGame.Domain.DefenseEntity.Dispose
+    name: Dispose
+    href: MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_Dispose
   - name: (
   - name: )
 - uid: System
@@ -873,101 +701,6 @@ references:
   - name: ','
   - name: " "
   - name: TResult
-  - name: )
-- uid: System.Action{MyProject.DefenseGame.Domain.DefensePlayer,MyProject.DefenseGame.Domain.DefenseMonster,System.Int32}
-  commentId: T:System.Action{MyProject.DefenseGame.Domain.DefensePlayer,MyProject.DefenseGame.Domain.DefenseMonster,System.Int32}
-  parent: System
-  definition: System.Action`3
-  href: https://learn.microsoft.com/dotnet/api/system.action-3
-  name: Action<DefensePlayer, DefenseMonster, int>
-  nameWithType: Action<DefensePlayer, DefenseMonster, int>
-  fullName: System.Action<MyProject.DefenseGame.Domain.DefensePlayer, MyProject.DefenseGame.Domain.DefenseMonster, int>
-  nameWithType.vb: Action(Of DefensePlayer, DefenseMonster, Integer)
-  fullName.vb: System.Action(Of MyProject.DefenseGame.Domain.DefensePlayer, MyProject.DefenseGame.Domain.DefenseMonster, Integer)
-  name.vb: Action(Of DefensePlayer, DefenseMonster, Integer)
-  spec.csharp:
-  - uid: System.Action`3
-    name: Action
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-3
-  - name: <
-  - uid: MyProject.DefenseGame.Domain.DefensePlayer
-    name: DefensePlayer
-    href: MyProject.DefenseGame.Domain.DefensePlayer.html
-  - name: ','
-  - name: " "
-  - uid: MyProject.DefenseGame.Domain.DefenseMonster
-    name: DefenseMonster
-    href: MyProject.DefenseGame.Domain.DefenseMonster.html
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: '>'
-  spec.vb:
-  - uid: System.Action`3
-    name: Action
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-3
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: MyProject.DefenseGame.Domain.DefensePlayer
-    name: DefensePlayer
-    href: MyProject.DefenseGame.Domain.DefensePlayer.html
-  - name: ','
-  - name: " "
-  - uid: MyProject.DefenseGame.Domain.DefenseMonster
-    name: DefenseMonster
-    href: MyProject.DefenseGame.Domain.DefenseMonster.html
-  - name: ','
-  - name: " "
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: )
-- uid: System.Action`3
-  commentId: T:System.Action`3
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.action-3
-  name: Action<T1, T2, T3>
-  nameWithType: Action<T1, T2, T3>
-  fullName: System.Action<T1, T2, T3>
-  nameWithType.vb: Action(Of T1, T2, T3)
-  fullName.vb: System.Action(Of T1, T2, T3)
-  name.vb: Action(Of T1, T2, T3)
-  spec.csharp:
-  - uid: System.Action`3
-    name: Action
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-3
-  - name: <
-  - name: T1
-  - name: ','
-  - name: " "
-  - name: T2
-  - name: ','
-  - name: " "
-  - name: T3
-  - name: '>'
-  spec.vb:
-  - uid: System.Action`3
-    name: Action
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.action-3
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T1
-  - name: ','
-  - name: " "
-  - name: T2
-  - name: ','
-  - name: " "
-  - name: T3
   - name: )
 - uid: System.Action{MyProject.DefenseGame.Domain.DefensePlayer,System.Int32}
   commentId: T:System.Action{MyProject.DefenseGame.Domain.DefensePlayer,System.Int32}

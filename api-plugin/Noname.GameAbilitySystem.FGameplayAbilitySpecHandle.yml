@@ -20,7 +20,7 @@ items:
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
   type: Struct
   namespace: Noname.GameAbilitySystem
-  summary: 능력 사양을 식별하기 위한 핸들입니다.
+  summary: 게임 플레이 능력 사양 핸들
   example: []
   syntax:
     content: 'public struct FGameplayAbilitySpecHandle : IEquatable<FGameplayAbilitySpecHandle>'
@@ -44,8 +44,6 @@ items:
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.Invalid
   type: Field
   namespace: Noname.GameAbilitySystem
-  summary: 유효하지 않은 핸들 값입니다.
-  example: []
   syntax:
     content: public static readonly FGameplayAbilitySpecHandle Invalid
     return:
@@ -63,8 +61,6 @@ items:
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.Id
   type: Field
   namespace: Noname.GameAbilitySystem
-  summary: 식별자 값입니다.
-  example: []
   syntax:
     content: public int Id
     return:
@@ -82,17 +78,17 @@ items:
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.Equals(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle)
   type: Method
   namespace: Noname.GameAbilitySystem
-  summary: 다른 핸들과 동일한지 비교합니다.
+  summary: Indicates whether the current object is equal to another object of the same type.
   example: []
   syntax:
     content: public bool Equals(FGameplayAbilitySpecHandle other)
     parameters:
     - id: other
       type: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
-      description: 비교 대상
+      description: An object to compare with this object.
     return:
       type: System.Boolean
-      description: 동일 여부
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Function Equals(other As FGameplayAbilitySpecHandle) As Boolean
   overload: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.Equals*
   implements:
@@ -109,17 +105,17 @@ items:
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.Equals(object)
   type: Method
   namespace: Noname.GameAbilitySystem
-  summary: 객체 동일 여부를 비교합니다.
+  summary: Indicates whether this instance and a specified object are equal.
   example: []
   syntax:
     content: public override bool Equals(object obj)
     parameters:
     - id: obj
       type: System.Object
-      description: 비교 대상
+      description: The object to compare with the current instance.
     return:
       type: System.Boolean
-      description: 동일 여부
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
     content.vb: Public Overrides Function Equals(obj As Object) As Boolean
   overridden: System.ValueType.Equals(System.Object)
   overload: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.Equals*
@@ -138,13 +134,13 @@ items:
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.GetHashCode()
   type: Method
   namespace: Noname.GameAbilitySystem
-  summary: 해시 코드를 반환합니다.
+  summary: Returns the hash code for this instance.
   example: []
   syntax:
     content: public override int GetHashCode()
     return:
       type: System.Int32
-      description: 해시 값
+      description: A 32-bit signed integer that is the hash code for this instance.
     content.vb: Public Overrides Function GetHashCode() As Integer
   overridden: System.ValueType.GetHashCode
   overload: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.GetHashCode*
@@ -160,8 +156,6 @@ items:
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.operator ==(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle, Noname.GameAbilitySystem.FGameplayAbilitySpecHandle)
   type: Operator
   namespace: Noname.GameAbilitySystem
-  summary: 동일 연산자입니다.
-  example: []
   syntax:
     content: public static bool operator ==(FGameplayAbilitySpecHandle a, FGameplayAbilitySpecHandle b)
     parameters:
@@ -188,8 +182,6 @@ items:
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.operator !=(Noname.GameAbilitySystem.FGameplayAbilitySpecHandle, Noname.GameAbilitySystem.FGameplayAbilitySpecHandle)
   type: Operator
   namespace: Noname.GameAbilitySystem
-  summary: 다름 연산자입니다.
-  example: []
   syntax:
     content: public static bool operator !=(FGameplayAbilitySpecHandle a, FGameplayAbilitySpecHandle b)
     parameters:

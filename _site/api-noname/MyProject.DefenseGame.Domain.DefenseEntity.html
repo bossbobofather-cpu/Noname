@@ -93,37 +93,13 @@
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="MyProject.DefenseGame.Domain.IAbilitySystemOwner.html">IAbilitySystemOwner</a></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MyProject.html">MyProject</a>.<a class="xref" href="MyProject.DefenseGame.html">DefenseGame</a>.<a class="xref" href="MyProject.DefenseGame.Domain.html">Domain</a></h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="MyProject_DefenseGame_Domain_DefenseEntity_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class DefenseEntity : IAbilitySystemOwner</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class DefenseEntity : IAbilitySystemOwner, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -324,6 +300,42 @@
   </table>
   <h3 id="methods">Methods
 </h3>
+
+
+  <a id="MyProject_DefenseGame_Domain_DefenseEntity_ConsumeASCRecheck_" data-uid="MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck*"></a>
+  <h4 id="MyProject_DefenseGame_Domain_DefenseEntity_ConsumeASCRecheck" data-uid="MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck">ConsumeASCRecheck()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ConsumeASCRecheck()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="MyProject_DefenseGame_Domain_DefenseEntity_Dispose_" data-uid="MyProject.DefenseGame.Domain.DefenseEntity.Dispose*"></a>
+  <h4 id="MyProject_DefenseGame_Domain_DefenseEntity_Dispose" data-uid="MyProject.DefenseGame.Domain.DefenseEntity.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
 
 
   <a id="MyProject_DefenseGame_Domain_DefenseEntity_GetAttack_" data-uid="MyProject.DefenseGame.Domain.DefenseEntity.GetAttack*"></a>
@@ -566,9 +578,36 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="MyProject_DefenseGame_Domain_DefenseEntity_OnActivateAbility" data-uid="MyProject.DefenseGame.Domain.DefenseEntity.OnActivateAbility">OnActivateAbility</h4>
+  <div class="markdown level1 summary"><p>능력 활성화 이벤트 입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;GameplayAbility, TargetData&gt; OnActivateAbility</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<span class="xref">GameplayAbility</span>, <span class="xref">TargetData</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="MyProject.DefenseGame.Domain.IAbilitySystemOwner.html">IAbilitySystemOwner</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
   </div>
 
 </article>

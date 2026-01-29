@@ -186,11 +186,13 @@ items:
   summary: 태그를 추가합니다.
   example: []
   syntax:
-    content: public void AddTag(FGameplayTag tag)
+    content: public bool AddTag(FGameplayTag tag)
     parameters:
     - id: tag
       type: Noname.GameAbilitySystem.Domain.FGameplayTag
-    content.vb: Public Sub AddTag(tag As FGameplayTag)
+    return:
+      type: System.Boolean
+    content.vb: Public Function AddTag(tag As FGameplayTag) As Boolean
   overload: Noname.GameAbilitySystem.Domain.GameplayTagContainer.AddTag*
 - uid: Noname.GameAbilitySystem.Domain.GameplayTagContainer.RemoveTag(Noname.GameAbilitySystem.Domain.FGameplayTag)
   commentId: M:Noname.GameAbilitySystem.Domain.GameplayTagContainer.RemoveTag(Noname.GameAbilitySystem.Domain.FGameplayTag)

@@ -13,8 +13,6 @@ items:
   fullName: Noname.GameAbilitySystem.ReadOnlyAttribute
   type: Class
   namespace: Noname.GameAbilitySystem
-  summary: 인스펙터에서 읽기 전용으로 표시하기 위한 속성입니다.
-  example: []
   syntax:
     content: 'public sealed class ReadOnlyAttribute : PropertyAttribute'
     content.vb: Public NotInheritable Class ReadOnlyAttribute Inherits PropertyAttribute

@@ -16,7 +16,10 @@ items:
   fullName: MyProject.Common.Bootstrap.BootstrapperBase
   type: Class
   namespace: MyProject.Common.Bootstrap
-  summary: ���� ��Ʈ��Ʈ���� ���̽��Դϴ�.
+  summary: >-
+    공통 부트스트래퍼의 기본 동작을 제공하는 베이스입니다.
+
+    런타임 이벤트 바인딩과 매니저 생성 흐름을 담당합니다.
   example: []
   syntax:
     content: 'public abstract class BootstrapperBase : MonoBehaviour'
@@ -37,6 +40,8 @@ items:
   fullName: MyProject.Common.Bootstrap.BootstrapperBase.OnInit()
   type: Method
   namespace: MyProject.Common.Bootstrap
+  summary: 자식 클래스 초기화 훅입니다.
+  example: []
   syntax:
     content: protected virtual void OnInit()
     content.vb: Protected Overridable Sub OnInit()
@@ -53,7 +58,7 @@ items:
   fullName: MyProject.Common.Bootstrap.BootstrapperBase.CreateManager(MonoBehaviour)
   type: Method
   namespace: MyProject.Common.Bootstrap
-  summary: �Ŵ��� �������� �����մϴ�.
+  summary: 매니저 프리팹을 생성하거나 기존 인스턴스를 재사용합니다.
   example: []
   syntax:
     content: protected IManager CreateManager(MonoBehaviour prefab)

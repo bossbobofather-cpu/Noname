@@ -90,11 +90,15 @@ Command를 처리하고 Result/Event를 발행합니다.</p>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">DefenseGameHost</span></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="MyProject.DefenseGame.Domain.IAIFlagChecker.html">IAIFlagChecker</a></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MyProject.html">MyProject</a>.<a class="xref" href="MyProject.DefenseGame.html">DefenseGame</a>.<a class="xref" href="MyProject.DefenseGame.Application.html">Application</a></h6>
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="MyProject_DefenseGame_Application_DefenseGameHost_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class DefenseGameHost : GameHostBase&lt;DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class DefenseGameHost : GameHostBase&lt;DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot&gt;, IAIFlagChecker</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -154,6 +158,41 @@ Command를 처리하고 Result/Event를 발행합니다.</p>
   </table>
 
 
+  <a id="MyProject_DefenseGame_Application_DefenseGameHost_ConsumePlayerAIRecheck_" data-uid="MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck*"></a>
+  <h4 id="MyProject_DefenseGame_Application_DefenseGameHost_ConsumePlayerAIRecheck" data-uid="MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck">ConsumePlayerAIRecheck()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ConsumePlayerAIRecheck()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="MyProject_DefenseGame_Application_DefenseGameHost_Dispose_" data-uid="MyProject.DefenseGame.Application.DefenseGameHost.Dispose*"></a>
+  <h4 id="MyProject_DefenseGame_Application_DefenseGameHost_Dispose" data-uid="MyProject.DefenseGame.Application.DefenseGameHost.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+
+
   <a id="MyProject_DefenseGame_Application_DefenseGameHost_HandleCommand_" data-uid="MyProject.DefenseGame.Application.DefenseGameHost.HandleCommand*"></a>
   <h4 id="MyProject_DefenseGame_Application_DefenseGameHost_HandleCommand_MyProject_DefenseGame_Application_Commands_DefenseCommand_" data-uid="MyProject.DefenseGame.Application.DefenseGameHost.HandleCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)">HandleCommand(DefenseCommand)</h4>
   <div class="markdown level1 summary"></div>
@@ -196,6 +235,33 @@ Command를 처리하고 Result/Event를 발행합니다.</p>
   </table>
 
 
+  <a id="MyProject_DefenseGame_Application_DefenseGameHost_HandleInternalEvent_" data-uid="MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent*"></a>
+  <h4 id="MyProject_DefenseGame_Application_DefenseGameHost_HandleInternalEvent_MyProject_DefenseGame_Application_DefenseHostEvent_" data-uid="MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)">HandleInternalEvent(DefenseHostEvent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void HandleInternalEvent(DefenseHostEvent eventData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MyProject.DefenseGame.Application.DefenseHostEvent.html">DefenseHostEvent</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
   <a id="MyProject_DefenseGame_Application_DefenseGameHost_OnTick_" data-uid="MyProject.DefenseGame.Application.DefenseGameHost.OnTick*"></a>
   <h4 id="MyProject_DefenseGame_Application_DefenseGameHost_OnTick_System_Single_" data-uid="MyProject.DefenseGame.Application.DefenseGameHost.OnTick(System.Single)">OnTick(float)</h4>
   <div class="markdown level1 summary"></div>
@@ -221,6 +287,10 @@ Command를 처리하고 Result/Event를 발행합니다.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="MyProject.DefenseGame.Domain.IAIFlagChecker.html">IAIFlagChecker</a>
+  </div>
 
 </article>
           </div>

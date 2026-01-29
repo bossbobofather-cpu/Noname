@@ -27,10 +27,10 @@ items:
   - MyProject.DefenseGame.Application.DefenseGameStartedEvent
   - MyProject.DefenseGame.Application.DefenseLevelUpEvent
   - MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
-  - MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+  - MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
   - MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
   - MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent
-  - MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+  - MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
   - MyProject.DefenseGame.Application.DefensePlayerDeathEvent
   - MyProject.DefenseGame.Application.DefenseWaveChangedEvent
 - uid: MyProject.DefenseGame.Application.DefenseHostEvent.#ctor(System.Int64)

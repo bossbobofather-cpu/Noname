@@ -10,6 +10,7 @@ items:
   - Noname.GameAbilitySystem.Domain.GameplayEffect.Description
   - Noname.GameAbilitySystem.Domain.GameplayEffect.DisplayName
   - Noname.GameAbilitySystem.Domain.GameplayEffect.Duration
+  - Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy
   - Noname.GameAbilitySystem.Domain.GameplayEffect.DurationType
   - Noname.GameAbilitySystem.Domain.GameplayEffect.EffectId
   - Noname.GameAbilitySystem.Domain.GameplayEffect.GrantedTags
@@ -31,11 +32,11 @@ items:
     content: >-
       [Serializable]
 
-      public sealed class GameplayEffect
+      public class GameplayEffect
     content.vb: >-
       <Serializable>
 
-      Public NotInheritable Class GameplayEffect
+      Public Class GameplayEffect
   inheritance:
   - System.Object
   inheritedMembers:
@@ -43,6 +44,7 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
+  - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
   attributes:
@@ -280,6 +282,25 @@ items:
       type: Noname.GameAbilitySystem.Domain.GameplayTagContainer
     content.vb: Public Property BlockedTags As GameplayTagContainer
   overload: Noname.GameAbilitySystem.Domain.GameplayEffect.BlockedTags*
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy
+  id: DurationPolicy
+  parent: Noname.GameAbilitySystem.Domain.GameplayEffect
+  langs:
+  - csharp
+  - vb
+  name: DurationPolicy
+  nameWithType: GameplayEffect.DurationPolicy
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public IEffectDurationPolicy DurationPolicy { get; set; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
+    content.vb: Public Property DurationPolicy As IEffectDurationPolicy
+  overload: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy*
 - uid: Noname.GameAbilitySystem.Domain.GameplayEffect.#ctor
   commentId: M:Noname.GameAbilitySystem.Domain.GameplayEffect.#ctor
   id: '#ctor'
@@ -465,6 +486,30 @@ references:
     name: GetType
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
   - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
@@ -754,6 +799,19 @@ references:
   name: BlockedTags
   nameWithType: GameplayEffect.BlockedTags
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.BlockedTags
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy
+  href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_DurationPolicy
+  name: DurationPolicy
+  nameWithType: GameplayEffect.DurationPolicy
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy
+- uid: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
+  commentId: T:Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.html
+  name: IEffectDurationPolicy
+  nameWithType: IEffectDurationPolicy
+  fullName: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
 - uid: Noname.GameAbilitySystem.Domain.GameplayEffect.#ctor*
   commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.#ctor
   href: Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect__ctor

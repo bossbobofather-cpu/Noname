@@ -4,12 +4,15 @@ items:
   name: Noname.GameAbilitySystem
   type: Namespace
   items:
-  - uid: Noname.GameAbilitySystem.AbilityContext
-    name: AbilityContext
+  - uid: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
+    name: FGameplayAbilitySpecHandle
     type: Struct
-  - uid: Noname.GameAbilitySystem.GameplayEffectContext
-    name: GameplayEffectContext
-    type: Struct
+  - uid: Noname.GameAbilitySystem.GameplayAbilitySpec
+    name: GameplayAbilitySpec
+    type: Class
+  - uid: Noname.GameAbilitySystem.ReadOnlyAttribute
+    name: ReadOnlyAttribute
+    type: Class
 - uid: Noname.GameAbilitySystem.Domain
   name: Noname.GameAbilitySystem.Domain
   type: Namespace
@@ -44,6 +47,9 @@ items:
   - uid: Noname.GameAbilitySystem.Domain.AttributeValue
     name: AttributeValue
     type: Class
+  - uid: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy
+    name: BaseAttackCooldownDrationPlicy
+    type: Class
   - uid: Noname.GameAbilitySystem.Domain.EffectDurationType
     name: EffectDurationType
     type: Enum
@@ -71,6 +77,12 @@ items:
   - uid: Noname.GameAbilitySystem.Domain.GameplayTagUtility
     name: GameplayTagUtility
     type: Class
+  - uid: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+    name: IAbilitySystemOwner
+    type: Interface
+  - uid: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
+    name: IEffectDurationPolicy
+    type: Interface
   - uid: Noname.GameAbilitySystem.Domain.ITargetingStrategy
     name: ITargetingStrategy
     type: Interface
@@ -124,21 +136,6 @@ items:
   name: Noname.GameAbilitySystem.Presentation
   type: Namespace
   items:
-  - uid: Noname.GameAbilitySystem.Presentation.AbilitySystemComponentAdapter
-    name: AbilitySystemComponentAdapter
-    type: Class
-  - uid: Noname.GameAbilitySystem.Presentation.AbilityTargetData
-    name: AbilityTargetData
-    type: Class
-  - uid: Noname.GameAbilitySystem.Presentation.AbilityTask
-    name: AbilityTask
-    type: Class
-  - uid: Noname.GameAbilitySystem.Presentation.AbilityTask_PlayMontageAndWait
-    name: AbilityTask_PlayMontageAndWait
-    type: Class
-  - uid: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
-    name: AbilityTask_WaitInputPress
-    type: Class
   - uid: Noname.GameAbilitySystem.Presentation.AttributeDefinition
     name: AttributeDefinition
     type: Class
@@ -163,12 +160,6 @@ items:
   - uid: Noname.GameAbilitySystem.Presentation.GameplayTagRegistry
     name: GameplayTagRegistry
     type: Class
-  - uid: Noname.GameAbilitySystem.Presentation.GameplayTagRegistryRuntime
-    name: GameplayTagRegistryRuntime
-    type: Class
-  - uid: Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner
-    name: IAbilityTaskOwner
-    type: Interface
   - uid: Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute
     name: ReadOnlyAttribute
     type: Class

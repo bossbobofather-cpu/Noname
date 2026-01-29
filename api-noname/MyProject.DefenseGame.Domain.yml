@@ -5,7 +5,6 @@ items:
   id: MyProject.DefenseGame.Domain
   children:
   - MyProject.DefenseGame.Domain.DefenseAbilityUtility
-  - MyProject.DefenseGame.Domain.DefenseAttributeIds
   - MyProject.DefenseGame.Domain.DefenseCombatState
   - MyProject.DefenseGame.Domain.DefenseEntity
   - MyProject.DefenseGame.Domain.DefenseHostConfig
@@ -13,9 +12,7 @@ items:
   - MyProject.DefenseGame.Domain.DefenseMonsterType
   - MyProject.DefenseGame.Domain.DefensePlayer
   - MyProject.DefenseGame.Domain.DefenseTags
-  - MyProject.DefenseGame.Domain.IAbilitySystemOwner
-  - MyProject.DefenseGame.Domain.MonsterAttributeIds
-  - MyProject.DefenseGame.Domain.PlayerAttributeIds
+  - MyProject.DefenseGame.Domain.IAIFlagChecker
   langs:
   - csharp
   - vb
@@ -37,24 +34,6 @@ references:
   name: DefenseCombatState
   nameWithType: DefenseCombatState
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState
-- uid: MyProject.DefenseGame.Domain.DefenseAttributeIds
-  commentId: T:MyProject.DefenseGame.Domain.DefenseAttributeIds
-  href: MyProject.DefenseGame.Domain.DefenseAttributeIds.html
-  name: DefenseAttributeIds
-  nameWithType: DefenseAttributeIds
-  fullName: MyProject.DefenseGame.Domain.DefenseAttributeIds
-- uid: MyProject.DefenseGame.Domain.PlayerAttributeIds
-  commentId: T:MyProject.DefenseGame.Domain.PlayerAttributeIds
-  href: MyProject.DefenseGame.Domain.PlayerAttributeIds.html
-  name: PlayerAttributeIds
-  nameWithType: PlayerAttributeIds
-  fullName: MyProject.DefenseGame.Domain.PlayerAttributeIds
-- uid: MyProject.DefenseGame.Domain.MonsterAttributeIds
-  commentId: T:MyProject.DefenseGame.Domain.MonsterAttributeIds
-  href: MyProject.DefenseGame.Domain.MonsterAttributeIds.html
-  name: MonsterAttributeIds
-  nameWithType: MonsterAttributeIds
-  fullName: MyProject.DefenseGame.Domain.MonsterAttributeIds
 - uid: MyProject.DefenseGame.Domain.DefenseEntity
   commentId: T:MyProject.DefenseGame.Domain.DefenseEntity
   parent: MyProject.DefenseGame.Domain
@@ -89,13 +68,13 @@ references:
   name: DefenseTags
   nameWithType: DefenseTags
   fullName: MyProject.DefenseGame.Domain.DefenseTags
-- uid: MyProject.DefenseGame.Domain.IAbilitySystemOwner
-  commentId: T:MyProject.DefenseGame.Domain.IAbilitySystemOwner
+- uid: MyProject.DefenseGame.Domain.IAIFlagChecker
+  commentId: T:MyProject.DefenseGame.Domain.IAIFlagChecker
   parent: MyProject.DefenseGame.Domain
-  href: MyProject.DefenseGame.Domain.IAbilitySystemOwner.html
-  name: IAbilitySystemOwner
-  nameWithType: IAbilitySystemOwner
-  fullName: MyProject.DefenseGame.Domain.IAbilitySystemOwner
+  href: MyProject.DefenseGame.Domain.IAIFlagChecker.html
+  name: IAIFlagChecker
+  nameWithType: IAIFlagChecker
+  fullName: MyProject.DefenseGame.Domain.IAIFlagChecker
 - uid: MyProject.DefenseGame.Domain.DefenseHostConfig
   commentId: T:MyProject.DefenseGame.Domain.DefenseHostConfig
   parent: MyProject.DefenseGame.Domain

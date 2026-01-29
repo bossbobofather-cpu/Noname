@@ -7,7 +7,10 @@ items:
   children:
   - MyProject.DefenseGame.Application.DefenseGameHost.#ctor(MyProject.DefenseGame.Domain.DefenseHostConfig)
   - MyProject.DefenseGame.Application.DefenseGameHost.BuildSnapshotInternal
+  - MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck
+  - MyProject.DefenseGame.Application.DefenseGameHost.Dispose
   - MyProject.DefenseGame.Application.DefenseGameHost.HandleCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
+  - MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
   - MyProject.DefenseGame.Application.DefenseGameHost.OnTick(System.Single)
   langs:
   - csharp
@@ -23,10 +26,12 @@ items:
     Command를 처리하고 Result/Event를 발행합니다.
   example: []
   syntax:
-    content: 'public sealed class DefenseGameHost : GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>'
-    content.vb: Public NotInheritable Class DefenseGameHost Inherits GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot)
+    content: 'public sealed class DefenseGameHost : GameHostBase<DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot>, IAIFlagChecker'
+    content.vb: Public NotInheritable Class DefenseGameHost Inherits GameHostBase(Of DefenseCommand, DefenseCommandResult, DefenseHostEvent, DefenseHostSnapshot) Implements IAIFlagChecker
   inheritance:
   - System.Object
+  implements:
+  - MyProject.DefenseGame.Domain.IAIFlagChecker
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.#ctor(MyProject.DefenseGame.Domain.DefenseHostConfig)
   commentId: M:MyProject.DefenseGame.Application.DefenseGameHost.#ctor(MyProject.DefenseGame.Domain.DefenseHostConfig)
   id: '#ctor(MyProject.DefenseGame.Domain.DefenseHostConfig)'
@@ -94,6 +99,26 @@ items:
   nameWithType.vb: DefenseGameHost.OnTick(Single)
   fullName.vb: MyProject.DefenseGame.Application.DefenseGameHost.OnTick(Single)
   name.vb: OnTick(Single)
+- uid: MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  commentId: M:MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  id: HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  parent: MyProject.DefenseGame.Application.DefenseGameHost
+  langs:
+  - csharp
+  - vb
+  name: HandleInternalEvent(DefenseHostEvent)
+  nameWithType: DefenseGameHost.HandleInternalEvent(DefenseHostEvent)
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  type: Method
+  namespace: MyProject.DefenseGame.Application
+  example: []
+  syntax:
+    content: protected override void HandleInternalEvent(DefenseHostEvent eventData)
+    parameters:
+    - id: eventData
+      type: MyProject.DefenseGame.Application.DefenseHostEvent
+    content.vb: Protected Overrides Sub HandleInternalEvent(eventData As DefenseHostEvent)
+  overload: MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent*
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.BuildSnapshotInternal
   commentId: M:MyProject.DefenseGame.Application.DefenseGameHost.BuildSnapshotInternal
   id: BuildSnapshotInternal
@@ -113,6 +138,44 @@ items:
       type: MyProject.DefenseGame.Application.DefenseHostSnapshot
     content.vb: Protected Overrides Function BuildSnapshotInternal() As DefenseHostSnapshot
   overload: MyProject.DefenseGame.Application.DefenseGameHost.BuildSnapshotInternal*
+- uid: MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck
+  commentId: M:MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck
+  id: ConsumePlayerAIRecheck
+  parent: MyProject.DefenseGame.Application.DefenseGameHost
+  langs:
+  - csharp
+  - vb
+  name: ConsumePlayerAIRecheck()
+  nameWithType: DefenseGameHost.ConsumePlayerAIRecheck()
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck()
+  type: Method
+  namespace: MyProject.DefenseGame.Application
+  example: []
+  syntax:
+    content: public bool ConsumePlayerAIRecheck()
+    return:
+      type: System.Boolean
+    content.vb: Public Function ConsumePlayerAIRecheck() As Boolean
+  overload: MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck*
+  implements:
+  - MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+- uid: MyProject.DefenseGame.Application.DefenseGameHost.Dispose
+  commentId: M:MyProject.DefenseGame.Application.DefenseGameHost.Dispose
+  id: Dispose
+  parent: MyProject.DefenseGame.Application.DefenseGameHost
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: DefenseGameHost.Dispose()
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost.Dispose()
+  type: Method
+  namespace: MyProject.DefenseGame.Application
+  example: []
+  syntax:
+    content: public override void Dispose()
+    content.vb: Public Overrides Sub Dispose()
+  overload: MyProject.DefenseGame.Application.DefenseGameHost.Dispose*
 references:
 - uid: MyProject.DefenseGame.Application
   commentId: N:MyProject.DefenseGame.Application
@@ -155,6 +218,13 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: MyProject.DefenseGame.Domain.IAIFlagChecker
+  commentId: T:MyProject.DefenseGame.Domain.IAIFlagChecker
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.IAIFlagChecker.html
+  name: IAIFlagChecker
+  nameWithType: IAIFlagChecker
+  fullName: MyProject.DefenseGame.Domain.IAIFlagChecker
 - uid: System
   commentId: N:System
   isExternal: true
@@ -162,22 +232,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: MyProject.DefenseGame.Application.DefenseGameHost.#ctor*
-  commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.#ctor
-  href: MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost__ctor_MyProject_DefenseGame_Domain_DefenseHostConfig_
-  name: DefenseGameHost
-  nameWithType: DefenseGameHost.DefenseGameHost
-  fullName: MyProject.DefenseGame.Application.DefenseGameHost.DefenseGameHost
-  nameWithType.vb: DefenseGameHost.New
-  fullName.vb: MyProject.DefenseGame.Application.DefenseGameHost.New
-  name.vb: New
-- uid: MyProject.DefenseGame.Domain.DefenseHostConfig
-  commentId: T:MyProject.DefenseGame.Domain.DefenseHostConfig
-  parent: MyProject.DefenseGame.Domain
-  href: MyProject.DefenseGame.Domain.DefenseHostConfig.html
-  name: DefenseHostConfig
-  nameWithType: DefenseHostConfig
-  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig
 - uid: MyProject.DefenseGame.Domain
   commentId: N:MyProject.DefenseGame.Domain
   href: MyProject.html
@@ -208,6 +262,22 @@ references:
   - uid: MyProject.DefenseGame.Domain
     name: Domain
     href: MyProject.DefenseGame.Domain.html
+- uid: MyProject.DefenseGame.Application.DefenseGameHost.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.#ctor
+  href: MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost__ctor_MyProject_DefenseGame_Domain_DefenseHostConfig_
+  name: DefenseGameHost
+  nameWithType: DefenseGameHost.DefenseGameHost
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost.DefenseGameHost
+  nameWithType.vb: DefenseGameHost.New
+  fullName.vb: MyProject.DefenseGame.Application.DefenseGameHost.New
+  name.vb: New
+- uid: MyProject.DefenseGame.Domain.DefenseHostConfig
+  commentId: T:MyProject.DefenseGame.Domain.DefenseHostConfig
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.DefenseHostConfig.html
+  name: DefenseHostConfig
+  nameWithType: DefenseHostConfig
+  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.HandleCommand*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.HandleCommand
   href: MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_HandleCommand_MyProject_DefenseGame_Application_Commands_DefenseCommand_
@@ -347,6 +417,19 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
+- uid: MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent
+  href: MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_HandleInternalEvent_MyProject_DefenseGame_Application_DefenseHostEvent_
+  name: HandleInternalEvent
+  nameWithType: DefenseGameHost.HandleInternalEvent
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.BuildSnapshotInternal*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.BuildSnapshotInternal
   href: MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_BuildSnapshotInternal
@@ -360,3 +443,45 @@ references:
   name: DefenseHostSnapshot
   nameWithType: DefenseHostSnapshot
   fullName: MyProject.DefenseGame.Application.DefenseHostSnapshot
+- uid: MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck
+  href: MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_ConsumePlayerAIRecheck
+  name: ConsumePlayerAIRecheck
+  nameWithType: DefenseGameHost.ConsumePlayerAIRecheck
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck
+- uid: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+  commentId: M:MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+  parent: MyProject.DefenseGame.Domain.IAIFlagChecker
+  href: MyProject.DefenseGame.Domain.IAIFlagChecker.html#MyProject_DefenseGame_Domain_IAIFlagChecker_ConsumePlayerAIRecheck
+  name: ConsumePlayerAIRecheck()
+  nameWithType: IAIFlagChecker.ConsumePlayerAIRecheck()
+  fullName: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck()
+  spec.csharp:
+  - uid: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+    name: ConsumePlayerAIRecheck
+    href: MyProject.DefenseGame.Domain.IAIFlagChecker.html#MyProject_DefenseGame_Domain_IAIFlagChecker_ConsumePlayerAIRecheck
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+    name: ConsumePlayerAIRecheck
+    href: MyProject.DefenseGame.Domain.IAIFlagChecker.html#MyProject_DefenseGame_Domain_IAIFlagChecker_ConsumePlayerAIRecheck
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: MyProject.DefenseGame.Application.DefenseGameHost.Dispose*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.Dispose
+  href: MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_Dispose
+  name: Dispose
+  nameWithType: DefenseGameHost.Dispose
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost.Dispose

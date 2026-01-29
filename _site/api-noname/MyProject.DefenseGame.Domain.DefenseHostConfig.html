@@ -121,31 +121,6 @@ public sealed class DefenseHostConfig</code></pre>
 </h3>
 
 
-  <h4 id="MyProject_DefenseGame_Domain_DefenseHostConfig_AutoMode" data-uid="MyProject.DefenseGame.Domain.DefenseHostConfig.AutoMode">AutoMode</h4>
-  <div class="markdown level1 summary"><p>유저 인터렉션없이 자동으로 진행됩니다.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AutoMode</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
   <h4 id="MyProject_DefenseGame_Domain_DefenseHostConfig_BaseSpawnInterval" data-uid="MyProject.DefenseGame.Domain.DefenseHostConfig.BaseSpawnInterval">BaseSpawnInterval</h4>
   <div class="markdown level1 summary"><p>기본 몬스터 스폰 간격입니다 (초).</p>
 </div>
@@ -247,7 +222,7 @@ public sealed class DefenseHostConfig</code></pre>
 
 
   <h4 id="MyProject_DefenseGame_Domain_DefenseHostConfig_BossMonsterAbilityIds" data-uid="MyProject.DefenseGame.Domain.DefenseHostConfig.BossMonsterAbilityIds">BossMonsterAbilityIds</h4>
-  <div class="markdown level1 summary"><p>蹂댁뒪 紐ъ뒪?? ?대퉴由ы떚 ID 紐⑸줉?낅땲?? (媛쒕컻?⑥슜)</p>
+  <div class="markdown level1 summary"><p>보스 몬스터 스타트업 능력 ID 입니다.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -290,6 +265,31 @@ public sealed class DefenseHostConfig</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="MyProject_DefenseGame_Domain_DefenseHostConfig_InvincibleMode" data-uid="MyProject.DefenseGame.Domain.DefenseHostConfig.InvincibleMode">InvincibleMode</h4>
+  <div class="markdown level1 summary"><p>State.Invincible Tag를 부여하여 기본 공격을 무시합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InvincibleMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -347,7 +347,7 @@ public sealed class DefenseHostConfig</code></pre>
 
 
   <h4 id="MyProject_DefenseGame_Domain_DefenseHostConfig_NormalMonsterAbilityIds" data-uid="MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAbilityIds">NormalMonsterAbilityIds</h4>
-  <div class="markdown level1 summary"><p>?쇰컲 紐ъ뒪?? ?대퉴由ы떚 ID 紐⑸줉?낅땲?? (媛쒕컻?⑥슜)</p>
+  <div class="markdown level1 summary"><p>일반 몬스터 스타트업 능력 ID 입니다.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -390,6 +390,31 @@ public sealed class DefenseHostConfig</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="MyProject_DefenseGame_Domain_DefenseHostConfig_NormalMonsterAttackSpeed" data-uid="MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAttackSpeed">NormalMonsterAttackSpeed</h4>
+  <div class="markdown level1 summary"><p>일반 몬스터 공격력입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float NormalMonsterAttackSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -472,7 +497,7 @@ public sealed class DefenseHostConfig</code></pre>
 
 
   <h4 id="MyProject_DefenseGame_Domain_DefenseHostConfig_PlayerAbilityIds" data-uid="MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAbilityIds">PlayerAbilityIds</h4>
-  <div class="markdown level1 summary"><p>?뚮젅?댁뼱 ?대퉴由ы떚 ID 紐⑸줉?낅땲?? (媛쒕컻?⑥슜)</p>
+  <div class="markdown level1 summary"><p>플레이어 스타트업 능력 ID 입니다.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -527,7 +552,7 @@ public sealed class DefenseHostConfig</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int PlayerAttackPower</code></pre>
+    <pre><code class="lang-csharp hljs">public float PlayerAttackPower</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -539,7 +564,32 @@ public sealed class DefenseHostConfig</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="MyProject_DefenseGame_Domain_DefenseHostConfig_PlayerAttackSpeed" data-uid="MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackSpeed">PlayerAttackSpeed</h4>
+  <div class="markdown level1 summary"><p>플레이어 초기 공격속도 입니다. (초당 공격 횟수)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PlayerAttackSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -552,7 +602,7 @@ public sealed class DefenseHostConfig</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int PlayerDefense</code></pre>
+    <pre><code class="lang-csharp hljs">public float PlayerDefense</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -564,7 +614,7 @@ public sealed class DefenseHostConfig</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -615,6 +665,30 @@ public sealed class DefenseHostConfig</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">Point2D</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="MyProject_DefenseGame_Domain_DefenseHostConfig_PlayerTags" data-uid="MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerTags">PlayerTags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; PlayerTags</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

@@ -9,12 +9,17 @@ items:
   - Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
   - Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
   - Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
+  - Noname.GameAbilitySystem.Domain.AttributeId.Defense
   - Noname.GameAbilitySystem.Domain.AttributeId.Equals(System.Object)
   - Noname.GameAbilitySystem.Domain.AttributeId.Exp
+  - Noname.GameAbilitySystem.Domain.AttributeId.ExpReward
+  - Noname.GameAbilitySystem.Domain.AttributeId.Experience
+  - Noname.GameAbilitySystem.Domain.AttributeId.ExtraTargetCount
   - Noname.GameAbilitySystem.Domain.AttributeId.GetHashCode
   - Noname.GameAbilitySystem.Domain.AttributeId.Gold
   - Noname.GameAbilitySystem.Domain.AttributeId.Health
   - Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
+  - Noname.GameAbilitySystem.Domain.AttributeId.Level
   - Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
   - Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
   - Noname.GameAbilitySystem.Domain.AttributeId.Name
@@ -150,8 +155,25 @@ items:
     content.vb: Public Overrides Function ToString() As String
   overridden: System.ValueType.ToString
   overload: Noname.GameAbilitySystem.Domain.AttributeId.ToString*
+- uid: Noname.GameAbilitySystem.Domain.AttributeId.Level
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.Level
+  id: Level
+  parent: Noname.GameAbilitySystem.Domain.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: AttributeId.Level
+  fullName: Noname.GameAbilitySystem.Domain.AttributeId.Level
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public static readonly AttributeId Level
+    return:
+      type: Noname.GameAbilitySystem.Domain.AttributeId
+    content.vb: Public Shared ReadOnly Level As AttributeId
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
   id: MoveSpeed
   parent: Noname.GameAbilitySystem.Domain.AttributeId
   langs:
@@ -160,17 +182,15 @@ items:
   name: MoveSpeed
   nameWithType: AttributeId.MoveSpeed
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
-  type: Property
+  type: Field
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
-    content: public static AttributeId MoveSpeed { get; }
-    parameters: []
+    content: public static readonly AttributeId MoveSpeed
     return:
       type: Noname.GameAbilitySystem.Domain.AttributeId
-    content.vb: Public Shared ReadOnly Property MoveSpeed As AttributeId
-  overload: Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed*
+    content.vb: Public Shared ReadOnly MoveSpeed As AttributeId
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
   id: JumpSpeed
   parent: Noname.GameAbilitySystem.Domain.AttributeId
   langs:
@@ -179,17 +199,15 @@ items:
   name: JumpSpeed
   nameWithType: AttributeId.JumpSpeed
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
-  type: Property
+  type: Field
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
-    content: public static AttributeId JumpSpeed { get; }
-    parameters: []
+    content: public static readonly AttributeId JumpSpeed
     return:
       type: Noname.GameAbilitySystem.Domain.AttributeId
-    content.vb: Public Shared ReadOnly Property JumpSpeed As AttributeId
-  overload: Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed*
+    content.vb: Public Shared ReadOnly JumpSpeed As AttributeId
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.Health
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.Health
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.Health
   id: Health
   parent: Noname.GameAbilitySystem.Domain.AttributeId
   langs:
@@ -198,17 +216,15 @@ items:
   name: Health
   nameWithType: AttributeId.Health
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Health
-  type: Property
+  type: Field
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
-    content: public static AttributeId Health { get; }
-    parameters: []
+    content: public static readonly AttributeId Health
     return:
       type: Noname.GameAbilitySystem.Domain.AttributeId
-    content.vb: Public Shared ReadOnly Property Health As AttributeId
-  overload: Noname.GameAbilitySystem.Domain.AttributeId.Health*
+    content.vb: Public Shared ReadOnly Health As AttributeId
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
   id: AttackRange
   parent: Noname.GameAbilitySystem.Domain.AttributeId
   langs:
@@ -217,17 +233,15 @@ items:
   name: AttackRange
   nameWithType: AttributeId.AttackRange
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
-  type: Property
+  type: Field
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
-    content: public static AttributeId AttackRange { get; }
-    parameters: []
+    content: public static readonly AttributeId AttackRange
     return:
       type: Noname.GameAbilitySystem.Domain.AttributeId
-    content.vb: Public Shared ReadOnly Property AttackRange As AttributeId
-  overload: Noname.GameAbilitySystem.Domain.AttributeId.AttackRange*
+    content.vb: Public Shared ReadOnly AttackRange As AttributeId
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
   id: AttackSpeed
   parent: Noname.GameAbilitySystem.Domain.AttributeId
   langs:
@@ -236,17 +250,15 @@ items:
   name: AttackSpeed
   nameWithType: AttributeId.AttackSpeed
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
-  type: Property
+  type: Field
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
-    content: public static AttributeId AttackSpeed { get; }
-    parameters: []
+    content: public static readonly AttributeId AttackSpeed
     return:
       type: Noname.GameAbilitySystem.Domain.AttributeId
-    content.vb: Public Shared ReadOnly Property AttackSpeed As AttributeId
-  overload: Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed*
+    content.vb: Public Shared ReadOnly AttackSpeed As AttributeId
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
   id: AttackDamage
   parent: Noname.GameAbilitySystem.Domain.AttributeId
   langs:
@@ -255,17 +267,32 @@ items:
   name: AttackDamage
   nameWithType: AttributeId.AttackDamage
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
-  type: Property
+  type: Field
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
-    content: public static AttributeId AttackDamage { get; }
-    parameters: []
+    content: public static readonly AttributeId AttackDamage
     return:
       type: Noname.GameAbilitySystem.Domain.AttributeId
-    content.vb: Public Shared ReadOnly Property AttackDamage As AttributeId
-  overload: Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage*
+    content.vb: Public Shared ReadOnly AttackDamage As AttributeId
+- uid: Noname.GameAbilitySystem.Domain.AttributeId.Defense
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.Defense
+  id: Defense
+  parent: Noname.GameAbilitySystem.Domain.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: Defense
+  nameWithType: AttributeId.Defense
+  fullName: Noname.GameAbilitySystem.Domain.AttributeId.Defense
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public static readonly AttributeId Defense
+    return:
+      type: Noname.GameAbilitySystem.Domain.AttributeId
+    content.vb: Public Shared ReadOnly Defense As AttributeId
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
   id: MaxHealth
   parent: Noname.GameAbilitySystem.Domain.AttributeId
   langs:
@@ -274,17 +301,32 @@ items:
   name: MaxHealth
   nameWithType: AttributeId.MaxHealth
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
-  type: Property
+  type: Field
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
-    content: public static AttributeId MaxHealth { get; }
-    parameters: []
+    content: public static readonly AttributeId MaxHealth
     return:
       type: Noname.GameAbilitySystem.Domain.AttributeId
-    content.vb: Public Shared ReadOnly Property MaxHealth As AttributeId
-  overload: Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth*
+    content.vb: Public Shared ReadOnly MaxHealth As AttributeId
+- uid: Noname.GameAbilitySystem.Domain.AttributeId.ExtraTargetCount
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.ExtraTargetCount
+  id: ExtraTargetCount
+  parent: Noname.GameAbilitySystem.Domain.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: ExtraTargetCount
+  nameWithType: AttributeId.ExtraTargetCount
+  fullName: Noname.GameAbilitySystem.Domain.AttributeId.ExtraTargetCount
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public static readonly AttributeId ExtraTargetCount
+    return:
+      type: Noname.GameAbilitySystem.Domain.AttributeId
+    content.vb: Public Shared ReadOnly ExtraTargetCount As AttributeId
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.Exp
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.Exp
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.Exp
   id: Exp
   parent: Noname.GameAbilitySystem.Domain.AttributeId
   langs:
@@ -293,17 +335,15 @@ items:
   name: Exp
   nameWithType: AttributeId.Exp
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Exp
-  type: Property
+  type: Field
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
-    content: public static AttributeId Exp { get; }
-    parameters: []
+    content: public static readonly AttributeId Exp
     return:
       type: Noname.GameAbilitySystem.Domain.AttributeId
-    content.vb: Public Shared ReadOnly Property Exp As AttributeId
-  overload: Noname.GameAbilitySystem.Domain.AttributeId.Exp*
+    content.vb: Public Shared ReadOnly Exp As AttributeId
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.Gold
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.Gold
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.Gold
   id: Gold
   parent: Noname.GameAbilitySystem.Domain.AttributeId
   langs:
@@ -312,15 +352,47 @@ items:
   name: Gold
   nameWithType: AttributeId.Gold
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Gold
-  type: Property
+  type: Field
   namespace: Noname.GameAbilitySystem.Domain
   syntax:
-    content: public static AttributeId Gold { get; }
-    parameters: []
+    content: public static readonly AttributeId Gold
     return:
       type: Noname.GameAbilitySystem.Domain.AttributeId
-    content.vb: Public Shared ReadOnly Property Gold As AttributeId
-  overload: Noname.GameAbilitySystem.Domain.AttributeId.Gold*
+    content.vb: Public Shared ReadOnly Gold As AttributeId
+- uid: Noname.GameAbilitySystem.Domain.AttributeId.Experience
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.Experience
+  id: Experience
+  parent: Noname.GameAbilitySystem.Domain.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: Experience
+  nameWithType: AttributeId.Experience
+  fullName: Noname.GameAbilitySystem.Domain.AttributeId.Experience
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public static readonly AttributeId Experience
+    return:
+      type: Noname.GameAbilitySystem.Domain.AttributeId
+    content.vb: Public Shared ReadOnly Experience As AttributeId
+- uid: Noname.GameAbilitySystem.Domain.AttributeId.ExpReward
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.ExpReward
+  id: ExpReward
+  parent: Noname.GameAbilitySystem.Domain.AttributeId
+  langs:
+  - csharp
+  - vb
+  name: ExpReward
+  nameWithType: AttributeId.ExpReward
+  fullName: Noname.GameAbilitySystem.Domain.AttributeId.ExpReward
+  type: Field
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public static readonly AttributeId ExpReward
+    return:
+      type: Noname.GameAbilitySystem.Domain.AttributeId
+    content.vb: Public Shared ReadOnly ExpReward As AttributeId
 references:
 - uid: Noname.GameAbilitySystem.Domain
   commentId: N:Noname.GameAbilitySystem.Domain
@@ -635,12 +707,6 @@ references:
   name: ToString
   nameWithType: AttributeId.ToString
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.ToString
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
-  href: Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_MoveSpeed
-  name: MoveSpeed
-  nameWithType: AttributeId.MoveSpeed
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
 - uid: Noname.GameAbilitySystem.Domain.AttributeId
   commentId: T:Noname.GameAbilitySystem.Domain.AttributeId
   parent: Noname.GameAbilitySystem.Domain
@@ -648,51 +714,3 @@ references:
   name: AttributeId
   nameWithType: AttributeId
   fullName: Noname.GameAbilitySystem.Domain.AttributeId
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
-  href: Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_JumpSpeed
-  name: JumpSpeed
-  nameWithType: AttributeId.JumpSpeed
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.Health*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.Health
-  href: Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_Health
-  name: Health
-  nameWithType: AttributeId.Health
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.Health
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.AttackRange*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
-  href: Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_AttackRange
-  name: AttackRange
-  nameWithType: AttributeId.AttackRange
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
-  href: Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_AttackSpeed
-  name: AttackSpeed
-  nameWithType: AttributeId.AttackSpeed
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
-  href: Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_AttackDamage
-  name: AttackDamage
-  nameWithType: AttributeId.AttackDamage
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
-  href: Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_MaxHealth
-  name: MaxHealth
-  nameWithType: AttributeId.MaxHealth
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.Exp*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.Exp
-  href: Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_Exp
-  name: Exp
-  nameWithType: AttributeId.Exp
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.Exp
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.Gold*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.Gold
-  href: Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_Gold
-  name: Gold
-  nameWithType: AttributeId.Gold
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.Gold

@@ -64,7 +64,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MyProject.Common.Bootstrap.BootstrapperBase",
-      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Bootstrap.BootstrapperBase.yml\" sourcestartlinenumber=\"1\">���� ��Ʈ��Ʈ���� ���̽��Դϴ�.</p>\n"
+      "Summary": "<p sourcefile=\"api-noname/MyProject.Common.Bootstrap.BootstrapperBase.yml\" sourcestartlinenumber=\"1\">공통 부트스트래퍼의 기본 동작을 제공하는 베이스입니다.\n런타임 이벤트 바인딩과 매니저 생성 흐름을 담당합니다.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1174,6 +1174,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.yml\" sourcestartlinenumber=\"1\">몬스터 능력 발동 이벤트 입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.yml",
       "output": {
         ".html": {
@@ -1213,6 +1227,20 @@
       "IsMRef": true,
       "Title": "MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent",
       "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.yml\" sourcestartlinenumber=\"1\">몬스터 스폰 이벤트입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.yml\" sourcestartlinenumber=\"1\">플레이어 능력 발동 이벤트 입니다.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1311,6 +1339,20 @@
       "IsMRef": true,
       "Title": "MyProject.DefenseGame.Domain.AI.IDefenseAI",
       "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.AI.IDefenseAI.yml\" sourcestartlinenumber=\"1\">디펜스 게임 엔티티의 인공지능(의사결정) 인터페이스입니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI",
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.yml\" sourcestartlinenumber=\"1\">몬스터 자동 전투 AI입니다.\nDirty Flag 패턴을 사용하여 태그가 변경되었을 때만 능력 활성화를 체크합니다.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1468,6 +1510,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.IAIFlagChecker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-noname/MyProject.DefenseGame.Domain.IAIFlagChecker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MyProject.DefenseGame.Domain.IAIFlagChecker",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api-noname/MyProject.DefenseGame.Domain.IAbilitySystemOwner.yml",
       "output": {
         ".html": {
@@ -1590,7 +1646,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MyProject.DefenseGame.Presentation.DefenseGameMode",
-      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Presentation.DefenseGameMode.yml\" sourcestartlinenumber=\"1\">디펜스 게임 뷰입니다.\n호스트 이벤트를 수신하여 로그 출력 및 UI 업데이트를 수행합니다.</p>\n"
+      "Summary": "<p sourcefile=\"api-noname/MyProject.DefenseGame.Presentation.DefenseGameMode.yml\" sourcestartlinenumber=\"1\">디펜스 게임의 프레젠테이션 모드입니다.\n호스트 이벤트를 수신해 시스템 메시지로 출력합니다.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3143,6 +3199,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.yml\" sourcestartlinenumber=\"1\">기본 공격 쿨다운 이펙트 지속 시간 정책</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.EffectDurationType.yml",
       "output": {
         ".html": {
@@ -3266,6 +3336,34 @@
       "IsMRef": true,
       "Title": "Noname.GameAbilitySystem.Domain.GameplayTagUtility",
       "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.GameplayTagUtility.yml\" sourcestartlinenumber=\"1\">게임플레이 태그 문자열 유틸리티입니다 (순수 C#).\nUnity에 의존하지 않으며 Host 환경에서 사용 가능합니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.IAbilitySystemOwner",
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.yml\" sourcestartlinenumber=\"1\">ASC(AbilitySystemComponent)에 대한 접근을 제공하는 인터페이스입니다.\n구체적인 클래스에 의존하지 않고 ASC 기능을 사용하기 위해 도입되었습니다.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api-plugin/Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Noname.GameAbilitySystem.Domain.IEffectDurationPolicy",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -3531,7 +3629,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Noname.GameAbilitySystem.FGameplayAbilitySpecHandle",
-      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.yml\" sourcestartlinenumber=\"1\">능력 사양을 식별하기 위한 핸들입니다.</p>\n"
+      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.yml\" sourcestartlinenumber=\"1\">게임 플레이 능력 사양 핸들</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3629,7 +3727,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Noname.GameAbilitySystem.GameplayAbilitySpec",
-      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.yml\" sourcestartlinenumber=\"1\">능력 사양 정보를 담는 구조입니다.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -4105,7 +4203,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Noname.GameAbilitySystem.ReadOnlyAttribute",
-      "Summary": "<p sourcefile=\"api-plugin/Noname.GameAbilitySystem.ReadOnlyAttribute.yml\" sourcestartlinenumber=\"1\">인스펙터에서 읽기 전용으로 표시하기 위한 속성입니다.</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",

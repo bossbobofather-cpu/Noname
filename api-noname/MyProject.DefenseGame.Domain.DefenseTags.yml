@@ -6,14 +6,13 @@ items:
   parent: MyProject.DefenseGame.Domain
   children:
   - MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttack
+  - MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttackTargetUp
+  - MyProject.DefenseGame.Domain.DefenseTags.Ability_AttackSpeedUp
   - MyProject.DefenseGame.Domain.DefenseTags.Ability_BasicAttack
-  - MyProject.DefenseGame.Domain.DefenseTags.Ability_LifeStealOnKill
-  - MyProject.DefenseGame.Domain.DefenseTags.Buff_AreaAttackTargetUp
-  - MyProject.DefenseGame.Domain.DefenseTags.Buff_AttackSpeedUp
-  - MyProject.DefenseGame.Domain.DefenseTags.Buff_ExpGainUp
-  - MyProject.DefenseGame.Domain.DefenseTags.Buff_LifeStealAmountUp
+  - MyProject.DefenseGame.Domain.DefenseTags.Ability_FullHealthRestore
   - MyProject.DefenseGame.Domain.DefenseTags.Cooldown_AreaAttack
   - MyProject.DefenseGame.Domain.DefenseTags.Cooldown_BasicAttack
+  - MyProject.DefenseGame.Domain.DefenseTags.State_Invincible
   langs:
   - csharp
   - vb
@@ -105,91 +104,74 @@ items:
     return:
       type: FGameplayTag
     content.vb: Public Shared ReadOnly Ability_AreaAttack As FGameplayTag
-- uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_LifeStealOnKill
-  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_LifeStealOnKill
-  id: Ability_LifeStealOnKill
+- uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_AttackSpeedUp
+  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_AttackSpeedUp
+  id: Ability_AttackSpeedUp
   parent: MyProject.DefenseGame.Domain.DefenseTags
   langs:
   - csharp
   - vb
-  name: Ability_LifeStealOnKill
-  nameWithType: DefenseTags.Ability_LifeStealOnKill
-  fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_LifeStealOnKill
+  name: Ability_AttackSpeedUp
+  nameWithType: DefenseTags.Ability_AttackSpeedUp
+  fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_AttackSpeedUp
   type: Field
   namespace: MyProject.DefenseGame.Domain
   syntax:
-    content: public static readonly FGameplayTag Ability_LifeStealOnKill
+    content: public static readonly FGameplayTag Ability_AttackSpeedUp
     return:
       type: FGameplayTag
-    content.vb: Public Shared ReadOnly Ability_LifeStealOnKill As FGameplayTag
-- uid: MyProject.DefenseGame.Domain.DefenseTags.Buff_AttackSpeedUp
-  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Buff_AttackSpeedUp
-  id: Buff_AttackSpeedUp
+    content.vb: Public Shared ReadOnly Ability_AttackSpeedUp As FGameplayTag
+- uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_FullHealthRestore
+  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_FullHealthRestore
+  id: Ability_FullHealthRestore
   parent: MyProject.DefenseGame.Domain.DefenseTags
   langs:
   - csharp
   - vb
-  name: Buff_AttackSpeedUp
-  nameWithType: DefenseTags.Buff_AttackSpeedUp
-  fullName: MyProject.DefenseGame.Domain.DefenseTags.Buff_AttackSpeedUp
+  name: Ability_FullHealthRestore
+  nameWithType: DefenseTags.Ability_FullHealthRestore
+  fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_FullHealthRestore
   type: Field
   namespace: MyProject.DefenseGame.Domain
   syntax:
-    content: public static readonly FGameplayTag Buff_AttackSpeedUp
+    content: public static readonly FGameplayTag Ability_FullHealthRestore
     return:
       type: FGameplayTag
-    content.vb: Public Shared ReadOnly Buff_AttackSpeedUp As FGameplayTag
-- uid: MyProject.DefenseGame.Domain.DefenseTags.Buff_ExpGainUp
-  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Buff_ExpGainUp
-  id: Buff_ExpGainUp
+    content.vb: Public Shared ReadOnly Ability_FullHealthRestore As FGameplayTag
+- uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttackTargetUp
+  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttackTargetUp
+  id: Ability_AreaAttackTargetUp
   parent: MyProject.DefenseGame.Domain.DefenseTags
   langs:
   - csharp
   - vb
-  name: Buff_ExpGainUp
-  nameWithType: DefenseTags.Buff_ExpGainUp
-  fullName: MyProject.DefenseGame.Domain.DefenseTags.Buff_ExpGainUp
+  name: Ability_AreaAttackTargetUp
+  nameWithType: DefenseTags.Ability_AreaAttackTargetUp
+  fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttackTargetUp
   type: Field
   namespace: MyProject.DefenseGame.Domain
   syntax:
-    content: public static readonly FGameplayTag Buff_ExpGainUp
+    content: public static readonly FGameplayTag Ability_AreaAttackTargetUp
     return:
       type: FGameplayTag
-    content.vb: Public Shared ReadOnly Buff_ExpGainUp As FGameplayTag
-- uid: MyProject.DefenseGame.Domain.DefenseTags.Buff_AreaAttackTargetUp
-  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Buff_AreaAttackTargetUp
-  id: Buff_AreaAttackTargetUp
+    content.vb: Public Shared ReadOnly Ability_AreaAttackTargetUp As FGameplayTag
+- uid: MyProject.DefenseGame.Domain.DefenseTags.State_Invincible
+  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.State_Invincible
+  id: State_Invincible
   parent: MyProject.DefenseGame.Domain.DefenseTags
   langs:
   - csharp
   - vb
-  name: Buff_AreaAttackTargetUp
-  nameWithType: DefenseTags.Buff_AreaAttackTargetUp
-  fullName: MyProject.DefenseGame.Domain.DefenseTags.Buff_AreaAttackTargetUp
+  name: State_Invincible
+  nameWithType: DefenseTags.State_Invincible
+  fullName: MyProject.DefenseGame.Domain.DefenseTags.State_Invincible
   type: Field
   namespace: MyProject.DefenseGame.Domain
   syntax:
-    content: public static readonly FGameplayTag Buff_AreaAttackTargetUp
+    content: public static readonly FGameplayTag State_Invincible
     return:
       type: FGameplayTag
-    content.vb: Public Shared ReadOnly Buff_AreaAttackTargetUp As FGameplayTag
-- uid: MyProject.DefenseGame.Domain.DefenseTags.Buff_LifeStealAmountUp
-  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Buff_LifeStealAmountUp
-  id: Buff_LifeStealAmountUp
-  parent: MyProject.DefenseGame.Domain.DefenseTags
-  langs:
-  - csharp
-  - vb
-  name: Buff_LifeStealAmountUp
-  nameWithType: DefenseTags.Buff_LifeStealAmountUp
-  fullName: MyProject.DefenseGame.Domain.DefenseTags.Buff_LifeStealAmountUp
-  type: Field
-  namespace: MyProject.DefenseGame.Domain
-  syntax:
-    content: public static readonly FGameplayTag Buff_LifeStealAmountUp
-    return:
-      type: FGameplayTag
-    content.vb: Public Shared ReadOnly Buff_LifeStealAmountUp As FGameplayTag
+    content.vb: Public Shared ReadOnly State_Invincible As FGameplayTag
 references:
 - uid: MyProject.DefenseGame.Domain
   commentId: N:MyProject.DefenseGame.Domain

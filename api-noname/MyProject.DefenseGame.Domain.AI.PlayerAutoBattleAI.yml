@@ -5,6 +5,7 @@ items:
   id: PlayerAutoBattleAI
   parent: MyProject.DefenseGame.Domain.AI
   children:
+  - MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
   - MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.TargetContext
   - MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Update(MyProject.DefenseGame.Domain.DefenseEntity,System.Single)
   langs:
@@ -56,6 +57,25 @@ items:
       type: TargetContext
     content.vb: Public Property TargetContext As TargetContext
   overload: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.TargetContext*
+- uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
+  commentId: P:MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
+  id: Checker
+  parent: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
+  langs:
+  - csharp
+  - vb
+  name: Checker
+  nameWithType: PlayerAutoBattleAI.Checker
+  fullName: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
+  type: Property
+  namespace: MyProject.DefenseGame.Domain.AI
+  syntax:
+    content: public IAIFlagChecker Checker { get; set; }
+    parameters: []
+    return:
+      type: MyProject.DefenseGame.Domain.IAIFlagChecker
+    content.vb: Public Property Checker As IAIFlagChecker
+  overload: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker*
 - uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Update(MyProject.DefenseGame.Domain.DefenseEntity,System.Single)
   commentId: M:MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Update(MyProject.DefenseGame.Domain.DefenseEntity,System.Single)
   id: Update(MyProject.DefenseGame.Domain.DefenseEntity,System.Single)
@@ -376,11 +396,53 @@ references:
   nameWithType: PlayerAutoBattleAI.TargetContext
   fullName: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.TargetContext
 - uid: TargetContext
-  commentId: '!:TargetContext'
   isExternal: true
   name: TargetContext
   nameWithType: TargetContext
   fullName: TargetContext
+- uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker*
+  commentId: Overload:MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
+  href: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.html#MyProject_DefenseGame_Domain_AI_PlayerAutoBattleAI_Checker
+  name: Checker
+  nameWithType: PlayerAutoBattleAI.Checker
+  fullName: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
+- uid: MyProject.DefenseGame.Domain.IAIFlagChecker
+  commentId: T:MyProject.DefenseGame.Domain.IAIFlagChecker
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.IAIFlagChecker.html
+  name: IAIFlagChecker
+  nameWithType: IAIFlagChecker
+  fullName: MyProject.DefenseGame.Domain.IAIFlagChecker
+- uid: MyProject.DefenseGame.Domain
+  commentId: N:MyProject.DefenseGame.Domain
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain
+  nameWithType: MyProject.DefenseGame.Domain
+  fullName: MyProject.DefenseGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
 - uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Update*
   commentId: Overload:MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Update
   href: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.html#MyProject_DefenseGame_Domain_AI_PlayerAutoBattleAI_Update_MyProject_DefenseGame_Domain_DefenseEntity_System_Single_
@@ -446,33 +508,3 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
-- uid: MyProject.DefenseGame.Domain
-  commentId: N:MyProject.DefenseGame.Domain
-  href: MyProject.html
-  name: MyProject.DefenseGame.Domain
-  nameWithType: MyProject.DefenseGame.Domain
-  fullName: MyProject.DefenseGame.Domain
-  spec.csharp:
-  - uid: MyProject
-    name: MyProject
-    href: MyProject.html
-  - name: .
-  - uid: MyProject.DefenseGame
-    name: DefenseGame
-    href: MyProject.DefenseGame.html
-  - name: .
-  - uid: MyProject.DefenseGame.Domain
-    name: Domain
-    href: MyProject.DefenseGame.Domain.html
-  spec.vb:
-  - uid: MyProject
-    name: MyProject
-    href: MyProject.html
-  - name: .
-  - uid: MyProject.DefenseGame
-    name: DefenseGame
-    href: MyProject.DefenseGame.html
-  - name: .
-  - uid: MyProject.DefenseGame.Domain
-    name: Domain
-    href: MyProject.DefenseGame.Domain.html

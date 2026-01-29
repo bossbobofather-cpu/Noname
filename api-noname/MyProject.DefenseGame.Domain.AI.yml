@@ -5,6 +5,7 @@ items:
   id: MyProject.DefenseGame.Domain.AI
   children:
   - MyProject.DefenseGame.Domain.AI.IDefenseAI
+  - MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
   - MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
   langs:
   - csharp
@@ -21,6 +22,12 @@ references:
   name: IDefenseAI
   nameWithType: IDefenseAI
   fullName: MyProject.DefenseGame.Domain.AI.IDefenseAI
+- uid: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
+  commentId: T:MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
+  href: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.html
+  name: MonsterAutoBattleAI
+  nameWithType: MonsterAutoBattleAI
+  fullName: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
 - uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
   commentId: T:MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
   href: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.html

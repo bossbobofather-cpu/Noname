@@ -1,0 +1,92 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Domain.IAIFlagChecker
+  commentId: T:MyProject.DefenseGame.Domain.IAIFlagChecker
+  id: IAIFlagChecker
+  parent: MyProject.DefenseGame.Domain
+  children:
+  - MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+  langs:
+  - csharp
+  - vb
+  name: IAIFlagChecker
+  nameWithType: IAIFlagChecker
+  fullName: MyProject.DefenseGame.Domain.IAIFlagChecker
+  type: Interface
+  namespace: MyProject.DefenseGame.Domain
+  syntax:
+    content: public interface IAIFlagChecker
+    content.vb: Public Interface IAIFlagChecker
+- uid: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+  commentId: M:MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+  id: ConsumePlayerAIRecheck
+  parent: MyProject.DefenseGame.Domain.IAIFlagChecker
+  langs:
+  - csharp
+  - vb
+  name: ConsumePlayerAIRecheck()
+  nameWithType: IAIFlagChecker.ConsumePlayerAIRecheck()
+  fullName: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck()
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  syntax:
+    content: bool ConsumePlayerAIRecheck()
+    return:
+      type: System.Boolean
+    content.vb: Function ConsumePlayerAIRecheck() As Boolean
+  overload: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck*
+references:
+- uid: MyProject.DefenseGame.Domain
+  commentId: N:MyProject.DefenseGame.Domain
+  href: MyProject.html
+  name: MyProject.DefenseGame.Domain
+  nameWithType: MyProject.DefenseGame.Domain
+  fullName: MyProject.DefenseGame.Domain
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Domain
+    name: Domain
+    href: MyProject.DefenseGame.Domain.html
+- uid: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck*
+  commentId: Overload:MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+  href: MyProject.DefenseGame.Domain.IAIFlagChecker.html#MyProject_DefenseGame_Domain_IAIFlagChecker_ConsumePlayerAIRecheck
+  name: ConsumePlayerAIRecheck
+  nameWithType: IAIFlagChecker.ConsumePlayerAIRecheck
+  fullName: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

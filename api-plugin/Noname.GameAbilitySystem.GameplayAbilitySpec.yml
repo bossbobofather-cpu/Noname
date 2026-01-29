@@ -5,14 +5,10 @@ items:
   id: GameplayAbilitySpec
   parent: Noname.GameAbilitySystem
   children:
-  - Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityName
-  - Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityType
+  - Noname.GameAbilitySystem.GameplayAbilitySpec.Ability
   - Noname.GameAbilitySystem.GameplayAbilitySpec.ActiveCount
-  - Noname.GameAbilitySystem.GameplayAbilitySpec.Configs
   - Noname.GameAbilitySystem.GameplayAbilitySpec.Handle
   - Noname.GameAbilitySystem.GameplayAbilitySpec.Level
-  - Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig``1(``0@)
-  - Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs``1(System.Collections.Generic.List{``0}@)
   langs:
   - csharp
   - vb
@@ -21,7 +17,6 @@ items:
   fullName: Noname.GameAbilitySystem.GameplayAbilitySpec
   type: Class
   namespace: Noname.GameAbilitySystem
-  summary: 능력 사양 정보를 담는 구조입니다.
   example: []
   syntax:
     content: public sealed class GameplayAbilitySpec
@@ -35,63 +30,23 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityType
-  commentId: F:Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityType
-  id: AbilityType
+- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.Ability
+  commentId: F:Noname.GameAbilitySystem.GameplayAbilitySpec.Ability
+  id: Ability
   parent: Noname.GameAbilitySystem.GameplayAbilitySpec
   langs:
   - csharp
   - vb
-  name: AbilityType
-  nameWithType: GameplayAbilitySpec.AbilityType
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityType
+  name: Ability
+  nameWithType: GameplayAbilitySpec.Ability
+  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.Ability
   type: Field
   namespace: Noname.GameAbilitySystem
-  summary: 능력 클래스 타입입니다.
-  example: []
   syntax:
-    content: public Type AbilityType
+    content: public GameplayAbility Ability
     return:
-      type: System.Type
-    content.vb: Public AbilityType As Type
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityName
-  commentId: F:Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityName
-  id: AbilityName
-  parent: Noname.GameAbilitySystem.GameplayAbilitySpec
-  langs:
-  - csharp
-  - vb
-  name: AbilityName
-  nameWithType: GameplayAbilitySpec.AbilityName
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityName
-  type: Field
-  namespace: Noname.GameAbilitySystem
-  summary: 에디터 표시용 이름입니다.
-  example: []
-  syntax:
-    content: public string AbilityName
-    return:
-      type: System.String
-    content.vb: Public AbilityName As String
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.Configs
-  commentId: F:Noname.GameAbilitySystem.GameplayAbilitySpec.Configs
-  id: Configs
-  parent: Noname.GameAbilitySystem.GameplayAbilitySpec
-  langs:
-  - csharp
-  - vb
-  name: Configs
-  nameWithType: GameplayAbilitySpec.Configs
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.Configs
-  type: Field
-  namespace: Noname.GameAbilitySystem
-  summary: 연결된 구성 목록입니다.
-  example: []
-  syntax:
-    content: public IReadOnlyList<GameplayConfig> Configs
-    return:
-      type: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.GameplayConfig}
-    content.vb: Public Configs As IReadOnlyList(Of GameplayConfig)
+      type: Noname.GameAbilitySystem.Domain.GameplayAbility
+    content.vb: Public Ability As GameplayAbility
 - uid: Noname.GameAbilitySystem.GameplayAbilitySpec.Level
   commentId: F:Noname.GameAbilitySystem.GameplayAbilitySpec.Level
   id: Level
@@ -104,8 +59,6 @@ items:
   fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.Level
   type: Field
   namespace: Noname.GameAbilitySystem
-  summary: 능력 레벨입니다.
-  example: []
   syntax:
     content: public int Level
     return:
@@ -123,8 +76,6 @@ items:
   fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.ActiveCount
   type: Field
   namespace: Noname.GameAbilitySystem
-  summary: 활성화 중인 횟수입니다.
-  example: []
   syntax:
     content: public int ActiveCount
     return:
@@ -142,75 +93,11 @@ items:
   fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.Handle
   type: Field
   namespace: Noname.GameAbilitySystem
-  summary: 능력 핸들입니다.
-  example: []
   syntax:
     content: public FGameplayAbilitySpecHandle Handle
     return:
       type: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
     content.vb: Public Handle As FGameplayAbilitySpecHandle
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs``1(System.Collections.Generic.List{``0}@)
-  commentId: M:Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs``1(System.Collections.Generic.List{``0}@)
-  id: TryGetConfigs``1(System.Collections.Generic.List{``0}@)
-  parent: Noname.GameAbilitySystem.GameplayAbilitySpec
-  langs:
-  - csharp
-  - vb
-  name: TryGetConfigs<T>(out List<T>)
-  nameWithType: GameplayAbilitySpec.TryGetConfigs<T>(out List<T>)
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs<T>(out System.Collections.Generic.List<T>)
-  type: Method
-  namespace: Noname.GameAbilitySystem
-  summary: 특정 타입의 구성들을 가져옵니다.
-  example: []
-  syntax:
-    content: 'public bool TryGetConfigs<T>(out List<T> configs) where T : GameplayConfig'
-    parameters:
-    - id: configs
-      type: System.Collections.Generic.List{{T}}
-      description: 찾아낸 구성 목록
-    typeParameters:
-    - id: T
-      description: 요청할 구성 타입
-    return:
-      type: System.Boolean
-      description: 하나 이상 찾았는지 여부
-    content.vb: Public Function TryGetConfigs(Of T As GameplayConfig)(configs As List(Of T)) As Boolean
-  overload: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs*
-  nameWithType.vb: GameplayAbilitySpec.TryGetConfigs(Of T)(List(Of T))
-  fullName.vb: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs(Of T)(System.Collections.Generic.List(Of T))
-  name.vb: TryGetConfigs(Of T)(List(Of T))
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig``1(``0@)
-  commentId: M:Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig``1(``0@)
-  id: TryGetConfig``1(``0@)
-  parent: Noname.GameAbilitySystem.GameplayAbilitySpec
-  langs:
-  - csharp
-  - vb
-  name: TryGetConfig<T>(out T)
-  nameWithType: GameplayAbilitySpec.TryGetConfig<T>(out T)
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig<T>(out T)
-  type: Method
-  namespace: Noname.GameAbilitySystem
-  summary: 특정 타입의 구성을 하나 가져옵니다.
-  example: []
-  syntax:
-    content: 'public bool TryGetConfig<T>(out T config) where T : GameplayConfig'
-    parameters:
-    - id: config
-      type: '{T}'
-      description: 찾아낸 구성
-    typeParameters:
-    - id: T
-      description: 요청할 구성 타입
-    return:
-      type: System.Boolean
-      description: 찾았는지 여부
-    content.vb: Public Function TryGetConfig(Of T As GameplayConfig)(config As T) As Boolean
-  overload: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig*
-  nameWithType.vb: GameplayAbilitySpec.TryGetConfig(Of T)(T)
-  fullName.vb: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig(Of T)(T)
-  name.vb: TryGetConfig(Of T)(T)
 references:
 - uid: Noname.GameAbilitySystem
   commentId: N:Noname.GameAbilitySystem
@@ -447,123 +334,43 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Type
-  commentId: T:System.Type
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.type
-  name: Type
-  nameWithType: Type
-  fullName: System.Type
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.GameplayConfig}
-  commentId: T:System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.GameplayConfig}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.IReadOnlyList`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
-  name: IReadOnlyList<GameplayConfig>
-  nameWithType: IReadOnlyList<GameplayConfig>
-  fullName: System.Collections.Generic.IReadOnlyList<Noname.GameAbilitySystem.GameplayConfig>
-  nameWithType.vb: IReadOnlyList(Of GameplayConfig)
-  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Noname.GameAbilitySystem.GameplayConfig)
-  name.vb: IReadOnlyList(Of GameplayConfig)
+- uid: Noname.GameAbilitySystem.Domain.GameplayAbility
+  commentId: T:Noname.GameAbilitySystem.Domain.GameplayAbility
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.GameplayAbility.html
+  name: GameplayAbility
+  nameWithType: GameplayAbility
+  fullName: Noname.GameAbilitySystem.Domain.GameplayAbility
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
   spec.csharp:
-  - uid: System.Collections.Generic.IReadOnlyList`1
-    name: IReadOnlyList
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
-  - name: <
-  - uid: Noname.GameAbilitySystem.GameplayConfig
-    name: GameplayConfig
-    href: Noname.GameAbilitySystem.GameplayConfig.html
-  - name: '>'
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
   spec.vb:
-  - uid: System.Collections.Generic.IReadOnlyList`1
-    name: IReadOnlyList
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Noname.GameAbilitySystem.GameplayConfig
-    name: GameplayConfig
-    href: Noname.GameAbilitySystem.GameplayConfig.html
-  - name: )
-- uid: System.Collections.Generic.IReadOnlyList`1
-  commentId: T:System.Collections.Generic.IReadOnlyList`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
-  name: IReadOnlyList<T>
-  nameWithType: IReadOnlyList<T>
-  fullName: System.Collections.Generic.IReadOnlyList<T>
-  nameWithType.vb: IReadOnlyList(Of T)
-  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
-  name.vb: IReadOnlyList(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.IReadOnlyList`1
-    name: IReadOnlyList
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IReadOnlyList`1
-    name: IReadOnlyList
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
+  - uid: Noname
+    name: Noname
+    href: Noname.html
   - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
   - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -582,93 +389,3 @@ references:
   name: FGameplayAbilitySpecHandle
   nameWithType: FGameplayAbilitySpecHandle
   fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs*
-  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs
-  href: Noname.GameAbilitySystem.GameplayAbilitySpec.html#Noname_GameAbilitySystem_GameplayAbilitySpec_TryGetConfigs__1_System_Collections_Generic_List___0___
-  name: TryGetConfigs
-  nameWithType: GameplayAbilitySpec.TryGetConfigs
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs
-- uid: System.Collections.Generic.List{{T}}
-  commentId: T:System.Collections.Generic.List{``0}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.List`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig*
-  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig
-  href: Noname.GameAbilitySystem.GameplayAbilitySpec.html#Noname_GameAbilitySystem_GameplayAbilitySpec_TryGetConfig__1___0__
-  name: TryGetConfig
-  nameWithType: GameplayAbilitySpec.TryGetConfig
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig
-- uid: '{T}'
-  commentId: '!:T'
-  definition: T
-  name: T
-  nameWithType: T
-  fullName: T
-- uid: T
-  name: T
-  nameWithType: T
-  fullName: T

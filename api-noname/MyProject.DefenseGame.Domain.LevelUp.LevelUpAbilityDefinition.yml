@@ -5,13 +5,13 @@ items:
   id: LevelUpAbilityDefinition
   parent: MyProject.DefenseGame.Domain.LevelUp
   children:
-  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String,System.String,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer})
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(FGameplayTag,System.String,System.String,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer},FGameplayTag)
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag
   - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.ApplyAction
   - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Description
   - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.DisplayName
-  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id
   - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.IsStackable
-  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId
+  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag
   langs:
   - csharp
   - vb
@@ -34,27 +34,27 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id
-  commentId: P:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id
-  id: Id
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag
+  commentId: P:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag
+  id: AbilityTag
   parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
   langs:
   - csharp
   - vb
-  name: Id
-  nameWithType: LevelUpAbilityDefinition.Id
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id
+  name: AbilityTag
+  nameWithType: LevelUpAbilityDefinition.AbilityTag
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag
   type: Property
   namespace: MyProject.DefenseGame.Domain.LevelUp
   summary: 어빌리티 ID입니다.
   example: []
   syntax:
-    content: public LevelUpAbilityId Id { get; }
+    content: public FGameplayTag AbilityTag { get; }
     parameters: []
     return:
-      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-    content.vb: Public ReadOnly Property Id As LevelUpAbilityId
-  overload: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id*
+      type: FGameplayTag
+    content.vb: Public ReadOnly Property AbilityTag As FGameplayTag
+  overload: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag*
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.DisplayName
   commentId: P:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.DisplayName
   id: DisplayName
@@ -97,27 +97,27 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property Description As String
   overload: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Description*
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId
-  commentId: P:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId
-  id: PrerequisiteId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag
+  commentId: P:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag
+  id: PrerequisiteTag
   parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
   langs:
   - csharp
   - vb
-  name: PrerequisiteId
-  nameWithType: LevelUpAbilityDefinition.PrerequisiteId
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId
+  name: PrerequisiteTag
+  nameWithType: LevelUpAbilityDefinition.PrerequisiteTag
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag
   type: Property
   namespace: MyProject.DefenseGame.Domain.LevelUp
   summary: 선행 조건 어빌리티 ID입니다. None이면 선행조건 없음.
   example: []
   syntax:
-    content: public LevelUpAbilityId PrerequisiteId { get; }
+    content: public FGameplayTag PrerequisiteTag { get; }
     parameters: []
     return:
-      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-    content.vb: Public ReadOnly Property PrerequisiteId As LevelUpAbilityId
-  overload: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId*
+      type: FGameplayTag
+    content.vb: Public ReadOnly Property PrerequisiteTag As FGameplayTag
+  overload: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag*
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.IsStackable
   commentId: P:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.IsStackable
   id: IsStackable
@@ -160,38 +160,38 @@ items:
       type: System.Action{MyProject.DefenseGame.Domain.DefensePlayer}
     content.vb: Public ReadOnly Property ApplyAction As Action(Of DefensePlayer)
   overload: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.ApplyAction*
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String,System.String,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer})
-  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String,System.String,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer})
-  id: '#ctor(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String,System.String,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer})'
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(FGameplayTag,System.String,System.String,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer},FGameplayTag)
+  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(FGameplayTag,System.String,System.String,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer},FGameplayTag)
+  id: '#ctor(FGameplayTag,System.String,System.String,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer},FGameplayTag)'
   parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
   langs:
   - csharp
   - vb
-  name: LevelUpAbilityDefinition(LevelUpAbilityId, string, string, LevelUpAbilityId, bool, Action<DefensePlayer>)
-  nameWithType: LevelUpAbilityDefinition.LevelUpAbilityDefinition(LevelUpAbilityId, string, string, LevelUpAbilityId, bool, Action<DefensePlayer>)
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.LevelUpAbilityDefinition(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, string, string, MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, bool, System.Action<MyProject.DefenseGame.Domain.DefensePlayer>)
+  name: LevelUpAbilityDefinition(FGameplayTag, string, string, bool, Action<DefensePlayer>, FGameplayTag)
+  nameWithType: LevelUpAbilityDefinition.LevelUpAbilityDefinition(FGameplayTag, string, string, bool, Action<DefensePlayer>, FGameplayTag)
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.LevelUpAbilityDefinition(FGameplayTag, string, string, bool, System.Action<MyProject.DefenseGame.Domain.DefensePlayer>, FGameplayTag)
   type: Constructor
   namespace: MyProject.DefenseGame.Domain.LevelUp
   syntax:
-    content: public LevelUpAbilityDefinition(LevelUpAbilityId id, string displayName, string description, LevelUpAbilityId prerequisiteId, bool isStackable, Action<DefensePlayer> applyAction)
+    content: public LevelUpAbilityDefinition(FGameplayTag abilityTag, string displayName, string description, bool isStackable, Action<DefensePlayer> applyAction, FGameplayTag prerequisiteTag = null)
     parameters:
-    - id: id
-      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+    - id: abilityTag
+      type: FGameplayTag
     - id: displayName
       type: System.String
     - id: description
       type: System.String
-    - id: prerequisiteId
-      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
     - id: isStackable
       type: System.Boolean
     - id: applyAction
       type: System.Action{MyProject.DefenseGame.Domain.DefensePlayer}
-    content.vb: Public Sub New(id As LevelUpAbilityId, displayName As String, description As String, prerequisiteId As LevelUpAbilityId, isStackable As Boolean, applyAction As Action(Of DefensePlayer))
+    - id: prerequisiteTag
+      type: FGameplayTag
+    content.vb: Public Sub New(abilityTag As FGameplayTag, displayName As String, description As String, isStackable As Boolean, applyAction As Action(Of DefensePlayer), prerequisiteTag As FGameplayTag = Nothing)
   overload: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor*
-  nameWithType.vb: LevelUpAbilityDefinition.New(LevelUpAbilityId, String, String, LevelUpAbilityId, Boolean, Action(Of DefensePlayer))
-  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.New(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, String, String, MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, Boolean, System.Action(Of MyProject.DefenseGame.Domain.DefensePlayer))
-  name.vb: New(LevelUpAbilityId, String, String, LevelUpAbilityId, Boolean, Action(Of DefensePlayer))
+  nameWithType.vb: LevelUpAbilityDefinition.New(FGameplayTag, String, String, Boolean, Action(Of DefensePlayer), FGameplayTag)
+  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.New(FGameplayTag, String, String, Boolean, System.Action(Of MyProject.DefenseGame.Domain.DefensePlayer), FGameplayTag)
+  name.vb: New(FGameplayTag, String, String, Boolean, Action(Of DefensePlayer), FGameplayTag)
 references:
 - uid: MyProject.DefenseGame.Domain.LevelUp
   commentId: N:MyProject.DefenseGame.Domain.LevelUp
@@ -444,19 +444,17 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id*
-  commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id
-  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_Id
-  name: Id
-  nameWithType: LevelUpAbilityDefinition.Id
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-  commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-  parent: MyProject.DefenseGame.Domain.LevelUp
-  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
-  name: LevelUpAbilityId
-  nameWithType: LevelUpAbilityId
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag*
+  commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_AbilityTag
+  name: AbilityTag
+  nameWithType: LevelUpAbilityDefinition.AbilityTag
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag
+- uid: FGameplayTag
+  isExternal: true
+  name: FGameplayTag
+  nameWithType: FGameplayTag
+  fullName: FGameplayTag
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.DisplayName*
   commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.DisplayName
   href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_DisplayName
@@ -480,12 +478,12 @@ references:
   name: Description
   nameWithType: LevelUpAbilityDefinition.Description
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Description
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId*
-  commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId
-  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_PrerequisiteId
-  name: PrerequisiteId
-  nameWithType: LevelUpAbilityDefinition.PrerequisiteId
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag*
+  commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_PrerequisiteTag
+  name: PrerequisiteTag
+  nameWithType: LevelUpAbilityDefinition.PrerequisiteTag
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.IsStackable*
   commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.IsStackable
   href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_IsStackable
@@ -572,7 +570,7 @@ references:
   - name: )
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor*
   commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor
-  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__ctor_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_System_String_System_String_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_System_Boolean_System_Action_MyProject_DefenseGame_Domain_DefensePlayer__
+  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__ctor_FGameplayTag_System_String_System_String_System_Boolean_System_Action_MyProject_DefenseGame_Domain_DefensePlayer__FGameplayTag_
   name: LevelUpAbilityDefinition
   nameWithType: LevelUpAbilityDefinition.LevelUpAbilityDefinition
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.LevelUpAbilityDefinition

@@ -5,9 +5,10 @@ items:
   id: DefenseHostState
   parent: MyProject.DefenseGame.Application
   children:
-  - MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  - MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
   - MyProject.DefenseGame.Application.DefenseHostState.Combat
   - MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions
+  - MyProject.DefenseGame.Application.DefenseHostState.Dispose
   - MyProject.DefenseGame.Application.DefenseHostState.GenerateMonsterUid
   - MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities
   - MyProject.DefenseGame.Application.DefenseHostState.Player
@@ -27,10 +28,12 @@ items:
   summary: 디펜스 게임 호스트 상태입니다.
   example: []
   syntax:
-    content: public sealed class DefenseHostState
-    content.vb: Public NotInheritable Class DefenseHostState
+    content: 'public sealed class DefenseHostState : IDisposable'
+    content.vb: Public NotInheritable Class DefenseHostState Implements IDisposable
   inheritance:
   - System.Object
+  implements:
+  - System.IDisposable
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -53,11 +56,11 @@ items:
   summary: 획득한 레벨업 어빌리티 ID 목록입니다.
   example: []
   syntax:
-    content: public HashSet<LevelUpAbilityId> GrantedAbilities { get; }
+    content: public HashSet<FGameplayTag> GrantedAbilities { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId}
-    content.vb: Public ReadOnly Property GrantedAbilities As HashSet(Of LevelUpAbilityId)
+      type: System.Collections.Generic.HashSet{FGameplayTag}
+    content.vb: Public ReadOnly Property GrantedAbilities As HashSet(Of FGameplayTag)
   overload: MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities*
 - uid: MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions
   commentId: P:MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions
@@ -104,26 +107,26 @@ items:
   nameWithType.vb: DefenseHostState.SetLevelUpOptions(List(Of LevelUpAbilityDefinition))
   fullName.vb: MyProject.DefenseGame.Application.DefenseHostState.SetLevelUpOptions(System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition))
   name.vb: SetLevelUpOptions(List(Of LevelUpAbilityDefinition))
-- uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
-  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
-  id: AddGrantedAbility(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+- uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
+  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
+  id: AddGrantedAbility(FGameplayTag)
   parent: MyProject.DefenseGame.Application.DefenseHostState
   langs:
   - csharp
   - vb
-  name: AddGrantedAbility(LevelUpAbilityId)
-  nameWithType: DefenseHostState.AddGrantedAbility(LevelUpAbilityId)
-  fullName: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
+  name: AddGrantedAbility(FGameplayTag)
+  nameWithType: DefenseHostState.AddGrantedAbility(FGameplayTag)
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
   type: Method
   namespace: MyProject.DefenseGame.Application
   summary: 레벨업 어빌리티를 획득 목록에 추가합니다.
   example: []
   syntax:
-    content: public void AddGrantedAbility(LevelUpAbilityId id)
+    content: public void AddGrantedAbility(FGameplayTag abilityTag)
     parameters:
-    - id: id
-      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-    content.vb: Public Sub AddGrantedAbility(id As LevelUpAbilityId)
+    - id: abilityTag
+      type: FGameplayTag
+    content.vb: Public Sub AddGrantedAbility(abilityTag As FGameplayTag)
   overload: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility*
 - uid: MyProject.DefenseGame.Application.DefenseHostState.SessionPhase
   commentId: P:MyProject.DefenseGame.Application.DefenseHostState.SessionPhase
@@ -271,6 +274,26 @@ items:
       type: System.Int64
     content.vb: Public Function GenerateMonsterUid() As Long
   overload: MyProject.DefenseGame.Application.DefenseHostState.GenerateMonsterUid*
+- uid: MyProject.DefenseGame.Application.DefenseHostState.Dispose
+  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.Dispose
+  id: Dispose
+  parent: MyProject.DefenseGame.Application.DefenseHostState
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: DefenseHostState.Dispose()
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.Dispose()
+  type: Method
+  namespace: MyProject.DefenseGame.Application
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: MyProject.DefenseGame.Application.DefenseHostState.Dispose*
+  implements:
+  - System.IDisposable.Dispose
 references:
 - uid: MyProject.DefenseGame.Application
   commentId: N:MyProject.DefenseGame.Application
@@ -313,6 +336,14 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -521,26 +552,26 @@ references:
   name: GrantedAbilities
   nameWithType: DefenseHostState.GrantedAbilities
   fullName: MyProject.DefenseGame.Application.DefenseHostState.GrantedAbilities
-- uid: System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId}
-  commentId: T:System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId}
+- uid: System.Collections.Generic.HashSet{FGameplayTag}
+  commentId: T:System.Collections.Generic.HashSet{FGameplayTag}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.HashSet`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
-  name: HashSet<LevelUpAbilityId>
-  nameWithType: HashSet<LevelUpAbilityId>
-  fullName: System.Collections.Generic.HashSet<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId>
-  nameWithType.vb: HashSet(Of LevelUpAbilityId)
-  fullName.vb: System.Collections.Generic.HashSet(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
-  name.vb: HashSet(Of LevelUpAbilityId)
+  name: HashSet<FGameplayTag>
+  nameWithType: HashSet<FGameplayTag>
+  fullName: System.Collections.Generic.HashSet<FGameplayTag>
+  nameWithType.vb: HashSet(Of FGameplayTag)
+  fullName.vb: System.Collections.Generic.HashSet(Of FGameplayTag)
+  name.vb: HashSet(Of FGameplayTag)
   spec.csharp:
   - uid: System.Collections.Generic.HashSet`1
     name: HashSet
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
   - name: <
-  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-    name: LevelUpAbilityId
-    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
+  - uid: FGameplayTag
+    name: FGameplayTag
+    isExternal: true
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.HashSet`1
@@ -550,9 +581,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-    name: LevelUpAbilityId
-    href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
+  - uid: FGameplayTag
+    name: FGameplayTag
+    isExternal: true
   - name: )
 - uid: System.Collections.Generic.HashSet`1
   commentId: T:System.Collections.Generic.HashSet`1
@@ -755,55 +786,15 @@ references:
   - name: )
 - uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility
-  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_AddGrantedAbility_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_AddGrantedAbility_FGameplayTag_
   name: AddGrantedAbility
   nameWithType: DefenseHostState.AddGrantedAbility
   fullName: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-  commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-  parent: MyProject.DefenseGame.Domain.LevelUp
-  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
-  name: LevelUpAbilityId
-  nameWithType: LevelUpAbilityId
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-- uid: MyProject.DefenseGame.Domain.LevelUp
-  commentId: N:MyProject.DefenseGame.Domain.LevelUp
-  href: MyProject.html
-  name: MyProject.DefenseGame.Domain.LevelUp
-  nameWithType: MyProject.DefenseGame.Domain.LevelUp
-  fullName: MyProject.DefenseGame.Domain.LevelUp
-  spec.csharp:
-  - uid: MyProject
-    name: MyProject
-    href: MyProject.html
-  - name: .
-  - uid: MyProject.DefenseGame
-    name: DefenseGame
-    href: MyProject.DefenseGame.html
-  - name: .
-  - uid: MyProject.DefenseGame.Domain
-    name: Domain
-    href: MyProject.DefenseGame.Domain.html
-  - name: .
-  - uid: MyProject.DefenseGame.Domain.LevelUp
-    name: LevelUp
-    href: MyProject.DefenseGame.Domain.LevelUp.html
-  spec.vb:
-  - uid: MyProject
-    name: MyProject
-    href: MyProject.html
-  - name: .
-  - uid: MyProject.DefenseGame
-    name: DefenseGame
-    href: MyProject.DefenseGame.html
-  - name: .
-  - uid: MyProject.DefenseGame.Domain
-    name: Domain
-    href: MyProject.DefenseGame.Domain.html
-  - name: .
-  - uid: MyProject.DefenseGame.Domain.LevelUp
-    name: LevelUp
-    href: MyProject.DefenseGame.Domain.LevelUp.html
+- uid: FGameplayTag
+  isExternal: true
+  name: FGameplayTag
+  nameWithType: FGameplayTag
+  fullName: FGameplayTag
 - uid: MyProject.DefenseGame.Application.DefenseHostState.SessionPhase*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.SessionPhase
   href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_SessionPhase
@@ -908,3 +899,31 @@ references:
   nameWithType.vb: Long
   fullName.vb: Long
   name.vb: Long
+- uid: MyProject.DefenseGame.Application.DefenseHostState.Dispose*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.Dispose
+  href: MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_Dispose
+  name: Dispose
+  nameWithType: DefenseHostState.Dispose
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

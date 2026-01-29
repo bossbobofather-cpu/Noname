@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
+  commentId: T:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
+  id: DefensePlayerActivateAbilityEvent
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor(System.Int64,System.Collections.Generic.List{System.Int64},GameplayAbility)
+  - MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability
+  - MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids
+  langs:
+  - csharp
+  - vb
+  name: DefensePlayerActivateAbilityEvent
+  nameWithType: DefensePlayerActivateAbilityEvent
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
+  type: Class
+  namespace: MyProject.DefenseGame.Application
+  summary: 플레이어 능력 발동 이벤트 입니다.
+  example: []
+  syntax:
+    content: 'public sealed class DefensePlayerActivateAbilityEvent : DefenseHostEvent'
+    content.vb: Public NotInheritable Class DefensePlayerActivateAbilityEvent Inherits DefenseHostEvent
+  inheritance:
+  - System.Object
+  - MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids
+  commentId: P:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids
+  id: TargetUids
+  parent: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
+  langs:
+  - csharp
+  - vb
+  name: TargetUids
+  nameWithType: DefensePlayerActivateAbilityEvent.TargetUids
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public List<long> TargetUids { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Int64}
+    content.vb: Public ReadOnly Property TargetUids As List(Of Long)
+  overload: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids*
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability
+  commentId: P:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability
+  id: Ability
+  parent: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
+  langs:
+  - csharp
+  - vb
+  name: Ability
+  nameWithType: DefensePlayerActivateAbilityEvent.Ability
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public GameplayAbility Ability { get; }
+    parameters: []
+    return:
+      type: GameplayAbility
+    content.vb: Public ReadOnly Property Ability As GameplayAbility
+  overload: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability*
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor(System.Int64,System.Collections.Generic.List{System.Int64},GameplayAbility)
+  commentId: M:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor(System.Int64,System.Collections.Generic.List{System.Int64},GameplayAbility)
+  id: '#ctor(System.Int64,System.Collections.Generic.List{System.Int64},GameplayAbility)'
+  parent: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
+  langs:
+  - csharp
+  - vb
+  name: DefensePlayerActivateAbilityEvent(long, List<long>, GameplayAbility)
+  nameWithType: DefensePlayerActivateAbilityEvent.DefensePlayerActivateAbilityEvent(long, List<long>, GameplayAbility)
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.DefensePlayerActivateAbilityEvent(long, System.Collections.Generic.List<long>, GameplayAbility)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public DefensePlayerActivateAbilityEvent(long tick, List<long> targetUids, GameplayAbility ability)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: targetUids
+      type: System.Collections.Generic.List{System.Int64}
+    - id: ability
+      type: GameplayAbility
+    content.vb: Public Sub New(tick As Long, targetUids As List(Of Long), ability As GameplayAbility)
+  overload: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor*
+  nameWithType.vb: DefensePlayerActivateAbilityEvent.New(Long, List(Of Long), GameplayAbility)
+  fullName.vb: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.New(Long, System.Collections.Generic.List(Of Long), GameplayAbility)
+  name.vb: New(Long, List(Of Long), GameplayAbility)
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids*
+  commentId: Overload:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids
+  href: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefensePlayerActivateAbilityEvent_TargetUids
+  name: TargetUids
+  nameWithType: DefensePlayerActivateAbilityEvent.TargetUids
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids
+- uid: System.Collections.Generic.List{System.Int64}
+  commentId: T:System.Collections.Generic.List{System.Int64}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<long>
+  nameWithType: List<long>
+  fullName: System.Collections.Generic.List<long>
+  nameWithType.vb: List(Of Long)
+  fullName.vb: System.Collections.Generic.List(Of Long)
+  name.vb: List(Of Long)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability*
+  commentId: Overload:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability
+  href: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefensePlayerActivateAbilityEvent_Ability
+  name: Ability
+  nameWithType: DefensePlayerActivateAbilityEvent.Ability
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability
+- uid: GameplayAbility
+  isExternal: true
+  name: GameplayAbility
+  nameWithType: GameplayAbility
+  fullName: GameplayAbility
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor
+  href: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefensePlayerActivateAbilityEvent__ctor_System_Int64_System_Collections_Generic_List_System_Int64__GameplayAbility_
+  name: DefensePlayerActivateAbilityEvent
+  nameWithType: DefensePlayerActivateAbilityEvent.DefensePlayerActivateAbilityEvent
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.DefensePlayerActivateAbilityEvent
+  nameWithType.vb: DefensePlayerActivateAbilityEvent.New
+  fullName.vb: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.New
+  name.vb: New
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

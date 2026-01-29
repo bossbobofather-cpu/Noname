@@ -10,8 +10,10 @@ items:
   - MyProject.DefenseGame.Domain.DefenseCombatState.AliveMonsterCount
   - MyProject.DefenseGame.Domain.DefenseCombatState.BossKillCount
   - MyProject.DefenseGame.Domain.DefenseCombatState.CollectDeadMonsters(System.Collections.Generic.List{MyProject.DefenseGame.Domain.DefenseMonster})
+  - MyProject.DefenseGame.Domain.DefenseCombatState.Dispose
   - MyProject.DefenseGame.Domain.DefenseCombatState.ElapsedTime
   - MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters
+  - MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster(System.Int64)
   - MyProject.DefenseGame.Domain.DefenseCombatState.IsDefeat
   - MyProject.DefenseGame.Domain.DefenseCombatState.IsGameOver
   - MyProject.DefenseGame.Domain.DefenseCombatState.KillCount
@@ -28,10 +30,12 @@ items:
   summary: 디펜스 게임의 전투 상태입니다.
   example: []
   syntax:
-    content: public sealed class DefenseCombatState
-    content.vb: Public NotInheritable Class DefenseCombatState
+    content: 'public sealed class DefenseCombatState : IDisposable'
+    content.vb: Public NotInheritable Class DefenseCombatState Implements IDisposable
   inheritance:
   - System.Object
+  implements:
+  - System.IDisposable
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -207,6 +211,34 @@ items:
       type: MyProject.DefenseGame.Domain.DefenseMonster
     content.vb: Public Sub RemoveMonster(monster As DefenseMonster)
   overload: MyProject.DefenseGame.Domain.DefenseCombatState.RemoveMonster*
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster(System.Int64)
+  commentId: M:MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster(System.Int64)
+  id: GetMonster(System.Int64)
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: GetMonster(long)
+  nameWithType: DefenseCombatState.GetMonster(long)
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster(long)
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: 몬스터 uid 기반으로 몬스터를 반환합니다.
+  example: []
+  syntax:
+    content: public DefenseMonster GetMonster(long monsterUid)
+    parameters:
+    - id: monsterUid
+      type: System.Int64
+      description: ''
+    return:
+      type: MyProject.DefenseGame.Domain.DefenseMonster
+      description: ''
+    content.vb: Public Function GetMonster(monsterUid As Long) As DefenseMonster
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster*
+  nameWithType.vb: DefenseCombatState.GetMonster(Long)
+  fullName.vb: MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster(Long)
+  name.vb: GetMonster(Long)
 - uid: MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters
   commentId: M:MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters
   id: GetAliveMonsters
@@ -299,6 +331,26 @@ items:
   nameWithType.vb: DefenseCombatState.SetGameOver(Boolean)
   fullName.vb: MyProject.DefenseGame.Domain.DefenseCombatState.SetGameOver(Boolean)
   name.vb: SetGameOver(Boolean)
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.Dispose
+  commentId: M:MyProject.DefenseGame.Domain.DefenseCombatState.Dispose
+  id: Dispose
+  parent: MyProject.DefenseGame.Domain.DefenseCombatState
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: DefenseCombatState.Dispose()
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.Dispose()
+  type: Method
+  namespace: MyProject.DefenseGame.Domain
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: MyProject.DefenseGame.Domain.DefenseCombatState.Dispose*
+  implements:
+  - System.IDisposable.Dispose
 references:
 - uid: MyProject.DefenseGame.Domain
   commentId: N:MyProject.DefenseGame.Domain
@@ -341,6 +393,14 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -631,6 +691,23 @@ references:
   name: RemoveMonster
   nameWithType: DefenseCombatState.RemoveMonster
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.RemoveMonster
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_GetMonster_System_Int64_
+  name: GetMonster
+  nameWithType: DefenseCombatState.GetMonster
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
 - uid: MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters*
   commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters
   href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_GetAliveMonsters
@@ -814,3 +891,31 @@ references:
   name: SetGameOver
   nameWithType: DefenseCombatState.SetGameOver
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.SetGameOver
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.Dispose*
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.Dispose
+  href: MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_Dispose
+  name: Dispose
+  nameWithType: DefenseCombatState.Dispose
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

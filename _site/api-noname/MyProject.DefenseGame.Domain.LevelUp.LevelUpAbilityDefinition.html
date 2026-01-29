@@ -121,12 +121,12 @@
 
 
   <a id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__ctor_" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor*"></a>
-  <h4 id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__ctor_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_System_String_System_String_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_System_Boolean_System_Action_MyProject_DefenseGame_Domain_DefensePlayer__" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String,System.String,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer})">LevelUpAbilityDefinition(LevelUpAbilityId, string, string, LevelUpAbilityId, bool, Action&lt;DefensePlayer&gt;)</h4>
+  <h4 id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__ctor_FGameplayTag_System_String_System_String_System_Boolean_System_Action_MyProject_DefenseGame_Domain_DefensePlayer__FGameplayTag_" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(FGameplayTag,System.String,System.String,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer},FGameplayTag)">LevelUpAbilityDefinition(FGameplayTag, string, string, bool, Action&lt;DefensePlayer&gt;, FGameplayTag)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LevelUpAbilityDefinition(LevelUpAbilityId id, string displayName, string description, LevelUpAbilityId prerequisiteId, bool isStackable, Action&lt;DefensePlayer&gt; applyAction)</code></pre>
+    <pre><code class="lang-csharp hljs">public LevelUpAbilityDefinition(FGameplayTag abilityTag, string displayName, string description, bool isStackable, Action&lt;DefensePlayer&gt; applyAction, FGameplayTag prerequisiteTag = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -139,8 +139,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html">LevelUpAbilityId</a></td>
-        <td><span class="parametername">id</span></td>
+        <td><span class="xref">FGameplayTag</span></td>
+        <td><span class="parametername">abilityTag</span></td>
         <td></td>
       </tr>
       <tr>
@@ -154,11 +154,6 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html">LevelUpAbilityId</a></td>
-        <td><span class="parametername">prerequisiteId</span></td>
-        <td></td>
-      </tr>
-      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">isStackable</span></td>
         <td></td>
@@ -168,10 +163,41 @@
         <td><span class="parametername">applyAction</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">FGameplayTag</span></td>
+        <td><span class="parametername">prerequisiteTag</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
 </h3>
+
+
+  <a id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_AbilityTag_" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag*"></a>
+  <h4 id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_AbilityTag" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag">AbilityTag</h4>
+  <div class="markdown level1 summary"><p>어빌리티 ID입니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FGameplayTag AbilityTag { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FGameplayTag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <a id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_ApplyAction_" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.ApplyAction*"></a>
@@ -252,32 +278,6 @@
   </table>
 
 
-  <a id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_Id_" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id*"></a>
-  <h4 id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_Id" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id">Id</h4>
-  <div class="markdown level1 summary"><p>어빌리티 ID입니다.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LevelUpAbilityId Id { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html">LevelUpAbilityId</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
   <a id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_IsStackable_" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.IsStackable*"></a>
   <h4 id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_IsStackable" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.IsStackable">IsStackable</h4>
   <div class="markdown level1 summary"><p>중복 획득 가능 여부입니다.</p>
@@ -304,14 +304,14 @@
   </table>
 
 
-  <a id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_PrerequisiteId_" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId*"></a>
-  <h4 id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_PrerequisiteId" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId">PrerequisiteId</h4>
+  <a id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_PrerequisiteTag_" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag*"></a>
+  <h4 id="MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_PrerequisiteTag" data-uid="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag">PrerequisiteTag</h4>
   <div class="markdown level1 summary"><p>선행 조건 어빌리티 ID입니다. None이면 선행조건 없음.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LevelUpAbilityId PrerequisiteId { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public FGameplayTag PrerequisiteTag { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -323,7 +323,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html">LevelUpAbilityId</a></td>
+        <td><span class="xref">FGameplayTag</span></td>
         <td></td>
       </tr>
     </tbody>

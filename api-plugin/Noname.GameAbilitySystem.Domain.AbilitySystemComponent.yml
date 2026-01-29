@@ -18,7 +18,7 @@ items:
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.BuildSnapshot
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.CanActivateAbility(Noname.GameAbilitySystem.Domain.GameplayAbilitySpec)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.CollectExpiredEffects(System.Single,System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayEffect})
-  - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged
+  - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Get(Noname.GameAbilitySystem.Domain.AttributeId)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetAbilitySpecs
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetActivatableAbilities(System.Collections.Generic.List{Noname.GameAbilitySystem.Domain.GameplayAbilitySpec})
@@ -27,7 +27,11 @@ items:
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GetTotalTagCount(Noname.GameAbilitySystem.Domain.FGameplayTag)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.GiveAbility(Noname.GameAbilitySystem.Domain.GameplayAbility)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.HandleGameplayTagEvent(Noname.GameAbilitySystem.Domain.GameplayTagEventData)
+  - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnActivateAbility
+  - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnAddedAbility
+  - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnChangedTags
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OwnedTags
+  - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveAbility(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveAbility(Noname.GameAbilitySystem.Domain.GameplayAbility)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveActiveEffect(System.String)
@@ -35,6 +39,7 @@ items:
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveEffectTag(Noname.GameAbilitySystem.Domain.FGameplayTag,System.Int32@)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveLooseTag(Noname.GameAbilitySystem.Domain.FGameplayTag,System.Int32@)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Set(Noname.GameAbilitySystem.Domain.AttributeId,System.Single)
+  - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner(Noname.GameAbilitySystem.Domain.IAbilitySystemOwner)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick(System.Single)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbility(Noname.GameAbilitySystem.Domain.GameplayAbilitySpec)
   - Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbility(Noname.GameAbilitySystem.Domain.GameplayAbilitySpec,Noname.GameAbilitySystem.Domain.TargetContext)
@@ -54,10 +59,12 @@ items:
     Unity에 의존하지 않으며 Host 환경에서 스레드 안전하게 동작합니다.
   example: []
   syntax:
-    content: public sealed class AbilitySystemComponent
-    content.vb: Public NotInheritable Class AbilitySystemComponent
+    content: 'public sealed class AbilitySystemComponent : IDisposable'
+    content.vb: Public NotInheritable Class AbilitySystemComponent Implements IDisposable
   inheritance:
   - System.Object
+  implements:
+  - System.IDisposable
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -126,6 +133,76 @@ items:
       type: System.Collections.Generic.IReadOnlyList{Noname.GameAbilitySystem.Domain.GameplayAbility}
     content.vb: Public ReadOnly Property Abilities As IReadOnlyList(Of GameplayAbility)
   overload: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Abilities*
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnChangedTags
+  commentId: E:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnChangedTags
+  id: OnChangedTags
+  parent: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  langs:
+  - csharp
+  - vb
+  name: OnChangedTags
+  nameWithType: AbilitySystemComponent.OnChangedTags
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnChangedTags
+  type: Event
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public event Action OnChangedTags
+    return:
+      type: System.Action
+    content.vb: Public Event OnChangedTags As Action
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnAddedAbility
+  commentId: E:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnAddedAbility
+  id: OnAddedAbility
+  parent: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  langs:
+  - csharp
+  - vb
+  name: OnAddedAbility
+  nameWithType: AbilitySystemComponent.OnAddedAbility
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnAddedAbility
+  type: Event
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public event Action OnAddedAbility
+    return:
+      type: System.Action
+    content.vb: Public Event OnAddedAbility As Action
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnActivateAbility
+  commentId: E:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnActivateAbility
+  id: OnActivateAbility
+  parent: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  langs:
+  - csharp
+  - vb
+  name: OnActivateAbility
+  nameWithType: AbilitySystemComponent.OnActivateAbility
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnActivateAbility
+  type: Event
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public event Action<GameplayAbility, TargetData> OnActivateAbility
+    return:
+      type: System.Action{Noname.GameAbilitySystem.Domain.GameplayAbility,Noname.GameAbilitySystem.Domain.TargetData}
+    content.vb: Public Event OnActivateAbility As Action(Of GameplayAbility, TargetData)
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner
+  commentId: P:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner
+  id: Owner
+  parent: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  langs:
+  - csharp
+  - vb
+  name: Owner
+  nameWithType: AbilitySystemComponent.Owner
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public IAbilitySystemOwner Owner { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+    content.vb: Public ReadOnly Property Owner As IAbilitySystemOwner
+  overload: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner*
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.#ctor
   commentId: M:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.#ctor
   id: '#ctor'
@@ -171,30 +248,25 @@ items:
   nameWithType.vb: AbilitySystemComponent.New(AttributeSet, List(Of GameplayAbility), GameplayTagContainer)
   fullName.vb: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.New(Noname.GameAbilitySystem.Domain.AttributeSet, System.Collections.Generic.List(Of Noname.GameAbilitySystem.Domain.GameplayAbility), Noname.GameAbilitySystem.Domain.GameplayTagContainer)
   name.vb: New(AttributeSet, List(Of GameplayAbility), GameplayTagContainer)
-- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged
-  commentId: M:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged
-  id: ConsumeTagsChanged
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner(Noname.GameAbilitySystem.Domain.IAbilitySystemOwner)
+  commentId: M:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner(Noname.GameAbilitySystem.Domain.IAbilitySystemOwner)
+  id: SetOwner(Noname.GameAbilitySystem.Domain.IAbilitySystemOwner)
   parent: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
   langs:
   - csharp
   - vb
-  name: ConsumeTagsChanged()
-  nameWithType: AbilitySystemComponent.ConsumeTagsChanged()
-  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged()
+  name: SetOwner(IAbilitySystemOwner)
+  nameWithType: AbilitySystemComponent.SetOwner(IAbilitySystemOwner)
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner(Noname.GameAbilitySystem.Domain.IAbilitySystemOwner)
   type: Method
   namespace: Noname.GameAbilitySystem.Domain
-  summary: >-
-    태그가 변경되었는지 확인하고 플래그를 리셋합니다.
-
-    AI가 능력 활성화 가능 여부를 체크하기 전에 호출합니다.
-  example: []
   syntax:
-    content: public bool ConsumeTagsChanged()
-    return:
-      type: System.Boolean
-      description: 태그가 변경되었으면 true
-    content.vb: Public Function ConsumeTagsChanged() As Boolean
-  overload: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged*
+    content: public void SetOwner(IAbilitySystemOwner owner)
+    parameters:
+    - id: owner
+      type: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+    content.vb: Public Sub SetOwner(owner As IAbilitySystemOwner)
+  overload: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner*
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveEffectCount
   commentId: P:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveEffectCount
   id: ActiveEffectCount
@@ -939,6 +1011,26 @@ items:
       type: Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot
     content.vb: Public Function BuildSnapshot() As AbilitySystemSnapshot
   overload: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.BuildSnapshot*
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose
+  commentId: M:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose
+  id: Dispose
+  parent: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: AbilitySystemComponent.Dispose()
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose()
+  type: Method
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose*
+  implements:
+  - System.IDisposable.Dispose
 references:
 - uid: Noname.GameAbilitySystem.Domain
   commentId: N:Noname.GameAbilitySystem.Domain
@@ -981,6 +1073,14 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -1313,6 +1413,104 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Action{Noname.GameAbilitySystem.Domain.GameplayAbility,Noname.GameAbilitySystem.Domain.TargetData}
+  commentId: T:System.Action{Noname.GameAbilitySystem.Domain.GameplayAbility,Noname.GameAbilitySystem.Domain.TargetData}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<GameplayAbility, TargetData>
+  nameWithType: Action<GameplayAbility, TargetData>
+  fullName: System.Action<Noname.GameAbilitySystem.Domain.GameplayAbility, Noname.GameAbilitySystem.Domain.TargetData>
+  nameWithType.vb: Action(Of GameplayAbility, TargetData)
+  fullName.vb: System.Action(Of Noname.GameAbilitySystem.Domain.GameplayAbility, Noname.GameAbilitySystem.Domain.TargetData)
+  name.vb: Action(Of GameplayAbility, TargetData)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: Noname.GameAbilitySystem.Domain.GameplayAbility
+    name: GameplayAbility
+    href: Noname.GameAbilitySystem.Domain.GameplayAbility.html
+  - name: ','
+  - name: " "
+  - uid: Noname.GameAbilitySystem.Domain.TargetData
+    name: TargetData
+    href: Noname.GameAbilitySystem.Domain.TargetData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Noname.GameAbilitySystem.Domain.GameplayAbility
+    name: GameplayAbility
+    href: Noname.GameAbilitySystem.Domain.GameplayAbility.html
+  - name: ','
+  - name: " "
+  - uid: Noname.GameAbilitySystem.Domain.TargetData
+    name: TargetData
+    href: Noname.GameAbilitySystem.Domain.TargetData.html
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner
+  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Owner
+  name: Owner
+  nameWithType: AbilitySystemComponent.Owner
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner
+- uid: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+  commentId: T:Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.html
+  name: IAbilitySystemOwner
+  nameWithType: IAbilitySystemOwner
+  fullName: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.#ctor*
   commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.#ctor
   href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent__ctor
@@ -1383,23 +1581,12 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged*
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged
-  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_ConsumeTagsChanged
-  name: ConsumeTagsChanged
-  nameWithType: AbilitySystemComponent.ConsumeTagsChanged
-  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner
+  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_SetOwner_Noname_GameAbilitySystem_Domain_IAbilitySystemOwner_
+  name: SetOwner
+  nameWithType: AbilitySystemComponent.SetOwner
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveEffectCount*
   commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ActiveEffectCount
   href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_ActiveEffectCount
@@ -1491,6 +1678,17 @@ references:
   name: RemoveAbility
   nameWithType: AbilitySystemComponent.RemoveAbility
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveAbility
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbilityByTag*
   commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.TryActivateAbilityByTag
   href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_TryActivateAbilityByTag_Noname_GameAbilitySystem_Domain_FGameplayTag_
@@ -1763,3 +1961,31 @@ references:
   name: AbilitySystemSnapshot
   nameWithType: AbilitySystemSnapshot
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemSnapshot
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose
+  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Dispose
+  name: Dispose
+  nameWithType: AbilitySystemComponent.Dispose
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

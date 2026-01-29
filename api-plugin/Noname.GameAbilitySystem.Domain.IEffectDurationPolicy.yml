@@ -1,0 +1,107 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
+  commentId: T:Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
+  id: IEffectDurationPolicy
+  parent: Noname.GameAbilitySystem.Domain
+  children:
+  - Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,System.Single@)
+  langs:
+  - csharp
+  - vb
+  name: IEffectDurationPolicy
+  nameWithType: IEffectDurationPolicy
+  fullName: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
+  type: Interface
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: public interface IEffectDurationPolicy
+    content.vb: Public Interface IEffectDurationPolicy
+- uid: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,System.Single@)
+  commentId: M:Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,System.Single@)
+  id: CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,System.Single@)
+  parent: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
+  langs:
+  - csharp
+  - vb
+  name: CalculateDuration(AbilitySystemComponent, ref float)
+  nameWithType: IEffectDurationPolicy.CalculateDuration(AbilitySystemComponent, ref float)
+  fullName: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, ref float)
+  type: Method
+  namespace: Noname.GameAbilitySystem.Domain
+  syntax:
+    content: float CalculateDuration(AbilitySystemComponent asc, ref float baseDuration)
+    parameters:
+    - id: asc
+      type: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+    - id: baseDuration
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Function CalculateDuration(asc As AbilitySystemComponent, baseDuration As Single) As Single
+  overload: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration*
+  nameWithType.vb: IEffectDurationPolicy.CalculateDuration(AbilitySystemComponent, Single)
+  fullName.vb: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Single)
+  name.vb: CalculateDuration(AbilitySystemComponent, Single)
+references:
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+- uid: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration
+  href: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.html#Noname_GameAbilitySystem_Domain_IEffectDurationPolicy_CalculateDuration_Noname_GameAbilitySystem_Domain_AbilitySystemComponent_System_Single__
+  name: CalculateDuration
+  nameWithType: IEffectDurationPolicy.CalculateDuration
+  fullName: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  commentId: T:Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

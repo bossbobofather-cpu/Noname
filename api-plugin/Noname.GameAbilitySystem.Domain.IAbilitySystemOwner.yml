@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+  commentId: T:Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+  id: IAbilitySystemOwner
+  parent: Noname.GameAbilitySystem.Domain
+  children:
+  - Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC
+  langs:
+  - csharp
+  - vb
+  name: IAbilitySystemOwner
+  nameWithType: IAbilitySystemOwner
+  fullName: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+  type: Interface
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: >-
+    ASC(AbilitySystemComponent)에 대한 접근을 제공하는 인터페이스입니다.
+
+    구체적인 클래스에 의존하지 않고 ASC 기능을 사용하기 위해 도입되었습니다.
+  example: []
+  syntax:
+    content: public interface IAbilitySystemOwner
+    content.vb: Public Interface IAbilitySystemOwner
+- uid: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC
+  commentId: P:Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC
+  id: ASC
+  parent: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+  langs:
+  - csharp
+  - vb
+  name: ASC
+  nameWithType: IAbilitySystemOwner.ASC
+  fullName: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC
+  type: Property
+  namespace: Noname.GameAbilitySystem.Domain
+  summary: AbilitySystemComponent 인스턴스를 반환합니다.
+  example: []
+  syntax:
+    content: AbilitySystemComponent ASC { get; }
+    parameters: []
+    return:
+      type: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+    content.vb: ReadOnly Property ASC As AbilitySystemComponent
+  overload: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC*
+references:
+- uid: Noname.GameAbilitySystem.Domain
+  commentId: N:Noname.GameAbilitySystem.Domain
+  href: Noname.html
+  name: Noname.GameAbilitySystem.Domain
+  nameWithType: Noname.GameAbilitySystem.Domain
+  fullName: Noname.GameAbilitySystem.Domain
+  spec.csharp:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+  spec.vb:
+  - uid: Noname
+    name: Noname
+    href: Noname.html
+  - name: .
+  - uid: Noname.GameAbilitySystem
+    name: GameAbilitySystem
+    href: Noname.GameAbilitySystem.html
+  - name: .
+  - uid: Noname.GameAbilitySystem.Domain
+    name: Domain
+    href: Noname.GameAbilitySystem.Domain.html
+- uid: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC*
+  commentId: Overload:Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC
+  href: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.html#Noname_GameAbilitySystem_Domain_IAbilitySystemOwner_ASC
+  name: ASC
+  nameWithType: IAbilitySystemOwner.ASC
+  fullName: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  commentId: T:Noname.GameAbilitySystem.Domain.AbilitySystemComponent
+  parent: Noname.GameAbilitySystem.Domain
+  href: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html
+  name: AbilitySystemComponent
+  nameWithType: AbilitySystemComponent
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent

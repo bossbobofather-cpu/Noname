@@ -89,6 +89,10 @@
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">DefenseCombatState</span></div>
   </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -114,7 +118,7 @@
   <h6><strong>Assembly</strong>: .dll</h6>
   <h5 id="MyProject_DefenseGame_Domain_DefenseCombatState_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class DefenseCombatState</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class DefenseCombatState : IDisposable</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
@@ -362,6 +366,17 @@
   </table>
 
 
+  <a id="MyProject_DefenseGame_Domain_DefenseCombatState_Dispose_" data-uid="MyProject.DefenseGame.Domain.DefenseCombatState.Dispose*"></a>
+  <h4 id="MyProject_DefenseGame_Domain_DefenseCombatState_Dispose" data-uid="MyProject.DefenseGame.Domain.DefenseCombatState.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
   <a id="MyProject_DefenseGame_Domain_DefenseCombatState_GetAliveMonsters_" data-uid="MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters*"></a>
   <h4 id="MyProject_DefenseGame_Domain_DefenseCombatState_GetAliveMonsters" data-uid="MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters">GetAliveMonsters()</h4>
   <div class="markdown level1 summary"><p>살아있는 모든 몬스터를 반환합니다.</p>
@@ -382,6 +397,49 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="MyProject.DefenseGame.Domain.DefenseMonster.html">DefenseMonster</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="MyProject_DefenseGame_Domain_DefenseCombatState_GetMonster_" data-uid="MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster*"></a>
+  <h4 id="MyProject_DefenseGame_Domain_DefenseCombatState_GetMonster_System_Int64_" data-uid="MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster(System.Int64)">GetMonster(long)</h4>
+  <div class="markdown level1 summary"><p>몬스터 uid 기반으로 몬스터를 반환합니다.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefenseMonster GetMonster(long monsterUid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">monsterUid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MyProject.DefenseGame.Domain.DefenseMonster.html">DefenseMonster</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -442,6 +500,10 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
 
 </article>
           </div>

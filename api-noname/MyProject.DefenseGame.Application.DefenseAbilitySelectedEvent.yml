@@ -5,9 +5,9 @@ items:
   id: DefenseAbilitySelectedEvent
   parent: MyProject.DefenseGame.Application
   children:
-  - MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String)
-  - MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
+  - MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,FGameplayTag,System.String)
   - MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName
+  - MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag
   langs:
   - csharp
   - vb
@@ -24,25 +24,25 @@ items:
   inheritance:
   - System.Object
   - MyProject.DefenseGame.Application.DefenseHostEvent
-- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
-  commentId: P:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
-  id: AbilityId
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag
+  commentId: P:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag
+  id: AbilityTag
   parent: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
   langs:
   - csharp
   - vb
-  name: AbilityId
-  nameWithType: DefenseAbilitySelectedEvent.AbilityId
-  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
+  name: AbilityTag
+  nameWithType: DefenseAbilitySelectedEvent.AbilityTag
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag
   type: Property
   namespace: MyProject.DefenseGame.Application
   syntax:
-    content: public LevelUpAbilityId AbilityId { get; }
+    content: public FGameplayTag AbilityTag { get; }
     parameters: []
     return:
-      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-    content.vb: Public ReadOnly Property AbilityId As LevelUpAbilityId
-  overload: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId*
+      type: FGameplayTag
+    content.vb: Public ReadOnly Property AbilityTag As FGameplayTag
+  overload: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag*
 - uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName
   commentId: P:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName
   id: AbilityName
@@ -62,32 +62,32 @@ items:
       type: System.String
     content.vb: Public ReadOnly Property AbilityName As String
   overload: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName*
-- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String)
-  commentId: M:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String)
-  id: '#ctor(System.Int64,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String)'
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,FGameplayTag,System.String)
+  commentId: M:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,FGameplayTag,System.String)
+  id: '#ctor(System.Int64,FGameplayTag,System.String)'
   parent: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
   langs:
   - csharp
   - vb
-  name: DefenseAbilitySelectedEvent(long, LevelUpAbilityId, string)
-  nameWithType: DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent(long, LevelUpAbilityId, string)
-  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent(long, MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, string)
+  name: DefenseAbilitySelectedEvent(long, FGameplayTag, string)
+  nameWithType: DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent(long, FGameplayTag, string)
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent(long, FGameplayTag, string)
   type: Constructor
   namespace: MyProject.DefenseGame.Application
   syntax:
-    content: public DefenseAbilitySelectedEvent(long tick, LevelUpAbilityId abilityId, string abilityName)
+    content: public DefenseAbilitySelectedEvent(long tick, FGameplayTag abilityTag, string abilityName)
     parameters:
     - id: tick
       type: System.Int64
-    - id: abilityId
-      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
+    - id: abilityTag
+      type: FGameplayTag
     - id: abilityName
       type: System.String
-    content.vb: Public Sub New(tick As Long, abilityId As LevelUpAbilityId, abilityName As String)
+    content.vb: Public Sub New(tick As Long, abilityTag As FGameplayTag, abilityName As String)
   overload: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor*
-  nameWithType.vb: DefenseAbilitySelectedEvent.New(Long, LevelUpAbilityId, String)
-  fullName.vb: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.New(Long, MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, String)
-  name.vb: New(Long, LevelUpAbilityId, String)
+  nameWithType.vb: DefenseAbilitySelectedEvent.New(Long, FGameplayTag, String)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.New(Long, FGameplayTag, String)
+  name.vb: New(Long, FGameplayTag, String)
 references:
 - uid: MyProject.DefenseGame.Application
   commentId: N:MyProject.DefenseGame.Application
@@ -144,57 +144,17 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId*
-  commentId: Overload:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
-  href: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityId
-  name: AbilityId
-  nameWithType: DefenseAbilitySelectedEvent.AbilityId
-  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-  commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-  parent: MyProject.DefenseGame.Domain.LevelUp
-  href: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
-  name: LevelUpAbilityId
-  nameWithType: LevelUpAbilityId
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-- uid: MyProject.DefenseGame.Domain.LevelUp
-  commentId: N:MyProject.DefenseGame.Domain.LevelUp
-  href: MyProject.html
-  name: MyProject.DefenseGame.Domain.LevelUp
-  nameWithType: MyProject.DefenseGame.Domain.LevelUp
-  fullName: MyProject.DefenseGame.Domain.LevelUp
-  spec.csharp:
-  - uid: MyProject
-    name: MyProject
-    href: MyProject.html
-  - name: .
-  - uid: MyProject.DefenseGame
-    name: DefenseGame
-    href: MyProject.DefenseGame.html
-  - name: .
-  - uid: MyProject.DefenseGame.Domain
-    name: Domain
-    href: MyProject.DefenseGame.Domain.html
-  - name: .
-  - uid: MyProject.DefenseGame.Domain.LevelUp
-    name: LevelUp
-    href: MyProject.DefenseGame.Domain.LevelUp.html
-  spec.vb:
-  - uid: MyProject
-    name: MyProject
-    href: MyProject.html
-  - name: .
-  - uid: MyProject.DefenseGame
-    name: DefenseGame
-    href: MyProject.DefenseGame.html
-  - name: .
-  - uid: MyProject.DefenseGame.Domain
-    name: Domain
-    href: MyProject.DefenseGame.Domain.html
-  - name: .
-  - uid: MyProject.DefenseGame.Domain.LevelUp
-    name: LevelUp
-    href: MyProject.DefenseGame.Domain.LevelUp.html
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag
+  href: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityTag
+  name: AbilityTag
+  nameWithType: DefenseAbilitySelectedEvent.AbilityTag
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag
+- uid: FGameplayTag
+  isExternal: true
+  name: FGameplayTag
+  nameWithType: FGameplayTag
+  fullName: FGameplayTag
 - uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName
   href: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityName
@@ -214,7 +174,7 @@ references:
   name.vb: String
 - uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor
-  href: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent__ctor_System_Int64_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_System_String_
+  href: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent__ctor_System_Int64_FGameplayTag_System_String_
   name: DefenseAbilitySelectedEvent
   nameWithType: DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent
   fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent

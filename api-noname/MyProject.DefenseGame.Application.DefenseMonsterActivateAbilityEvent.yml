@@ -1,0 +1,183 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
+  id: DefenseMonsterActivateAbilityEvent
+  parent: MyProject.DefenseGame.Application
+  children:
+  - MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor(System.Int64,System.Int64,GameplayAbility)
+  - MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability
+  - MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid
+  langs:
+  - csharp
+  - vb
+  name: DefenseMonsterActivateAbilityEvent
+  nameWithType: DefenseMonsterActivateAbilityEvent
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
+  type: Class
+  namespace: MyProject.DefenseGame.Application
+  summary: 몬스터 능력 발동 이벤트 입니다.
+  example: []
+  syntax:
+    content: 'public sealed class DefenseMonsterActivateAbilityEvent : DefenseHostEvent'
+    content.vb: Public NotInheritable Class DefenseMonsterActivateAbilityEvent Inherits DefenseHostEvent
+  inheritance:
+  - System.Object
+  - MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid
+  commentId: P:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid
+  id: MonsterUid
+  parent: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
+  langs:
+  - csharp
+  - vb
+  name: MonsterUid
+  nameWithType: DefenseMonsterActivateAbilityEvent.MonsterUid
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public long MonsterUid { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property MonsterUid As Long
+  overload: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid*
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability
+  commentId: P:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability
+  id: Ability
+  parent: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
+  langs:
+  - csharp
+  - vb
+  name: Ability
+  nameWithType: DefenseMonsterActivateAbilityEvent.Ability
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability
+  type: Property
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public GameplayAbility Ability { get; }
+    parameters: []
+    return:
+      type: GameplayAbility
+    content.vb: Public ReadOnly Property Ability As GameplayAbility
+  overload: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability*
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor(System.Int64,System.Int64,GameplayAbility)
+  commentId: M:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor(System.Int64,System.Int64,GameplayAbility)
+  id: '#ctor(System.Int64,System.Int64,GameplayAbility)'
+  parent: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
+  langs:
+  - csharp
+  - vb
+  name: DefenseMonsterActivateAbilityEvent(long, long, GameplayAbility)
+  nameWithType: DefenseMonsterActivateAbilityEvent.DefenseMonsterActivateAbilityEvent(long, long, GameplayAbility)
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.DefenseMonsterActivateAbilityEvent(long, long, GameplayAbility)
+  type: Constructor
+  namespace: MyProject.DefenseGame.Application
+  syntax:
+    content: public DefenseMonsterActivateAbilityEvent(long tick, long monsterUid, GameplayAbility ability)
+    parameters:
+    - id: tick
+      type: System.Int64
+    - id: monsterUid
+      type: System.Int64
+    - id: ability
+      type: GameplayAbility
+    content.vb: Public Sub New(tick As Long, monsterUid As Long, ability As GameplayAbility)
+  overload: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor*
+  nameWithType.vb: DefenseMonsterActivateAbilityEvent.New(Long, Long, GameplayAbility)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.New(Long, Long, GameplayAbility)
+  name.vb: New(Long, Long, GameplayAbility)
+references:
+- uid: MyProject.DefenseGame.Application
+  commentId: N:MyProject.DefenseGame.Application
+  href: MyProject.html
+  name: MyProject.DefenseGame.Application
+  nameWithType: MyProject.DefenseGame.Application
+  fullName: MyProject.DefenseGame.Application
+  spec.csharp:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+  spec.vb:
+  - uid: MyProject
+    name: MyProject
+    href: MyProject.html
+  - name: .
+  - uid: MyProject.DefenseGame
+    name: DefenseGame
+    href: MyProject.DefenseGame.html
+  - name: .
+  - uid: MyProject.DefenseGame.Application
+    name: Application
+    href: MyProject.DefenseGame.Application.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MyProject.DefenseGame.Application.DefenseHostEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseHostEvent
+  parent: MyProject.DefenseGame.Application
+  href: MyProject.DefenseGame.Application.DefenseHostEvent.html
+  name: DefenseHostEvent
+  nameWithType: DefenseHostEvent
+  fullName: MyProject.DefenseGame.Application.DefenseHostEvent
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid
+  href: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefenseMonsterActivateAbilityEvent_MonsterUid
+  name: MonsterUid
+  nameWithType: DefenseMonsterActivateAbilityEvent.MonsterUid
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability
+  href: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefenseMonsterActivateAbilityEvent_Ability
+  name: Ability
+  nameWithType: DefenseMonsterActivateAbilityEvent.Ability
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability
+- uid: GameplayAbility
+  isExternal: true
+  name: GameplayAbility
+  nameWithType: GameplayAbility
+  fullName: GameplayAbility
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor*
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor
+  href: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefenseMonsterActivateAbilityEvent__ctor_System_Int64_System_Int64_GameplayAbility_
+  name: DefenseMonsterActivateAbilityEvent
+  nameWithType: DefenseMonsterActivateAbilityEvent.DefenseMonsterActivateAbilityEvent
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.DefenseMonsterActivateAbilityEvent
+  nameWithType.vb: DefenseMonsterActivateAbilityEvent.New
+  fullName.vb: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.New
+  name.vb: New

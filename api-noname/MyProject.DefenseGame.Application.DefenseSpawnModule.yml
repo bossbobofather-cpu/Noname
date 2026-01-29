@@ -5,8 +5,8 @@ items:
   id: DefenseSpawnModule
   parent: MyProject.DefenseGame.Application
   children:
-  - MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent})
-  - MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
+  - MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent},MyProject.DefenseGame.Domain.IAIFlagChecker)
+  - MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
   - MyProject.DefenseGame.Application.DefenseSpawnModule.Tick(System.Single,System.Int64)
   langs:
   - csharp
@@ -30,20 +30,20 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent})
-  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent})
-  id: '#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent})'
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent},MyProject.DefenseGame.Domain.IAIFlagChecker)
+  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent},MyProject.DefenseGame.Domain.IAIFlagChecker)
+  id: '#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent},MyProject.DefenseGame.Domain.IAIFlagChecker)'
   parent: MyProject.DefenseGame.Application.DefenseSpawnModule
   langs:
   - csharp
   - vb
-  name: DefenseSpawnModule(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action<DefenseHostEvent>)
-  nameWithType: DefenseSpawnModule.DefenseSpawnModule(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action<DefenseHostEvent>)
-  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.DefenseSpawnModule(MyProject.DefenseGame.Application.DefenseHostState, MyProject.DefenseGame.Domain.DefenseHostConfig, MyProject.DefenseGame.Application.DefenseEntityFactory, System.Action<MyProject.DefenseGame.Application.DefenseHostEvent>)
+  name: DefenseSpawnModule(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action<DefenseHostEvent>, IAIFlagChecker)
+  nameWithType: DefenseSpawnModule.DefenseSpawnModule(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action<DefenseHostEvent>, IAIFlagChecker)
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.DefenseSpawnModule(MyProject.DefenseGame.Application.DefenseHostState, MyProject.DefenseGame.Domain.DefenseHostConfig, MyProject.DefenseGame.Application.DefenseEntityFactory, System.Action<MyProject.DefenseGame.Application.DefenseHostEvent>, MyProject.DefenseGame.Domain.IAIFlagChecker)
   type: Constructor
   namespace: MyProject.DefenseGame.Application
   syntax:
-    content: public DefenseSpawnModule(DefenseHostState state, DefenseHostConfig config, DefenseEntityFactory factory, Action<DefenseHostEvent> publishEvent)
+    content: public DefenseSpawnModule(DefenseHostState state, DefenseHostConfig config, DefenseEntityFactory factory, Action<DefenseHostEvent> publishEvent, IAIFlagChecker aIFlagChecker)
     parameters:
     - id: state
       type: MyProject.DefenseGame.Application.DefenseHostState
@@ -53,28 +53,33 @@ items:
       type: MyProject.DefenseGame.Application.DefenseEntityFactory
     - id: publishEvent
       type: System.Action{MyProject.DefenseGame.Application.DefenseHostEvent}
-    content.vb: Public Sub New(state As DefenseHostState, config As DefenseHostConfig, factory As DefenseEntityFactory, publishEvent As Action(Of DefenseHostEvent))
+    - id: aIFlagChecker
+      type: MyProject.DefenseGame.Domain.IAIFlagChecker
+    content.vb: Public Sub New(state As DefenseHostState, config As DefenseHostConfig, factory As DefenseEntityFactory, publishEvent As Action(Of DefenseHostEvent), aIFlagChecker As IAIFlagChecker)
   overload: MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor*
-  nameWithType.vb: DefenseSpawnModule.New(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action(Of DefenseHostEvent))
-  fullName.vb: MyProject.DefenseGame.Application.DefenseSpawnModule.New(MyProject.DefenseGame.Application.DefenseHostState, MyProject.DefenseGame.Domain.DefenseHostConfig, MyProject.DefenseGame.Application.DefenseEntityFactory, System.Action(Of MyProject.DefenseGame.Application.DefenseHostEvent))
-  name.vb: New(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action(Of DefenseHostEvent))
-- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
-  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
-  id: Initialize
+  nameWithType.vb: DefenseSpawnModule.New(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action(Of DefenseHostEvent), IAIFlagChecker)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseSpawnModule.New(MyProject.DefenseGame.Application.DefenseHostState, MyProject.DefenseGame.Domain.DefenseHostConfig, MyProject.DefenseGame.Application.DefenseEntityFactory, System.Action(Of MyProject.DefenseGame.Application.DefenseHostEvent), MyProject.DefenseGame.Domain.IAIFlagChecker)
+  name.vb: New(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action(Of DefenseHostEvent), IAIFlagChecker)
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
+  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
+  id: Initialize(TargetContext)
   parent: MyProject.DefenseGame.Application.DefenseSpawnModule
   langs:
   - csharp
   - vb
-  name: Initialize()
-  nameWithType: DefenseSpawnModule.Initialize()
-  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize()
+  name: Initialize(TargetContext)
+  nameWithType: DefenseSpawnModule.Initialize(TargetContext)
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
   type: Method
   namespace: MyProject.DefenseGame.Application
   summary: 스폰 시스템을 초기화합니다.
   example: []
   syntax:
-    content: public void Initialize()
-    content.vb: Public Sub Initialize()
+    content: public void Initialize(TargetContext targetContext)
+    parameters:
+    - id: targetContext
+      type: TargetContext
+    content.vb: Public Sub Initialize(targetContext As TargetContext)
   overload: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize*
 - uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Tick(System.Single,System.Int64)
   commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.Tick(System.Single,System.Int64)
@@ -348,7 +353,7 @@ references:
   fullName: System
 - uid: MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor
-  href: MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule__ctor_MyProject_DefenseGame_Application_DefenseHostState_MyProject_DefenseGame_Domain_DefenseHostConfig_MyProject_DefenseGame_Application_DefenseEntityFactory_System_Action_MyProject_DefenseGame_Application_DefenseHostEvent__
+  href: MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule__ctor_MyProject_DefenseGame_Application_DefenseHostState_MyProject_DefenseGame_Domain_DefenseHostConfig_MyProject_DefenseGame_Application_DefenseEntityFactory_System_Action_MyProject_DefenseGame_Application_DefenseHostEvent__MyProject_DefenseGame_Domain_IAIFlagChecker_
   name: DefenseSpawnModule
   nameWithType: DefenseSpawnModule.DefenseSpawnModule
   fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.DefenseSpawnModule
@@ -409,6 +414,13 @@ references:
     name: DefenseHostEvent
     href: MyProject.DefenseGame.Application.DefenseHostEvent.html
   - name: )
+- uid: MyProject.DefenseGame.Domain.IAIFlagChecker
+  commentId: T:MyProject.DefenseGame.Domain.IAIFlagChecker
+  parent: MyProject.DefenseGame.Domain
+  href: MyProject.DefenseGame.Domain.IAIFlagChecker.html
+  name: IAIFlagChecker
+  nameWithType: IAIFlagChecker
+  fullName: MyProject.DefenseGame.Domain.IAIFlagChecker
 - uid: MyProject.DefenseGame.Domain
   commentId: N:MyProject.DefenseGame.Domain
   href: MyProject.html
@@ -469,10 +481,15 @@ references:
   - name: )
 - uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
-  href: MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule_Initialize
+  href: MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule_Initialize_TargetContext_
   name: Initialize
   nameWithType: DefenseSpawnModule.Initialize
   fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
+- uid: TargetContext
+  isExternal: true
+  name: TargetContext
+  nameWithType: TargetContext
+  fullName: TargetContext
 - uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Tick*
   commentId: Overload:MyProject.DefenseGame.Application.DefenseSpawnModule.Tick
   href: MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule_Tick_System_Single_System_Int64_

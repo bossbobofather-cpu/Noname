@@ -4,11 +4,6 @@ items:
   commentId: N:Noname.GameAbilitySystem.Presentation
   id: Noname.GameAbilitySystem.Presentation
   children:
-  - Noname.GameAbilitySystem.Presentation.AbilitySystemComponentAdapter
-  - Noname.GameAbilitySystem.Presentation.AbilityTargetData
-  - Noname.GameAbilitySystem.Presentation.AbilityTask
-  - Noname.GameAbilitySystem.Presentation.AbilityTask_PlayMontageAndWait
-  - Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
   - Noname.GameAbilitySystem.Presentation.AttributeDefinition
   - Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
   - Noname.GameAbilitySystem.Presentation.GameAbilitySystemPlugin
@@ -17,8 +12,6 @@ items:
   - Noname.GameAbilitySystem.Presentation.GameplayEffectConfig
   - Noname.GameAbilitySystem.Presentation.GameplayTagContainerView
   - Noname.GameAbilitySystem.Presentation.GameplayTagRegistry
-  - Noname.GameAbilitySystem.Presentation.GameplayTagRegistryRuntime
-  - Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner
   - Noname.GameAbilitySystem.Presentation.ReadOnlyAttribute
   - Noname.GameAbilitySystem.Presentation.SystemMessageBus
   langs:
@@ -49,13 +42,6 @@ references:
   name: DomainConversionExtensions
   nameWithType: DomainConversionExtensions
   fullName: Noname.GameAbilitySystem.Presentation.DomainConversionExtensions
-- uid: Noname.GameAbilitySystem.Presentation.AbilitySystemComponentAdapter
-  commentId: T:Noname.GameAbilitySystem.Presentation.AbilitySystemComponentAdapter
-  parent: Noname.GameAbilitySystem.Presentation
-  href: Noname.GameAbilitySystem.Presentation.AbilitySystemComponentAdapter.html
-  name: AbilitySystemComponentAdapter
-  nameWithType: AbilitySystemComponentAdapter
-  fullName: Noname.GameAbilitySystem.Presentation.AbilitySystemComponentAdapter
 - uid: Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
   commentId: T:Noname.GameAbilitySystem.Presentation.GameplayAbilityConfig
   parent: Noname.GameAbilitySystem.Presentation
@@ -91,47 +77,6 @@ references:
   name: GameplayTagRegistry
   nameWithType: GameplayTagRegistry
   fullName: Noname.GameAbilitySystem.Presentation.GameplayTagRegistry
-- uid: Noname.GameAbilitySystem.Presentation.GameplayTagRegistryRuntime
-  commentId: T:Noname.GameAbilitySystem.Presentation.GameplayTagRegistryRuntime
-  href: Noname.GameAbilitySystem.Presentation.GameplayTagRegistryRuntime.html
-  name: GameplayTagRegistryRuntime
-  nameWithType: GameplayTagRegistryRuntime
-  fullName: Noname.GameAbilitySystem.Presentation.GameplayTagRegistryRuntime
-- uid: Noname.GameAbilitySystem.Presentation.AbilityTargetData
-  commentId: T:Noname.GameAbilitySystem.Presentation.AbilityTargetData
-  parent: Noname.GameAbilitySystem.Presentation
-  href: Noname.GameAbilitySystem.Presentation.AbilityTargetData.html
-  name: AbilityTargetData
-  nameWithType: AbilityTargetData
-  fullName: Noname.GameAbilitySystem.Presentation.AbilityTargetData
-- uid: Noname.GameAbilitySystem.Presentation.AbilityTask
-  commentId: T:Noname.GameAbilitySystem.Presentation.AbilityTask
-  parent: Noname.GameAbilitySystem.Presentation
-  href: Noname.GameAbilitySystem.Presentation.AbilityTask.html
-  name: AbilityTask
-  nameWithType: AbilityTask
-  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask
-- uid: Noname.GameAbilitySystem.Presentation.AbilityTask_PlayMontageAndWait
-  commentId: T:Noname.GameAbilitySystem.Presentation.AbilityTask_PlayMontageAndWait
-  parent: Noname.GameAbilitySystem.Presentation
-  href: Noname.GameAbilitySystem.Presentation.AbilityTask_PlayMontageAndWait.html
-  name: AbilityTask_PlayMontageAndWait
-  nameWithType: AbilityTask_PlayMontageAndWait
-  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask_PlayMontageAndWait
-- uid: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
-  commentId: T:Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
-  parent: Noname.GameAbilitySystem.Presentation
-  href: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress.html
-  name: AbilityTask_WaitInputPress
-  nameWithType: AbilityTask_WaitInputPress
-  fullName: Noname.GameAbilitySystem.Presentation.AbilityTask_WaitInputPress
-- uid: Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner
-  commentId: T:Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner
-  parent: Noname.GameAbilitySystem.Presentation
-  href: Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner.html
-  name: IAbilityTaskOwner
-  nameWithType: IAbilityTaskOwner
-  fullName: Noname.GameAbilitySystem.Presentation.IAbilityTaskOwner
 - uid: Noname.GameAbilitySystem.Presentation.SystemMessageBus
   commentId: T:Noname.GameAbilitySystem.Presentation.SystemMessageBus
   href: Noname.GameAbilitySystem.Presentation.SystemMessageBus.html

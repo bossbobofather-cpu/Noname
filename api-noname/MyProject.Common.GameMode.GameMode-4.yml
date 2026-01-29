@@ -7,7 +7,7 @@ items:
   children:
   - MyProject.Common.GameMode.GameMode`4.GetModule``1
   - MyProject.Common.GameMode.GameMode`4.Host
-  - MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
+  - MyProject.Common.GameMode.GameMode`4.Initialize(IGameHost{`0,`1,`2,`3})
   - MyProject.Common.GameMode.GameMode`4.Modules
   - MyProject.Common.GameMode.GameMode`4.OnDestroy
   - MyProject.Common.GameMode.GameMode`4.OnHostEvent(`2)
@@ -21,6 +21,7 @@ items:
   - MyProject.Common.GameMode.GameMode`4.StartupModule
   - MyProject.Common.GameMode.GameMode`4.Subscribe``1(System.Action{``0})
   - MyProject.Common.GameMode.GameMode`4.Unsubscribe``1(System.Action{``0})
+  - MyProject.Common.GameMode.GameMode`4.Update
   langs:
   - csharp
   - vb
@@ -66,11 +67,11 @@ items:
   summary: 호스트 커맨드 버스에 접근합니다.
   example: []
   syntax:
-    content: protected IHostCommandBus<TCommand, TResult, TEvent, TSnapshot> Host { get; }
+    content: protected IGameHost<TCommand, TResult, TEvent, TSnapshot> Host { get; }
     parameters: []
     return:
-      type: IHostCommandBus{{TCommand},{TResult},{TEvent},{TSnapshot}}
-    content.vb: Protected ReadOnly Property Host As IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot)
+      type: IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+    content.vb: Protected ReadOnly Property Host As IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
   overload: MyProject.Common.GameMode.GameMode`4.Host*
   nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
   fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
@@ -124,30 +125,30 @@ items:
   - MyProject.Common.GameMode.IGameMode.SceneBus
   nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).SceneBus
   fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).SceneBus
-- uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
-  commentId: M:MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
-  id: Initialize(IHostCommandBus{`0,`1,`2,`3})
+- uid: MyProject.Common.GameMode.GameMode`4.Initialize(IGameHost{`0,`1,`2,`3})
+  commentId: M:MyProject.Common.GameMode.GameMode`4.Initialize(IGameHost{`0,`1,`2,`3})
+  id: Initialize(IGameHost{`0,`1,`2,`3})
   parent: MyProject.Common.GameMode.GameMode`4
   langs:
   - csharp
   - vb
-  name: Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
-  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
-  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
+  name: Initialize(IGameHost<TCommand, TResult, TEvent, TSnapshot>)
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IGameHost<TCommand, TResult, TEvent, TSnapshot>)
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IGameHost<TCommand, TResult, TEvent, TSnapshot>)
   type: Method
   namespace: MyProject.Common.GameMode
   summary: 호스트를 주입하고 모듈을 초기화합니다.
   example: []
   syntax:
-    content: public void Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot> host)
+    content: public void Initialize(IGameHost<TCommand, TResult, TEvent, TSnapshot> host)
     parameters:
     - id: host
-      type: IHostCommandBus{{TCommand},{TResult},{TEvent},{TSnapshot}}
-    content.vb: Public Sub Initialize(host As IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
+      type: IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+    content.vb: Public Sub Initialize(host As IGameHost(Of TCommand, TResult, TEvent, TSnapshot))
   overload: MyProject.Common.GameMode.GameMode`4.Initialize*
-  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
-  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
-  name.vb: Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IGameHost(Of TCommand, TResult, TEvent, TSnapshot))
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IGameHost(Of TCommand, TResult, TEvent, TSnapshot))
+  name.vb: Initialize(IGameHost(Of TCommand, TResult, TEvent, TSnapshot))
 - uid: MyProject.Common.GameMode.GameMode`4.OnHostResult(`1)
   commentId: M:MyProject.Common.GameMode.GameMode`4.OnHostResult(`1)
   id: OnHostResult(`1)
@@ -345,6 +346,24 @@ items:
   nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Publish(Of TEventContext)(TEventContext)
   fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Publish(Of TEventContext)(TEventContext)
   name.vb: Publish(Of TEventContext)(TEventContext)
+- uid: MyProject.Common.GameMode.GameMode`4.Update
+  commentId: M:MyProject.Common.GameMode.GameMode`4.Update
+  id: Update
+  parent: MyProject.Common.GameMode.GameMode`4
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Update()
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Update()
+  type: Method
+  namespace: MyProject.Common.GameMode
+  syntax:
+    content: protected virtual void Update()
+    content.vb: Protected Overridable Sub Update()
+  overload: MyProject.Common.GameMode.GameMode`4.Update*
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Update()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Update()
 - uid: MyProject.Common.GameMode.GameMode`4.OnDestroy
   commentId: M:MyProject.Common.GameMode.GameMode`4.OnDestroy
   id: OnDestroy
@@ -487,18 +506,18 @@ references:
   fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Host
   nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
   fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
-- uid: IHostCommandBus{{TCommand},{TResult},{TEvent},{TSnapshot}}
-  commentId: '!:IHostCommandBus{`0,`1,`2,`3}'
-  definition: IHostCommandBus`4
-  name: IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>
-  nameWithType: IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>
-  fullName: IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>
-  nameWithType.vb: IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot)
-  fullName.vb: IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot)
-  name.vb: IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot)
+- uid: IGameHost{{TCommand},{TResult},{TEvent},{TSnapshot}}
+  commentId: '!:IGameHost{`0,`1,`2,`3}'
+  definition: IGameHost`4
+  name: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  fullName: IGameHost<TCommand, TResult, TEvent, TSnapshot>
+  nameWithType.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  fullName.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
+  name.vb: IGameHost(Of TCommand, TResult, TEvent, TSnapshot)
   spec.csharp:
-  - uid: IHostCommandBus`4
-    name: IHostCommandBus
+  - uid: IGameHost`4
+    name: IGameHost
     isExternal: true
   - name: <
   - name: TCommand
@@ -513,8 +532,8 @@ references:
   - name: TSnapshot
   - name: '>'
   spec.vb:
-  - uid: IHostCommandBus`4
-    name: IHostCommandBus
+  - uid: IGameHost`4
+    name: IGameHost
     isExternal: true
   - name: (
   - name: Of
@@ -530,17 +549,17 @@ references:
   - name: " "
   - name: TSnapshot
   - name: )
-- uid: IHostCommandBus`4
+- uid: IGameHost`4
   isExternal: true
-  name: IHostCommandBus<, , , >
-  nameWithType: IHostCommandBus<, , , >
-  fullName: IHostCommandBus<, , , >
-  nameWithType.vb: IHostCommandBus(Of , , , )
-  fullName.vb: IHostCommandBus(Of , , , )
-  name.vb: IHostCommandBus(Of , , , )
+  name: IGameHost<, , , >
+  nameWithType: IGameHost<, , , >
+  fullName: IGameHost<, , , >
+  nameWithType.vb: IGameHost(Of , , , )
+  fullName.vb: IGameHost(Of , , , )
+  name.vb: IGameHost(Of , , , )
   spec.csharp:
-  - uid: IHostCommandBus`4
-    name: IHostCommandBus
+  - uid: IGameHost`4
+    name: IGameHost
     isExternal: true
   - name: <
   - name: ''
@@ -555,8 +574,8 @@ references:
   - name: ''
   - name: '>'
   spec.vb:
-  - uid: IHostCommandBus`4
-    name: IHostCommandBus
+  - uid: IGameHost`4
+    name: IGameHost
     isExternal: true
   - name: (
   - name: Of
@@ -707,7 +726,7 @@ references:
   fullName: GameEventBus.Scope
 - uid: MyProject.Common.GameMode.GameMode`4.Initialize*
   commentId: Overload:MyProject.Common.GameMode.GameMode`4.Initialize
-  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__3__
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IGameHost__0__1__2__3__
   name: Initialize
   nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize
   fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize
@@ -1156,6 +1175,14 @@ references:
   name: TEventContext
   nameWithType: TEventContext
   fullName: TEventContext
+- uid: MyProject.Common.GameMode.GameMode`4.Update*
+  commentId: Overload:MyProject.Common.GameMode.GameMode`4.Update
+  href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Update
+  name: Update
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Update
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Update
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Update
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Update
 - uid: MyProject.Common.GameMode.GameMode`4.OnDestroy*
   commentId: Overload:MyProject.Common.GameMode.GameMode`4.OnDestroy
   href: MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_OnDestroy

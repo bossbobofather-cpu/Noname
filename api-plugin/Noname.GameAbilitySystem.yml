@@ -4,8 +4,9 @@ items:
   commentId: N:Noname.GameAbilitySystem
   id: Noname.GameAbilitySystem
   children:
-  - Noname.GameAbilitySystem.AbilityContext
-  - Noname.GameAbilitySystem.GameplayEffectContext
+  - Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
+  - Noname.GameAbilitySystem.GameplayAbilitySpec
+  - Noname.GameAbilitySystem.ReadOnlyAttribute
   langs:
   - csharp
   - vb
@@ -14,19 +15,25 @@ items:
   fullName: Noname.GameAbilitySystem
   type: Namespace
 references:
-- uid: Noname.GameAbilitySystem.AbilityContext
-  commentId: T:Noname.GameAbilitySystem.AbilityContext
+- uid: Noname.GameAbilitySystem.ReadOnlyAttribute
+  commentId: T:Noname.GameAbilitySystem.ReadOnlyAttribute
+  href: Noname.GameAbilitySystem.ReadOnlyAttribute.html
+  name: ReadOnlyAttribute
+  nameWithType: ReadOnlyAttribute
+  fullName: Noname.GameAbilitySystem.ReadOnlyAttribute
+- uid: Noname.GameAbilitySystem.GameplayAbilitySpec
+  commentId: T:Noname.GameAbilitySystem.GameplayAbilitySpec
+  href: Noname.GameAbilitySystem.GameplayAbilitySpec.html
+  name: GameplayAbilitySpec
+  nameWithType: GameplayAbilitySpec
+  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec
+- uid: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
+  commentId: T:Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
   parent: Noname.GameAbilitySystem
-  href: Noname.GameAbilitySystem.AbilityContext.html
-  name: AbilityContext
-  nameWithType: AbilityContext
-  fullName: Noname.GameAbilitySystem.AbilityContext
-- uid: Noname.GameAbilitySystem.GameplayEffectContext
-  commentId: T:Noname.GameAbilitySystem.GameplayEffectContext
-  href: Noname.GameAbilitySystem.GameplayEffectContext.html
-  name: GameplayEffectContext
-  nameWithType: GameplayEffectContext
-  fullName: Noname.GameAbilitySystem.GameplayEffectContext
+  href: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle.html
+  name: FGameplayAbilitySpecHandle
+  nameWithType: FGameplayAbilitySpecHandle
+  fullName: Noname.GameAbilitySystem.FGameplayAbilitySpecHandle
 - uid: Noname.GameAbilitySystem
   commentId: N:Noname.GameAbilitySystem
   href: Noname.html

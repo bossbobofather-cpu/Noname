@@ -15,10 +15,10 @@ items:
   - MyProject.DefenseGame.Application.DefenseHostState
   - MyProject.DefenseGame.Application.DefenseLevelUpEvent
   - MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
-  - MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+  - MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
   - MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
   - MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent
-  - MyProject.DefenseGame.Application.DefensePlayerAttackEvent
+  - MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
   - MyProject.DefenseGame.Application.DefensePlayerDeathEvent
   - MyProject.DefenseGame.Application.DefenseSessionPhase
   - MyProject.DefenseGame.Application.DefenseSpawnModule
@@ -69,18 +69,18 @@ references:
   name: DefenseMonsterKilledEvent
   nameWithType: DefenseMonsterKilledEvent
   fullName: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
-- uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent
-  commentId: T:MyProject.DefenseGame.Application.DefensePlayerAttackEvent
-  href: MyProject.DefenseGame.Application.DefensePlayerAttackEvent.html
-  name: DefensePlayerAttackEvent
-  nameWithType: DefensePlayerAttackEvent
-  fullName: MyProject.DefenseGame.Application.DefensePlayerAttackEvent
-- uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
-  commentId: T:MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
-  href: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.html
-  name: DefenseMonsterAttackEvent
-  nameWithType: DefenseMonsterAttackEvent
-  fullName: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
+  commentId: T:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
+  href: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html
+  name: DefensePlayerActivateAbilityEvent
+  nameWithType: DefensePlayerActivateAbilityEvent
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
+  commentId: T:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
+  href: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html
+  name: DefenseMonsterActivateAbilityEvent
+  nameWithType: DefenseMonsterActivateAbilityEvent
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
 - uid: MyProject.DefenseGame.Application.DefenseLevelUpEvent
   commentId: T:MyProject.DefenseGame.Application.DefenseLevelUpEvent
   href: MyProject.DefenseGame.Application.DefenseLevelUpEvent.html

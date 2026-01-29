@@ -8,10 +8,7 @@ items:
   - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttack
   - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttackTargetUp
   - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AttackSpeedUp
-  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.ExpGainUp
   - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.FullHealthRestore
-  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealAmountUp
-  - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealOnKill
   - MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.None
   langs:
   - csharp
@@ -74,22 +71,6 @@ items:
     content: AttackSpeedUp = 2
     return:
       type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.ExpGainUp
-  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.ExpGainUp
-  id: ExpGainUp
-  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-  langs:
-  - csharp
-  - vb
-  name: ExpGainUp
-  nameWithType: LevelUpAbilityId.ExpGainUp
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.ExpGainUp
-  type: Field
-  namespace: MyProject.DefenseGame.Domain.LevelUp
-  syntax:
-    content: ExpGainUp = 3
-    return:
-      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttack
   commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttack
   id: AreaAttack
@@ -103,23 +84,7 @@ items:
   type: Field
   namespace: MyProject.DefenseGame.Domain.LevelUp
   syntax:
-    content: AreaAttack = 4
-    return:
-      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealOnKill
-  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealOnKill
-  id: LifeStealOnKill
-  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-  langs:
-  - csharp
-  - vb
-  name: LifeStealOnKill
-  nameWithType: LevelUpAbilityId.LifeStealOnKill
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealOnKill
-  type: Field
-  namespace: MyProject.DefenseGame.Domain.LevelUp
-  syntax:
-    content: LifeStealOnKill = 5
+    content: AreaAttack = 3
     return:
       type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AreaAttackTargetUp
@@ -135,23 +100,7 @@ items:
   type: Field
   namespace: MyProject.DefenseGame.Domain.LevelUp
   syntax:
-    content: AreaAttackTargetUp = 6
-    return:
-      type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealAmountUp
-  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealAmountUp
-  id: LifeStealAmountUp
-  parent: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
-  langs:
-  - csharp
-  - vb
-  name: LifeStealAmountUp
-  nameWithType: LevelUpAbilityId.LifeStealAmountUp
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealAmountUp
-  type: Field
-  namespace: MyProject.DefenseGame.Domain.LevelUp
-  syntax:
-    content: LifeStealAmountUp = 7
+    content: AreaAttackTargetUp = 4
     return:
       type: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
 references:

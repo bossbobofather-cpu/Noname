@@ -100,8 +100,8 @@ items:
   - uid: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent
     name: DefenseLevelUpOptionsEvent
     type: Class
-  - uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
-    name: DefenseMonsterAttackEvent
+  - uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
+    name: DefenseMonsterActivateAbilityEvent
     type: Class
   - uid: MyProject.DefenseGame.Application.DefenseMonsterKilledEvent
     name: DefenseMonsterKilledEvent
@@ -109,8 +109,8 @@ items:
   - uid: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent
     name: DefenseMonsterSpawnedEvent
     type: Class
-  - uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent
-    name: DefensePlayerAttackEvent
+  - uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
+    name: DefensePlayerActivateAbilityEvent
     type: Class
   - uid: MyProject.DefenseGame.Application.DefensePlayerDeathEvent
     name: DefensePlayerDeathEvent
@@ -159,9 +159,6 @@ items:
   - uid: MyProject.DefenseGame.Domain.DefenseAbilityUtility
     name: DefenseAbilityUtility
     type: Class
-  - uid: MyProject.DefenseGame.Domain.DefenseAttributeIds
-    name: DefenseAttributeIds
-    type: Class
   - uid: MyProject.DefenseGame.Domain.DefenseCombatState
     name: DefenseCombatState
     type: Class
@@ -183,15 +180,9 @@ items:
   - uid: MyProject.DefenseGame.Domain.DefenseTags
     name: DefenseTags
     type: Class
-  - uid: MyProject.DefenseGame.Domain.IAbilitySystemOwner
-    name: IAbilitySystemOwner
+  - uid: MyProject.DefenseGame.Domain.IAIFlagChecker
+    name: IAIFlagChecker
     type: Interface
-  - uid: MyProject.DefenseGame.Domain.MonsterAttributeIds
-    name: MonsterAttributeIds
-    type: Class
-  - uid: MyProject.DefenseGame.Domain.PlayerAttributeIds
-    name: PlayerAttributeIds
-    type: Class
 - uid: MyProject.DefenseGame.Domain.AI
   name: MyProject.DefenseGame.Domain.AI
   type: Namespace
@@ -199,6 +190,9 @@ items:
   - uid: MyProject.DefenseGame.Domain.AI.IDefenseAI
     name: IDefenseAI
     type: Interface
+  - uid: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
+    name: MonsterAutoBattleAI
+    type: Class
   - uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
     name: PlayerAutoBattleAI
     type: Class

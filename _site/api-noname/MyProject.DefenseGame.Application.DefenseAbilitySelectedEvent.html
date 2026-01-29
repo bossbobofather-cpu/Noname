@@ -101,12 +101,12 @@
 
 
   <a id="MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent__ctor_" data-uid="MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor*"></a>
-  <h4 id="MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent__ctor_System_Int64_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_System_String_" data-uid="MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String)">DefenseAbilitySelectedEvent(long, LevelUpAbilityId, string)</h4>
+  <h4 id="MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent__ctor_System_Int64_FGameplayTag_System_String_" data-uid="MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,FGameplayTag,System.String)">DefenseAbilitySelectedEvent(long, FGameplayTag, string)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DefenseAbilitySelectedEvent(long tick, LevelUpAbilityId abilityId, string abilityName)</code></pre>
+    <pre><code class="lang-csharp hljs">public DefenseAbilitySelectedEvent(long tick, FGameplayTag abilityTag, string abilityName)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -124,8 +124,8 @@
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html">LevelUpAbilityId</a></td>
-        <td><span class="parametername">abilityId</span></td>
+        <td><span class="xref">FGameplayTag</span></td>
+        <td><span class="parametername">abilityTag</span></td>
         <td></td>
       </tr>
       <tr>
@@ -137,31 +137,6 @@
   </table>
   <h3 id="properties">Properties
 </h3>
-
-
-  <a id="MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityId_" data-uid="MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId*"></a>
-  <h4 id="MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityId" data-uid="MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId">AbilityId</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LevelUpAbilityId AbilityId { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html">LevelUpAbilityId</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
   <a id="MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityName_" data-uid="MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName*"></a>
@@ -183,6 +158,31 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityTag_" data-uid="MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag*"></a>
+  <h4 id="MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityTag" data-uid="MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag">AbilityTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FGameplayTag AbilityTag { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FGameplayTag</span></td>
         <td></td>
       </tr>
     </tbody>

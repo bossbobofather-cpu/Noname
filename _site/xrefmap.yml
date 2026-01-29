@@ -1174,15 +1174,15 @@ references:
   fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
   nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Host
   nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Host
-- uid: MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
-  name: Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
-  href: api-noname/MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IHostCommandBus__0__1__2__3__
-  commentId: M:MyProject.Common.GameMode.GameMode`4.Initialize(IHostCommandBus{`0,`1,`2,`3})
-  name.vb: Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
-  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
-  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
-  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IHostCommandBus<TCommand, TResult, TEvent, TSnapshot>)
-  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IHostCommandBus(Of TCommand, TResult, TEvent, TSnapshot))
+- uid: MyProject.Common.GameMode.GameMode`4.Initialize(IGameHost{`0,`1,`2,`3})
+  name: Initialize(IGameHost<TCommand, TResult, TEvent, TSnapshot>)
+  href: api-noname/MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_IGameHost__0__1__2__3__
+  commentId: M:MyProject.Common.GameMode.GameMode`4.Initialize(IGameHost{`0,`1,`2,`3})
+  name.vb: Initialize(IGameHost(Of TCommand, TResult, TEvent, TSnapshot))
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IGameHost<TCommand, TResult, TEvent, TSnapshot>)
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IGameHost(Of TCommand, TResult, TEvent, TSnapshot))
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Initialize(IGameHost<TCommand, TResult, TEvent, TSnapshot>)
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Initialize(IGameHost(Of TCommand, TResult, TEvent, TSnapshot))
 - uid: MyProject.Common.GameMode.GameMode`4.Initialize*
   name: Initialize
   href: api-noname/MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Initialize_
@@ -1416,6 +1416,23 @@ references:
   fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Unsubscribe(Of TEventContext)(System.Action(Of TEventContext))
   nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Unsubscribe<TEventContext>(Action<TEventContext>)
   nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Unsubscribe(Of TEventContext)(Action(Of TEventContext))
+- uid: MyProject.Common.GameMode.GameMode`4.Update
+  name: Update()
+  href: api-noname/MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Update
+  commentId: M:MyProject.Common.GameMode.GameMode`4.Update
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Update()
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Update()
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Update()
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Update()
+- uid: MyProject.Common.GameMode.GameMode`4.Update*
+  name: Update
+  href: api-noname/MyProject.Common.GameMode.GameMode-4.html#MyProject_Common_GameMode_GameMode_4_Update_
+  commentId: Overload:MyProject.Common.GameMode.GameMode`4.Update
+  isSpec: "True"
+  fullName: MyProject.Common.GameMode.GameMode<TCommand, TResult, TEvent, TSnapshot>.Update
+  fullName.vb: MyProject.Common.GameMode.GameMode(Of TCommand, TResult, TEvent, TSnapshot).Update
+  nameWithType: GameMode<TCommand, TResult, TEvent, TSnapshot>.Update
+  nameWithType.vb: GameMode(Of TCommand, TResult, TEvent, TSnapshot).Update
 - uid: MyProject.Common.GameMode.IGameMode
   name: IGameMode
   href: api-noname/MyProject.Common.GameMode.IGameMode.html
@@ -3875,15 +3892,15 @@ references:
   commentId: T:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
   fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent
   nameWithType: DefenseAbilitySelectedEvent
-- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String)
-  name: DefenseAbilitySelectedEvent(long, LevelUpAbilityId, string)
-  href: api-noname/MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent__ctor_System_Int64_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_System_String_
-  commentId: M:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String)
-  name.vb: New(Long, LevelUpAbilityId, String)
-  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent(long, MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, string)
-  fullName.vb: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.New(Long, MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, String)
-  nameWithType: DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent(long, LevelUpAbilityId, string)
-  nameWithType.vb: DefenseAbilitySelectedEvent.New(Long, LevelUpAbilityId, String)
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,FGameplayTag,System.String)
+  name: DefenseAbilitySelectedEvent(long, FGameplayTag, string)
+  href: api-noname/MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent__ctor_System_Int64_FGameplayTag_System_String_
+  commentId: M:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor(System.Int64,FGameplayTag,System.String)
+  name.vb: New(Long, FGameplayTag, String)
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent(long, FGameplayTag, string)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.New(Long, FGameplayTag, String)
+  nameWithType: DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent(long, FGameplayTag, string)
+  nameWithType.vb: DefenseAbilitySelectedEvent.New(Long, FGameplayTag, String)
 - uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.#ctor*
   name: DefenseAbilitySelectedEvent
   href: api-noname/MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent__ctor_
@@ -3894,19 +3911,6 @@ references:
   fullName.vb: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.New
   nameWithType: DefenseAbilitySelectedEvent.DefenseAbilitySelectedEvent
   nameWithType.vb: DefenseAbilitySelectedEvent.New
-- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
-  name: AbilityId
-  href: api-noname/MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityId
-  commentId: P:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
-  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
-  nameWithType: DefenseAbilitySelectedEvent.AbilityId
-- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId*
-  name: AbilityId
-  href: api-noname/MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityId_
-  commentId: Overload:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
-  isSpec: "True"
-  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityId
-  nameWithType: DefenseAbilitySelectedEvent.AbilityId
 - uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName
   name: AbilityName
   href: api-noname/MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityName
@@ -3920,6 +3924,19 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityName
   nameWithType: DefenseAbilitySelectedEvent.AbilityName
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag
+  name: AbilityTag
+  href: api-noname/MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityTag
+  commentId: P:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag
+  nameWithType: DefenseAbilitySelectedEvent.AbilityTag
+- uid: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag*
+  name: AbilityTag
+  href: api-noname/MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.html#MyProject_DefenseGame_Application_DefenseAbilitySelectedEvent_AbilityTag_
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Application.DefenseAbilitySelectedEvent.AbilityTag
+  nameWithType: DefenseAbilitySelectedEvent.AbilityTag
 - uid: MyProject.DefenseGame.Application.DefenseCombatModule
   name: DefenseCombatModule
   href: api-noname/MyProject.DefenseGame.Application.DefenseCombatModule.html
@@ -4056,6 +4073,32 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Application.DefenseGameHost.BuildSnapshotInternal
   nameWithType: DefenseGameHost.BuildSnapshotInternal
+- uid: MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck
+  name: ConsumePlayerAIRecheck()
+  href: api-noname/MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_ConsumePlayerAIRecheck
+  commentId: M:MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck()
+  nameWithType: DefenseGameHost.ConsumePlayerAIRecheck()
+- uid: MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck*
+  name: ConsumePlayerAIRecheck
+  href: api-noname/MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_ConsumePlayerAIRecheck_
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost.ConsumePlayerAIRecheck
+  nameWithType: DefenseGameHost.ConsumePlayerAIRecheck
+- uid: MyProject.DefenseGame.Application.DefenseGameHost.Dispose
+  name: Dispose()
+  href: api-noname/MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_Dispose
+  commentId: M:MyProject.DefenseGame.Application.DefenseGameHost.Dispose
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost.Dispose()
+  nameWithType: DefenseGameHost.Dispose()
+- uid: MyProject.DefenseGame.Application.DefenseGameHost.Dispose*
+  name: Dispose
+  href: api-noname/MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_Dispose_
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.Dispose
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost.Dispose
+  nameWithType: DefenseGameHost.Dispose
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.HandleCommand(MyProject.DefenseGame.Application.Commands.DefenseCommand)
   name: HandleCommand(DefenseCommand)
   href: api-noname/MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_HandleCommand_MyProject_DefenseGame_Application_Commands_DefenseCommand_
@@ -4069,6 +4112,19 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Application.DefenseGameHost.HandleCommand
   nameWithType: DefenseGameHost.HandleCommand
+- uid: MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  name: HandleInternalEvent(DefenseHostEvent)
+  href: api-noname/MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_HandleInternalEvent_MyProject_DefenseGame_Application_DefenseHostEvent_
+  commentId: M:MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent(MyProject.DefenseGame.Application.DefenseHostEvent)
+  nameWithType: DefenseGameHost.HandleInternalEvent(DefenseHostEvent)
+- uid: MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent*
+  name: HandleInternalEvent
+  href: api-noname/MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_HandleInternalEvent_
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Application.DefenseGameHost.HandleInternalEvent
+  nameWithType: DefenseGameHost.HandleInternalEvent
 - uid: MyProject.DefenseGame.Application.DefenseGameHost.OnTick(System.Single)
   name: OnTick(float)
   href: api-noname/MyProject.DefenseGame.Application.DefenseGameHost.html#MyProject_DefenseGame_Application_DefenseGameHost_OnTick_System_Single_
@@ -4373,12 +4429,12 @@ references:
   commentId: T:MyProject.DefenseGame.Application.DefenseHostState
   fullName: MyProject.DefenseGame.Application.DefenseHostState
   nameWithType: DefenseHostState
-- uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
-  name: AddGrantedAbility(LevelUpAbilityId)
-  href: api-noname/MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_AddGrantedAbility_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_
-  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
-  fullName: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
-  nameWithType: DefenseHostState.AddGrantedAbility(LevelUpAbilityId)
+- uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
+  name: AddGrantedAbility(FGameplayTag)
+  href: api-noname/MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_AddGrantedAbility_FGameplayTag_
+  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility(FGameplayTag)
+  nameWithType: DefenseHostState.AddGrantedAbility(FGameplayTag)
 - uid: MyProject.DefenseGame.Application.DefenseHostState.AddGrantedAbility*
   name: AddGrantedAbility
   href: api-noname/MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_AddGrantedAbility_
@@ -4412,6 +4468,19 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Application.DefenseHostState.CurrentLevelUpOptions
   nameWithType: DefenseHostState.CurrentLevelUpOptions
+- uid: MyProject.DefenseGame.Application.DefenseHostState.Dispose
+  name: Dispose()
+  href: api-noname/MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_Dispose
+  commentId: M:MyProject.DefenseGame.Application.DefenseHostState.Dispose
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.Dispose()
+  nameWithType: DefenseHostState.Dispose()
+- uid: MyProject.DefenseGame.Application.DefenseHostState.Dispose*
+  name: Dispose
+  href: api-noname/MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_Dispose_
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseHostState.Dispose
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Application.DefenseHostState.Dispose
+  nameWithType: DefenseHostState.Dispose
 - uid: MyProject.DefenseGame.Application.DefenseHostState.GenerateMonsterUid
   name: GenerateMonsterUid()
   href: api-noname/MyProject.DefenseGame.Application.DefenseHostState.html#MyProject_DefenseGame_Application_DefenseHostState_GenerateMonsterUid
@@ -4595,6 +4664,57 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Application.DefenseLevelUpOptionsEvent.Options
   nameWithType: DefenseLevelUpOptionsEvent.Options
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
+  name: DefenseMonsterActivateAbilityEvent
+  href: api-noname/MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html
+  commentId: T:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent
+  nameWithType: DefenseMonsterActivateAbilityEvent
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor(System.Int64,System.Int64,GameplayAbility)
+  name: DefenseMonsterActivateAbilityEvent(long, long, GameplayAbility)
+  href: api-noname/MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefenseMonsterActivateAbilityEvent__ctor_System_Int64_System_Int64_GameplayAbility_
+  commentId: M:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor(System.Int64,System.Int64,GameplayAbility)
+  name.vb: New(Long, Long, GameplayAbility)
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.DefenseMonsterActivateAbilityEvent(long, long, GameplayAbility)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.New(Long, Long, GameplayAbility)
+  nameWithType: DefenseMonsterActivateAbilityEvent.DefenseMonsterActivateAbilityEvent(long, long, GameplayAbility)
+  nameWithType.vb: DefenseMonsterActivateAbilityEvent.New(Long, Long, GameplayAbility)
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor*
+  name: DefenseMonsterActivateAbilityEvent
+  href: api-noname/MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefenseMonsterActivateAbilityEvent__ctor_
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.DefenseMonsterActivateAbilityEvent
+  fullName.vb: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.New
+  nameWithType: DefenseMonsterActivateAbilityEvent.DefenseMonsterActivateAbilityEvent
+  nameWithType.vb: DefenseMonsterActivateAbilityEvent.New
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability
+  name: Ability
+  href: api-noname/MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefenseMonsterActivateAbilityEvent_Ability
+  commentId: P:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability
+  nameWithType: DefenseMonsterActivateAbilityEvent.Ability
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability*
+  name: Ability
+  href: api-noname/MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefenseMonsterActivateAbilityEvent_Ability_
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.Ability
+  nameWithType: DefenseMonsterActivateAbilityEvent.Ability
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid
+  name: MonsterUid
+  href: api-noname/MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefenseMonsterActivateAbilityEvent_MonsterUid
+  commentId: P:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid
+  nameWithType: DefenseMonsterActivateAbilityEvent.MonsterUid
+- uid: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid*
+  name: MonsterUid
+  href: api-noname/MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefenseMonsterActivateAbilityEvent_MonsterUid_
+  commentId: Overload:MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Application.DefenseMonsterActivateAbilityEvent.MonsterUid
+  nameWithType: DefenseMonsterActivateAbilityEvent.MonsterUid
 - uid: MyProject.DefenseGame.Application.DefenseMonsterAttackEvent
   name: DefenseMonsterAttackEvent
   href: api-noname/MyProject.DefenseGame.Application.DefenseMonsterAttackEvent.html
@@ -4813,6 +4933,57 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Application.DefenseMonsterSpawnedEvent.Position
   nameWithType: DefenseMonsterSpawnedEvent.Position
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
+  name: DefensePlayerActivateAbilityEvent
+  href: api-noname/MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html
+  commentId: T:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent
+  nameWithType: DefensePlayerActivateAbilityEvent
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor(System.Int64,System.Collections.Generic.List{System.Int64},GameplayAbility)
+  name: DefensePlayerActivateAbilityEvent(long, List<long>, GameplayAbility)
+  href: api-noname/MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefensePlayerActivateAbilityEvent__ctor_System_Int64_System_Collections_Generic_List_System_Int64__GameplayAbility_
+  commentId: M:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor(System.Int64,System.Collections.Generic.List{System.Int64},GameplayAbility)
+  name.vb: New(Long, List(Of Long), GameplayAbility)
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.DefensePlayerActivateAbilityEvent(long, System.Collections.Generic.List<long>, GameplayAbility)
+  fullName.vb: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.New(Long, System.Collections.Generic.List(Of Long), GameplayAbility)
+  nameWithType: DefensePlayerActivateAbilityEvent.DefensePlayerActivateAbilityEvent(long, List<long>, GameplayAbility)
+  nameWithType.vb: DefensePlayerActivateAbilityEvent.New(Long, List(Of Long), GameplayAbility)
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor*
+  name: DefensePlayerActivateAbilityEvent
+  href: api-noname/MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefensePlayerActivateAbilityEvent__ctor_
+  commentId: Overload:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.DefensePlayerActivateAbilityEvent
+  fullName.vb: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.New
+  nameWithType: DefensePlayerActivateAbilityEvent.DefensePlayerActivateAbilityEvent
+  nameWithType.vb: DefensePlayerActivateAbilityEvent.New
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability
+  name: Ability
+  href: api-noname/MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefensePlayerActivateAbilityEvent_Ability
+  commentId: P:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability
+  nameWithType: DefensePlayerActivateAbilityEvent.Ability
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability*
+  name: Ability
+  href: api-noname/MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefensePlayerActivateAbilityEvent_Ability_
+  commentId: Overload:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.Ability
+  nameWithType: DefensePlayerActivateAbilityEvent.Ability
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids
+  name: TargetUids
+  href: api-noname/MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefensePlayerActivateAbilityEvent_TargetUids
+  commentId: P:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids
+  nameWithType: DefensePlayerActivateAbilityEvent.TargetUids
+- uid: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids*
+  name: TargetUids
+  href: api-noname/MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.html#MyProject_DefenseGame_Application_DefensePlayerActivateAbilityEvent_TargetUids_
+  commentId: Overload:MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Application.DefensePlayerActivateAbilityEvent.TargetUids
+  nameWithType: DefensePlayerActivateAbilityEvent.TargetUids
 - uid: MyProject.DefenseGame.Application.DefensePlayerAttackEvent
   name: DefensePlayerAttackEvent
   href: api-noname/MyProject.DefenseGame.Application.DefensePlayerAttackEvent.html
@@ -4964,15 +5135,15 @@ references:
   commentId: T:MyProject.DefenseGame.Application.DefenseSpawnModule
   fullName: MyProject.DefenseGame.Application.DefenseSpawnModule
   nameWithType: DefenseSpawnModule
-- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent})
-  name: DefenseSpawnModule(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action<DefenseHostEvent>)
-  href: api-noname/MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule__ctor_MyProject_DefenseGame_Application_DefenseHostState_MyProject_DefenseGame_Domain_DefenseHostConfig_MyProject_DefenseGame_Application_DefenseEntityFactory_System_Action_MyProject_DefenseGame_Application_DefenseHostEvent__
-  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent})
-  name.vb: New(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action(Of DefenseHostEvent))
-  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.DefenseSpawnModule(MyProject.DefenseGame.Application.DefenseHostState, MyProject.DefenseGame.Domain.DefenseHostConfig, MyProject.DefenseGame.Application.DefenseEntityFactory, System.Action<MyProject.DefenseGame.Application.DefenseHostEvent>)
-  fullName.vb: MyProject.DefenseGame.Application.DefenseSpawnModule.New(MyProject.DefenseGame.Application.DefenseHostState, MyProject.DefenseGame.Domain.DefenseHostConfig, MyProject.DefenseGame.Application.DefenseEntityFactory, System.Action(Of MyProject.DefenseGame.Application.DefenseHostEvent))
-  nameWithType: DefenseSpawnModule.DefenseSpawnModule(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action<DefenseHostEvent>)
-  nameWithType.vb: DefenseSpawnModule.New(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action(Of DefenseHostEvent))
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent},MyProject.DefenseGame.Domain.IAIFlagChecker)
+  name: DefenseSpawnModule(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action<DefenseHostEvent>, IAIFlagChecker)
+  href: api-noname/MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule__ctor_MyProject_DefenseGame_Application_DefenseHostState_MyProject_DefenseGame_Domain_DefenseHostConfig_MyProject_DefenseGame_Application_DefenseEntityFactory_System_Action_MyProject_DefenseGame_Application_DefenseHostEvent__MyProject_DefenseGame_Domain_IAIFlagChecker_
+  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor(MyProject.DefenseGame.Application.DefenseHostState,MyProject.DefenseGame.Domain.DefenseHostConfig,MyProject.DefenseGame.Application.DefenseEntityFactory,System.Action{MyProject.DefenseGame.Application.DefenseHostEvent},MyProject.DefenseGame.Domain.IAIFlagChecker)
+  name.vb: New(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action(Of DefenseHostEvent), IAIFlagChecker)
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.DefenseSpawnModule(MyProject.DefenseGame.Application.DefenseHostState, MyProject.DefenseGame.Domain.DefenseHostConfig, MyProject.DefenseGame.Application.DefenseEntityFactory, System.Action<MyProject.DefenseGame.Application.DefenseHostEvent>, MyProject.DefenseGame.Domain.IAIFlagChecker)
+  fullName.vb: MyProject.DefenseGame.Application.DefenseSpawnModule.New(MyProject.DefenseGame.Application.DefenseHostState, MyProject.DefenseGame.Domain.DefenseHostConfig, MyProject.DefenseGame.Application.DefenseEntityFactory, System.Action(Of MyProject.DefenseGame.Application.DefenseHostEvent), MyProject.DefenseGame.Domain.IAIFlagChecker)
+  nameWithType: DefenseSpawnModule.DefenseSpawnModule(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action<DefenseHostEvent>, IAIFlagChecker)
+  nameWithType.vb: DefenseSpawnModule.New(DefenseHostState, DefenseHostConfig, DefenseEntityFactory, Action(Of DefenseHostEvent), IAIFlagChecker)
 - uid: MyProject.DefenseGame.Application.DefenseSpawnModule.#ctor*
   name: DefenseSpawnModule
   href: api-noname/MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule__ctor_
@@ -4983,12 +5154,12 @@ references:
   fullName.vb: MyProject.DefenseGame.Application.DefenseSpawnModule.New
   nameWithType: DefenseSpawnModule.DefenseSpawnModule
   nameWithType.vb: DefenseSpawnModule.New
-- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
-  name: Initialize()
-  href: api-noname/MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule_Initialize
-  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize
-  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize()
-  nameWithType: DefenseSpawnModule.Initialize()
+- uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
+  name: Initialize(TargetContext)
+  href: api-noname/MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule_Initialize_TargetContext_
+  commentId: M:MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
+  fullName: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize(TargetContext)
+  nameWithType: DefenseSpawnModule.Initialize(TargetContext)
 - uid: MyProject.DefenseGame.Application.DefenseSpawnModule.Initialize*
   name: Initialize
   href: api-noname/MyProject.DefenseGame.Application.DefenseSpawnModule.html#MyProject_DefenseGame_Application_DefenseSpawnModule_Initialize_
@@ -5084,12 +5255,73 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Domain.AI.IDefenseAI.Update
   nameWithType: IDefenseAI.Update
+- uid: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
+  name: MonsterAutoBattleAI
+  href: api-noname/MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.html
+  commentId: T:MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
+  fullName: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI
+  nameWithType: MonsterAutoBattleAI
+- uid: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.Checker
+  name: Checker
+  href: api-noname/MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.html#MyProject_DefenseGame_Domain_AI_MonsterAutoBattleAI_Checker
+  commentId: P:MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.Checker
+  fullName: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.Checker
+  nameWithType: MonsterAutoBattleAI.Checker
+- uid: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.Checker*
+  name: Checker
+  href: api-noname/MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.html#MyProject_DefenseGame_Domain_AI_MonsterAutoBattleAI_Checker_
+  commentId: Overload:MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.Checker
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.Checker
+  nameWithType: MonsterAutoBattleAI.Checker
+- uid: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.TargetContext
+  name: TargetContext
+  href: api-noname/MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.html#MyProject_DefenseGame_Domain_AI_MonsterAutoBattleAI_TargetContext
+  commentId: P:MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.TargetContext
+  fullName: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.TargetContext
+  nameWithType: MonsterAutoBattleAI.TargetContext
+- uid: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.TargetContext*
+  name: TargetContext
+  href: api-noname/MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.html#MyProject_DefenseGame_Domain_AI_MonsterAutoBattleAI_TargetContext_
+  commentId: Overload:MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.TargetContext
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.TargetContext
+  nameWithType: MonsterAutoBattleAI.TargetContext
+- uid: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.Update(MyProject.DefenseGame.Domain.DefenseEntity,System.Single)
+  name: Update(DefenseEntity, float)
+  href: api-noname/MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.html#MyProject_DefenseGame_Domain_AI_MonsterAutoBattleAI_Update_MyProject_DefenseGame_Domain_DefenseEntity_System_Single_
+  commentId: M:MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.Update(MyProject.DefenseGame.Domain.DefenseEntity,System.Single)
+  name.vb: Update(DefenseEntity, Single)
+  fullName: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.Update(MyProject.DefenseGame.Domain.DefenseEntity, float)
+  fullName.vb: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.Update(MyProject.DefenseGame.Domain.DefenseEntity, Single)
+  nameWithType: MonsterAutoBattleAI.Update(DefenseEntity, float)
+  nameWithType.vb: MonsterAutoBattleAI.Update(DefenseEntity, Single)
+- uid: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.Update*
+  name: Update
+  href: api-noname/MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.html#MyProject_DefenseGame_Domain_AI_MonsterAutoBattleAI_Update_
+  commentId: Overload:MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.Update
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Domain.AI.MonsterAutoBattleAI.Update
+  nameWithType: MonsterAutoBattleAI.Update
 - uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
   name: PlayerAutoBattleAI
   href: api-noname/MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.html
   commentId: T:MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
   fullName: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI
   nameWithType: PlayerAutoBattleAI
+- uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
+  name: Checker
+  href: api-noname/MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.html#MyProject_DefenseGame_Domain_AI_PlayerAutoBattleAI_Checker
+  commentId: P:MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
+  fullName: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
+  nameWithType: PlayerAutoBattleAI.Checker
+- uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker*
+  name: Checker
+  href: api-noname/MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.html#MyProject_DefenseGame_Domain_AI_PlayerAutoBattleAI_Checker_
+  commentId: Overload:MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.Checker
+  nameWithType: PlayerAutoBattleAI.Checker
 - uid: MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.TargetContext
   name: TargetContext
   href: api-noname/MyProject.DefenseGame.Domain.AI.PlayerAutoBattleAI.html#MyProject_DefenseGame_Domain_AI_PlayerAutoBattleAI_TargetContext
@@ -5314,6 +5546,19 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.CollectDeadMonsters
   nameWithType: DefenseCombatState.CollectDeadMonsters
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.Dispose
+  name: Dispose()
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_Dispose
+  commentId: M:MyProject.DefenseGame.Domain.DefenseCombatState.Dispose
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.Dispose()
+  nameWithType: DefenseCombatState.Dispose()
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.Dispose*
+  name: Dispose
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_Dispose_
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.Dispose
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.Dispose
+  nameWithType: DefenseCombatState.Dispose
 - uid: MyProject.DefenseGame.Domain.DefenseCombatState.ElapsedTime
   name: ElapsedTime
   href: api-noname/MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_ElapsedTime
@@ -5340,6 +5585,22 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Domain.DefenseCombatState.GetAliveMonsters
   nameWithType: DefenseCombatState.GetAliveMonsters
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster(System.Int64)
+  name: GetMonster(long)
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_GetMonster_System_Int64_
+  commentId: M:MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster(System.Int64)
+  name.vb: GetMonster(Long)
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster(long)
+  fullName.vb: MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster(Long)
+  nameWithType: DefenseCombatState.GetMonster(long)
+  nameWithType.vb: DefenseCombatState.GetMonster(Long)
+- uid: MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster*
+  name: GetMonster
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_GetMonster_
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Domain.DefenseCombatState.GetMonster
+  nameWithType: DefenseCombatState.GetMonster
 - uid: MyProject.DefenseGame.Domain.DefenseCombatState.IsDefeat
   name: IsDefeat
   href: api-noname/MyProject.DefenseGame.Domain.DefenseCombatState.html#MyProject_DefenseGame_Domain_DefenseCombatState_IsDefeat
@@ -5459,6 +5720,32 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Domain.DefenseEntity.ASC
   nameWithType: DefenseEntity.ASC
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck
+  name: ConsumeASCRecheck()
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_ConsumeASCRecheck
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck()
+  nameWithType: DefenseEntity.ConsumeASCRecheck()
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck*
+  name: ConsumeASCRecheck
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_ConsumeASCRecheck_
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.ConsumeASCRecheck
+  nameWithType: DefenseEntity.ConsumeASCRecheck
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.Dispose
+  name: Dispose()
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_Dispose
+  commentId: M:MyProject.DefenseGame.Domain.DefenseEntity.Dispose
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.Dispose()
+  nameWithType: DefenseEntity.Dispose()
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.Dispose*
+  name: Dispose
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_Dispose_
+  commentId: Overload:MyProject.DefenseGame.Domain.DefenseEntity.Dispose
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.Dispose
+  nameWithType: DefenseEntity.Dispose
 - uid: MyProject.DefenseGame.Domain.DefenseEntity.GetAttack
   name: GetAttack()
   href: api-noname/MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_GetAttack
@@ -5566,6 +5853,12 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Domain.DefenseEntity.IsDead
   nameWithType: DefenseEntity.IsDead
+- uid: MyProject.DefenseGame.Domain.DefenseEntity.OnActivateAbility
+  name: OnActivateAbility
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_OnActivateAbility
+  commentId: E:MyProject.DefenseGame.Domain.DefenseEntity.OnActivateAbility
+  fullName: MyProject.DefenseGame.Domain.DefenseEntity.OnActivateAbility
+  nameWithType: DefenseEntity.OnActivateAbility
 - uid: MyProject.DefenseGame.Domain.DefenseEntity.Position
   name: Position
   href: api-noname/MyProject.DefenseGame.Domain.DefenseEntity.html#MyProject_DefenseGame_Domain_DefenseEntity_Position
@@ -5643,12 +5936,6 @@ references:
   commentId: T:MyProject.DefenseGame.Domain.DefenseHostConfig
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig
   nameWithType: DefenseHostConfig
-- uid: MyProject.DefenseGame.Domain.DefenseHostConfig.AutoMode
-  name: AutoMode
-  href: api-noname/MyProject.DefenseGame.Domain.DefenseHostConfig.html#MyProject_DefenseGame_Domain_DefenseHostConfig_AutoMode
-  commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.AutoMode
-  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.AutoMode
-  nameWithType: DefenseHostConfig.AutoMode
 - uid: MyProject.DefenseGame.Domain.DefenseHostConfig.BaseSpawnInterval
   name: BaseSpawnInterval
   href: api-noname/MyProject.DefenseGame.Domain.DefenseHostConfig.html#MyProject_DefenseGame_Domain_DefenseHostConfig_BaseSpawnInterval
@@ -5685,6 +5972,12 @@ references:
   commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.BossSpawnInterval
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.BossSpawnInterval
   nameWithType: DefenseHostConfig.BossSpawnInterval
+- uid: MyProject.DefenseGame.Domain.DefenseHostConfig.InvincibleMode
+  name: InvincibleMode
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseHostConfig.html#MyProject_DefenseGame_Domain_DefenseHostConfig_InvincibleMode
+  commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.InvincibleMode
+  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.InvincibleMode
+  nameWithType: DefenseHostConfig.InvincibleMode
 - uid: MyProject.DefenseGame.Domain.DefenseHostConfig.MaxMonsterCount
   name: MaxMonsterCount
   href: api-noname/MyProject.DefenseGame.Domain.DefenseHostConfig.html#MyProject_DefenseGame_Domain_DefenseHostConfig_MaxMonsterCount
@@ -5709,6 +6002,12 @@ references:
   commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAttack
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAttack
   nameWithType: DefenseHostConfig.NormalMonsterAttack
+- uid: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAttackSpeed
+  name: NormalMonsterAttackSpeed
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseHostConfig.html#MyProject_DefenseGame_Domain_DefenseHostConfig_NormalMonsterAttackSpeed
+  commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAttackSpeed
+  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterAttackSpeed
+  nameWithType: DefenseHostConfig.NormalMonsterAttackSpeed
 - uid: MyProject.DefenseGame.Domain.DefenseHostConfig.NormalMonsterDefense
   name: NormalMonsterDefense
   href: api-noname/MyProject.DefenseGame.Domain.DefenseHostConfig.html#MyProject_DefenseGame_Domain_DefenseHostConfig_NormalMonsterDefense
@@ -5745,6 +6044,12 @@ references:
   commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackPower
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackPower
   nameWithType: DefenseHostConfig.PlayerAttackPower
+- uid: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackSpeed
+  name: PlayerAttackSpeed
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseHostConfig.html#MyProject_DefenseGame_Domain_DefenseHostConfig_PlayerAttackSpeed
+  commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackSpeed
+  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerAttackSpeed
+  nameWithType: DefenseHostConfig.PlayerAttackSpeed
 - uid: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerDefense
   name: PlayerDefense
   href: api-noname/MyProject.DefenseGame.Domain.DefenseHostConfig.html#MyProject_DefenseGame_Domain_DefenseHostConfig_PlayerDefense
@@ -5763,6 +6068,12 @@ references:
   commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerSpawnPosition
   fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerSpawnPosition
   nameWithType: DefenseHostConfig.PlayerSpawnPosition
+- uid: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerTags
+  name: PlayerTags
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseHostConfig.html#MyProject_DefenseGame_Domain_DefenseHostConfig_PlayerTags
+  commentId: F:MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerTags
+  fullName: MyProject.DefenseGame.Domain.DefenseHostConfig.PlayerTags
+  nameWithType: DefenseHostConfig.PlayerTags
 - uid: MyProject.DefenseGame.Domain.DefenseHostConfig.SpawnRateIncreaseInterval
   name: SpawnRateIncreaseInterval
   href: api-noname/MyProject.DefenseGame.Domain.DefenseHostConfig.html#MyProject_DefenseGame_Domain_DefenseHostConfig_SpawnRateIncreaseInterval
@@ -5960,12 +6271,6 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Domain.DefensePlayer.Name
   nameWithType: DefensePlayer.Name
-- uid: MyProject.DefenseGame.Domain.DefensePlayer.OnAttack
-  name: OnAttack
-  href: api-noname/MyProject.DefenseGame.Domain.DefensePlayer.html#MyProject_DefenseGame_Domain_DefensePlayer_OnAttack
-  commentId: E:MyProject.DefenseGame.Domain.DefensePlayer.OnAttack
-  fullName: MyProject.DefenseGame.Domain.DefensePlayer.OnAttack
-  nameWithType: DefensePlayer.OnAttack
 - uid: MyProject.DefenseGame.Domain.DefensePlayer.OnLevelUp
   name: OnLevelUp
   href: api-noname/MyProject.DefenseGame.Domain.DefensePlayer.html#MyProject_DefenseGame_Domain_DefensePlayer_OnLevelUp
@@ -6013,42 +6318,30 @@ references:
   commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttack
   fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttack
   nameWithType: DefenseTags.Ability_AreaAttack
+- uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttackTargetUp
+  name: Ability_AreaAttackTargetUp
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseTags.html#MyProject_DefenseGame_Domain_DefenseTags_Ability_AreaAttackTargetUp
+  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttackTargetUp
+  fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_AreaAttackTargetUp
+  nameWithType: DefenseTags.Ability_AreaAttackTargetUp
+- uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_AttackSpeedUp
+  name: Ability_AttackSpeedUp
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseTags.html#MyProject_DefenseGame_Domain_DefenseTags_Ability_AttackSpeedUp
+  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_AttackSpeedUp
+  fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_AttackSpeedUp
+  nameWithType: DefenseTags.Ability_AttackSpeedUp
 - uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_BasicAttack
   name: Ability_BasicAttack
   href: api-noname/MyProject.DefenseGame.Domain.DefenseTags.html#MyProject_DefenseGame_Domain_DefenseTags_Ability_BasicAttack
   commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_BasicAttack
   fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_BasicAttack
   nameWithType: DefenseTags.Ability_BasicAttack
-- uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_LifeStealOnKill
-  name: Ability_LifeStealOnKill
-  href: api-noname/MyProject.DefenseGame.Domain.DefenseTags.html#MyProject_DefenseGame_Domain_DefenseTags_Ability_LifeStealOnKill
-  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_LifeStealOnKill
-  fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_LifeStealOnKill
-  nameWithType: DefenseTags.Ability_LifeStealOnKill
-- uid: MyProject.DefenseGame.Domain.DefenseTags.Buff_AreaAttackTargetUp
-  name: Buff_AreaAttackTargetUp
-  href: api-noname/MyProject.DefenseGame.Domain.DefenseTags.html#MyProject_DefenseGame_Domain_DefenseTags_Buff_AreaAttackTargetUp
-  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Buff_AreaAttackTargetUp
-  fullName: MyProject.DefenseGame.Domain.DefenseTags.Buff_AreaAttackTargetUp
-  nameWithType: DefenseTags.Buff_AreaAttackTargetUp
-- uid: MyProject.DefenseGame.Domain.DefenseTags.Buff_AttackSpeedUp
-  name: Buff_AttackSpeedUp
-  href: api-noname/MyProject.DefenseGame.Domain.DefenseTags.html#MyProject_DefenseGame_Domain_DefenseTags_Buff_AttackSpeedUp
-  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Buff_AttackSpeedUp
-  fullName: MyProject.DefenseGame.Domain.DefenseTags.Buff_AttackSpeedUp
-  nameWithType: DefenseTags.Buff_AttackSpeedUp
-- uid: MyProject.DefenseGame.Domain.DefenseTags.Buff_ExpGainUp
-  name: Buff_ExpGainUp
-  href: api-noname/MyProject.DefenseGame.Domain.DefenseTags.html#MyProject_DefenseGame_Domain_DefenseTags_Buff_ExpGainUp
-  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Buff_ExpGainUp
-  fullName: MyProject.DefenseGame.Domain.DefenseTags.Buff_ExpGainUp
-  nameWithType: DefenseTags.Buff_ExpGainUp
-- uid: MyProject.DefenseGame.Domain.DefenseTags.Buff_LifeStealAmountUp
-  name: Buff_LifeStealAmountUp
-  href: api-noname/MyProject.DefenseGame.Domain.DefenseTags.html#MyProject_DefenseGame_Domain_DefenseTags_Buff_LifeStealAmountUp
-  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Buff_LifeStealAmountUp
-  fullName: MyProject.DefenseGame.Domain.DefenseTags.Buff_LifeStealAmountUp
-  nameWithType: DefenseTags.Buff_LifeStealAmountUp
+- uid: MyProject.DefenseGame.Domain.DefenseTags.Ability_FullHealthRestore
+  name: Ability_FullHealthRestore
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseTags.html#MyProject_DefenseGame_Domain_DefenseTags_Ability_FullHealthRestore
+  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Ability_FullHealthRestore
+  fullName: MyProject.DefenseGame.Domain.DefenseTags.Ability_FullHealthRestore
+  nameWithType: DefenseTags.Ability_FullHealthRestore
 - uid: MyProject.DefenseGame.Domain.DefenseTags.Cooldown_AreaAttack
   name: Cooldown_AreaAttack
   href: api-noname/MyProject.DefenseGame.Domain.DefenseTags.html#MyProject_DefenseGame_Domain_DefenseTags_Cooldown_AreaAttack
@@ -6061,6 +6354,31 @@ references:
   commentId: F:MyProject.DefenseGame.Domain.DefenseTags.Cooldown_BasicAttack
   fullName: MyProject.DefenseGame.Domain.DefenseTags.Cooldown_BasicAttack
   nameWithType: DefenseTags.Cooldown_BasicAttack
+- uid: MyProject.DefenseGame.Domain.DefenseTags.State_Invincible
+  name: State_Invincible
+  href: api-noname/MyProject.DefenseGame.Domain.DefenseTags.html#MyProject_DefenseGame_Domain_DefenseTags_State_Invincible
+  commentId: F:MyProject.DefenseGame.Domain.DefenseTags.State_Invincible
+  fullName: MyProject.DefenseGame.Domain.DefenseTags.State_Invincible
+  nameWithType: DefenseTags.State_Invincible
+- uid: MyProject.DefenseGame.Domain.IAIFlagChecker
+  name: IAIFlagChecker
+  href: api-noname/MyProject.DefenseGame.Domain.IAIFlagChecker.html
+  commentId: T:MyProject.DefenseGame.Domain.IAIFlagChecker
+  fullName: MyProject.DefenseGame.Domain.IAIFlagChecker
+  nameWithType: IAIFlagChecker
+- uid: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+  name: ConsumePlayerAIRecheck()
+  href: api-noname/MyProject.DefenseGame.Domain.IAIFlagChecker.html#MyProject_DefenseGame_Domain_IAIFlagChecker_ConsumePlayerAIRecheck
+  commentId: M:MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+  fullName: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck()
+  nameWithType: IAIFlagChecker.ConsumePlayerAIRecheck()
+- uid: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck*
+  name: ConsumePlayerAIRecheck
+  href: api-noname/MyProject.DefenseGame.Domain.IAIFlagChecker.html#MyProject_DefenseGame_Domain_IAIFlagChecker_ConsumePlayerAIRecheck_
+  commentId: Overload:MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Domain.IAIFlagChecker.ConsumePlayerAIRecheck
+  nameWithType: IAIFlagChecker.ConsumePlayerAIRecheck
 - uid: MyProject.DefenseGame.Domain.IAbilitySystemOwner
   name: IAbilitySystemOwner
   href: api-noname/MyProject.DefenseGame.Domain.IAbilitySystemOwner.html
@@ -6092,15 +6410,15 @@ references:
   commentId: T:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition
   nameWithType: LevelUpAbilityDefinition
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String,System.String,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer})
-  name: LevelUpAbilityDefinition(LevelUpAbilityId, string, string, LevelUpAbilityId, bool, Action<DefensePlayer>)
-  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__ctor_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_System_String_System_String_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_System_Boolean_System_Action_MyProject_DefenseGame_Domain_DefensePlayer__
-  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.String,System.String,MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer})
-  name.vb: New(LevelUpAbilityId, String, String, LevelUpAbilityId, Boolean, Action(Of DefensePlayer))
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.LevelUpAbilityDefinition(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, string, string, MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, bool, System.Action<MyProject.DefenseGame.Domain.DefensePlayer>)
-  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.New(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, String, String, MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId, Boolean, System.Action(Of MyProject.DefenseGame.Domain.DefensePlayer))
-  nameWithType: LevelUpAbilityDefinition.LevelUpAbilityDefinition(LevelUpAbilityId, string, string, LevelUpAbilityId, bool, Action<DefensePlayer>)
-  nameWithType.vb: LevelUpAbilityDefinition.New(LevelUpAbilityId, String, String, LevelUpAbilityId, Boolean, Action(Of DefensePlayer))
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(FGameplayTag,System.String,System.String,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer},FGameplayTag)
+  name: LevelUpAbilityDefinition(FGameplayTag, string, string, bool, Action<DefensePlayer>, FGameplayTag)
+  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__ctor_FGameplayTag_System_String_System_String_System_Boolean_System_Action_MyProject_DefenseGame_Domain_DefensePlayer__FGameplayTag_
+  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor(FGameplayTag,System.String,System.String,System.Boolean,System.Action{MyProject.DefenseGame.Domain.DefensePlayer},FGameplayTag)
+  name.vb: New(FGameplayTag, String, String, Boolean, Action(Of DefensePlayer), FGameplayTag)
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.LevelUpAbilityDefinition(FGameplayTag, string, string, bool, System.Action<MyProject.DefenseGame.Domain.DefensePlayer>, FGameplayTag)
+  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.New(FGameplayTag, String, String, Boolean, System.Action(Of MyProject.DefenseGame.Domain.DefensePlayer), FGameplayTag)
+  nameWithType: LevelUpAbilityDefinition.LevelUpAbilityDefinition(FGameplayTag, string, string, bool, Action<DefensePlayer>, FGameplayTag)
+  nameWithType.vb: LevelUpAbilityDefinition.New(FGameplayTag, String, String, Boolean, Action(Of DefensePlayer), FGameplayTag)
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.#ctor*
   name: LevelUpAbilityDefinition
   href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__ctor_
@@ -6111,6 +6429,19 @@ references:
   fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.New
   nameWithType: LevelUpAbilityDefinition.LevelUpAbilityDefinition
   nameWithType.vb: LevelUpAbilityDefinition.New
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag
+  name: AbilityTag
+  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_AbilityTag
+  commentId: P:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag
+  nameWithType: LevelUpAbilityDefinition.AbilityTag
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag*
+  name: AbilityTag
+  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_AbilityTag_
+  commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.AbilityTag
+  nameWithType: LevelUpAbilityDefinition.AbilityTag
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.ApplyAction
   name: ApplyAction
   href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_ApplyAction
@@ -6150,19 +6481,6 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.DisplayName
   nameWithType: LevelUpAbilityDefinition.DisplayName
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id
-  name: Id
-  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_Id
-  commentId: P:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id
-  nameWithType: LevelUpAbilityDefinition.Id
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id*
-  name: Id
-  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_Id_
-  commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id
-  isSpec: "True"
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.Id
-  nameWithType: LevelUpAbilityDefinition.Id
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.IsStackable
   name: IsStackable
   href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_IsStackable
@@ -6176,19 +6494,19 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.IsStackable
   nameWithType: LevelUpAbilityDefinition.IsStackable
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId
-  name: PrerequisiteId
-  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_PrerequisiteId
-  commentId: P:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId
-  nameWithType: LevelUpAbilityDefinition.PrerequisiteId
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId*
-  name: PrerequisiteId
-  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_PrerequisiteId_
-  commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag
+  name: PrerequisiteTag
+  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_PrerequisiteTag
+  commentId: P:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag
+  nameWithType: LevelUpAbilityDefinition.PrerequisiteTag
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag*
+  name: PrerequisiteTag
+  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition_PrerequisiteTag_
+  commentId: Overload:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag
   isSpec: "True"
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteId
-  nameWithType: LevelUpAbilityDefinition.PrerequisiteId
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition.PrerequisiteTag
+  nameWithType: LevelUpAbilityDefinition.PrerequisiteTag
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId
   name: LevelUpAbilityId
   href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html
@@ -6213,30 +6531,12 @@ references:
   commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AttackSpeedUp
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.AttackSpeedUp
   nameWithType: LevelUpAbilityId.AttackSpeedUp
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.ExpGainUp
-  name: ExpGainUp
-  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_ExpGainUp
-  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.ExpGainUp
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.ExpGainUp
-  nameWithType: LevelUpAbilityId.ExpGainUp
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.FullHealthRestore
   name: FullHealthRestore
   href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_FullHealthRestore
   commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.FullHealthRestore
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.FullHealthRestore
   nameWithType: LevelUpAbilityId.FullHealthRestore
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealAmountUp
-  name: LifeStealAmountUp
-  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_LifeStealAmountUp
-  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealAmountUp
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealAmountUp
-  nameWithType: LevelUpAbilityId.LifeStealAmountUp
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealOnKill
-  name: LifeStealOnKill
-  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_LifeStealOnKill
-  commentId: F:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealOnKill
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.LifeStealOnKill
-  nameWithType: LevelUpAbilityId.LifeStealOnKill
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.None
   name: None
   href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_None
@@ -6268,12 +6568,12 @@ references:
   fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.New
   nameWithType: LevelUpAbilityRegistry.LevelUpAbilityRegistry
   nameWithType.vb: LevelUpAbilityRegistry.New
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
-  name: GetDefinition(LevelUpAbilityId)
-  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetDefinition_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId_
-  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId)
-  nameWithType: LevelUpAbilityRegistry.GetDefinition(LevelUpAbilityId)
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(FGameplayTag)
+  name: GetDefinition(FGameplayTag)
+  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetDefinition_FGameplayTag_
+  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(FGameplayTag)
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition(FGameplayTag)
+  nameWithType: LevelUpAbilityRegistry.GetDefinition(FGameplayTag)
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition*
   name: GetDefinition
   href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetDefinition_
@@ -6281,15 +6581,15 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetDefinition
   nameWithType: LevelUpAbilityRegistry.GetDefinition
-- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
-  name: GetRandomAvailableAbilities(DefensePlayer, HashSet<LevelUpAbilityId>, int, List<LevelUpAbilityDefinition>)
-  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetRandomAvailableAbilities_MyProject_DefenseGame_Domain_DefensePlayer_System_Collections_Generic_HashSet_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityId__System_Int32_System_Collections_Generic_List_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__
-  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
-  name.vb: GetRandomAvailableAbilities(DefensePlayer, HashSet(Of LevelUpAbilityId), Integer, List(Of LevelUpAbilityDefinition))
-  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId>, int, System.Collections.Generic.List<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>)
-  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityId), Integer, System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition))
-  nameWithType: LevelUpAbilityRegistry.GetRandomAvailableAbilities(DefensePlayer, HashSet<LevelUpAbilityId>, int, List<LevelUpAbilityDefinition>)
-  nameWithType.vb: LevelUpAbilityRegistry.GetRandomAvailableAbilities(DefensePlayer, HashSet(Of LevelUpAbilityId), Integer, List(Of LevelUpAbilityDefinition))
+- uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  name: GetRandomAvailableAbilities(DefensePlayer, HashSet<FGameplayTag>, int, List<LevelUpAbilityDefinition>)
+  href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetRandomAvailableAbilities_MyProject_DefenseGame_Domain_DefensePlayer_System_Collections_Generic_HashSet_FGameplayTag__System_Int32_System_Collections_Generic_List_MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityDefinition__
+  commentId: M:MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer,System.Collections.Generic.HashSet{FGameplayTag},System.Int32,System.Collections.Generic.List{MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition})
+  name.vb: GetRandomAvailableAbilities(DefensePlayer, HashSet(Of FGameplayTag), Integer, List(Of LevelUpAbilityDefinition))
+  fullName: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet<FGameplayTag>, int, System.Collections.Generic.List<MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition>)
+  fullName.vb: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities(MyProject.DefenseGame.Domain.DefensePlayer, System.Collections.Generic.HashSet(Of FGameplayTag), Integer, System.Collections.Generic.List(Of MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityDefinition))
+  nameWithType: LevelUpAbilityRegistry.GetRandomAvailableAbilities(DefensePlayer, HashSet<FGameplayTag>, int, List<LevelUpAbilityDefinition>)
+  nameWithType.vb: LevelUpAbilityRegistry.GetRandomAvailableAbilities(DefensePlayer, HashSet(Of FGameplayTag), Integer, List(Of LevelUpAbilityDefinition))
 - uid: MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.GetRandomAvailableAbilities*
   name: GetRandomAvailableAbilities
   href: api-noname/MyProject.DefenseGame.Domain.LevelUp.LevelUpAbilityRegistry.html#MyProject_DefenseGame_Domain_LevelUp_LevelUpAbilityRegistry_GetRandomAvailableAbilities_
@@ -6372,6 +6672,19 @@ references:
   isSpec: "True"
   fullName: MyProject.DefenseGame.Presentation.DefenseGameMode.OnInitialize
   nameWithType: DefenseGameMode.OnInitialize
+- uid: MyProject.DefenseGame.Presentation.DefenseGameMode.Update
+  name: Update()
+  href: api-noname/MyProject.DefenseGame.Presentation.DefenseGameMode.html#MyProject_DefenseGame_Presentation_DefenseGameMode_Update
+  commentId: M:MyProject.DefenseGame.Presentation.DefenseGameMode.Update
+  fullName: MyProject.DefenseGame.Presentation.DefenseGameMode.Update()
+  nameWithType: DefenseGameMode.Update()
+- uid: MyProject.DefenseGame.Presentation.DefenseGameMode.Update*
+  name: Update
+  href: api-noname/MyProject.DefenseGame.Presentation.DefenseGameMode.html#MyProject_DefenseGame_Presentation_DefenseGameMode_Update_
+  commentId: Overload:MyProject.DefenseGame.Presentation.DefenseGameMode.Update
+  isSpec: "True"
+  fullName: MyProject.DefenseGame.Presentation.DefenseGameMode.Update
+  nameWithType: DefenseGameMode.Update
 - uid: MyProject.ExploreGame.Application
   name: MyProject.ExploreGame.Application
   href: api-noname/MyProject.ExploreGame.Application.html
@@ -12347,19 +12660,19 @@ references:
   isSpec: "True"
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.CollectExpiredEffects
   nameWithType: AbilitySystemComponent.CollectExpiredEffects
-- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged
-  name: ConsumeTagsChanged()
-  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_ConsumeTagsChanged
-  commentId: M:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged
-  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged()
-  nameWithType: AbilitySystemComponent.ConsumeTagsChanged()
-- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged*
-  name: ConsumeTagsChanged
-  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_ConsumeTagsChanged_
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose
+  name: Dispose()
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Dispose
+  commentId: M:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose()
+  nameWithType: AbilitySystemComponent.Dispose()
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose*
+  name: Dispose
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Dispose_
+  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose
   isSpec: "True"
-  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.ConsumeTagsChanged
-  nameWithType: AbilitySystemComponent.ConsumeTagsChanged
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Dispose
+  nameWithType: AbilitySystemComponent.Dispose
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Get(Noname.GameAbilitySystem.Domain.AttributeId)
   name: Get(AttributeId)
   href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Get_Noname_GameAbilitySystem_Domain_AttributeId_
@@ -12463,6 +12776,24 @@ references:
   isSpec: "True"
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.HandleGameplayTagEvent
   nameWithType: AbilitySystemComponent.HandleGameplayTagEvent
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnActivateAbility
+  name: OnActivateAbility
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_OnActivateAbility
+  commentId: E:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnActivateAbility
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnActivateAbility
+  nameWithType: AbilitySystemComponent.OnActivateAbility
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnAddedAbility
+  name: OnAddedAbility
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_OnAddedAbility
+  commentId: E:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnAddedAbility
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnAddedAbility
+  nameWithType: AbilitySystemComponent.OnAddedAbility
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnChangedTags
+  name: OnChangedTags
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_OnChangedTags
+  commentId: E:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnChangedTags
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OnChangedTags
+  nameWithType: AbilitySystemComponent.OnChangedTags
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OwnedTags
   name: OwnedTags
   href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_OwnedTags
@@ -12476,6 +12807,19 @@ references:
   isSpec: "True"
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.OwnedTags
   nameWithType: AbilitySystemComponent.OwnedTags
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner
+  name: Owner
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Owner
+  commentId: P:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner
+  nameWithType: AbilitySystemComponent.Owner
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner*
+  name: Owner
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Owner_
+  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner
+  isSpec: "True"
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Owner
+  nameWithType: AbilitySystemComponent.Owner
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.RemoveAbility(Noname.GameAbilitySystem.Domain.FGameplayAbilitySpecHandle)
   name: RemoveAbility(FGameplayAbilitySpecHandle)
   href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_RemoveAbility_Noname_GameAbilitySystem_Domain_FGameplayAbilitySpecHandle_
@@ -12575,6 +12919,19 @@ references:
   isSpec: "True"
   fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Set
   nameWithType: AbilitySystemComponent.Set
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner(Noname.GameAbilitySystem.Domain.IAbilitySystemOwner)
+  name: SetOwner(IAbilitySystemOwner)
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_SetOwner_Noname_GameAbilitySystem_Domain_IAbilitySystemOwner_
+  commentId: M:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner(Noname.GameAbilitySystem.Domain.IAbilitySystemOwner)
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner(Noname.GameAbilitySystem.Domain.IAbilitySystemOwner)
+  nameWithType: AbilitySystemComponent.SetOwner(IAbilitySystemOwner)
+- uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner*
+  name: SetOwner
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_SetOwner_
+  commentId: Overload:Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner
+  isSpec: "True"
+  fullName: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.SetOwner
+  nameWithType: AbilitySystemComponent.SetOwner
 - uid: Noname.GameAbilitySystem.Domain.AbilitySystemComponent.Tick(System.Single)
   name: Tick(float)
   href: api-plugin/Noname.GameAbilitySystem.Domain.AbilitySystemComponent.html#Noname_GameAbilitySystem_Domain_AbilitySystemComponent_Tick_System_Single_
@@ -12839,42 +13196,27 @@ references:
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
   name: AttackDamage
   href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_AttackDamage
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
-  nameWithType: AttributeId.AttackDamage
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage*
-  name: AttackDamage
-  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_AttackDamage_
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
-  isSpec: "True"
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackDamage
   nameWithType: AttributeId.AttackDamage
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
   name: AttackRange
   href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_AttackRange
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
-  nameWithType: AttributeId.AttackRange
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.AttackRange*
-  name: AttackRange
-  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_AttackRange_
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
-  isSpec: "True"
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackRange
   nameWithType: AttributeId.AttackRange
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
   name: AttackSpeed
   href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_AttackSpeed
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
   nameWithType: AttributeId.AttackSpeed
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed*
-  name: AttackSpeed
-  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_AttackSpeed_
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
-  isSpec: "True"
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.AttackSpeed
-  nameWithType: AttributeId.AttackSpeed
+- uid: Noname.GameAbilitySystem.Domain.AttributeId.Defense
+  name: Defense
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_Defense
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.Defense
+  fullName: Noname.GameAbilitySystem.Domain.AttributeId.Defense
+  nameWithType: AttributeId.Defense
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.Equals(System.Object)
   name: Equals(object)
   href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_Equals_System_Object_
@@ -12894,16 +13236,27 @@ references:
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.Exp
   name: Exp
   href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_Exp
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.Exp
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.Exp
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Exp
   nameWithType: AttributeId.Exp
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.Exp*
-  name: Exp
-  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_Exp_
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.Exp
-  isSpec: "True"
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.Exp
-  nameWithType: AttributeId.Exp
+- uid: Noname.GameAbilitySystem.Domain.AttributeId.ExpReward
+  name: ExpReward
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_ExpReward
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.ExpReward
+  fullName: Noname.GameAbilitySystem.Domain.AttributeId.ExpReward
+  nameWithType: AttributeId.ExpReward
+- uid: Noname.GameAbilitySystem.Domain.AttributeId.Experience
+  name: Experience
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_Experience
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.Experience
+  fullName: Noname.GameAbilitySystem.Domain.AttributeId.Experience
+  nameWithType: AttributeId.Experience
+- uid: Noname.GameAbilitySystem.Domain.AttributeId.ExtraTargetCount
+  name: ExtraTargetCount
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_ExtraTargetCount
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.ExtraTargetCount
+  fullName: Noname.GameAbilitySystem.Domain.AttributeId.ExtraTargetCount
+  nameWithType: AttributeId.ExtraTargetCount
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.GetHashCode
   name: GetHashCode()
   href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_GetHashCode
@@ -12920,66 +13273,37 @@ references:
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.Gold
   name: Gold
   href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_Gold
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.Gold
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.Gold
-  nameWithType: AttributeId.Gold
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.Gold*
-  name: Gold
-  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_Gold_
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.Gold
-  isSpec: "True"
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.Gold
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Gold
   nameWithType: AttributeId.Gold
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.Health
   name: Health
   href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_Health
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.Health
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.Health
-  nameWithType: AttributeId.Health
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.Health*
-  name: Health
-  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_Health_
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.Health
-  isSpec: "True"
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.Health
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.Health
   nameWithType: AttributeId.Health
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
   name: JumpSpeed
   href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_JumpSpeed
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
   nameWithType: AttributeId.JumpSpeed
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed*
-  name: JumpSpeed
-  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_JumpSpeed_
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
-  isSpec: "True"
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.JumpSpeed
-  nameWithType: AttributeId.JumpSpeed
+- uid: Noname.GameAbilitySystem.Domain.AttributeId.Level
+  name: Level
+  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_Level
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.Level
+  fullName: Noname.GameAbilitySystem.Domain.AttributeId.Level
+  nameWithType: AttributeId.Level
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
   name: MaxHealth
   href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_MaxHealth
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
-  nameWithType: AttributeId.MaxHealth
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth*
-  name: MaxHealth
-  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_MaxHealth_
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
-  isSpec: "True"
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.MaxHealth
   nameWithType: AttributeId.MaxHealth
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
   name: MoveSpeed
   href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_MoveSpeed
-  commentId: P:Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
-  fullName: Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
-  nameWithType: AttributeId.MoveSpeed
-- uid: Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed*
-  name: MoveSpeed
-  href: api-plugin/Noname.GameAbilitySystem.Domain.AttributeId.html#Noname_GameAbilitySystem_Domain_AttributeId_MoveSpeed_
-  commentId: Overload:Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
-  isSpec: "True"
+  commentId: F:Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
   fullName: Noname.GameAbilitySystem.Domain.AttributeId.MoveSpeed
   nameWithType: AttributeId.MoveSpeed
 - uid: Noname.GameAbilitySystem.Domain.AttributeId.Name
@@ -13295,6 +13619,28 @@ references:
   isSpec: "True"
   fullName: Noname.GameAbilitySystem.Domain.AttributeValue.MinValue
   nameWithType: AttributeValue.MinValue
+- uid: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy
+  name: BaseAttackCooldownDrationPlicy
+  href: api-plugin/Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.html
+  commentId: T:Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy
+  fullName: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy
+  nameWithType: BaseAttackCooldownDrationPlicy
+- uid: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,System.Single@)
+  name: CalculateDuration(AbilitySystemComponent, ref float)
+  href: api-plugin/Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.html#Noname_GameAbilitySystem_Domain_BaseAttackCooldownDrationPlicy_CalculateDuration_Noname_GameAbilitySystem_Domain_AbilitySystemComponent_System_Single__
+  commentId: M:Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,System.Single@)
+  name.vb: CalculateDuration(AbilitySystemComponent, Single)
+  fullName: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, ref float)
+  fullName.vb: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Single)
+  nameWithType: BaseAttackCooldownDrationPlicy.CalculateDuration(AbilitySystemComponent, ref float)
+  nameWithType.vb: BaseAttackCooldownDrationPlicy.CalculateDuration(AbilitySystemComponent, Single)
+- uid: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.CalculateDuration*
+  name: CalculateDuration
+  href: api-plugin/Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.html#Noname_GameAbilitySystem_Domain_BaseAttackCooldownDrationPlicy_CalculateDuration_
+  commentId: Overload:Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.CalculateDuration
+  isSpec: "True"
+  fullName: Noname.GameAbilitySystem.Domain.BaseAttackCooldownDrationPlicy.CalculateDuration
+  nameWithType: BaseAttackCooldownDrationPlicy.CalculateDuration
 - uid: Noname.GameAbilitySystem.Domain.EffectDurationType
   name: EffectDurationType
   href: api-plugin/Noname.GameAbilitySystem.Domain.EffectDurationType.html
@@ -13931,6 +14277,19 @@ references:
   isSpec: "True"
   fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.Duration
   nameWithType: GameplayEffect.Duration
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy
+  name: DurationPolicy
+  href: api-plugin/Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_DurationPolicy
+  commentId: P:Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy
+  nameWithType: GameplayEffect.DurationPolicy
+- uid: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy*
+  name: DurationPolicy
+  href: api-plugin/Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_DurationPolicy_
+  commentId: Overload:Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy
+  isSpec: "True"
+  fullName: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationPolicy
+  nameWithType: GameplayEffect.DurationPolicy
 - uid: Noname.GameAbilitySystem.Domain.GameplayEffect.DurationType
   name: DurationType
   href: api-plugin/Noname.GameAbilitySystem.Domain.GameplayEffect.html#Noname_GameAbilitySystem_Domain_GameplayEffect_DurationType
@@ -14274,6 +14633,47 @@ references:
   isSpec: "True"
   fullName: Noname.GameAbilitySystem.Domain.GameplayTagUtility.IsValidTagString
   nameWithType: GameplayTagUtility.IsValidTagString
+- uid: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+  name: IAbilitySystemOwner
+  href: api-plugin/Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.html
+  commentId: T:Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+  fullName: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner
+  nameWithType: IAbilitySystemOwner
+- uid: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC
+  name: ASC
+  href: api-plugin/Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.html#Noname_GameAbilitySystem_Domain_IAbilitySystemOwner_ASC
+  commentId: P:Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC
+  fullName: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC
+  nameWithType: IAbilitySystemOwner.ASC
+- uid: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC*
+  name: ASC
+  href: api-plugin/Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.html#Noname_GameAbilitySystem_Domain_IAbilitySystemOwner_ASC_
+  commentId: Overload:Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC
+  isSpec: "True"
+  fullName: Noname.GameAbilitySystem.Domain.IAbilitySystemOwner.ASC
+  nameWithType: IAbilitySystemOwner.ASC
+- uid: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
+  name: IEffectDurationPolicy
+  href: api-plugin/Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.html
+  commentId: T:Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
+  fullName: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy
+  nameWithType: IEffectDurationPolicy
+- uid: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,System.Single@)
+  name: CalculateDuration(AbilitySystemComponent, ref float)
+  href: api-plugin/Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.html#Noname_GameAbilitySystem_Domain_IEffectDurationPolicy_CalculateDuration_Noname_GameAbilitySystem_Domain_AbilitySystemComponent_System_Single__
+  commentId: M:Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent,System.Single@)
+  name.vb: CalculateDuration(AbilitySystemComponent, Single)
+  fullName: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, ref float)
+  fullName.vb: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration(Noname.GameAbilitySystem.Domain.AbilitySystemComponent, Single)
+  nameWithType: IEffectDurationPolicy.CalculateDuration(AbilitySystemComponent, ref float)
+  nameWithType.vb: IEffectDurationPolicy.CalculateDuration(AbilitySystemComponent, Single)
+- uid: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration*
+  name: CalculateDuration
+  href: api-plugin/Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.html#Noname_GameAbilitySystem_Domain_IEffectDurationPolicy_CalculateDuration_
+  commentId: Overload:Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration
+  isSpec: "True"
+  fullName: Noname.GameAbilitySystem.Domain.IEffectDurationPolicy.CalculateDuration
+  nameWithType: IEffectDurationPolicy.CalculateDuration
 - uid: Noname.GameAbilitySystem.Domain.ITargetingStrategy
   name: ITargetingStrategy
   href: api-plugin/Noname.GameAbilitySystem.Domain.ITargetingStrategy.html
@@ -15508,30 +15908,18 @@ references:
   commentId: T:Noname.GameAbilitySystem.GameplayAbilitySpec
   fullName: Noname.GameAbilitySystem.GameplayAbilitySpec
   nameWithType: GameplayAbilitySpec
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityName
-  name: AbilityName
-  href: api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.html#Noname_GameAbilitySystem_GameplayAbilitySpec_AbilityName
-  commentId: F:Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityName
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityName
-  nameWithType: GameplayAbilitySpec.AbilityName
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityType
-  name: AbilityType
-  href: api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.html#Noname_GameAbilitySystem_GameplayAbilitySpec_AbilityType
-  commentId: F:Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityType
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityType
-  nameWithType: GameplayAbilitySpec.AbilityType
+- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.Ability
+  name: Ability
+  href: api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.html#Noname_GameAbilitySystem_GameplayAbilitySpec_Ability
+  commentId: F:Noname.GameAbilitySystem.GameplayAbilitySpec.Ability
+  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.Ability
+  nameWithType: GameplayAbilitySpec.Ability
 - uid: Noname.GameAbilitySystem.GameplayAbilitySpec.ActiveCount
   name: ActiveCount
   href: api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.html#Noname_GameAbilitySystem_GameplayAbilitySpec_ActiveCount
   commentId: F:Noname.GameAbilitySystem.GameplayAbilitySpec.ActiveCount
   fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.ActiveCount
   nameWithType: GameplayAbilitySpec.ActiveCount
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.Configs
-  name: Configs
-  href: api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.html#Noname_GameAbilitySystem_GameplayAbilitySpec_Configs
-  commentId: F:Noname.GameAbilitySystem.GameplayAbilitySpec.Configs
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.Configs
-  nameWithType: GameplayAbilitySpec.Configs
 - uid: Noname.GameAbilitySystem.GameplayAbilitySpec.Handle
   name: Handle
   href: api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.html#Noname_GameAbilitySystem_GameplayAbilitySpec_Handle
@@ -15544,38 +15932,6 @@ references:
   commentId: F:Noname.GameAbilitySystem.GameplayAbilitySpec.Level
   fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.Level
   nameWithType: GameplayAbilitySpec.Level
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig*
-  name: TryGetConfig
-  href: api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.html#Noname_GameAbilitySystem_GameplayAbilitySpec_TryGetConfig_
-  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig
-  isSpec: "True"
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig
-  nameWithType: GameplayAbilitySpec.TryGetConfig
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig``1(``0@)
-  name: TryGetConfig<T>(out T)
-  href: api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.html#Noname_GameAbilitySystem_GameplayAbilitySpec_TryGetConfig__1___0__
-  commentId: M:Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig``1(``0@)
-  name.vb: TryGetConfig(Of T)(T)
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig<T>(out T)
-  fullName.vb: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig(Of T)(T)
-  nameWithType: GameplayAbilitySpec.TryGetConfig<T>(out T)
-  nameWithType.vb: GameplayAbilitySpec.TryGetConfig(Of T)(T)
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs*
-  name: TryGetConfigs
-  href: api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.html#Noname_GameAbilitySystem_GameplayAbilitySpec_TryGetConfigs_
-  commentId: Overload:Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs
-  isSpec: "True"
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs
-  nameWithType: GameplayAbilitySpec.TryGetConfigs
-- uid: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs``1(System.Collections.Generic.List{``0}@)
-  name: TryGetConfigs<T>(out List<T>)
-  href: api-plugin/Noname.GameAbilitySystem.GameplayAbilitySpec.html#Noname_GameAbilitySystem_GameplayAbilitySpec_TryGetConfigs__1_System_Collections_Generic_List___0___
-  commentId: M:Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs``1(System.Collections.Generic.List{``0}@)
-  name.vb: TryGetConfigs(Of T)(List(Of T))
-  fullName: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs<T>(out System.Collections.Generic.List<T>)
-  fullName.vb: Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs(Of T)(System.Collections.Generic.List(Of T))
-  nameWithType: GameplayAbilitySpec.TryGetConfigs<T>(out List<T>)
-  nameWithType.vb: GameplayAbilitySpec.TryGetConfigs(Of T)(List(Of T))
 - uid: Noname.GameAbilitySystem.GameplayConfig
   name: GameplayConfig
   href: api-plugin/Noname.GameAbilitySystem.GameplayConfig.html

@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class GameplayAbilitySpec | Noname Docs ">
     
-    <meta name="description" content="능력 사양 정보를 담는 구조입니다.">
+    
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,8 +81,7 @@
 
 
   <h1 id="Noname_GameAbilitySystem_GameplayAbilitySpec" data-uid="Noname.GameAbilitySystem.GameplayAbilitySpec" class="text-break">Class GameplayAbilitySpec</h1>
-  <div class="markdown level0 summary"><p>능력 사양 정보를 담는 구조입니다.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -120,13 +119,12 @@
 </h3>
 
 
-  <h4 id="Noname_GameAbilitySystem_GameplayAbilitySpec_AbilityName" data-uid="Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityName">AbilityName</h4>
-  <div class="markdown level1 summary"><p>에디터 표시용 이름입니다.</p>
-</div>
+  <h4 id="Noname_GameAbilitySystem_GameplayAbilitySpec_Ability" data-uid="Noname.GameAbilitySystem.GameplayAbilitySpec.Ability">Ability</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string AbilityName</code></pre>
+    <pre><code class="lang-csharp hljs">public GameplayAbility Ability</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-condensed">
@@ -138,32 +136,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <h4 id="Noname_GameAbilitySystem_GameplayAbilitySpec_AbilityType" data-uid="Noname.GameAbilitySystem.GameplayAbilitySpec.AbilityType">AbilityType</h4>
-  <div class="markdown level1 summary"><p>능력 클래스 타입입니다.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Type AbilityType</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><a class="xref" href="Noname.GameAbilitySystem.Domain.GameplayAbility.html">GameplayAbility</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -171,8 +144,7 @@
 
 
   <h4 id="Noname_GameAbilitySystem_GameplayAbilitySpec_ActiveCount" data-uid="Noname.GameAbilitySystem.GameplayAbilitySpec.ActiveCount">ActiveCount</h4>
-  <div class="markdown level1 summary"><p>활성화 중인 횟수입니다.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -195,34 +167,8 @@
   </table>
 
 
-  <h4 id="Noname_GameAbilitySystem_GameplayAbilitySpec_Configs" data-uid="Noname.GameAbilitySystem.GameplayAbilitySpec.Configs">Configs</h4>
-  <div class="markdown level1 summary"><p>연결된 구성 목록입니다.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;GameplayConfig&gt; Configs</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="Noname.GameAbilitySystem.GameplayConfig.html">GameplayConfig</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-
-
   <h4 id="Noname_GameAbilitySystem_GameplayAbilitySpec_Handle" data-uid="Noname.GameAbilitySystem.GameplayAbilitySpec.Handle">Handle</h4>
-  <div class="markdown level1 summary"><p>능력 핸들입니다.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -246,8 +192,7 @@
 
 
   <h4 id="Noname_GameAbilitySystem_GameplayAbilitySpec_Level" data-uid="Noname.GameAbilitySystem.GameplayAbilitySpec.Level">Level</h4>
-  <div class="markdown level1 summary"><p>능력 레벨입니다.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -265,130 +210,6 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
-
-
-  <a id="Noname_GameAbilitySystem_GameplayAbilitySpec_TryGetConfig_" data-uid="Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig*"></a>
-  <h4 id="Noname_GameAbilitySystem_GameplayAbilitySpec_TryGetConfig__1___0__" data-uid="Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfig``1(``0@)">TryGetConfig&lt;T&gt;(out T)</h4>
-  <div class="markdown level1 summary"><p>특정 타입의 구성을 하나 가져옵니다.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TryGetConfig&lt;T&gt;(out T config) where T : GameplayConfig</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">config</span></td>
-        <td><p>찾아낸 구성</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>찾았는지 여부</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>요청할 구성 타입</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <a id="Noname_GameAbilitySystem_GameplayAbilitySpec_TryGetConfigs_" data-uid="Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs*"></a>
-  <h4 id="Noname_GameAbilitySystem_GameplayAbilitySpec_TryGetConfigs__1_System_Collections_Generic_List___0___" data-uid="Noname.GameAbilitySystem.GameplayAbilitySpec.TryGetConfigs``1(System.Collections.Generic.List{``0}@)">TryGetConfigs&lt;T&gt;(out List&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"><p>특정 타입의 구성들을 가져옵니다.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TryGetConfigs&lt;T&gt;(out List&lt;T&gt; configs) where T : GameplayConfig</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
-        <td><span class="parametername">configs</span></td>
-        <td><p>찾아낸 구성 목록</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>하나 이상 찾았는지 여부</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>요청할 구성 타입</p>
-</td>
       </tr>
     </tbody>
   </table>
