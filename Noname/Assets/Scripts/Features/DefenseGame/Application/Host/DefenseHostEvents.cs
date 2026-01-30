@@ -55,7 +55,7 @@ namespace MyProject.DefenseGame.Application
         public long MonsterUid { get; }
         public string MonsterType { get; }
         public bool IsBoss { get; }
-        public int ExpGained { get; }        
+        public int ExpGained { get; }
 
         public DefenseMonsterKilledEvent(
             long tick,
@@ -76,8 +76,8 @@ namespace MyProject.DefenseGame.Application
     /// </summary>
     public sealed class DefensePlayerActivateAbilityEvent : DefenseHostEvent
     {
-        public List<long> TargetUids { get;}
-        public GameplayAbility Ability { get;}
+        public List<long> TargetUids { get; }
+        public GameplayAbility Ability { get; }
 
         public DefensePlayerActivateAbilityEvent(
             long tick,
@@ -97,14 +97,18 @@ namespace MyProject.DefenseGame.Application
     {
         public long MonsterUid { get; }
         public GameplayAbility Ability { get; }
+
+        public bool IsBoss { get; }
         public DefenseMonsterActivateAbilityEvent(
             long tick,
             long monsterUid,
-            GameplayAbility ability
+            GameplayAbility ability,
+            bool isBoss = false
         ) : base(tick)
         {
             MonsterUid = monsterUid;
             Ability = ability;
+            IsBoss = isBoss;
         }
     }
 

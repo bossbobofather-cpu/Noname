@@ -92,8 +92,8 @@ namespace MyProject.DefenseGame.Presentation
 
         private void CheckLvUpPhaseInteraction()
         {
-            if (!_waitOptionSelect 
-            || _pendingLvUpOptionEvent == null 
+            if (!_waitOptionSelect
+            || _pendingLvUpOptionEvent == null
             || _pendingLvUpOptionEvent.Options == null)
                 return;
 
@@ -136,7 +136,7 @@ namespace MyProject.DefenseGame.Presentation
                     break;
 
                 case DefenseMonsterSpawnedEvent e:
-                    if(e.IsBoss)
+                    if (e.IsBoss)
                     {
                         PublishMessage($"================================================================================", _bossSpawnColor);
                         PublishMessage($"[보스 생성] {e.MonsterType} (UID: {e.MonsterUid})", _bossSpawnColor);
@@ -208,18 +208,26 @@ namespace MyProject.DefenseGame.Presentation
         private void PlyerActivateAbilityEvent(DefensePlayerActivateAbilityEvent evt)
         {
             var ability = evt.Ability;
-            foreach(var uid in evt.TargetUids)
+            foreach (var uid in evt.TargetUids)
             {
                 PublishMessage(
-                    $"[플레이어 능력 발동] 몬스터 {uid}에게 {ability.DisplayName} 능력 발동. 효과 : {ability.Description}", _playerActivateAbilityColor);   
+                    $"[플레이어 능력 발동] 몬스터 {uid}에게 {ability.DisplayName} 능력 발동. 효과 : {ability.Description}", _playerActivateAbilityColor);
             }
         }
 
         private void MonsterActivateAbilityEvent(DefenseMonsterActivateAbilityEvent evt)
         {
             var ability = evt.Ability;
-            PublishMessage(
-                $"[몬스터 {evt.MonsterUid} 능력 발동] 플레이어에게 {ability.DisplayName} 능력 발동. 효과 : {ability.Description}", _monsterActivateAbilityColor);
+            if (evt.IsBoss)
+            {
+                PublishMessage(
+                    $"[보스 능력 발동] 플레이어에게 {ability.DisplayName} 능력 발동. 효과 : {ability.Description}", _bossSpawnColor);
+            }
+            else
+            {
+                PublishMessage(
+                    $"[몬스터 {evt.MonsterUid} 능력 발동] 플레이어에게 {ability.DisplayName} 능력 발동. 효과 : {ability.Description}", _monsterActivateAbilityColor);
+            }
         }
 
         /// <summary>

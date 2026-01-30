@@ -325,6 +325,9 @@ namespace Noname.GameAbilitySystem.Domain
             // 타겟팅
             if (ability.TargetingStrategy != null && targetContext != null)
             {
+                //능력의 타겟전략에 해당하는 타겟 찾기
+                //ex) SelfTargetingStrategy : 자기 자신이 타겟의 적
+                //ex ) NearestNEnemiesTargetingStrategy : 가장 가까운 N명의 적
                 targetData = ability.TargetingStrategy.FindTargets(this, targetContext);
 
                 // 타겟이 필요한 능력인데 타겟이 없으면 실패

@@ -111,6 +111,11 @@ namespace MyProject.DefenseGame.Domain
         public float BossHpMultiplier = 5f;
 
         /// <summary>
+        /// 보스 몬스터 공격력입니다.
+        /// </summary>
+        public float BossMonsterAttackSpeed = 1;
+
+        /// <summary>
         /// 보스 몬스터 공격력 배수입니다.
         /// </summary>
         public float BossAttackMultiplier = 2f;

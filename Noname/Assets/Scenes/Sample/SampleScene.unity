@@ -561,22 +561,23 @@ MonoBehaviour:
     InvincibleMode: 1
     BaseSpawnInterval: 3
     SpawnRateIncreaseInterval: 10
-    BossSpawnInterval: 30
+    BossSpawnInterval: 10
     MaxMonsterCount: 30
     PlayerMaxHp: 1000
     PlayerAttackPower: 30
-    PlayerAttackSpeed: 0.5
+    PlayerAttackSpeed: 1
     PlayerDefense: 5
     PlayerAttackCooldown: 1
     PlayerTags: []
     PlayerAbilityIds: 01000000
     NormalMonsterHp: 20
     NormalMonsterAttack: 5
-    NormalMonsterAttackSpeed: 0.5
+    NormalMonsterAttackSpeed: 1
     NormalMonsterDefense: 2
     NormalMonsterExp: 50
     NormalMonsterAbilityIds: 01000000
     BossHpMultiplier: 5
+    BossMonsterAttackSpeed: 2
     BossAttackMultiplier: 2
     BossExpMultiplier: 100
     BossMonsterAbilityIds: 01000000

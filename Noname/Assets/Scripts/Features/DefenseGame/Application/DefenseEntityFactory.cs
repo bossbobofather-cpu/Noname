@@ -44,7 +44,7 @@ namespace MyProject.DefenseGame.Application
                 type = DefenseMonsterType.Boss;
                 maxHp = (int)(_config.NormalMonsterHp * _config.BossHpMultiplier) + level * 20;
                 attack = (int)(_config.NormalMonsterAttack * _config.BossAttackMultiplier) + level * 2;
-                attackSpeed = _config.NormalMonsterAttackSpeed;
+                attackSpeed = _config.BossMonsterAttackSpeed;
                 defense = _config.NormalMonsterDefense * 2 + level;
                 expReward = (int)(_config.NormalMonsterExp * _config.BossExpMultiplier) + level * 10;
             }

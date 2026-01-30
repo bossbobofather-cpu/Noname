@@ -207,6 +207,7 @@ namespace MyProject.DefenseGame.Application
         private GameCommandOutcome<DefenseCommandResult, DefenseHostEvent> HandleSelectLevelUpAbility(
             SelectLevelUpAbilityCommand command)
         {
+            //유효성 검증
             if (_state.SessionPhase != DefenseSessionPhase.LevelUpSelection)
             {
                 return new GameCommandOutcome<DefenseCommandResult, DefenseHostEvent>(
@@ -220,12 +221,14 @@ namespace MyProject.DefenseGame.Application
                     SelectLevelUpAbilityResult.Fail(Tick, command.SenderUid, "잘못된 선택 인덱스입니다."));
             }
 
+            //상태 변경
             var selected = options[command.AbilityIndex];
 
             selected.ApplyAction?.Invoke(_state.Player);
             _state.AddGrantedAbility(selected.AbilityTag);
             _state.SetSessionPhase(DefenseSessionPhase.Playing);
 
+            //이벤트 발행
             var events = new List<DefenseHostEvent>
             {
                 new DefenseAbilitySelectedEvent(Tick, selected.AbilityTag, selected.DisplayName)

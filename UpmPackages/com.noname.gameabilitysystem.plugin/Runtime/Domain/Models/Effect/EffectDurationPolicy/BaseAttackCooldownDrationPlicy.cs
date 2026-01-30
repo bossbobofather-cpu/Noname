@@ -12,8 +12,9 @@ namespace Noname.GameAbilitySystem.Domain
         {
             if(asc == null) return duration;
 
-            //현재 공격 속도를 기반해서 쿨다운 지속 시간을 계산한다. AttackSpeed가 높을 수록 쿨다운은 줄어두는 형태
-            return duration *= asc.Get(AttributeId.AttackSpeed);
+            //아무리 공격속도가 빨라도 쿨다운 최소값 0.1 최대값 10 부여
+            duration = Math.Clamp(duration / asc.Get(AttributeId.AttackSpeed), 0.1f, 10f);
+            return duration;
         }
     }
 }
