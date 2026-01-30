@@ -256,6 +256,7 @@ namespace Noname.GameHost
             {
                 try
                 {
+                    //커맨드에 대한 선행 이벤트가 있다면 발행합니다.
                     var outcome = HandleCommand(command);
                     if (outcome.PreEvents != null)
                     {
@@ -265,11 +266,13 @@ namespace Noname.GameHost
                         }
                     }
 
+                    //커맨드에 대한 결과를 발행합니다.
                     if (outcome.Result != null)
                     {
                         PublishResult(outcome.Result);
                     }
 
+                    //커맨드에 대한 후행 이벤트가 있다면 발행합니다.
                     if (outcome.PostEvents != null)
                     {
                         for (var i = 0; i < outcome.PostEvents.Count; i++)
@@ -328,7 +331,7 @@ namespace Noname.GameHost
         protected virtual void HandleInternalEvent(TEvent eventData)
         {
         }
-        
+
         protected void PublishEvent(TEvent eventData)
         {
             if (eventData == null)
@@ -367,6 +370,15 @@ namespace Noname.GameHost
             }
         }
 
+        /// <summary>
+        /// 최신 스냅샷을 반환합니다.
+        /// Host 루프가 최신 스냅샷 캐시를 갱신합니다.
+        /// </summary>
+        public TSnapshot GetLatestSnapshot()
+        {
+            return Volatile.Read(ref _latestSnapshot);
+        }
+
         private void TryBuildSnapshot(float deltaSeconds)
         {
             if (_snapshotInterval <= 0f)
@@ -389,13 +401,17 @@ namespace Noname.GameHost
         {
             try
             {
+                //현재 상태를 복제한 스냅샷 생성
                 var snapshot = BuildSnapshotInternal();
                 if (snapshot == null)
                 {
                     return;
                 }
 
+                //큐에 넣어서 메인 스레드가 소비할 수 있게 함
                 _snapshotQueue.Enqueue(snapshot);
+
+                //최신 스냅샷을 캐시에 저장
                 Volatile.Write(ref _latestSnapshot, snapshot);
             }
             catch (Exception ex)
@@ -435,20 +451,19 @@ namespace Noname.GameHost
                 var stopwatch = Diagnostics.Stopwatch.StartNew();
                 var lastTime = stopwatch.Elapsed;
                 var accumulator = 0.0;
-
                 var host = (IGameHostInternal<TCommand, TResult, TEvent, TSnapshot>)this;
 
                 while (_isRunning)
                 {
+                    //현재 시간 기준 deltaTime 계산
                     var now = stopwatch.Elapsed;
                     var deltaSeconds = (now - lastTime).TotalSeconds;
                     lastTime = now;
 
-                    // 과도한 지연이 발생하면 안정성을 위해 상한을 둡니다.
-                    if (deltaSeconds > 0.25)
-                    {
-                        deltaSeconds = 0.25;
-                    }
+                    //✅ 안정성 제한 : 너무 큰 delta를 잘라서 폭주 방지
+                    // 렉/정지 시 deltaSeconds가 갑자기 커지는 경우 
+                    // 한번에 쌓인 많은 Tick을 처리하게 되는 이슈 방지
+                    if (deltaSeconds > 0.25) deltaSeconds = 0.25;
 
                     accumulator += deltaSeconds;
                     var step = _fixedStep;
@@ -461,26 +476,20 @@ namespace Noname.GameHost
                         steps++;
                     }
 
-                    if (steps >= _maxStepsPerTick)
-                    {
-                        // 최대 스텝에 도달하면 누적 시간을 리셋합니다.
-                        accumulator = 0.0;
-                    }
+                    //과도한 지연 보정 (누적 시간 리셋)
+                    //(_maxStepsPerTick(현재 8) 보다 더 많은 스탭이 쌓여있어도 버리고 현재 기준으로 재시작..
+                    //아니면 다음 프레임에도 또 _maxStepsPerTick 만큼 advance 할거고
+                    //게임이 계속 밀림
+                    if (steps >= _maxStepsPerTick) accumulator = 0.0;
 
-                    if (_sleepMilliseconds > 0)
-                    {
-                        Thread.Sleep(_sleepMilliseconds);
-                    }
-                    else
-                    {
-                        Thread.Yield();
-                    }
+                    if (_sleepMilliseconds > 0) Thread.Sleep(_sleepMilliseconds);
+                    else Thread.Yield();
                 }
             }
             catch (Exception ex)
             {
                 _loopException = ex;
-                Debug.LogError($"[{GetType().Name}] 시뮬레이션 루프에서 치명적 오류 발생: {ex}");
+                Debug.LogError($"[{GetType().Name}] 시뮬레이션 루프 오류: {ex}");
             }
         }
 

@@ -36,6 +36,8 @@ namespace MyProject.DefenseGame.Presentation
 
         private bool _waitOptionSelect = false;
         private DefenseLevelUpOptionsEvent _pendingLvUpOptionEvent = null;
+        private DefenseHostSnapshot _latestSnapshot = null;
+        private long _latestSnapshotTick = -1;
         protected override void OnInitialize()
         {
             base.OnInitialize();
@@ -47,7 +49,25 @@ namespace MyProject.DefenseGame.Presentation
         {
             base.Update();
 
+            SyncSnapshot();
             CheckLvUpPhaseInteraction();
+        }
+
+        private void SyncSnapshot()
+        {
+            var snapshot = Host?.GetLatestSnapshot();
+            if (snapshot == null)
+            {
+                return;
+            }
+
+            if (snapshot.Tick == _latestSnapshotTick)
+            {
+                return;
+            }
+
+            _latestSnapshot = snapshot;
+            _latestSnapshotTick = snapshot.Tick;
         }
 
         private void SelectOption(int optionIndex)

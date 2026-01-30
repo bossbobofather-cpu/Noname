@@ -115,6 +115,12 @@ namespace Noname.GameHost
         void StopSimulation();
         void SendCommand(TCommand command);
         void FlushEvents();
+
+        /// <summary>
+        /// View/클라이언트에서 최신 스냅샷을 조회합니다.
+        /// 내부 빌드는 Host 루프에서 수행됩니다.
+        /// </summary>
+        TSnapshot GetLatestSnapshot();
     }
 
     /// <summary>
