@@ -403,7 +403,7 @@ namespace Noname.GameAbilitySystem.Domain
                 return;
             }
 
-            // 속성 수정 적용 (ModifierGroups 순회)
+            // 속성 수정 적용
             foreach (var modifier in effect.Modifiers)
             {
                 ApplyModifier(target, modifier);
@@ -422,8 +422,8 @@ namespace Noname.GameAbilitySystem.Domain
             // Tick에서 만료 처리 시 태그 제거됨
             if (effect.DurationType == EffectDurationType.HasDuration && effect.Duration > 0)
             {
-                // endTime은 호출측에서 현재 시간을 기준으로 계산해야 함
-                // 여기서는 Duration 값을 endTime으로 저장 (상대 시간)
+                // Duration은 Effect에 Duration Polciy가 있는 경우
+                //계산을 통해 수정 된다
                 target.AddActiveEffect(effect, effect.Duration);
             }
         }
